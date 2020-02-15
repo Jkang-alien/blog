@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine learning | Jun&#39;s Blog</title>
+    <link>/categories/machine-learning/</link>
+      <atom:link href="/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Machine learning</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Machine learning</title>
+      <link>/categories/machine-learning/</link>
+    </image>
+    
+    <item>
+      <title>Tidymodel</title>
+      <link>/post/tidymodel/</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/tidymodel/</guid>
+      <description>
+
+
+&lt;div id=&#34;machine-learning-and-tidymodel&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Machine Learning and Tidymodel&lt;/h3&gt;
+&lt;div id=&#34;model-setting-parsnip&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Model setting, {Parsnip}&lt;/h4&gt;
+&lt;p&gt;Rpackage Parsnip standardize model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specification and lately evaluates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;feature-engineering-recipes&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Feature engineering, {Recipes}&lt;/h4&gt;
+&lt;p&gt;Recipes makes preprocessing easy with &lt;code&gt;step_()&lt;/code&gt; functions. Recipes after specification, calculates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;resampling-rsample&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Resampling, {rsample}&lt;/h4&gt;
+&lt;p&gt;To choose a model and hyperparameters, we must validate the different models.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;making-hyperparameter-set-dials&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Making hyperparameter set, {dials}&lt;/h4&gt;
+&lt;p&gt;The Rpackage {dials} set hyperparameter similarily with {Parsnip}. {Dials} standadize parameter of each modeling algorithm.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;set-modeling-process-workflowr&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Set modeling process, {Workflowr}&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fit-models-with-hyperparameter-tunes&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Fit models with hyperparameter, {tunes}&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Applied Machine Learning Workshop RStudio Conference 2020</title>
+      <link>/post/applied-machine-learning-workshop-rstudio-conference-2020/</link>
+      <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/applied-machine-learning-workshop-rstudio-conference-2020/</guid>
+      <description>
+
+
+&lt;p&gt;This is a note of applied machine learning workshop RStudion conference 2020&lt;/p&gt;
+&lt;p&gt;Why is it hard to predict (domain knowledge).&lt;/p&gt;
+&lt;p&gt;purrr::map allows inline code.&lt;/p&gt;
+&lt;p&gt;purrr::map and tidyr::nest covered because they are used in resample or tune.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-01-26-applied-machine-learning-workshop-rstudio-conference-2020_files/figure-html/explore-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Skew data might be looking outlier.&lt;/p&gt;
+&lt;p&gt;Peaple look at data many different ways like outliers, missingness, correlation and suspection of important variable.&lt;/p&gt;
+&lt;p&gt;The ggplot is good to explore variables adding geoms changing plot.&lt;/p&gt;
+&lt;p&gt;Machine learning is creative because you can do many different way such as which variable should be included.&lt;/p&gt;
+&lt;p&gt;Model workflow: imputation -&amp;gt; transformation -&amp;gt; filter -&amp;gt; model&lt;/p&gt;
+&lt;p&gt;Resampling avoid somethinf like the garden of forking paths or p-hacking by honest feedback.&lt;/p&gt;
+&lt;p&gt;The tuning parameter can be estimated &lt;strong&gt;analytically&lt;/strong&gt; or iteratively.&lt;/p&gt;
+&lt;p&gt;Single validation set ??&lt;/p&gt;
+&lt;p&gt;Resampling process questions&lt;/p&gt;
+&lt;p&gt;Spliting data is confusing.&lt;/p&gt;
+&lt;p&gt;Test set split preserve &lt;strong&gt;distribution&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Interval and sampling is behind scene of resampling.&lt;/p&gt;
+&lt;p&gt;fomular x ~ . -something to remove&lt;/p&gt;
+&lt;p&gt;Variable role: limited (can not be applied to hierachical in Baysian??)&lt;/p&gt;
+&lt;p&gt;Fomular and XY interpace is not fit in machine learning. The recipes is a solution.&lt;/p&gt;
+&lt;p&gt;The broom::glance (one row summary of metrics, don’t trust this too much) tidy (coefficients) augment (by data points)&lt;/p&gt;
+&lt;p&gt;The parsnip (unified interface) is a solution of different interface.&lt;/p&gt;
+&lt;p&gt;How to set specific settings using parsnip?&lt;/p&gt;
+&lt;p&gt;Many other packages supporting parsnip. Look at the tidymodels packages.&lt;/p&gt;
+&lt;p&gt;What is difference betweeen caret and parsnip?&lt;/p&gt;
+&lt;p&gt;Caret~base R, parsnip~tidyverse&lt;/p&gt;
+&lt;p&gt;The parsnip generalizes the interfaces and be easy to extend.&lt;/p&gt;
+&lt;p&gt;Dummy variable is confusing in interaction of terms and how to interprete coefficiency.&lt;/p&gt;
+&lt;p&gt;The level with 0,0 allocation becomes base variable in factor variable. A continuous variable can be categorized with recipe::step_discritize().&lt;/p&gt;
+&lt;p&gt;A zero variance predictor includes no record or single value variable.&lt;/p&gt;
+&lt;p&gt;Feature engineering problem
+* Dummy variable&lt;br /&gt;
+* Zero variance
+* Standardize&lt;/p&gt;
+&lt;p&gt;Customizing Step function&lt;/p&gt;
+&lt;p&gt;First level be a reference. There are ways to change the reference level. (Ordering facter level issues)&lt;/p&gt;
+&lt;p&gt;Peaple response positively to the recipes.&lt;/p&gt;
+&lt;p&gt;recipe -&amp;gt; prep -&amp;gt; juice/bake; define -&amp;gt; calculate -&amp;gt; processing (training or test set)&lt;/p&gt;
+&lt;p&gt;The post processed data set goes to fit() to estabilish a model&lt;/p&gt;
+&lt;p&gt;Versioning model caching?&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mod_rec &amp;lt;- recipe(
+  Sale_Price ~ Longitude + Latitude + Neighborhood, 
+  data = ames_train
+) %&amp;gt;%
+  step_log(Sale_Price, base = 10) %&amp;gt;%
+  
+  # Lump factor levels that occur in 
+  # &amp;lt;= 5% of data as &amp;quot;other&amp;quot;
+  step_other(Neighborhood, threshold = 0.05) %&amp;gt;%
+  
+  # Create dummy variables for _any_ factor variables
+  step_dummy(all_nominal()) %&amp;gt;%
+  step_nzv(
+    starts_with (&amp;quot;Neighborhood_&amp;quot;))
+
+preped_data &amp;lt;- prep(mod_rec) 
+
+preped_data %&amp;gt;%
+  juice() %&amp;gt;%
+  slice(1:5)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 11
+##   Longitude Latitude Sale_Price Neighborhood_Co… Neighborhood_Ol…
+##       &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;      &amp;lt;dbl&amp;gt;            &amp;lt;dbl&amp;gt;            &amp;lt;dbl&amp;gt;
+## 1     -93.6     42.1       5.24                0                0
+## 2     -93.6     42.1       5.39                0                0
+## 3     -93.6     42.1       5.28                0                0
+## 4     -93.6     42.1       5.29                0                0
+## 5     -93.6     42.1       5.33                0                0
+## # … with 6 more variables: Neighborhood_Edwards &amp;lt;dbl&amp;gt;,
+## #   Neighborhood_Somerset &amp;lt;dbl&amp;gt;, Neighborhood_Northridge_Heights &amp;lt;dbl&amp;gt;,
+## #   Neighborhood_Gilbert &amp;lt;dbl&amp;gt;, Neighborhood_Sawyer &amp;lt;dbl&amp;gt;,
+## #   Neighborhood_other &amp;lt;dbl&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;step_dummy -&amp;gt; step_other/step_nzv()&lt;/p&gt;
+&lt;p&gt;Step_dummy create many dummy variables thus you should include the new dummy variables into the interaction terms or others or nzv. with starts_with() function.&lt;/p&gt;
+&lt;p&gt;Resolving skewness: &lt;strong&gt;Box-cox&lt;/strong&gt;, &lt;strong&gt;inverse&lt;/strong&gt;, of course log or squreroot&lt;/p&gt;
+&lt;p&gt;parsnip model object include original model results in &lt;code&gt;$fit&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The workflow replaces prep() -&amp;gt; juice() -&amp;gt; fit() with single call fit() and bake() -&amp;gt; predict() with predict ().&lt;/p&gt;
+&lt;p&gt;The workflow needs &lt;code&gt;add&lt;/code&gt;ing model specification (parsnip) and preprocessing (recipes).&lt;/p&gt;
+&lt;p&gt;Resampling is best option to estimate performance of a model.&lt;/p&gt;
+&lt;p&gt;Resampling splits analysis set and assessment set on &lt;strong&gt;training set&lt;/strong&gt;. Final result is performance metrics.&lt;/p&gt;
+&lt;p&gt;Selecting resampling method relates with bias variance trade off. (Repeated CV)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Model_selection#Criteria&#34; class=&#34;uri&#34;&gt;https://en.wikipedia.org/wiki/Model_selection#Criteria&lt;/a&gt; information criteria??&lt;/p&gt;
+&lt;p&gt;Resampling does stratified sampling.&lt;/p&gt;
+&lt;p&gt;The tuning metric tends to be smooth. Irregular metric result means high variance.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://appliedpredictivemodeling.com/blog/2014/11/27/vpuig01pqbklmi72b8lcl3ij5hj2qm&#34; class=&#34;uri&#34;&gt;http://appliedpredictivemodeling.com/blog/2014/11/27/vpuig01pqbklmi72b8lcl3ij5hj2qm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Resampling spends memory. The vfold_cv() has copy of original data.&lt;/p&gt;
+&lt;p&gt;Processing first or resampling first??&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resample first&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If preprocessing is outside of resampling, You don’t know how test set will be predicted.&lt;/p&gt;
+&lt;p&gt;Is feature engineering stable or unstable.&lt;/p&gt;
+&lt;p&gt;Can tune package select a good preprocessing process? Yes it can.&lt;/p&gt;
+&lt;p&gt;The upsampling issues and rare important data points&lt;/p&gt;
+&lt;p&gt;The tuning hyperparameter (underfitting or overfitting).&lt;/p&gt;
+&lt;p&gt;Hyperparameter types grid (regular, irregular), iterative&lt;/p&gt;
+&lt;p&gt;Making function name: use underbar &lt;code&gt;_&lt;/code&gt; “Grid_regular”&lt;/p&gt;
+&lt;p&gt;The plos and cons of regular and non-regular grid&lt;/p&gt;
+&lt;p&gt;The non-regular grid efficient except some model can do trick.&lt;/p&gt;
+&lt;p&gt;The parsnip standardize and it changes default parameter ranges.&lt;/p&gt;
+&lt;p&gt;The parameter tibble can not be subsetted. It will be issued in github.&lt;/p&gt;
+&lt;p&gt;Peaple take care about default value of parameters.&lt;/p&gt;
+&lt;p&gt;Tidymodel delays evaluation. Set first and run later.&lt;/p&gt;
+&lt;p&gt;Splines is wagged at the edge of range. When tring to predict value out of range, warnings occurs. Resampling can cause error at the edge point of assessment set.&lt;/p&gt;
+&lt;p&gt;There is a note column in the result object.&lt;/p&gt;
+&lt;p&gt;Sensitity of parameters can be evaluate with ggplot. Scale should be adjusted when outlier is present.&lt;/p&gt;
+&lt;p&gt;Best fit can be choose&lt;/p&gt;
+&lt;p&gt;Documentation&lt;/p&gt;
+&lt;p&gt;Show best and select best (parameter)&lt;/p&gt;
+&lt;p&gt;Tune tunes selected parameters. If you don’t tune parameters, the parameters goes default value.&lt;/p&gt;
+&lt;p&gt;The log ridership is wired because bimodal distribution. It will show skewed residual or something.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;!!stations&lt;/code&gt; indicates the environment of the station object, the station object is defined at recipe object not global environment.&lt;/p&gt;
+&lt;p&gt;Regularization wins wraping feature selection methods in terms of efficacy.&lt;/p&gt;
+&lt;p&gt;If two predictors are highly correlated, the signs can change and the variance of coefficients inflate.&lt;/p&gt;
+&lt;p&gt;L1 penalty does feature selection, L2 penalty resolves correlation. Does mixture feature selection? Yes, L1 component and lambda determine how much variables are kicked out, except pure ridge regression (ie. pure L2 penalty).&lt;/p&gt;
+&lt;p&gt;Normalize or standardize on dummy variables?&lt;/p&gt;
+&lt;p&gt;Lambda is more important parameter than alpha in glm.&lt;/p&gt;
+&lt;p&gt;Parallelism issue. GPU is good at linear algebra. Parallelism consumes memmory because they copy data. Tuning is advantaged with parallelism because it uses for loop. Unix is better than Windows in terms of parallelism.&lt;/p&gt;
+&lt;p&gt;Inner join makes prediction tibble subsetting best.&lt;/p&gt;
+&lt;p&gt;Repeated CV residual can be estimated with average predicting values.&lt;/p&gt;
+&lt;p&gt;GCV is used to pruning the point.&lt;/p&gt;
+&lt;p&gt;Is MARS greedy? Semi-greedy.&lt;/p&gt;
+&lt;p&gt;MARS is struggle with colineality. Use step_pca.&lt;/p&gt;
+&lt;p&gt;Bayesian process, Gaussian process, Kernel function selection&lt;/p&gt;
+&lt;p&gt;MARS hyper parameter space is high dimentional,thus gausian process is better than grid method in terms of efficiency. Grid methods for Chicago data MARS model needs more than 4000 points of grid, although grid search can use parallel process.&lt;/p&gt;
+&lt;p&gt;Bayesian parameter seraching process can be updated and pause.&lt;/p&gt;
+&lt;p&gt;Classification Hard prediction vs soft prediction (probability)&lt;/p&gt;
+&lt;p&gt;Accuracy can be estimated with hard prediction and ROC can be produced on soft prediction.&lt;/p&gt;
+&lt;p&gt;Feature hashing is difficult to understand.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;recipe can be tune.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;C5.0 is boost_tree.&lt;/p&gt;
+&lt;p&gt;Gitter discussion
+&lt;a href=&#34;https://gitter.im/conf2020-applied-ml/community/archives/2020/01/28&#34; class=&#34;uri&#34;&gt;https://gitter.im/conf2020-applied-ml/community/archives/2020/01/28&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Predictive Modeling</title>
+      <link>/talk/predictive-modeling/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/predictive-modeling/</guid>
+      <description>
+
+
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

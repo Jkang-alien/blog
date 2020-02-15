@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lee-so Maeng | Jun&#39;s Blog</title>
+    <link>/authors/lee-so-maeng/</link>
+      <atom:link href="/authors/lee-so-maeng/index.xml" rel="self" type="application/rss+xml" />
+    <description>Lee-so Maeng</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Lee-so Maeng</title>
+      <link>/authors/lee-so-maeng/</link>
+    </image>
+    
+    <item>
+      <title>Cancer-testis antigen expression in serous endometrial cancer with loss of X chromosome inactivation</title>
+      <link>/publication/2015-01-01_cancer-testis_antige/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/2015-01-01_cancer-testis_antige/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparison of the cobas 4800 HPV and HPV 9G DNA chip tests for detection of high-risk human papillomavirus in cervical specimens of women with consecutive positive HPV tests but negative Pap smears</title>
+      <link>/publication/2015-01-01_comparison_of_the_co/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/2015-01-01_comparison_of_the_co/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dysregulation of X chromosome inactivation in high grade ovarian serous adenocarcinoma</title>
+      <link>/publication/2015-01-01_dysregulation_of_x_c/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/2015-01-01_dysregulation_of_x_c/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

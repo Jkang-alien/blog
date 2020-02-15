@@ -1,0 +1,325 @@
+Bayesian
+========================================================
+author: Jun Kang
+date: September 4, 2019
+autosize: true
+css: custom.css
+<style>
+.reveal .slides section .slideContent{
+    font-size: 24pt;
+}
+</style>
+
+Coin toss
+=======================================================
+
+- Observed data (H, H, H, H, H, H, H, H, H, H) <br>
+- Guess the probability of coming head: 0.5? or 1.0?
+
+Frequentist approch (What usually has been done)
+======================================================
+- Null hypothesis: probability of coming head is 0.5
+- Hypothesis testing: Probability of observed data under null hypothesis a.k.a. p-value = ($\frac{1}{2}^{10}$)
+- Hypothesis rejection: probability of coming head is not 0.5
+
+Coin toss prior probability
+=======================================================
+
+- The gambling dealer!! <br>
+- Guess the probability of coming head after seeing 10 continuous head: 0.5? or 1.0?
+
+
+Coin toss prior probability
+=======================================================
+
+- Stanford reseach gives the probability 0.51!!
+- Guess the probability of coming head after seeing 10 continuous head: 0.5? 0.51? 0.6? 0.7? 1.0?
+
+Bayes theorem 1
+======================================================
+
+$$
+\begin{equation}
+\label{eq:bayes}
+P(\theta|\textbf{D}) = P(\theta ) \frac{P(\textbf{D} |\theta)}{P(\textbf{D})} \end{equation}
+$$
+
+Bayes theorem 2
+================================================
+$$
+\text{Posterior} = (\text{Prior} * \text{Likelyhood} )/\text{Normalizing constant}
+$$
+
+- Posterior
+- Prior
+- Likelyhood
+- Normalizing constant
+
+=================================================
+Likelyhood function
+<br>
+<br>
+$$\mathcal{L}(\theta \mid x) = p_\theta (x) = P_\theta (X=x)
+$$
+<br>
+
+$$
+\mathcal{L}(p_\text{H}=0.5 \mid \text{HH}) = 0.25.
+$$
+
+$$
+\mathcal{L}(p_\text{H}=1.0 \mid \text{HH}) = 1.0.
+$$
+
+***
+
+Probability distribution function
+<br>
+<br>
+$$
+\sum_u \operatorname{P}(X=u) = 1
+$$
+
+$$
+P(\text{H} \mid p_\text{H}=0.5) = 0.5.
+$$
+
+$$
+P(\text{T} \mid p_\text{H}=0.5) = 0.5.
+$$
+
+Bayesian example in genotype (SOAPsnp)
+===================================================
+
+Genotype calling
+====================================================
+
+Genome Res. 2009. 19: 1124-1132
+
+Likelyhood of genotype calling
+====================================================
+- Allele type
+- Quality score
+- Coordinates on the read
+- t-th occurrence 
+
+A:0, T:3, G:0, C:0, <br>
+phred score: 30, 30, 30 <br>
+Likelyhood?
+
+Likelyhood of genotype calling
+====================================================
+$$
+\text{L(Genotype T/G)|Read(T,T,T))} = (0.5*(1-0.001) + 0.5*0.001)^3
+$$
+
+$$
+\text{L(Genotype T/T)|Read(T,T,T))} = (1-0.001)^3
+$$
+
+$$
+\text{.}
+$$
+$$
+\text{.}
+$$
+$$
+\text{.}
+$$
+
+Prior probability 
+====================================================
+```{r, echo=FALSE, out.width = "70%", cache=TRUE}
+include_graphics("https://genome.cshlp.org/content/19/6/1124/T1.large.jpg")
+```
+- Reference allele: G
+- Homozygous SNP rate: 0.0005
+- Heterozygous SNP rate: 0.001
+- Ratio of transitions versus transversions: 4
+
+Posterior probability (incomplete)
+==================================================
+<br><br>
+
+$$
+\text{Posterior (Genotype T/G|Read(T,T,T))} 
+$$
+
+$$
+= Prior (1.67*10^{-4}) * Likelyhood (0.5*(1-0.001) + 0.5*0.001)^3
+$$
+
+$$
+=2.09*10^{-5}
+$$
+
+<br> <br> <br>
+
+$$
+\text{Posterior (Genotype T/T|Read(T,T,T))}
+$$
+
+$$ 
+= Prior (8.33*10^{-5}) * Likelyhood((1-0.001)^3)
+$$
+
+$$
+=8.31*10^{-5}
+$$
+
+Normalizing constant
+====================================================
+$$
+P(D)=\sum_i P(D|H_i)P(H_i) \
+$$
+
+- Markov chain Monte Carlo (MCMC)
+- WinBUGS
+- JAGS
+- STAN
+
+MCMC
+===================================================
+<blockquote class="imgur-embed-pub" lang="en" data-id="2p1va60"><a href="//imgur.com/2p1va60"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+```
+MCMC (Gibbs sampling)
+===================================================
+<blockquote class="imgur-embed-pub" lang="en" data-id="91TeFpu"><a href="//imgur.com/91TeFpu"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+Three steps of Bayesian data analysis  
+=====================================================
+```{r, message=FALSE, warning=FALSE, include=FALSE, echo=FALSE}
+library(knitr)
+read_chunk("Bayes_and_NGS.R")
+```
+
+- Full probability model
+- Conditioning on obsereved data (posterior distribution)
+- Evaluating the fit of the model and the implications of the resulting posterior distribution
+
+Bayesian Data Analysis 3rd, Andrew Gelman et. al.
+
+Copy number and tumor purity estimation
+========================================================
+
+A computational approach to distinguish somatic vs. germline origin of genomic alterations from deep sequencing of cancer specimens without a matched normal <https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005965>.
+
+SGZ method overview
+============================================
+```{r, echo=FALSE, out.width = "70%", cache=TRUE}
+include_graphics("https://journals.plos.org/ploscompbiol/article/figure/image?size=large&id=10.1371/journal.pcbi.1005965.g001")
+```
+
+Allele frequency table
+============================================
+```{r, echo=FALSE, out.width = "70%", cache=TRUE}
+include_graphics("https://www.jkangpathology.com/img/AF.png")
+```
+
+
+Full probability model
+============================================
+
+```{r, echo=FALSE}
+<<library>>
+```
+$$
+\begin{aligned}
+ r_i & \sim & N\left(log_2 \frac{pC_i+2(1-p)}{p \psi+2(1-p)}, \sigma_{ri} \right)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+ f_i & \sim & N\left(\frac{pM_i+(1-p)}{pC_i+2(1-p)}, \sigma_{fi} \right)
+\end{aligned}
+$$
+
+$$
+\psi = \frac{\sum_{i}(l_iC_i) }{\sum_{i}(l_i)} \
+$$
+ 
+\(\\r_i\\): Median-normalized log-ratio coverage of all exons within \(\\S_i\\) <br>
+\(\\f_i\\): MAF of SNPs within segment \(\\S_i\\) <br>
+\(\\p\\): Tumor purity <br>
+\(\\S_i\\): Genomic segment <br>
+\(\\l_i\\): Length of \(\\S_i\\) <br>
+\(\\C_i\\): Copy number of \(\\S_i\\) <br>
+\(\\M_i\\): Copy number of minor alleles in \(\\S_i\\), \(\\0 \leq M_i \leq S_i\\) <br>
+\(\psi\): Tumor ploidy of the sample
+
+
+```{r, echo=FALSE, cache=TRUE}
+<<data_gen>>
+```
+```{r, echo=FALSE}
+<<code>>
+```
+Toy data (read distribution)
+======================================================
+```{r, echo=FALSE}
+<<read_distribution>>
+```
+
+Toy data (MAF distribution)
+======================================================
+```{r, echo=FALSE}
+<<MAF_distribution>>
+```
+
+
+Stan code (continued)
+=======================================================
+```{r, eval=FALSE}
+<<code1>>
+```
+
+
+Stan code (continued)
+=======================================================
+```{r, eval=FALSE}
+<<code2>>
+```
+
+Stan code (last)
+====================================================
+```{r, eval=FALSE}
+<<code3>>
+```
+
+Fit
+=======================================================
+```{r, echo=TRUE, message=FALSE, warning=FALSE, cache=TRUE}
+
+<<fit>>
+```
+
+Posterior of copy number
+========================================================
+```{r, cache=TRUE}
+<<cn>>
+```
+
+Posterior of minor allele copy number
+========================================================
+```{r, cache=TRUE}
+<<m>>
+```
+
+Posterior of tumor purity
+========================================================
+```{r, cache=TRUE}
+<<tumor_purity>>
+```
+
+Trace Plot
+========================================================
+```{r, cache=TRUE}
+<<trace>>
+```
+
+Diagnostic Plot
+========================================================
+```{r, cache=TRUE}
+<<diag>>
+```

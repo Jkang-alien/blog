@@ -1,0 +1,108 @@
+/* global define:false */
+define(['jquery', 'underscore', 'views/loadingView', 'views/common/bannersView', 'ajaxError'],
+function($, _, LoadingView, BannerView, AjaxError) {
+
+    "use strict";
+
+    var AsyncDownloader = function() {
+    };
+
+    AsyncDownloader.prototype.download = function(url, loadingViewKey, postData) {
+        var loadingView = new LoadingView({
+            bodyKey: loadingViewKey
+        });
+        loadingView.render();
+        this._prepareAndPerformDownload(url, loadingView, postData);
+    };
+
+    AsyncDownloader.prototype._prepareAndPerformDownload = function(url, loadingView, postData) {
+        var self = this;
+        var ajaxOptions = {
+            url: url,
+            complete: function(jqXHR) {
+                switch (jqXHR.status) {
+                case 202:
+                    // poll for created...
+                    setTimeout(function(){self._prepareAndPerformDownload(url, loadingView, postData);}, 3000);
+                    break;
+                case 201:
+                    self._performDownload(jqXHR.getResponseHeader('Location'), loadingView);
+                    break;
+                default:
+                    loadingView.hide();
+                    new BannerView({
+                        id: 'error-banner',
+                        container: $('.main-content>.container-fluid'),
+                        style: 'error',
+                        title: $.t('exception.msg.public.default')
+                    }).render();
+                }
+            }
+        };
+        if(postData) {
+            ajaxOptions.type = 'POST';
+            ajaxOptions.contentType = 'application/json';
+            ajaxOptions.data = JSON.stringify(postData);
+        }
+        $.ajax(ajaxOptions);
+    };
+
+    AsyncDownloader.prototype._performDownload = function(url, loadingView) {
+        $.fileDownload(url, {
+            successCallback: function() {
+                loadingView.hide();
+            },
+            failCallback: function(responseHtml) {
+                loadingView.hide();
+                AjaxError.showGlobalError({
+                    responseText: responseHtml,
+                    status: 500,
+                    statusText: $.t('exception.msg.public.default')
+                });
+            }
+        });
+    };
+
+    AsyncDownloader.prototype.submitRequestForProcessing = function(url, loadingViewKey, postData) {
+        var loadingView = new LoadingView({
+            bodyKey: "Please wait"
+        });
+        loadingView.render();
+        this.notificationHandler(url, loadingView, postData);
+    };
+
+    AsyncDownloader.prototype.notificationHandler = function(url, loadingView, postData) {
+        var ajaxOptions = {
+            url: url,
+            complete: function(jqXHR) {
+                switch (jqXHR.status) {
+                case 200:
+                    loadingView.hide();
+                    new BannerView({
+                        id: 'success-banner',
+                        container: $('.main-content>.container-fluid'),
+                        style: 'success',
+                        title: $.t('success.msg.public.default')
+                    }).render();
+                    break;
+                default:
+                    loadingView.hide();
+                    new BannerView({
+                        id: 'error-banner',
+                        container: $('.main-content>.container-fluid'),
+                        style: 'error',
+                        title: $.t('exception.msg.public.default')
+                    }).render();
+                }
+            }
+        };
+        if(postData) {
+            ajaxOptions.type = 'POST';
+            ajaxOptions.contentType = 'application/json';
+            ajaxOptions.data = JSON.stringify(postData);
+        }
+        $.ajax(ajaxOptions);
+    };
+
+    return AsyncDownloader;
+});

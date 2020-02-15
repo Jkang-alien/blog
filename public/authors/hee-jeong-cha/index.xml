@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hee Jeong Cha | Jun&#39;s Blog</title>
+    <link>/authors/hee-jeong-cha/</link>
+      <atom:link href="/authors/hee-jeong-cha/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hee Jeong Cha</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2007 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Hee Jeong Cha</title>
+      <link>/authors/hee-jeong-cha/</link>
+    </image>
+    
+    <item>
+      <title>A case report of fetal telangiectatic focal nodular hyperplasia</title>
+      <link>/publication/2007-01-01_a_case_report_of_fet/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/2007-01-01_a_case_report_of_fet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Localized polyarteritis nodosa of the breast with mammary duct ectasia-a case report</title>
+      <link>/publication/2007-01-01_localized_polyarteri/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/2007-01-01_localized_polyarteri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nasal Chondromesenchymal Hamartoma: A Case Report.</title>
+      <link>/publication/2007-01-01_nasal_chondromesench/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/2007-01-01_nasal_chondromesench/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

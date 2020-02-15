@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Limit | Jun&#39;s Blog</title>
+    <link>/tags/limit/</link>
+      <atom:link href="/tags/limit/index.xml" rel="self" type="application/rss+xml" />
+    <description>Limit</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 09 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Limit</title>
+      <link>/tags/limit/</link>
+    </image>
+    
+    <item>
+      <title>Limit of inequality of sequence and epsilon</title>
+      <link>/post/limit-of-inequality-and-epsilon/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/post/limit-of-inequality-and-epsilon/</guid>
+      <description>
+
+
+&lt;p&gt;Here I summarize some tools for proof of the Riesz representation theorem. They are limit of inequality of sequence and &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt;. The Rudin’s proof of the Riesz representation theorem construct measure &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; and measuralble set &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt;, then prove the &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt; have properties. Countable additivity (not subadditivity) is an important property. The stratage of proving equality (additivity) is bidirectional inequality.&lt;/p&gt;
+&lt;p&gt;Limit of inequlity of sequence gives us a tool that finite inequality makes infinite inequality. &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; changes left and right parts of inequality (bidirectional inequality).&lt;/p&gt;
+&lt;p&gt;If &lt;span class=&#34;math inline&#34;&gt;\(\Sigma^n_1\mu(K) \le \Sigma^n_1\mu(V_i)\)&lt;/span&gt; then &lt;span class=&#34;math inline&#34;&gt;\(\Sigma^{\infty}_1 \mu(K) \le \Sigma^{\infty}_1 \mu(V)\)&lt;/span&gt;, K is compact and V is open. We can change both sides of inequality with &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(\Sigma^{\infty}_1 \mu(V) \le \Sigma^{\infty}_1 \mu(K) + \epsilon\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Urison’s lemma is used for &lt;span class=&#34;math inline&#34;&gt;\(\mu(E) = \inf\mu(V) = \sup\mu(K)\)&lt;/span&gt; if $ E  $ and $ K E V$.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Limit</title>
+      <link>/post/math/limit/</link>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/limit/</guid>
+      <description>
+
+
+&lt;p&gt;Sequence can be defined as a function on domain of natural number like &lt;span class=&#34;math inline&#34;&gt;\(1, 1/2, 1/3 ... 1/n\)&lt;/span&gt;. This sequence approach to the 0, but never touch the 0. However, people can not take their desire to link the sequence and the 0. Becuase &lt;span class=&#34;math inline&#34;&gt;\(\infty\)&lt;/span&gt; is not member of natural number even real number, another concept is necessory to link the sequence and the 0. It is the limit. &lt;span class=&#34;math display&#34;&gt;\[ \lim{n\to\infty} \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The above sequence approach to the 0. But does all sequences approach to some points? What if the seqence is &lt;span class=&#34;math inline&#34;&gt;\(1/n\)&lt;/span&gt; if &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; is not multiple of 100, 0.001 if n is mutiple of 100.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/math/2019-08-22-limit_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;It approach to zero except at every mutiple of 10. The &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; is used for the definition of limit to exclude this example.&lt;/p&gt;
+&lt;p&gt;The sequence &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; is converges the limit &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; if for every postive &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt;, natural number &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; is present such that &lt;span class=&#34;math inline&#34;&gt;\(\vert a-Sn \vert &amp;lt;\epsilon\)&lt;/span&gt; is true in every &lt;span class=&#34;math inline&#34;&gt;\(n&amp;gt;N\)&lt;/span&gt;. Otherwise the limit is not defined and the sequence is divergent.&lt;/p&gt;
+&lt;p&gt;In topological space the &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; becomes the neiborhood.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Analysis</title>
+      <link>/post/math/2019-07-30-analysis/analysis/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/2019-07-30-analysis/analysis/</guid>
+      <description>
+
+
+&lt;p&gt;The reproducing kernel hilbert space (RKHS) was my motivation to study analysis. The hilbert space is a orthogonal normed vector space. I still do not know about the meaning of “reproducing kernal”. The RKHS appeared in the book titled &lt;em&gt;An Introduction to Statisitical Learning&lt;/em&gt; written by Hastie.&lt;/p&gt;
+&lt;p&gt;I began to google the meaning of the spaces such as the Hilbert, Banarch. I decided to read the &lt;em&gt;Understaing Analysis&lt;/em&gt; written by Abbott. The &lt;em&gt;Understaing Analysis&lt;/em&gt; was give me many intuitions of analysis and encouraged me to study further. The next book was Rudin’s &lt;em&gt;Functional Analysis&lt;/em&gt;. I realized I need to go upstream to complex Analysis, topology and measure.&lt;/p&gt;
+&lt;p&gt;During the journey of exploring the analysis, I skipped proving of theorems or solving exercises. But space between lines is coming. I’m realizing that I prove the spaces. &lt;span class=&#34;math display&#34;&gt;\[\Sigma^{k}_{j=1} {\lvert}a_j-a^{n}_j{\rvert}\le\epsilon \]&lt;/span&gt; This holds for all finite &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;, we even have &lt;span class=&#34;math inline&#34;&gt;\({\lVert} a-a_n {\rVert} _{1}\le\epsilon\)&lt;/span&gt;. This is on the way of the proof of &lt;span class=&#34;math inline&#34;&gt;\(l^{1}(\mathbb{N})\)&lt;/span&gt; of all complex-valued sequences &lt;span class=&#34;math inline&#34;&gt;\(a=(a_j)^{\infty}_{j=1}\)&lt;/span&gt; for which the norm &lt;span class=&#34;math inline&#34;&gt;\({\lVert} a {\rVert} _{1}\ := \Sigma^{\infty}_{j=1} {\lvert}a_j{\rvert}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;I could not just accept that the finite sum of each small differences &lt;span class=&#34;math inline&#34;&gt;\(\le \epsilon\)&lt;/span&gt; of &lt;span class=&#34;math inline&#34;&gt;\({\lvert}a_j - a^n_j{\rvert}\)&lt;/span&gt; holds to the infinite sum. The infinite sum is a infinte series. If the infinite series is less than or equel to zero, then it converses to the zero. If the finite sum is &lt;span class=&#34;math inline&#34;&gt;\(\le \epsilon\)&lt;/span&gt; holds every &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{N}\)&lt;/span&gt;, by definition the infinite sum is also &lt;span class=&#34;math inline&#34;&gt;\(\le \epsilon\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;It takes long time to grasp the subtle mathmatical systems. For example, a series is a number in a scalar field, a sequence is a ordered set. However the long time makes the math become familar and finally will firmly grasp the subtle concepts.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

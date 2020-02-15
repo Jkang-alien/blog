@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analysis | Jun&#39;s Blog</title>
+    <link>/tags/analysis/</link>
+      <atom:link href="/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <description>Analysis</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 09 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Analysis</title>
+      <link>/tags/analysis/</link>
+    </image>
+    
+    <item>
+      <title>Limit of inequality of sequence and epsilon</title>
+      <link>/post/limit-of-inequality-and-epsilon/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/post/limit-of-inequality-and-epsilon/</guid>
+      <description>
+
+
+&lt;p&gt;Here I summarize some tools for proof of the Riesz representation theorem. They are limit of inequality of sequence and &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt;. The Rudin’s proof of the Riesz representation theorem construct measure &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; and measuralble set &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt;, then prove the &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt; have properties. Countable additivity (not subadditivity) is an important property. The stratage of proving equality (additivity) is bidirectional inequality.&lt;/p&gt;
+&lt;p&gt;Limit of inequlity of sequence gives us a tool that finite inequality makes infinite inequality. &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; changes left and right parts of inequality (bidirectional inequality).&lt;/p&gt;
+&lt;p&gt;If &lt;span class=&#34;math inline&#34;&gt;\(\Sigma^n_1\mu(K) \le \Sigma^n_1\mu(V_i)\)&lt;/span&gt; then &lt;span class=&#34;math inline&#34;&gt;\(\Sigma^{\infty}_1 \mu(K) \le \Sigma^{\infty}_1 \mu(V)\)&lt;/span&gt;, K is compact and V is open. We can change both sides of inequality with &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(\Sigma^{\infty}_1 \mu(V) \le \Sigma^{\infty}_1 \mu(K) + \epsilon\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Urison’s lemma is used for &lt;span class=&#34;math inline&#34;&gt;\(\mu(E) = \inf\mu(V) = \sup\mu(K)\)&lt;/span&gt; if $ E  $ and $ K E V$.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Positive Borel measures</title>
+      <link>/post/positive-borel-measures/</link>
+      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/post/positive-borel-measures/</guid>
+      <description>
+
+
+&lt;p&gt;This is a note of real and complex analysis chapter 2.&lt;/p&gt;
+&lt;p&gt;Chapter 2 is about measures. The measure already defined in chapter 1. In chapter 2, every linear &lt;strong&gt;functionals&lt;/strong&gt;, not combination, of a continuous function space on compact set (&lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt;) (&lt;span class=&#34;math inline&#34;&gt;\(\Lambda f\)&lt;/span&gt;) represents the integration of the function (&lt;span class=&#34;math inline&#34;&gt;\(\int f du\)&lt;/span&gt;) (Riesz representation theorem). Let X be a locally compact Hausdorf space, and let &lt;span class=&#34;math inline&#34;&gt;\(\Lambda\)&lt;/span&gt; be a positive linear functional on &lt;span class=&#34;math inline&#34;&gt;\(C_c(X)\)&lt;/span&gt;. Then there exist a &lt;span class=&#34;math inline&#34;&gt;\(\sigma-algebra\)&lt;/span&gt; in &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; which contains all Borel sets in &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, and there exists a unique positive measure &lt;span class=&#34;math inline&#34;&gt;\(mu\)&lt;/span&gt; on &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt; which represents &lt;span class=&#34;math inline&#34;&gt;\(\Lambda\)&lt;/span&gt; in the sense that (a) &lt;span class=&#34;math inline&#34;&gt;\(\Lambda f = \int f d \mu\)&lt;/span&gt; for every &lt;span class=&#34;math inline&#34;&gt;\(f \in C_c(X)\)&lt;/span&gt; and following additional properties:&lt;br /&gt;
+(b) &lt;span class=&#34;math inline&#34;&gt;\(\mu(K) &amp;lt; \infty\)&lt;/span&gt; for every compact set &lt;span class=&#34;math inline&#34;&gt;\(K \subset X\)&lt;/span&gt;.&lt;br /&gt;
+(c) For every &lt;span class=&#34;math inline&#34;&gt;\(E \in \mathfrak{M}\)&lt;/span&gt;, we have &lt;span class=&#34;math display&#34;&gt;\[ \mu(E) = inf\{\mu(V): E in V, V open\} \]&lt;/span&gt;.&lt;br /&gt;
+(d) The relation &lt;span class=&#34;math display&#34;&gt;\[\mu(E)=sup\{\mu(K): K \in E, K compact\}\]&lt;/span&gt;&lt;br /&gt;
+holds for every open set &lt;span class=&#34;math inline&#34;&gt;\(E\)&lt;/span&gt;, and for every &lt;span class=&#34;math inline&#34;&gt;\(E \in M\)&lt;/span&gt; with &lt;span class=&#34;math inline&#34;&gt;\(\mu(E) &amp;lt; \infty\)&lt;/span&gt;.&lt;br /&gt;
+(e) If &lt;span class=&#34;math inline&#34;&gt;\(E \in \mathfrak{M}, A subset E\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(\mu(E) = 0\)&lt;/span&gt;, then &lt;span class=&#34;math inline&#34;&gt;\(A \in \mathfrak{M}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The Riesz theorem is about linear functional &lt;span class=&#34;math inline&#34;&gt;\(\Lambda\)&lt;/span&gt; is equivalently replaced with choosing measure &lt;span class=&#34;math inline&#34;&gt;\(\mu(E)=sup\{\Lambda f: f \prec V\}\)&lt;/span&gt;. Note &lt;span class=&#34;math inline&#34;&gt;\(sup \{\int^1_0 f(x)dx = \Lambda f: f \prec V, V (0,1) \} = 1\)&lt;/span&gt;. The notion of &lt;span class=&#34;math inline&#34;&gt;\(\prec\)&lt;/span&gt; include &lt;span class=&#34;math inline&#34;&gt;\(0 \le f \le 1\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;I confused &lt;span class=&#34;math inline&#34;&gt;\(C_c(X)\)&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Abstract integration</title>
+      <link>/post/abstract-integration/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/post/abstract-integration/</guid>
+      <description>
+
+
+&lt;p&gt;This is a note for Rudin’s real and complex analysis chapter 1. The key concepts are &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt;-algebra, measure (&lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt;) zero and linear combination. The three conceps bring me the abstract integration. The &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt;-algebra makes that countable sum and measure of complement (substract measure) can be possible. The measure zero completes the system. linear combination integrates a measurable function.&lt;/p&gt;
+&lt;p&gt;After a measure space estabilished, Lebesgue’s monotone convergenece theorem, Fatous’s lemma and Lebesgue’s dominant convergence theorem follow. Although three theorem do not contain &lt;strong&gt;integral&lt;/strong&gt; in their name, they insist that pointwise convergent sequence of functions are also converges their integral of limit of functions. Lebesgue’s monotone convergence theorem requires monotonous increasement of series of function and Lebesgue’s dominant convergence theorem requires upper bound function. Fatous’s lemma is an inequality of lower limit.&lt;/p&gt;
+&lt;p&gt;Lebesgue’s monotone convergence theorem can be proved by the fact all &lt;span class=&#34;math inline&#34;&gt;\(L_1(\mu)\)&lt;/span&gt; has convergent simple function sequence. &lt;span class=&#34;math inline&#34;&gt;\(f_n\)&lt;/span&gt; &amp;gt; simple functions holds inequality of &lt;span class=&#34;math inline&#34;&gt;\(\lim\int f_n \geq \lim\int S_n = \int f\)&lt;/span&gt;. Fatous’s lemma &lt;span class=&#34;math inline&#34;&gt;\(\lim \inf \int \lvert fn - f \rvert \leq\int \lim \inf \lvert f_n - f \rvert\)&lt;/span&gt; is used for proof of Lebesgue’s dominant convergence.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Compactness</title>
+      <link>/post/math/compactness/</link>
+      <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/compactness/</guid>
+      <description>
+
+
+&lt;p&gt;Compact is a property of a space. In a nutshell, if a space is compact, we can treat the space be a &lt;strong&gt;finite&lt;/strong&gt; because the space has a &lt;strong&gt;finite subcover&lt;/strong&gt;. A continuous function on a compact space is uniformly continous.&lt;/p&gt;
+&lt;p&gt;Heine-Borel theorem describes the condition of compactness of &lt;strong&gt;finite&lt;/strong&gt; dimentional space. &lt;strong&gt;Closed and bounded&lt;/strong&gt; But the Heine-Borel theorem does not hold in a &lt;strong&gt;infinite dimentional&lt;/strong&gt; space. We need another conditions.&lt;/p&gt;
+&lt;p&gt;Previously, the compact space can be finite by taking subcover. The infinite dimentional space can be finite by projection to finite dimention. If we could make as small as possible (i.e. &lt;span class=&#34;math inline&#34;&gt;\(\epsilon &amp;gt; 0\)&lt;/span&gt; ) the norm of &lt;span class=&#34;math inline&#34;&gt;\((X\backslash(1-P)\)&lt;/span&gt;, the compactness is achieved.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Functional analysis</title>
+      <link>/post/math/functional-analysis/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/functional-analysis/</guid>
+      <description>
+
+
+&lt;p&gt;Differential equation solution is infinite function series. The infinite function series can be a sort of linear combination of countable function vector, in terms of linear algebra. This raises problem of analysis of function. The problem include distance of two functions, ie norm, completeness (Banach space). Because the series adds last term without change the existig terms, orthogonality is requred to make linear combination of countable functional vector becomes infinite function series (Hilbert space).&lt;/p&gt;
+&lt;p&gt;To make a space of continous function on a compact interval &lt;span class=&#34;math inline&#34;&gt;\(C(I)\)&lt;/span&gt; be complete (Banach space), take the maximum norm. To make a space of &lt;span class=&#34;math inline&#34;&gt;\(C(I)\)&lt;/span&gt; orthogonal, take the norm associated with inner product &lt;span class=&#34;math inline&#34;&gt;\(\| f \| := \sqrt{ \langle f,f \rangle}\)&lt;/span&gt;. The inner product is a map of symmetric sesquilinear form (Hermitian form). In &lt;span class=&#34;math inline&#34;&gt;\(C(I)\)&lt;/span&gt;, the inner product is &lt;span class=&#34;math display&#34;&gt;\[ \langle f,g \rangle := \int_{a}^{b} f^{*} (x)g(x)dx \]&lt;/span&gt;
+But the &lt;span class=&#34;math inline&#34;&gt;\(C(I)\)&lt;/span&gt; with the norm associated with inner product is not complete. The complete can be achived by extention to the lebesgue integrable function. The right norm and the right functional set have special properties like complete and orthogonality.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Limit</title>
+      <link>/post/math/limit/</link>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/limit/</guid>
+      <description>
+
+
+&lt;p&gt;Sequence can be defined as a function on domain of natural number like &lt;span class=&#34;math inline&#34;&gt;\(1, 1/2, 1/3 ... 1/n\)&lt;/span&gt;. This sequence approach to the 0, but never touch the 0. However, people can not take their desire to link the sequence and the 0. Becuase &lt;span class=&#34;math inline&#34;&gt;\(\infty\)&lt;/span&gt; is not member of natural number even real number, another concept is necessory to link the sequence and the 0. It is the limit. &lt;span class=&#34;math display&#34;&gt;\[ \lim{n\to\infty} \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The above sequence approach to the 0. But does all sequences approach to some points? What if the seqence is &lt;span class=&#34;math inline&#34;&gt;\(1/n\)&lt;/span&gt; if &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; is not multiple of 100, 0.001 if n is mutiple of 100.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/math/2019-08-22-limit_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;It approach to zero except at every mutiple of 10. The &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; is used for the definition of limit to exclude this example.&lt;/p&gt;
+&lt;p&gt;The sequence &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; is converges the limit &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; if for every postive &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt;, natural number &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; is present such that &lt;span class=&#34;math inline&#34;&gt;\(\vert a-Sn \vert &amp;lt;\epsilon\)&lt;/span&gt; is true in every &lt;span class=&#34;math inline&#34;&gt;\(n&amp;gt;N\)&lt;/span&gt;. Otherwise the limit is not defined and the sequence is divergent.&lt;/p&gt;
+&lt;p&gt;In topological space the &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; becomes the neiborhood.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Carathéodory&#39;s extension theorem</title>
+      <link>/post/math/2019-08-01-caratheodory/caratheodory-s-extension-theorem/</link>
+      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/2019-08-01-caratheodory/caratheodory-s-extension-theorem/</guid>
+      <description>
+
+
+&lt;p&gt;The studing sometimes starts with learning of boring preceding concepts. The highlight comes later. In the history, the highlight concepts or the important problem was centered and the supporting concepts or lemmas followed. The one of central ideas of analysis is &lt;strong&gt;extension&lt;/strong&gt;. The set of rational number (&lt;span class=&#34;math inline&#34;&gt;\(\mathbb{Q}\)&lt;/span&gt;) extends to the real line &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{R}\)&lt;/span&gt;. The Jordan measurerable sets extends to the Lebesgue measurable sets ( &lt;span class=&#34;math inline&#34;&gt;\(\sigma -algebra\)&lt;/span&gt; ).&lt;/p&gt;
+&lt;p&gt;The outer measure can measure &lt;strong&gt;all&lt;/strong&gt; subsets of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, where as measure can only measure a &lt;span class=&#34;math inline&#34;&gt;\(\sigma -algebra\)&lt;/span&gt; of measure set. The Carathéodory measurability defines the condittion to make a &lt;span class=&#34;math inline&#34;&gt;\(\sigma -algebra\)&lt;/span&gt;.&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ \mu^*(A) = \mu^*(A \cap E) + \mu^*(A \cap E^c) \]&lt;/span&gt;
+The Carathéodory extension theorem defines a condition to make an outer measure to an measure. The condition is that the outer measure applys to the Carathéodory measurable set (&lt;span class=&#34;math inline&#34;&gt;\(\sigma - algebra\)&lt;/span&gt;). (Torence Tao, An introduction to measure theory)&lt;/p&gt;
+&lt;p&gt;In the Riesz representation therorem, &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}_F\)&lt;/span&gt; extends to &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt;. The outer measure is &lt;span class=&#34;math inline&#34;&gt;\(\mu(E) = sup\ \ \{\mu(K): K \subset E,\ \ K \ \ compact \}\)&lt;/span&gt; for __every &lt;span class=&#34;math inline&#34;&gt;\(E \subset X\)&lt;/span&gt; analogus to Jordan outer measure. &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}_F\)&lt;/span&gt; is collection of subset &lt;span class=&#34;math inline&#34;&gt;\(E \subset X\)&lt;/span&gt; satisfying &lt;span class=&#34;math inline&#34;&gt;\(\mu (E) &amp;lt; \infty\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\mu (V) = sup \{\Lambda f:f\prec V \}\)&lt;/span&gt; analogus to Jordan inner measure. Thus &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}_F\)&lt;/span&gt; is analous to Jordan measurable set. &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt; is collection of subset &lt;span class=&#34;math inline&#34;&gt;\(E \subset X\)&lt;/span&gt; such that &lt;span class=&#34;math inline&#34;&gt;\(E \cap K \ \in \ \ \mathfrak{M}_F\)&lt;/span&gt; for every compact &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt;. This is the Carathéodory measurability. So the &lt;span class=&#34;math inline&#34;&gt;\(\mu(E)\)&lt;/span&gt; on the &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt; becomes measure. (Rudin’s Real and complex analysis)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Analysis</title>
+      <link>/post/math/2019-07-30-analysis/analysis/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/2019-07-30-analysis/analysis/</guid>
+      <description>
+
+
+&lt;p&gt;The reproducing kernel hilbert space (RKHS) was my motivation to study analysis. The hilbert space is a orthogonal normed vector space. I still do not know about the meaning of “reproducing kernal”. The RKHS appeared in the book titled &lt;em&gt;An Introduction to Statisitical Learning&lt;/em&gt; written by Hastie.&lt;/p&gt;
+&lt;p&gt;I began to google the meaning of the spaces such as the Hilbert, Banarch. I decided to read the &lt;em&gt;Understaing Analysis&lt;/em&gt; written by Abbott. The &lt;em&gt;Understaing Analysis&lt;/em&gt; was give me many intuitions of analysis and encouraged me to study further. The next book was Rudin’s &lt;em&gt;Functional Analysis&lt;/em&gt;. I realized I need to go upstream to complex Analysis, topology and measure.&lt;/p&gt;
+&lt;p&gt;During the journey of exploring the analysis, I skipped proving of theorems or solving exercises. But space between lines is coming. I’m realizing that I prove the spaces. &lt;span class=&#34;math display&#34;&gt;\[\Sigma^{k}_{j=1} {\lvert}a_j-a^{n}_j{\rvert}\le\epsilon \]&lt;/span&gt; This holds for all finite &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;, we even have &lt;span class=&#34;math inline&#34;&gt;\({\lVert} a-a_n {\rVert} _{1}\le\epsilon\)&lt;/span&gt;. This is on the way of the proof of &lt;span class=&#34;math inline&#34;&gt;\(l^{1}(\mathbb{N})\)&lt;/span&gt; of all complex-valued sequences &lt;span class=&#34;math inline&#34;&gt;\(a=(a_j)^{\infty}_{j=1}\)&lt;/span&gt; for which the norm &lt;span class=&#34;math inline&#34;&gt;\({\lVert} a {\rVert} _{1}\ := \Sigma^{\infty}_{j=1} {\lvert}a_j{\rvert}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;I could not just accept that the finite sum of each small differences &lt;span class=&#34;math inline&#34;&gt;\(\le \epsilon\)&lt;/span&gt; of &lt;span class=&#34;math inline&#34;&gt;\({\lvert}a_j - a^n_j{\rvert}\)&lt;/span&gt; holds to the infinite sum. The infinite sum is a infinte series. If the infinite series is less than or equel to zero, then it converses to the zero. If the finite sum is &lt;span class=&#34;math inline&#34;&gt;\(\le \epsilon\)&lt;/span&gt; holds every &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{N}\)&lt;/span&gt;, by definition the infinite sum is also &lt;span class=&#34;math inline&#34;&gt;\(\le \epsilon\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;It takes long time to grasp the subtle mathmatical systems. For example, a series is a number in a scalar field, a sequence is a ordered set. However the long time makes the math become familar and finally will firmly grasp the subtle concepts.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hee Jin Lee | Jun&#39;s Blog</title>
+    <link>/authors/hee-jin-lee/</link>
+      <atom:link href="/authors/hee-jin-lee/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hee Jin Lee</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Hee Jin Lee</title>
+      <link>/authors/hee-jin-lee/</link>
+    </image>
+    
+    <item>
+      <title>Cancer-testis antigen expression in serous endometrial cancer with loss of X chromosome inactivation</title>
+      <link>/publication/2015-01-01_cancer-testis_antige/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/2015-01-01_cancer-testis_antige/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dysregulation of X chromosome inactivation in high grade ovarian serous adenocarcinoma</title>
+      <link>/publication/2015-01-01_dysregulation_of_x_c/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/2015-01-01_dysregulation_of_x_c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prognostic and predictive value of NanoString-based immune-related gene signatures in a neoadjuvant setting of triple-negative breast cancer: relationship to tumor-infiltrating lymphocytes</title>
+      <link>/publication/2015-01-01_prognostic_and_predi/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/2015-01-01_prognostic_and_predi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Positive expression of insulin-like growth factor-1 receptor is associated with a positive hormone receptor status and a favorable prognosis in breast cancer</title>
+      <link>/publication/2014-01-01_positive_expression_/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/2014-01-01_positive_expression_/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prognostic significance of biallelic loss of PTEN in clear cell renal cell carcinoma</title>
+      <link>/publication/2014-01-01_prognostic_significa/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/2014-01-01_prognostic_significa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Ratio of Atypical Ductal Hyperplasia Foci to Core Numbers in Needle Biopsy: A Practical Index Predicting Breast Cancer in Subsequent Excision</title>
+      <link>/publication/2012-01-01_the_ratio_of_atypica/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/2012-01-01_the_ratio_of_atypica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dual-color silver-enhanced in situ hybridization for assessing HER2 gene amplification in breast cancer</title>
+      <link>/publication/2011-01-01_dual-color_silver-en/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/2011-01-01_dual-color_silver-en/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Histologic Parameters Predicting Survival of Patients with Multiple Non-small Cell Lung Cancers.</title>
+      <link>/publication/2011-01-01_histologic_parameter/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/2011-01-01_histologic_parameter/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

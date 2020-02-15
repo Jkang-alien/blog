@@ -1,0 +1,27 @@
+---
+title: "Cat"
+author: "Jun Kang"
+date: '2019 9 4 '
+output:
+  
+  beamer_presentation: default
+  ioslides_presentation: default
+  slidy_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+---
+
+## Cat
+![](milk.jpg)
+
+---
+
+## Second slide
+
+---
+
+## Third slide

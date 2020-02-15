@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Compact | Academic</title>
+    <link>/tags/compact/</link>
+      <atom:link href="/tags/compact/index.xml" rel="self" type="application/rss+xml" />
+    <description>Compact</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 07 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Compact</title>
+      <link>/tags/compact/</link>
+    </image>
+    
+    <item>
+      <title>Carathéodory&#39;s extension theorem</title>
+      <link>/post/math/caratheodory-s-extension-theorem/</link>
+      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/caratheodory-s-extension-theorem/</guid>
+      <description>
+
+
+&lt;p&gt;The studing sometimes starts with learning of boring preceding concepts. The highlight comes later. In the history, the highlight concepts or the important problem was centered and the supporting concepts or lemmas followed. The one of central ideas of analysis is &lt;strong&gt;extension&lt;/strong&gt;. The rational number&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+---
+title: Compactness
+author: JK
+date: '2019-09-07'
+slug: compactness
+categories:
+  - Math
+tags:
+  - Analysis
+  - Compactness
+  - Math
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-09-07T08:19:27+09:00'
+featured: no
+projects: []
+---
+
+Compact is a property of a space. In a nutshell, if a space is compact, we can treat the space be a **finite** because the space has a **finite subcover**. A continuous function on a compact space is uniformly continous.  
+
+Heine-Borel theorem describes the condition of compactness of **finite** dimentional space. **Closed and bounded** But the Heine-Borel theorem does not hold in a **infinite dimentional** space. We need another conditions.  
+
+Previously, the compact space can be finite by taking subcover. The infinite dimentional space can be finite by projection to finite dimention. If we could make as small as possible (i.e. $\epsilon > 0$ ) the norm of $(X\backslash(1-P)$, the compactness is achieved.  

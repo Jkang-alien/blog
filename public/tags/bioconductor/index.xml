@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bioconductor | Jun&#39;s Blog</title>
+    <link>/tags/bioconductor/</link>
+      <atom:link href="/tags/bioconductor/index.xml" rel="self" type="application/rss+xml" />
+    <description>bioconductor</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 24 May 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>bioconductor</title>
+      <link>/tags/bioconductor/</link>
+    </image>
+    
+    <item>
+      <title>Big Data TCGA </title>
+      <link>/talk/big_data/big-data-tcga/</link>
+      <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/big_data/big-data-tcga/</guid>
+      <description>&lt;p&gt;Abstact&lt;/p&gt;
+
+&lt;p&gt;TCGA is a large consortium of comprehensive cancer genomic research that opens publically the data. There are several way to access to the TCGA data. This talk introduce among the simple ways.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joon Kang | Jun&#39;s Blog</title>
+    <link>/authors/joon-kang/</link>
+      <atom:link href="/authors/joon-kang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Joon Kang</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Joon Kang</title>
+      <link>/authors/joon-kang/</link>
+    </image>
+    
+    <item>
+      <title>Prognostic value of immunohistochemical biomarkers at different cut-off values in patients with diffuse large B-cell lymphoma treated with CHOP chemotherapy</title>
+      <link>/publication/2011-01-01_prognostic_value_of_/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/2011-01-01_prognostic_value_of_/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Clinical significance of β1 integrin expression as a prediction marker for radiotherapy in early glottic carcinoma</title>
+      <link>/publication/2006-01-01_clinical_significanc/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publication/2006-01-01_clinical_significanc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

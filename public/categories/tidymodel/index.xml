@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tidymodel | Jun&#39;s Blog</title>
+    <link>/categories/tidymodel/</link>
+      <atom:link href="/categories/tidymodel/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tidymodel</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Tidymodel</title>
+      <link>/categories/tidymodel/</link>
+    </image>
+    
+    <item>
+      <title>Tidymodel</title>
+      <link>/post/tidymodel/</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/tidymodel/</guid>
+      <description>
+
+
+&lt;div id=&#34;machine-learning-and-tidymodel&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Machine Learning and Tidymodel&lt;/h3&gt;
+&lt;div id=&#34;model-setting-parsnip&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Model setting, {Parsnip}&lt;/h4&gt;
+&lt;p&gt;Rpackage Parsnip standardize model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specification and lately evaluates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;feature-engineering-recipes&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Feature engineering, {Recipes}&lt;/h4&gt;
+&lt;p&gt;Recipes makes preprocessing easy with &lt;code&gt;step_()&lt;/code&gt; functions. Recipes after specification, calculates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;resampling-rsample&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Resampling, {rsample}&lt;/h4&gt;
+&lt;p&gt;To choose a model and hyperparameters, we must validate the different models.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;making-hyperparameter-set-dials&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Making hyperparameter set, {dials}&lt;/h4&gt;
+&lt;p&gt;The Rpackage {dials} set hyperparameter similarily with {Parsnip}. {Dials} standadize parameter of each modeling algorithm.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;set-modeling-process-workflowr&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Set modeling process, {Workflowr}&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fit-models-with-hyperparameter-tunes&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Fit models with hyperparameter, {tunes}&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

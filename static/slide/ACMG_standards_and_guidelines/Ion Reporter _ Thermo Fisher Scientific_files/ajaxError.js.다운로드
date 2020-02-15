@@ -1,0 +1,65 @@
+/* global define:false*/
+define(['jquery', 'views/common/bannersView', 'i18n' ],
+
+    function($, BannerView, i18n) {
+        'use strict';
+
+        function showGlobalError(jqxhr) {
+
+            var ajaxError;
+            var title;
+
+            try {
+                var str = jqxhr.responseText.replace('\"\\&quot;', '\\"').replace('\\&quot;\"', '\\"');
+                ajaxError = JSON.parse(str);
+
+                // handle eula on ajax response
+                if (ajaxError.type === "com.lifetech.ionreporter.mgc.services.exceptions.EulaNotAcceptedException") {
+                    window.location = "/ir/eula-error.html";
+                }
+
+                // redirect csrf exceptions
+                if (ajaxError.type === 'com.lifetech.ionreporter.web.exception.CsrfSecurityException') {
+                    window.location = '/ir/csrf.html';
+                }
+
+                title = "";
+                if (ajaxError.localizedError) {
+                    title = '<strong>' + ajaxError.localizedError.code.errorCode + '</strong> ' +
+                            ajaxError.localizedError.errorMessage + '<br/>' +
+                            ajaxError.localizedError.correctiveActionMessage;
+                } else {
+                    var link = '<div style="display:none;">' + i18n.t('error.message.contact.support') + ' ' + ajaxError.hash + '</div><a href="#" id="moreAjaxError">More</a>';
+                    title = '<strong>' + ajaxError.status + '</strong> ' + ajaxError.message + ' ' + link;
+                }
+            } catch (error) {
+                title = '<strong>' + jqxhr.status + '</strong> ' + jqxhr.statusText;
+            }
+
+            var container;
+            if ($('.modal').hasClass('in')) {
+                container = $(".modal-body");
+            } else {
+                container = $(".main .container-fluid:first");
+            }
+
+            var bannerView = new BannerView({
+                id: 'ajaxerror',
+                container: container,
+                static: true,
+                style: 'error',
+                title: title
+            });
+
+            bannerView.render();
+
+            $('#moreAjaxError').on('click', function () {
+                $(this).prev('div').slideToggle();
+                $(this).hide();
+            });
+        }
+
+        return {
+            showGlobalError: showGlobalError
+        };
+    });

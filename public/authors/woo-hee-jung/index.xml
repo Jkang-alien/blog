@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Woo Hee Jung | Jun&#39;s Blog</title>
+    <link>/authors/woo-hee-jung/</link>
+      <atom:link href="/authors/woo-hee-jung/index.xml" rel="self" type="application/rss+xml" />
+    <description>Woo Hee Jung</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2012 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Woo Hee Jung</title>
+      <link>/authors/woo-hee-jung/</link>
+    </image>
+    
+    <item>
+      <title>HER2 status by standardized immunohistochemistry and silver-enhanced in situ hybridization in Korean breast cancer</title>
+      <link>/publication/2012-01-01_her2_status_by_stand/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/2012-01-01_her2_status_by_stand/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

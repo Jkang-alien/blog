@@ -1,0 +1,26 @@
+---
+title: Web application for NGS interpretation description management
+author: JK
+date: '2019-7-30'
+draft: true
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+lastmod: '2019-08-14T11:48:56+09:00'
+projects: []
+slug: web-application-for-ngs-interpretation-description-management
+subtitle: ''
+summary: ''
+---
+
+
+
+<p>Background<br />
+The next generation sequencing (NGS) has been used in cancer treatment and diagnosis. The pathologic report of NGS includes the interpretation of found variants. The interpretation describes the information and the clinical significance of the variants. The list of the interpretation produced in a pathology lab is a kind of a knowledge base. We made a simple web application for management of NGS interpretation description using Shiny which is an R package that makes it easy to build interactive web apps.</p>
+<p>Methods<br />
+We modified the publically opened Shiny CRUD (Create, Read, Update and Delete) application (<a href="https://github.com/bborgesr/wsds2017" class="uri">https://github.com/bborgesr/wsds2017</a>). The existing interpretation data was managed with Microsoft Excel. The excel data was modified and inserted in the SQLite database on the R program. The web application was locally deployed.</p>
+<p>Results
+It takes one weak as additional work to develope the application by one intermediate R user who had no experience or knowladge of the web application development. The pathologists can manage together the interpretation knowledge base. The user interface becomes better. The workflow is improved. The demo site is located at <a href="https://jkang.shinyapps.io/Interpretation/" class="uri">https://jkang.shinyapps.io/Interpretation/</a>.</p>
+<p>Conclusions<br />
+The pathology lab can develop a web application for NGS interpretation description management using Shiny R package</p>

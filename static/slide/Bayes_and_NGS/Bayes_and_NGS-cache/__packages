@@ -1,0 +1,7 @@
+base
+knitr
+StanHeaders
+ggplot2
+rstan
+dplyr
+tibble

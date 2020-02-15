@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Genomics | Jun&#39;s Blog</title>
+    <link>/tags/genomics/</link>
+      <atom:link href="/tags/genomics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Genomics</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 27 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Genomics</title>
+      <link>/tags/genomics/</link>
+    </image>
+    
+    <item>
+      <title>Allele frequency and somatic variant</title>
+      <link>/talk/allele-frequency-and-somatic-variant/</link>
+      <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/allele-frequency-and-somatic-variant/</guid>
+      <description>
+
+
+
+</description>
+    </item>
+    
+    <item>
+      <title>ACMG Standards and guidelines for interpretation of sequence variants</title>
+      <link>/talk/acmg-standards-and-guidelines-for-interpretation-of-sequence-variants/</link>
+      <pubDate>Wed, 18 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/acmg-standards-and-guidelines-for-interpretation-of-sequence-variants/</guid>
+      <description>
+
+
+&lt;p&gt;Molecular tumor board 2019/09/26&lt;br /&gt;
+KCSG GY Cancer Symposium, Dragon city hotel, 2019/11/08&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Annotation Redundancy</title>
+      <link>/talk/annotation-redundancy/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/annotation-redundancy/</guid>
+      <description>
+
+
+&lt;p&gt;The 71st Annual Fall Meeting of Korean Society of Pathologists
+Case presentation at molecular pathology lecture&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Big Data TCGA </title>
+      <link>/talk/big_data/big-data-tcga/</link>
+      <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/big_data/big-data-tcga/</guid>
+      <description>&lt;p&gt;Abstact&lt;/p&gt;
+
+&lt;p&gt;TCGA is a large consortium of comprehensive cancer genomic research that opens publically the data. There are several way to access to the TCGA data. This talk introduce among the simple ways.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ho Yun Lee | Jun&#39;s Blog</title>
+    <link>/authors/ho-yun-lee/</link>
+      <atom:link href="/authors/ho-yun-lee/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ho Yun Lee</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Ho Yun Lee</title>
+      <link>/authors/ho-yun-lee/</link>
+    </image>
+    
+    <item>
+      <title>Deciphering Clinicoradiologic Phenotype for Thymidylate Synthase Expression Status in Patients with Advanced Lung Adenocarcinoma Using a Radiomics Approach</title>
+      <link>/publication/2018-01-01_deciphering_clinicor/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/2018-01-01_deciphering_clinicor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prognostic impact of nomogram based on whole tumour size, tumour disappearance ratio on CT and SUVmax on PET in lung adenocarcinoma</title>
+      <link>/publication/2016-01-01_prognostic_impact_of/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/2016-01-01_prognostic_impact_of/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prognostic significance of biallelic loss of PTEN in clear cell renal cell carcinoma</title>
+      <link>/publication/2014-01-01_prognostic_significa/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/2014-01-01_prognostic_significa/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

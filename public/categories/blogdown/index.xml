@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogdown | Academic</title>
+    <link>/categories/blogdown/</link>
+      <atom:link href="/categories/blogdown/index.xml" rel="self" type="application/rss+xml" />
+    <description>Blogdown</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 25 May 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Blogdown</title>
+      <link>/categories/blogdown/</link>
+    </image>
+    
+    <item>
+      <title>Addins</title>
+      <link>/post/2019-05-25-addins/</link>
+      <pubDate>Sat, 25 May 2019 00:00:00 +0000</pubDate>
+      <guid>/post/2019-05-25-addins/</guid>
+      <description>
+
+
+&lt;div id=&#34;writing-a-contents-by-addins&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Writing a contents by addins&lt;/h3&gt;
+&lt;p&gt;Problum: plain RMarkdown file display was not good. Date and author were not valid.&lt;/p&gt;
+&lt;p&gt;This is exercise write a contents by addins.&lt;br /&gt;
+It makes valid YAML and automatically saved in contents post directory.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
