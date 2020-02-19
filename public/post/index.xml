@@ -5,12 +5,28 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 08 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Duality</title>
+      <link>/post/duality/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/post/duality/</guid>
+      <description>
+
+
+&lt;p&gt;This is summary of Boyd convex optimization. Steepest descent method is a convex optimization algorithm. The normalized steepest descent direction &lt;span class=&#34;math inline&#34;&gt;\(x_{nsd}\)&lt;/span&gt; is a vector of unit ball of a norm that extends in the direction &lt;span class=&#34;math inline&#34;&gt;\(-\nabla f(x)\)&lt;/span&gt;. The inner product of &lt;span class=&#34;math inline&#34;&gt;\(x_{nsd}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(-\nabla f(x)\)&lt;/span&gt; is maximized. The first order Taylor approximation of &lt;span class=&#34;math inline&#34;&gt;\(f(x+v) = f(x) + \nabla f(x)^{T} v\)&lt;/span&gt; is most efficient when &lt;span class=&#34;math inline&#34;&gt;\(v = x_{nsd}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;span class=&#34;math inline&#34;&gt;\(x_{nsd}\)&lt;/span&gt; is unnormalized into &lt;span class=&#34;math inline&#34;&gt;\(x_{sd}\)&lt;/span&gt;. The normalization is ralated with unit ball of norm. When &lt;span class=&#34;math inline&#34;&gt;\(x_{nsd}\)&lt;/span&gt; is scaled with dual norm of &lt;span class=&#34;math inline&#34;&gt;\(-\nabla f(x)\)&lt;/span&gt;, the second term of Taylor approximation &lt;span class=&#34;math inline&#34;&gt;\(\nabla f(x)^{T} x_{sd}\)&lt;/span&gt; becomes convex (squre of &lt;strong&gt;dual norm&lt;/strong&gt; of gradient of &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt;). The unnormalized &lt;span class=&#34;math inline&#34;&gt;\(x_{sd}\)&lt;/span&gt; the amount of movement of approximation because the inner product of gradient of &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; and unnormalized steepest descent direction is squre of &lt;strong&gt;dual norm&lt;/strong&gt; of gradient.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;dual norm&lt;/strong&gt; of gradient &lt;span class=&#34;math inline&#34;&gt;\(\lVert \nabla f(x) \rVert\)&lt;/span&gt; is main subject of this post. The simplest dual is complement of set. The &lt;span class=&#34;math inline&#34;&gt;\((C^c)^c\)&lt;/span&gt; is &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt;. If &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt; is small, &lt;span class=&#34;math inline&#34;&gt;\(C^C\)&lt;/span&gt; is large and vice versa. Dual cone is related with inner product and non-negativity. Let &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; be a cone, The set &lt;span class=&#34;math inline&#34;&gt;\(K^{*} = \{y|x^{T}y \geq 0\)&lt;/span&gt; for all &lt;span class=&#34;math inline&#34;&gt;\(x \in K\}\)&lt;/span&gt;. If &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; is large, &lt;span class=&#34;math inline&#34;&gt;\(K^{*}\)&lt;/span&gt; is small and vice versa.&lt;/p&gt;
+&lt;p&gt;The dual norm &lt;span class=&#34;math inline&#34;&gt;\(\left\lVert x \right\rVert _{*}\)&lt;/span&gt; is $ {x^{T}y| y 1 }$. If &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; direction is long axis of ellypsoid norm, the norm of &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; is small. But the dual norm is large because &lt;span class=&#34;math inline&#34;&gt;\(\lVert y \rVert _{2}\)&lt;/span&gt; large and vice versa.&lt;/p&gt;
+&lt;p&gt;The main points are the first order Taylor approximation is most efficient with ellypsoid norm when the linear approximation is &lt;span class=&#34;math inline&#34;&gt;\(\sup\{\nabla f(x) ^{T} x_{sd}\}\)&lt;/span&gt; which is &lt;strong&gt;dual norm&lt;/strong&gt; of gradient of &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Strong convexity and implications</title>
@@ -679,9 +695,9 @@ But the &lt;span class=&#34;math inline&#34;&gt;\(C(I)\)&lt;/span&gt; with the n
     
     <item>
       <title>NGS interpretation database and search</title>
-      <link>/post/r/2019-08-11-interpretation/ngs-interpretation-database-and-search/</link>
+      <link>/post/r/ngs-interpretation-database-and-search/</link>
       <pubDate>Sun, 11 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>/post/r/2019-08-11-interpretation/ngs-interpretation-database-and-search/</guid>
+      <guid>/post/r/ngs-interpretation-database-and-search/</guid>
       <description>
 
 
@@ -693,9 +709,9 @@ But the &lt;span class=&#34;math inline&#34;&gt;\(C(I)\)&lt;/span&gt; with the n
     
     <item>
       <title>Carathéodory&#39;s extension theorem</title>
-      <link>/post/math/2019-08-01-caratheodory/caratheodory-s-extension-theorem/</link>
+      <link>/post/math/caratheodory-s-extension-theorem/</link>
       <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>/post/math/2019-08-01-caratheodory/caratheodory-s-extension-theorem/</guid>
+      <guid>/post/math/caratheodory-s-extension-theorem/</guid>
       <description>
 
 
@@ -709,9 +725,9 @@ The Carathéodory extension theorem defines a condition to make an outer measure
     
     <item>
       <title>Analysis</title>
-      <link>/post/math/2019-07-30-analysis/analysis/</link>
+      <link>/post/math/analysis/</link>
       <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>/post/math/2019-07-30-analysis/analysis/</guid>
+      <guid>/post/math/analysis/</guid>
       <description>
 
 
