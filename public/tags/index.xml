@@ -77,14 +77,6 @@
     </item>
     
     <item>
-      <title>cbioportal</title>
-      <link>/tags/cbioportal/</link>
-      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/cbioportal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Ion Torrent</title>
       <link>/tags/ion-torrent/</link>
       <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
@@ -97,6 +89,14 @@
       <link>/tags/thermo-fisher-scientific/</link>
       <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
       <guid>/tags/thermo-fisher-scientific/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cbioportal</title>
+      <link>/tags/cbioportal/</link>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/cbioportal/</guid>
       <description></description>
     </item>
     
@@ -189,18 +189,18 @@
     </item>
     
     <item>
-      <title>bioconductor</title>
-      <link>/tags/bioconductor/</link>
-      <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/bioconductor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>TCGA</title>
       <link>/tags/tcga/</link>
       <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
       <guid>/tags/tcga/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bioconductor</title>
+      <link>/tags/bioconductor/</link>
+      <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/bioconductor/</guid>
       <description></description>
     </item>
     

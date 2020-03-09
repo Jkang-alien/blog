@@ -27,6 +27,6 @@ The $x_{nsd}$ is unnormalized into $x_{sd}$. The normalization is ralated with u
 
 The **dual norm** of gradient $\lVert \nabla f(x) \rVert$ is main subject of this post. The simplest dual is complement of set. The $(C^c)^c$ is $C$. If $C$ is small, $C^C$ is large and vice versa. Dual cone is related with inner product and non-negativity. Let $K$ be a cone, The set $K^{*} = \{y|x^{T}y \geq 0$ for all $x \in K\}$. If $K$ is large, $K^{*}$ is small and vice versa.  
 
-The dual norm $\left\lVert x \right\rVert _{*}$ is $ \sup \{x^{T}y| \left\lVert y \right\rVert \leq 1 \}$. If $x$ direction is long axis of ellypsoid norm, the norm of $x$ is small.  But the dual norm is large because $\lVert y \rVert _{2}$ large and vice versa.  
+The dual norm $\left\lVert x \right\rVert _{*}$ is $\sup \{\, x^{T}y \mid \lVert y \rVert \leq 1 \,\}$. If $x$ direction is long axis of ellypsoid norm, the norm of $x$ is small.  But the dual norm is large because $\lVert y \rVert _{2}$ large and vice versa.  
 
 The main points are the first order Taylor approximation is most efficient with ellypsoid norm when the linear approximation is $\sup\{\nabla f(x) ^{T} x_{sd}\}$ which is **dual norm** of gradient of $f(x)$.  

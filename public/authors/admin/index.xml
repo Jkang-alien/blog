@@ -12,5 +12,14 @@
       <link>/authors/admin/</link>
     </image>
     
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;Jun Kang is a clinical assistant professor of hospital pathology at the Catholic university of Korea. His research interests include pathology, oncology and statistics.&lt;/p&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
