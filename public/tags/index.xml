@@ -5,7 +5,7 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 15 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
@@ -13,18 +13,26 @@
     </image>
     
     <item>
-      <title>Convex optimization</title>
-      <link>/tags/convex-optimization/</link>
-      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
-      <guid>/tags/convex-optimization/</guid>
+      <title>Information theory</title>
+      <link>/tags/information-theory/</link>
+      <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/information-theory/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Math</title>
       <link>/tags/math/</link>
-      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Convex optimization</title>
+      <link>/tags/convex-optimization/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/convex-optimization/</guid>
       <description></description>
     </item>
     
@@ -77,6 +85,14 @@
     </item>
     
     <item>
+      <title>cbioportal</title>
+      <link>/tags/cbioportal/</link>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/cbioportal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ion Torrent</title>
       <link>/tags/ion-torrent/</link>
       <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
@@ -89,14 +105,6 @@
       <link>/tags/thermo-fisher-scientific/</link>
       <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
       <guid>/tags/thermo-fisher-scientific/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cbioportal</title>
-      <link>/tags/cbioportal/</link>
-      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/cbioportal/</guid>
       <description></description>
     </item>
     
@@ -189,18 +197,18 @@
     </item>
     
     <item>
-      <title>TCGA</title>
-      <link>/tags/tcga/</link>
-      <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/tcga/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>bioconductor</title>
       <link>/tags/bioconductor/</link>
       <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
       <guid>/tags/bioconductor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TCGA</title>
+      <link>/tags/tcga/</link>
+      <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
+      <guid>/tags/tcga/</guid>
       <description></description>
     </item>
     

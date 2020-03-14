@@ -5,12 +5,27 @@
     <link>/tags/math/</link>
       <atom:link href="/tags/math/index.xml" rel="self" type="application/rss+xml" />
     <description>Math</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 15 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Math</title>
       <link>/tags/math/</link>
     </image>
+    
+    <item>
+      <title>Entropy</title>
+      <link>/post/entropy/</link>
+      <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/entropy/</guid>
+      <description>
+
+
+&lt;p&gt;This is a note for Elements of information theory of Thomas M. Cover.&lt;/p&gt;
+&lt;p&gt;The entropy (&lt;span class=&#34;math inline&#34;&gt;\(H\)&lt;/span&gt;) is a measure of uncertainty of a variable which is the answer of what is the ultimate data compression. Is the conditional probability &lt;span class=&#34;math inline&#34;&gt;\(p(x|y)\)&lt;/span&gt; considered as a probability of the “conditional variable” &lt;span class=&#34;math inline&#34;&gt;\((X|Y=y)\)&lt;/span&gt;. Yes, It is the subset of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; given &lt;span class=&#34;math inline&#34;&gt;\(Y=y\)&lt;/span&gt;. If you sum all of the subset probabilities, it becomes the cardinality of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;. Thus If you make that become 1, the conditional probability should be multipied with &lt;span class=&#34;math inline&#34;&gt;\(p(x)\)&lt;/span&gt;. The conditional probablity is larger than joint probabilities &lt;span class=&#34;math inline&#34;&gt;\(p(x,y)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s think about the entropy of a joint random variable (&lt;span class=&#34;math inline&#34;&gt;\((X,Y)\)&lt;/span&gt;). If &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; are correlated &lt;span class=&#34;math inline&#34;&gt;\(p(x,y)\)&lt;/span&gt;, the entries of the contigent table of &lt;span class=&#34;math inline&#34;&gt;\(p(x,y)\)&lt;/span&gt; are concentrated at some points that means lager or smaller probablities than product of &lt;span class=&#34;math inline&#34;&gt;\(p(x)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(p(y)\)&lt;/span&gt;. The joint probability is a product of probability of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; (&lt;span class=&#34;math inline&#34;&gt;\(p(x)\)&lt;/span&gt;) and conditional probability &lt;span class=&#34;math inline&#34;&gt;\(p(X|Y)\)&lt;/span&gt;. The conditional entropy is expectation of random variable (conditional entropy) is . The conditional entropy does not means the entropy of subset of &lt;span class=&#34;math inline&#34;&gt;\(X|Y=y\)&lt;/span&gt;. It is a measure of uncertainty of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; given &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt;. If &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; has the &lt;strong&gt;information&lt;/strong&gt; of the &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, the entropy of &lt;span class=&#34;math inline&#34;&gt;\(X|Y\)&lt;/span&gt; is less than &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;. The conditional entropy &lt;span class=&#34;math inline&#34;&gt;\(H(X|Y)\)&lt;/span&gt; is substract the entropy of Y &lt;span class=&#34;math inline&#34;&gt;\(H(Y)\)&lt;/span&gt; from joint entropy &lt;span class=&#34;math inline&#34;&gt;\(H(X,Y)\)&lt;/span&gt;. The joint probability &lt;span class=&#34;math inline&#34;&gt;\(p(x,y)\)&lt;/span&gt; is the product of probability of &lt;span class=&#34;math inline&#34;&gt;\(Y\)&lt;/span&gt; and conditional probability &lt;span class=&#34;math inline&#34;&gt;\(p(x|Y=y)\)&lt;/span&gt;. This is chain rule of joint entropy &lt;span class=&#34;math inline&#34;&gt;\(H(X,Y) = H(Y) + H(X|Y)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The chain rule is converting joint variable to sum of conditional random vairiables. The joint variable is sum of conditional random variables. This is can be applied in the entropy, the information and the relative entropy.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Duality</title>
@@ -160,9 +175,9 @@ holds for every open set &lt;span class=&#34;math inline&#34;&gt;\(E\)&lt;/span&
     
     <item>
       <title>Carathéodory&#39;s extension theorem</title>
-      <link>/post/math/2019-08-01-caratheodory/caratheodory-s-extension-theorem/</link>
+      <link>/post/math/caratheodory-s-extension-theorem/</link>
       <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
-      <guid>/post/math/2019-08-01-caratheodory/caratheodory-s-extension-theorem/</guid>
+      <guid>/post/math/caratheodory-s-extension-theorem/</guid>
       <description>
 
 
