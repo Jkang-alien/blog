@@ -5,12 +5,36 @@
     <link>/categories/</link>
       <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Categories</title>
       <link>/categories/</link>
     </image>
+    
+    <item>
+      <title>R</title>
+      <link>/categories/r/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/categories/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stastics</title>
+      <link>/categories/stastics/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/categories/stastics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tidymodel</title>
+      <link>/categories/tidymodel/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/categories/tidymodel/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Machine learning</title>
@@ -25,30 +49,6 @@
       <link>/categories/math/</link>
       <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
       <guid>/categories/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R</title>
-      <link>/categories/r/</link>
-      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/categories/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Stastics</title>
-      <link>/categories/stastics/</link>
-      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/categories/stastics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tidymodel</title>
-      <link>/categories/tidymodel/</link>
-      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/categories/tidymodel/</guid>
       <description></description>
     </item>
     
