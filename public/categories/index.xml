@@ -5,7 +5,11 @@
     <link>/categories/</link>
       <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
+<<<<<<< HEAD
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
+=======
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 15 Mar 2020 00:00:00 +0000</lastBuildDate>
+>>>>>>> 91acbf701dc16cb085232215049aa2e71c31a4eb
     <image>
       <url>/img/icon-192.png</url>
       <title>Categories</title>
@@ -13,6 +17,25 @@
     </image>
     
     <item>
+<<<<<<< HEAD
+=======
+      <title>Math</title>
+      <link>/categories/math/</link>
+      <pubDate>Sun, 15 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/categories/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine learning</title>
+      <link>/categories/machine-learning/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/categories/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+>>>>>>> 91acbf701dc16cb085232215049aa2e71c31a4eb
       <title>R</title>
       <link>/categories/r/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
