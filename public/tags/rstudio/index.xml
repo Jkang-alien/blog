@@ -20,7 +20,7 @@
       <description>
 
 
-&lt;p&gt;When the penalized generalize linear model (Lasso or Ridge) is processed in tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of final model is confusing. Here is an example. This example predict PIK3CA mutation status by gene expression data. TCGA breast cancer dataset was used.&lt;/p&gt;
+&lt;p&gt;When the penalized generalize linear model (Lasso or Ridge) is processed in tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.&lt;/p&gt;
 &lt;div id=&#34;modeling&#34; class=&#34;section level5&#34;&gt;
 &lt;h5&gt;Modeling&lt;/h5&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidymodels)
@@ -81,7 +81,7 @@ show_best(glmn_tune)&lt;/code&gt;&lt;/pre&gt;
   wfl %&amp;gt;%
   finalize_workflow(best_glmn) %&amp;gt;%
   fit(data = trainset_ahDiff)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;finalize_workflow()&lt;/code&gt; finalizing the model with selected optimal hyperparameters. However the glmnet fit any lambda, not indicated lambda. final fitting with the indicated hyperparameters. This was issued at &lt;a href=&#34;https://github.com/tidymodels/parsnip/issues/195&#34; class=&#34;uri&#34;&gt;https://github.com/tidymodels/parsnip/issues/195&lt;/a&gt;. The glmnet is more efficient to fit all lambda than a single lambda. Thus tidymodel ignores the indicated lambda. This made first confusion. &lt;strong&gt;The finalization can be finalized by predict in tidymodel environment.&lt;/strong&gt; Finalize with &lt;code&gt;predict&lt;/code&gt;. Note the last argument &lt;code&gt;penalty = 1&lt;/code&gt; of &lt;code&gt;stats::predict(wfl_final, type = &#34;prob&#34;, new_data = trainset_ahDiff, penalty = 1)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;finalize_workflow()&lt;/code&gt; finalizes the model with selected optimal hyperparameters. However the glmnet fits any lambda, not the indicated lambda. This was discussed at &lt;a href=&#34;https://github.com/tidymodels/parsnip/issues/195&#34; class=&#34;uri&#34;&gt;https://github.com/tidymodels/parsnip/issues/195&lt;/a&gt;. The glmnet is more efficient to fit all lambda than a single lambda. Thus tidymodel ignores the indicated lambda. This made first confusion. &lt;strong&gt;The finalization can be finalized by predict in tidymodel environment.&lt;/strong&gt; Finalize with &lt;code&gt;predict&lt;/code&gt;. Note the last argument &lt;code&gt;penalty = 1&lt;/code&gt; of &lt;code&gt;stats::predict(wfl_final, type = &#34;prob&#34;, new_data = trainset_ahDiff, penalty = 1)&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;train_predict &amp;lt;- stats::predict(wfl_final, type = &amp;quot;prob&amp;quot;, new_data = trainset_ahDiff, penalty = 1)
 train_probs &amp;lt;- 
   predict(wfl_final, type = &amp;quot;prob&amp;quot;, new_data = trainset_ahDiff) %&amp;gt;%
@@ -102,10 +102,10 @@ train_probs &amp;lt;-
 ##   .metric .estimator .estimate
 ##   &amp;lt;chr&amp;gt;   &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt;
 ## 1 roc_auc binary         0.769&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Because glmnet fit whole path, there are whole coefficients in glmnet fit object &lt;code&gt;wfl_final&lt;/code&gt;. This was second confusion. Getting the final model coeffients is below.&lt;/p&gt;
+&lt;p&gt;Because glmnet fits whole path, there are whole coefficients in the glmnet fit object &lt;code&gt;wfl_final&lt;/code&gt;. This was second confusion. HOw to get the final model coeffients is below.&lt;/p&gt;
 &lt;/div&gt;
-&lt;div id=&#34;coefficiency&#34; class=&#34;section level5&#34;&gt;
-&lt;h5&gt;Coefficiency&lt;/h5&gt;
+&lt;div id=&#34;coefficients&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;Coefficients&lt;/h5&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tidy(extract_model(wfl_final)) %&amp;gt;%
   filter(lambda &amp;gt; 0.98 &amp;amp; lambda &amp;lt; 1.01)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 17 x 5

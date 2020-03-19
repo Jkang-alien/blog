@@ -37,7 +37,7 @@ read_chunk("./scripts/tidymodel_glmn.R")
 <<library>>
 ```
 
-When the penalized generalize linear model (Lasso or Ridge) is processed in tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of final model is confusing. Here is an example. This example predict PIK3CA mutation status by gene expression data. TCGA breast cancer dataset was used.  
+When the penalized generalize linear model (Lasso or Ridge) is processed in tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.  
 
 ```{r, echo=FALSE}
 <<load>>
@@ -66,7 +66,7 @@ When the penalized generalize linear model (Lasso or Ridge) is processed in tidy
 <<Finalize_model>>
 ```
 
-```finalize_workflow()``` finalizing the model with selected optimal hyperparameters. However the glmnet fit any lambda, not indicated lambda. final fitting with the indicated hyperparameters. This was issued at https://github.com/tidymodels/parsnip/issues/195. The glmnet is more efficient to fit all lambda than a single lambda. Thus tidymodel ignores the indicated lambda. This made first confusion. **The finalization can be finalized by predict in tidymodel environment.** Finalize with ```predict```. Note the last argument ```penalty = 1``` of ```stats::predict(wfl_final, type = "prob", new_data = trainset_ahDiff, penalty = 1)```.
+```finalize_workflow()``` finalizes the model with selected optimal hyperparameters. However the glmnet fits any lambda, not the indicated lambda. This was discussed at https://github.com/tidymodels/parsnip/issues/195. The glmnet is more efficient to fit all lambda than a single lambda. Thus tidymodel ignores the indicated lambda. This made first confusion. **The finalization can be finalized by predict in tidymodel environment.** Finalize with ```predict```. Note the last argument ```penalty = 1``` of ```stats::predict(wfl_final, type = "prob", new_data = trainset_ahDiff, penalty = 1)```.
 
 ```{r predict}
 <<trainset_prediction>>
@@ -78,9 +78,9 @@ When the penalized generalize linear model (Lasso or Ridge) is processed in tidy
 <<performance>>
 ```
 
-Because glmnet fit whole path, there are whole coefficients in glmnet fit object ```wfl_final```. This was second confusion. Getting the final model coeffients is below.  
+Because glmnet fits whole path, there are whole coefficients in the glmnet fit object ```wfl_final```. This was second confusion. HOw to get the final model coeffients is below.  
 
-##### Coefficiency  
+##### Coefficients    
 ```{r coeffi}
 <<coefficiency>>
 ```
