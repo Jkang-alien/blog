@@ -46,4 +46,4 @@ This is approximation. Now $x$ becomes $h$ and parameters calculated from deriva
 $f(x \pm h) = f(x) \pm hf'(x) + \frac{h^2}{2}f''(x) \pm \frac{h^3}{6}f^{(3)}(x) + O(h^4)$
 
 
-![https://betterexplained.com/articles/taylor-series/](images/sine-better-models.png)
+![https://betterexplained.com/articles/taylor-series/](img/sine-better-models.png)  
