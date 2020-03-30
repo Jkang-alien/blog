@@ -28,10 +28,14 @@
   
     
   
-  <meta name="description" content="Clinical Assistant Professor of Hospital Pathology">
+  <meta name="description" content="\[ f(x) = \sum_{k=0}^\infty c_k x^k = c_0 &#43; c_1 x &#43; c_2 x^2 &#43; \dotsb. \]
+This is apporoximation which is function of h and derivatives of \(f(x)\) are elements of parameters.
+$ f(x h) = f(x) hf’(x) &#43; f’’(x) f^{(3)}(x) &#43; O(h^4)$
+Let’s think about \(\sin(x)\).
+\[\begin{align*} f(x) &amp;= \sin(x) &amp; f(0) &amp;= 0f&#39;(x) &amp;= \cos(x) &amp; f&#39;(0) &amp;= 1f(x) &amp;= -\sin(x) &amp; f(0) &amp;= 0f(x) &amp;= -\cos(x) &amp; f(0) &amp;= -1&amp; \vdots \end{align*}\]">
 
   
-  <link rel="alternate" hreflang="en-us" href="/tags/convex-optimization/">
+  <link rel="alternate" hreflang="en-us" href="/post/taylor-series/">
 
   
 
@@ -107,14 +111,12 @@
   
 
   
-  <link rel="alternate" href="/tags/convex-optimization/index.xml" type="application/rss+xml" title="Jun&#39;s Blog">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/tags/convex-optimization/">
+  <link rel="canonical" href="/post/taylor-series/">
 
   
   
@@ -127,12 +129,19 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Jun&#39;s Blog">
-  <meta property="og:url" content="/tags/convex-optimization/">
-  <meta property="og:title" content="Convex optimization | Jun&#39;s Blog">
-  <meta property="og:description" content="Clinical Assistant Professor of Hospital Pathology"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/post/taylor-series/">
+  <meta property="og:title" content="Taylor series | Jun&#39;s Blog">
+  <meta property="og:description" content="\[ f(x) = \sum_{k=0}^\infty c_k x^k = c_0 &#43; c_1 x &#43; c_2 x^2 &#43; \dotsb. \]
+This is apporoximation which is function of h and derivatives of \(f(x)\) are elements of parameters.
+$ f(x h) = f(x) hf’(x) &#43; f’’(x) f^{(3)}(x) &#43; O(h^4)$
+Let’s think about \(\sin(x)\).
+\[\begin{align*} f(x) &amp;= \sin(x) &amp; f(0) &amp;= 0f&#39;(x) &amp;= \cos(x) &amp; f&#39;(0) &amp;= 1f(x) &amp;= -\sin(x) &amp; f(0) &amp;= 0f(x) &amp;= -\cos(x) &amp; f(0) &amp;= -1&amp; \vdots \end{align*}\]"><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-03-31T00:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2020-03-31T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-03-31T06:49:54&#43;09:00">
   
 
   
@@ -144,7 +153,7 @@
 
 
 
-  <title>Convex optimization | Jun&#39;s Blog</title>
+  <title>Taylor series | Jun&#39;s Blog</title>
 
 </head>
 
@@ -318,87 +327,376 @@
 </nav>
 
 
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Taylor series</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2020-03-31 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2020-03-31 06:49:54 &#43;0900 KST" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    <time>Mar 31, 2020</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/taylor-series/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/math/">Math</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/taylor-series/&amp;text=Taylor%20series" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/taylor-series/&amp;t=Taylor%20series" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Taylor%20series&amp;body=/post/taylor-series/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/taylor-series/&amp;title=Taylor%20series" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Taylor%20series%20/post/taylor-series/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/taylor-series/&amp;title=Taylor%20series" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+
+<p><span class="math display">\[ f(x) = \sum_{k=0}^\infty c_k x^k = c_0 + c_1 x + c_2 x^2 + \dotsb. \]</span></p>
+<p>This is apporoximation which is function of h and derivatives of <span class="math inline">\(f(x)\)</span> are elements of parameters.</p>
+<p>$ f(x h) = f(x) hf’(x) + f’’(x) f^{(3)}(x) + O(h^4)$</p>
+<p>Let’s think about <span class="math inline">\(\sin(x)\)</span>.</p>
+<p><span class="math display">\[\begin{align*} f(x) &amp;= \sin(x) &amp; f(0) &amp;= 0
+f&#39;(x) &amp;= \cos(x) &amp; f&#39;(0) &amp;= 1
+f(x) &amp;= -\sin(x) &amp; f(0) &amp;= 0
+f(x) &amp;= -\cos(x) &amp; f(0) &amp;= -1
+&amp; \vdots \end{align*}\]</span></p>
+<p>Thus,</p>
+<p><span class="math display">\[\begin{align*} \sin(x) &amp;= 0 + \frac{1}{1!}x + \frac{0}{2!}x^2 + \frac{-1}{3!}x^3 + \dotsb
+&amp;= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \dotsb, \end{align*}\]</span></p>
+<p>This is approximation. Now <span class="math inline">\(x\)</span> becomes <span class="math inline">\(h\)</span> and parameters calculated from derivatives of <span class="math inline">\(f(x)\)</span> at <span class="math inline">\(0\)</span>.<br />
+<span class="math inline">\(f(x \pm h) = f(x) \pm hf&#39;(x) + \frac{h^2}{2}f&#39;&#39;(x) \pm \frac{h^3}{6}f^{(3)}(x) + O(h^4)\)</span></p>
+<div class="figure">
+<img src="images/sine-better-models.png" alt="https://betterexplained.com/articles/taylor-series/" />
+<p class="caption"><a href="https://betterexplained.com/articles/taylor-series/" class="uri">https://betterexplained.com/articles/taylor-series/</a></p>
+</div>
+
+    </div>
+
+    
+
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/analysis/">Analysis</a>
+  
+  <a class="badge badge-light" href="/tags/convex-optimization/">Convex optimization</a>
+  
+  <a class="badge badge-light" href="/tags/machine-learning/">Machine learning</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
   
 
 
 
 
-
-
-
-
-
-
-
-
-  
 
   
   
   
     
   
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Convex optimization</h1>
-
   
-
-  
-</div>
-
-
-
-<div class="universal-wrapper">
-  
-
-  
-  
-  <div>
-    <h2><a href="/post/taylor-series/">Taylor series</a></h2>
-    <div class="article-style">
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
       
-      \[ f(x) = \sum_{k=0}^\infty c_k x^k = c_0 + c_1 x + c_2 x^2 + \dotsb. \]
-This is apporoximation which is function of h and derivatives of \(f(x)\) are elements of parameters.
-$ f(x h) = f(x) hf’(x) + f’’(x) f^{(3)}(x) + O(h^4)$
-Let’s think about \(\sin(x)\).
-\[\begin{align*} f(x) &amp;= \sin(x) &amp; f(0) &amp;= 0f&#39;(x) &amp;= \cos(x) &amp; f&#39;(0) &amp;= 1f(x) &amp;= -\sin(x) &amp; f(0) &amp;= 0f(x) &amp;= -\cos(x) &amp; f(0) &amp;= -1&amp; \vdots \end{align*}\]
-      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu19e9c0ef29ce0ad50bdb4a99719b1851_703775_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Jun Kang</a></h5>
+      <h6 class="card-subtitle">Clinical Assistant Professor of Hospital Pathology</h6>
+      <p class="card-text" itemprop="description">My research interests include pathology, oncology and statistics.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.facebook.com/jun.kang.33" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/JKang1978" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.co.kr/citations?user=xJKaa7kAAAAJ&amp;hl=ko" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/Jkang-alien" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
     </div>
   </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/post/strong-convexity-and-implications/">Strong convexity and implications</a></li>
+          
+          <li><a href="/post/tidymodel-and-glmnet/">Tidymodel and glmnet</a></li>
+          
+          <li><a href="/post/duality/">Duality</a></li>
+          
+          <li><a href="/post/tidymodel/">Tidymodel</a></li>
+          
+          <li><a href="/post/applied-machine-learning-workshop-rstudio-conference-2020/">Applied Machine Learning Workshop RStudio Conference 2020</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+<section id="comments">
   
-  <div>
-    <h2><a href="/post/duality/">Duality</a></h2>
-    <div class="article-style">
-      
-      This is summary of Boyd convex optimization. Steepest descent method is a convex optimization algorithm. The normalized steepest descent direction \(x_{nsd}\) is a vector of unit ball of a norm that extends in the direction \(-\nabla f(x)\). The inner product of \(x_{nsd}\) and \(-\nabla f(x)\) is maximized. The first order Taylor approximation of \(f(x+v) = f(x) + \nabla f(x)^{T} v\) is most efficient when \(v = x_{nsd}\).
-The \(x_{nsd}\) is unnormalized into \(x_{sd}\).
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/strong-convexity-and-implications/">Strong convexity and implications</a></h2>
-    <div class="article-style">
-      
-      This is summary of Boyd convex optimization book. The strong convexity assumption can be useful to explain the iterative minimization algorithms like gradiant descent, steepest descent and Newton’s method.
-The smallest and largest eigen value of Hessian \(m \preceq \nabla^{2}f(x) \preceq M\) with norm of gradient \(\| \nabla f(x)\|_2\) determine the boundary of optimal value \(p^{*}\). The condition number of cond(\(C_\alpha\)) \(\leq {M \over m}\), where \(C_\alpha\) is \(\alpha\)-sublevel. The condition number is ratio of largest eigen value to its smallest eigen value.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/convex-set/">Convex set</a></h2>
-    <div class="article-style">
-      
-      There is homology between a line segment and a convex set. It is helpful to understand the convex set. A line, a line segment and an one side line has homology to an affine set, a convex set and a cone.A line is \(\{y|y=\theta_1 x_1 + \theta_2 x_2, \theta_1 + \theta_2 = 1\}\) if \(\theta_1, \theta_2 \in \mathbb{R}\), a line segment is if \(\theta_1, \theta_2 &gt; 0\) and an one side line if any \(\theta_1, \theta_2 &lt; 0\).
-      
-    </div>
-  </div>
-  
+    
 
   
+</section>
 
-</div>
+
+
+  </div>
+</article>
 
       
 

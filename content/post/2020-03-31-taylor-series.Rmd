@@ -1,0 +1,49 @@
+---
+title: Taylor series
+author: JK
+date: '2020-03-31'
+slug: taylor-series
+categories:
+  - Math
+tags:
+  - Analysis
+  - Convex optimization
+  - Machine learning
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-03-31T06:49:54+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+\[ f(x) = \sum_{k=0}^\infty c_k x^k = c_0 + c_1 x + c_2 x^2 + \dotsb. \] 
+
+
+This is apporoximation which is function of h and derivatives of $f(x)$ are elements of parameters.  
+
+$ f(x \pm h) = f(x) \pm hf'(x) + \frac{h^2}{2}f''(x) \pm \frac{h^3}{6}f^{(3)}(x) + O(h^4)$
+
+Let's think about $\sin(x)$.  
+
+\begin{align*} f(x) &= \sin(x) & f(0) &= 0
+f'(x) &= \cos(x) & f'(0) &= 1
+f(x) &= -\sin(x) & f(0) &= 0
+f(x) &= -\cos(x) & f(0) &= -1
+& \vdots \end{align*}
+
+Thus,
+
+\begin{align*} \sin(x) &= 0 + \frac{1}{1!}x + \frac{0}{2!}x^2 + \frac{-1}{3!}x^3 + \dotsb
+&= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \dotsb, \end{align*}
+
+
+This is approximation. Now $x$ becomes $h$ and parameters calculated from derivatives of $f(x)$ at $0$.  
+$f(x \pm h) = f(x) \pm hf'(x) + \frac{h^2}{2}f''(x) \pm \frac{h^3}{6}f^{(3)}(x) + O(h^4)$
+
+
+![https://betterexplained.com/articles/taylor-series/](images/sine-better-models.png)
