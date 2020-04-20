@@ -18,12 +18,52 @@
   </url>
   
   <url>
-    <loc>/tags/analysis/</loc>
-    <lastmod>2020-03-31T06:49:54+09:00</lastmod>
+    <loc>/tags/blogdown/</loc>
+    <lastmod>2020-04-20T16:00:42+09:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
+    <lastmod>2020-04-20T16:00:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hugo-academic-blog/</loc>
+    <lastmod>2020-04-20T16:00:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/managing-pulications-of-hugo-academic-blog-in-rstudio/</loc>
+    <lastmod>2020-04-20T16:00:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-04-20T16:00:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/r/</loc>
+    <lastmod>2020-04-20T16:00:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/r/</loc>
+    <lastmod>2020-04-20T16:00:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/rstudio/</loc>
+    <lastmod>2020-04-20T16:00:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-20T16:00:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/analysis/</loc>
     <lastmod>2020-03-31T06:49:54+09:00</lastmod>
   </url>
   
@@ -43,16 +83,6 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2020-03-31T06:49:54+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-03-31T06:49:54+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/taylor-series/</loc>
     <lastmod>2020-03-31T06:49:54+09:00</lastmod>
   </url>
@@ -68,16 +98,6 @@
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2020-03-26T17:36:37+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2020-03-26T17:36:37+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/reprex/</loc>
     <lastmod>2020-03-26T17:36:37+09:00</lastmod>
   </url>
@@ -89,11 +109,6 @@
   
   <url>
     <loc>/tags/demo/</loc>
-    <lastmod>2020-03-18T18:42:03+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/rstudio/</loc>
     <lastmod>2020-03-18T18:42:03+09:00</lastmod>
   </url>
   

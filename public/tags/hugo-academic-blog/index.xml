@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HUGO academic blog | Jun&#39;s Blog</title>
+    <link>/tags/hugo-academic-blog/</link>
+      <atom:link href="/tags/hugo-academic-blog/index.xml" rel="self" type="application/rss+xml" />
+    <description>HUGO academic blog</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>HUGO academic blog</title>
+      <link>/tags/hugo-academic-blog/</link>
+    </image>
+    
+    <item>
+      <title>Managing pulications of HUGO academic blog in Rstudio</title>
+      <link>/post/managing-pulications-of-hugo-academic-blog-in-rstudio/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/managing-pulications-of-hugo-academic-blog-in-rstudio/</guid>
+      <description>
+
+
+&lt;p&gt;This HUGO academic theme blog is managed by blogdown. (&lt;a href=&#34;https://bookdown.org/yihui/blogdown/other-themes.html&#34; class=&#34;uri&#34;&gt;https://bookdown.org/yihui/blogdown/other-themes.html&lt;/a&gt;) The HUGO theme needs to transform &lt;code&gt;bib&lt;/code&gt; file to each &lt;code&gt;reference.md&lt;/code&gt; files. This can be done by &lt;code&gt;bib2academic&lt;/code&gt; rpackage. (&lt;a href=&#34;https://github.com/petzi53/bib2academic&#34; class=&#34;uri&#34;&gt;https://github.com/petzi53/bib2academic&lt;/a&gt;) For the featured publication, add &lt;code&gt;featured: true&lt;/code&gt; in the &lt;code&gt;reference.md&lt;/code&gt; file.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
