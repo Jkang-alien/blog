@@ -11,7 +11,7 @@ library(tidymodels)
 library(glmnet)
 
 set.seed(930093)
-cv_splits <- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T, repeats = 5)
+cv_splits <- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T)
 mod <- logistic_reg(penalty = tune(),
                     mixture = tune()) %>%
   set_engine("glmnet")
@@ -29,11 +29,11 @@ wfl <- workflow() %>%
   add_recipe(rec) %>%
   add_model(mod)
 
-glmn_set <- parameters(penalty(range = c(-5,3), trans = log10_trans()),
+glmn_set <- parameters(penalty(range = c(-5,1), trans = log10_trans()),
                        mixture())
 
 glmn_grid <- 
-  grid_regular(glmn_set, levels = c(9, 5))
+  grid_regular(glmn_set, levels = c(7, 5))
 ctrl <- control_grid(save_pred = TRUE, verbose = TRUE)
 
 ## @knitr fitting
@@ -46,9 +46,7 @@ glmn_tune <-
             control = ctrl)
 
 
-show_best(glmn_tune)
-
-best_glmn <- select_best(glmn_tune)
+best_glmn <- select_best(glmn_tune, metric = "roc_auc")
 
 ## @knitr Finalize_model
 

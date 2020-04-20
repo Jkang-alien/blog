@@ -9,13 +9,13 @@ infer
 parsnip
 purrr
 recipes
-tidyr
 rsample
 tibble
 tune
 workflows
 yardstick
 tidyverse
+tidyr
 readr
 stringr
 forcats

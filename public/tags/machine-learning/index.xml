@@ -56,7 +56,7 @@ f(x) &amp;amp;= -\cos(x) &amp;amp; f(0) &amp;amp;= -1
 library(glmnet)
 
 set.seed(930093)
-cv_splits &amp;lt;- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T, repeats = 5)
+cv_splits &amp;lt;- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T)
 mod &amp;lt;- logistic_reg(penalty = tune(),
                     mixture = tune()) %&amp;gt;%
   set_engine(&amp;quot;glmnet&amp;quot;)
@@ -71,11 +71,11 @@ rec &amp;lt;- recipe(PIK3CA_T ~ ., data = trainset_ahDiff) %&amp;gt;%
   add_recipe(rec) %&amp;gt;%
   add_model(mod)
 
-glmn_set &amp;lt;- parameters(penalty(range = c(-5,3), trans = log10_trans()),
+glmn_set &amp;lt;- parameters(penalty(range = c(-5,1), trans = log10_trans()),
                        mixture())
 
 glmn_grid &amp;lt;- 
-  grid_regular(glmn_set, levels = c(9, 5))
+  grid_regular(glmn_set, levels = c(7, 5))
 ctrl &amp;lt;- control_grid(save_pred = TRUE, verbose = TRUE)&lt;/code&gt;&lt;/pre&gt;
 &lt;ul&gt;
 &lt;li&gt;Grid parameter search on 10-fold cross-validation with 5 repeats&lt;br /&gt;
@@ -93,16 +93,7 @@ ctrl &amp;lt;- control_grid(save_pred = TRUE, verbose = TRUE)&lt;/code&gt;&lt;/p
             control = ctrl)
 
 
-show_best(glmn_tune)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 7
-##   penalty mixture .metric .estimator  mean     n std_err
-##     &amp;lt;dbl&amp;gt;   &amp;lt;dbl&amp;gt; &amp;lt;chr&amp;gt;   &amp;lt;chr&amp;gt;      &amp;lt;dbl&amp;gt; &amp;lt;int&amp;gt;   &amp;lt;dbl&amp;gt;
-## 1    1        0   roc_auc binary     0.765    50  0.0109
-## 2   10        0   roc_auc binary     0.762    50  0.0110
-## 3  100        0   roc_auc binary     0.761    50  0.0109
-## 4    0.1      0   roc_auc binary     0.760    50  0.0107
-## 5    0.01     0.5 roc_auc binary     0.755    50  0.0108&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;best_glmn &amp;lt;- select_best(glmn_tune)&lt;/code&gt;&lt;/pre&gt;
+best_glmn &amp;lt;- select_best(glmn_tune, metric = &amp;quot;roc_auc&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 &lt;div id=&#34;finalizing&#34; class=&#34;section level5&#34;&gt;
 &lt;h5&gt;Finalizing&lt;/h5&gt;
@@ -122,41 +113,24 @@ train_probs &amp;lt;-
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;conf_mat(train_probs, obs, .pred_class)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;##           Truth
 ## Prediction Wild Mutant
-##     Wild    216     51
-##     Mutant  120    152&lt;/code&gt;&lt;/pre&gt;
+##     Wild    217     51
+##     Mutant  119    152&lt;/code&gt;&lt;/pre&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;autoplot(roc_curve(train_probs, obs, .pred_Mutant))&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2020-03-18-tidymodel-and-glmnet_files/figure-html/performance-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;roc_auc(train_probs, obs, .pred_Mutant)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 1 x 3
 ##   .metric .estimator .estimate
 ##   &amp;lt;chr&amp;gt;   &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt;
-## 1 roc_auc binary         0.769&lt;/code&gt;&lt;/pre&gt;
+## 1 roc_auc binary         0.782&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Because glmnet fits whole path, there are whole coefficients in the glmnet fit object &lt;code&gt;wfl_final&lt;/code&gt;. This was second confusion. HOw to get the final model coeffients is below.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;coefficients&#34; class=&#34;section level5&#34;&gt;
 &lt;h5&gt;Coefficients&lt;/h5&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tidy(extract_model(wfl_final)) %&amp;gt;%
   filter(lambda &amp;gt; 0.98 &amp;amp; lambda &amp;lt; 1.01)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## # A tibble: 17 x 5
-##    term                                           step estimate lambda dev.ratio
-##    &amp;lt;chr&amp;gt;                                         &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;  &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
-##  1 (Intercept)                                      54  -0.0745  0.982     0.102
-##  2 C4A                                              54   0.0568  0.982     0.102
-##  3 C5orf13                                          54   0.0524  0.982     0.102
-##  4 CDSN                                             54   0.0593  0.982     0.102
-##  5 CFB                                              54   0.0524  0.982     0.102
-##  6 CYP21A2                                          54   0.0494  0.982     0.102
-##  7 DGKE                                             54  -0.0707  0.982     0.102
-##  8 FGD5                                             54   0.0567  0.982     0.102
-##  9 GALNT10                                          54   0.0509  0.982     0.102
-## 10 GOLM1                                            54   0.0590  0.982     0.102
-## 11 GPX8                                             54   0.0596  0.982     0.102
-## 12 KLK11                                            54   0.0180  0.982     0.102
-## 13 NTN4                                             54   0.0480  0.982     0.102
-## 14 SMYD3                                            54   0.0664  0.982     0.102
-## 15 USP36                                            54  -0.0684  0.982     0.102
-## 16 WBP2                                             54  -0.0552  0.982     0.102
-## 17 HISTOLOGICAL_DIAGNOSIS_Infiltrating.Lobular.~    54  -0.0226  0.982     0.102&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 0 x 5
+## # ... with 5 variables: term &amp;lt;chr&amp;gt;, step &amp;lt;dbl&amp;gt;, estimate &amp;lt;dbl&amp;gt;, lambda &amp;lt;dbl&amp;gt;,
+## #   dev.ratio &amp;lt;dbl&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;/div&gt;
 </description>
     </item>
@@ -281,14 +255,14 @@ preped_data %&amp;gt;%
   juice() %&amp;gt;%
   slice(1:5)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 11
-##   Longitude Latitude Sale_Price Neighborhood_Co… Neighborhood_Ol…
+##   Longitude Latitude Sale_Price Neighborhood_Co~ Neighborhood_Ol~
 ##       &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;      &amp;lt;dbl&amp;gt;            &amp;lt;dbl&amp;gt;            &amp;lt;dbl&amp;gt;
 ## 1     -93.6     42.1       5.24                0                0
 ## 2     -93.6     42.1       5.39                0                0
 ## 3     -93.6     42.1       5.28                0                0
 ## 4     -93.6     42.1       5.29                0                0
 ## 5     -93.6     42.1       5.33                0                0
-## # … with 6 more variables: Neighborhood_Edwards &amp;lt;dbl&amp;gt;,
+## # ... with 6 more variables: Neighborhood_Edwards &amp;lt;dbl&amp;gt;,
 ## #   Neighborhood_Somerset &amp;lt;dbl&amp;gt;, Neighborhood_Northridge_Heights &amp;lt;dbl&amp;gt;,
 ## #   Neighborhood_Gilbert &amp;lt;dbl&amp;gt;, Neighborhood_Sawyer &amp;lt;dbl&amp;gt;,
 ## #   Neighborhood_other &amp;lt;dbl&amp;gt;&lt;/code&gt;&lt;/pre&gt;

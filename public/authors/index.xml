@@ -5,7 +5,7 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,15 +15,23 @@
     <item>
       <title>Ho Yun Lee</title>
       <link>/authors/ho-yun-lee/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>/authors/ho-yun-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hyun Jung Yoon</title>
+      <link>/authors/hyun-jung-yoon/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/hyun-jung-yoon/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hyunjin Park</title>
       <link>/authors/hyunjin-park/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>/authors/hyunjin-park/</guid>
       <description></description>
     </item>
@@ -31,8 +39,72 @@
     <item>
       <title>Insuk Sohn</title>
       <link>/authors/insuk-sohn/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>/authors/insuk-sohn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jun Kang</title>
+      <link>/authors/jun-kang/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/jun-kang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seung-Hak Lee</title>
+      <link>/authors/seung-hak-lee/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/seung-hak-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ahwon Lee</title>
+      <link>/authors/ahwon-lee/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/ahwon-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dongmin Kim</title>
+      <link>/authors/dongmin-kim/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/dongmin-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jieun Lee</title>
+      <link>/authors/jieun-lee/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/jieun-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sooeun Oh</title>
+      <link>/authors/sooeun-oh/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/sooeun-oh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sung Hun Kim</title>
+      <link>/authors/sung-hun-kim/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/sung-hun-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tae-Kyung Yoo</title>
+      <link>/authors/tae-kyung-yoo/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/tae-kyung-yoo/</guid>
       <description></description>
     </item>
     
@@ -45,26 +117,10 @@
     </item>
     
     <item>
-      <title>Jun Kang</title>
-      <link>/authors/jun-kang/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/authors/jun-kang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Myung-Ju Ahn</title>
       <link>/authors/myung-ju-ahn/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
       <guid>/authors/myung-ju-ahn/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Seung-Hak Lee</title>
-      <link>/authors/seung-hak-lee/</link>
-      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
-      <guid>/authors/seung-hak-lee/</guid>
       <description></description>
     </item>
     
@@ -261,7 +317,7 @@
     </item>
     
     <item>
-      <title>others</title>
+      <title>{others}</title>
       <link>/authors/others/</link>
       <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
       <guid>/authors/others/</guid>
@@ -349,7 +405,7 @@
     </item>
     
     <item>
-      <title>Lee-so Maeng</title>
+      <title>Lee-So Maeng</title>
       <link>/authors/lee-so-maeng/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
       <guid>/authors/lee-so-maeng/</guid>
@@ -377,14 +433,6 @@
       <link>/authors/yoonjin-bae/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
       <guid>/authors/yoonjin-bae/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ahwon Lee</title>
-      <link>/authors/ahwon-lee/</link>
-      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>/authors/ahwon-lee/</guid>
       <description></description>
     </item>
     
@@ -637,7 +685,7 @@
     </item>
     
     <item>
-      <title>Breast Pathology Study Group of Korean Society of Pathologists</title>
+      <title>Breast Pathology Study Group {of Korean Society of Pathologists}</title>
       <link>/authors/breast-pathology-study-group-of-korean-society-of-pathologists/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
       <guid>/authors/breast-pathology-study-group-of-korean-society-of-pathologists/</guid>
@@ -869,18 +917,18 @@
     </item>
     
     <item>
-      <title>Dong-Il Kim</title>
-      <link>/authors/dong-il-kim/</link>
-      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
-      <guid>/authors/dong-il-kim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Dong-ho Shin</title>
       <link>/authors/dong-ho-shin/</link>
       <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
       <guid>/authors/dong-ho-shin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dong-Il Kim</title>
+      <link>/authors/dong-il-kim/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/authors/dong-il-kim/</guid>
       <description></description>
     </item>
     

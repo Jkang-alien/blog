@@ -5,7 +5,7 @@
     <link>/authors/ahwon-lee/</link>
       <atom:link href="/authors/ahwon-lee/index.xml" rel="self" type="application/rss+xml" />
     <description>Ahwon Lee</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Ahwon Lee</title>
@@ -13,26 +13,34 @@
     </image>
     
     <item>
-      <title>Positive expression of insulin-like growth factor-1 receptor is associated with a positive hormone receptor status and a favorable prognosis in breast cancer</title>
-      <link>/publication/2014-01-01_positive_expression_/</link>
+      <title>Notch1 in Tumor Microvascular Endothelial Cells and Tumoral miR-34a as Prognostic Markers in Locally Advanced Triple-Negative Breast Cancer</title>
+      <link>/publication/2019-01-01_kimnotch1tumormicrovascular2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-01-01_kimnotch1tumormicrovascular2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Positive Expression of Insulin-like Growth Factor-1 Receptor Is Associated with a Positive Hormone Receptor Status and a Favorable Prognosis in Breast Cancer</title>
+      <link>/publication/2014-01-01_shin2014positive/</link>
       <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
-      <guid>/publication/2014-01-01_positive_expression_/</guid>
+      <guid>/publication/2014-01-01_shin2014positive/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>HER2 status by standardized immunohistochemistry and silver-enhanced in situ hybridization in Korean breast cancer</title>
-      <link>/publication/2012-01-01_her2_status_by_stand/</link>
+      <title>HER2 Status by Standardized Immunohistochemistry and Silver-Enhanced in Situ Hybridization in Korean Breast Cancer</title>
+      <link>/publication/2012-01-01_bae2012her2/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>/publication/2012-01-01_her2_status_by_stand/</guid>
+      <guid>/publication/2012-01-01_bae2012her2/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Hormone receptor expression in invasive breast cancer among Korean women and comparison of 3 antiestrogen receptor antibodies: a multi-institutional retrospective study using tissue microarrays</title>
-      <link>/publication/2012-01-01_hormone_receptor_exp/</link>
+      <title>Hormone Receptor Expression in Invasive Breast Cancer among Korean Women and Comparison of 3 Antiestrogen Receptor Antibodies: A Multi-Institutional Retrospective Study Using Tissue Microarrays</title>
+      <link>/publication/2012-01-01_bae2012hormone/</link>
       <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
-      <guid>/publication/2012-01-01_hormone_receptor_exp/</guid>
+      <guid>/publication/2012-01-01_bae2012hormone/</guid>
       <description></description>
     </item>
     

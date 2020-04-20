@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -20,37 +20,26 @@
   <url>
     <loc>/tags/analysis/</loc>
     <lastmod>2020-03-31T06:49:54+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
     <lastmod>2020-03-31T06:49:54+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/convex-optimization/</loc>
     <lastmod>2020-03-31T06:49:54+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-03-31T06:49:54+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/machine-learning/</loc>
     <lastmod>2020-03-31T06:49:54+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/math/</loc>
     <lastmod>2020-03-31T06:49:54+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -61,7 +50,6 @@
   <url>
     <loc>/tags/</loc>
     <lastmod>2020-03-31T06:49:54+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -72,7 +60,6 @@
   <url>
     <loc>/tags/issue/</loc>
     <lastmod>2020-03-26T17:36:37+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -81,45 +68,38 @@
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
+    <loc>/tags/r/</loc>
     <lastmod>2020-03-26T17:36:37+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/tidymodel/</loc>
+    <loc>/categories/r/</loc>
     <lastmod>2020-03-26T17:36:37+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/reprex/</loc>
     <lastmod>2020-03-26T17:36:37+09:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/tidymodel/</loc>
+    <lastmod>2020-03-26T17:36:37+09:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/demo/</loc>
     <lastmod>2020-03-18T18:42:03+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/r/</loc>
-    <lastmod>2020-03-18T18:42:03+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/rstudio/</loc>
     <lastmod>2020-03-18T18:42:03+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/stastics/</loc>
     <lastmod>2020-03-18T18:42:03+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -135,13 +115,11 @@
   <url>
     <loc>/tags/information-theory/</loc>
     <lastmod>2020-03-15T06:31:20+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/math/</loc>
     <lastmod>2020-03-15T06:31:20+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -152,7 +130,6 @@
   <url>
     <loc>/categories/machine-learning/</loc>
     <lastmod>2020-02-19T17:19:14+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -163,7 +140,6 @@
   <url>
     <loc>/tags/rstudio-conference/</loc>
     <lastmod>2020-01-31T21:31:20-08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -179,12 +155,66 @@
   <url>
     <loc>/tags/shiny/</loc>
     <lastmod>2020-01-29T17:51:24-08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/post/applied-machine-learning-workshop-rstudio-conference-2020/</loc>
     <lastmod>2020-01-27T00:01:55-08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/2/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/2020-01-01_yoondecipheringtumormicroenvironment2020/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/ho-yun-lee/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/hyun-jung-yoon/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/hyunjin-park/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/insuk-sohn/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/jun-kang/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/seung-hak-lee/</loc>
+    <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -210,7 +240,6 @@
   <url>
     <loc>/tags/reproducing-kernel-hilbert-space/</loc>
     <lastmod>2019-12-20T18:27:41+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -221,37 +250,26 @@
   <url>
     <loc>/categories/pathology/</loc>
     <lastmod>2019-12-06T13:59:25+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/cancer/</loc>
     <lastmod>2019-12-03T16:37:57+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ion-torrent/</loc>
-    <lastmod>2019-12-03T16:37:57+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/thermo-fisher-scientific/</loc>
-    <lastmod>2019-12-03T16:37:57+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/cbioportal/</loc>
-    <lastmod>2019-12-03T16:37:57+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/cbioportal/</loc>
     <lastmod>2019-12-03T16:37:57+09:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/cbioportal/</loc>
+    <lastmod>2019-12-03T16:37:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ion-torrent/</loc>
+    <lastmod>2019-12-03T16:37:57+09:00</lastmod>
   </url>
   
   <url>
@@ -260,9 +278,13 @@
   </url>
   
   <url>
+    <loc>/tags/thermo-fisher-scientific/</loc>
+    <lastmod>2019-12-03T16:37:57+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/limit/</loc>
     <lastmod>2019-11-09T06:32:34+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -273,7 +295,6 @@
   <url>
     <loc>/tags/functional-analysis/</loc>
     <lastmod>2019-10-16T16:39:48+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -294,31 +315,26 @@
   <url>
     <loc>/tags/cancer/</loc>
     <lastmod>2019-09-27T11:32:07+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/genomics/</loc>
-    <lastmod>2019-09-27T11:32:07+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/genomics/</loc>
     <lastmod>2019-09-27T11:32:07+09:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/genomics/</loc>
+    <lastmod>2019-09-27T11:32:07+09:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/ngs/</loc>
     <lastmod>2019-09-27T11:32:07+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/pathology/</loc>
     <lastmod>2019-09-27T11:32:07+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -339,7 +355,6 @@
   <url>
     <loc>/tags/compactness/</loc>
     <lastmod>2019-09-07T08:19:27+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -368,30 +383,33 @@
   </url>
   
   <url>
-    <loc>/post/r/2019-08-11-interpretation/ngs-interpretation-database-and-search/</loc>
+    <loc>/post/r/ngs-interpretation-database-and-search/</loc>
     <lastmod>2019-08-11T17:23:55+09:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/shinyapps.io/</loc>
     <lastmod>2019-08-11T17:23:55+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/sqlite/</loc>
     <lastmod>2019-08-11T17:23:55+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/post/math/2019-08-01-caratheodory/caratheodory-s-extension-theorem/</loc>
+    <loc>/post/math/caratheodory-s-extension-theorem/</loc>
     <lastmod>2019-08-07T12:48:04+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/math/2019-07-30-analysis/analysis/</loc>
+    <loc>/post/math/analysis/</loc>
     <lastmod>2019-08-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/big-data/</loc>
+    <lastmod>2019-08-03T13:38:31+09:00</lastmod>
   </url>
   
   <url>
@@ -400,33 +418,28 @@
   </url>
   
   <url>
-    <loc>/tags/big-data/</loc>
+    <loc>/tags/bioconductor/</loc>
     <lastmod>2019-08-03T13:38:31+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/tcga/</loc>
-    <lastmod>2019-08-03T13:38:31+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/tcga/</loc>
     <lastmod>2019-08-03T13:38:31+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/bioconductor/</loc>
+    <loc>/categories/tcga/</loc>
     <lastmod>2019-08-03T13:38:31+09:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/courses/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/bayesian/</loc>
     <lastmod>2019-08-02T14:22:01+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -437,13 +450,51 @@
   <url>
     <loc>/tags/rstan/</loc>
     <lastmod>2019-08-02T14:22:01+09:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/stan/</loc>
     <lastmod>2019-08-02T14:22:01+09:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/ahwon-lee/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/dongmin-kim/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/jieun-lee/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/2019-01-01_kimnotch1tumormicrovascular2019/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/sooeun-oh/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/sung-hun-kim/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/tae-kyung-yoo/</loc>
+    <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -457,138 +508,73 @@
   </url>
   
   <url>
-    <loc>/publication_types/2/</loc>
+    <loc>/publication/2018-01-01_lee2018deciphering/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2018-01-01_deciphering_clinicor/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/ho-yun-lee/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/hyunjin-park/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/insuk-sohn/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jong-mu-sun/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/jun-kang/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/myung-ju-ahn/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/seung-hak-lee/</loc>
-    <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/so-won-lee/</loc>
     <lastmod>2018-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/dae-hyun-jang/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/eun-hae-cho/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/ja-hyun-jang/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jung-hwan-lee/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/min-wook-kim/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2017-01-01_novel_mutation_c._8/</loc>
+    <loc>/publication/2017-01-01_kim2017novel/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/seungok-lee/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/sun-young-joo/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/young-chul-choi/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/deep-learning/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -604,988 +590,845 @@
   <url>
     <loc>/project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/bum-sik-lee/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2016-01-01_dermatophyte_abscess/</loc>
+    <loc>/publication/2016-01-01_kim2016dermatophyte/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2016-01-01_displaced_double-lay/</loc>
+    <loc>/publication/2016-01-01_kwak2016displaced/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/eun-young-kim/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/geewon-lee/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/ik-hyun-jo/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/joon-young-choi/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/joong-hyun-ahn/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/joungho-han/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jung-hyun-choi/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/ki-jun-kim/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/kyung-soo-lee/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/min-jee-kwak/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/o-jung-kwon/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2016-01-01_prognostic_impact_of/</loc>
+    <loc>/publication/2016-01-01_song2016prognostic/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/si-hyun-kim/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/so-hee-song/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/sun-ki-kim/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/others/</loc>
     <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2015-01-01_cancer-testis_antige/</loc>
+    <loc>/publication/2015-01-01_kang2015cancer/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2015-01-01_comparison_of_the_co/</loc>
+    <loc>/publication/2015-01-01_jun2015comparison/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2015-01-01_dysregulation_of_x_c/</loc>
+    <loc>/publication/2015-01-01_kang2015dysregulation/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/eun-su-park/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/gyungyub-gong/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/hee-jin-lee/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/in-ah-park/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/in-hye-song/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jae-jun-lee/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jeong-ju-lee/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jin-hee-ahn/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jiyoung-kim/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jong-han-yu/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/lee-so-maeng/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2015-01-01_prognostic_and_predi/</loc>
+    <loc>/publication/2015-01-01_lee2015prognostic/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/sang-il-kim/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/sun-young-jun/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/yoonjin-bae/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/ahwon-lee/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/dong-wha-lee/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2014-01-01_effect_of_helicobact/</loc>
+    <loc>/publication/2014-01-01_bae2014effect/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/eun-yoon-cho/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/guhyun-kang/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/hajeong-lee/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/hwoon-yong-jung/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/hye-bin-yim/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/hyoung-jo/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jeong-hee-lee/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/ji-shin-lee/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/ji-yong-ahn/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/ji-young-choi/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/ji-hoon-jung/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/joon-seon-song/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/ju-han-kim/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/june-kang/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/kui-dong-kang/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/kwang-sun-suh/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/kwi-sook-choi/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/mi-young-kim/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2014-01-01_positive_expression_/</loc>
+    <loc>/publication/2014-01-01_shin2014positive/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2014-01-01_prognostic_significa/</loc>
+    <loc>/publication/2014-01-01_lee2014prognostic/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2014-01-01_response_to_abdallah/</loc>
+    <loc>/publication/2014-01-01_bae2014response/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/sang-hoon-jung/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/seunghee-baek/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/su-jin-shin/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/suh-eun-bae/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2014-01-01_sulodexide_inhibits_/</loc>
+    <loc>/publication/2014-01-01_jo2014sulodexide/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2014-01-01_when_it_comes_to_gas/</loc>
+    <loc>/publication/2014-01-01_bae2014comes/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/young-kyung-bae/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/young-soo-park/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2013-01-01_a_case_of_henoch-sch/</loc>
+    <loc>/publication/2013-01-01_shin2013case/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/bong-chul-shin/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/ju-won-lee/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/kyubok-jin/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/mi-seon-kang/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/nae-yun-heo/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/seunghyun-park/</loc>
     <lastmod>2013-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/breast-pathology-study-group-of-korean-society-of-pathologists/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/gi-cheol-park/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2012-01-01_her2_status_by_stand/</loc>
+    <loc>/publication/2012-01-01_bae2012her2/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2012-01-01_hormone_receptor_exp/</loc>
+    <loc>/publication/2012-01-01_bae2012hormone/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/jeong-hyeon-jo/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jong-lyel-roh/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/kyung-ja-cho/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2012-01-01_relationship_between/</loc>
+    <loc>/publication/2012-01-01_park2012relationship/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/sang-yoon-kim/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/seung-ho-choi/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/soon-yuhl-nam/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2012-01-01_the_ratio_of_atypica/</loc>
+    <loc>/publication/2012-01-01_lee2012ratio/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/woo-hee-jung/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/bong-hee-park/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/chan-jeong-park/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/cheol-won-suh/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/cheolwon-suh/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/dae-ho-lee/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/dong-hoe-koo/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2011-01-01_dual-color_silver-en/</loc>
+    <loc>/publication/2011-01-01_koh2011dual/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/heung-bum-oh/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2011-01-01_high_prevalence_of_h/</loc>
+    <loc>/publication/2011-01-01_kang2011high/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2011-01-01_histologic_parameter/</loc>
+    <loc>/publication/2011-01-01_kim2011histologic/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/hyun-sook-chi/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jeong-hyun-cho/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jong-won-lee/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/joo-young-kim/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/joon-kang/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jooryung-huh/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/kyoo-hyung-lee/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2011-01-01_prognostic_value_of_/</loc>
+    <loc>/publication/2011-01-01_oh2011prognostic/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/se-jin-jang/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/shin-kim/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/sukjoong-oh/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/sung-soo-jang/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/yong-hak-sohn/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/young-wha-koh/</loc>
     <lastmod>2011-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/dong-il-kim/</loc>
-    <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/dong-ho-shin/</loc>
     <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/dong-il-kim/</loc>
+    <lastmod>2010-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/jong-hyun-lee/</loc>
     <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2010-01-01_rapid_increase_in_th/</loc>
+    <loc>/publication/2010-01-01_kang2010rapid/</loc>
     <lastmod>2010-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/sunhee-bang/</loc>
     <lastmod>2010-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/ah-young-kim/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2009-01-01_comparison_of_silver/</loc>
+    <loc>/publication/2009-01-01_kang2009comparison/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/eunsil-yu/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2009-01-01_gastrointestinal_met/</loc>
+    <loc>/publication/2009-01-01_kim2009gastrointestinal/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/gui-young-kwon/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/heejin-lee/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/hyun-kwon-ha/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/joo-young-jang/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/kyoung-won-kim/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/kyung-mo-kim/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/seong-ho-park/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/seung-soo-lee/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/so-yeon-kim/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/sung-won-park/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2009-01-01_the_clinicopathologi/</loc>
+    <loc>/publication/2009-01-01_lee2009clinicopathological/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/young-hee-lee/</loc>
     <lastmod>2009-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/heon-ju-kwon/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jae-ho-byun/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2008-01-01_lymphadenoma_of_the_/</loc>
+    <loc>/publication/2008-01-01_kang2008lymphadenoma/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/moon-gyu-lee/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2008-01-01_solitary_fibrous_tum/</loc>
+    <loc>/publication/2008-01-01_kwon2008solitary/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2007-01-01_a_case_report_of_fet/</loc>
+    <loc>/publication/2007-01-01_kang2007case/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/ae-kyung-jeong/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/bu-kyu-lee/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/eul-ju-seo/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/geung-hwan-ahn/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/gyung-yub-gong/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/hee-jeong-cha/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/hye-jeong-choi/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/ilseon-hwang/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2007-01-01_intraneural_perineur/</loc>
+    <loc>/publication/2007-01-01_kang2007intraneural/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/jae-hee-suh/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jene-choi/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jeong-won-kim/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2007-01-01_localized_polyarteri/</loc>
+    <loc>/publication/2007-01-01_hong2007localized/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2007-01-01_nasal_chondromesench/</loc>
+    <loc>/publication/2007-01-01_kang2007nasal/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/shin-kwang-khang/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/young-min-kim/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/young-ok-hong/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2006-01-01_clinical_significanc/</loc>
+    <loc>/publication/2006-01-01_choi2006clinical/</loc>
     <lastmod>2006-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/hae-woong-lee/</loc>
     <lastmod>2006-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/inchul-lee/</loc>
     <lastmod>2006-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jai-kyoung-koh/</loc>
     <lastmod>2006-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/jee-ho-choi/</loc>
     <lastmod>2006-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/kee-chan-moon/</loc>
     <lastmod>2006-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/mi-woo-lee/</loc>
     <lastmod>2006-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2006-01-01_multiple_mucinous_an/</loc>
+    <loc>/publication/2006-01-01_lee2006multiple/</loc>
     <lastmod>2006-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/sang-wook-lee/</loc>
     <lastmod>2006-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/authors/seung-seog-han/</loc>
     <lastmod>2006-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2006-01-01_tuj1_class_iii_%E6%A3%BA-tu/</loc>
+    <loc>/publication/2006-01-01_kang2006tuj1/</loc>
     <lastmod>2006-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/admin/</loc>
-  </url>
-  
-  <url>
-    <loc>/courses/</loc>
   </url>
   
 </urlset>
