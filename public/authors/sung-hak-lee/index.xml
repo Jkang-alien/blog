@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sung Hak Lee | Jun&#39;s Blog</title>
+    <link>/authors/sung-hak-lee/</link>
+      <atom:link href="/authors/sung-hak-lee/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sung Hak Lee</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Sung Hak Lee</title>
+      <link>/authors/sung-hak-lee/</link>
+    </image>
+    
+    <item>
+      <title>Next Generation Sequencing Can Be Helpful in Histologic Diagnosis: A Case Report of Metastatic Breast Cancer Mimicking Atypical Carcinoid Tumor of Lung</title>
+      <link>/publication/2020-01-01_songnextgenerationsequencing2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/2020-01-01_songnextgenerationsequencing2020/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
