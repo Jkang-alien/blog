@@ -84,7 +84,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.7c75abe867d1ac4b26fbe501f37ef260.css">
+  <link rel="stylesheet" href="/css/academic.min.dd629241ea9333c62c071f4a25f829ff.css">
 
   
 
@@ -359,9 +359,9 @@
       
       \[ f(x) = \sum_{k=0}^\infty c_k x^k = c_0 + c_1 x + c_2 x^2 + \dotsb. \]
 This is apporoximation which is function of h and derivatives of \(f(x)\) are elements of parameters.
-$ f(x h) = f(x) hf’(x) + f’’(x) f^{(3)}(x) + O(h^4)$
+\(f(x \pm h) = f(x) \pm hf&#39;(x) + \frac{h^2}{2}f&#39;&#39;(x) \pm \frac{h^3}{6}f&#39;&#39;&#39;(x) + O(h^4)\)
 Let’s think about \(\sin(x)\).
-\[\begin{align*} f(x) &amp;= \sin(x) &amp; f(0) &amp;= 0f&#39;(x) &amp;= \cos(x) &amp; f&#39;(0) &amp;= 1f(x) &amp;= -\sin(x) &amp; f(0) &amp;= 0f(x) &amp;= -\cos(x) &amp; f(0) &amp;= -1&amp; \vdots \end{align*}\]
+\[\begin{align*} f(x) &amp;= \sin(x) &amp; f(0) &amp;= 0 f&#39;(x) &amp;= \cos(x) &amp; f&#39;(0) &amp;= 1 f(x) &amp;= -\sin(x) &amp; f(0) &amp;= 0 f(x) &amp;= -\cos(x) &amp; f(0) &amp;= -1 &amp; \vdots \end{align*}\]
       
     </div>
   </div>
@@ -371,7 +371,7 @@ Let’s think about \(\sin(x)\).
     <div class="article-style">
       
       When the penalized generalize linear model (Lasso or Ridge) is processed in tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.
-Modelinglibrary(tidymodels)library(glmnet)set.seed(930093)cv_splits &lt;- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T)mod &lt;- logistic_reg(penalty = tune(),mixture = tune()) %&gt;%set_engine(&quot;glmnet&quot;)rec &lt;- recipe(PIK3CA_T ~ .
+Modeling library(tidymodels) library(glmnet) set.seed(930093) cv_splits &lt;- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T) mod &lt;- logistic_reg(penalty = tune(), mixture = tune()) %&gt;% set_engine(&quot;glmnet&quot;) rec &lt;- recipe(PIK3CA_T ~ .
       
     </div>
   </div>
@@ -390,10 +390,10 @@ The smallest and largest eigen value of Hessian \(m \preceq \nabla^{2}f(x) \prec
     <h2><a href="/post/tidymodel/">Tidymodel</a></h2>
     <div class="article-style">
       
-      Machine Learning and TidymodelModel setting, {Parsnip}Rpackage Parsnip standardize model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specification and lately evaluates.
-Feature engineering, {Recipes}Recipes makes preprocessing easy with step_() functions. Recipes after specification, calculates.
-Resampling, {rsample}To choose a model and hyperparameters, we must validate the different models.
-Making hyperparameter set, {dials}The Rpackage {dials} set hyperparameter similarily with {Parsnip}.
+      Machine Learning and Tidymodel Model setting, {Parsnip} Rpackage Parsnip standardize model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specification and lately evaluates.
+ Feature engineering, {Recipes} Recipes makes preprocessing easy with step_() functions. Recipes after specification, calculates.
+ Resampling, {rsample} To choose a model and hyperparameters, we must validate the different models.
+ Making hyperparameter set, {dials} The Rpackage {dials} set hyperparameter similarily with {Parsnip}.
       
     </div>
   </div>
@@ -417,7 +417,7 @@ The ggplot is good to explore variables adding geoms changing plot.
     <h2><a href="/post/reproducing-kernel-hilbert-space/">Reproducing Kernel Hilbert Space</a></h2>
     <div class="article-style">
       
-      Finally arrive to reproducing kernel hilbert space.https://nzer0.github.io/reproducing-kernel-hilbert-space.html
+      Finally arrive to reproducing kernel hilbert space. https://nzer0.github.io/reproducing-kernel-hilbert-space.html
 The above post introduces RKHS in Korean. It was helpful. I had strugged to understand some concepts in RKHS. What does mean Hilbert space in terms of feature expansion. (\(f:\mathcal{X} \to \mathbb{R}\), \(f \in \mathcal{H}_K\)) It was confusing the difference between \(f\) and \(f(x)\). \(f\) means the function in Hilbert space and \(f(x)\) is evaluation.
 I thought that the function can be represent by inner product of basis of feature space \(K(\cdot,x)\) and coefficients \(f\) and the coefficients are vectors in feature space.
       
