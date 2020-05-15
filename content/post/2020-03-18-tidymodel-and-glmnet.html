@@ -26,7 +26,7 @@ projects: []
 
 
 
-<p>When the penalized generalize linear model (Lasso or Ridge) is processed in tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.</p>
+<p>When the penalized generalize linear model (Lasso or Ridge) is processed in the tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of the final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.</p>
 <div id="modeling" class="section level5">
 <h5>Modeling</h5>
 <pre class="r"><code>library(tidymodels)
@@ -57,7 +57,7 @@ ctrl &lt;- control_grid(save_pred = TRUE, verbose = TRUE)</code></pre>
 <ul>
 <li>Grid parameter search on 10-fold cross-validation with 5 repeats<br />
 </li>
-<li>Dummy varable to control for histologic subtype</li>
+<li>Dummy variable to control for histologic subtype</li>
 </ul>
 </div>
 <div id="select-best-parameter" class="section level5">
@@ -78,7 +78,7 @@ best_glmn &lt;- select_best(glmn_tune, metric = &quot;roc_auc&quot;)</code></pre
   wfl %&gt;%
   finalize_workflow(best_glmn) %&gt;%
   fit(data = trainset_ahDiff)</code></pre>
-<p><code>finalize_workflow()</code> finalizes the model with selected optimal hyperparameters. However the glmnet fits any lambda, not the indicated lambda. This was discussed at <a href="https://github.com/tidymodels/parsnip/issues/195" class="uri">https://github.com/tidymodels/parsnip/issues/195</a>. The glmnet is more efficient to fit all lambda than a single lambda. Thus tidymodel ignores the indicated lambda. This made first confusion. <strong>The finalization can be finalized by predict in tidymodel environment.</strong> Finalize with <code>predict</code>. Note the last argument <code>penalty = 1</code> of <code>stats::predict(wfl_final, type = "prob", new_data = trainset_ahDiff, penalty = 1)</code>.</p>
+<p><code>finalize_workflow()</code> finalizes the model with selected optimal hyperparameters. However, the glmnet fits any lambda, not the indicated lambda. This was discussed at <a href="https://github.com/tidymodels/parsnip/issues/195" class="uri">https://github.com/tidymodels/parsnip/issues/195</a>. The glmnet is more efficient to fit all lambda than a single lambda. Thus tidymodel ignores the indicated lambda. This made the first confusion. <strong>The finalization can be finalized by predict in tidymodel environment.</strong> Finalize with <code>predict</code>. Note the last argument <code>penalty = 1</code> of <code>stats::predict(wfl_final, type = "prob", new_data = trainset_ahDiff, penalty = 1)</code>.</p>
 <pre class="r"><code>train_predict &lt;- stats::predict(wfl_final, type = &quot;prob&quot;, new_data = trainset_ahDiff, penalty = 1)
 train_probs &lt;- 
   predict(wfl_final, type = &quot;prob&quot;, new_data = trainset_ahDiff) %&gt;%
@@ -99,7 +99,7 @@ train_probs &lt;-
 ##   .metric .estimator .estimate
 ##   &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;
 ## 1 roc_auc binary         0.782</code></pre>
-<p>Because glmnet fits whole path, there are whole coefficients in the glmnet fit object <code>wfl_final</code>. This was second confusion. HOw to get the final model coeffients is below.</p>
+<p>Because glmnet fits the whole path, there are whole coefficients in the glmnet fit object <code>wfl_final</code>. This was the second confusion. How to get the final model coefficients is below.</p>
 </div>
 <div id="coefficients" class="section level5">
 <h5>Coefficients</h5>

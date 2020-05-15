@@ -35,10 +35,10 @@ purrr::map and tidyr::nest covered because they are used in resample or tune.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
-	echo = FALSE,
-	error = FALSE,
-	message = FALSE,
-	cache = TRUE
+    echo = FALSE,
+    error = FALSE,
+    message = FALSE,
+    cache = TRUE
 )
 ```
 
@@ -105,15 +105,15 @@ ames_test  <- testing(data_split)
 
 Skew data might be looking outlier.  
 
-Peaple look at data many different ways like outliers, missingness, correlation and suspection of important variable.  
+People look at data in many different ways like outliers, missingness, correlation, and suspicion of an important variable.  
 
 The ggplot is good to explore variables adding geoms changing plot.
 
-Machine learning is creative because you can do many different way such as which variable should be included.
+Machine learning is creative because you can do many different ways such as which variable should be included.
 
 Model workflow: imputation -> transformation -> filter -> model
 
-Resampling avoid somethinf like the garden of forking paths or p-hacking by honest feedback. 
+Resampling avoids something like the garden of forking paths or p-hacking by honest feedback. 
 
 The tuning parameter can be estimated **analytically** or iteratively.
 
@@ -121,39 +121,39 @@ Single validation set ??
 
 Resampling process questions
 
-Spliting data is confusing.
+Splitting data is confusing.
 
-Test set split preserve **distribution**.
+The test set split preserves **distribution**.
 
-Interval and sampling is behind scene of resampling.
+Interval and sampling are behind the scene of resampling.
 
 fomular x ~ . -something to remove
 
-Variable role: limited (can not be applied to hierachical in Baysian??)
+Variable role: limited (can not be applied to hierarchical in Baysian??)
 
-Fomular and XY interpace is not fit in machine learning. The recipes is a solution.
+Formula and XY interface is not fit in machine learning. The recipes package is a solution.
 
-The broom::glance (one row summary of metrics, don't trust this too much) tidy (coefficients) augment (by data points) 
+The broom::glance (one-row summary of metrics, don't trust this too much) tidy (coefficients) augment (by data points) 
 
-The parsnip (unified interface) is a solution of different interface.
+The parsnip (unified interface) is a solution to a different interface.
 
 How to set specific settings using parsnip?
 
 Many other packages supporting parsnip. Look at the tidymodels packages.
 
-What is difference betweeen caret and parsnip?
+What is the difference between caret and parsnip?
 
 Caret~base R, parsnip~tidyverse
 
-The parsnip generalizes the interfaces and be easy to extend.
+The parsnip generalizes the interfaces and is easy to extend.
 
 ```{r feature engineering}
 
 ```
 
-Dummy variable is confusing in interaction of terms and how to interprete coefficiency. 
+A dummy variable is confusing in the interaction of terms and how to interpret coefficiency. 
 
-The level with 0,0 allocation becomes base variable in factor variable. A continuous variable can be categorized with  recipe::step_discritize().
+The level with 0,0 allocation becomes a base variable in factor variable. A continuous variable can be categorized with  recipe::step_discritize().
 
 A zero variance predictor includes no record or single value variable.
 
@@ -164,13 +164,13 @@ Feature engineering problem
 
 Customizing Step function
 
-First level be a reference. There are ways to change the reference level. (Ordering facter level issues)
+The first level is a reference. There are ways to change the reference level. (Ordering factor level issues)
 
-Peaple response positively to the recipes.
+People respond positively to the recipes.
 
 recipe -> prep -> juice/bake; define -> calculate -> processing (training or test set) 
 
-The post processed data set goes to fit() to estabilish a model
+The post-processed data set goes to fit() to establish a model
 
 Versioning model caching?
 
@@ -200,41 +200,41 @@ preped_data %>%
 
 step_dummy -> step_other/step_nzv()
 
-Step_dummy create many dummy variables thus you should include the new dummy variables into the interaction terms or others or nzv. with starts_with() function.
+Step_dummy creates many dummy variables thus you should include the new dummy variables into the interaction terms or others or nzv. with starts_with() function.
 
-Resolving skewness: **Box-cox**, **inverse**, of course log or squreroot  
+Resolving skewness: **Box-cox**, **inverse**, of course, log or square root  
 
-parsnip model object include original model results in ```$fit```.
+parsnip model object includes original model results in ```$fit```.
 
 The workflow replaces prep() -> juice() -> fit()  with single call fit() and bake() -> predict() with predict ().
 
 The workflow needs ```add```ing model specification (parsnip) and preprocessing (recipes).
 
-Resampling is best option to estimate performance of a model.
+Resampling is the best option to estimate the performance of a model.
 
-Resampling splits analysis set and assessment set on **training set**. Final result is performance metrics. 
+Resampling splits analysis set and assessment set on **training set**. The final result is performance metrics. 
 
-Selecting resampling method relates with bias variance trade off. (Repeated CV)
+Selecting the resampling method relates to bias-variance trade-off. (Repeated CV)
 
 https://en.wikipedia.org/wiki/Model_selection#Criteria information criteria??
 
 Resampling does stratified sampling.
 
-The tuning metric tends to be smooth. Irregular metric result means high variance.
+The tuning metric tends to be smooth. The irregular metric result means high variance.
 
 http://appliedpredictivemodeling.com/blog/2014/11/27/vpuig01pqbklmi72b8lcl3ij5hj2qm
 
-Resampling spends memory. The vfold_cv() has copy of original data. 
+Resampling spends memory. The vfold_cv() has a copy of the original data. 
 
 Processing first or resampling first??
 
 **Resample first**
 
-If preprocessing is outside of resampling, You don't know how test set will be predicted.
+If preprocessing is outside of resampling, You don't know how the test set will be predicted.
 
-Is feature engineering stable or unstable. 
+Is feature engineering stable or unstable? 
 
-Can tune package select a good preprocessing process? Yes it can.
+Can tune package select a good preprocessing process? Yes, it can.
 
 The upsampling issues and rare important data points
 
@@ -244,23 +244,23 @@ Hyperparameter types grid (regular, irregular), iterative
 
 Making function name: use underbar ```_``` "Grid_regular"
 
-The plos and cons of regular and non-regular grid
+The pros and cons of regular and non-regular grid
 
 The non-regular grid efficient except some model can do trick.
 
-The parsnip standardize and it changes default parameter ranges.
+The parsnip standardizes and it changes default parameter ranges.
 
-The parameter tibble can not be subsetted. It will be issued in github.
+The parameter tibble can not be subsetted. It will be issued in GitHub.
 
-Peaple take care about default value of parameters.
+People take care of the default value of parameters.
 
 Tidymodel delays evaluation. Set first and run later.
 
-Splines is wagged at the edge of range. When tring to predict value out of range, warnings occurs. Resampling can cause error at the edge point of assessment set.
+The Splines fitting is wagged at the edge of the range. When trying to predict value out of range, warnings occur. Resampling can cause an error at the edge point of the assessment set.
 
 There is a note column in the result object.
 
-Sensitity of parameters can be evaluate with ggplot. Scale should be adjusted when outlier is present. 
+The sensitivity of parameters can be evaluated with ggplot. The scale should be adjusted when an outlier is present. 
 
 Best fit can be choose 
 
@@ -268,23 +268,23 @@ Documentation
 
 Show best and select best (parameter)
 
-Tune tunes selected parameters. If you don't tune parameters, the parameters goes default value.
+Tune tunes selected parameters. If you don't tune parameters, the parameters go default value.
 
-The log ridership is wired because bimodal distribution. It will show skewed residual or something.
+The log ridership is wired because of a bimodal distribution. It will show skewed residual or something.
 
-```!!stations``` indicates the environment of the station object, the station object is defined at recipe object not global environment.
+```!!stations``` indicates the environment of the station object, the station object is defined at recipe object, not the global environment.
 
-Regularization wins wraping feature selection methods in terms of efficacy.
+Regularization wins wrapping feature selection methods in terms of efficacy.
 
-If two predictors are highly correlated, the signs can change and the variance of coefficients inflate.
+If two predictors are highly correlated, the signs can change and the variance of coefficients inflates.
 
-L1 penalty does feature selection, L2 penalty resolves correlation. Does mixture feature selection? Yes, L1 component and lambda determine how much variables are kicked out, except pure ridge regression (ie. pure L2 penalty).
+L1 penalty does feature selection, the L2 penalty resolves correlation. Does mixture feature selection? Yes, the L1 component and lambda determine how many variables are kicked out, except pure ridge regression (ie. pure L2 penalty).
 
 Normalize or standardize on dummy variables? 
 
-Lambda is more important parameter than alpha in glm.
+Lambda is a more important parameter than alpha in glm.
 
-Parallelism issue. GPU is good at linear algebra. Parallelism consumes memmory because they copy data. Tuning is advantaged with parallelism because it uses for loop. Unix is better than Windows in terms of parallelism. 
+Parallelism issue. GPU is good at linear algebra. Parallelism consumes memory because they copy data. Tuning is advantaged with parallelism because it uses for a loop. Unix is better than Windows in terms of parallelism. 
 
 Inner join makes prediction tibble subsetting best. 
 
@@ -294,13 +294,13 @@ GCV is used to pruning the point.
 
 Is MARS greedy? Semi-greedy.
 
-MARS is struggle with colineality. Use step_pca.
+MARS is struggling with colinearity. Use step_pca.
 
 Bayesian process, Gaussian process, Kernel function selection
 
-MARS hyper parameter space is high dimentional,thus gausian process is better than grid method in terms of efficiency. Grid methods for Chicago data MARS model needs more than 4000 points of grid, although grid search can use parallel process.
+MARS hyperparameter space is high dimensional, thus the Gaussian process is better than the grid method in terms of efficiency. Grid methods for the Chicago data MARS model need more than 4000 points of the grid, although the grid search can use a parallel process.
 
-Bayesian parameter seraching process can be updated and pause.
+The Bayesian parameter searching process can be updated and pause.
 
 Classification Hard prediction vs soft prediction (probability)
 

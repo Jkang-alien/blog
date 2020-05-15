@@ -28,11 +28,11 @@ projects: []
 ### Machine Learning and Tidymodel  
 
 #### Model setting, {Parsnip}  
-Rpackage Parsnip standardize model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specification and lately evaluates.  
+Rpackage Parsnip standardizes model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specifications and lately evaluates.  
 
 #### Feature engineering, {Recipes}  
 
-Recipes makes preprocessing easy with ```step_()``` functions. Recipes after specification, calculates.  
+Recipes make preprocessing easy with ```step_()``` functions. Recipes after specification calculate.  
 
 
 #### Resampling, {rsample}  

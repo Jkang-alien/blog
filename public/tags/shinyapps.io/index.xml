@@ -20,8 +20,8 @@
       <description>
 
 
-&lt;p&gt;A NGS pathology report contains interpretation section to describe the clinical interpretation of the found genomic variants of the patient’s cancer sample. The interpretation is different each varaiants and each cancer type or the other clinical factors. The pathologists describe the interpretation and archive those in certain methods including tables like excel.&lt;/p&gt;
-&lt;p&gt;I make a shinyapp to archive the interpretations to database and seach them.&lt;br /&gt;
+&lt;p&gt;An NGS pathology report contains an interpretation section to describe the clinical interpretation of the found genomic variants of the patient’s cancer sample. The interpretation is different from each variant and each cancer type or the other clinical factors. The pathologists describe the interpretation and archive those in certain methods including tables like excel.&lt;/p&gt;
+&lt;p&gt;I make a shinyapp to archive the interpretations to a database and search them.&lt;br /&gt;
 &lt;a href=&#34;https://jkang.shinyapps.io/Interpretation/&#34; class=&#34;uri&#34;&gt;https://jkang.shinyapps.io/Interpretation/&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>

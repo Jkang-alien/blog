@@ -24,10 +24,10 @@ draft: false
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
-	echo = FALSE,
-	error = FALSE,
-	message = FALSE,
-	cache = TRUE
+    echo = FALSE,
+    error = FALSE,
+    message = FALSE,
+    cache = TRUE
 )
 ```
 
@@ -54,9 +54,9 @@ Debug your data first, not your program!
 Visualization, Hello World Image data set has faulty annotations.  
 Validate your data set!! 
 
-High dimentionality, MNIST data set PCA clustering.
+High dimensionality, MNIST data set PCA clustering.
 
-Fairness, Different view of points can be visualized. People can understand with it.
+Fairness, Different views of points can be visualized. People can understand it.
 
 ```{r}
 blogdown::shortcodes('tweet', c('1222585238473203712',
@@ -71,12 +71,12 @@ https://pair.withgoogle.com
 Development  
 Plumber API  
 
-After modeling with R, through application programming interface (API) the model can be used by other application. 
+After modeling with R, through an application programming interface (API) the model can be used by other applications. 
 
 Applications using R and Plumber
 
 T-mobile Heather Nolis, Jacqueline Nolis
-'We we're strrictly a java shop'
+'We're strictly a java shop'
 {loadtest} Rpackage for performance test
 ---
 Andrew Mangan, Salesforce  
@@ -88,14 +88,14 @@ James Blair, RStudio
 
 Practical Plumber Patterns  
 Packaging plumber  
-Package as a deploying method  
+A package as a deploying method  
 
 
 
 Alex Gold  RStudio  
-Develop public bicycle prediction app  
-Shiny, Plumber and Pin  
-The Package Pins helps real time data IO management.  
+Develop a public bicycle prediction app  
+Shiny, Plumber, and Pin  
+The Package Pins helps real-time data IO management.  
 
 Jenny  
 
@@ -124,7 +124,7 @@ Shiny contest, open codes
 Joe Cheng, RStudio  
 
 Styling Shiny with Sass and Bootstrap 4  
-Bootstrap 4 is default Shiny frame. Bootstrap 4 supports Sass which is a meta program for CSS. {bootstraplib} makes easy to use Sass in R environment.  
+Bootstrap 4 is default Shiny frame. Bootstrap 4 supports Sass which is a meta-program for CSS. {bootstraplib} makes easy to use Sass in R environment.  
 
 
 ```{r}
@@ -155,7 +155,7 @@ Building a native iPad dashboard
 
 ---
 Nathaniel Phillips, Roche  
-{FlatironKichen}, a package for framework for clinical patient data analysis. A data.frame with one row for one patient. It has its unique data.frame frame and analysis workflow. If once the data.frame is established following analysis becomes easy.  
+{FlatironKichen}, a package for a framework for clinical patient data analysis. A data.frame with one row for one patient. It has its unique data.frame and analysis workflow. If once the data.frame is established following analysis becomes easy.  
 
 ---
 
@@ -169,10 +169,10 @@ Medical device with R, InsightRX/PKPDsim
 
 ---
 Justin Juskewitch, Mayo Clinic  
-Transfusion platele selection and match for patient and documentation automation  
+Transfusion platelet selection and match for patient and documentation automation  
 
 ---
-Platele need and bed occupation prediction and its applications
+Platelet need and bed occupation prediction and its applications
 
 ---
 Alicia Schep, Outlier AI
@@ -203,9 +203,9 @@ Problem
 
 ---
 
-Lightening Talk
+Lightning Talk
 
-Maxican election prediction
+Mexican election prediction
 
 ```{r}
 blogdown::shortcode('tweet', '1223021112117743618')
@@ -217,7 +217,7 @@ Rebecca Barter Becoming an R Blogger
 blogdown::shortcode('tweet', '1221852227184128000')
 ```
 
-Other session not check-in  
+Other sessions, not check-in  
 
 ```{r}
 blogdown::shortcodes('tweet', c('1222998335239290880',

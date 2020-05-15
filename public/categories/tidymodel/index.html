@@ -366,7 +366,7 @@
     <h2><a href="/post/tidymodel-and-glmnet/">Tidymodel and glmnet</a></h2>
     <div class="article-style">
       
-      When the penalized generalize linear model (Lasso or Ridge) is processed in tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.
+      When the penalized generalize linear model (Lasso or Ridge) is processed in the tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of the final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.
 Modelinglibrary(tidymodels)library(glmnet)set.seed(930093)cv_splits &lt;- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T)mod &lt;- logistic_reg(penalty = tune(),mixture = tune()) %&gt;%set_engine(&quot;glmnet&quot;)rec &lt;- recipe(PIK3CA_T ~ .
       
     </div>
@@ -376,8 +376,8 @@ Modelinglibrary(tidymodels)library(glmnet)set.seed(930093)cv_splits &lt;- rs
     <h2><a href="/post/tidymodel/">Tidymodel</a></h2>
     <div class="article-style">
       
-      Machine Learning and TidymodelModel setting, {Parsnip}Rpackage Parsnip standardize model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specification and lately evaluates.
-Feature engineering, {Recipes}Recipes makes preprocessing easy with step_() functions. Recipes after specification, calculates.
+      Machine Learning and TidymodelModel setting, {Parsnip}Rpackage Parsnip standardizes model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specifications and lately evaluates.
+Feature engineering, {Recipes}Recipes make preprocessing easy with step_() functions. Recipes after specification calculate.
 Resampling, {rsample}To choose a model and hyperparameters, we must validate the different models.
 Making hyperparameter set, {dials}The Rpackage {dials} set hyperparameter similarily with {Parsnip}.
       

@@ -44,7 +44,7 @@
       <description>
 
 
-&lt;p&gt;When the penalized generalize linear model (Lasso or Ridge) is processed in tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.&lt;/p&gt;
+&lt;p&gt;When the penalized generalize linear model (Lasso or Ridge) is processed in the tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of the final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.&lt;/p&gt;
 &lt;div id=&#34;modeling&#34; class=&#34;section level5&#34;&gt;
 &lt;h5&gt;Modeling&lt;/h5&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(tidymodels)
@@ -75,7 +75,7 @@ ctrl &amp;lt;- control_grid(save_pred = TRUE, verbose = TRUE)&lt;/code&gt;&lt;/p
 &lt;ul&gt;
 &lt;li&gt;Grid parameter search on 10-fold cross-validation with 5 repeats&lt;br /&gt;
 &lt;/li&gt;
-&lt;li&gt;Dummy varable to control for histologic subtype&lt;/li&gt;
+&lt;li&gt;Dummy variable to control for histologic subtype&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div id=&#34;select-best-parameter&#34; class=&#34;section level5&#34;&gt;
@@ -96,7 +96,7 @@ best_glmn &amp;lt;- select_best(glmn_tune, metric = &amp;quot;roc_auc&amp;quot;)
   wfl %&amp;gt;%
   finalize_workflow(best_glmn) %&amp;gt;%
   fit(data = trainset_ahDiff)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;code&gt;finalize_workflow()&lt;/code&gt; finalizes the model with selected optimal hyperparameters. However the glmnet fits any lambda, not the indicated lambda. This was discussed at &lt;a href=&#34;https://github.com/tidymodels/parsnip/issues/195&#34; class=&#34;uri&#34;&gt;https://github.com/tidymodels/parsnip/issues/195&lt;/a&gt;. The glmnet is more efficient to fit all lambda than a single lambda. Thus tidymodel ignores the indicated lambda. This made first confusion. &lt;strong&gt;The finalization can be finalized by predict in tidymodel environment.&lt;/strong&gt; Finalize with &lt;code&gt;predict&lt;/code&gt;. Note the last argument &lt;code&gt;penalty = 1&lt;/code&gt; of &lt;code&gt;stats::predict(wfl_final, type = &#34;prob&#34;, new_data = trainset_ahDiff, penalty = 1)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;finalize_workflow()&lt;/code&gt; finalizes the model with selected optimal hyperparameters. However, the glmnet fits any lambda, not the indicated lambda. This was discussed at &lt;a href=&#34;https://github.com/tidymodels/parsnip/issues/195&#34; class=&#34;uri&#34;&gt;https://github.com/tidymodels/parsnip/issues/195&lt;/a&gt;. The glmnet is more efficient to fit all lambda than a single lambda. Thus tidymodel ignores the indicated lambda. This made the first confusion. &lt;strong&gt;The finalization can be finalized by predict in tidymodel environment.&lt;/strong&gt; Finalize with &lt;code&gt;predict&lt;/code&gt;. Note the last argument &lt;code&gt;penalty = 1&lt;/code&gt; of &lt;code&gt;stats::predict(wfl_final, type = &#34;prob&#34;, new_data = trainset_ahDiff, penalty = 1)&lt;/code&gt;.&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;train_predict &amp;lt;- stats::predict(wfl_final, type = &amp;quot;prob&amp;quot;, new_data = trainset_ahDiff, penalty = 1)
 train_probs &amp;lt;- 
   predict(wfl_final, type = &amp;quot;prob&amp;quot;, new_data = trainset_ahDiff) %&amp;gt;%
@@ -117,7 +117,7 @@ train_probs &amp;lt;-
 ##   .metric .estimator .estimate
 ##   &amp;lt;chr&amp;gt;   &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt;
 ## 1 roc_auc binary         0.782&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Because glmnet fits whole path, there are whole coefficients in the glmnet fit object &lt;code&gt;wfl_final&lt;/code&gt;. This was second confusion. HOw to get the final model coeffients is below.&lt;/p&gt;
+&lt;p&gt;Because glmnet fits the whole path, there are whole coefficients in the glmnet fit object &lt;code&gt;wfl_final&lt;/code&gt;. This was the second confusion. How to get the final model coefficients is below.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;coefficients&#34; class=&#34;section level5&#34;&gt;
 &lt;h5&gt;Coefficients&lt;/h5&gt;
@@ -142,11 +142,11 @@ train_probs &amp;lt;-
 &lt;h3&gt;Machine Learning and Tidymodel&lt;/h3&gt;
 &lt;div id=&#34;model-setting-parsnip&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;Model setting, {Parsnip}&lt;/h4&gt;
-&lt;p&gt;Rpackage Parsnip standardize model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specification and lately evaluates.&lt;/p&gt;
+&lt;p&gt;Rpackage Parsnip standardizes model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specifications and lately evaluates.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;feature-engineering-recipes&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;Feature engineering, {Recipes}&lt;/h4&gt;
-&lt;p&gt;Recipes makes preprocessing easy with &lt;code&gt;step_()&lt;/code&gt; functions. Recipes after specification, calculates.&lt;/p&gt;
+&lt;p&gt;Recipes make preprocessing easy with &lt;code&gt;step_()&lt;/code&gt; functions. Recipes after specification calculate.&lt;/p&gt;
 &lt;/div&gt;
 &lt;div id=&#34;resampling-rsample&#34; class=&#34;section level4&#34;&gt;
 &lt;h4&gt;Resampling, {rsample}&lt;/h4&gt;
@@ -193,8 +193,8 @@ Fernanda Viegas, Martin Wattenberg&lt;/p&gt;
 &lt;p&gt;Debug your data first, not your program!&lt;/p&gt;
 &lt;p&gt;Visualization, Hello World Image data set has faulty annotations.&lt;br /&gt;
 Validate your data set!!&lt;/p&gt;
-&lt;p&gt;High dimentionality, MNIST data set PCA clustering.&lt;/p&gt;
-&lt;p&gt;Fairness, Different view of points can be visualized. People can understand with it.&lt;/p&gt;
+&lt;p&gt;High dimensionality, MNIST data set PCA clustering.&lt;/p&gt;
+&lt;p&gt;Fairness, Different views of points can be visualized. People can understand it.&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Great to see misclassification applied to fairness in loans! &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstudio?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudio&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/google?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#google&lt;/a&gt; &lt;a href=&#34;https://t.co/0TOCCegOpt&#34;&gt;pic.twitter.com/0TOCCegOpt&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kyle Monahan (@kylemonahan2) &lt;a href=&#34;https://twitter.com/kylemonahan2/status/1222585238473203712?ref_src=twsrc%5Etfw&#34;&gt;January 29, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
@@ -213,7 +213,7 @@ Validate your data set!!&lt;/p&gt;
 &lt;h2&gt;Shiny contest, open codes&lt;/h2&gt;
 &lt;p&gt;Joe Cheng, RStudio&lt;/p&gt;
 &lt;p&gt;Styling Shiny with Sass and Bootstrap 4&lt;br /&gt;
-Bootstrap 4 is default Shiny frame. Bootstrap 4 supports Sass which is a meta program for CSS. {bootstraplib} makes easy to use Sass in R environment.&lt;/p&gt;
+Bootstrap 4 is default Shiny frame. Bootstrap 4 supports Sass which is a meta-program for CSS. {bootstraplib} makes easy to use Sass in R environment.&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Thanks to &lt;a href=&#34;https://twitter.com/jcheng?ref_src=twsrc%5Etfw&#34;&gt;@jcheng&lt;/a&gt; for the shoutout at &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt;! Be sure to check out &lt;a href=&#34;https://twitter.com/jcheng?ref_src=twsrc%5Etfw&#34;&gt;@jcheng&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/cpsievert?ref_src=twsrc%5Etfw&#34;&gt;@cpsievert&lt;/a&gt;’s package bootstraplib for easy custom fonts and styling in &lt;a href=&#34;https://twitter.com/hashtag/shiny?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#shiny&lt;/a&gt; &lt;a href=&#34;https://t.co/hcy5zCxuAQ&#34;&gt;https://t.co/hcy5zCxuAQ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tim Mastny (@timmastny) &lt;a href=&#34;https://twitter.com/timmastny/status/1222664917280387072?ref_src=twsrc%5Etfw&#34;&gt;January 29, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
@@ -238,7 +238,7 @@ Bootstrap 4 is default Shiny frame. Bootstrap 4 supports Sass which is a meta pr
 &lt;p&gt;Ana Alyeska Santos, Braulio Cuandon, Biosense Webster, Inc.&lt;/p&gt;
 &lt;p&gt;Reproducible Engineering Test Reports&lt;/p&gt;
 &lt;p&gt;Justin Juskewitch, Mayo Clinic&lt;br /&gt;
-Transfusion platele selection and match for patient and documentation automation&lt;/p&gt;
+Transfusion platelet selection and match for patient and documentation automation&lt;/p&gt;
 &lt;p&gt;Alicia Schep, Outlier AI&lt;/p&gt;
 &lt;p&gt;She moved R from Python. {vlBuildr} API develop Altair and Vega-Lite&lt;/p&gt;
 &lt;hr /&gt;
@@ -248,8 +248,8 @@ Transfusion platele selection and match for patient and documentation automation
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Learn how to use list-columns with data.table from these slides from &lt;a href=&#34;https://twitter.com/healthandstats?ref_src=twsrc%5Etfw&#34;&gt;@healthandstats&lt;/a&gt;:&lt;a href=&#34;https://t.co/amXG686twc&#34;&gt;https://t.co/amXG686twc&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; &lt;a href=&#34;https://t.co/CrPVDhtYgH&#34;&gt;https://t.co/CrPVDhtYgH&lt;/a&gt;&lt;/p&gt;&amp;mdash; John Blischak (@jdblischak) &lt;a href=&#34;https://twitter.com/jdblischak/status/1223004598572437504?ref_src=twsrc%5Etfw&#34;&gt;January 30, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
-&lt;p&gt;Lightening Talk&lt;/p&gt;
-&lt;p&gt;Maxican election prediction&lt;/p&gt;
+&lt;p&gt;Lightning Talk&lt;/p&gt;
+&lt;p&gt;Mexican election prediction&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Really interesting talk from &lt;a href=&#34;https://twitter.com/TeresaOM?ref_src=twsrc%5Etfw&#34;&gt;@TeresaOM&lt;/a&gt; on predicting Mexican election results from initial polling data. They&amp;#39;re in a &amp;quot;bunker&amp;quot; with no internet access, so no StackOverflow!&lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt;&lt;a href=&#34;https://t.co/8Im6k6zusu&#34;&gt;https://t.co/8Im6k6zusu&lt;/a&gt;&lt;/p&gt;&amp;mdash; John Blischak (@jdblischak) &lt;a href=&#34;https://twitter.com/jdblischak/status/1223021112117743618?ref_src=twsrc%5Etfw&#34;&gt;January 30, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
@@ -257,7 +257,7 @@ Transfusion platele selection and match for patient and documentation automation
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Stupidly excited for &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; this week! &lt;br&gt;&lt;br&gt;📢 Check out my lightening talk on &amp;quot;becoming an R blogger&amp;quot; Thursday at 2:55. &lt;br&gt;&lt;br&gt;👋 If you&amp;#39;d like to say hi during the conference, feel free to reach out&lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/datascience?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#datascience&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rebecca Barter (@rlbarter) &lt;a href=&#34;https://twitter.com/rlbarter/status/1221852227184128000?ref_src=twsrc%5Etfw&#34;&gt;January 27, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
-&lt;p&gt;Other session not check-in&lt;/p&gt;
+&lt;p&gt;Other sessions, not check-in&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;🎨📊 Enjoying learning about { ggtext } and { gridtext } &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; packages from &lt;a href=&#34;https://twitter.com/ClausWilke?ref_src=twsrc%5Etfw&#34;&gt;@ClausWilke&lt;/a&gt; @ &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt;&lt;a href=&#34;https://t.co/vyqgTkTnM8&#34;&gt;https://t.co/vyqgTkTnM8&lt;/a&gt;&lt;a href=&#34;https://t.co/jnnR0AvGF0&#34;&gt;https://t.co/jnnR0AvGF0&lt;/a&gt; &lt;a href=&#34;https://t.co/4ew8EKqXay&#34;&gt;pic.twitter.com/4ew8EKqXay&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rich Pauloo (@RichPauloo) &lt;a href=&#34;https://twitter.com/RichPauloo/status/1222998335239290880?ref_src=twsrc%5Etfw&#34;&gt;January 30, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
@@ -309,39 +309,39 @@ Transfusion platele selection and match for patient and documentation automation
 &lt;p&gt;purrr::map and tidyr::nest covered because they are used in resample or tune.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;/post/2020-01-26-applied-machine-learning-workshop-rstudio-conference-2020_files/figure-html/explore-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Skew data might be looking outlier.&lt;/p&gt;
-&lt;p&gt;Peaple look at data many different ways like outliers, missingness, correlation and suspection of important variable.&lt;/p&gt;
+&lt;p&gt;People look at data in many different ways like outliers, missingness, correlation, and suspicion of an important variable.&lt;/p&gt;
 &lt;p&gt;The ggplot is good to explore variables adding geoms changing plot.&lt;/p&gt;
-&lt;p&gt;Machine learning is creative because you can do many different way such as which variable should be included.&lt;/p&gt;
+&lt;p&gt;Machine learning is creative because you can do many different ways such as which variable should be included.&lt;/p&gt;
 &lt;p&gt;Model workflow: imputation -&amp;gt; transformation -&amp;gt; filter -&amp;gt; model&lt;/p&gt;
-&lt;p&gt;Resampling avoid somethinf like the garden of forking paths or p-hacking by honest feedback.&lt;/p&gt;
+&lt;p&gt;Resampling avoids something like the garden of forking paths or p-hacking by honest feedback.&lt;/p&gt;
 &lt;p&gt;The tuning parameter can be estimated &lt;strong&gt;analytically&lt;/strong&gt; or iteratively.&lt;/p&gt;
 &lt;p&gt;Single validation set ??&lt;/p&gt;
 &lt;p&gt;Resampling process questions&lt;/p&gt;
-&lt;p&gt;Spliting data is confusing.&lt;/p&gt;
-&lt;p&gt;Test set split preserve &lt;strong&gt;distribution&lt;/strong&gt;.&lt;/p&gt;
-&lt;p&gt;Interval and sampling is behind scene of resampling.&lt;/p&gt;
+&lt;p&gt;Splitting data is confusing.&lt;/p&gt;
+&lt;p&gt;The test set split preserves &lt;strong&gt;distribution&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Interval and sampling are behind the scene of resampling.&lt;/p&gt;
 &lt;p&gt;fomular x ~ . -something to remove&lt;/p&gt;
-&lt;p&gt;Variable role: limited (can not be applied to hierachical in Baysian??)&lt;/p&gt;
-&lt;p&gt;Fomular and XY interpace is not fit in machine learning. The recipes is a solution.&lt;/p&gt;
-&lt;p&gt;The broom::glance (one row summary of metrics, don’t trust this too much) tidy (coefficients) augment (by data points)&lt;/p&gt;
-&lt;p&gt;The parsnip (unified interface) is a solution of different interface.&lt;/p&gt;
+&lt;p&gt;Variable role: limited (can not be applied to hierarchical in Baysian??)&lt;/p&gt;
+&lt;p&gt;Formula and XY interface is not fit in machine learning. The recipes package is a solution.&lt;/p&gt;
+&lt;p&gt;The broom::glance (one-row summary of metrics, don’t trust this too much) tidy (coefficients) augment (by data points)&lt;/p&gt;
+&lt;p&gt;The parsnip (unified interface) is a solution to a different interface.&lt;/p&gt;
 &lt;p&gt;How to set specific settings using parsnip?&lt;/p&gt;
 &lt;p&gt;Many other packages supporting parsnip. Look at the tidymodels packages.&lt;/p&gt;
-&lt;p&gt;What is difference betweeen caret and parsnip?&lt;/p&gt;
+&lt;p&gt;What is the difference between caret and parsnip?&lt;/p&gt;
 &lt;p&gt;Caret~base R, parsnip~tidyverse&lt;/p&gt;
-&lt;p&gt;The parsnip generalizes the interfaces and be easy to extend.&lt;/p&gt;
-&lt;p&gt;Dummy variable is confusing in interaction of terms and how to interprete coefficiency.&lt;/p&gt;
-&lt;p&gt;The level with 0,0 allocation becomes base variable in factor variable. A continuous variable can be categorized with recipe::step_discritize().&lt;/p&gt;
+&lt;p&gt;The parsnip generalizes the interfaces and is easy to extend.&lt;/p&gt;
+&lt;p&gt;A dummy variable is confusing in the interaction of terms and how to interpret coefficiency.&lt;/p&gt;
+&lt;p&gt;The level with 0,0 allocation becomes a base variable in factor variable. A continuous variable can be categorized with recipe::step_discritize().&lt;/p&gt;
 &lt;p&gt;A zero variance predictor includes no record or single value variable.&lt;/p&gt;
 &lt;p&gt;Feature engineering problem
 * Dummy variable&lt;br /&gt;
 * Zero variance
 * Standardize&lt;/p&gt;
 &lt;p&gt;Customizing Step function&lt;/p&gt;
-&lt;p&gt;First level be a reference. There are ways to change the reference level. (Ordering facter level issues)&lt;/p&gt;
-&lt;p&gt;Peaple response positively to the recipes.&lt;/p&gt;
+&lt;p&gt;The first level is a reference. There are ways to change the reference level. (Ordering factor level issues)&lt;/p&gt;
+&lt;p&gt;People respond positively to the recipes.&lt;/p&gt;
 &lt;p&gt;recipe -&amp;gt; prep -&amp;gt; juice/bake; define -&amp;gt; calculate -&amp;gt; processing (training or test set)&lt;/p&gt;
-&lt;p&gt;The post processed data set goes to fit() to estabilish a model&lt;/p&gt;
+&lt;p&gt;The post-processed data set goes to fit() to establish a model&lt;/p&gt;
 &lt;p&gt;Versioning model caching?&lt;/p&gt;
 &lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mod_rec &amp;lt;- recipe(
   Sale_Price ~ Longitude + Latitude + Neighborhood, 
@@ -376,57 +376,57 @@ preped_data %&amp;gt;%
 ## #   Neighborhood_Gilbert &amp;lt;dbl&amp;gt;, Neighborhood_Sawyer &amp;lt;dbl&amp;gt;,
 ## #   Neighborhood_other &amp;lt;dbl&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;step_dummy -&amp;gt; step_other/step_nzv()&lt;/p&gt;
-&lt;p&gt;Step_dummy create many dummy variables thus you should include the new dummy variables into the interaction terms or others or nzv. with starts_with() function.&lt;/p&gt;
-&lt;p&gt;Resolving skewness: &lt;strong&gt;Box-cox&lt;/strong&gt;, &lt;strong&gt;inverse&lt;/strong&gt;, of course log or squreroot&lt;/p&gt;
-&lt;p&gt;parsnip model object include original model results in &lt;code&gt;$fit&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Step_dummy creates many dummy variables thus you should include the new dummy variables into the interaction terms or others or nzv. with starts_with() function.&lt;/p&gt;
+&lt;p&gt;Resolving skewness: &lt;strong&gt;Box-cox&lt;/strong&gt;, &lt;strong&gt;inverse&lt;/strong&gt;, of course, log or square root&lt;/p&gt;
+&lt;p&gt;parsnip model object includes original model results in &lt;code&gt;$fit&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The workflow replaces prep() -&amp;gt; juice() -&amp;gt; fit() with single call fit() and bake() -&amp;gt; predict() with predict ().&lt;/p&gt;
 &lt;p&gt;The workflow needs &lt;code&gt;add&lt;/code&gt;ing model specification (parsnip) and preprocessing (recipes).&lt;/p&gt;
-&lt;p&gt;Resampling is best option to estimate performance of a model.&lt;/p&gt;
-&lt;p&gt;Resampling splits analysis set and assessment set on &lt;strong&gt;training set&lt;/strong&gt;. Final result is performance metrics.&lt;/p&gt;
-&lt;p&gt;Selecting resampling method relates with bias variance trade off. (Repeated CV)&lt;/p&gt;
+&lt;p&gt;Resampling is the best option to estimate the performance of a model.&lt;/p&gt;
+&lt;p&gt;Resampling splits analysis set and assessment set on &lt;strong&gt;training set&lt;/strong&gt;. The final result is performance metrics.&lt;/p&gt;
+&lt;p&gt;Selecting the resampling method relates to bias-variance trade-off. (Repeated CV)&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Model_selection#Criteria&#34; class=&#34;uri&#34;&gt;https://en.wikipedia.org/wiki/Model_selection#Criteria&lt;/a&gt; information criteria??&lt;/p&gt;
 &lt;p&gt;Resampling does stratified sampling.&lt;/p&gt;
-&lt;p&gt;The tuning metric tends to be smooth. Irregular metric result means high variance.&lt;/p&gt;
+&lt;p&gt;The tuning metric tends to be smooth. The irregular metric result means high variance.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://appliedpredictivemodeling.com/blog/2014/11/27/vpuig01pqbklmi72b8lcl3ij5hj2qm&#34; class=&#34;uri&#34;&gt;http://appliedpredictivemodeling.com/blog/2014/11/27/vpuig01pqbklmi72b8lcl3ij5hj2qm&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Resampling spends memory. The vfold_cv() has copy of original data.&lt;/p&gt;
+&lt;p&gt;Resampling spends memory. The vfold_cv() has a copy of the original data.&lt;/p&gt;
 &lt;p&gt;Processing first or resampling first??&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Resample first&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;If preprocessing is outside of resampling, You don’t know how test set will be predicted.&lt;/p&gt;
-&lt;p&gt;Is feature engineering stable or unstable.&lt;/p&gt;
-&lt;p&gt;Can tune package select a good preprocessing process? Yes it can.&lt;/p&gt;
+&lt;p&gt;If preprocessing is outside of resampling, You don’t know how the test set will be predicted.&lt;/p&gt;
+&lt;p&gt;Is feature engineering stable or unstable?&lt;/p&gt;
+&lt;p&gt;Can tune package select a good preprocessing process? Yes, it can.&lt;/p&gt;
 &lt;p&gt;The upsampling issues and rare important data points&lt;/p&gt;
 &lt;p&gt;The tuning hyperparameter (underfitting or overfitting).&lt;/p&gt;
 &lt;p&gt;Hyperparameter types grid (regular, irregular), iterative&lt;/p&gt;
 &lt;p&gt;Making function name: use underbar &lt;code&gt;_&lt;/code&gt; “Grid_regular”&lt;/p&gt;
-&lt;p&gt;The plos and cons of regular and non-regular grid&lt;/p&gt;
+&lt;p&gt;The pros and cons of regular and non-regular grid&lt;/p&gt;
 &lt;p&gt;The non-regular grid efficient except some model can do trick.&lt;/p&gt;
-&lt;p&gt;The parsnip standardize and it changes default parameter ranges.&lt;/p&gt;
-&lt;p&gt;The parameter tibble can not be subsetted. It will be issued in github.&lt;/p&gt;
-&lt;p&gt;Peaple take care about default value of parameters.&lt;/p&gt;
+&lt;p&gt;The parsnip standardizes and it changes default parameter ranges.&lt;/p&gt;
+&lt;p&gt;The parameter tibble can not be subsetted. It will be issued in GitHub.&lt;/p&gt;
+&lt;p&gt;People take care of the default value of parameters.&lt;/p&gt;
 &lt;p&gt;Tidymodel delays evaluation. Set first and run later.&lt;/p&gt;
-&lt;p&gt;Splines is wagged at the edge of range. When tring to predict value out of range, warnings occurs. Resampling can cause error at the edge point of assessment set.&lt;/p&gt;
+&lt;p&gt;The Splines fitting is wagged at the edge of the range. When trying to predict value out of range, warnings occur. Resampling can cause an error at the edge point of the assessment set.&lt;/p&gt;
 &lt;p&gt;There is a note column in the result object.&lt;/p&gt;
-&lt;p&gt;Sensitity of parameters can be evaluate with ggplot. Scale should be adjusted when outlier is present.&lt;/p&gt;
+&lt;p&gt;The sensitivity of parameters can be evaluated with ggplot. The scale should be adjusted when an outlier is present.&lt;/p&gt;
 &lt;p&gt;Best fit can be choose&lt;/p&gt;
 &lt;p&gt;Documentation&lt;/p&gt;
 &lt;p&gt;Show best and select best (parameter)&lt;/p&gt;
-&lt;p&gt;Tune tunes selected parameters. If you don’t tune parameters, the parameters goes default value.&lt;/p&gt;
-&lt;p&gt;The log ridership is wired because bimodal distribution. It will show skewed residual or something.&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;!!stations&lt;/code&gt; indicates the environment of the station object, the station object is defined at recipe object not global environment.&lt;/p&gt;
-&lt;p&gt;Regularization wins wraping feature selection methods in terms of efficacy.&lt;/p&gt;
-&lt;p&gt;If two predictors are highly correlated, the signs can change and the variance of coefficients inflate.&lt;/p&gt;
-&lt;p&gt;L1 penalty does feature selection, L2 penalty resolves correlation. Does mixture feature selection? Yes, L1 component and lambda determine how much variables are kicked out, except pure ridge regression (ie. pure L2 penalty).&lt;/p&gt;
+&lt;p&gt;Tune tunes selected parameters. If you don’t tune parameters, the parameters go default value.&lt;/p&gt;
+&lt;p&gt;The log ridership is wired because of a bimodal distribution. It will show skewed residual or something.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;!!stations&lt;/code&gt; indicates the environment of the station object, the station object is defined at recipe object, not the global environment.&lt;/p&gt;
+&lt;p&gt;Regularization wins wrapping feature selection methods in terms of efficacy.&lt;/p&gt;
+&lt;p&gt;If two predictors are highly correlated, the signs can change and the variance of coefficients inflates.&lt;/p&gt;
+&lt;p&gt;L1 penalty does feature selection, the L2 penalty resolves correlation. Does mixture feature selection? Yes, the L1 component and lambda determine how many variables are kicked out, except pure ridge regression (ie. pure L2 penalty).&lt;/p&gt;
 &lt;p&gt;Normalize or standardize on dummy variables?&lt;/p&gt;
-&lt;p&gt;Lambda is more important parameter than alpha in glm.&lt;/p&gt;
-&lt;p&gt;Parallelism issue. GPU is good at linear algebra. Parallelism consumes memmory because they copy data. Tuning is advantaged with parallelism because it uses for loop. Unix is better than Windows in terms of parallelism.&lt;/p&gt;
+&lt;p&gt;Lambda is a more important parameter than alpha in glm.&lt;/p&gt;
+&lt;p&gt;Parallelism issue. GPU is good at linear algebra. Parallelism consumes memory because they copy data. Tuning is advantaged with parallelism because it uses for a loop. Unix is better than Windows in terms of parallelism.&lt;/p&gt;
 &lt;p&gt;Inner join makes prediction tibble subsetting best.&lt;/p&gt;
 &lt;p&gt;Repeated CV residual can be estimated with average predicting values.&lt;/p&gt;
 &lt;p&gt;GCV is used to pruning the point.&lt;/p&gt;
 &lt;p&gt;Is MARS greedy? Semi-greedy.&lt;/p&gt;
-&lt;p&gt;MARS is struggle with colineality. Use step_pca.&lt;/p&gt;
+&lt;p&gt;MARS is struggling with colinearity. Use step_pca.&lt;/p&gt;
 &lt;p&gt;Bayesian process, Gaussian process, Kernel function selection&lt;/p&gt;
-&lt;p&gt;MARS hyper parameter space is high dimentional,thus gausian process is better than grid method in terms of efficiency. Grid methods for Chicago data MARS model needs more than 4000 points of grid, although grid search can use parallel process.&lt;/p&gt;
-&lt;p&gt;Bayesian parameter seraching process can be updated and pause.&lt;/p&gt;
+&lt;p&gt;MARS hyperparameter space is high dimensional, thus the Gaussian process is better than the grid method in terms of efficiency. Grid methods for the Chicago data MARS model need more than 4000 points of the grid, although the grid search can use a parallel process.&lt;/p&gt;
+&lt;p&gt;The Bayesian parameter searching process can be updated and pause.&lt;/p&gt;
 &lt;p&gt;Classification Hard prediction vs soft prediction (probability)&lt;/p&gt;
 &lt;p&gt;Accuracy can be estimated with hard prediction and ROC can be produced on soft prediction.&lt;/p&gt;
 &lt;p&gt;Feature hashing is difficult to understand.&lt;/p&gt;
@@ -470,8 +470,8 @@ preped_data %&amp;gt;%
       <description>
 
 
-&lt;p&gt;A NGS pathology report contains interpretation section to describe the clinical interpretation of the found genomic variants of the patient’s cancer sample. The interpretation is different each varaiants and each cancer type or the other clinical factors. The pathologists describe the interpretation and archive those in certain methods including tables like excel.&lt;/p&gt;
-&lt;p&gt;I make a shinyapp to archive the interpretations to database and seach them.&lt;br /&gt;
+&lt;p&gt;An NGS pathology report contains an interpretation section to describe the clinical interpretation of the found genomic variants of the patient’s cancer sample. The interpretation is different from each variant and each cancer type or the other clinical factors. The pathologists describe the interpretation and archive those in certain methods including tables like excel.&lt;/p&gt;
+&lt;p&gt;I make a shinyapp to archive the interpretations to a database and search them.&lt;br /&gt;
 &lt;a href=&#34;https://jkang.shinyapps.io/Interpretation/&#34; class=&#34;uri&#34;&gt;https://jkang.shinyapps.io/Interpretation/&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>

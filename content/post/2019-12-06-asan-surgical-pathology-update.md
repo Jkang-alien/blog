@@ -23,16 +23,16 @@ projects: []
 #### HPV test
 
 * DNA HPV test will fail.
-* BD (Oncolarity) is for screening test.
+* BD (Oncolarity) is for a screening test.
 * genotype 66 high risk.
-* False negative 10%. DNA copy number is the cause. 
+* False-negative 10%. DNA copy number is the cause. 
 * False positive cross reactivity 0.35%, 0.71% Aptima and Cobas. (one quarter) 
 
 ### Dr. Sneige
 
 #### Immunostain in breast 
 
-* Reduced and diminished myoepithelial cells, phenotypic alteration, SMA ramain but others lost.
+* Reduced and diminished myoepithelial cells, phenotypic alteration, SMA remain but others lost.
 * Any positivity for MEC favors in situ than invasive.
 * Metaplastic carcinoma and fibromatosis like 
 * TTF-1 2% positive in breast cancer.
@@ -41,46 +41,46 @@ projects: []
 
 #### Cutaneous lymphoma
 
-* Mycosis fungoides cell are atypical 7 fold foling nuclear membraene
+* Mycosis fungoides cell are atypical 7 fold folding nuclear membrane
 * CD4 predominant than CD8
 * Mycosis fungoides with large cell transformation
-* CD8 mycosis funcgoides
+* CD8 mycosis fungoides
 * Granulomatous MF
 * Immunohistochemistry marker related to TX
   - CD25, CD30
 
-### Again Dr Mody
+### Again Dr. Mody
 
-* Super D specimen preperations
+* Super D specimen preparation
 * Guideline will be released.
 
-### Dr. Medeiros, Hogdikin lymphomas
+### Dr. Medeiros, Hodgkin lymphomas
 
 * Popcorn, not poped
-* Hogdikin lymphoma cell were rLenamed.
+* Hodgkin lymphoma cells were renamed.
 * LP cells, Lacunar cells, RS + mononuclear variants/anaplastic variants
 
-### Dr El-Naggar H&N cancer  
+### Dr. El-Naggar H&N cancer  
 * HPV nasopharyngeal carcinoma
 * Young caucasian male
-* H&N is different with anogenital area
+* H&N is different from anogenital area
 
 
-### Dr Moran
+### Dr. Moran
 * Neuroendocrine carcinoma in lung
 * Do not follow the WHO without own justification
-* Mitoses count is not rigorous measurement. eye piece diameters, hotspot vs random
+* Mitoses count is not rigorous measurement. eyepiece diameters, hotspot vs random
 * Arrigoni criteria 1974 was 5-10 mitosis per 10 HPF
 
-### Dr Jihun Kim colitis
+### Dr. Jihun Kim colitis
 * Yersinia
-  - Suppurative granuomas
+  - Suppurative granulomas
   - Heaped up mass-like mucosal thickening
   - Superficial ileocecal lesion
   - Lymphoid follicles  
   
 * NSAID-induced enteropathy
-   - Radiating fibrosis around ulcer
+   - Radiating fibrosis around the ulcer
    - Diaphragm-like stricture
 
 * Nivolumab-induced colitis
@@ -89,10 +89,10 @@ projects: []
 
 * Central intrabronchial mass
 * Frozen diagnosis important sleeve or total pneumonectomy
-* Adenosquamous is totally different with mucoepidermoid
+* Adenosquamous is different with mucoepidermoid
 * Mucoepidermoid m/c and children
 * MAML2 translocation
-* Acinic cell carcinoma gold standart is EM
+* Acinic cell carcinoma gold standard is EM
 
 ### Dr. Sneige Breast cancer biomarkers
 
@@ -103,14 +103,14 @@ projects: []
 * HER2 test 2018 guidelines
 * OncotypeDX NEJM 2018 intermediated group can skip chemotherapy
 
-### Dr Prieto Cutaneous mesenchymal tumors
+### Dr. Prieto Cutaneous mesenchymal tumors
 
 * Dermatofibroma vs Dermatofibrosarcoma protuberance
 * Epithelioid fibrous histiocytoma
   - Resembling melanoma
 * Angiomatoid fibrous histiocytoma
   - Translocation EWSR1, FUS, CREB1, ATF1
-* Atypical fibrosxanthoma
+* Atypical fibroxanthoma
   - Solitary lesion on sun-exposed skin 
   - Elderly adult
 * Neurothekeoma
@@ -137,9 +137,9 @@ projects: []
 * Salivary gland tumor
   - Ductal carcinoma
   - Homology with breast, prostate
-  - Testosterone, Adrogen and Steroid
-  - Adrogen receptor, Glucocorticoid receptor
-  - Adrogen receptor splicing variant: consticutive activation
+  - Testosterone, Androgen, and Steroid
+  - Androgen receptor, Glucocorticoid receptor
+  - Androgen receptor splicing variant: constitutive activation
 
 ### Dr. Kyu-Rae Kim 
 

@@ -39,8 +39,8 @@ Fernanda Viegas, Martin Wattenberg&lt;/p&gt;
 &lt;p&gt;Debug your data first, not your program!&lt;/p&gt;
 &lt;p&gt;Visualization, Hello World Image data set has faulty annotations.&lt;br /&gt;
 Validate your data set!!&lt;/p&gt;
-&lt;p&gt;High dimentionality, MNIST data set PCA clustering.&lt;/p&gt;
-&lt;p&gt;Fairness, Different view of points can be visualized. People can understand with it.&lt;/p&gt;
+&lt;p&gt;High dimensionality, MNIST data set PCA clustering.&lt;/p&gt;
+&lt;p&gt;Fairness, Different views of points can be visualized. People can understand it.&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Great to see misclassification applied to fairness in loans! &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstudio?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudio&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/google?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#google&lt;/a&gt; &lt;a href=&#34;https://t.co/0TOCCegOpt&#34;&gt;pic.twitter.com/0TOCCegOpt&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kyle Monahan (@kylemonahan2) &lt;a href=&#34;https://twitter.com/kylemonahan2/status/1222585238473203712?ref_src=twsrc%5Etfw&#34;&gt;January 29, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
@@ -59,7 +59,7 @@ Validate your data set!!&lt;/p&gt;
 &lt;h2&gt;Shiny contest, open codes&lt;/h2&gt;
 &lt;p&gt;Joe Cheng, RStudio&lt;/p&gt;
 &lt;p&gt;Styling Shiny with Sass and Bootstrap 4&lt;br /&gt;
-Bootstrap 4 is default Shiny frame. Bootstrap 4 supports Sass which is a meta program for CSS. {bootstraplib} makes easy to use Sass in R environment.&lt;/p&gt;
+Bootstrap 4 is default Shiny frame. Bootstrap 4 supports Sass which is a meta-program for CSS. {bootstraplib} makes easy to use Sass in R environment.&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Thanks to &lt;a href=&#34;https://twitter.com/jcheng?ref_src=twsrc%5Etfw&#34;&gt;@jcheng&lt;/a&gt; for the shoutout at &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt;! Be sure to check out &lt;a href=&#34;https://twitter.com/jcheng?ref_src=twsrc%5Etfw&#34;&gt;@jcheng&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/cpsievert?ref_src=twsrc%5Etfw&#34;&gt;@cpsievert&lt;/a&gt;’s package bootstraplib for easy custom fonts and styling in &lt;a href=&#34;https://twitter.com/hashtag/shiny?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#shiny&lt;/a&gt; &lt;a href=&#34;https://t.co/hcy5zCxuAQ&#34;&gt;https://t.co/hcy5zCxuAQ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tim Mastny (@timmastny) &lt;a href=&#34;https://twitter.com/timmastny/status/1222664917280387072?ref_src=twsrc%5Etfw&#34;&gt;January 29, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
@@ -84,7 +84,7 @@ Bootstrap 4 is default Shiny frame. Bootstrap 4 supports Sass which is a meta pr
 &lt;p&gt;Ana Alyeska Santos, Braulio Cuandon, Biosense Webster, Inc.&lt;/p&gt;
 &lt;p&gt;Reproducible Engineering Test Reports&lt;/p&gt;
 &lt;p&gt;Justin Juskewitch, Mayo Clinic&lt;br /&gt;
-Transfusion platele selection and match for patient and documentation automation&lt;/p&gt;
+Transfusion platelet selection and match for patient and documentation automation&lt;/p&gt;
 &lt;p&gt;Alicia Schep, Outlier AI&lt;/p&gt;
 &lt;p&gt;She moved R from Python. {vlBuildr} API develop Altair and Vega-Lite&lt;/p&gt;
 &lt;hr /&gt;
@@ -94,8 +94,8 @@ Transfusion platele selection and match for patient and documentation automation
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Learn how to use list-columns with data.table from these slides from &lt;a href=&#34;https://twitter.com/healthandstats?ref_src=twsrc%5Etfw&#34;&gt;@healthandstats&lt;/a&gt;:&lt;a href=&#34;https://t.co/amXG686twc&#34;&gt;https://t.co/amXG686twc&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; &lt;a href=&#34;https://t.co/CrPVDhtYgH&#34;&gt;https://t.co/CrPVDhtYgH&lt;/a&gt;&lt;/p&gt;&amp;mdash; John Blischak (@jdblischak) &lt;a href=&#34;https://twitter.com/jdblischak/status/1223004598572437504?ref_src=twsrc%5Etfw&#34;&gt;January 30, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
-&lt;p&gt;Lightening Talk&lt;/p&gt;
-&lt;p&gt;Maxican election prediction&lt;/p&gt;
+&lt;p&gt;Lightning Talk&lt;/p&gt;
+&lt;p&gt;Mexican election prediction&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Really interesting talk from &lt;a href=&#34;https://twitter.com/TeresaOM?ref_src=twsrc%5Etfw&#34;&gt;@TeresaOM&lt;/a&gt; on predicting Mexican election results from initial polling data. They&amp;#39;re in a &amp;quot;bunker&amp;quot; with no internet access, so no StackOverflow!&lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt;&lt;a href=&#34;https://t.co/8Im6k6zusu&#34;&gt;https://t.co/8Im6k6zusu&lt;/a&gt;&lt;/p&gt;&amp;mdash; John Blischak (@jdblischak) &lt;a href=&#34;https://twitter.com/jdblischak/status/1223021112117743618?ref_src=twsrc%5Etfw&#34;&gt;January 30, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
@@ -103,7 +103,7 @@ Transfusion platele selection and match for patient and documentation automation
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Stupidly excited for &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; this week! &lt;br&gt;&lt;br&gt;📢 Check out my lightening talk on &amp;quot;becoming an R blogger&amp;quot; Thursday at 2:55. &lt;br&gt;&lt;br&gt;👋 If you&amp;#39;d like to say hi during the conference, feel free to reach out&lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/datascience?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#datascience&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rebecca Barter (@rlbarter) &lt;a href=&#34;https://twitter.com/rlbarter/status/1221852227184128000?ref_src=twsrc%5Etfw&#34;&gt;January 27, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
-&lt;p&gt;Other session not check-in&lt;/p&gt;
+&lt;p&gt;Other sessions, not check-in&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;🎨📊 Enjoying learning about { ggtext } and { gridtext } &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; packages from &lt;a href=&#34;https://twitter.com/ClausWilke?ref_src=twsrc%5Etfw&#34;&gt;@ClausWilke&lt;/a&gt; @ &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt;&lt;a href=&#34;https://t.co/vyqgTkTnM8&#34;&gt;https://t.co/vyqgTkTnM8&lt;/a&gt;&lt;a href=&#34;https://t.co/jnnR0AvGF0&#34;&gt;https://t.co/jnnR0AvGF0&lt;/a&gt; &lt;a href=&#34;https://t.co/4ew8EKqXay&#34;&gt;pic.twitter.com/4ew8EKqXay&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rich Pauloo (@RichPauloo) &lt;a href=&#34;https://twitter.com/RichPauloo/status/1222998335239290880?ref_src=twsrc%5Etfw&#34;&gt;January 30, 2020&lt;/a&gt;&lt;/blockquote&gt;
 &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 
@@ -149,8 +149,8 @@ Transfusion platele selection and match for patient and documentation automation
       <description>
 
 
-&lt;p&gt;A NGS pathology report contains interpretation section to describe the clinical interpretation of the found genomic variants of the patient’s cancer sample. The interpretation is different each varaiants and each cancer type or the other clinical factors. The pathologists describe the interpretation and archive those in certain methods including tables like excel.&lt;/p&gt;
-&lt;p&gt;I make a shinyapp to archive the interpretations to database and seach them.&lt;br /&gt;
+&lt;p&gt;An NGS pathology report contains an interpretation section to describe the clinical interpretation of the found genomic variants of the patient’s cancer sample. The interpretation is different from each variant and each cancer type or the other clinical factors. The pathologists describe the interpretation and archive those in certain methods including tables like excel.&lt;/p&gt;
+&lt;p&gt;I make a shinyapp to archive the interpretations to a database and search them.&lt;br /&gt;
 &lt;a href=&#34;https://jkang.shinyapps.io/Interpretation/&#34; class=&#34;uri&#34;&gt;https://jkang.shinyapps.io/Interpretation/&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
