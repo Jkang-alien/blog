@@ -5,12 +5,39 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Differential equations and Fourier transformation</title>
+      <link>/post/differential-equations-and-fourier-transformation/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/post/differential-equations-and-fourier-transformation/</guid>
+      <description>
+
+
+&lt;p&gt;Differential equations discribes the change of state. The change relates with the state. The solutions of the differential equations are the status equations. The initial conditions set the time &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; and status &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;. The boundary conditions are the value of boundary &lt;span class=&#34;math inline&#34;&gt;\(y_0\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y_1\)&lt;/span&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(dy \over dt\)&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(= ay + q(t)\)&lt;/span&gt; starting from &lt;span class=&#34;math inline&#34;&gt;\(y(0)\)&lt;/span&gt; at $t=0. inital conditions &lt;span class=&#34;math inline&#34;&gt;\(t = 0\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y=1\)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(q(t)\)&lt;/span&gt; is a input and &lt;span class=&#34;math inline&#34;&gt;\(y(t)\)&lt;/span&gt; is a response. If &lt;span class=&#34;math inline&#34;&gt;\(q(t)\)&lt;/span&gt; is delta function, the response is said &lt;strong&gt;Impulse response&lt;/strong&gt; &lt;span class=&#34;math display&#34;&gt;\[y&amp;#39; -ay = \delta (t) \\ y(t)=e^{at}\]&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The solutions are combination of particular solution and null solution &lt;span class=&#34;math inline&#34;&gt;\(y = y_t + y_n\)&lt;/span&gt;. The solution includes &lt;span class=&#34;math inline&#34;&gt;\(e^{at}\)&lt;/span&gt;. The differential equations can not be solved like polynomial equations, because the arguments of the differentia equation ralate each other by calulus in the background of the equation. They can not be treated as just different arguments. The &lt;strong&gt;Fourier transformation&lt;/strong&gt; puts the &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; and its derivative &lt;span class=&#34;math inline&#34;&gt;\(y&amp;#39;\)&lt;/span&gt; in same functional space (Hilbert space). This transformation makes the differential equation problem to simple arithmetic problem.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Fourier transformation &lt;span class=&#34;math inline&#34;&gt;\(F(x) = \Sigma ^{\infty}_{n=-\infty} c_{n}e^{inx}\)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The basis of the Fourier transformation is &lt;span class=&#34;math inline&#34;&gt;\(e^{inx}\)&lt;/span&gt;. If the coefficients of the basis &lt;span class=&#34;math inline&#34;&gt;\(c_{n}\)&lt;/span&gt; decay fater, &lt;span class=&#34;math inline&#34;&gt;\(F(x)\)&lt;/span&gt; becomes smooth. If the coefficients are constant, &lt;span class=&#34;math inline&#34;&gt;\(F(x)\)&lt;/span&gt; is delta function &lt;span class=&#34;math inline&#34;&gt;\(\delta(x)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The derivative &lt;span class=&#34;math inline&#34;&gt;\(dy \over dt\)&lt;/span&gt; is an linear transformation operator, i.e. inner product, because the &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y&amp;#39;\)&lt;/span&gt; are in functional space with same basis. The defivative can be represented as a matix &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;. The derivative matrix is antisymetric i.e. &lt;span class=&#34;math inline&#34;&gt;\(A^T = -A\)&lt;/span&gt; and the minus second derivative matrix &lt;span class=&#34;math inline&#34;&gt;\(-d^{2}/dx^{2}\)&lt;/span&gt; is symetic positive definite. &lt;span class=&#34;math inline&#34;&gt;\(AAf = -A^{T}Af\)&lt;/span&gt;.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;img/secondDiffernceMat.png&#34; alt=&#34;Second iffernce matrix&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Second iffernce matrix&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;How does exponent &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; mean in &lt;span class=&#34;math inline&#34;&gt;\(e^i\)&lt;/span&gt;? The exponent makes multiplication to addition. What does imaginary exponent mean? The imaginary exponent tilt the value to complex plane. If the base is natural base &lt;span class=&#34;math inline&#34;&gt;\(e\)&lt;/span&gt;, the value of &lt;span class=&#34;math inline&#34;&gt;\(e^i\)&lt;/span&gt; is in the unit circle of complex plane. The cycle is &lt;span class=&#34;math inline&#34;&gt;\(2 \pi\)&lt;/span&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Information</title>
@@ -565,12 +592,8 @@ A line is &lt;span class=&#34;math inline&#34;&gt;\(\{y|y=\theta_1 x_1 + \theta_
       <link>/post/asan-surgical-pathology-update/</link>
       <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
       <guid>/post/asan-surgical-pathology-update/</guid>
-      <description>
-
-&lt;h3 id=&#34;dr-dina-r-mody&#34;&gt;Dr. Dina R. Mody&lt;/h3&gt;
-
+      <description>&lt;h3 id=&#34;dr-dina-r-mody&#34;&gt;Dr. Dina R. Mody&lt;/h3&gt;
 &lt;h4 id=&#34;hpv-test&#34;&gt;HPV test&lt;/h4&gt;
-
 &lt;ul&gt;
 &lt;li&gt;DNA HPV test will fail.&lt;/li&gt;
 &lt;li&gt;BD (Oncolarity) is for a screening test.&lt;/li&gt;
@@ -578,22 +601,16 @@ A line is &lt;span class=&#34;math inline&#34;&gt;\(\{y|y=\theta_1 x_1 + \theta_
 &lt;li&gt;False-negative 10%. DNA copy number is the cause.&lt;/li&gt;
 &lt;li&gt;False positive cross reactivity 0.35%, 0.71% Aptima and Cobas. (one quarter)&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h3 id=&#34;dr-sneige&#34;&gt;Dr. Sneige&lt;/h3&gt;
-
 &lt;h4 id=&#34;immunostain-in-breast&#34;&gt;Immunostain in breast&lt;/h4&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Reduced and diminished myoepithelial cells, phenotypic alteration, SMA remain but others lost.&lt;/li&gt;
 &lt;li&gt;Any positivity for MEC favors in situ than invasive.&lt;/li&gt;
 &lt;li&gt;Metaplastic carcinoma and fibromatosis like&lt;/li&gt;
 &lt;li&gt;TTF-1 2% positive in breast cancer.&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h3 id=&#34;dr-prieto&#34;&gt;Dr. Prieto&lt;/h3&gt;
-
 &lt;h4 id=&#34;cutaneous-lymphoma&#34;&gt;Cutaneous lymphoma&lt;/h4&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Mycosis fungoides cell are atypical 7 fold folding nuclear membrane&lt;/li&gt;
 &lt;li&gt;CD4 predominant than CD8&lt;/li&gt;
@@ -601,69 +618,58 @@ A line is &lt;span class=&#34;math inline&#34;&gt;\(\{y|y=\theta_1 x_1 + \theta_
 &lt;li&gt;CD8 mycosis fungoides&lt;/li&gt;
 &lt;li&gt;Granulomatous MF&lt;/li&gt;
 &lt;li&gt;Immunohistochemistry marker related to TX
-
 &lt;ul&gt;
 &lt;li&gt;CD25, CD30&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;again-dr-mody&#34;&gt;Again Dr. Mody&lt;/h3&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Super D specimen preparation&lt;/li&gt;
 &lt;li&gt;Guideline will be released.&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h3 id=&#34;dr-medeiros-hodgkin-lymphomas&#34;&gt;Dr. Medeiros, Hodgkin lymphomas&lt;/h3&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Popcorn, not poped&lt;/li&gt;
 &lt;li&gt;Hodgkin lymphoma cells were renamed.&lt;/li&gt;
 &lt;li&gt;LP cells, Lacunar cells, RS + mononuclear variants/anaplastic variants&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;h3 id=&#34;dr-el-naggar-h-n-cancer&#34;&gt;Dr. El-Naggar H&amp;amp;N cancer&lt;/h3&gt;
-
+&lt;h3 id=&#34;dr-el-naggar-hn-cancer&#34;&gt;Dr. El-Naggar H&amp;amp;N cancer&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;HPV nasopharyngeal carcinoma&lt;/li&gt;
 &lt;li&gt;Young caucasian male&lt;/li&gt;
 &lt;li&gt;H&amp;amp;N is different from anogenital area&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h3 id=&#34;dr-moran&#34;&gt;Dr. Moran&lt;/h3&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Neuroendocrine carcinoma in lung&lt;/li&gt;
 &lt;li&gt;Do not follow the WHO without own justification&lt;/li&gt;
 &lt;li&gt;Mitoses count is not rigorous measurement. eyepiece diameters, hotspot vs random&lt;/li&gt;
 &lt;li&gt;Arrigoni criteria 1974 was 5-10 mitosis per 10 HPF&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h3 id=&#34;dr-jihun-kim-colitis&#34;&gt;Dr. Jihun Kim colitis&lt;/h3&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Yersinia&lt;/p&gt;
-
+&lt;li&gt;
+&lt;p&gt;Yersinia&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Suppurative granulomas&lt;/li&gt;
 &lt;li&gt;Heaped up mass-like mucosal thickening&lt;/li&gt;
 &lt;li&gt;Superficial ileocecal lesion&lt;/li&gt;
-&lt;li&gt;Lymphoid follicles&lt;br /&gt;
-&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;NSAID-induced enteropathy&lt;/p&gt;
-
+&lt;li&gt;Lymphoid follicles&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;NSAID-induced enteropathy&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Radiating fibrosis around the ulcer&lt;/li&gt;
 &lt;li&gt;Diaphragm-like stricture&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Nivolumab-induced colitis&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Nivolumab-induced colitis&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;dr-moran-salivary-gland-type-tumors-of-the-lung&#34;&gt;Dr. Moran Salivary-gland type tumors of the lung&lt;/h3&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Central intrabronchial mass&lt;/li&gt;
 &lt;li&gt;Frozen diagnosis important sleeve or total pneumonectomy&lt;/li&gt;
@@ -672,91 +678,81 @@ A line is &lt;span class=&#34;math inline&#34;&gt;\(\{y|y=\theta_1 x_1 + \theta_
 &lt;li&gt;MAML2 translocation&lt;/li&gt;
 &lt;li&gt;Acinic cell carcinoma gold standard is EM&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h3 id=&#34;dr-sneige-breast-cancer-biomarkers&#34;&gt;Dr. Sneige Breast cancer biomarkers&lt;/h3&gt;
-
 &lt;ul&gt;
-&lt;li&gt;ER test SP1 Scandle &lt;a href=&#34;https://www.cbc.ca/news/canada/newfoundland-labrador/lab-mistakes-poor-oversight-flagged-in-n-l-breast-cancer-inquiry-1.793504&#34; target=&#34;_blank&#34;&gt;https://www.cbc.ca/news/canada/newfoundland-labrador/lab-mistakes-poor-oversight-flagged-in-n-l-breast-cancer-inquiry-1.793504&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ER test SP1 Scandle &lt;a href=&#34;https://www.cbc.ca/news/canada/newfoundland-labrador/lab-mistakes-poor-oversight-flagged-in-n-l-breast-cancer-inquiry-1.793504&#34;&gt;https://www.cbc.ca/news/canada/newfoundland-labrador/lab-mistakes-poor-oversight-flagged-in-n-l-breast-cancer-inquiry-1.793504&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Fixation time 6hr - 72 hr&lt;/li&gt;
 &lt;li&gt;False negative&lt;/li&gt;
 &lt;li&gt;Control tissues&lt;/li&gt;
 &lt;li&gt;HER2 test 2018 guidelines&lt;/li&gt;
 &lt;li&gt;OncotypeDX NEJM 2018 intermediated group can skip chemotherapy&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h3 id=&#34;dr-prieto-cutaneous-mesenchymal-tumors&#34;&gt;Dr. Prieto Cutaneous mesenchymal tumors&lt;/h3&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Dermatofibroma vs Dermatofibrosarcoma protuberance&lt;/li&gt;
 &lt;li&gt;Epithelioid fibrous histiocytoma
-
 &lt;ul&gt;
 &lt;li&gt;Resembling melanoma&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Angiomatoid fibrous histiocytoma
-
 &lt;ul&gt;
 &lt;li&gt;Translocation EWSR1, FUS, CREB1, ATF1&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Atypical fibroxanthoma
-
 &lt;ul&gt;
 &lt;li&gt;Solitary lesion on sun-exposed skin&lt;/li&gt;
 &lt;li&gt;Elderly adult&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Neurothekeoma&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;h3 id=&#34;dr-medeiros-marginal-zone-lymphomas&#34;&gt;Dr. Medeiros Marginal zone lymphomas&lt;/h3&gt;
-
 &lt;ul&gt;
 &lt;li&gt;There category vs two cathegory (feat Dr. In-sun Kim)&lt;/li&gt;
 &lt;li&gt;Colonization in follicles&lt;/li&gt;
 &lt;li&gt;Cause of disease infection
-
 &lt;ul&gt;
 &lt;li&gt;H. pylori&lt;/li&gt;
 &lt;li&gt;HCV&lt;/li&gt;
 &lt;li&gt;Campylobacter jejuni&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Boring immunophenotype, important translocations
-
 &lt;ul&gt;
 &lt;li&gt;API2 and MALT1&lt;/li&gt;
 &lt;li&gt;IGH and MALT1&lt;/li&gt;
 &lt;li&gt;FOXP1 and MALT1&lt;/li&gt;
 &lt;li&gt;BCL10 and IGH&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;Large cell transformaion&lt;/li&gt;
 &lt;li&gt;Splenic marginal zone lymphoma
-
 &lt;ul&gt;
 &lt;li&gt;Systemic involvement, bone marrow, peripheral blood&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;dr-el-naggar&#34;&gt;Dr. El-Naggar&lt;/h3&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Salivary gland tumor
-
 &lt;ul&gt;
 &lt;li&gt;Ductal carcinoma&lt;/li&gt;
 &lt;li&gt;Homology with breast, prostate&lt;/li&gt;
 &lt;li&gt;Testosterone, Androgen, and Steroid&lt;/li&gt;
 &lt;li&gt;Androgen receptor, Glucocorticoid receptor&lt;/li&gt;
 &lt;li&gt;Androgen receptor splicing variant: constitutive activation&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
+&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;dr-kyu-rae-kim&#34;&gt;Dr. Kyu-Rae Kim&lt;/h3&gt;
-
 &lt;ul&gt;
 &lt;li&gt;Progestin treatment failure
-
 &lt;ul&gt;
 &lt;li&gt;Myometrial invasion, basal layer involvement&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
 &lt;li&gt;No guideline for residual tumor&lt;/li&gt;
 &lt;/ul&gt;
 </description>

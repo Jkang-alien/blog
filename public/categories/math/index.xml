@@ -5,12 +5,39 @@
     <link>/categories/math/</link>
       <atom:link href="/categories/math/index.xml" rel="self" type="application/rss+xml" />
     <description>Math</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Math</title>
       <link>/categories/math/</link>
     </image>
+    
+    <item>
+      <title>Differential equations and Fourier transformation</title>
+      <link>/post/differential-equations-and-fourier-transformation/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/post/differential-equations-and-fourier-transformation/</guid>
+      <description>
+
+
+&lt;p&gt;Differential equations discribes the change of state. The change relates with the state. The solutions of the differential equations are the status equations. The initial conditions set the time &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; and status &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;. The boundary conditions are the value of boundary &lt;span class=&#34;math inline&#34;&gt;\(y_0\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y_1\)&lt;/span&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(dy \over dt\)&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(= ay + q(t)\)&lt;/span&gt; starting from &lt;span class=&#34;math inline&#34;&gt;\(y(0)\)&lt;/span&gt; at $t=0. inital conditions &lt;span class=&#34;math inline&#34;&gt;\(t = 0\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y=1\)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(q(t)\)&lt;/span&gt; is a input and &lt;span class=&#34;math inline&#34;&gt;\(y(t)\)&lt;/span&gt; is a response. If &lt;span class=&#34;math inline&#34;&gt;\(q(t)\)&lt;/span&gt; is delta function, the response is said &lt;strong&gt;Impulse response&lt;/strong&gt; &lt;span class=&#34;math display&#34;&gt;\[y&amp;#39; -ay = \delta (t) \\ y(t)=e^{at}\]&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The solutions are combination of particular solution and null solution &lt;span class=&#34;math inline&#34;&gt;\(y = y_t + y_n\)&lt;/span&gt;. The solution includes &lt;span class=&#34;math inline&#34;&gt;\(e^{at}\)&lt;/span&gt;. The differential equations can not be solved like polynomial equations, because the arguments of the differentia equation ralate each other by calulus in the background of the equation. They can not be treated as just different arguments. The &lt;strong&gt;Fourier transformation&lt;/strong&gt; puts the &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; and its derivative &lt;span class=&#34;math inline&#34;&gt;\(y&amp;#39;\)&lt;/span&gt; in same functional space (Hilbert space). This transformation makes the differential equation problem to simple arithmetic problem.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Fourier transformation &lt;span class=&#34;math inline&#34;&gt;\(F(x) = \Sigma ^{\infty}_{n=-\infty} c_{n}e^{inx}\)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The basis of the Fourier transformation is &lt;span class=&#34;math inline&#34;&gt;\(e^{inx}\)&lt;/span&gt;. If the coefficients of the basis &lt;span class=&#34;math inline&#34;&gt;\(c_{n}\)&lt;/span&gt; decay fater, &lt;span class=&#34;math inline&#34;&gt;\(F(x)\)&lt;/span&gt; becomes smooth. If the coefficients are constant, &lt;span class=&#34;math inline&#34;&gt;\(F(x)\)&lt;/span&gt; is delta function &lt;span class=&#34;math inline&#34;&gt;\(\delta(x)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The derivative &lt;span class=&#34;math inline&#34;&gt;\(dy \over dt\)&lt;/span&gt; is an linear transformation operator, i.e. inner product, because the &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y&amp;#39;\)&lt;/span&gt; are in functional space with same basis. The defivative can be represented as a matix &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;. The derivative matrix is antisymetric i.e. &lt;span class=&#34;math inline&#34;&gt;\(A^T = -A\)&lt;/span&gt; and the minus second derivative matrix &lt;span class=&#34;math inline&#34;&gt;\(-d^{2}/dx^{2}\)&lt;/span&gt; is symetic positive definite. &lt;span class=&#34;math inline&#34;&gt;\(AAf = -A^{T}Af\)&lt;/span&gt;.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;img/secondDiffernceMat.png&#34; alt=&#34;Second iffernce matrix&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Second iffernce matrix&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;How does exponent &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; mean in &lt;span class=&#34;math inline&#34;&gt;\(e^i\)&lt;/span&gt;? The exponent makes multiplication to addition. What does imaginary exponent mean? The imaginary exponent tilt the value to complex plane. If the base is natural base &lt;span class=&#34;math inline&#34;&gt;\(e\)&lt;/span&gt;, the value of &lt;span class=&#34;math inline&#34;&gt;\(e^i\)&lt;/span&gt; is in the unit circle of complex plane. The cycle is &lt;span class=&#34;math inline&#34;&gt;\(2 \pi\)&lt;/span&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Information</title>

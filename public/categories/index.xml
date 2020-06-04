@@ -5,7 +5,7 @@
     <link>/categories/</link>
       <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Categories</title>
@@ -13,18 +13,18 @@
     </image>
     
     <item>
-      <title>Information Theory</title>
-      <link>/categories/information-theory/</link>
-      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
-      <guid>/categories/information-theory/</guid>
+      <title>Math</title>
+      <link>/categories/math/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/categories/math/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Math</title>
-      <link>/categories/math/</link>
+      <title>Information Theory</title>
+      <link>/categories/information-theory/</link>
       <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
-      <guid>/categories/math/</guid>
+      <guid>/categories/information-theory/</guid>
       <description></description>
     </item>
     
