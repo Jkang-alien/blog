@@ -36,7 +36,7 @@ The basis of the Fourier transformation is $e^{inx}$. If the coefficients of the
 
 The derivative $dy \over dt$ is an linear transformation operator, i.e. inner product, because the $y$ and $y'$ are in functional space with same basis. The defivative can be represented as a matix $A$. The derivative matrix is antisymetric i.e. $A^T = -A$ and the minus second derivative matrix $-d^{2}/dx^{2}$ is symetic positive definite. $AAf = -A^{T}Af$.   
 
-![Second iffernce matrix](img/secondDifferenceMat.png)
+![Second differnce matrix](/img/secondDifferenceMat.png)
 
 How does exponent $i$ mean in $e^i$? The exponent makes multiplication to addition. What does imaginary exponent mean? The imaginary exponent tilt the value to complex plane. If the base is natural base $e$, the value of $e^i$ is in the unit circle of complex plane. The cycle is $2 \pi$.  
 
