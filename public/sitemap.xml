@@ -18,12 +18,27 @@
   </url>
   
   <url>
-    <loc>/tags/analysis/</loc>
-    <lastmod>2020-06-04T07:00:40+09:00</lastmod>
+    <loc>/categories/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>/talk/cytology/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/pathology/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/</loc>
+    <lastmod>2020-06-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/analysis/</loc>
     <lastmod>2020-06-04T07:00:40+09:00</lastmod>
   </url>
   
@@ -298,11 +313,6 @@
   </url>
   
   <url>
-    <loc>/talk/</loc>
-    <lastmod>2019-09-27T11:32:07+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/reproducing-kernel-hilbert-space/</loc>
     <lastmod>2019-12-20T18:27:41+09:00</lastmod>
   </url>
@@ -314,11 +324,6 @@
   
   <url>
     <loc>/post/asan-surgical-pathology-update/</loc>
-    <lastmod>2019-12-06T13:59:25+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/pathology/</loc>
     <lastmod>2019-12-06T13:59:25+09:00</lastmod>
   </url>
   

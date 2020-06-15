@@ -42,7 +42,7 @@ J.J. Allaire's favorite book Fooled by Randomness
 
 ```{r echo=FALSE}
 blogdown::shortcodes('tweet', c('1222577749824401408',
-                                '1222574431521738752',
+                                #'1222574431521738752',
                                 '1222574214747607042'))
 ```
 ---

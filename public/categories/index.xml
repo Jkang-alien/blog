@@ -5,12 +5,20 @@
     <link>/categories/</link>
       <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 16 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Categories</title>
       <link>/categories/</link>
     </image>
+    
+    <item>
+      <title>Pathology</title>
+      <link>/categories/pathology/</link>
+      <pubDate>Tue, 16 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/categories/pathology/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Math</title>
@@ -57,14 +65,6 @@
       <link>/categories/machine-learning/</link>
       <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
       <guid>/categories/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pathology</title>
-      <link>/categories/pathology/</link>
-      <pubDate>Fri, 06 Dec 2019 00:00:00 +0000</pubDate>
-      <guid>/categories/pathology/</guid>
       <description></description>
     </item>
     
