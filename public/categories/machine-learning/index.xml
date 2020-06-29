@@ -5,12 +5,32 @@
     <link>/categories/machine-learning/</link>
       <atom:link href="/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>Machine learning</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 19 Feb 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 30 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Machine learning</title>
       <link>/categories/machine-learning/</link>
     </image>
+    
+    <item>
+      <title>Steady state equilibrium</title>
+      <link>/post/steady-state-equilibrium/</link>
+      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/post/steady-state-equilibrium/</guid>
+      <description>
+
+
+&lt;ul&gt;
+&lt;li&gt;Steady state equilibrium&lt;/li&gt;
+&lt;li&gt;Graph Laplacian matrix &lt;span class=&#34;math inline&#34;&gt;\(A^{T}CA\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Differential equation and Laplacian matrix&lt;/li&gt;
+&lt;li&gt;Derivative is a graph without branch.&lt;/li&gt;
+&lt;li&gt;Row space and column space are dual.&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(A^{T}\)&lt;/span&gt; are dual.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ref) Linear algebra and learning from data, Part IV, Gilbert Strang&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Duality</title>

@@ -5,12 +5,28 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 30 Jun 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
       <link>/tags/</link>
     </image>
+    
+    <item>
+      <title>Deep Learning</title>
+      <link>/tags/deep-learning/</link>
+      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Math</title>
+      <link>/tags/math/</link>
+      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/math/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Analysis</title>
@@ -33,14 +49,6 @@
       <link>/tags/machine-learning/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       <guid>/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Math</title>
-      <link>/tags/math/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>/tags/math/</guid>
       <description></description>
     </item>
     
@@ -273,14 +281,6 @@
       <link>/tags/stan/</link>
       <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
       <guid>/tags/stan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Deep Learning</title>
-      <link>/tags/deep-learning/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/deep-learning/</guid>
       <description></description>
     </item>
     
