@@ -20,6 +20,7 @@
       <description>
 
 
+&lt;p&gt;The meaning of &lt;span class=&#34;math inline&#34;&gt;\(A^{T}\)&lt;/span&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Steady state equilibrium&lt;/li&gt;
 &lt;li&gt;Graph Laplacian matrix &lt;span class=&#34;math inline&#34;&gt;\(A^{T}CA\)&lt;/span&gt;&lt;/li&gt;

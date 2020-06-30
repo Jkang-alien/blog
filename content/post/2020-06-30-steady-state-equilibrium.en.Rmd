@@ -20,6 +20,7 @@ image:
   preview_only: no
 projects: []
 ---
+The meaning of $A^{T}$
 
 * Steady state equilibrium
 * Graph Laplacian matrix $A^{T}CA$
