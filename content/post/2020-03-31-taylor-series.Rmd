@@ -30,11 +30,8 @@ $f(x \pm h) = f(x) \pm hf'(x) + \frac{h^2}{2}f''(x) \pm \frac{h^3}{6}f'''(x) + O
 
 Let's think about $\sin(x)$.  
 
-\begin{align*} f(x) &= \sin(x) & f(0) &= 0
-f'(x) &= \cos(x) & f'(0) &= 1
-f(x) &= -\sin(x) & f(0) &= 0
-f(x) &= -\cos(x) & f(0) &= -1
-& \vdots \end{align*}
+
+$$ f(x) = \sin(x) \ f(0) = 0, f'(x)=\cos(x)\ f'(0)=1, f''(x)=-\sin(x)\ f''(0)=0 $$
 
 Thus,
 
@@ -45,4 +42,4 @@ Thus,
 This is approximation. Now $x$ becomes $h$ and parameters calculated from derivatives of $f(x)$ at $0$.  
 $f(x \pm h) = f(x) \pm hf'(x) + \frac{h^2}{2}f''(x) \pm \frac{h^3}{6}f'''(x) + O(h^4)$
 
-![https://betterexplained.com/articles/taylor-series/](/post/2020-03-31-taylor-series_files/sine-better-models.png)
+![https://betterexplained.com/articles/taylor-series/](img/sine-better-models.png)

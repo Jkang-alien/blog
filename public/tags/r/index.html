@@ -84,7 +84,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.7c75abe867d1ac4b26fbe501f37ef260.css">
+  <link rel="stylesheet" href="/css/academic.min.dd629241ea9333c62c071f4a25f829ff.css">
 
   
 
@@ -367,7 +367,7 @@
     <div class="article-style">
       
       When the penalized generalize linear model (Lasso or Ridge) is processed in the tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of the final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.
-Modelinglibrary(tidymodels)library(glmnet)set.seed(930093)cv_splits &lt;- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T)mod &lt;- logistic_reg(penalty = tune(),mixture = tune()) %&gt;%set_engine(&quot;glmnet&quot;)rec &lt;- recipe(PIK3CA_T ~ .
+Modeling library(tidymodels) library(glmnet) set.seed(930093) cv_splits &lt;- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T) mod &lt;- logistic_reg(penalty = tune(), mixture = tune()) %&gt;% set_engine(&quot;glmnet&quot;) rec &lt;- recipe(PIK3CA_T ~ .
       
     </div>
   </div>
@@ -376,10 +376,10 @@ Modelinglibrary(tidymodels)library(glmnet)set.seed(930093)cv_splits &lt;- rs
     <h2><a href="/post/tidymodel/">Tidymodel</a></h2>
     <div class="article-style">
       
-      Machine Learning and TidymodelModel setting, {Parsnip}Rpackage Parsnip standardizes model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specifications and lately evaluates.
-Feature engineering, {Recipes}Recipes make preprocessing easy with step_() functions. Recipes after specification calculate.
-Resampling, {rsample}To choose a model and hyperparameters, we must validate the different models.
-Making hyperparameter set, {dials}The Rpackage {dials} set hyperparameter similarily with {Parsnip}.
+      Machine Learning and Tidymodel Model setting, {Parsnip} Rpackage Parsnip standardizes model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specifications and lately evaluates.
+ Feature engineering, {Recipes} Recipes make preprocessing easy with step_() functions. Recipes after specification calculate.
+ Resampling, {rsample} To choose a model and hyperparameters, we must validate the different models.
+ Making hyperparameter set, {dials} The Rpackage {dials} set hyperparameter similarily with {Parsnip}.
       
     </div>
   </div>
@@ -394,7 +394,7 @@ RStudio becomes Public B Corp.
 J.J. Allaire’s favorite book Fooled by Randomness
 RStudio has restructured as a &#39;benefit corporation,&#39; legally allowing it to consider the needs of its users and the #rstats community and not just its shareholders, JJ Allaire announced just now at #rstudioconf #rstudioconf2020 https://t.co/uG6SjNeLei
 &mdash; Sharon Machlis (@sharon000) January 29, 2020  #Rstudio evolution #rstudioconf2020 pic.twitter.com/euZFBTpvVY
-&mdash; Abdul Majed (@1littlecoder) January 29, 2020  Google AI PAIR team
+&mdash; Abdul Majed (@1littlecoder) January 29, 2020   Google AI PAIR team
       
     </div>
   </div>

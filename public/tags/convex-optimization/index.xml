@@ -24,18 +24,14 @@
 &lt;p&gt;This is an approximation that is a function of h and derivatives of &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; are elements of parameters.&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(f(x \pm h) = f(x) \pm hf&amp;#39;(x) + \frac{h^2}{2}f&amp;#39;&amp;#39;(x) \pm \frac{h^3}{6}f&amp;#39;&amp;#39;&amp;#39;(x) + O(h^4)\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Let’s think about &lt;span class=&#34;math inline&#34;&gt;\(\sin(x)\)&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*} f(x) &amp;amp;= \sin(x) &amp;amp; f(0) &amp;amp;= 0
-f&amp;#39;(x) &amp;amp;= \cos(x) &amp;amp; f&amp;#39;(0) &amp;amp;= 1
-f(x) &amp;amp;= -\sin(x) &amp;amp; f(0) &amp;amp;= 0
-f(x) &amp;amp;= -\cos(x) &amp;amp; f(0) &amp;amp;= -1
-&amp;amp; \vdots \end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ f(x) = \sin(x) \ f(0) = 0, f&amp;#39;(x)=\cos(x)\ f&amp;#39;(0)=1, f&amp;#39;&amp;#39;(x)=-\sin(x)\ f&amp;#39;&amp;#39;(0)=0 \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Thus,&lt;/p&gt;
 &lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*} \sin(x) &amp;amp;= 0 + \frac{1}{1!}x + \frac{0}{2!}x^2 + \frac{-1}{3!}x^3 + \dotsb
 &amp;amp;= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \dotsb, \end{align*}\]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;This is approximation. Now &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; becomes &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; and parameters calculated from derivatives of &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; at &lt;span class=&#34;math inline&#34;&gt;\(0\)&lt;/span&gt;.&lt;br /&gt;
 &lt;span class=&#34;math inline&#34;&gt;\(f(x \pm h) = f(x) \pm hf&amp;#39;(x) + \frac{h^2}{2}f&amp;#39;&amp;#39;(x) \pm \frac{h^3}{6}f&amp;#39;&amp;#39;&amp;#39;(x) + O(h^4)\)&lt;/span&gt;&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;/post/2020-03-31-taylor-series_files/sine-better-models.png&#34; alt=&#34;https://betterexplained.com/articles/taylor-series/&#34; /&gt;
+&lt;img src=&#34;img/sine-better-models.png&#34; alt=&#34;https://betterexplained.com/articles/taylor-series/&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;&lt;a href=&#34;https://betterexplained.com/articles/taylor-series/&#34; class=&#34;uri&#34;&gt;https://betterexplained.com/articles/taylor-series/&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 </description>
