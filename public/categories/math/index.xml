@@ -5,12 +5,31 @@
     <link>/categories/math/</link>
       <atom:link href="/categories/math/index.xml" rel="self" type="application/rss+xml" />
     <description>Math</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 30 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 14 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Math</title>
       <link>/categories/math/</link>
     </image>
+    
+    <item>
+      <title>Low rank matrix and compressed sensing</title>
+      <link>/post/low-rank-matrix-and-compressed-sensing/</link>
+      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/post/low-rank-matrix-and-compressed-sensing/</guid>
+      <description>
+
+
+&lt;p&gt;This is a note for part III of Linear Algebra and learning from data, Gilbert Strang&lt;/p&gt;
+&lt;p&gt;The main themes are sparsity (Low rank), Information theory (compression), and of course linear transformation.&lt;/p&gt;
+&lt;p&gt;A full rank matrix is inefficient. Finding low lank matrix which is close with original matrix can save computation.&lt;/p&gt;
+&lt;p&gt;The rank one matrix &lt;span class=&#34;math inline&#34;&gt;\(uv^{T}\)&lt;/span&gt; is a unit of a matrix. The full rank matrix can be decomposed by sum of rank one matrices i.e. singular vector decomposition.&lt;/p&gt;
+&lt;p&gt;Sherman–Morrison formula suggests update rule for adding rank one matrix to the original matrix.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[(A + \mathbf{u} \mathbf{v}^{T})^{-1} = A^{-1} - \frac{A^{-1} \mathbf{u} \mathbf{v}^{T}A^{-1}}{1 + \mathbf{v}^{T} A^{-1} \mathbf{u}}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The matrix norm is associated with singular value, &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The point is the unit of matrix is the rank one matrix, specially outer product of singular vectors &lt;span class=&#34;math inline&#34;&gt;\(uv^{T}\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(uv^{T}\)&lt;/span&gt; is a coordinate of the matrix space and singular value &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt; is a point on the coordinate.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Steady state equilibrium</title>
