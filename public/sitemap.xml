@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -24,6 +24,11 @@
   
   <url>
     <loc>/tags/gilbert-strang/</loc>
+    <lastmod>2020-07-14T16:43:48+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
     <lastmod>2020-07-14T16:43:48+09:00</lastmod>
   </url>
   
@@ -528,11 +533,6 @@
   </url>
   
   <url>
-    <loc>/courses/</loc>
-    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/bayesian/</loc>
     <lastmod>2019-08-02T14:22:01+09:00</lastmod>
   </url>
@@ -635,11 +635,6 @@
   <url>
     <loc>/authors/youn-soo-lee/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -1564,6 +1559,10 @@
   
   <url>
     <loc>/authors/admin/</loc>
+  </url>
+  
+  <url>
+    <loc>/courses/</loc>
   </url>
   
 </urlset>
