@@ -26,4 +26,5 @@ url_pdf: ~
 url_video: ~
 slides: ''
 projects: []
+draft: true
 ---
