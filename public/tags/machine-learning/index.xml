@@ -75,9 +75,12 @@ Differential Equations and Linear Algebra, Gilbert Strang&lt;/p&gt;
 &lt;p&gt;This is approximation. Now &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; becomes &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; and parameters calculated from derivatives of &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; at &lt;span class=&#34;math inline&#34;&gt;\(0\)&lt;/span&gt;.&lt;br /&gt;
 &lt;span class=&#34;math inline&#34;&gt;\(f(x \pm h) = f(x) \pm hf&amp;#39;(x) + \frac{h^2}{2}f&amp;#39;&amp;#39;(x) \pm \frac{h^3}{6}f&amp;#39;&amp;#39;&amp;#39;(x) + O(h^4)\)&lt;/span&gt;&lt;/p&gt;
 &lt;div class=&#34;figure&#34;&gt;
-&lt;img src=&#34;img/sine-better-models.png&#34; alt=&#34;https://betterexplained.com/articles/taylor-series/&#34; /&gt;
+&lt;img src=&#34;/img/sine-better-models.png&#34; alt=&#34;https://betterexplained.com/articles/taylor-series/&#34; /&gt;
 &lt;p class=&#34;caption&#34;&gt;&lt;a href=&#34;https://betterexplained.com/articles/taylor-series/&#34; class=&#34;uri&#34;&gt;https://betterexplained.com/articles/taylor-series/&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
+&lt;p&gt;Taylor series and Newton’s bionomial theorem explain the complex exponent.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\exp(z) = e^{z}, \ z = a+bi \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The imaginary exponent is hard to understand intuitively. The exponential function &lt;span class=&#34;math inline&#34;&gt;\(e^{x}\)&lt;/span&gt; on a complex domain can be regarded as a function exp(x) that behaves like exponential function, i.e. a product of functions is addion of arguments &lt;span class=&#34;math inline&#34;&gt;\(\exp(x) \exp(y) = \exp(x+y)\)&lt;/span&gt;. The product of &lt;span class=&#34;math inline&#34;&gt;\(\exp\)&lt;/span&gt; fucntion becomes addition of arguments by Newton’s binomical theorem. The costomary expression is &lt;span class=&#34;math inline&#34;&gt;\(e^{x}\)&lt;/span&gt;. This can be done when &lt;span class=&#34;math inline&#34;&gt;\(\exp(x) = \Sigma ^{\infty}_{n=0} \frac {Z^{n}}{n!}\)&lt;/span&gt; The taylor series with repidly decaying pactorial coefficients &lt;span class=&#34;math inline&#34;&gt;\(n!\)&lt;/span&gt;. This series converges absolutely for every complex &lt;span class=&#34;math inline&#34;&gt;\(z\)&lt;/span&gt; and converges uniformly on every bounded subset of the complex plain. Rudin’s Real and complex analysis.&lt;/p&gt;
 </description>
     </item>
     
