@@ -1,0 +1,33 @@
+---
+title: Singular vector decomposition
+author: JK
+date: '2020-07-30'
+slug: singular-vector-decomposition
+categories:
+  - Math
+  - Machine learning
+tags:
+  - Deep Learning
+  - Linear algebra
+  - Gilbert Strang
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-07-30T09:25:53+09:00'
+featured: no
+draft: true
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Bases are the central idea of linear algebra. An invertable square matrix has eigenvectors. A symetric matrix has orthogonal eigenvectors with non-negative eigenvalues, i.e. positive semidefinite. A matrix has two types of singular vectors, left and right signular vectors, $A=U\Sigma V^{T}$.  
+
+When we think the matrix $A$ is data points of rows $A=U\Sigma V^{T}$ like data table, The right singular vectors $V$ build bases, the sigular values $\Sigma$ are magnitude of the bases and the left singular values $U$ becomes new data points on new bases. The new data points $U$ are orthonormal.  
+
+When we think the matrix $A$ is a system of linear transformation $Ax=b,\ U\Sigma V^{T}x=b$, a vector $x$ is repositioned on right singular vector coordinates $V$ then the coordinates are multiplied by $\Sigma$ and finally linear transformed by left singular vector $U$.  
+
+A matrix is sum of rank one singular matrix. $$A = \sigma_{1} u_{1}u_{1}^{T} + \cdots +  \sigma_{k} u_{k}u_{k}^{T}$$ The Eckart-Young theorem finds closest low-rank matrix $A_k$.     
+The bases (right singular vectors) and it's value on the bases (left singular vectors) are same. A symetric matrix has bases and 

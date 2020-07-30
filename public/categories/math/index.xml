@@ -5,12 +5,28 @@
     <link>/categories/math/</link>
       <atom:link href="/categories/math/index.xml" rel="self" type="application/rss+xml" />
     <description>Math</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 14 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Math</title>
       <link>/categories/math/</link>
     </image>
+    
+    <item>
+      <title>Singular vector decomposition</title>
+      <link>/post/singular-vector-decomposition/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/post/singular-vector-decomposition/</guid>
+      <description>
+
+
+&lt;p&gt;Bases are the central idea of linear algebra. An invertable square matrix has eigenvectors. A symetric matrix has orthogonal eigenvectors with non-negative eigenvalues, i.e. positive semidefinite. A matrix has two types of singular vectors, left and right signular vectors, &lt;span class=&#34;math inline&#34;&gt;\(A=U\Sigma V^{T}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;When we think the matrix &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is data points of rows &lt;span class=&#34;math inline&#34;&gt;\(A=U\Sigma V^{T}\)&lt;/span&gt; like data table, The right singular vectors &lt;span class=&#34;math inline&#34;&gt;\(V\)&lt;/span&gt; build bases, the sigular values &lt;span class=&#34;math inline&#34;&gt;\(\Sigma\)&lt;/span&gt; are magnitude of the bases and the left singular values &lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt; becomes new data points on new bases. The new data points &lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt; are orthonormal.&lt;/p&gt;
+&lt;p&gt;When we think the matrix &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is a system of linear transformation &lt;span class=&#34;math inline&#34;&gt;\(Ax=b,\ U\Sigma V^{T}x=b\)&lt;/span&gt;, a vector &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; is repositioned on right singular vector coordinates &lt;span class=&#34;math inline&#34;&gt;\(V\)&lt;/span&gt; then the coordinates are multiplied by &lt;span class=&#34;math inline&#34;&gt;\(\Sigma\)&lt;/span&gt; and finally linear transformed by left singular vector &lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;A matrix is sum of rank one singular matrix. &lt;span class=&#34;math display&#34;&gt;\[A = \sigma_{1} u_{1}u_{1}^{T} + \cdots +  \sigma_{k} u_{k}u_{k}^{T}\]&lt;/span&gt; The Eckart-Young theorem finds closest low-rank matrix &lt;span class=&#34;math inline&#34;&gt;\(A_k\)&lt;/span&gt;.&lt;br /&gt;
+The bases (right singular vectors) and it’s value on the bases (left singular vectors) are same. A symetric matrix has bases and&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Low rank matrix and compressed sensing</title>

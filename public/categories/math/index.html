@@ -132,7 +132,7 @@
   <meta property="og:description" content="Clinical Assistant Professor of Hospital Pathology"><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-07-14T00:00:00&#43;00:00">
+    <meta property="og:updated_time" content="2020-07-30T00:00:00&#43;00:00">
   
 
   
@@ -354,6 +354,16 @@
   
   
   <div>
+    <h2><a href="/post/singular-vector-decomposition/">Singular vector decomposition</a></h2>
+    <div class="article-style">
+      
+      Bases are the central idea of linear algebra. An invertable square matrix has eigenvectors. A symetric matrix has orthogonal eigenvectors with non-negative eigenvalues, i.e. positive semidefinite. A matrix has two types of singular vectors, left and right signular vectors, \(A=U\Sigma V^{T}\).
+When we think the matrix \(A\) is data points of rows \(A=U\Sigma V^{T}\) like data table, The right singular vectors \(V\) build bases, the sigular values \(\Sigma\) are magnitude of the bases and the left singular values \(U\) becomes new data points on new bases.
+      
+    </div>
+  </div>
+  
+  <div>
     <h2><a href="/post/low-rank-matrix-and-compressed-sensing/">Low rank matrix and compressed sensing</a></h2>
     <div class="article-style">
       
@@ -445,17 +455,6 @@ The smallest and largest eigen value of Hessian \(m \preceq \nabla^{2}f(x) \prec
     <div class="article-style">
       
       There is a homology between a line segment and a convex set. It is helpful to understand the convex set. A line, a line segment, and one sideline has homology to an affine set, a convex set, and a cone.A line is \(\{y|y=\theta_1 x_1 + \theta_2 x_2, \theta_1 + \theta_2 = 1\}\) if \(\theta_1, \theta_2 \in \mathbb{R}\), a line segment is if \(\theta_1, \theta_2 &gt; 0\) and an one side line if any \(\theta_1, \theta_2 &lt; 0\).
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/reproducing-kernel-hilbert-space/">Reproducing Kernel Hilbert Space</a></h2>
-    <div class="article-style">
-      
-      Finally arrive at reproducing kernel Hilbert space.https://nzer0.github.io/reproducing-kernel-hilbert-space.html
-The above post introduces RKHS in Korean. It was helpful. I had struggled to understand some concepts in RKHS. What does mean Hilbert space in terms of feature expansion? (\(f:\mathcal{X} \to \mathbb{R}\), \(f \in \mathcal{H}_K\)) It was confusing the difference between \(f\) and \(f(x)\). \(f\) means the function in Hilbert space and \(f(x)\) is evaluation.
-I thought that the function can be represented by the inner product of the basis of feature space \(K(\cdot,x)\) and coefficients \(f\), and the coefficients are vectors in feature space.
       
     </div>
   </div>

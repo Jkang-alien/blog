@@ -19,47 +19,52 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-07-14T16:43:48+09:00</lastmod>
+    <lastmod>2020-07-30T09:25:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/deep-learning/</loc>
+    <lastmod>2020-07-30T09:25:53+09:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/gilbert-strang/</loc>
-    <lastmod>2020-07-14T16:43:48+09:00</lastmod>
+    <lastmod>2020-07-30T09:25:53+09:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/linear-algebra/</loc>
-    <lastmod>2020-07-14T16:43:48+09:00</lastmod>
+    <lastmod>2020-07-30T09:25:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/machine-learning/</loc>
+    <lastmod>2020-07-30T09:25:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/math/</loc>
+    <lastmod>2020-07-30T09:25:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-07-30T09:25:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/singular-vector-decomposition/</loc>
+    <lastmod>2020-07-30T09:25:53+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-07-30T09:25:53+09:00</lastmod>
   </url>
   
   <url>
     <loc>/post/low-rank-matrix-and-compressed-sensing/</loc>
     <lastmod>2020-07-14T16:43:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/machine-learning/</loc>
-    <lastmod>2020-07-14T16:43:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/math/</loc>
-    <lastmod>2020-07-14T16:43:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-07-14T16:43:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-07-14T16:43:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/deep-learning/</loc>
-    <lastmod>2020-06-30T07:45:04+09:00</lastmod>
   </url>
   
   <url>
