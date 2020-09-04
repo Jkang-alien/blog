@@ -1,0 +1,30 @@
+---
+title: Approximation
+author: JK
+date: '2020-09-04'
+slug: approximation
+categories:
+  - Math
+  - Machine learning
+  - Convex optimization
+tags:
+  - Convex optimization
+  - Deep Learning
+  - Machine learning
+  - Math
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-09-04T19:40:57+09:00'
+featured: no
+draft: true
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Line search
+
+step, search direction $\Delta x}$ 
