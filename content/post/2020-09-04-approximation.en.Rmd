@@ -25,4 +25,6 @@ image:
 projects: []
 ---
 
-The purpose of approximation is finding optimal point $x^*$ i.e. $\nabla F(x^*) = 0$. We need a step/search direction $\Delta x$ and step size $t$. Taylor approximation has polynomial arguments of a step and derivatives at the start point. Newton's method
+The purpose of approximation is finding optimal point $x^*$ i.e. $\nabla F(x^*) = 0$. We need a step/search direction $\Delta x$ and step size $t$. Taylor approximation has polynomial arguments that is a step and parameters of derivatives at the start point. The first degree of Taylor approximation has one adding term from start point $(x_0, F(x_0))$. The adding term $\nabla F(x) \Delta x$ is consistent with a parameter (gradient $\nabla F(x)$) and a argument (step $\Delta x$). The Taylor approximation does approximate $F(x + \Delta x)$ for any search direction $\Delta x$. We want to choose $\Delta x$ for the direction to the optimal point. 
+
+The gradient descent set the step to the gradient $\nabla F(x)$. This makes the adding term biggest $\lvert \nabla F(x) \rvert^2$. But the Tayler approximation is local
