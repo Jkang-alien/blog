@@ -5,7 +5,7 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 04 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
@@ -13,10 +13,34 @@
     </image>
     
     <item>
+      <title>Convex optimization</title>
+      <link>/tags/convex-optimization/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/convex-optimization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Deep Learning</title>
       <link>/tags/deep-learning/</link>
-      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
       <guid>/tags/deep-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Math</title>
+      <link>/tags/math/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/math/</guid>
       <description></description>
     </item>
     
@@ -37,14 +61,6 @@
     </item>
     
     <item>
-      <title>Math</title>
-      <link>/tags/math/</link>
-      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>/tags/math/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Analysis</title>
       <link>/tags/analysis/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
@@ -57,14 +73,6 @@
       <link>/tags/functional-analysis/</link>
       <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
       <guid>/tags/functional-analysis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine learning</title>
-      <link>/tags/machine-learning/</link>
-      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
-      <guid>/tags/machine-learning/</guid>
       <description></description>
     </item>
     
@@ -105,14 +113,6 @@
       <link>/tags/rstudio/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/tags/rstudio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Convex optimization</title>
-      <link>/tags/convex-optimization/</link>
-      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/tags/convex-optimization/</guid>
       <description></description>
     </item>
     

@@ -132,7 +132,7 @@
   <meta property="og:description" content="Clinical Assistant Professor of Hospital Pathology"><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-07-30T00:00:00&#43;00:00">
+    <meta property="og:updated_time" content="2020-09-04T00:00:00&#43;00:00">
   
 
   
@@ -354,6 +354,15 @@
   
   
   <div>
+    <h2><a href="/post/approximation/">Approximation</a></h2>
+    <div class="article-style">
+      
+      The purpose of approximation is finding optimal point \(x^*\) i.e. \(\nabla F(x^*) = 0\). We need a step/search direction \(\Delta x\) and step size \(t\). Taylor approximation has polynomial arguments that is a step and parameters of derivatives at the start point. The first degree of Taylor approximation has one adding term from start point \((x_0, F(x_0))\). The adding term \(\nabla F(x) \Delta x\) is consistent with a parameter (gradient \(\nabla F(x)\)) and a argument (step \(\Delta x\)).
+      
+    </div>
+  </div>
+  
+  <div>
     <h2><a href="/post/singular-vector-decomposition/">Singular vector decomposition</a></h2>
     <div class="article-style">
       
@@ -446,15 +455,6 @@ The \(x_{nsd}\) is unnormalized into \(x_{sd}\).
       
       This is a summary of the Boyd convex optimization book. The strong convexity assumption can be useful to explain the iterative minimization algorithms like gradient descent, steepest descent, and Newton’s method.
 The smallest and largest eigen value of Hessian \(m \preceq \nabla^{2}f(x) \preceq M\) with norm of gradient \(\| \nabla f(x)\|_2\) determine the boundary of optimal value \(p^{*}\). The condition number of cond(\(C_\alpha\)) \(\leq {M \over m}\), where \(C_\alpha\) is \(\alpha\)-sublevel.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/convex-set/">Convex set</a></h2>
-    <div class="article-style">
-      
-      There is a homology between a line segment and a convex set. It is helpful to understand the convex set. A line, a line segment, and one sideline has homology to an affine set, a convex set, and a cone. A line is \(\{y|y=\theta_1 x_1 + \theta_2 x_2, \theta_1 + \theta_2 = 1\}\) if \(\theta_1, \theta_2 \in \mathbb{R}\), a line segment is if \(\theta_1, \theta_2 &gt; 0\) and an one side line if any \(\theta_1, \theta_2 &lt; 0\).
       
     </div>
   </div>

@@ -5,12 +5,27 @@
     <link>/tags/deep-learning/</link>
       <atom:link href="/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>Deep Learning</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 04 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Deep Learning</title>
       <link>/tags/deep-learning/</link>
     </image>
+    
+    <item>
+      <title>Approximation</title>
+      <link>/post/approximation/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/approximation/</guid>
+      <description>
+
+
+&lt;p&gt;The purpose of approximation is finding optimal point &lt;span class=&#34;math inline&#34;&gt;\(x^*\)&lt;/span&gt; i.e. &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x^*) = 0\)&lt;/span&gt;. We need a step/search direction &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt; and step size &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;. Taylor approximation has polynomial arguments that is a step and parameters of derivatives at the start point. The first degree of Taylor approximation has one adding term from start point &lt;span class=&#34;math inline&#34;&gt;\((x_0, F(x_0))\)&lt;/span&gt;. The adding term &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x) \Delta x\)&lt;/span&gt; is consistent with a parameter (gradient &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x)\)&lt;/span&gt;) and a argument (step &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt;). The Taylor approximation does approximate &lt;span class=&#34;math inline&#34;&gt;\(F(x + \Delta x)\)&lt;/span&gt; for any search direction &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt;. We want to choose &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt; for the direction to the optimal point.&lt;/p&gt;
+&lt;p&gt;The adding term of Taylor approximation &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x) \Delta x\)&lt;/span&gt; have level curve (level line). The smallest Euclidean norm of the level curve is achieved at the tangent. The gradient descent set the step to the gradient &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x)\)&lt;/span&gt;. This makes the adding term biggest with Euclidean norm &lt;span class=&#34;math inline&#34;&gt;\(\Vert \nabla F(x) \Vert^2\)&lt;/span&gt; i.e. dual norm &lt;span class=&#34;math inline&#34;&gt;\(\Vert \nabla F(x) \Vert_*\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Newton’s method is second degree of Taylor approximation &lt;span class=&#34;math inline&#34;&gt;\(F(x_0+\Delta x) \approx F(x_0) + \nabla F(x) \Delta x + 1/2\Delta x^T H \Delta x\)&lt;/span&gt;. We want to find &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt; to minimize the second degree of Taylor approximation. In this case, the minimizing step is tangent of first adding term &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x) \Delta x\)&lt;/span&gt; and second adding term &lt;span class=&#34;math inline&#34;&gt;\(\Delta x^T H \Delta x\)&lt;/span&gt; i.e. Steepest descent in H norm &lt;span class=&#34;math inline&#34;&gt;\(\Vert \cdot \Vert _H\)&lt;/span&gt;. The newton’s method can be thought as approximation of gradient &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x)\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x_0 + \Delta x) \approx \nabla F(x_0) + H \Delta x = 0,\ \Delta x = -H^{-1} \nabla F(x_0)\)&lt;/span&gt;. This is also the derivative of second degree of Taylor approximation with respect to &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;But the Tayler approximation is local. In addition to a step, a step size is needed. A step size determines how far the step taken. Backtracking line search has two constant parameters $ 0 &amp;lt; &amp;lt;0.5, 0 &amp;lt; &amp;lt;1 $. The approximation is below the convex function. &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; tilts the slope i.e. gradient upside and the tilted approximation meets the convex function. &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt; is the update rate of the step size until the the amount of the step is less than the point that tilted approximation meeets the convex function.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Singular vector decomposition</title>

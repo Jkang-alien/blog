@@ -31,7 +31,7 @@
   <meta name="description" content="Clinical Assistant Professor of Hospital Pathology">
 
   
-  <link rel="alternate" hreflang="en-us" href="/categories/machine-learning/">
+  <link rel="alternate" hreflang="en-us" href="/categories/convex-optimization/">
 
   
 
@@ -107,14 +107,14 @@
   
 
   
-  <link rel="alternate" href="/categories/machine-learning/index.xml" type="application/rss+xml" title="Jun&#39;s Blog">
+  <link rel="alternate" href="/categories/convex-optimization/index.xml" type="application/rss+xml" title="Jun&#39;s Blog">
   
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/categories/machine-learning/">
+  <link rel="canonical" href="/categories/convex-optimization/">
 
   
   
@@ -127,8 +127,8 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Jun&#39;s Blog">
-  <meta property="og:url" content="/categories/machine-learning/">
-  <meta property="og:title" content="Machine learning | Jun&#39;s Blog">
+  <meta property="og:url" content="/categories/convex-optimization/">
+  <meta property="og:title" content="Convex optimization | Jun&#39;s Blog">
   <meta property="og:description" content="Clinical Assistant Professor of Hospital Pathology"><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
@@ -144,7 +144,7 @@
 
 
 
-  <title>Machine learning | Jun&#39;s Blog</title>
+  <title>Convex optimization | Jun&#39;s Blog</title>
 
 </head>
 
@@ -339,7 +339,7 @@
     
   
 <div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Machine learning</h1>
+  <h1 itemprop="name">Convex optimization</h1>
 
   
 
@@ -358,82 +358,6 @@
     <div class="article-style">
       
       The purpose of approximation is finding optimal point \(x^*\) i.e. \(\nabla F(x^*) = 0\). We need a step/search direction \(\Delta x\) and step size \(t\). Taylor approximation has polynomial arguments that is a step and parameters of derivatives at the start point. The first degree of Taylor approximation has one adding term from start point \((x_0, F(x_0))\). The adding term \(\nabla F(x) \Delta x\) is consistent with a parameter (gradient \(\nabla F(x)\)) and a argument (step \(\Delta x\)).
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/singular-vector-decomposition/">Singular vector decomposition</a></h2>
-    <div class="article-style">
-      
-      Bases are the central idea of linear algebra. An invertable square matrix has eigenvectors. A symetric matrix has orthogonal eigenvectors with non-negative eigenvalues, i.e. positive semidefinite. A matrix has two types of singular vectors, left and right signular vectors, \(A=U\Sigma V^{T}\).
-When we think the matrix \(A\) is data points of rows \(A=U\Sigma V^{T}\) like data table, The right singular vectors \(V\) build bases, the sigular values \(\Sigma\) are magnitude of the bases and the left singular values \(U\) becomes new data points on new bases.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/low-rank-matrix-and-compressed-sensing/">Low rank matrix and compressed sensing</a></h2>
-    <div class="article-style">
-      
-      This is a note for part III of Linear Algebra and learning from data, Gilbert Strang
-The main themes are sparsity (Low rank), Information theory (compression), and of course linear transformation.
-A full rank matrix is inefficient. Finding low lank matrix which is close with original matrix can save computation.
-The rank one matrix \(uv^{T}\) is a unit of a matrix. The full rank matrix can be decomposed by sum of rank one matrices i.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/steady-state-equilibrium/">Steady state equilibrium</a></h2>
-    <div class="article-style">
-      
-      The meaning of \(A^{T}\)
- Steady state equilibrium Graph Laplacian matrix \(A^{T}CA\) Differential equation and Laplacian matrix Derivative is a graph without branch. Row space and column space are dual. \(A\) and \(A^{T}\) are dual.  ref) Linear algebra and learning from data, Part IV, Gilbert Strang
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/duality/">Duality</a></h2>
-    <div class="article-style">
-      
-      This is summary of Boyd convex optimization. Steepest descent method is a convex optimization algorithm. The normalized steepest descent direction \(x_{nsd}\) is a vector of unit ball of a norm that extends in the direction \(-\nabla f(x)\). The inner product of \(x_{nsd}\) and \(-\nabla f(x)\) is maximized. The first order Taylor approximation of \(f(x+v) = f(x) + \nabla f(x)^{T} v\) is most efficient when \(v = x_{nsd}\).
-The \(x_{nsd}\) is unnormalized into \(x_{sd}\).
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/tidymodel/">Tidymodel</a></h2>
-    <div class="article-style">
-      
-      Machine Learning and Tidymodel Model setting, {Parsnip} Rpackage Parsnip standardizes model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specifications and lately evaluates.
- Feature engineering, {Recipes} Recipes make preprocessing easy with step_() functions. Recipes after specification calculate.
- Resampling, {rsample} To choose a model and hyperparameters, we must validate the different models.
- Making hyperparameter set, {dials} The Rpackage {dials} set hyperparameter similarily with {Parsnip}.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/applied-machine-learning-workshop-rstudio-conference-2020/">Applied Machine Learning Workshop RStudio Conference 2020</a></h2>
-    <div class="article-style">
-      
-      This is a note of applied machine learning workshop RStudion conference 2020
-Why is it hard to predict (domain knowledge).
-purrr::map allows inline code.
-purrr::map and tidyr::nest covered because they are used in resample or tune.
-Skew data might be looking outlier.
-People look at data in many different ways like outliers, missingness, correlation, and suspicion of an important variable.
-The ggplot is good to explore variables adding geoms changing plot.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/talk/predictive-modeling/">Predictive Modeling</a></h2>
-    <div class="article-style">
       
     </div>
   </div>

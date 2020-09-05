@@ -18,22 +18,67 @@
   </url>
   
   <url>
+    <loc>/post/approximation/</loc>
+    <lastmod>2020-09-04T19:40:57+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/categories/</loc>
-    <lastmod>2020-07-30T09:25:53+09:00</lastmod>
+    <lastmod>2020-09-04T19:40:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/convex-optimization/</loc>
+    <lastmod>2020-09-04T19:40:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/convex-optimization/</loc>
+    <lastmod>2020-09-04T19:40:57+09:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/deep-learning/</loc>
-    <lastmod>2020-07-30T09:25:53+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/gilbert-strang/</loc>
-    <lastmod>2020-07-30T09:25:53+09:00</lastmod>
+    <lastmod>2020-09-04T19:40:57+09:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
+    <lastmod>2020-09-04T19:40:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/machine-learning/</loc>
+    <lastmod>2020-09-04T19:40:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/machine-learning/</loc>
+    <lastmod>2020-09-04T19:40:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/math/</loc>
+    <lastmod>2020-09-04T19:40:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/math/</loc>
+    <lastmod>2020-09-04T19:40:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-09-04T19:40:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-09-04T19:40:57+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gilbert-strang/</loc>
     <lastmod>2020-07-30T09:25:53+09:00</lastmod>
   </url>
   
@@ -43,38 +88,13 @@
   </url>
   
   <url>
-    <loc>/categories/machine-learning/</loc>
-    <lastmod>2020-07-30T09:25:53+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/math/</loc>
-    <lastmod>2020-07-30T09:25:53+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-07-30T09:25:53+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/singular-vector-decomposition/</loc>
-    <lastmod>2020-07-30T09:25:53+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-07-30T09:25:53+09:00</lastmod>
   </url>
   
   <url>
     <loc>/post/low-rank-matrix-and-compressed-sensing/</loc>
     <lastmod>2020-07-14T16:43:48+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/math/</loc>
-    <lastmod>2020-06-30T07:45:04+09:00</lastmod>
   </url>
   
   <url>
@@ -113,11 +133,6 @@
   </url>
   
   <url>
-    <loc>/tags/machine-learning/</loc>
-    <lastmod>2020-06-04T07:00:40+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/information/</loc>
     <lastmod>2020-05-31T07:44:56+09:00</lastmod>
   </url>
@@ -148,23 +163,18 @@
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
+    <loc>/tags/r/</loc>
     <lastmod>2020-04-20T16:00:42+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
+    <loc>/categories/r/</loc>
     <lastmod>2020-04-20T16:00:42+09:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/rstudio/</loc>
     <lastmod>2020-04-20T16:00:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/convex-optimization/</loc>
-    <lastmod>2020-03-31T06:49:54+09:00</lastmod>
   </url>
   
   <url>
@@ -368,12 +378,12 @@
   </url>
   
   <url>
-    <loc>/tags/cbioportal/</loc>
+    <loc>/categories/cbioportal/</loc>
     <lastmod>2019-12-03T16:37:57+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/cbioportal/</loc>
+    <loc>/tags/cbioportal/</loc>
     <lastmod>2019-12-03T16:37:57+09:00</lastmod>
   </url>
   
@@ -528,12 +538,12 @@
   </url>
   
   <url>
-    <loc>/categories/tcga/</loc>
+    <loc>/tags/tcga/</loc>
     <lastmod>2019-08-03T13:38:31+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/tcga/</loc>
+    <loc>/categories/tcga/</loc>
     <lastmod>2019-08-03T13:38:31+09:00</lastmod>
   </url>
   

@@ -28,10 +28,10 @@
   
     
   
-  <meta name="description" content="Clinical Assistant Professor of Hospital Pathology">
+  <meta name="description" content="The purpose of approximation is finding optimal point \(x^*\) i.e. \(\nabla F(x^*) = 0\). We need a step/search direction \(\Delta x\) and step size \(t\). Taylor approximation has polynomial arguments that is a step and parameters of derivatives at the start point. The first degree of Taylor approximation has one adding term from start point \((x_0, F(x_0))\). The adding term \(\nabla F(x) \Delta x\) is consistent with a parameter (gradient \(\nabla F(x)\)) and a argument (step \(\Delta x\)).">
 
   
-  <link rel="alternate" hreflang="en-us" href="/categories/machine-learning/">
+  <link rel="alternate" hreflang="en-us" href="/post/approximation/">
 
   
 
@@ -107,14 +107,12 @@
   
 
   
-  <link rel="alternate" href="/categories/machine-learning/index.xml" type="application/rss+xml" title="Jun&#39;s Blog">
-  
 
   <link rel="manifest" href="/index.webmanifest">
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="/categories/machine-learning/">
+  <link rel="canonical" href="/post/approximation/">
 
   
   
@@ -127,12 +125,15 @@
   <meta property="twitter:card" content="summary">
   
   <meta property="og:site_name" content="Jun&#39;s Blog">
-  <meta property="og:url" content="/categories/machine-learning/">
-  <meta property="og:title" content="Machine learning | Jun&#39;s Blog">
-  <meta property="og:description" content="Clinical Assistant Professor of Hospital Pathology"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="og:url" content="/post/approximation/">
+  <meta property="og:title" content="Approximation | Jun&#39;s Blog">
+  <meta property="og:description" content="The purpose of approximation is finding optimal point \(x^*\) i.e. \(\nabla F(x^*) = 0\). We need a step/search direction \(\Delta x\) and step size \(t\). Taylor approximation has polynomial arguments that is a step and parameters of derivatives at the start point. The first degree of Taylor approximation has one adding term from start point \((x_0, F(x_0))\). The adding term \(\nabla F(x) \Delta x\) is consistent with a parameter (gradient \(\nabla F(x)\)) and a argument (step \(\Delta x\))."><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-09-04T00:00:00&#43;00:00">
+    
+      <meta property="article:published_time" content="2020-09-04T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-09-04T19:40:57&#43;09:00">
   
 
   
@@ -144,7 +145,7 @@
 
 
 
-  <title>Machine learning | Jun&#39;s Blog</title>
+  <title>Approximation | Jun&#39;s Blog</title>
 
 </head>
 
@@ -318,130 +319,364 @@
 </nav>
 
 
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Approximation</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2020-09-04 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2020-09-04 19:40:57 &#43;0900 KST" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    <time>Sep 4, 2020</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    2 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/approximation/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/math/">Math</a>, <a href="/categories/machine-learning/">Machine learning</a>, <a href="/categories/convex-optimization/">Convex optimization</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/approximation/&amp;text=Approximation" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/approximation/&amp;t=Approximation" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Approximation&amp;body=/post/approximation/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/approximation/&amp;title=Approximation" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Approximation%20/post/approximation/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/approximation/&amp;title=Approximation" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+
+<p>The purpose of approximation is finding optimal point <span class="math inline">\(x^*\)</span> i.e. <span class="math inline">\(\nabla F(x^*) = 0\)</span>. We need a step/search direction <span class="math inline">\(\Delta x\)</span> and step size <span class="math inline">\(t\)</span>. Taylor approximation has polynomial arguments that is a step and parameters of derivatives at the start point. The first degree of Taylor approximation has one adding term from start point <span class="math inline">\((x_0, F(x_0))\)</span>. The adding term <span class="math inline">\(\nabla F(x) \Delta x\)</span> is consistent with a parameter (gradient <span class="math inline">\(\nabla F(x)\)</span>) and a argument (step <span class="math inline">\(\Delta x\)</span>). The Taylor approximation does approximate <span class="math inline">\(F(x + \Delta x)\)</span> for any search direction <span class="math inline">\(\Delta x\)</span>. We want to choose <span class="math inline">\(\Delta x\)</span> for the direction to the optimal point.</p>
+<p>The adding term of Taylor approximation <span class="math inline">\(\nabla F(x) \Delta x\)</span> have level curve (level line). The smallest Euclidean norm of the level curve is achieved at the tangent. The gradient descent set the step to the gradient <span class="math inline">\(\nabla F(x)\)</span>. This makes the adding term biggest with Euclidean norm <span class="math inline">\(\Vert \nabla F(x) \Vert^2\)</span> i.e. dual norm <span class="math inline">\(\Vert \nabla F(x) \Vert_*\)</span>.</p>
+<p>Newton’s method is second degree of Taylor approximation <span class="math inline">\(F(x_0+\Delta x) \approx F(x_0) + \nabla F(x) \Delta x + 1/2\Delta x^T H \Delta x\)</span>. We want to find <span class="math inline">\(\Delta x\)</span> to minimize the second degree of Taylor approximation. In this case, the minimizing step is tangent of first adding term <span class="math inline">\(\nabla F(x) \Delta x\)</span> and second adding term <span class="math inline">\(\Delta x^T H \Delta x\)</span> i.e. Steepest descent in H norm <span class="math inline">\(\Vert \cdot \Vert _H\)</span>. The newton’s method can be thought as approximation of gradient <span class="math inline">\(\nabla F(x)\)</span>. <span class="math inline">\(\nabla F(x_0 + \Delta x) \approx \nabla F(x_0) + H \Delta x = 0,\ \Delta x = -H^{-1} \nabla F(x_0)\)</span>. This is also the derivative of second degree of Taylor approximation with respect to <span class="math inline">\(\Delta x\)</span>.</p>
+<p>But the Tayler approximation is local. In addition to a step, a step size is needed. A step size determines how far the step taken. Backtracking line search has two constant parameters $ 0 &lt; &lt;0.5, 0 &lt; &lt;1 $. The approximation is below the convex function. <span class="math inline">\(\alpha\)</span> tilts the slope i.e. gradient upside and the tilted approximation meets the convex function. <span class="math inline">\(\beta\)</span> is the update rate of the step size until the the amount of the step is less than the point that tilted approximation meeets the convex function.</p>
+
+    </div>
+
+    
+
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/convex-optimization/">Convex optimization</a>
+  
+  <a class="badge badge-light" href="/tags/deep-learning/">Deep Learning</a>
+  
+  <a class="badge badge-light" href="/tags/machine-learning/">Machine learning</a>
+  
+  <a class="badge badge-light" href="/tags/math/">Math</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
   
 
 
 
 
-
-
-
-
-
-
-
-
-  
 
   
   
   
     
   
-<div class="universal-wrapper pt-3">
-  <h1 itemprop="name">Machine learning</h1>
-
   
-
-  
-</div>
-
-
-
-<div class="universal-wrapper">
-  
-
-  
-  
-  <div>
-    <h2><a href="/post/approximation/">Approximation</a></h2>
-    <div class="article-style">
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
       
-      The purpose of approximation is finding optimal point \(x^*\) i.e. \(\nabla F(x^*) = 0\). We need a step/search direction \(\Delta x\) and step size \(t\). Taylor approximation has polynomial arguments that is a step and parameters of derivatives at the start point. The first degree of Taylor approximation has one adding term from start point \((x_0, F(x_0))\). The adding term \(\nabla F(x) \Delta x\) is consistent with a parameter (gradient \(\nabla F(x)\)) and a argument (step \(\Delta x\)).
-      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu5b1350064ce29e3ab022863bed937806_150391_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Jun Kang</a></h5>
+      <h6 class="card-subtitle">Clinical Assistant Professor of Hospital Pathology</h6>
+      <p class="card-text" itemprop="description">My research interests include pathology, oncology and statistics.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.facebook.com/jun.kang.33" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/JKang1978" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.co.kr/citations?user=xJKaa7kAAAAJ&amp;hl=ko" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/Jkang-alien" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
     </div>
   </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/post/strong-convexity-and-implications/">Strong convexity and implications</a></li>
+          
+          <li><a href="/post/steady-state-equilibrium/">Steady state equilibrium</a></li>
+          
+          <li><a href="/post/differential-equations-and-fourier-transformation/">Differential equations and Fourier transformation</a></li>
+          
+          <li><a href="/post/information/">Information</a></li>
+          
+          <li><a href="/post/taylor-series/">Taylor series</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+<section id="comments">
   
-  <div>
-    <h2><a href="/post/singular-vector-decomposition/">Singular vector decomposition</a></h2>
-    <div class="article-style">
-      
-      Bases are the central idea of linear algebra. An invertable square matrix has eigenvectors. A symetric matrix has orthogonal eigenvectors with non-negative eigenvalues, i.e. positive semidefinite. A matrix has two types of singular vectors, left and right signular vectors, \(A=U\Sigma V^{T}\).
-When we think the matrix \(A\) is data points of rows \(A=U\Sigma V^{T}\) like data table, The right singular vectors \(V\) build bases, the sigular values \(\Sigma\) are magnitude of the bases and the left singular values \(U\) becomes new data points on new bases.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/low-rank-matrix-and-compressed-sensing/">Low rank matrix and compressed sensing</a></h2>
-    <div class="article-style">
-      
-      This is a note for part III of Linear Algebra and learning from data, Gilbert Strang
-The main themes are sparsity (Low rank), Information theory (compression), and of course linear transformation.
-A full rank matrix is inefficient. Finding low lank matrix which is close with original matrix can save computation.
-The rank one matrix \(uv^{T}\) is a unit of a matrix. The full rank matrix can be decomposed by sum of rank one matrices i.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/steady-state-equilibrium/">Steady state equilibrium</a></h2>
-    <div class="article-style">
-      
-      The meaning of \(A^{T}\)
- Steady state equilibrium Graph Laplacian matrix \(A^{T}CA\) Differential equation and Laplacian matrix Derivative is a graph without branch. Row space and column space are dual. \(A\) and \(A^{T}\) are dual.  ref) Linear algebra and learning from data, Part IV, Gilbert Strang
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/duality/">Duality</a></h2>
-    <div class="article-style">
-      
-      This is summary of Boyd convex optimization. Steepest descent method is a convex optimization algorithm. The normalized steepest descent direction \(x_{nsd}\) is a vector of unit ball of a norm that extends in the direction \(-\nabla f(x)\). The inner product of \(x_{nsd}\) and \(-\nabla f(x)\) is maximized. The first order Taylor approximation of \(f(x+v) = f(x) + \nabla f(x)^{T} v\) is most efficient when \(v = x_{nsd}\).
-The \(x_{nsd}\) is unnormalized into \(x_{sd}\).
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/tidymodel/">Tidymodel</a></h2>
-    <div class="article-style">
-      
-      Machine Learning and Tidymodel Model setting, {Parsnip} Rpackage Parsnip standardizes model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specifications and lately evaluates.
- Feature engineering, {Recipes} Recipes make preprocessing easy with step_() functions. Recipes after specification calculate.
- Resampling, {rsample} To choose a model and hyperparameters, we must validate the different models.
- Making hyperparameter set, {dials} The Rpackage {dials} set hyperparameter similarily with {Parsnip}.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/applied-machine-learning-workshop-rstudio-conference-2020/">Applied Machine Learning Workshop RStudio Conference 2020</a></h2>
-    <div class="article-style">
-      
-      This is a note of applied machine learning workshop RStudion conference 2020
-Why is it hard to predict (domain knowledge).
-purrr::map allows inline code.
-purrr::map and tidyr::nest covered because they are used in resample or tune.
-Skew data might be looking outlier.
-People look at data in many different ways like outliers, missingness, correlation, and suspicion of an important variable.
-The ggplot is good to explore variables adding geoms changing plot.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/talk/predictive-modeling/">Predictive Modeling</a></h2>
-    <div class="article-style">
-      
-    </div>
-  </div>
-  
+    
 
   
+</section>
 
-</div>
+
+
+  </div>
+</article>
 
       
 
