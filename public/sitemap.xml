@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -28,22 +28,17 @@
   </url>
   
   <url>
-    <loc>/categories/convex-optimization/</loc>
-    <lastmod>2020-09-04T19:40:57+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/convex-optimization/</loc>
     <lastmod>2020-09-04T19:40:57+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/deep-learning/</loc>
+    <loc>/categories/convex-optimization/</loc>
     <lastmod>2020-09-04T19:40:57+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/tags/deep-learning/</loc>
     <lastmod>2020-09-04T19:40:57+09:00</lastmod>
   </url>
   
@@ -58,12 +53,12 @@
   </url>
   
   <url>
-    <loc>/categories/math/</loc>
+    <loc>/tags/math/</loc>
     <lastmod>2020-09-04T19:40:57+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/math/</loc>
+    <loc>/categories/math/</loc>
     <lastmod>2020-09-04T19:40:57+09:00</lastmod>
   </url>
   
@@ -378,12 +373,12 @@
   </url>
   
   <url>
-    <loc>/categories/cbioportal/</loc>
+    <loc>/tags/cbioportal/</loc>
     <lastmod>2019-12-03T16:37:57+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/cbioportal/</loc>
+    <loc>/categories/cbioportal/</loc>
     <lastmod>2019-12-03T16:37:57+09:00</lastmod>
   </url>
   
@@ -548,6 +543,11 @@
   </url>
   
   <url>
+    <loc>/courses/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/bayesian/</loc>
     <lastmod>2019-08-02T14:22:01+09:00</lastmod>
   </url>
@@ -650,6 +650,11 @@
   <url>
     <loc>/authors/youn-soo-lee/</loc>
     <lastmod>2019-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -1574,10 +1579,6 @@
   
   <url>
     <loc>/authors/admin/</loc>
-  </url>
-  
-  <url>
-    <loc>/courses/</loc>
   </url>
   
 </urlset>
