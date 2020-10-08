@@ -1,0 +1,32 @@
+---
+title: Lagrange dual problem and conjugate function
+author: JK
+date: '2020-09-13'
+slug: lagrange-dual-problem-and-conjugate-function
+categories:
+  - Convex optimization
+  - Math
+  - Machine learning
+tags:
+  - Convex optimization
+  - Deep Learning
+  - Machine learning
+  - Math
+  - Limit
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-09-13T06:37:29+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>The optimization problem have two components that are objective function <span class="math inline">\(f_0 : \mathbb R ^n \rightarrow \mathbb R\)</span> and the constraints. The objective function and constraints keep in check each other and make balance at saddle point i.e. optimal point. The dual (Lagrange) problem of the optimal problem also solve the optimization problem by making low boundary.</p>
+<p>The dual problem can be explained as a conjugate function <span class="math inline">\(f^* = \sup (x^Ty-f(x))\)</span>. The Lagrangian is <span class="math inline">\(L(x, \lambda, \nu) = f_0(x) + \lambda f_1, + \nu f_2\)</span> where <span class="math inline">\(f_0\)</span> is the objective function, <span class="math inline">\(f_1\)</span> is inequality constraints and <span class="math inline">\(f_2\)</span> is equality constraints. The Lagrangian function is <span class="math inline">\(g(\lambda,nu) = \inf_{x}L(x, \lambda, \nu) = \inf_{x}(f_0(x) + \lambda f_{1} + \nu f_{2})\)</span>. The second and third term of the Lagrangian function is can be rewriten as an inner product form <span class="math inline">\(x^{T}h(\lambda) + x^{T}i(\nu)\)</span> and constant term with <span class="math inline">\(\lambda\)</span> and <span class="math inline">\(\nu\)</span>. Then the inner product term <span class="math inline">\(x^{T}h(\lambda) + x^{T}i(\nu)\)</span> and objective term becomes a conjugate function.</p>
+<p>The conjugate function <span class="math inline">\(f^*(x)\)</span> is similar in terms of balance and saddle point.</p>

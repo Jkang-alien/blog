@@ -5,12 +5,26 @@
     <link>/categories/machine-learning/</link>
       <atom:link href="/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
     <description>Machine learning</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 04 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 13 Sep 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Machine learning</title>
       <link>/categories/machine-learning/</link>
     </image>
+    
+    <item>
+      <title>Lagrange dual problem and conjugate function</title>
+      <link>/post/lagrange-dual-problem-and-conjugate-function/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/lagrange-dual-problem-and-conjugate-function/</guid>
+      <description>
+
+
+&lt;p&gt;The optimization problem have two components that are objective function &lt;span class=&#34;math inline&#34;&gt;\(f_0 : \mathbb R ^n \rightarrow \mathbb R\)&lt;/span&gt; and the constraints. The objective function and constraints keep in check each other and make balance at saddle point i.e. optimal point. The dual (Lagrange) problem of the optimal problem also solve the optimization problem by making low boundary.&lt;/p&gt;
+&lt;p&gt;The dual problem can be explained as a conjugate function &lt;span class=&#34;math inline&#34;&gt;\(f^* = \sup (x^Ty-f(x))\)&lt;/span&gt;. The Lagrangian is &lt;span class=&#34;math inline&#34;&gt;\(L(x, \lambda, \nu) = f_0(x) + \lambda f_1, + \nu f_2\)&lt;/span&gt; where &lt;span class=&#34;math inline&#34;&gt;\(f_0\)&lt;/span&gt; is the objective function, &lt;span class=&#34;math inline&#34;&gt;\(f_1\)&lt;/span&gt; is inequality constraints and &lt;span class=&#34;math inline&#34;&gt;\(f_2\)&lt;/span&gt; is equality constraints. The Lagrangian function is &lt;span class=&#34;math inline&#34;&gt;\(g(\lambda,nu) = \inf_{x}L(x, \lambda, \nu) = \inf_{x}(f_0(x) + \lambda f_{1} + \nu f_{2})\)&lt;/span&gt;. The second and third term of the Lagrangian function is can be rewriten as an inner product form &lt;span class=&#34;math inline&#34;&gt;\(x^{T}h(\lambda) + x^{T}i(\nu)\)&lt;/span&gt; and constant term with &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\nu\)&lt;/span&gt;. Then the inner product term &lt;span class=&#34;math inline&#34;&gt;\(x^{T}h(\lambda) + x^{T}i(\nu)\)&lt;/span&gt; and objective term becomes a conjugate function.&lt;/p&gt;
+&lt;p&gt;The conjugate function &lt;span class=&#34;math inline&#34;&gt;\(f^*(x)\)&lt;/span&gt; is similar in terms of balance and saddle point.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Approximation</title>

@@ -4,8 +4,8 @@ author: JK
 date: '2019-12-25'
 lastmod: '2019-08-08T11:35:03+09:00'
 featured: no
-draft: true
-url_slides: "/slide/gyn200723.pdf"
+draft: false
+url_slides: "/slide/20201009.pdf"
 projects: []
 ---
 

@@ -132,7 +132,7 @@
   <meta property="og:description" content="Clinical Assistant Professor of Hospital Pathology"><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-09-04T00:00:00&#43;00:00">
+    <meta property="og:updated_time" content="2020-09-13T00:00:00&#43;00:00">
   
 
   
@@ -354,6 +354,16 @@
   
   
   <div>
+    <h2><a href="/post/lagrange-dual-problem-and-conjugate-function/">Lagrange dual problem and conjugate function</a></h2>
+    <div class="article-style">
+      
+      The optimization problem have two components that are objective function \(f_0 : \mathbb R ^n \rightarrow \mathbb R\) and the constraints. The objective function and constraints keep in check each other and make balance at saddle point i.e. optimal point. The dual (Lagrange) problem of the optimal problem also solve the optimization problem by making low boundary.
+The dual problem can be explained as a conjugate function \(f^* = \sup (x^Ty-f(x))\).
+      
+    </div>
+  </div>
+  
+  <div>
     <h2><a href="/post/approximation/">Approximation</a></h2>
     <div class="article-style">
       
@@ -445,16 +455,6 @@ The entropy (\(H\)) is a measure of uncertainty of a variable which is the answe
       
       This is summary of Boyd convex optimization. Steepest descent method is a convex optimization algorithm. The normalized steepest descent direction \(x_{nsd}\) is a vector of unit ball of a norm that extends in the direction \(-\nabla f(x)\). The inner product of \(x_{nsd}\) and \(-\nabla f(x)\) is maximized. The first order Taylor approximation of \(f(x+v) = f(x) + \nabla f(x)^{T} v\) is most efficient when \(v = x_{nsd}\).
 The \(x_{nsd}\) is unnormalized into \(x_{sd}\).
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/strong-convexity-and-implications/">Strong convexity and implications</a></h2>
-    <div class="article-style">
-      
-      This is a summary of the Boyd convex optimization book. The strong convexity assumption can be useful to explain the iterative minimization algorithms like gradient descent, steepest descent, and Newton’s method.
-The smallest and largest eigen value of Hessian \(m \preceq \nabla^{2}f(x) \preceq M\) with norm of gradient \(\| \nabla f(x)\|_2\) determine the boundary of optimal value \(p^{*}\). The condition number of cond(\(C_\alpha\)) \(\leq {M \over m}\), where \(C_\alpha\) is \(\alpha\)-sublevel.
       
     </div>
   </div>
