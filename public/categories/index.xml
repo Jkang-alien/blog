@@ -5,7 +5,7 @@
     <link>/categories/</link>
       <atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     <description>Categories</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 13 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 22 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Categories</title>
@@ -13,17 +13,9 @@
     </image>
     
     <item>
-      <title>Convex optimization</title>
-      <link>/categories/convex-optimization/</link>
-      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>/categories/convex-optimization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Machine learning</title>
       <link>/categories/machine-learning/</link>
-      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
       <guid>/categories/machine-learning/</guid>
       <description></description>
     </item>
@@ -31,8 +23,16 @@
     <item>
       <title>Math</title>
       <link>/categories/math/</link>
-      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
       <guid>/categories/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Convex optimization</title>
+      <link>/categories/convex-optimization/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/categories/convex-optimization/</guid>
       <description></description>
     </item>
     

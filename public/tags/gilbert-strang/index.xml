@@ -5,12 +5,29 @@
     <link>/tags/gilbert-strang/</link>
       <atom:link href="/tags/gilbert-strang/index.xml" rel="self" type="application/rss+xml" />
     <description>Gilbert Strang</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 30 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 22 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Gilbert Strang</title>
       <link>/tags/gilbert-strang/</link>
     </image>
+    
+    <item>
+      <title>Convolution and Fourier transformation</title>
+      <link>/post/convolution-and-fourier-transformation/</link>
+      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/post/convolution-and-fourier-transformation/</guid>
+      <description>
+
+
+&lt;p&gt;Convolution is a vector operation on two vectors.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ Convolution \\ c * d = d*c \\ (c*d)_n = \Sigma_{i+j} c_i d_j = \Sigma_i c_i d_{n-i}.\]&lt;/span&gt;
+This is multiplying polynomials. The parameters of multiplied polynomial become convolution of two polynomials. Fourier transformation expands x base to infinite exponential basis &lt;span class=&#34;math inline&#34;&gt;\(e^{iwk}\)&lt;/span&gt;. The &lt;strong&gt;multiplication on x (time) space&lt;/strong&gt; becomes &lt;strong&gt;convolutionn on k (frequency) space&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If time space is periodic, its Fourier transformation is discrete i.e. Fourier series. If time space is non-periodic, its Fourier transformation is continuous Fourier transformation.&lt;/p&gt;
+&lt;p&gt;The Fourier transformation is dual. The relations of &lt;strong&gt;multiplication and convolution&lt;/strong&gt; and &lt;strong&gt;periodic and discrete&lt;/strong&gt; are dual in time space and frequency space.&lt;/p&gt;
+&lt;p&gt;Fourier transformation is changing basis. The changing basis can be done by inner product (for vector space) or integration (function space) with new basis in which are we want move to space. This is why Fourier transformation coefficients calculated by integration with function multiplying basis &lt;span class=&#34;math inline&#34;&gt;\(e^{iwk}\)&lt;/span&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Singular vector decomposition</title>

@@ -84,7 +84,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.7c75abe867d1ac4b26fbe501f37ef260.css">
+  <link rel="stylesheet" href="/css/academic.min.dd629241ea9333c62c071f4a25f829ff.css">
 
   
 
@@ -132,7 +132,7 @@
   <meta property="og:description" content="Clinical Assistant Professor of Hospital Pathology"><meta property="og:image" content="/img/icon-192.png">
   <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2020-09-13T00:00:00&#43;00:00">
+    <meta property="og:updated_time" content="2020-10-22T00:00:00&#43;00:00">
   
 
   
@@ -354,6 +354,17 @@
   
   
   <div>
+    <h2><a href="/post/convolution-and-fourier-transformation/">Convolution and Fourier transformation</a></h2>
+    <div class="article-style">
+      
+      Convolution is a vector operation on two vectors.
+\[ Convolution \\ c * d = d*c \\ (c*d)_n = \Sigma_{i+j} c_i d_j = \Sigma_i c_i d_{n-i}.\] This is multiplying polynomials. The parameters of multiplied polynomial become convolution of two polynomials. Fourier transformation expands x base to infinite exponential basis \(e^{iwk}\). The multiplication on x (time) space becomes convolutionn on k (frequency) space.
+If time space is periodic, its Fourier transformation is discrete i.
+      
+    </div>
+  </div>
+  
+  <div>
     <h2><a href="/post/lagrange-dual-problem-and-conjugate-function/">Lagrange dual problem and conjugate function</a></h2>
     <div class="article-style">
       
@@ -377,8 +388,8 @@ The dual problem can be explained as a conjugate function \(f^* = \sup (x^Ty-f(x
     <div class="article-style">
       
       Differential equations describe the change of state. The change relates to the state. The solutions of the differential equations are the status equations. The initial conditions set the time \(t\) and status \(y\). The boundary conditions are the value of boundary \(y_0\) and \(y_1\).
-\(dy \over dt\) \(= ay + q(t)\) starting from \(y(0)\) at $t=0. inital conditions \(t = 0\) and \(y=1\)
-\(q(t)\) is a input and \(y(t)\) is a response.
+ \(dy \over dt\) \(= ay + q(t)\) starting from \(y(0)\) at $t=0. inital conditions \(t = 0\) and \(y=1\)
+ \(q(t)\) is a input and \(y(t)\) is a response.
       
     </div>
   </div>
@@ -412,7 +423,7 @@ Thus,
     <div class="article-style">
       
       When the penalized generalize linear model (Lasso or Ridge) is processed in the tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of the final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.
-Modelinglibrary(tidymodels)library(glmnet)set.seed(930093)cv_splits &lt;- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T)mod &lt;- logistic_reg(penalty = tune(),mixture = tune()) %&gt;%set_engine(&quot;glmnet&quot;)rec &lt;- recipe(PIK3CA_T ~ .
+Modeling library(tidymodels) library(glmnet) set.seed(930093) cv_splits &lt;- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T) mod &lt;- logistic_reg(penalty = tune(), mixture = tune()) %&gt;% set_engine(&quot;glmnet&quot;) rec &lt;- recipe(PIK3CA_T ~ .
       
     </div>
   </div>
@@ -431,10 +442,10 @@ The smallest and largest eigen value of Hessian \(m \preceq \nabla^{2}f(x) \prec
     <h2><a href="/post/tidymodel/">Tidymodel</a></h2>
     <div class="article-style">
       
-      Machine Learning and TidymodelModel setting, {Parsnip}Rpackage Parsnip standardizes model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specifications and lately evaluates.
-Feature engineering, {Recipes}Recipes make preprocessing easy with step_() functions. Recipes after specification calculate.
-Resampling, {rsample}To choose a model and hyperparameters, we must validate the different models.
-Making hyperparameter set, {dials}The Rpackage {dials} set hyperparameter similarily with {Parsnip}.
+      Machine Learning and Tidymodel Model setting, {Parsnip} Rpackage Parsnip standardizes model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specifications and lately evaluates.
+ Feature engineering, {Recipes} Recipes make preprocessing easy with step_() functions. Recipes after specification calculate.
+ Resampling, {rsample} To choose a model and hyperparameters, we must validate the different models.
+ Making hyperparameter set, {dials} The Rpackage {dials} set hyperparameter similarily with {Parsnip}.
       
     </div>
   </div>
@@ -450,17 +461,6 @@ purrr::map and tidyr::nest covered because they are used in resample or tune.
 Skew data might be looking outlier.
 People look at data in many different ways like outliers, missingness, correlation, and suspicion of an important variable.
 The ggplot is good to explore variables adding geoms changing plot.
-      
-    </div>
-  </div>
-  
-  <div>
-    <h2><a href="/post/reproducing-kernel-hilbert-space/">Reproducing Kernel Hilbert Space</a></h2>
-    <div class="article-style">
-      
-      Finally arrive at reproducing kernel Hilbert space.https://nzer0.github.io/reproducing-kernel-hilbert-space.html
-The above post introduces RKHS in Korean. It was helpful. I had struggled to understand some concepts in RKHS. What does mean Hilbert space in terms of feature expansion? (\(f:\mathcal{X} \to \mathbb{R}\), \(f \in \mathcal{H}_K\)) It was confusing the difference between \(f\) and \(f(x)\). \(f\) means the function in Hilbert space and \(f(x)\) is evaluation.
-I thought that the function can be represented by the inner product of the basis of feature space \(K(\cdot,x)\) and coefficients \(f\), and the coefficients are vectors in feature space.
       
     </div>
   </div>
