@@ -1,5 +1,5 @@
 ---
-title: Use Korean font in rmarkdown on Windows
+title: Use Korean font in pdf generated from rmarkdown on Windows
 author: JK
 date: '2020-10-27'
 slug: []
@@ -31,7 +31,7 @@ output:
 ---
 ```
 
-The mainfont is LaTex option. The argument is a font family. The **exact names** of  font family can be found in fonts folder. Expand the header of Fonts folder. **NanumGothic** is the exact name of font family. 
+The mainfont is the LaTex option. The argument is a font family. The **exact names** of the font family can be found in the fonts folder. Expand the header of the fonts folder. **NanumGothic** is the exact name of the font family. 
 
 The font family should be **Editable embedding** type (https://docs.microsoft.com/en-us/typography/opentype/spec/os2#fstype).
 
