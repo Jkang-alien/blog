@@ -22,13 +22,14 @@ projects: []
 ---
 
 ### yaml
-
+```
 ---
 mainfont: NanumGothic
 output:
   pdf_document: 
     latex_engine: xelatex
 ---
+```
 
 The mainfont is LaTex option. The argument is a font family. The **exact names** of  font family can be found in fonts folder. Expand the header of Fonts folder. **NanumGothic** is the exact name of font family. 
 
