@@ -5,12 +5,44 @@
     <link>/tags/math/</link>
       <atom:link href="/tags/math/index.xml" rel="self" type="application/rss+xml" />
     <description>Math</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 22 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 14 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Math</title>
       <link>/tags/math/</link>
     </image>
+    
+    <item>
+      <title>Laplace transformation</title>
+      <link>/post/laplace-transformation/</link>
+      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/post/laplace-transformation/</guid>
+      <description>
+
+
+&lt;p&gt;The Fourier series represents a periodic function as a descrete vectors. The Fourier transformation turns a time domain non-periodic function into a frequency domain continuous function. The Fourier series and transformation change a single time base &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; into infinite frequency basis &lt;span class=&#34;math inline&#34;&gt;\(e^{inx}\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(e^{iwx}\)&lt;/span&gt;. The function on infinite basis domain can be represented by a vector or a function of basis domain &lt;span class=&#34;math inline&#34;&gt;\(v_{n}\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(f(w)\)&lt;/span&gt;. This is a coefficients of Fourier series or Fourier transformation.&lt;/p&gt;
+&lt;p&gt;The basis of Fourier transformation is pure frequency &lt;span class=&#34;math inline&#34;&gt;\(e^{iw}\)&lt;/span&gt;. The domain of Laplace transfomation is frequency &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt; and damping component &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt; which compose damping ocilation function, &lt;span class=&#34;math inline&#34;&gt;\(e^{s} = e^{(iw+\sigma)}\)&lt;/span&gt;. The function which represent Laplace transformation &lt;span class=&#34;math inline&#34;&gt;\(F(s)\)&lt;/span&gt; is a function of complex domain &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt;. The Fourier transformation is a special Laplace transformation of no damping term &lt;span class=&#34;math inline&#34;&gt;\(s = 0 \cdot \sigma +iw\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;periodic&lt;/strong&gt; function can be represented by a series not a continuous function. A condition makes a function can be represented by pure frequency domain i.e. Fourier transformation, not a complex domain i.e. Laplace transformation. The condition is&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;from wikipedia &lt;a href=&#34;https://en.wikipedia.org/wiki/Laplace_transform#Fourier_transform&#34; class=&#34;uri&#34;&gt;https://en.wikipedia.org/wiki/Laplace_transform#Fourier_transform&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;math&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+  \widehat{f}(\omega) &amp;amp;= \mathcal{F}\{f(t)\} \\[4pt]
+                  &amp;amp;= \mathcal{L}\{f(t)\}|_{s = i\omega}  =  F(s)|_{s = i \omega} \\[4pt]
+                  &amp;amp;= \int_{-\infty}^\infty e^{-i \omega t} f(t)\,dt~.
+\end{align}\]&lt;/span&gt;&lt;/math&gt;&lt;/p&gt;
+&lt;p&gt;Laplace transformation makes a differential equation to an algebra equation.&lt;br /&gt;
+$$
+Laplace transformation \&lt;/p&gt;
+&lt;p&gt;[f(t)] = F(s) = _{t=0}^{} f(t)e^{-st}dt.\&lt;/p&gt;
+&lt;p&gt;Transfer function\&lt;/p&gt;
+&lt;p&gt;H(s) = Y(s)/X(s) \&lt;/p&gt;
+&lt;p&gt;Y(s) = H(s)X(s)&lt;br /&gt;
+$$&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(X(s)\)&lt;/span&gt; are Laplace transformed &lt;span class=&#34;math inline&#34;&gt;\(y(t)\)&lt;/span&gt;, i.e. solution and &lt;span class=&#34;math inline&#34;&gt;\(f(t)\)&lt;/span&gt; i.e. input.&lt;/p&gt;
+&lt;p&gt;The &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt; is a function of &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; which represents coefficients of damped frquency basis &lt;span class=&#34;math inline&#34;&gt;\(e^{\sigma + iw}\)&lt;/span&gt;. We are not looking for the solution &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; for the &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt;. We are looking for the inverse Laplace transformation of &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt;. The inverse Laplace transformation turns a function &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt; with infinite damped frquency basis &lt;span class=&#34;math inline&#34;&gt;\(e^{\sigma + iw}\)&lt;/span&gt; to the solution of linear differential equation &lt;span class=&#34;math inline&#34;&gt;\(y(t)\)&lt;/span&gt; that is a function with a single domain basis &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Convolution and Fourier transformation</title>

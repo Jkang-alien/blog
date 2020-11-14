@@ -38,16 +38,16 @@ The **periodic** function can be represented by a series not a continuous functi
                   &= \int_{-\infty}^\infty e^{-i \omega t} f(t)\,dt~.
 \end{align}</math>  
 
-
-
 Laplace transformation makes a differential equation to an algebra equation.  
-
 $$ 
 Laplace\ transformation \\
- \mathcal{L}[f(t)] = F(s) = \int_{t=0}^{\infty} f(t)e^{-st}dt.\\
+
+\mathcal{L}[f(t)] = F(s) = \int_{t=0}^{\infty} f(t)e^{-st}dt.\\
 
 Transfer function\\
+
  H(s) = Y(s)/X(s) \\
+ 
  Y(s) = H(s)X(s)  
 $$
 

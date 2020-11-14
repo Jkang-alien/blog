@@ -5,12 +5,78 @@
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 22 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 14 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
+    
+    <item>
+      <title>Laplace transformation</title>
+      <link>/post/laplace-transformation/</link>
+      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/post/laplace-transformation/</guid>
+      <description>
+
+
+&lt;p&gt;The Fourier series represents a periodic function as a descrete vectors. The Fourier transformation turns a time domain non-periodic function into a frequency domain continuous function. The Fourier series and transformation change a single time base &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; into infinite frequency basis &lt;span class=&#34;math inline&#34;&gt;\(e^{inx}\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(e^{iwx}\)&lt;/span&gt;. The function on infinite basis domain can be represented by a vector or a function of basis domain &lt;span class=&#34;math inline&#34;&gt;\(v_{n}\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(f(w)\)&lt;/span&gt;. This is a coefficients of Fourier series or Fourier transformation.&lt;/p&gt;
+&lt;p&gt;The basis of Fourier transformation is pure frequency &lt;span class=&#34;math inline&#34;&gt;\(e^{iw}\)&lt;/span&gt;. The domain of Laplace transfomation is frequency &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt; and damping component &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt; which compose damping ocilation function, &lt;span class=&#34;math inline&#34;&gt;\(e^{s} = e^{(iw+\sigma)}\)&lt;/span&gt;. The function which represent Laplace transformation &lt;span class=&#34;math inline&#34;&gt;\(F(s)\)&lt;/span&gt; is a function of complex domain &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt;. The Fourier transformation is a special Laplace transformation of no damping term &lt;span class=&#34;math inline&#34;&gt;\(s = 0 \cdot \sigma +iw\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;periodic&lt;/strong&gt; function can be represented by a series not a continuous function. A condition makes a function can be represented by pure frequency domain i.e. Fourier transformation, not a complex domain i.e. Laplace transformation. The condition is&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;from wikipedia &lt;a href=&#34;https://en.wikipedia.org/wiki/Laplace_transform#Fourier_transform&#34; class=&#34;uri&#34;&gt;https://en.wikipedia.org/wiki/Laplace_transform#Fourier_transform&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;math&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+  \widehat{f}(\omega) &amp;amp;= \mathcal{F}\{f(t)\} \\[4pt]
+                  &amp;amp;= \mathcal{L}\{f(t)\}|_{s = i\omega}  =  F(s)|_{s = i \omega} \\[4pt]
+                  &amp;amp;= \int_{-\infty}^\infty e^{-i \omega t} f(t)\,dt~.
+\end{align}\]&lt;/span&gt;&lt;/math&gt;&lt;/p&gt;
+&lt;p&gt;Laplace transformation makes a differential equation to an algebra equation.&lt;br /&gt;
+$$
+Laplace transformation \&lt;/p&gt;
+&lt;p&gt;[f(t)] = F(s) = _{t=0}^{} f(t)e^{-st}dt.\&lt;/p&gt;
+&lt;p&gt;Transfer function\&lt;/p&gt;
+&lt;p&gt;H(s) = Y(s)/X(s) \&lt;/p&gt;
+&lt;p&gt;Y(s) = H(s)X(s)&lt;br /&gt;
+$$&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(X(s)\)&lt;/span&gt; are Laplace transformed &lt;span class=&#34;math inline&#34;&gt;\(y(t)\)&lt;/span&gt;, i.e. solution and &lt;span class=&#34;math inline&#34;&gt;\(f(t)\)&lt;/span&gt; i.e. input.&lt;/p&gt;
+&lt;p&gt;The &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt; is a function of &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; which represents coefficients of damped frquency basis &lt;span class=&#34;math inline&#34;&gt;\(e^{\sigma + iw}\)&lt;/span&gt;. We are not looking for the solution &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; for the &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt;. We are looking for the inverse Laplace transformation of &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt;. The inverse Laplace transformation turns a function &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt; with infinite damped frquency basis &lt;span class=&#34;math inline&#34;&gt;\(e^{\sigma + iw}\)&lt;/span&gt; to the solution of linear differential equation &lt;span class=&#34;math inline&#34;&gt;\(y(t)\)&lt;/span&gt; that is a function with a single domain basis &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Use Korean font in pdf generated from rmarkdown on Windows</title>
+      <link>/post/2020-10-27-use-korean-font-in-rmarkdown/</link>
+      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-10-27-use-korean-font-in-rmarkdown/</guid>
+      <description>
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;div id=&#34;yaml&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;yaml&lt;/h3&gt;
+&lt;pre&gt;&lt;code&gt;---
+mainfont: NanumGothic
+output:
+  pdf_document: 
+    latex_engine: xelatex
+---&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;The mainfont is the LaTex option. The argument is a font family. The &lt;strong&gt;exact names&lt;/strong&gt; of the font family can be found in the fonts folder. Expand the header of the fonts folder. &lt;strong&gt;NanumGothic&lt;/strong&gt; is the exact name of the font family.&lt;/p&gt;
+&lt;p&gt;The font family should be &lt;strong&gt;Editable embedding&lt;/strong&gt; type (&lt;a href=&#34;https://docs.microsoft.com/en-us/typography/opentype/spec/os2#fstype&#34; class=&#34;uri&#34;&gt;https://docs.microsoft.com/en-us/typography/opentype/spec/os2#fstype&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The LaTex engine should be xelatex.&lt;/p&gt;
+&lt;p&gt;Let’s use another Korean font on pdf generated by rmarkdown.&lt;/p&gt;
+&lt;p&gt;You can use Roboto google font with&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;header-includes:
+    - \usepackage[sfdefault]{roboto}
+    - \usepackage[T1]{fontenc}
+output: 
+  pdf_document: 
+    latex_engine: pdflatex
+mainfont: roboto&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Convolution and Fourier transformation</title>
