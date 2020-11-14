@@ -5,7 +5,7 @@
     <link>/authors/ho-yun-lee/</link>
       <atom:link href="/authors/ho-yun-lee/index.xml" rel="self" type="application/rss+xml" />
     <description>Ho Yun Lee</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Ho Yun Lee</title>
@@ -14,9 +14,17 @@
     
     <item>
       <title>Deciphering the Tumor Microenvironment through Radiomics in Non-Small Cell Lung Cancer: Correlation with Immune Profiles</title>
-      <link>/publication/2020-01-01_yoondecipheringtumormicroenvironment2020/</link>
+      <link>/publication/2020-04-06_yoondecipheringtumormicroenvironment2020/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/2020-04-06_yoondecipheringtumormicroenvironment2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spread through Air Spaces (STAS) in Invasive Mucinous Adenocarcinoma of the Lung: Incidence, Prognostic Impact, and Prediction Based on Clinicoradiologic Factors</title>
+      <link>/publication/2020-01-01_leespreadairspaces/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/publication/2020-01-01_yoondecipheringtumormicroenvironment2020/</guid>
+      <guid>/publication/2020-01-01_leespreadairspaces/</guid>
       <description></description>
     </item>
     

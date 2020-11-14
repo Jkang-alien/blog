@@ -5,7 +5,7 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 09 Nov 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,15 +15,31 @@
     <item>
       <title>Ahwon Lee</title>
       <link>/authors/ahwon-lee/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
       <guid>/authors/ahwon-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jun Kang</title>
+      <link>/authors/jun-kang/</link>
+      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/jun-kang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Youn Soo Lee</title>
+      <link>/authors/youn-soo-lee/</link>
+      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/youn-soo-lee/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ho Yun Lee</title>
       <link>/authors/ho-yun-lee/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/authors/ho-yun-lee/</guid>
       <description></description>
     </item>
@@ -31,7 +47,7 @@
     <item>
       <title>Hyun Jung Yoon</title>
       <link>/authors/hyun-jung-yoon/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/authors/hyun-jung-yoon/</guid>
       <description></description>
     </item>
@@ -39,8 +55,32 @@
     <item>
       <title>Hyunjin Park</title>
       <link>/authors/hyunjin-park/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/authors/hyunjin-park/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Insuk Sohn</title>
+      <link>/authors/insuk-sohn/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/insuk-sohn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seung-Hak Lee</title>
+      <link>/authors/seung-hak-lee/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/seung-hak-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hong Kwan Kim</title>
+      <link>/authors/hong-kwan-kim/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/hong-kwan-kim/</guid>
       <description></description>
     </item>
     
@@ -53,10 +93,26 @@
     </item>
     
     <item>
-      <title>Insuk Sohn</title>
-      <link>/authors/insuk-sohn/</link>
+      <title>Insuk Shon</title>
+      <link>/authors/insuk-shon/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/authors/insuk-sohn/</guid>
+      <guid>/authors/insuk-shon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jae Ill Zo</title>
+      <link>/authors/jae-ill-zo/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/jae-ill-zo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jhingook Kim</title>
+      <link>/authors/jhingook-kim/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/jhingook-kim/</guid>
       <description></description>
     </item>
     
@@ -69,14 +125,6 @@
     </item>
     
     <item>
-      <title>Jun Kang</title>
-      <link>/authors/jun-kang/</link>
-      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/authors/jun-kang/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Kyo Yeong Lee</title>
       <link>/authors/kyo-yeong-lee/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
@@ -85,10 +133,18 @@
     </item>
     
     <item>
-      <title>Seung-Hak Lee</title>
-      <link>/authors/seung-hak-lee/</link>
+      <title>Min A. Lee</title>
+      <link>/authors/min-a.-lee/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/authors/seung-hak-lee/</guid>
+      <guid>/authors/min-a.-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Na Young Hwang</title>
+      <link>/authors/na-young-hwang/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/na-young-hwang/</guid>
       <description></description>
     </item>
     
@@ -105,6 +161,30 @@
       <link>/authors/sung-hak-lee/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       <guid>/authors/sung-hak-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wooil Kim</title>
+      <link>/authors/wooil-kim/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/wooil-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yong Soo Choi</title>
+      <link>/authors/yong-soo-choi/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/yong-soo-choi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Young Mog Shim</title>
+      <link>/authors/young-mog-shim/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/young-mog-shim/</guid>
       <description></description>
     </item>
     
@@ -205,6 +285,14 @@
     </item>
     
     <item>
+      <title>Ye Sul Jeong</title>
+      <link>/authors/ye-sul-jeong/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/ye-sul-jeong/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Yonggoo Kim</title>
       <link>/authors/yonggoo-kim/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
@@ -217,14 +305,6 @@
       <link>/authors/youn-jin-choi/</link>
       <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
       <guid>/authors/youn-jin-choi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Youn Soo Lee</title>
-      <link>/authors/youn-soo-lee/</link>
-      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
-      <guid>/authors/youn-soo-lee/</guid>
       <description></description>
     </item>
     

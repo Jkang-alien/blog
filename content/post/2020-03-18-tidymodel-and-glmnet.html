@@ -26,6 +26,15 @@ projects: []
 
 
 
+<pre><code>## Warning: package &#39;tibble&#39; was built under R version 4.0.2</code></pre>
+<pre><code>## Warning: package &#39;tidyr&#39; was built under R version 4.0.2</code></pre>
+<pre><code>## Warning: package &#39;dplyr&#39; was built under R version 4.0.2</code></pre>
+<pre><code>## Warning: package &#39;tidymodels&#39; was built under R version 4.0.2</code></pre>
+<pre><code>## Warning: package &#39;infer&#39; was built under R version 4.0.2</code></pre>
+<pre><code>## Warning: package &#39;modeldata&#39; was built under R version 4.0.2</code></pre>
+<pre><code>## Warning: package &#39;parsnip&#39; was built under R version 4.0.2</code></pre>
+<pre><code>## Warning: package &#39;workflows&#39; was built under R version 4.0.2</code></pre>
+<pre><code>## Warning: package &#39;yardstick&#39; was built under R version 4.0.2</code></pre>
 <p>When the penalized generalize linear model (Lasso or Ridge) is processed in the tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of the final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.</p>
 <div id="modeling" class="section level5">
 <h5>Modeling</h5>
@@ -44,6 +53,10 @@ rec &lt;- recipe(PIK3CA_T ~ ., data = trainset_ahDiff) %&gt;%
   step_center(all_numeric()) %&gt;%
   step_scale(all_numeric()) %&gt;%
   step_downsample(PIK3CA_T)</code></pre>
+<pre><code>## Warning: `step_downsample()` is deprecated as of recipes 0.1.13.
+## Please use `themis::step_downsample()` instead.
+## This warning is displayed once every 8 hours.
+## Call `lifecycle::last_warnings()` to see where this warning was generated.</code></pre>
 <pre class="r"><code>wfl &lt;- workflow() %&gt;%
   add_recipe(rec) %&gt;%
   add_model(mod)
@@ -78,7 +91,7 @@ best_glmn &lt;- select_best(glmn_tune, metric = &quot;roc_auc&quot;)</code></pre
   wfl %&gt;%
   finalize_workflow(best_glmn) %&gt;%
   fit(data = trainset_ahDiff)</code></pre>
-<p><code>finalize_workflow()</code> finalizes the model with selected optimal hyperparameters. However, the glmnet fits any lambda, not the indicated lambda. This was discussed at <a href="https://github.com/tidymodels/parsnip/issues/195" class="uri">https://github.com/tidymodels/parsnip/issues/195</a>. The glmnet is more efficient to fit all lambda than a single lambda. Thus tidymodel ignores the indicated lambda. This made the first confusion. <strong>The finalization can be finalized by predict in tidymodel environment.</strong> Finalize with <code>predict</code>. Note the last argument <code>penalty = 1</code> of <code>stats::predict(wfl_final, type = "prob", new_data = trainset_ahDiff, penalty = 1)</code>.</p>
+<p><code>finalize_workflow()</code> finalizes the model with selected optimal hyperparameters. However, the glmnet fits any lambda, not the indicated lambda. This was discussed at <a href="https://github.com/tidymodels/parsnip/issues/195" class="uri">https://github.com/tidymodels/parsnip/issues/195</a>. The glmnet is more efficient to fit all lambda than a single lambda. Thus tidymodel ignores the indicated lambda. This made the first confusion. <strong>The finalization can be finalized by predict in tidymodel environment.</strong> Finalize with <code>predict</code>. Note the last argument <code>penalty = 1</code> of <code>stats::predict(wfl_final, type = &quot;prob&quot;, new_data = trainset_ahDiff, penalty = 1)</code>.</p>
 <pre class="r"><code>train_predict &lt;- stats::predict(wfl_final, type = &quot;prob&quot;, new_data = trainset_ahDiff, penalty = 1)
 train_probs &lt;- 
   predict(wfl_final, type = &quot;prob&quot;, new_data = trainset_ahDiff) %&gt;%
@@ -98,7 +111,7 @@ train_probs &lt;-
 <pre><code>## # A tibble: 1 x 3
 ##   .metric .estimator .estimate
 ##   &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;
-## 1 roc_auc binary         0.782</code></pre>
+## 1 roc_auc binary         0.218</code></pre>
 <p>Because glmnet fits the whole path, there are whole coefficients in the glmnet fit object <code>wfl_final</code>. This was the second confusion. How to get the final model coefficients is below.</p>
 </div>
 <div id="coefficients" class="section level5">
@@ -106,6 +119,6 @@ train_probs &lt;-
 <pre class="r"><code>tidy(extract_model(wfl_final)) %&gt;%
   filter(lambda &gt; 0.98 &amp; lambda &lt; 1.01)</code></pre>
 <pre><code>## # A tibble: 0 x 5
-## # ... with 5 variables: term &lt;chr&gt;, step &lt;dbl&gt;, estimate &lt;dbl&gt;, lambda &lt;dbl&gt;,
+## # … with 5 variables: term &lt;chr&gt;, step &lt;dbl&gt;, estimate &lt;dbl&gt;, lambda &lt;dbl&gt;,
 ## #   dev.ratio &lt;dbl&gt;</code></pre>
 </div>

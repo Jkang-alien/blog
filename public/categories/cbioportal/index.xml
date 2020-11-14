@@ -21,7 +21,7 @@
 
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/Jkang-alien/ion2cbioportal&#34; class=&#34;uri&#34;&gt;https://github.com/Jkang-alien/ion2cbioportal&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;This is Rpackage for making the cbioportal dataset from the ion torrent NGS result files. The formats of ion torrent result files are vcf and tsv. Those files convert to maf format and other data set for cbioportal. The package includes vignette. &lt;code&gt;vignette(&#34;ion2cbioportal&#34;)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This is Rpackage for making the cbioportal dataset from the ion torrent NGS result files. The formats of ion torrent result files are vcf and tsv. Those files convert to maf format and other data set for cbioportal. The package includes vignette. &lt;code&gt;vignette(&amp;quot;ion2cbioportal&amp;quot;)&lt;/code&gt;&lt;/p&gt;
 </description>
     </item>
     

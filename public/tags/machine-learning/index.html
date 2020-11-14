@@ -387,7 +387,7 @@ The dual problem can be explained as a conjugate function \(f^* = \sup (x^Ty-f(x
     <h2><a href="/post/approximation/">Approximation</a></h2>
     <div class="article-style">
       
-      The purpose of approximation is finding optimal point \(x^*\) i.e. \(\nabla F(x^*) = 0\). We need a step/search direction \(\Delta x\) and step size \(t\). Taylor approximation has polynomial arguments that is a step and parameters of derivatives at the start point. The first degree of Taylor approximation has one adding term from start point \((x_0, F(x_0))\). The adding term \(\nabla F(x) \Delta x\) is consistent with a parameter (gradient \(\nabla F(x)\)) and a argument (step \(\Delta x\)).
+      The purpose of approximation is finding optimal point \(x^*\) i.e. \(\nabla F(x^*) = 0\). We need a step/search direction \(\Delta x\) and step size \(t\). Taylor approximation has polynomial arguments that is a step and parameters of derivatives at the start point. The first degree of Taylor approximation has one adding term from start point \((x_0, F(x_0))\). The adding term \(\nabla F(x) \Delta x\) is consistent with a parameter (gradient \(\nabla F(x)\)) and a argument (step \(\Delta x\)).
       
     </div>
   </div>
@@ -431,8 +431,7 @@ Thus,
     <h2><a href="/post/tidymodel-and-glmnet/">Tidymodel and glmnet</a></h2>
     <div class="article-style">
       
-      When the penalized generalize linear model (Lasso or Ridge) is processed in the tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of the final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.
-Modeling library(tidymodels) library(glmnet) set.seed(930093) cv_splits &lt;- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T) mod &lt;- logistic_reg(penalty = tune(), mixture = tune()) %&gt;% set_engine(&quot;glmnet&quot;) rec &lt;- recipe(PIK3CA_T ~ .
+      ## Warning: package &#39;tibble&#39; was built under R version 4.0.2 ## Warning: package &#39;tidyr&#39; was built under R version 4.0.2 ## Warning: package &#39;dplyr&#39; was built under R version 4.0.2 ## Warning: package &#39;tidymodels&#39; was built under R version 4.0.2 ## Warning: package &#39;infer&#39; was built under R version 4.0.2 ## Warning: package &#39;modeldata&#39; was built under R version 4.0.2 ## Warning: package &#39;parsnip&#39; was built under R version 4.
       
     </div>
   </div>

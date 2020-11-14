@@ -22,7 +22,7 @@
 
 &lt;p&gt;The compact is a property of space. In a nutshell, if space is compact, we can treat the space be a &lt;strong&gt;finite&lt;/strong&gt; because space has a &lt;strong&gt;finite subcover&lt;/strong&gt;. A continuous function on a compact space is uniformly continuous.&lt;/p&gt;
 &lt;p&gt;Heine-Borel theorem describes the condition of compactness of &lt;strong&gt;finite&lt;/strong&gt; dimensional space. &lt;strong&gt;Closed and bounded&lt;/strong&gt; But the Heine-Borel theorem does not hold in an &lt;strong&gt;infinite-dimensional&lt;/strong&gt; space. We need another condition.&lt;/p&gt;
-&lt;p&gt;Previously, the compact space can be finite by taking subcover. The infinite-dimensional space can be finite by projection to finite dimension. If we could make as small as possible (i.e. &lt;span class=&#34;math inline&#34;&gt;\(\epsilon &amp;gt; 0\)&lt;/span&gt; ) the norm of &lt;span class=&#34;math inline&#34;&gt;\((X\backslash(1-P)\)&lt;/span&gt;, the compactness is achieved.&lt;/p&gt;
+&lt;p&gt;Previously, the compact space can be finite by taking subcover. The infinite-dimensional space can be finite by projection to finite dimension. If we could make as small as possible (i.e. &lt;span class=&#34;math inline&#34;&gt;\(\epsilon &amp;gt; 0\)&lt;/span&gt; ) the norm of &lt;span class=&#34;math inline&#34;&gt;\((X\backslash(1-P)\)&lt;/span&gt;, the compactness is achieved.&lt;/p&gt;
 </description>
     </item>
     

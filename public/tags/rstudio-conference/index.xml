@@ -243,14 +243,14 @@ preped_data %&amp;gt;%
   juice() %&amp;gt;%
   slice(1:5)&lt;/code&gt;&lt;/pre&gt;
 &lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 11
-##   Longitude Latitude Sale_Price Neighborhood_Co~ Neighborhood_Ol~
+##   Longitude Latitude Sale_Price Neighborhood_Co… Neighborhood_Ol…
 ##       &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;      &amp;lt;dbl&amp;gt;            &amp;lt;dbl&amp;gt;            &amp;lt;dbl&amp;gt;
 ## 1     -93.6     42.1       5.24                0                0
 ## 2     -93.6     42.1       5.39                0                0
 ## 3     -93.6     42.1       5.28                0                0
 ## 4     -93.6     42.1       5.29                0                0
 ## 5     -93.6     42.1       5.33                0                0
-## # ... with 6 more variables: Neighborhood_Edwards &amp;lt;dbl&amp;gt;,
+## # … with 6 more variables: Neighborhood_Edwards &amp;lt;dbl&amp;gt;,
 ## #   Neighborhood_Somerset &amp;lt;dbl&amp;gt;, Neighborhood_Northridge_Heights &amp;lt;dbl&amp;gt;,
 ## #   Neighborhood_Gilbert &amp;lt;dbl&amp;gt;, Neighborhood_Sawyer &amp;lt;dbl&amp;gt;,
 ## #   Neighborhood_other &amp;lt;dbl&amp;gt;&lt;/code&gt;&lt;/pre&gt;
