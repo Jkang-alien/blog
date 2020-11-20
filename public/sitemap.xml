@@ -48,22 +48,22 @@
   </url>
   
   <url>
-    <loc>/categories/machine-learning/</loc>
-    <lastmod>2020-11-14T09:23:47+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/machine-learning/</loc>
     <lastmod>2020-11-14T09:23:47+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/math/</loc>
+    <loc>/categories/machine-learning/</loc>
     <lastmod>2020-11-14T09:23:47+09:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/math/</loc>
+    <lastmod>2020-11-14T09:23:47+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/math/</loc>
     <lastmod>2020-11-14T09:23:47+09:00</lastmod>
   </url>
   
@@ -118,12 +118,12 @@
   </url>
   
   <url>
-    <loc>/tags/r/</loc>
+    <loc>/categories/r/</loc>
     <lastmod>2020-10-27T19:56:06+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/r/</loc>
+    <loc>/tags/r/</loc>
     <lastmod>2020-10-27T19:56:06+09:00</lastmod>
   </url>
   
@@ -518,12 +518,12 @@
   </url>
   
   <url>
-    <loc>/categories/genomics/</loc>
+    <loc>/tags/genomics/</loc>
     <lastmod>2019-09-27T11:32:07+09:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/genomics/</loc>
+    <loc>/categories/genomics/</loc>
     <lastmod>2019-09-27T11:32:07+09:00</lastmod>
   </url>
   
