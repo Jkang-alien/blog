@@ -18,6 +18,8 @@
       <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
       <guid>/post/laplace-transformation/</guid>
       <description>
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
 
 
 &lt;p&gt;The Fourier series represents a periodic function as a descrete vectors. The Fourier transformation turns a time domain non-periodic function into a frequency domain continuous function. The Fourier series and transformation change a single time base &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; into infinite frequency basis &lt;span class=&#34;math inline&#34;&gt;\(e^{inx}\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(e^{iwx}\)&lt;/span&gt;. The function on infinite basis domain can be represented by a vector or a function of basis domain &lt;span class=&#34;math inline&#34;&gt;\(v_{n}\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(f(w)\)&lt;/span&gt;. This is a coefficients of Fourier series or Fourier transformation.&lt;/p&gt;
