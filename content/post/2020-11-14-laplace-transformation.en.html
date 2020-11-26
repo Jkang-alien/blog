@@ -39,13 +39,18 @@ projects: []
                   &amp;= \mathcal{L}\{f(t)\}|_{s = i\omega}  =  F(s)|_{s = i \omega} \\[4pt]
                   &amp;= \int_{-\infty}^\infty e^{-i \omega t} f(t)\,dt~.
 \end{align}\]</span></math></p>
-<p>Laplace transformation makes a differential equation to an algebra equation.<br />
-$$
-Laplace transformation \</p>
-<p>[f(t)] = F(s) = _{t=0}^{} f(t)e^{-st}dt.\</p>
-<p>Transfer function\</p>
-<p>H(s) = Y(s)/X(s) \</p>
-<p>Y(s) = H(s)X(s)<br />
-$$</p>
+<p>Laplace transformation makes a differential equation to an algebra equation.</p>
+<p><span class="math display">\[Laplace transformation\]</span></p>
+<p><span class="math display">\[
+\mathcal{L}[f(t)] = F(s) = \int_{t=0}^{\infty} f(t)e^{-st}dt
+\]</span></p>
+<p><span class="math display">\[Transfer function\]</span></p>
+<p><span class="math display">\[
+H(s) = Y(s)/X(s)
+\]</span>
+<span class="math display">\[
+Y(s) = H(s)X(s)  
+\]</span></p>
 <p>where <span class="math inline">\(Y(s)\)</span> and <span class="math inline">\(X(s)\)</span> are Laplace transformed <span class="math inline">\(y(t)\)</span>, i.e. solution and <span class="math inline">\(f(t)\)</span> i.e. input.</p>
 <p>The <span class="math inline">\(Y(s)\)</span> is a function of <span class="math inline">\(s\)</span> which represents coefficients of damped frquency basis <span class="math inline">\(e^{\sigma + iw}\)</span>. We are not looking for the solution <span class="math inline">\(s\)</span> for the <span class="math inline">\(Y(s)\)</span>. We are looking for the inverse Laplace transformation of <span class="math inline">\(Y(s)\)</span>. The inverse Laplace transformation turns a function <span class="math inline">\(Y(s)\)</span> with infinite damped frquency basis <span class="math inline">\(e^{\sigma + iw}\)</span> to the solution of linear differential equation <span class="math inline">\(y(t)\)</span> that is a function with a single domain basis <span class="math inline">\(t\)</span>.</p>
+<p>The Laplace transformation has poles that blow up at a point. The poles were determined by constants of differential equation and the input term.</p>

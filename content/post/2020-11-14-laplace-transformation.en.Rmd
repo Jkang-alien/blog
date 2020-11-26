@@ -39,22 +39,26 @@ The **periodic** function can be represented by a series not a continuous functi
 \end{align}</math>  
 
 Laplace transformation makes a differential equation to an algebra equation.  
-$$ 
-Laplace\ transformation \\
 
-\mathcal{L}[f(t)] = F(s) = \int_{t=0}^{\infty} f(t)e^{-st}dt.\\
+$$Laplace transformation$$
 
-Transfer function\\
+$$
+\mathcal{L}[f(t)] = F(s) = \int_{t=0}^{\infty} f(t)e^{-st}dt
+$$
 
- H(s) = Y(s)/X(s) \\
- 
- Y(s) = H(s)X(s)  
+$$Transfer function$$
+
+$$
+H(s) = Y(s)/X(s)
+$$
+$$
+Y(s) = H(s)X(s)  
 $$
 
 where $Y(s)$ and $X(s)$ are Laplace transformed $y(t)$, i.e. solution and $f(t)$ i.e. input.  
 
 The $Y(s)$ is a function of $s$ which represents coefficients of damped frquency basis $e^{\sigma + iw}$. We are not looking for the solution $s$ for the $Y(s)$. We are looking for the inverse Laplace transformation of $Y(s)$. The inverse Laplace transformation turns a function $Y(s)$ with infinite damped frquency basis $e^{\sigma + iw}$ to the solution of linear differential equation $y(t)$ that is a function with a single domain basis $t$.
 
-
+The Laplace transformation has poles that blow up at a point. The poles were determined by constants of differential equation and the input term. 
 
 
