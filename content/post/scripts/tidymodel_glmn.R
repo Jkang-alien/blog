@@ -7,8 +7,8 @@ load('./RData/dataset_all_test.RData')
 
 ## @knitr tidymodel
 
-library(tidymodels)
 library(glmnet)
+library(themis)
 
 set.seed(930093)
 cv_splits <- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T)
@@ -21,7 +21,7 @@ rec <- recipe(PIK3CA_T ~ ., data = trainset_ahDiff) %>%
   step_dummy(HISTOLOGICAL_DIAGNOSIS) %>%
   step_center(all_numeric()) %>%
   step_scale(all_numeric()) %>%
-  step_downsample(PIK3CA_T)
+  step_smote(PIK3CA_T)
 
 ## @knitr workflow
 
@@ -68,9 +68,9 @@ train_probs <-
 
 conf_mat(train_probs, obs, .pred_class)
 
-autoplot(roc_curve(train_probs, obs, .pred_Mutant))
+autoplot(roc_curve(train_probs, obs, .pred_Mutant, event_level = "second"))
 
-roc_auc(train_probs, obs, .pred_Mutant)
+roc_auc(train_probs, obs, .pred_Mutant, event_level = "second")
 
 ## @knitr coefficiency
 
