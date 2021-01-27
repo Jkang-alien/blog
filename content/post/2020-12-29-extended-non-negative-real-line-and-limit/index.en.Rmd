@@ -13,7 +13,7 @@ summary: ''
 authors: []
 lastmod: '2020-12-29T07:39:56+09:00'
 featured: no
-draft: true
+draft: false
 image:
   caption: ''
   focal_point: ''
@@ -30,9 +30,9 @@ s_{1} \in S \\
 if\ s_{n} \in S \ then \ s_{n+1} \in S \\
 Then\ S = \mathbb{N} \\
 $$
-The limit is the way $\mathbb {N}$ goes to $\infty$. But the limit operation should be justified by an axiom or a proof. $ \bigcup^{\infty}_{n=1} U $ is open, where $U$ is open in topology. In the extended non-negative real line, an infinite series $\Sigma_{n=1}^{\infty} x_{n} \in [0, \infty]$ is always convergent as a limit of the partial sum $\Sigma_{n=1}^{N} x_{n}$. In the sequence version, a sequence ($a_{n}$) is converges to real number if there exist $N \in \mathbb {N}$ such that for every $n \ge N$, $\lvert a_{n} - a \rvert < \epsilon $ for every $\epsilon > 0$. The $\epsilon$ can be replaced by neiborhood in topological space. The $a_{n}$ can be complex number $c \in \mathbb {C}$, function, set, integration, differentiation or other mathmatical objects.  
+The limit is the way $\mathbb {N}$ goes to $\infty$. But the limit operation should be justified by an axiom or a proof. $\bigcup^{\infty}_{n=1} U$ is open, where $U$ is open in topology. In the extended non-negative real line, an infinite series $\Sigma_{n=1}^{\infty} x_{n} \in [0, \infty]$ is always convergent as a limit of the partial sum $\Sigma_{n=1}^{N} x_{n}$. In the sequence version, a sequence ($a_{n}$) is converges to real number if there exist $N \in \mathbb {N}$ such that for every $n \ge N$, $\lvert a_{n} - a \rvert < \epsilon$ for every $\epsilon > 0$. The $\epsilon$ can be replaced by neiborhood in topological space. The $a_{n}$ can be complex number $c \in \mathbb {C}$, function, set, integration, differentiation or other mathmatical objects.  
 
-The integration is defined by supremum of a set of simple function integral $Simp\ \int_{R^d} f(x) dx := c_1 m(E_1) + ... + c_k (E_k) $
+The integration is defined by supremum of a set of simple function integral $Simp\ \int_{R^d} f(x) dx := c_1 m(E_1) + ... + c_k (E_k)$. 
 
 The Jordan measure is an infimum of the finite sum of element measure. The Lebegue measure is an infimum of the infinite sum of element measure. the questions are whether the infimum a kind of limit, and what is difference between the Lebegue measure and as a limit of Jordan measure.  
 
