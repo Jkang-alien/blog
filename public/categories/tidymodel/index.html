@@ -366,7 +366,8 @@
     <h2><a href="/post/tidymodel-and-glmnet/">Tidymodel and glmnet</a></h2>
     <div class="article-style">
       
-      ## Warning: package &#39;tibble&#39; was built under R version 4.0.2 ## Warning: package &#39;tidyr&#39; was built under R version 4.0.2 ## Warning: package &#39;dplyr&#39; was built under R version 4.0.2 ## Warning: package &#39;tidymodels&#39; was built under R version 4.0.2 ## Warning: package &#39;infer&#39; was built under R version 4.0.2 ## Warning: package &#39;modeldata&#39; was built under R version 4.0.2 ## Warning: package &#39;parsnip&#39; was built under R version 4.
+      When the penalized generalize linear model (Lasso or Ridge) is processed in the tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of the final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.
+Modeling library(glmnet) library(themis) set.seed(930093) cv_splits &lt;- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T) mod &lt;- logistic_reg(penalty = tune(), mixture = tune()) %&gt;% set_engine(&quot;glmnet&quot;) rec &lt;- recipe(PIK3CA_T ~ .
       
     </div>
   </div>

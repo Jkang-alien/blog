@@ -5,12 +5,35 @@
     <link>/tags/analysis/</link>
       <atom:link href="/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
     <description>Analysis</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 04 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Analysis</title>
       <link>/tags/analysis/</link>
     </image>
+    
+    <item>
+      <title>Convergence</title>
+      <link>/post/2020-12-29-extended-non-negative-real-line-and-limit/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-12-29-extended-non-negative-real-line-and-limit/</guid>
+      <description>
+
+
+&lt;p&gt;It is main subject of analysis that finding conditions making a sequential mathmatial objects like set, sequence, series to be convergent. Induction changes &lt;span class=&#34;math inline&#34;&gt;\(S = \mathbb{N}\)&lt;/span&gt; to &lt;span class=&#34;math inline&#34;&gt;\(s_{1} \in S\)&lt;/span&gt; and
+if $ s_{n} S$ then &lt;span class=&#34;math inline&#34;&gt;\(s_{n+1} \in S\)&lt;/span&gt;. But, induction can prove only natural number &lt;span class=&#34;math inline&#34;&gt;\(\mathbb {N}\)&lt;/span&gt; not infinity &lt;span class=&#34;math inline&#34;&gt;\(\infty\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ 
+Induction \\
+s_{1} \in S \\
+if\ s_{n} \in S \ then \ s_{n+1} \in S \\
+Then\ S = \mathbb{N} \\
+\]&lt;/span&gt;
+The limit is the way &lt;span class=&#34;math inline&#34;&gt;\(\mathbb {N}\)&lt;/span&gt; goes to &lt;span class=&#34;math inline&#34;&gt;\(\infty\)&lt;/span&gt;. But the limit operation should be justified by an axiom or a proof. $ ^{}&lt;em&gt;{n=1} U $ is open, where &lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt; is open in topology. In the extended non-negative real line, an infinite series &lt;span class=&#34;math inline&#34;&gt;\(\Sigma_{n=1}^{\infty} x_{n} \in [0, \infty]\)&lt;/span&gt; is always convergent as a limit of the partial sum &lt;span class=&#34;math inline&#34;&gt;\(\Sigma_{n=1}^{N} x_{n}\)&lt;/span&gt;. In the sequence version, a sequence (&lt;span class=&#34;math inline&#34;&gt;\(a_{n}\)&lt;/span&gt;) is converges to real number if there exist &lt;span class=&#34;math inline&#34;&gt;\(N \in \mathbb {N}\)&lt;/span&gt; such that for every &lt;span class=&#34;math inline&#34;&gt;\(n \ge N\)&lt;/span&gt;, $a&lt;/em&gt;{n} - a &amp;lt; $ for every &lt;span class=&#34;math inline&#34;&gt;\(\epsilon &amp;gt; 0\)&lt;/span&gt;. The &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; can be replaced by neiborhood in topological space. The &lt;span class=&#34;math inline&#34;&gt;\(a_{n}\)&lt;/span&gt; can be complex number &lt;span class=&#34;math inline&#34;&gt;\(c \in \mathbb {C}\)&lt;/span&gt;, function, set, integration, differentiation or other mathmatical objects.&lt;/p&gt;
+&lt;p&gt;The integration is defined by supremum of a set of simple function integral $Simp _{R^d} f(x) dx := c_1 m(E_1) + … + c_k (E_k) $&lt;/p&gt;
+&lt;p&gt;The Jordan measure is an infimum of the finite sum of element measure. The Lebegue measure is an infimum of the infinite sum of element measure. the questions are whether the infimum a kind of limit, and what is difference between the Lebegue measure and as a limit of Jordan measure.&lt;/p&gt;
+&lt;p&gt;Jordan measure is not a limit of the partial sum but a limit of sequence &lt;span class=&#34;math inline&#34;&gt;\(\lim_{n \rightarrow \infty} x_{n}\)&lt;/span&gt;. The &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; is a number of element measures. This is a traditinal thought of&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Differential equations and Fourier transformation</title>
