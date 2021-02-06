@@ -5,12 +5,36 @@
     <link>/tags/rstudio/</link>
       <atom:link href="/tags/rstudio/index.xml" rel="self" type="application/rss+xml" />
     <description>RStudio</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 27 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>RStudio</title>
       <link>/tags/rstudio/</link>
     </image>
+    
+    <item>
+      <title>Rstudio Conference Global 2021</title>
+      <link>/post/2021-01-22-rstudio-conference-global-2021/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>/post/2021-01-22-rstudio-conference-global-2021/</guid>
+      <description>
+
+
+&lt;div id=&#34;max-kuhn&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Max Kuhn&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;New tuning methods
+&lt;ul&gt;
+&lt;li&gt;Racing method&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;section&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;/h4&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Use Korean font in pdf generated from rmarkdown on Windows</title>

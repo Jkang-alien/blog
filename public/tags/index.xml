@@ -5,12 +5,28 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
       <title>Tags</title>
       <link>/tags/</link>
     </image>
+    
+    <item>
+      <title>RStudio</title>
+      <link>/tags/rstudio/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>/tags/rstudio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RStudio conference</title>
+      <link>/tags/rstudio-conference/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>/tags/rstudio-conference/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Analysis</title>
@@ -85,14 +101,6 @@
     </item>
     
     <item>
-      <title>RStudio</title>
-      <link>/tags/rstudio/</link>
-      <pubDate>Tue, 27 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>/tags/rstudio/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Convex optimization</title>
       <link>/tags/convex-optimization/</link>
       <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
@@ -153,14 +161,6 @@
       <link>/tags/demo/</link>
       <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/tags/demo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>RStudio conference</title>
-      <link>/tags/rstudio-conference/</link>
-      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
-      <guid>/tags/rstudio-conference/</guid>
       <description></description>
     </item>
     
