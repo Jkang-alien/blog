@@ -59,7 +59,7 @@ myBib <- ReadBib("references.bib", check = FALSE)
   
 ---
 # Hypothesis test
-![](img/survival.jpg)
+![:scale 70%](img/survival.jpg)
 ---
 # Hypothesis test
 
@@ -71,7 +71,7 @@ myBib <- ReadBib("references.bib", check = FALSE)
 ---
 # Prediction
 
-![](img/survival.jpg)
+![:scale 70%](img/survival.jpg)
 
 ---
 # Prediction
@@ -91,17 +91,45 @@ myBib <- ReadBib("references.bib", check = FALSE)
 ![](img/cross-validation.png)
 
 ---
+# Prediction of PIK3CA Mutations from Cancer Gene Expression Data
+
+- PLOS ONE, (15), 11, pp. e0241514,
+
+---
+# Purpose
+
+- Predict PIK3CA mutations from gene expression data
+- Supervised elastic net penalized logistic regression model
+
+---
+# Dataset
+- TCGA pan-cancer dataset
+- Training set (3/4) test set (1/4)
+
+---
+# Preprocessing
+
+- Yeo-Johnson transformation
+- Centering
+- Scaling 
+
+---
 # Hyperparameter tuning
 
-.pull-right[
-- Hyperparameter tuning
-- Performance assessment
-- 10-fold cross-validation resampling
-]
+- In 10-fold cross-validation
+- Hyper-parameter grid
+  - Penalty 
+  - Mixing
 
-.pull-left[
-![](img/pone0241514s002.tif)
-]
+---
+# Hyperparameter tuning
+
+![:scale 60%](img/tuning.png)
+
+---
+# Performance
+
+![:scale 70%](img/ROC.png)
 
 ---
 # References
