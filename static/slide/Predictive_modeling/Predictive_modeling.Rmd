@@ -59,7 +59,7 @@ myBib <- ReadBib("references.bib", check = FALSE)
   
 ---
 # Hypothesis test
-![:scale 70%](img/survival.jpg)
+![:scale 70%](img/survival.png)
 ---
 # Hypothesis test
 
@@ -71,7 +71,8 @@ myBib <- ReadBib("references.bib", check = FALSE)
 ---
 # Prediction
 
-![:scale 70%](img/survival.jpg)
+
+![:scale 50%](img/5year.png)
 
 ---
 # Prediction
@@ -84,11 +85,6 @@ myBib <- ReadBib("references.bib", check = FALSE)
 # Modeling process
 
 ![](img/process.png)
-
----
-# Cross-validation
-
-![](img/cross-validation.png)
 
 ---
 # Prediction of PIK3CA Mutations from Cancer Gene Expression Data
@@ -120,6 +116,11 @@ myBib <- ReadBib("references.bib", check = FALSE)
 - Hyper-parameter grid
   - Penalty 
   - Mixing
+
+---
+# Cross-validation
+
+![](img/cross-validation.png)
 
 ---
 # Hyperparameter tuning
