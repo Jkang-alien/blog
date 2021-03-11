@@ -1,7 +1,7 @@
 ---
 title: Predictive Modeling
 author: JK
-date: '2019-09-10'
+date: '2021-03-10'
 slug: predictive-modeling
 categories:
   - R
@@ -21,3 +21,4 @@ image:
 projects: []
 url_slides: "slide/Predictive_modeling/Predictive_modeling.html"
 ---
+
