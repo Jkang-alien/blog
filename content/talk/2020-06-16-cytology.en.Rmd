@@ -1,0 +1,102 @@
+---
+title: Cytology
+author: JK
+date: '2020-06-16'
+slug: cytology
+categories:
+  - Pathology
+tags: []
+event: ~
+event_url: ~
+location: ~
+summary: ~
+abstract: ~
+date_end: '2020-06-16T07:12:31+09:00'
+all_day: no
+publishDate: '2020-06-16T07:12:31+09:00'
+authors: []
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+url_slides: "https://www.jkangpathology.com/slide/CytologyResident.pdf"
+url_code: ~
+url_pdf: ~
+url_video: ~
+slides: ''
+projects: []
+---
+
+* Adequacy
+  + SurePath 9, ThinPrep 4
+  + Endocervical/transformation component
+
+* Normal cell
+  + Superficial cell
+    - Pyknotic
+    - Keratohyaline granules (HMCK)
+  + Intermediate cells
+    - Finely granular chromatin
+    - Basic size reference
+    - Naked nuclei second half of cycle, bacterial cytolysis
+  + Parabasal cell
+    - Larger nucleus
+    - Granular dense cytoplasm
+    - higher N/C ratio
+  + Endocervical cells
+    - Cytoplasm diffusely vacuolated or granular
+    - Polarity, nucleus and mucus
+  + Endometrial cell
+    - Tight cluster
+    - Smaller nucleus
+    - Dense heterogeneous apoptotic debris
+    - Cytoplasm scant dense vacuolated
+    - 3 dimension
+* Nonneoplastic variation
+  + Squamous metaplasia
+    - Variable N/C ratio
+  + Keratotic cellular change
+    - Keratohyaline granules in intermediate cells
+    - Typical parakeratosis
+  + Atrophy
+    - Thin, immature basal/parabasal cells only
+    - Flat monolayer sheet of parabasal-type cells
+    - Preserved nuclear polarity
+    - Streaming pattern
+    - Atrophic vaginitis, blue blobs
+  + Reactive cellular change associated with inflammation (Typical repair)
+    - Nulear enlargement
+    - Without chromatin change
+    - Prominant nucleolus
+    - Distinct cytoplasmic border
+  + RCC associated with Radiation
+    - Bizarre cells
+    - Polychromasia
+    - Nuclear degeneration, cytoplasmic vacuolization
+* Organisms
+  + Trichomonas vaginalis
+    - Pear shape
+    - Nucleus pale, eccentric
+    - Eosinophilic cytoplasmic granules
+    - Flagella
+  + Fungus Candida
+    - Pseudohyphae, budding yeast
+    - Spearing, shish kebab
+  + Shift in flora s/o bacterial vaginosis
+    - Coccobacilli absence of lactobacilli
+    - Clue cell
+  + Actinomycosis
+    - Filamentous organism 
+    - Acute angles
+    - Cotton ball
+  + Herpes simplex virus  
+    - Nuclei ground glass
+    - Enhance nuclear envelope peripheral chromatin margination
+    - Dense eosinophilic intranuclear inclusion (Cowdry)
+    - 3Ms Multinucleation, molding, margination of chromatin
+    
+  + Cytomegalovirus
+    - Large eosinophilic intranuclear viral inclusions with a prominent halo
+    - Small cytoplasmic basophilic inclusion
+

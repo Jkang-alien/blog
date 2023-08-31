@@ -1,0 +1,38 @@
+---
+title: Low rank matrix and compressed sensing
+author: JK
+date: '2020-07-14'
+slug: low-rank-matrix-and-compressed-sensing
+categories:
+  - Math
+  - Machine learning
+tags:
+  - Gilbert Strang
+  - Linear algebra
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-07-14T16:43:48+09:00'
+featured: no
+draft: false
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>This is a note for part III of Linear Algebra and learning from data, Gilbert Strang</p>
+<p>The main themes are sparsity (Low rank), Information theory (compression), and of course linear transformation.</p>
+<p>A full rank matrix is inefficient. Finding low lank matrix which is close with original matrix can save computation.</p>
+<p>The rank one matrix <span class="math inline">\(uv^{T}\)</span> is a unit of a matrix. The full rank matrix can be decomposed by sum of rank one matrices i.e. singular vector decomposition.</p>
+<p>Sherman–Morrison formula suggests update rule for adding rank one matrix to the original matrix.</p>
+<p><span class="math display">\[(A + \mathbf{u} \mathbf{v}^{T})^{-1} = A^{-1} - \frac{A^{-1} \mathbf{u} \mathbf{v}^{T}A^{-1}}{1 + \mathbf{v}^{T} A^{-1} \mathbf{u}}\]</span></p>
+<p>The matrix norm is associated with singular value, <span class="math inline">\(\sigma\)</span>.</p>
+<p>The point is the unit of matrix is the rank one matrix, specially outer product of singular vectors <span class="math inline">\(uv^{T}\)</span>. <span class="math inline">\(uv^{T}\)</span> is a coordinate of the matrix space and singular value <span class="math inline">\(\sigma\)</span> is a point on the coordinate.</p>
+<p>System, Inner product, <span class="math inline">\(A^{T}A\)</span>, Steady state equilibrium, dual</p>
+<p>A system has a law. The observations follow the law. The state set by the system’s law. The state has two variables.</p>
+<p><span class="math display">\[ Ax=b \;(1)\\ Y= \beta X  \; (2)\\ \hat{x} = \frac {A^{T}b}{(A^{T}A) \; (3)\]</span></p>
+<p>Equation (1) is observations, (2) is a system, (3) is fit the observations to the system. <span class="math inline">\(A^{T}A\)</span> is a steady state equilibrium. <span class="math inline">\(A\)</span> and <span class="math inline">\(A^{T}\)</span> are dual. <span class="math inline">\(x\)</span> and <span class="math inline">\(b\)</span> are dual.</p>

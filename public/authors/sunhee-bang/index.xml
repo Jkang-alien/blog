@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sunhee Bang | Jun&#39;s Blog</title>
+    <link>/authors/sunhee-bang/</link>
+      <atom:link href="/authors/sunhee-bang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sunhee Bang</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2010 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Sunhee Bang</title>
+      <link>/authors/sunhee-bang/</link>
+    </image>
+    
+    <item>
+      <title>Rapid Increase in the Prevalence of Inflammatory Bowel Disease in Candidates for the Military Service Born after 1988 in Korea</title>
+      <link>/publication/2010-01-01_kang2010rapid/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/publication/2010-01-01_kang2010rapid/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

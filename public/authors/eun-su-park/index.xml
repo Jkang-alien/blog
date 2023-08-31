@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eun Su Park | Jun&#39;s Blog</title>
+    <link>/authors/eun-su-park/</link>
+      <atom:link href="/authors/eun-su-park/index.xml" rel="self" type="application/rss+xml" />
+    <description>Eun Su Park</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Eun Su Park</title>
+      <link>/authors/eun-su-park/</link>
+    </image>
+    
+    <item>
+      <title>Cancer-Testis Antigen Expression in Serous Endometrial Cancer with Loss of X Chromosome Inactivation</title>
+      <link>/publication/2015-01-01_kang2015cancer/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/2015-01-01_kang2015cancer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparison of the Cobas 4800 HPV and HPV 9G DNA Chip Tests for Detection of High-Risk Human Papillomavirus in Cervical Specimens of Women with Consecutive Positive HPV Tests but Negative Pap Smears</title>
+      <link>/publication/2015-01-01_jun2015comparison/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/2015-01-01_jun2015comparison/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

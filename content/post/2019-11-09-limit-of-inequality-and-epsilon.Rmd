@@ -1,0 +1,30 @@
+---
+title: Limit of inequality of sequence and epsilon
+author: JK
+date: '2019-11-09'
+slug: limit-of-inequality-and-epsilon
+categories:
+  - Math
+tags:
+  - Analysis
+  - Limit
+  - Math
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-11-09T06:32:34+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Here I summarize some tools for proof of the Riesz representation theorem. They are the limit of inequality of sequence and $\epsilon$. The Rudin's proof of the Riesz representation theorem construct measure $\mu$ and measurable set $\mathfrak{M}$, then prove the $\mu$ and $\mathfrak{M}$ have properties. Countable additivity (not subadditivity) is an important property. The strategy of proving equality (additivity) is bidirectional inequality.  
+
+Limit of inequality of sequence gives us a tool that finite inequality makes infinite inequality. $\epsilon$ changes left and right parts of inequality (bidirectional inequality).  
+
+If $\Sigma^n_1\mu(K) \le \Sigma^n_1\mu(V_i)$ then $\Sigma^{\infty}_1 \mu(K) \le \Sigma^{\infty}_1 \mu(V)$, K is compact and V is open. We can change both sides of inequality with $\epsilon$. $\Sigma^{\infty}_1 \mu(V) \le \Sigma^{\infty}_1 \mu(K) + \epsilon$.  
+
+Urison's lemma is used for $\mu(E) = \inf\mu(V) = \sup\mu(K)$ if $ E \in \mathfrak{M} $ and $ K \subset E \subset V$.

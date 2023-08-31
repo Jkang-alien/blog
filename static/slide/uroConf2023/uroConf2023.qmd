@@ -1,0 +1,225 @@
+---
+title: "Introduction of Homologous Recombination Deficiency Test"
+format: 
+  revealjs:
+    self-contained: true
+    preview-links: auto
+    theme: simple
+    echo: false
+execute:
+  cache: true
+bibliography: references.bib
+editor: visual
+---
+
+## Contents
+
+- Genomic scar based test
+  - Allele specific copy number analysis
+- Signature based test
+  - Signature analysis
+
+---
+
+# Slide
+
+- https://rpubs.com/JKang/1075729
+
+---
+
+### DNA repair [@albertsMolecularBiologyCell2002]
+
+![](img/image--000.png)
+
+------------------------------------------------------------------------
+
+### Diseases Due to Defects in DNA Repair
+
+![](img/image--053.jpg)
+
+------------------------------------------------------------------------
+
+### Myriad myChoice CDx
+
+-   Homologous recombination deficiency (HRD) status
+-   Presence mutations in BRCA1 and BRCA2 genes
+-   Sensitivity to platinum-based chemotherapy
+-   Ovarian cancer
+-   Treatment with PARPi
+
+------------------------------------------------------------------------
+
+### Homologous recombination deficiency (HRD)
+
+-   Genomic scars based test
+    -   Large-scale loss of heterogeneity [@abkevichPatternsGenomicLoss2012]
+    -   Telomere allelic imbalance [@birkbakTelomericAllelicImbalance2012]
+    -   Large-scale state transition [@popovaPloidyLargeScaleGenomic2012]
+-   Signature based test
+
+# Genomic scars based test
+
+------------------------------------------------------------------------
+
+### Loss of Heterozygosity (HRD-LOH)
+
+![](https://raw.githubusercontent.com/sztup/scarHRD/master/inst/extdata/hrd-loh.svg)
+
+-   Number of 15 Mb exceeding LOH regions which do not cover the whole chromosome.
+
+------------------------------------------------------------------------
+
+### Large Scale Transitions (LST)
+
+![](https://raw.githubusercontent.com/sztup/scarHRD/master/inst/extdata/lst.svg)
+
+-  Chromosomal break between adjacent regions of at least 10 Mb, with a distance between them not larger than 3Mb
+
+---
+
+### Telomeric Allelic Imbalances
+
+![](https://raw.githubusercontent.com/sztup/scarHRD/master/inst/extdata/ntai.svg)
+
+-   Number AIs that extend to the telomeric end of a chromosome.
+
+------------------------------------------------------------------------
+
+### HRD test as a companion diagnostics [@ray-coquardOlaparibBevacizumabFirstLine2019]
+
+![](img/nejmHRD.png)
+
+------------------------------------------------------------------------
+
+## Key concepts
+
+-   Allele-specific copy number
+-   Allele frequency of **heterozygous single nucleotide polymorphism (heterozygous SNP)**
+
+------------------------------------------------------------------------
+
+### scarHRD programs
+
+-   Sequenza [@faveroSequenzaAllelespecificCopy2015]
+-   scarHRD [@sztupinszkiMigratingSNPArraybased2018]
+
+------------------------------------------------------------------------
+
+#### Allele-specific copy number analysis of tumors [@attiyehGenomicCopyNumber2009]
+
+![](img/BAF.png)
+
+------------------------------------------------------------------------
+
+### Allele frequency [@sunComputationalApproachDistinguish2018]
+
+*BAF* = ${pV+1-p} \over {pC+2(1-p)}$
+
+-   Given copy number (C)
+-   Variant allele count (V)
+-   Sample purity (p)
+
+------------------------------------------------------------------------
+
+### Full probability model
+
+$$
+\begin{aligned}
+ r_i & \sim & N\left(log_2 \frac{pC_i+2(1-p)}{p \psi+2(1-p)}, \sigma \right)
+\end{aligned}
+$$
+
+$$
+\begin{aligned}
+ f_i & \sim & N\left(\frac{pM_i+(1-p)}{pC_i+2(1-p)}, \sigma\ \right)
+\end{aligned}
+$$
+
+------------------------------------------------------------------------
+
+### Sequenza results
+
+```{r, echo=FALSE, out.width=500, out.height=500}
+magick::image_read_pdf(here::here("static/slide/scarHRD/TEST/Test_model_fit.pdf"), pages = 1, density = 500)
+```
+
+------------------------------------------------------------------------
+
+### Sequenza results
+
+```{r, echo=FALSE, out.width=1000, out.height=500}
+magick::image_read_pdf(here::here("static/slide/scarHRD/TEST/Test_genome_view.pdf"), pages = 1, density = 500)
+```
+
+------------------------------------------------------------------------
+
+### Sequenza results
+
+```{r, echo=FALSE, out.width=500, out.height=500}
+magick::image_read_pdf(here::here("static/slide/scarHRD/TEST/Test_CP_contours.pdf"), pages = 1, density = 500)
+```
+
+
+------------------------------------------------------------------------
+
+### scarHRD
+
+![](img/scarHRDscore.png)
+
+# Signature based test
+
+------------------------------------------------------------------------
+
+### HRDtect [@daviesHRDetectPredictorBRCA12017]
+
+![](img/HRDect.png)
+
+
+---
+
+#### Classification of structural variants in cancer genomes [@liPatternsSomaticStructural2020]
+
+![](img/41586_2019_1913_Fig1_HTML.webp)
+
+---
+
+#### Structural-variant signatures in human cancers
+
+![](img/41586_2019_1913_Fig6_HTML.webp)
+
+---
+
+#### Mutational signature
+
+![](img/41586_2020_1943_Fig2_HTML.png)
+
+---
+
+#### Mutational signature
+
+![](img/41586_2020_1943_Fig10_ESM.webp)
+
+------------------------------------------------------------------------
+
+#### Mutational signature [@rosenthalDeconstructSigsDelineatingMutational2016]
+
+![](img/deconstruction.webp)
+
+------------------------------------------------------------------------
+
+#### Mutational signature
+
+![](img/11030.png)
+
+---
+
+#### Mutational signature
+
+![](img/deconstruction.webp)
+
+---
+### References
+
+::: {#refs} 
+
+:::

@@ -1,0 +1,35 @@
+---
+title: NGS for Diagnosis
+author: JK
+date: '2022-11-04'
+slug: []
+categories:
+  - Cancer
+  - Pathology
+  - Genomics
+tags:
+  - Cancer
+  - NGS
+  - Pathology
+  - Thermo fisher Scientific
+event: ~
+event_url: ~
+location: ~
+summary: ~
+abstract: ~
+date_end: '2022-11-04T13:30:13+09:00'
+all_day: no
+publishDate: '2022-11-04T13:30:13+09:00'
+authors: []
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+url_slides: https://www.jkangpathology.com/slide/ngs4Diagnosis.html
+url_code: ~
+url_pdf: ~
+url_video: ~
+slides: ''
+projects: []
+---

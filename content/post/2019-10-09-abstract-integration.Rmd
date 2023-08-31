@@ -1,0 +1,27 @@
+---
+title: Abstract integration
+author: JK
+date: '2019-10-09'
+slug: abstract-integration
+categories:
+  - Math
+tags:
+  - Analysis
+  - Math
+draft: false
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-10-09T07:14:35+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+This is a note for Rudin's real and complex analysis chapter 1. The key concepts are $\sigma$-algebra, measure ($\mu$) zero, and linear combination. The three concepts bring me abstract integration. The $\sigma$-algebra makes that countable sum and measure of complement (subtract measure) can be possible. Measure zero completes the system. linear combination integrates a measurable function.  
+
+After a measure space established, Lebesgue's monotone convergence theorem, Fatou's lemma, and Lebesgue's dominant convergence theorem follow. Although three theorems do not contain **integral** in their name, they insist that pointwise convergent sequence of functions is also converging their integral of the limit of functions. Lebesgue's monotone convergence theorem requires a monotonous increment of series of functions and Lebesgue's dominant convergence theorem requires upper bound function. Fatou's lemma is the inequality of the lower limit.  
+
+Lebesgue's monotone convergence theorem can be proved by the fact all $L_1(\mu)$ has convergent simple function sequence. $f_n$  > simple functions holds inequality of $\lim\int f_n \geq \lim\int S_n = \int f$. Fatous's lemma $\lim \inf \int \lvert fn - f \rvert \leq\int \lim \inf \lvert f_n - f \rvert$ is used for proof of Lebesgue's dominant convergence.      

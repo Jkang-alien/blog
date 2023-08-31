@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joon Young Choi | Jun&#39;s Blog</title>
+    <link>/authors/joon-young-choi/</link>
+      <atom:link href="/authors/joon-young-choi/index.xml" rel="self" type="application/rss+xml" />
+    <description>Joon Young Choi</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Joon Young Choi</title>
+      <link>/authors/joon-young-choi/</link>
+    </image>
+    
+    <item>
+      <title>Prognostic Impact of Nomogram Based on Whole Tumour Size, Tumour Disappearance Ratio on CT and SUVmax on PET in Lung Adenocarcinoma</title>
+      <link>/publication/2016-01-01_song2016prognostic/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/2016-01-01_song2016prognostic/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

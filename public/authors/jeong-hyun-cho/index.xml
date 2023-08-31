@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jeong Hyun Cho | Jun&#39;s Blog</title>
+    <link>/authors/jeong-hyun-cho/</link>
+      <atom:link href="/authors/jeong-hyun-cho/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jeong Hyun Cho</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Jeong Hyun Cho</title>
+      <link>/authors/jeong-hyun-cho/</link>
+    </image>
+    
+    <item>
+      <title>High Prevalence of Hepatitis B and Hepatitis C Virus Infections in Korean Patients with Hematopoietic Malignancies</title>
+      <link>/publication/2011-01-01_kang2011high/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/2011-01-01_kang2011high/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

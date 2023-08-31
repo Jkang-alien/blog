@@ -1,0 +1,30 @@
+---
+title: Duality
+author: JK
+date: '2020-02-19'
+slug: duality
+categories:
+  - Math
+  - Machine learning
+tags:
+  - Convex optimization
+  - Math
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-02-19T17:19:14+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>This is summary of Boyd convex optimization. Steepest descent method is a convex optimization algorithm. The normalized steepest descent direction <span class="math inline">\(x_{nsd}\)</span> is a vector of unit ball of a norm that extends in the direction <span class="math inline">\(-\nabla f(x)\)</span>. The inner product of <span class="math inline">\(x_{nsd}\)</span> and <span class="math inline">\(-\nabla f(x)\)</span> is maximized. The first order Taylor approximation of <span class="math inline">\(f(x+v) = f(x) + \nabla f(x)^{T} v\)</span> is most efficient when <span class="math inline">\(v = x_{nsd}\)</span>.</p>
+<p>The <span class="math inline">\(x_{nsd}\)</span> is unnormalized into <span class="math inline">\(x_{sd}\)</span>. The normalization is ralated with unit ball of norm. When <span class="math inline">\(x_{nsd}\)</span> is scaled with dual norm of <span class="math inline">\(-\nabla f(x)\)</span>, the second term of Taylor approximation <span class="math inline">\(\nabla f(x)^{T} x_{sd}\)</span> becomes convex (squre of <strong>dual norm</strong> of gradient of <span class="math inline">\(f(x)\)</span>). The unnormalized <span class="math inline">\(x_{sd}\)</span> the amount of movement of approximation because the inner product of gradient of <span class="math inline">\(f(x)\)</span> and unnormalized steepest descent direction is squre of <strong>dual norm</strong> of gradient.</p>
+<p>The <strong>dual norm</strong> of gradient <span class="math inline">\(\lVert \nabla f(x) \rVert\)</span> is main subject of this post. The simplest dual is a complement of a set. The <span class="math inline">\((C^c)^c\)</span> is <span class="math inline">\(C\)</span>. If <span class="math inline">\(C\)</span> is small, <span class="math inline">\(C^C\)</span> is large and vice versa. The dual cone is related to inner product and non-negativity. Let <span class="math inline">\(K\)</span> be a cone, The set <span class="math inline">\(K^{*} = \{y|x^{T}y \geq 0\)</span> for all <span class="math inline">\(x \in K\}\)</span>. If <span class="math inline">\(K\)</span> is large, <span class="math inline">\(K^{*}\)</span> is small and vice versa.</p>
+<p>The dual norm <span class="math inline">\(\left\lVert x \right\rVert _{*}\)</span> is <span class="math inline">\(\sup \{\, x^{T}y \mid \lVert y \rVert \leq 1 \,\}\)</span>. If <span class="math inline">\(x\)</span> direction is long axis of ellypsoid norm, the norm of <span class="math inline">\(x\)</span> is small. But the dual norm is large because <span class="math inline">\(\lVert y \rVert _{2}\)</span> large and vice versa.</p>
+<p>The main points are the first order Taylor approximation is most efficient with ellypsoid norm when the linear approximation is <span class="math inline">\(\sup\{\nabla f(x) ^{T} x_{sd}\}\)</span> which is <strong>dual norm</strong> of gradient of <span class="math inline">\(f(x)\)</span>.</p>

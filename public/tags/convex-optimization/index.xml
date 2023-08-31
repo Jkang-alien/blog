@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Convex optimization | Jun&#39;s Blog</title>
+    <link>/tags/convex-optimization/</link>
+      <atom:link href="/tags/convex-optimization/index.xml" rel="self" type="application/rss+xml" />
+    <description>Convex optimization</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 13 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Convex optimization</title>
+      <link>/tags/convex-optimization/</link>
+    </image>
+    
+    <item>
+      <title>Lagrange dual problem and conjugate function</title>
+      <link>/post/lagrange-dual-problem-and-conjugate-function/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/lagrange-dual-problem-and-conjugate-function/</guid>
+      <description>
+
+
+&lt;p&gt;The optimization problem have two components that are objective function &lt;span class=&#34;math inline&#34;&gt;\(f_0 : \mathbb R ^n \rightarrow \mathbb R\)&lt;/span&gt; and the constraints. The objective function and constraints keep in check each other and make balance at saddle point i.e. optimal point. The dual (Lagrange) problem of the optimal problem also solve the optimization problem by making low boundary.&lt;/p&gt;
+&lt;p&gt;The dual problem can be explained as a conjugate function &lt;span class=&#34;math inline&#34;&gt;\(f^* = \sup (x^Ty-f(x))\)&lt;/span&gt;. The Lagrangian is &lt;span class=&#34;math inline&#34;&gt;\(L(x, \lambda, \nu) = f_0(x) + \lambda f_1, + \nu f_2\)&lt;/span&gt; where &lt;span class=&#34;math inline&#34;&gt;\(f_0\)&lt;/span&gt; is the objective function, &lt;span class=&#34;math inline&#34;&gt;\(f_1\)&lt;/span&gt; is inequality constraints and &lt;span class=&#34;math inline&#34;&gt;\(f_2\)&lt;/span&gt; is equality constraints. The Lagrangian function is &lt;span class=&#34;math inline&#34;&gt;\(g(\lambda,nu) = \inf_{x}L(x, \lambda, \nu) = \inf_{x}(f_0(x) + \lambda f_{1} + \nu f_{2})\)&lt;/span&gt;. The second and third term of the Lagrangian function is can be rewriten as an inner product form &lt;span class=&#34;math inline&#34;&gt;\(x^{T}h(\lambda) + x^{T}i(\nu)\)&lt;/span&gt; and constant term with &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\nu\)&lt;/span&gt;. Then the inner product term &lt;span class=&#34;math inline&#34;&gt;\(x^{T}h(\lambda) + x^{T}i(\nu)\)&lt;/span&gt; and objective term becomes a conjugate function.&lt;/p&gt;
+&lt;p&gt;The conjugate function &lt;span class=&#34;math inline&#34;&gt;\(f^*(x)\)&lt;/span&gt; is similar in terms of balance and saddle point.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Approximation</title>
+      <link>/post/approximation/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/approximation/</guid>
+      <description>
+
+
+&lt;p&gt;The purpose of approximation is finding optimal point &lt;span class=&#34;math inline&#34;&gt;\(x^*\)&lt;/span&gt; i.e. &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x^*) = 0\)&lt;/span&gt;. We need a step/search direction &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt; and step size &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;. Taylor approximation has polynomial arguments that is a step and parameters of derivatives at the start point. The first degree of Taylor approximation has one adding term from start point &lt;span class=&#34;math inline&#34;&gt;\((x_0, F(x_0))\)&lt;/span&gt;. The adding term &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x) \Delta x\)&lt;/span&gt; is consistent with a parameter (gradient &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x)\)&lt;/span&gt;) and a argument (step &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt;). The Taylor approximation does approximate &lt;span class=&#34;math inline&#34;&gt;\(F(x + \Delta x)\)&lt;/span&gt; for any search direction &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt;. We want to choose &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt; for the direction to the optimal point.&lt;/p&gt;
+&lt;p&gt;The adding term of Taylor approximation &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x) \Delta x\)&lt;/span&gt; have level curve (level line). The smallest Euclidean norm of the level curve is achieved at the tangent. The gradient descent set the step to the gradient &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x)\)&lt;/span&gt;. This makes the adding term biggest with Euclidean norm &lt;span class=&#34;math inline&#34;&gt;\(\Vert \nabla F(x) \Vert^2\)&lt;/span&gt; i.e. dual norm &lt;span class=&#34;math inline&#34;&gt;\(\Vert \nabla F(x) \Vert_*\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Newton’s method is second degree of Taylor approximation &lt;span class=&#34;math inline&#34;&gt;\(F(x_0+\Delta x) \approx F(x_0) + \nabla F(x) \Delta x + 1/2\Delta x^T H \Delta x\)&lt;/span&gt;. We want to find &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt; to minimize the second degree of Taylor approximation. In this case, the minimizing step is tangent of first adding term &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x) \Delta x\)&lt;/span&gt; and second adding term &lt;span class=&#34;math inline&#34;&gt;\(\Delta x^T H \Delta x\)&lt;/span&gt; i.e. Steepest descent in H norm &lt;span class=&#34;math inline&#34;&gt;\(\Vert \cdot \Vert _H\)&lt;/span&gt;. The newton’s method can be thought as approximation of gradient &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x)\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x_0 + \Delta x) \approx \nabla F(x_0) + H \Delta x = 0,\ \Delta x = -H^{-1} \nabla F(x_0)\)&lt;/span&gt;. This is also the derivative of second degree of Taylor approximation with respect to &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;But the Taylor approximation is local. In addition to a step, a step size is needed. A step size determines how far the step taken. Backtracking line search has two constant parameters 0 &amp;lt; &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; &amp;lt; 0.5, 0 &amp;lt; &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt; &amp;lt; 1. The approximation is below the convex function. &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; tilts the slope i.e. gradient upside and the tilted approximation meets the convex function. &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt; is the update rate of the step size until the the amount of the step is less than the point that tilted approximation meeets the convex function.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Taylor series</title>
+      <link>/post/taylor-series/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/taylor-series/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ f(x) = \sum_{k=0}^\infty c_k x^k = c_0 + c_1 x + c_2 x^2 + \dotsb. \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This is an approximation that is a function of h and derivatives of &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; are elements of parameters.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(f(x \pm h) = f(x) \pm hf&amp;#39;(x) + \frac{h^2}{2}f&amp;#39;&amp;#39;(x) \pm \frac{h^3}{6}f&amp;#39;&amp;#39;&amp;#39;(x) + O(h^4)\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Let’s think about &lt;span class=&#34;math inline&#34;&gt;\(\sin(x)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ f(x) = \sin(x) \ f(0) = 0, f&amp;#39;(x)=\cos(x)\ f&amp;#39;(0)=1, f&amp;#39;&amp;#39;(x)=-\sin(x)\ f&amp;#39;&amp;#39;(0)=0 \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Thus,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*} \sin(x) &amp;amp;= 0 + \frac{1}{1!}x + \frac{0}{2!}x^2 + \frac{-1}{3!}x^3 + \dotsb
+&amp;amp;= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \dotsb, \end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This is approximation. Now &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; becomes &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; and parameters calculated from derivatives of &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; at &lt;span class=&#34;math inline&#34;&gt;\(0\)&lt;/span&gt;.&lt;br /&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(f(x \pm h) = f(x) \pm hf&amp;#39;(x) + \frac{h^2}{2}f&amp;#39;&amp;#39;(x) \pm \frac{h^3}{6}f&amp;#39;&amp;#39;&amp;#39;(x) + O(h^4)\)&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/sine-better-models.png&#34; alt=&#34;https://betterexplained.com/articles/taylor-series/&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;&lt;a href=&#34;https://betterexplained.com/articles/taylor-series/&#34; class=&#34;uri&#34;&gt;https://betterexplained.com/articles/taylor-series/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Taylor series and Newton’s bionomial theorem explain the complex exponent.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\exp(z) = e^{z}, \ z = a+bi \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The imaginary exponent is hard to understand intuitively. The exponential function &lt;span class=&#34;math inline&#34;&gt;\(e^{x}\)&lt;/span&gt; on a complex domain can be regarded as a function exp(x) that behaves like exponential function, i.e. a product of functions is addion of arguments &lt;span class=&#34;math inline&#34;&gt;\(\exp(x) \exp(y) = \exp(x+y)\)&lt;/span&gt;. The product of &lt;span class=&#34;math inline&#34;&gt;\(\exp\)&lt;/span&gt; fucntion becomes addition of arguments by Newton’s binomical theorem. The costomary expression is &lt;span class=&#34;math inline&#34;&gt;\(e^{x}\)&lt;/span&gt;. This can be done when &lt;span class=&#34;math inline&#34;&gt;\(\exp(x) = \Sigma ^{\infty}_{n=0} \frac {Z^{n}}{n!}\)&lt;/span&gt; The taylor series with repidly decaying pactorial coefficients &lt;span class=&#34;math inline&#34;&gt;\(n!\)&lt;/span&gt;. This series converges absolutely for every complex &lt;span class=&#34;math inline&#34;&gt;\(z\)&lt;/span&gt; and converges uniformly on every bounded subset of the complex plain. Rudin’s Real and complex analysis.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Duality</title>
+      <link>/post/duality/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/post/duality/</guid>
+      <description>
+
+
+&lt;p&gt;This is summary of Boyd convex optimization. Steepest descent method is a convex optimization algorithm. The normalized steepest descent direction &lt;span class=&#34;math inline&#34;&gt;\(x_{nsd}\)&lt;/span&gt; is a vector of unit ball of a norm that extends in the direction &lt;span class=&#34;math inline&#34;&gt;\(-\nabla f(x)\)&lt;/span&gt;. The inner product of &lt;span class=&#34;math inline&#34;&gt;\(x_{nsd}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(-\nabla f(x)\)&lt;/span&gt; is maximized. The first order Taylor approximation of &lt;span class=&#34;math inline&#34;&gt;\(f(x+v) = f(x) + \nabla f(x)^{T} v\)&lt;/span&gt; is most efficient when &lt;span class=&#34;math inline&#34;&gt;\(v = x_{nsd}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;span class=&#34;math inline&#34;&gt;\(x_{nsd}\)&lt;/span&gt; is unnormalized into &lt;span class=&#34;math inline&#34;&gt;\(x_{sd}\)&lt;/span&gt;. The normalization is ralated with unit ball of norm. When &lt;span class=&#34;math inline&#34;&gt;\(x_{nsd}\)&lt;/span&gt; is scaled with dual norm of &lt;span class=&#34;math inline&#34;&gt;\(-\nabla f(x)\)&lt;/span&gt;, the second term of Taylor approximation &lt;span class=&#34;math inline&#34;&gt;\(\nabla f(x)^{T} x_{sd}\)&lt;/span&gt; becomes convex (squre of &lt;strong&gt;dual norm&lt;/strong&gt; of gradient of &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt;). The unnormalized &lt;span class=&#34;math inline&#34;&gt;\(x_{sd}\)&lt;/span&gt; the amount of movement of approximation because the inner product of gradient of &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; and unnormalized steepest descent direction is squre of &lt;strong&gt;dual norm&lt;/strong&gt; of gradient.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;dual norm&lt;/strong&gt; of gradient &lt;span class=&#34;math inline&#34;&gt;\(\lVert \nabla f(x) \rVert\)&lt;/span&gt; is main subject of this post. The simplest dual is a complement of a set. The &lt;span class=&#34;math inline&#34;&gt;\((C^c)^c\)&lt;/span&gt; is &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt;. If &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt; is small, &lt;span class=&#34;math inline&#34;&gt;\(C^C\)&lt;/span&gt; is large and vice versa. The dual cone is related to inner product and non-negativity. Let &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; be a cone, The set &lt;span class=&#34;math inline&#34;&gt;\(K^{*} = \{y|x^{T}y \geq 0\)&lt;/span&gt; for all &lt;span class=&#34;math inline&#34;&gt;\(x \in K\}\)&lt;/span&gt;. If &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; is large, &lt;span class=&#34;math inline&#34;&gt;\(K^{*}\)&lt;/span&gt; is small and vice versa.&lt;/p&gt;
+&lt;p&gt;The dual norm &lt;span class=&#34;math inline&#34;&gt;\(\left\lVert x \right\rVert _{*}\)&lt;/span&gt; is &lt;span class=&#34;math inline&#34;&gt;\(\sup \{\, x^{T}y \mid \lVert y \rVert \leq 1 \,\}\)&lt;/span&gt;. If &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; direction is long axis of ellypsoid norm, the norm of &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; is small. But the dual norm is large because &lt;span class=&#34;math inline&#34;&gt;\(\lVert y \rVert _{2}\)&lt;/span&gt; large and vice versa.&lt;/p&gt;
+&lt;p&gt;The main points are the first order Taylor approximation is most efficient with ellypsoid norm when the linear approximation is &lt;span class=&#34;math inline&#34;&gt;\(\sup\{\nabla f(x) ^{T} x_{sd}\}\)&lt;/span&gt; which is &lt;strong&gt;dual norm&lt;/strong&gt; of gradient of &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Strong convexity and implications</title>
+      <link>/post/strong-convexity-and-implications/</link>
+      <pubDate>Sat, 08 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/post/strong-convexity-and-implications/</guid>
+      <description>
+
+
+&lt;p&gt;This is a summary of the Boyd convex optimization book. The strong convexity assumption can be useful to explain the iterative minimization algorithms like gradient descent, steepest descent, and Newton’s method.&lt;/p&gt;
+&lt;p&gt;The smallest and largest eigen value of Hessian &lt;span class=&#34;math inline&#34;&gt;\(m \preceq \nabla^{2}f(x) \preceq M\)&lt;/span&gt; with norm of gradient &lt;span class=&#34;math inline&#34;&gt;\(\| \nabla f(x)\|_2\)&lt;/span&gt; determine the boundary of optimal value &lt;span class=&#34;math inline&#34;&gt;\(p^{*}\)&lt;/span&gt;. The condition number of &lt;strong&gt;cond&lt;/strong&gt;(&lt;span class=&#34;math inline&#34;&gt;\(C_\alpha\)&lt;/span&gt;) &lt;span class=&#34;math inline&#34;&gt;\(\leq {M \over m}\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(C_\alpha\)&lt;/span&gt; is &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;-sublevel. The condition number is ratio of largest eigen value to its smallest eigen value.&lt;/p&gt;
+&lt;p&gt;When the Hessian is replaced with a constant &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt;, the constants make the equality of Taylor’s theorem to inequality that makes lower and upper boundaries of &lt;span class=&#34;math inline&#34;&gt;\(p^*\)&lt;/span&gt;. The difference between the approximation and &lt;span class=&#34;math inline&#34;&gt;\(p^*\)&lt;/span&gt; is determined by $ f(x)$ and &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt;. If &lt;span class=&#34;math inline&#34;&gt;\(\nabla f(x)\)&lt;/span&gt; is small and the gap is so. If Hessian (&lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt;) is large, the gap is small.&lt;/p&gt;
+&lt;p&gt;Because the second degree of Tayler’s expansion is quadratic, at near the optimal point, the &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;-sublevel is ellipsoid. The condition number &lt;strong&gt;cond&lt;/strong&gt;(&lt;span class=&#34;math inline&#34;&gt;\(C_{\alpha}\)&lt;/span&gt;), geometrically, represents anisometry or eccentricity&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Convex set</title>
+      <link>/post/convex-set/</link>
+      <pubDate>Fri, 27 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/post/convex-set/</guid>
+      <description>
+
+
+&lt;p&gt;There is a homology between a line segment and a convex set. It is helpful to understand the convex set. A line, a line segment, and one sideline has homology to an affine set, a convex set, and a cone.
+A line is &lt;span class=&#34;math inline&#34;&gt;\(\{y|y=\theta_1 x_1 + \theta_2 x_2, \theta_1 + \theta_2 = 1\}\)&lt;/span&gt; if &lt;span class=&#34;math inline&#34;&gt;\(\theta_1, \theta_2 \in \mathbb{R}\)&lt;/span&gt;, a line segment is if &lt;span class=&#34;math inline&#34;&gt;\(\theta_1, \theta_2 &amp;gt; 0\)&lt;/span&gt; and an one side line if any &lt;span class=&#34;math inline&#34;&gt;\(\theta_1, \theta_2 &amp;lt; 0\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;A set &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt; is affine set if $ y C$ and &lt;span class=&#34;math inline&#34;&gt;\(\{y|y=\theta_1 x_1 + \theta_2 x_2, \theta_1 + \theta_2 = 1, x_1, x_2 \in C, \theta_1, \theta_2 \in \mathbb{R} \}\)&lt;/span&gt;. a convex set is if &lt;span class=&#34;math inline&#34;&gt;\(\theta_1, \theta_2 &amp;gt; 0\)&lt;/span&gt; and a cone if any &lt;span class=&#34;math inline&#34;&gt;\(\theta_1, \theta_2 &amp;lt; 0\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;An affine set is a convex set. But all convex set is not an affine set. It looks the convex set has a stronger condition than affine set i.e. positivity of &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;. But in fact, the convex set has a stronger condition on what it should contain. Because an affine set contains more than a convex set, an affine set satisfies the condition to be a convex set.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,32 @@
+---
+title: Steady state equilibrium
+author: JK
+date: '2020-06-30'
+slug: steady-state-equilibrium
+categories:
+  - Math
+  - Machine learning
+tags:
+  - Deep Learning
+  - Math
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-06-30T07:45:04+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+The meaning of $A^{T}$
+
+* Steady state equilibrium
+* Graph Laplacian matrix $A^{T}CA$
+* Differential equation and Laplacian matrix
+* Derivative is a graph without branch.
+* Row space and column space are dual.
+* $A$ and $A^{T}$ are dual.
+
+ref) Linear algebra and learning from data, Part IV, Gilbert Strang 

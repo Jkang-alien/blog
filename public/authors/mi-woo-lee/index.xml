@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mi-Woo Lee | Jun&#39;s Blog</title>
+    <link>/authors/mi-woo-lee/</link>
+      <atom:link href="/authors/mi-woo-lee/index.xml" rel="self" type="application/rss+xml" />
+    <description>Mi-Woo Lee</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2006 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Mi-Woo Lee</title>
+      <link>/authors/mi-woo-lee/</link>
+    </image>
+    
+    <item>
+      <title>Multiple Mucinous and Lipomatous Variant of Eccrine Angiomatous Hamartoma Associated with Spindle Cell Hemangioma: A Novel Collision Tumor?</title>
+      <link>/publication/2006-01-01_lee2006multiple/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/publication/2006-01-01_lee2006multiple/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

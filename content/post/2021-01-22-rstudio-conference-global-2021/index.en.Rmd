@@ -1,0 +1,27 @@
+---
+title: Rstudio Conference Global 2021
+author: JK
+date: '2021-01-22'
+slug: []
+categories: [R]
+tags: [Rstudio, Rstudio conference]
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-01-22T07:42:26+09:00'
+featured: no
+draft: true
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+#### Max Kuhn
+
+- New tuning methods
+  - Racing method
+  - 
+  
+#### 

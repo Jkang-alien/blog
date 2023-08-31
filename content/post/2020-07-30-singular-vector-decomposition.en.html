@@ -1,0 +1,35 @@
+---
+title: Singular vector decomposition
+author: JK
+date: '2020-07-30'
+slug: singular-vector-decomposition
+categories:
+  - Math
+  - Machine learning
+tags:
+  - Deep Learning
+  - Linear algebra
+  - Gilbert Strang
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-07-30T09:25:53+09:00'
+featured: no
+draft: false
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>Bases are the central idea of linear algebra. An invertable square matrix has eigenvectors. A symetric matrix has orthogonal eigenvectors with non-negative eigenvalues, i.e. positive semidefinite. A matrix has two types of singular vectors, left and right signular vectors, <span class="math inline">\(A=U\Sigma V^{T}\)</span>.</p>
+<p>When we think the matrix <span class="math inline">\(A\)</span> is data points of rows <span class="math inline">\(A=U\Sigma V^{T}\)</span> like data table, The right singular vectors <span class="math inline">\(V\)</span> build bases, the sigular values <span class="math inline">\(\Sigma\)</span> are magnitude of the bases and the left singular values <span class="math inline">\(U\)</span> becomes new data points on new bases. The new data points <span class="math inline">\(U\)</span> are orthonormal.</p>
+<p>When we think the matrix <span class="math inline">\(A\)</span> is a system of linear transformation <span class="math inline">\(Ax=b,\ U\Sigma V^{T}x=b\)</span>, a vector <span class="math inline">\(x\)</span> is repositioned on right singular vector coordinates <span class="math inline">\(V\)</span> then the coordinates are multiplied by <span class="math inline">\(\Sigma\)</span> and finally linear transformed by left singular vector <span class="math inline">\(U\)</span>.</p>
+<p>A matrix is sum of rank one singular matrix. <span class="math display">\[A = \sigma_{1} u_{1}u_{1}^{T} + \cdots +  \sigma_{k} u_{k}u_{k}^{T}\]</span> The Eckart-Young theorem finds closest low-rank matrix <span class="math inline">\(A_k\)</span>.<br />
+In symetric matrix, the bases (right singular vectors) and it’s value on the bases (left singular vectors) are same. Reproducing kernel hilbert space has same values on it’s base functions.</p>
+<p>Rayleigh quotient $R(x) = {{x^{T}Sx} } $ has maximum <span class="math inline">\(\lambda_{1}\)</span> at the eigen vector <span class="math inline">\(q_{1}\)</span> and saddle points at <span class="math inline">\(x=q_{k},\ \frac{\partial R}{\partial x_{i}} = 0\)</span>. The second eigenvector can be found by Lagrangian optimization problum maximizing <span class="math inline">\(\ R(x)\)</span> s.t. <span class="math inline">\(q_{1} = 0\)</span>.</p>
+<p>Pseudoinversion <span class="math inline">\(A^{+}\)</span> process does first inversing value with <span class="math inline">\(U^{T}\)</span>, and scale with <span class="math inline">\(\Sigma ^{+}\)</span> and followed by reversing axis <span class="math inline">\(V^{T}\)</span>.</p>
+<p>When <span class="math inline">\(Ax=b\)</span> has many solutions, minimizing <span class="math inline">\(\lVert A \rVert\)</span> s.t. <span class="math inline">\(Ax=b\)</span> can be best solution. The <span class="math inline">\(L_{1}\)</span> norm has sparse solution.</p>

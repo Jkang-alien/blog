@@ -1,0 +1,26 @@
+---
+title: Primitive function
+author: JK
+date: '2021-09-05'
+slug: []
+categories:
+  - Math
+tags:
+  - Analysis
+  - Math
+  - Complex analysis
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-09-05T09:11:04+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+The presence of primitive function is a strong condition that makes a function is analytic in a disc $D(a,R)$. The meaning is the presence of primitive function is confusing at first to me. If a function is integrable, then integration value and a primitive function can be determined. But in complex analysis this is not the case. In real analysis, the integral interval $[a, b]$ is unique, but in complex analysis the integral interval should be determined by line path $\Gamma = g(x)$. Many line paths might have different integrants although the line paths have same start and end points. Because a primitive function have only start and end points not line path, a primitive function can not determine which line path will be integrated. If it is same that all integrals of line paths with same start and end points, a primitive function can be present.  
+
+The presence of primitive function is stronger condition than analytic function. The analytic condition guarantees local presence of primitive function around the differentiable point. The necessary condition of presence of primitive function is $\int_{\gamma}f(z)dz = 0, \gamma = closed \ path$ and this condition is equivalent with analytic in a disc without a hole.  

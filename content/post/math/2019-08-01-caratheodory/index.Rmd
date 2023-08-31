@@ -1,0 +1,31 @@
+---
+title: Carathéodory's extension theorem
+author: JK
+date: '2019-08-07'
+slug: caratheodory-s-extension-theorem
+categories:
+  - Math
+tags:
+  - Analysis
+  - Math
+  - Compactness
+  - Functional analysis
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-08-07T12:48:04+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+The studying sometimes starts with learning of boring preceding concepts. The highlight comes later. In history, the highlight concepts or the important problem were centered and the supporting concepts or lemmas followed. One of the central ideas of analysis is __extension__. The set of a rational number ($\mathbb{Q}$) extends to the real line $\mathbb{R}$. The Jordan measurable sets extend to the Lebesgue measurable sets ( $\sigma -algebra$ ). 
+
+The outer measure can measure __all__ subsets of $X$, whereas measure can only measure a $\sigma -algebra$ of measure set. The Carathéodory measurability defines the condition to make a $\sigma -algebra$.  
+$$ \mu^*(A) = \mu^*(A \cap E) + \mu^*(A \cap E^c) $$
+The Carathéodory extension theorem defines a condition to make an outer measure to a measure.  The condition is that the outer measure applies to the Carathéodory measurable set ($\sigma - algebra$). (Torrence Tao, An introduction to measure theory)  
+
+In the Riesz representation therorem, $\mathfrak{M}_F$ extends to  $\mathfrak{M}$. The outer measure is $\mu(E) = sup\ \ \{\mu(K): K \subset E,\ \ K \ \ compact \}$ for every $E \subset X$ analogus to Jordan outer measure.  $\mathfrak{M}_F$ is collection of subset $E \subset X$ satisfying $\mu (E) < \infty$ and $\mu (V) = sup \{\Lambda f:f\prec V \}$ analogus to Jordan inner measure. Thus $\mathfrak{M}_F$ is analous to Jordan measurable set.  $\mathfrak{M}$ is collection of subset $E \subset X$ such that $E \cap K \ \in \ \ \mathfrak{M}_F$ for every compact $K$. This is the Carathéodory measurability. So the $\mu(E)$ on the $\mathfrak{M}$ becomes measure. (Rudin's Real and complex analysis)  

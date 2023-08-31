@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gyungyub Gong | Jun&#39;s Blog</title>
+    <link>/authors/gyungyub-gong/</link>
+      <atom:link href="/authors/gyungyub-gong/index.xml" rel="self" type="application/rss+xml" />
+    <description>Gyungyub Gong</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Gyungyub Gong</title>
+      <link>/authors/gyungyub-gong/</link>
+    </image>
+    
+    <item>
+      <title>Prognostic and Predictive Value of NanoString-Based Immune-Related Gene Signatures in a Neoadjuvant Setting of Triple-Negative Breast Cancer: Relationship to Tumor-Infiltrating Lymphocytes</title>
+      <link>/publication/2015-01-01_lee2015prognostic/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/2015-01-01_lee2015prognostic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Positive Expression of Insulin-like Growth Factor-1 Receptor Is Associated with a Positive Hormone Receptor Status and a Favorable Prognosis in Breast Cancer</title>
+      <link>/publication/2014-01-01_shin2014positive/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/2014-01-01_shin2014positive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HER2 Status by Standardized Immunohistochemistry and Silver-Enhanced in Situ Hybridization in Korean Breast Cancer</title>
+      <link>/publication/2012-01-01_bae2012her2/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/2012-01-01_bae2012her2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hormone Receptor Expression in Invasive Breast Cancer among Korean Women and Comparison of 3 Antiestrogen Receptor Antibodies: A Multi-Institutional Retrospective Study Using Tissue Microarrays</title>
+      <link>/publication/2012-01-01_bae2012hormone/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/2012-01-01_bae2012hormone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Ratio of Atypical Ductal Hyperplasia Foci to Core Numbers in Needle Biopsy: A Practical Index Predicting Breast Cancer in Subsequent Excision</title>
+      <link>/publication/2012-01-01_lee2012ratio/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/2012-01-01_lee2012ratio/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dual-Color Silver-Enhanced in Situ Hybridization for Assessing HER2 Gene Amplification in Breast Cancer</title>
+      <link>/publication/2011-01-01_koh2011dual/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/2011-01-01_koh2011dual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Comparison of Silver-Enhanced in Situ Hybridization and Fluorescence in Situ Hybridization for HER2 Gene Status in Breast Carcinomas</title>
+      <link>/publication/2009-01-01_kang2009comparison/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/2009-01-01_kang2009comparison/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

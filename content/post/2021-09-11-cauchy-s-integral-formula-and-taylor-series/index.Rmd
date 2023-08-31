@@ -1,0 +1,42 @@
+---
+title: Cauchy's integral formula and Taylor series
+author: JK
+date: '2021-09-11'
+slug: []
+categories:
+  - Math
+tags:
+  - Analysis
+  - Math
+  - Complex analysis
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-09-11T06:33:42+09:00'
+featured: no
+draft: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+Cauchy's integral formula defines analytic function evaluation with path integral with denominator translation at evaluation point ($\frac{1}{z-a}$).  
+
+$f(a) = \frac{1}{2\pi i} \oint_\gamma \frac{f(z)}{z-a}\, dz\,$
+
+$f^{(n)}(a) = \frac{n!}{2\pi i} \oint_\gamma \frac{f(z)}{\left(z-a\right)^{n+1}}\, dz$
+
+Cauchy's integral formula is a limit of path.  
+
+$\lim_{r \rightarrow 0}\gamma : \lvert z-z_{0} \rvert = r$
+
+Taylor series evaluated a analytic function by approximation at an open disc $D(z_{0}, r)$.  
+
+$f(x) = \sum_{n=0}^\infty a_n(x-b)^n$
+
+$\frac{f^{(n)}(b)}{n!} = a_n$
+
+Cauchy's integral and Taylor series evaluate a function at a point $z$ in an open disc centered at $z_{0}$.  
+
+$z \in D(z_{0}, r)$

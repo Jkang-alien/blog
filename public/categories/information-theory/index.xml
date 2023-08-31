@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Information Theory | Jun&#39;s Blog</title>
+    <link>/categories/information-theory/</link>
+      <atom:link href="/categories/information-theory/index.xml" rel="self" type="application/rss+xml" />
+    <description>Information Theory</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 31 May 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Information Theory</title>
+      <link>/categories/information-theory/</link>
+    </image>
+    
+    <item>
+      <title>Information</title>
+      <link>/post/information/</link>
+      <pubDate>Sun, 31 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/information/</guid>
+      <description>
+
+
+&lt;p&gt;Information relates to uncertainty. The Shannon information content of an outcome &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; is &lt;span class=&#34;math inline&#34;&gt;\(h(x)=-log_{2}P(x)\)&lt;/span&gt;. The rare event has larger information than a common event. The unit of information is a bit (binary digit). Coding is a mapping from an outcome of an ensemble to binary digits &lt;span class=&#34;math inline&#34;&gt;\(\{0,1\}^+\)&lt;/span&gt;. A symbol code is a code for a &lt;strong&gt;single&lt;/strong&gt; ensemble. A block code is a code for a &lt;strong&gt;sequence&lt;/strong&gt; ensemble. A set of sequences of the ensemble has a typical subset. The cardinality of a typical set is &lt;span class=&#34;math inline&#34;&gt;\(2^{H_{2}X}\)&lt;/span&gt;. We can reduce a code length by mapping codes to only a typical set (the source coding theorem). The prefix code is an optimal symbol code. The Kraft inequality is the condition of prefix code &lt;span class=&#34;math inline&#34;&gt;\(\Sigma_{i}2^{-l_{i}} \le 1\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The noisy-channel coding theorem describes the possible rate and block code length &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt;. If the block code length &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; is long enough, the channel looks like the noisy typewriter and arbitrary block error rate can be achieved with rate. The maximum rate is the capacity &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt; of the channel. If the rate is small enough, the typical set of the output of the channel can be mapped for the typical set of input without overlap.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

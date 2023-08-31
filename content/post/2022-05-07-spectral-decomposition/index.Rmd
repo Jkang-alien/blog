@@ -1,0 +1,32 @@
+---
+title: Spectral decomposition
+author: JK
+date: '2022-05-07'
+slug: []
+categories:
+  - Machine learning
+  - Math
+tags:
+  - Linear algebra
+  - Machine learning
+  - Math
+  - Reproducing kernel hilbert space
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-05-07T18:43:09+09:00'
+featured: no
+draft: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Gaussian kernel matrix can be factorized into $(\Phi \textbf{X})^\textbf{H} \Phi \textbf{X} =\textbf{X}^\textbf{H} \Phi^\textbf{H} \Phi \textbf{X} = \textbf{X}^\textbf{H}\textbf{X}$, where $\Phi$ is Gaussian kernel basis matrix and $\textbf{X}$ is coefficients matrix of reproducing kernel Hilbert space $K(\cdot,x) \in \mathcal{H}_K$ https://www.jkangpathology.com/post/reproducing-kernel-hilbert-space/.  
+
+A matrix is a system. A system takes input and gives output. A matrix is a linear system. Differentiation and Integration are linear systems. Fourier transformation matches input basis and operator (differentiation) basis. Z transformation matches input digital signal and infinite impulse response filter.
+
+A time-domain sequence can be transformed into a frequency domain by discrete Fourier transformation. The dimension of the discrete Fourier matrix is determined by the length of the time-domain sequence.  
+

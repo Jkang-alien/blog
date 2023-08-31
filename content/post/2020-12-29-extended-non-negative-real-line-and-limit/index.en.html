@@ -1,0 +1,44 @@
+---
+title: Convergence
+author: JK
+date: '2020-12-29'
+slug: []
+categories:
+  - Math
+tags:
+  - Analysis
+  - Limit
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-29T07:39:56+09:00'
+featured: no
+draft: false
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+<script src="{{< blogdown/postref >}}index.en_files/header-attrs/header-attrs.js"></script>
+
+
+<p>It is the main subject of analysis that finding conditions making sequential mathematical objects like a set, sequence, series to be convergent. Induction changes <span class="math inline">\(S = \mathbb{N}\)</span> to <span class="math inline">\(s_{1} \in S\)</span> and if <span class="math inline">\(s_{n} \in S\)</span> then <span class="math inline">\(s_{n+1} \in S\)</span>. The natural number has a property of endless addable with one. But, induction can prove only natural number <span class="math inline">\(\mathbb {N}\)</span> not infinity <span class="math inline">\(\infty\)</span>.</p>
+<p><span class="math display">\[ 
+Induction \\
+s_{1} \in S \\
+if\ s_{n} \in S \ then \ s_{n+1} \in S \\
+Then\ S = \mathbb{N} \\
+\]</span>
+The limit is the way <span class="math inline">\(\mathbb {N}\)</span> goes to <span class="math inline">\(\infty\)</span>. But the limit operation should be justified by an axiom or a proof. <span class="math inline">\(\bigcup^{\infty}_{n=1} U\)</span> is open, where <span class="math inline">\(U\)</span> is open in topology. In the extended non-negative real line, an infinite series <span class="math inline">\(\Sigma_{n=1}^{\infty} x_{n} \in [0, \infty]\)</span> is always convergent as a limit of the partial sum <span class="math inline">\(\Sigma_{n=1}^{N} x_{n}\)</span>. In the sequence version, a sequence (<span class="math inline">\(a_{n}\)</span>) is converges to real number if there exist <span class="math inline">\(N \in \mathbb {N}\)</span> such that for every <span class="math inline">\(n \ge N\)</span>, <span class="math inline">\(\lvert a_{n} - a \rvert &lt; \epsilon\)</span> for every <span class="math inline">\(\epsilon &gt; 0\)</span>. This is the point where natural number <span class="math inline">\(\mathbb N\)</span> applies it’s property of endless addable with one. The <span class="math inline">\(\epsilon\)</span> can be replaced by neiborhood in topological space.</p>
+<p>The series of <span class="math inline">\(a_{n}\)</span> can be a series or just a set of a complex number <span class="math inline">\(c \in \mathbb {C}\)</span>, function, set, integration, differentiation, or other mathematical objects. But computing the limit is different by how the sequence or the set is processed. If the sequence is processed by union of sets, the limit is defined by computing element-wise limit <span class="math inline">\(\bigcap^\infty_{n=1} A_n = \{x|x \in A_n \ for \ all \ n \in \mathbb{N} \}\)</span>. Induction can not apply to the limit <span class="math inline">\(\bigcap_{n=1}^N A_n = \{x|x \in A_n \ for \ all \ n \in N\}\)</span>. The integration is defined by supremum of a set of simple function integral <span class="math inline">\(Simp\ \int_{R^d} f(x) dx := c_1 m(E_1) + ... + c_k (E_k)\)</span>. The Jordan measure is an infimum of the finite sum of element measure. The Lebesgue measure is an infimum of the infinite sum of element measure.</p>
+<p>Is the Lebesgue outer measure (<span class="math inline">\(E^{*}\ = \ \inf \Sigma_{n=1}^{\infty} m(E_n)\)</span> where <span class="math inline">\(m(E)\)</span> is elementary measure and <span class="math inline">\(A \subset \bigcup E_n\)</span>), a <strong>limit</strong> of Jordan measure (<span class="math inline">\(\lim\sup \Sigma_{n=1}^{N} m(E_n)\)</span>)?</p>
+<p>Measure can be considered as a optimizaion problem.</p>
+<p><span class="math display">\[
+minimize \ \Sigma_{n=1}^{\infty} m(E_n) \\
+suject \ to \ A \subset \bigcup E_n \\ 
+where \ m(E) \ is \ elementary \ measure, \ E \ is \ a \ elementary \ set 
+\]</span></p>
+<p>The objective function <span class="math inline">\(\Sigma_{n=1}^{\infty} m(E_n)\)</span> has infinite <strong>domain</strong> <span class="math inline">\(f: E^{\infty} \to R\)</span> in Lebesgue outer measure and finite <strong>domain</strong> <span class="math inline">\(f:E^{N} \to R\)</span> in Jordan outer measure. The Lebesgue outer measure and Jordan outer measure has different domain space, then the objective function of the Lebesgue outer measure is not a limit of Jordan outer measure.</p>
+<p>Optimization problem has solution (<span class="math inline">\(\{E:E_n \ , n \in \mathbb{N} \ or \ \infty \}\)</span>) at the saddle point where meets the objective function and the constraint. <span class="math inline">\(A\)</span> that we measure is a parameter of the constraints. Measure is find solution (<span class="math inline">\(\{E:E_n \ , n \in \mathbb{N} \ or \ \infty \}\)</span>) with constraints with <span class="math inline">\(A\)</span> what we measure. Then the solution can be computed by approximation or limit process.</p>

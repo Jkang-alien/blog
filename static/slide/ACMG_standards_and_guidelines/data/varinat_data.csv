@@ -1,0 +1,38 @@
+Gene,HGVSc,HGVSp,HGVSp_Short,Age,Gender,Diagnosis,TumorType
+BRCA2,c.6385G>T,p.Glu2129Ter,p.E2129*,33,F,"Endometrioid carcinoma, WHO grade G2",Ovarian cancer
+BRCA2,c.10150C>T,p.Arg3384Ter,p.R3384*,63,M,"Adenocarcinoma, moderately differentiated",Colon cancer
+BRCA2,c.10150C>T,p.Arg3384Ter,p.R3384*,84,M,"Squamous cell carcinoma, keratinizing, poorly differentiated, with focal neuroendocrine differentiation",Non-small cell lung cancer
+BRCA2,c.755_758del,p.Asp252ValfsTer24,p.D252Vfs*24,46,F,Invasive breast carcinoma,Breast cancer
+BRCA2,c.1528G>T,p.Glu510Ter,p.E510*,50,F,Endometrioid carcinoma,Endometrial cancer
+BRCA2,c.8685_8700del,p.Arg2896ValfsTer8,p.R2896Vfs*8,51,F,"Adenocarcinoma, moderately differentiated, acinar predominant.  consistent with Metastatic carcinoma (Mass2)",Non-small cell lung cancer
+BRCA2,c.9076C>T,p.Gln3026Ter,p.Q3026*,51,F,"Adenocarcinoma, moderately differentiated, acinar predominant.  consistent with Metastatic carcinoma (Mass2)",Non-small cell lung cancer
+BRCA2,c.6449_6450del,p.Lys2150SerfsTer25,p.K2150Sfs*25,61,F,High-grade serous carcinoma,Ovarian cancer
+BRCA2,c.9232G>T,p.Val3078Phe,p.V3078F,72,F,Adenocarcinoma with acinar (complex glandular) and solid pattern,Non-small cell lung cancer
+BRCA2,c.10150C>T,p.Arg3384Ter,p.R3384*,74,M,"Non-small cell carcinoma, favor Adenocarcinoma with solid pattern, with focal neuroendocrine differentiation",Non-small cell lung cancer
+BRCA2,c.5225del,p.Asn1742ThrfsTer35,p.N1742Tfs*35,75,F,"Adenocarcinoma, moderately differentiated.",Other solid tumor
+BRCA2,c.1108_1148del,p.Val370LeufsTer11,p.V370Lfs*11,69,M,"Small round cell and focal short spindle cell proliferation, differential diagnosis of",Mesothelioma
+BRCA2,c.755_758del,p.Asp252ValfsTer24,p.D252Vfs*24,64,F,"Adenocarcinoma, moderately differentiated.
+",Pancreatic cancer
+BRCA2,c.2175dup,p.Val726SerfsTer25,p.V726Sfs*25,64,F,"Adenocarcinoma, moderately differentiated.
+",Pancreatic cancer
+BRCA2,c.9076C>T,p.Gln3026Ter,p.Q3026*,73,M,"Squamous cell carcinoma, poorly differentiated.",Head and neck cancer
+BRCA2,c.7366C>T,p.Gln2456Ter,p.Q2456*,64,M,"Adenocarcinoma, poorly differentiated, solid predominant",Non-small cell lung cancer
+BRCA2,c.5576_5579del,p.Ile1859LysfsTer3,p.I1859Kfs*3,67,M,"Adenocarcinoma, well differentiated.
+
+",Colon cancer
+BRCA2,c.4471_4474del,p.Leu1491LysfsTer12,p.L1491Kfs*12,51,F,"Adenocarcinoma, moderately differentiated.
+",Pancreatic cancer
+BRCA2,c.2494G>T,p.Glu832Ter,p.E832*,49,F,"Endometrioid carcinoma, in association with endometriosis.
+",Endometrial cancer
+BRCA2,c.8991T>G,p.Tyr2997Ter,p.Y2997*,96,M,Squamous cell carcinoma (see comment).,Unknown primary origin
+BRCA2,c.6385G>T,p.Glu2129Ter,p.E2129*,33,F,"Uterine corpus, Endometrioid carcinoma, NOS, FIGO grade 2.
+",Endometrial cancer
+BRCA2,c.1399A>T,p.Lys467Ter,p.K467*,39,F,"Invasive micropapillary carcinoma with mucinous component.
+",Breast cancer
+BRCA2,c.6449_6450del,p.Lys2150SerfsTer25,p.K2150Sfs*25,56,F,"Invasive ductal carcinoma, moderately differentiated.",Breast cancer
+BRCA2,c.3599_3600del,p.Cys1200Ter,p.C1200*,53,F,"Malignant mesothelioma, epithelioid type, metastatic
+",Mesothelioma
+BRCA2,c.8541del,p.Glu2848LysfsTer15,p.E2848Kfs*15,78,M,Squamous cell carcinoma,Non-small cell lung cancer
+BRCA2,c.3376G>T,p.Glu1126Ter,p.E1126*,53,F,"Colon, sigmoid, segmental resection;
+   Adenocarcinoma, moderately differentiated.
+      -depth o",Colorectal cancer

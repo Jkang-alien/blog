@@ -1,0 +1,48 @@
+---
+title: Convergence
+author: JK
+date: '2020-12-29'
+slug: []
+categories:
+  - Math
+tags:
+  - Analysis
+  - Limit
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-12-29T07:39:56+09:00'
+featured: no
+draft: false
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+It is the main subject of analysis that finding conditions making sequential mathematical objects like a set, sequence, series to be convergent. Induction changes $S = \mathbb{N}$ to $s_{1} \in S$ and if $s_{n} \in S$ then $s_{n+1} \in S$. The natural number has a property of endless addable with one. But, induction can prove only natural number $\mathbb {N}$ not infinity $\infty$. 
+
+$$ 
+Induction \\
+s_{1} \in S \\
+if\ s_{n} \in S \ then \ s_{n+1} \in S \\
+Then\ S = \mathbb{N} \\
+$$
+The limit is the way $\mathbb {N}$ goes to $\infty$. But the limit operation should be justified by an axiom or a proof. $\bigcup^{\infty}_{n=1} U$ is open, where $U$ is open in topology. In the extended non-negative real line, an infinite series $\Sigma_{n=1}^{\infty} x_{n} \in [0, \infty]$ is always convergent as a limit of the partial sum $\Sigma_{n=1}^{N} x_{n}$. In the sequence version, a sequence ($a_{n}$) is converges to real number if there exist $N \in \mathbb {N}$ such that for every $n \ge N$, $\lvert a_{n} - a \rvert < \epsilon$ for every $\epsilon > 0$. This is the point where natural number $\mathbb N$ applies it's property of endless addable with one. The $\epsilon$ can be replaced by neiborhood in topological space. 
+
+The series of $a_{n}$ can be a series or just a set of a complex number $c \in \mathbb {C}$, function, set, integration, differentiation, or other mathematical objects. But computing the limit is different by how the sequence or the set is processed. If the sequence is processed by union of sets, the limit is defined by computing element-wise limit $\bigcap^\infty_{n=1} A_n = \{x|x \in A_n \ for \ all \ n \in \mathbb{N} \}$. Induction can not apply to the limit  $\bigcap_{n=1}^N A_n = \{x|x \in A_n \ for \ all \ n \in N\}$. The integration is defined by supremum of a set of simple function integral $Simp\ \int_{R^d} f(x) dx := c_1 m(E_1) + ... + c_k (E_k)$. The Jordan measure is an infimum of the finite sum of element measure. The Lebesgue measure is an infimum of the infinite sum of element measure.  
+
+Is the Lebesgue outer measure ($E^{*}\ = \ \inf \Sigma_{n=1}^{\infty} m(E_n)$ where $m(E)$ is elementary measure and $A \subset \bigcup E_n$), a **limit** of Jordan measure ($\lim\sup \Sigma_{n=1}^{N} m(E_n)$)?  
+
+Measure can be considered as a optimizaion problem.  
+
+$$
+minimize \ \Sigma_{n=1}^{\infty} m(E_n) \\
+suject \ to \ A \subset \bigcup E_n \\ 
+where \ m(E) \ is \ elementary \ measure, \ E \ is \ a \ elementary \ set 
+$$
+
+The objective function $\Sigma_{n=1}^{\infty} m(E_n)$ has infinite **domain** $f: E^{\infty} \to R$ in Lebesgue outer measure and finite **domain** $f:E^{N} \to R$ in Jordan outer measure. The Lebesgue outer measure and Jordan outer measure has different domain space, then the objective function of the Lebesgue outer measure is not a limit of Jordan outer measure.  
+
+Optimization problem has solution ($\{E:E_n \ , n \in \mathbb{N} \ or \ \infty \}$) at the saddle point where meets the objective function and the constraint. $A$ that we measure is a parameter of the constraints.  Measure is find solution ($\{E:E_n \ , n \in \mathbb{N} \ or \ \infty \}$) with constraints with $A$ what we measure. Then the solution can be computed by approximation or limit process.

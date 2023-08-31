@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Analysis | Jun&#39;s Blog</title>
+    <link>/tags/analysis/</link>
+      <atom:link href="/tags/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <description>Analysis</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Analysis</title>
+      <link>/tags/analysis/</link>
+    </image>
+    
+    <item>
+      <title>Convergence</title>
+      <link>/post/2020-12-29-extended-non-negative-real-line-and-limit/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-12-29-extended-non-negative-real-line-and-limit/</guid>
+      <description>
+
+
+&lt;p&gt;It is the main subject of analysis that finding conditions making sequential mathematical objects like a set, sequence, series to be convergent. Induction changes &lt;span class=&#34;math inline&#34;&gt;\(S = \mathbb{N}\)&lt;/span&gt; to &lt;span class=&#34;math inline&#34;&gt;\(s_{1} \in S\)&lt;/span&gt; and
+if $ s_{n} S$ then &lt;span class=&#34;math inline&#34;&gt;\(s_{n+1} \in S\)&lt;/span&gt;. The natural number has a property of endless addable with one. But, induction can prove only natural number &lt;span class=&#34;math inline&#34;&gt;\(\mathbb {N}\)&lt;/span&gt; not infinity &lt;span class=&#34;math inline&#34;&gt;\(\infty\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ 
+Induction \\
+s_{1} \in S \\
+if\ s_{n} \in S \ then \ s_{n+1} \in S \\
+Then\ S = \mathbb{N} \\
+\]&lt;/span&gt;
+The limit is the way &lt;span class=&#34;math inline&#34;&gt;\(\mathbb {N}\)&lt;/span&gt; goes to &lt;span class=&#34;math inline&#34;&gt;\(\infty\)&lt;/span&gt;. But the limit operation should be justified by an axiom or a proof. &lt;span class=&#34;math inline&#34;&gt;\(\bigcup^{\infty}_{n=1} U\)&lt;/span&gt; is open, where &lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt; is open in topology. In the extended non-negative real line, an infinite series &lt;span class=&#34;math inline&#34;&gt;\(\Sigma_{n=1}^{\infty} x_{n} \in [0, \infty]\)&lt;/span&gt; is always convergent as a limit of the partial sum &lt;span class=&#34;math inline&#34;&gt;\(\Sigma_{n=1}^{N} x_{n}\)&lt;/span&gt;. In the sequence version, a sequence (&lt;span class=&#34;math inline&#34;&gt;\(a_{n}\)&lt;/span&gt;) is converges to real number if there exist &lt;span class=&#34;math inline&#34;&gt;\(N \in \mathbb {N}\)&lt;/span&gt; such that for every &lt;span class=&#34;math inline&#34;&gt;\(n \ge N\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\lvert a_{n} - a \rvert &amp;lt; \epsilon\)&lt;/span&gt; for every &lt;span class=&#34;math inline&#34;&gt;\(\epsilon &amp;gt; 0\)&lt;/span&gt;. This is the point where natural number &lt;span class=&#34;math inline&#34;&gt;\(\mathbb N\)&lt;/span&gt; applies it’s property of endless addable with one. The &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; can be replaced by neiborhood in topological space.&lt;/p&gt;
+&lt;p&gt;The series of &lt;span class=&#34;math inline&#34;&gt;\(a_{n}\)&lt;/span&gt; can be a series or just a set of a complex number &lt;span class=&#34;math inline&#34;&gt;\(c \in \mathbb {C}\)&lt;/span&gt;, function, set, integration, differentiation, or other mathematical objects. But computing the limit is different by how the sequence or the set is processed. If the sequence is processed by union of sets, the limit is defined by computing element-wise limit &lt;span class=&#34;math inline&#34;&gt;\(\bigcap^\infty_{n=1} A_n = \{x|x \in A_n \ for \ all \ n \in \mathbb{N} \}\)&lt;/span&gt;. Induction can not apply to the limit &lt;span class=&#34;math inline&#34;&gt;\(\bigcap_{n=1}^N A_n = \{x|x \in A_n \ for \ all \ n \in N\}\)&lt;/span&gt;. The integration is defined by supremum of a set of simple function integral &lt;span class=&#34;math inline&#34;&gt;\(Simp\ \int_{R^d} f(x) dx := c_1 m(E_1) + ... + c_k (E_k)\)&lt;/span&gt;. The Jordan measure is an infimum of the finite sum of element measure. The Lebesgue measure is an infimum of the infinite sum of element measure.&lt;/p&gt;
+&lt;p&gt;Is the Lebesgue outer measure (&lt;span class=&#34;math inline&#34;&gt;\(E^{*}\ = \ \inf \Sigma_{n=1}^{\infty} m(E_n)\)&lt;/span&gt; where &lt;span class=&#34;math inline&#34;&gt;\(m(E)\)&lt;/span&gt; is elementary measure and &lt;span class=&#34;math inline&#34;&gt;\(A \subset \bigcup E_n\)&lt;/span&gt;), a &lt;strong&gt;limit&lt;/strong&gt; of Jordan measure (&lt;span class=&#34;math inline&#34;&gt;\(\lim\sup \Sigma_{n=1}^{N} m(E_n)\)&lt;/span&gt;)?&lt;/p&gt;
+&lt;p&gt;Measure can be considered as a optimizaion problem.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+minimize \ \Sigma_{n=1}^{\infty} m(E_n) \\
+suject \ to \ A \subset \bigcup E_n \\ 
+where \ m(E) \ is \ elementary \ measure, \ E \ is \ a \ elementary \ set 
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The objective function &lt;span class=&#34;math inline&#34;&gt;\(\Sigma_{n=1}^{\infty} m(E_n)\)&lt;/span&gt; has infinite &lt;strong&gt;domain&lt;/strong&gt; &lt;span class=&#34;math inline&#34;&gt;\(f: E^{\infty} \to R\)&lt;/span&gt; in Lebesgue outer measure and finite &lt;strong&gt;domain&lt;/strong&gt; &lt;span class=&#34;math inline&#34;&gt;\(f:E^{N} \to R\)&lt;/span&gt; in Jordan outer measure. The Lebesgue outer measure and Jordan outer measure has different domain space, then the objective function of the Lebesgue outer measure is not a limit of Jordan outer measure.&lt;/p&gt;
+&lt;p&gt;Optimization problem has solution (&lt;span class=&#34;math inline&#34;&gt;\(\{E:E_n \ , n \in \mathbb{N} \ or \ \infty \}\)&lt;/span&gt;) at the saddle point where meets the objective function and the constraint. &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; that we measure is a parameter of the constraints. Measure is find solution (&lt;span class=&#34;math inline&#34;&gt;\(\{E:E_n \ , n \in \mathbb{N} \ or \ \infty \}\)&lt;/span&gt;) with constraints with &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; what we measure. Then the solution can be computed by approximation or limit process.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Differential equations and Fourier transformation</title>
+      <link>/post/differential-equations-and-fourier-transformation/</link>
+      <pubDate>Thu, 04 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/post/differential-equations-and-fourier-transformation/</guid>
+      <description>
+
+
+&lt;p&gt;Differential equations describe the change of state. The change relates to the state. The solutions of the differential equations are the status equations. The initial conditions set the time &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; and status &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt;. The boundary conditions are the value of boundary &lt;span class=&#34;math inline&#34;&gt;\(y_0\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y_1\)&lt;/span&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(dy \over dt\)&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(= ay + q(t)\)&lt;/span&gt; starting from &lt;span class=&#34;math inline&#34;&gt;\(y(0)\)&lt;/span&gt; at $t=0. inital conditions &lt;span class=&#34;math inline&#34;&gt;\(t = 0\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y=1\)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(q(t)\)&lt;/span&gt; is a input and &lt;span class=&#34;math inline&#34;&gt;\(y(t)\)&lt;/span&gt; is a response. If &lt;span class=&#34;math inline&#34;&gt;\(q(t)\)&lt;/span&gt; is delta function, the response is said &lt;strong&gt;Impulse response&lt;/strong&gt; &lt;span class=&#34;math display&#34;&gt;\[y&amp;#39; -ay = \delta (t) \\ y(t)=e^{at}\]&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The solutions are combination of particular solution and null solution &lt;span class=&#34;math inline&#34;&gt;\(y = y_t + y_n\)&lt;/span&gt;. The solution includes &lt;span class=&#34;math inline&#34;&gt;\(e^{at}\)&lt;/span&gt;. The differential equations can not be solved like polynomial equations, because the arguments of the differentia equation relate to each other by calculus in the background of the equation. They can not be treated as just different arguments. The &lt;strong&gt;Fourier transformation&lt;/strong&gt; puts the &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; and its derivative &lt;span class=&#34;math inline&#34;&gt;\(y&amp;#39;\)&lt;/span&gt; in the same functional space (Hilbert space). This transformation makes the differential equation problem to simple arithmetic problem.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Fourier transformation &lt;span class=&#34;math inline&#34;&gt;\(F(x) = \Sigma ^{\infty}_{n=-\infty} c_{n}e^{inx}\)&lt;/span&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The basis of the Fourier transformation is &lt;span class=&#34;math inline&#34;&gt;\(e^{inx}\)&lt;/span&gt;. If the coefficients of the basis &lt;span class=&#34;math inline&#34;&gt;\(c_{n}\)&lt;/span&gt; decay fater, &lt;span class=&#34;math inline&#34;&gt;\(F(x)\)&lt;/span&gt; becomes smooth. If the coefficients are constant, &lt;span class=&#34;math inline&#34;&gt;\(F(x)\)&lt;/span&gt; is delta function &lt;span class=&#34;math inline&#34;&gt;\(\delta(x)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The derivative &lt;span class=&#34;math inline&#34;&gt;\(dy \over dt\)&lt;/span&gt; is an linear transformation operator, i.e. inner product, because the &lt;span class=&#34;math inline&#34;&gt;\(y\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(y&amp;#39;\)&lt;/span&gt; are in functional space with same basis. The defivative can be represented as a matix &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;. The derivative matrix is antisymetric i.e. &lt;span class=&#34;math inline&#34;&gt;\(A^T = -A\)&lt;/span&gt; and the minus second derivative matrix &lt;span class=&#34;math inline&#34;&gt;\(-d^{2}/dx^{2}\)&lt;/span&gt; is symetic positive definite. &lt;span class=&#34;math inline&#34;&gt;\(AAf = -A^{T}Af\)&lt;/span&gt;. The meaning of transverse of a matrix is &lt;span class=&#34;math inline&#34;&gt;\((Ax)^{T}y = x^{T}(A^{T}y)\)&lt;/span&gt;. &lt;strong&gt;Dual and inner product&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/secondDifferenceMat.png&#34; alt=&#34;Second differnce matrix K&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Second differnce matrix K&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;The second difference matrix solves discrete differential equations. The N eigenvectors of K are &lt;span class=&#34;math inline&#34;&gt;\(y_{n} = (sin\ n\pi \Delta x, sin\ 2n\pi \Delta x,\ ..., sin\ Nn\pi \Delta x)\)&lt;/span&gt;. The N eigen values of K are the positive numbers &lt;span class=&#34;math inline&#34;&gt;\(\lambda_{n} = 2-2cos {n \pi \over N+1}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;How does exponent &lt;span class=&#34;math inline&#34;&gt;\(i\)&lt;/span&gt; mean in &lt;span class=&#34;math inline&#34;&gt;\(e^i\)&lt;/span&gt;? The exponent makes multiplication to addition. What does an imaginary exponent mean? The imaginary exponent tilts the value to a complex plane. If the base is natural base &lt;span class=&#34;math inline&#34;&gt;\(e\)&lt;/span&gt;, the value of &lt;span class=&#34;math inline&#34;&gt;\(e^i\)&lt;/span&gt; is in the unit circle of a complex plane. The cycle is &lt;span class=&#34;math inline&#34;&gt;\(2 \pi\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The Fourier transformation for solving the difference equation provoked the subject of functional analysis 200 years ago.&lt;/p&gt;
+&lt;p&gt;Reference&lt;br /&gt;
+Differential Equations and Linear Algebra, Gilbert Strang&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Taylor series</title>
+      <link>/post/taylor-series/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/taylor-series/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ f(x) = \sum_{k=0}^\infty c_k x^k = c_0 + c_1 x + c_2 x^2 + \dotsb. \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This is an approximation that is a function of h and derivatives of &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; are elements of parameters.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(f(x \pm h) = f(x) \pm hf&amp;#39;(x) + \frac{h^2}{2}f&amp;#39;&amp;#39;(x) \pm \frac{h^3}{6}f&amp;#39;&amp;#39;&amp;#39;(x) + O(h^4)\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Let’s think about &lt;span class=&#34;math inline&#34;&gt;\(\sin(x)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ f(x) = \sin(x) \ f(0) = 0, f&amp;#39;(x)=\cos(x)\ f&amp;#39;(0)=1, f&amp;#39;&amp;#39;(x)=-\sin(x)\ f&amp;#39;&amp;#39;(0)=0 \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Thus,&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align*} \sin(x) &amp;amp;= 0 + \frac{1}{1!}x + \frac{0}{2!}x^2 + \frac{-1}{3!}x^3 + \dotsb
+&amp;amp;= x - \frac{x^3}{3!} + \frac{x^5}{5!} - \dotsb, \end{align*}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This is approximation. Now &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; becomes &lt;span class=&#34;math inline&#34;&gt;\(h\)&lt;/span&gt; and parameters calculated from derivatives of &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; at &lt;span class=&#34;math inline&#34;&gt;\(0\)&lt;/span&gt;.&lt;br /&gt;
+&lt;span class=&#34;math inline&#34;&gt;\(f(x \pm h) = f(x) \pm hf&amp;#39;(x) + \frac{h^2}{2}f&amp;#39;&amp;#39;(x) \pm \frac{h^3}{6}f&amp;#39;&amp;#39;&amp;#39;(x) + O(h^4)\)&lt;/span&gt;&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/sine-better-models.png&#34; alt=&#34;https://betterexplained.com/articles/taylor-series/&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;&lt;a href=&#34;https://betterexplained.com/articles/taylor-series/&#34; class=&#34;uri&#34;&gt;https://betterexplained.com/articles/taylor-series/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Taylor series and Newton’s bionomial theorem explain the complex exponent.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[\exp(z) = e^{z}, \ z = a+bi \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The imaginary exponent is hard to understand intuitively. The exponential function &lt;span class=&#34;math inline&#34;&gt;\(e^{x}\)&lt;/span&gt; on a complex domain can be regarded as a function exp(x) that behaves like exponential function, i.e. a product of functions is addion of arguments &lt;span class=&#34;math inline&#34;&gt;\(\exp(x) \exp(y) = \exp(x+y)\)&lt;/span&gt;. The product of &lt;span class=&#34;math inline&#34;&gt;\(\exp\)&lt;/span&gt; fucntion becomes addition of arguments by Newton’s binomical theorem. The costomary expression is &lt;span class=&#34;math inline&#34;&gt;\(e^{x}\)&lt;/span&gt;. This can be done when &lt;span class=&#34;math inline&#34;&gt;\(\exp(x) = \Sigma ^{\infty}_{n=0} \frac {Z^{n}}{n!}\)&lt;/span&gt; The taylor series with repidly decaying pactorial coefficients &lt;span class=&#34;math inline&#34;&gt;\(n!\)&lt;/span&gt;. This series converges absolutely for every complex &lt;span class=&#34;math inline&#34;&gt;\(z\)&lt;/span&gt; and converges uniformly on every bounded subset of the complex plain. Rudin’s Real and complex analysis.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Limit of inequality of sequence and epsilon</title>
+      <link>/post/limit-of-inequality-and-epsilon/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/post/limit-of-inequality-and-epsilon/</guid>
+      <description>
+
+
+&lt;p&gt;Here I summarize some tools for proof of the Riesz representation theorem. They are the limit of inequality of sequence and &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt;. The Rudin’s proof of the Riesz representation theorem construct measure &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; and measurable set &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt;, then prove the &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt; have properties. Countable additivity (not subadditivity) is an important property. The strategy of proving equality (additivity) is bidirectional inequality.&lt;/p&gt;
+&lt;p&gt;Limit of inequality of sequence gives us a tool that finite inequality makes infinite inequality. &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; changes left and right parts of inequality (bidirectional inequality).&lt;/p&gt;
+&lt;p&gt;If &lt;span class=&#34;math inline&#34;&gt;\(\Sigma^n_1\mu(K) \le \Sigma^n_1\mu(V_i)\)&lt;/span&gt; then &lt;span class=&#34;math inline&#34;&gt;\(\Sigma^{\infty}_1 \mu(K) \le \Sigma^{\infty}_1 \mu(V)\)&lt;/span&gt;, K is compact and V is open. We can change both sides of inequality with &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(\Sigma^{\infty}_1 \mu(V) \le \Sigma^{\infty}_1 \mu(K) + \epsilon\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Urison’s lemma is used for &lt;span class=&#34;math inline&#34;&gt;\(\mu(E) = \inf\mu(V) = \sup\mu(K)\)&lt;/span&gt; if $ E  $ and $ K E V$.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Positive Borel measures</title>
+      <link>/post/positive-borel-measures/</link>
+      <pubDate>Wed, 16 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/post/positive-borel-measures/</guid>
+      <description>
+
+
+&lt;p&gt;This is a note of real and complex analysis chapter 2.&lt;/p&gt;
+&lt;p&gt;Chapter 2 is about measures. The measure already defined in chapter 1. In chapter 2, every linear &lt;strong&gt;functionals&lt;/strong&gt;, not combination, of a continuous function space on compact set (&lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt;) (&lt;span class=&#34;math inline&#34;&gt;\(\Lambda f\)&lt;/span&gt;) represents the integration of the function (&lt;span class=&#34;math inline&#34;&gt;\(\int f du\)&lt;/span&gt;) (Riesz representation theorem). Let X be a locally compact Hausdorf space, and let &lt;span class=&#34;math inline&#34;&gt;\(\Lambda\)&lt;/span&gt; be a positive linear functional on &lt;span class=&#34;math inline&#34;&gt;\(C_c(X)\)&lt;/span&gt;. Then there exist a &lt;span class=&#34;math inline&#34;&gt;\(\sigma-algebra\)&lt;/span&gt; in &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; which contains all Borel sets in &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, and there exists a unique positive measure &lt;span class=&#34;math inline&#34;&gt;\(mu\)&lt;/span&gt; on &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt; which represents &lt;span class=&#34;math inline&#34;&gt;\(\Lambda\)&lt;/span&gt; in the sense that (a) &lt;span class=&#34;math inline&#34;&gt;\(\Lambda f = \int f d \mu\)&lt;/span&gt; for every &lt;span class=&#34;math inline&#34;&gt;\(f \in C_c(X)\)&lt;/span&gt; and following additional properties:&lt;br /&gt;
+(b) &lt;span class=&#34;math inline&#34;&gt;\(\mu(K) &amp;lt; \infty\)&lt;/span&gt; for every compact set &lt;span class=&#34;math inline&#34;&gt;\(K \subset X\)&lt;/span&gt;.&lt;br /&gt;
+(c) For every &lt;span class=&#34;math inline&#34;&gt;\(E \in \mathfrak{M}\)&lt;/span&gt;, we have &lt;span class=&#34;math display&#34;&gt;\[ \mu(E) = inf\{\mu(V): E in V, V open\} \]&lt;/span&gt;.&lt;br /&gt;
+(d) The relation &lt;span class=&#34;math display&#34;&gt;\[\mu(E)=sup\{\mu(K): K \in E, K compact\}\]&lt;/span&gt;&lt;br /&gt;
+holds for every open set &lt;span class=&#34;math inline&#34;&gt;\(E\)&lt;/span&gt;, and for every &lt;span class=&#34;math inline&#34;&gt;\(E \in M\)&lt;/span&gt; with &lt;span class=&#34;math inline&#34;&gt;\(\mu(E) &amp;lt; \infty\)&lt;/span&gt;.&lt;br /&gt;
+(e) If &lt;span class=&#34;math inline&#34;&gt;\(E \in \mathfrak{M}, A subset E\)&lt;/span&gt;, and &lt;span class=&#34;math inline&#34;&gt;\(\mu(E) = 0\)&lt;/span&gt;, then &lt;span class=&#34;math inline&#34;&gt;\(A \in \mathfrak{M}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The Riesz theorem is about linear functional &lt;span class=&#34;math inline&#34;&gt;\(\Lambda\)&lt;/span&gt; is equivalently replaced with choosing measure &lt;span class=&#34;math inline&#34;&gt;\(\mu(E)=sup\{\Lambda f: f \prec V\}\)&lt;/span&gt;. Note &lt;span class=&#34;math inline&#34;&gt;\(sup \{\int^1_0 f(x)dx = \Lambda f: f \prec V, V (0,1) \} = 1\)&lt;/span&gt;. The notion of &lt;span class=&#34;math inline&#34;&gt;\(\prec\)&lt;/span&gt; include &lt;span class=&#34;math inline&#34;&gt;\(0 \le f \le 1\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;I confused &lt;span class=&#34;math inline&#34;&gt;\(C_c(X)\)&lt;/span&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Abstract integration</title>
+      <link>/post/abstract-integration/</link>
+      <pubDate>Wed, 09 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>/post/abstract-integration/</guid>
+      <description>
+
+
+&lt;p&gt;This is a note for Rudin’s real and complex analysis chapter 1. The key concepts are &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt;-algebra, measure (&lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt;) zero, and linear combination. The three concepts bring me abstract integration. The &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt;-algebra makes that countable sum and measure of complement (subtract measure) can be possible. Measure zero completes the system. linear combination integrates a measurable function.&lt;/p&gt;
+&lt;p&gt;After a measure space established, Lebesgue’s monotone convergence theorem, Fatou’s lemma, and Lebesgue’s dominant convergence theorem follow. Although three theorems do not contain &lt;strong&gt;integral&lt;/strong&gt; in their name, they insist that pointwise convergent sequence of functions is also converging their integral of the limit of functions. Lebesgue’s monotone convergence theorem requires a monotonous increment of series of functions and Lebesgue’s dominant convergence theorem requires upper bound function. Fatou’s lemma is the inequality of the lower limit.&lt;/p&gt;
+&lt;p&gt;Lebesgue’s monotone convergence theorem can be proved by the fact all &lt;span class=&#34;math inline&#34;&gt;\(L_1(\mu)\)&lt;/span&gt; has convergent simple function sequence. &lt;span class=&#34;math inline&#34;&gt;\(f_n\)&lt;/span&gt; &amp;gt; simple functions holds inequality of &lt;span class=&#34;math inline&#34;&gt;\(\lim\int f_n \geq \lim\int S_n = \int f\)&lt;/span&gt;. Fatous’s lemma &lt;span class=&#34;math inline&#34;&gt;\(\lim \inf \int \lvert fn - f \rvert \leq\int \lim \inf \lvert f_n - f \rvert\)&lt;/span&gt; is used for proof of Lebesgue’s dominant convergence.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Compactness</title>
+      <link>/post/math/compactness/</link>
+      <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/compactness/</guid>
+      <description>
+
+
+&lt;p&gt;The compact is a property of space. In a nutshell, if space is compact, we can treat the space be a &lt;strong&gt;finite&lt;/strong&gt; because space has a &lt;strong&gt;finite subcover&lt;/strong&gt;. A continuous function on a compact space is uniformly continuous.&lt;/p&gt;
+&lt;p&gt;Heine-Borel theorem describes the condition of compactness of &lt;strong&gt;finite&lt;/strong&gt; dimensional space. &lt;strong&gt;Closed and bounded&lt;/strong&gt; But the Heine-Borel theorem does not hold in an &lt;strong&gt;infinite-dimensional&lt;/strong&gt; space. We need another condition.&lt;/p&gt;
+&lt;p&gt;Previously, the compact space can be finite by taking subcover. The infinite-dimensional space can be finite by projection to finite dimension. If we could make as small as possible (i.e. &lt;span class=&#34;math inline&#34;&gt;\(\epsilon &amp;gt; 0\)&lt;/span&gt; ) the norm of &lt;span class=&#34;math inline&#34;&gt;\((X\backslash(1-P)\)&lt;/span&gt;, the compactness is achieved.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Functional analysis</title>
+      <link>/post/math/functional-analysis/</link>
+      <pubDate>Fri, 30 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/functional-analysis/</guid>
+      <description>
+
+
+&lt;p&gt;Differential equation solution is infinite function series. The infinite function series can be a sort of linear combination of countable function vector, in terms of linear algebra. This raises the problem of the analysis of function. The problem includes a distance of two functions, ie norm, completeness (Banach space). Because the series adds the last term without changing the existing terms, orthogonality is required to make a linear combination of countable functional vector becomes infinite function series (Hilbert space).&lt;/p&gt;
+&lt;p&gt;To make a space of continous function on a compact interval &lt;span class=&#34;math inline&#34;&gt;\(C(I)\)&lt;/span&gt; be complete (Banach space), take the maximum norm. To make a space of &lt;span class=&#34;math inline&#34;&gt;\(C(I)\)&lt;/span&gt; orthogonal, take the norm associated with inner product &lt;span class=&#34;math inline&#34;&gt;\(\| f \| := \sqrt{ \langle f,f \rangle}\)&lt;/span&gt;. The inner product is a map of symmetric sesquilinear form (Hermitian form). In &lt;span class=&#34;math inline&#34;&gt;\(C(I)\)&lt;/span&gt;, the inner product is &lt;span class=&#34;math display&#34;&gt;\[ \langle f,g \rangle := \int_{a}^{b} f^{*} (x)g(x)dx \]&lt;/span&gt;
+But the &lt;span class=&#34;math inline&#34;&gt;\(C(I)\)&lt;/span&gt; with the norm associated with an inner product is not complete. The complete can be achieved by extension to the Lebesgue integrable function. The right norm and the right functional set have special properties like complete and orthogonality.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Limit</title>
+      <link>/post/math/limit/</link>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/limit/</guid>
+      <description>
+
+
+&lt;p&gt;A sequence can be defined as a function on the domain of natural number like &lt;span class=&#34;math inline&#34;&gt;\(1, 1/2, 1/3 ... 1/n\)&lt;/span&gt;. This sequence approach to the 0, but never touch the 0. However, people can not take their desire to link the sequence and the 0. Because &lt;span class=&#34;math inline&#34;&gt;\(\infty\)&lt;/span&gt; is not a member of the natural number even real number, another concept is necessary to link the sequence and the 0. It is the limit. &lt;span class=&#34;math display&#34;&gt;\[ \lim{n\to\infty} \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The above sequence approach to the 0. But does all sequences approach to some points? What if the sequence is &lt;span class=&#34;math inline&#34;&gt;\(1/n\)&lt;/span&gt; if &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; is not multiple of 100, 0.001 if n is multiple of 100.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/math/2019-08-22-limit_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Its approach to zero except at every multiple of 10. The &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; is used for the definition of limit to exclude this example.&lt;/p&gt;
+&lt;p&gt;The sequence &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; is converges the limit &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; if for every positive &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt;, natural number &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; is present such that &lt;span class=&#34;math inline&#34;&gt;\(\vert a-Sn \vert &amp;lt;\epsilon\)&lt;/span&gt; is true in every &lt;span class=&#34;math inline&#34;&gt;\(n&amp;gt;N\)&lt;/span&gt;. Otherwise, the limit is not defined and the sequence is divergent.&lt;/p&gt;
+&lt;p&gt;In topological space, the &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; becomes the neighborhood.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Carathéodory&#39;s extension theorem</title>
+      <link>/post/math/caratheodory-s-extension-theorem/</link>
+      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/caratheodory-s-extension-theorem/</guid>
+      <description>
+
+
+&lt;p&gt;The studying sometimes starts with learning of boring preceding concepts. The highlight comes later. In history, the highlight concepts or the important problem were centered and the supporting concepts or lemmas followed. One of the central ideas of analysis is &lt;strong&gt;extension&lt;/strong&gt;. The set of a rational number (&lt;span class=&#34;math inline&#34;&gt;\(\mathbb{Q}\)&lt;/span&gt;) extends to the real line &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{R}\)&lt;/span&gt;. The Jordan measurable sets extend to the Lebesgue measurable sets ( &lt;span class=&#34;math inline&#34;&gt;\(\sigma -algebra\)&lt;/span&gt; ).&lt;/p&gt;
+&lt;p&gt;The outer measure can measure &lt;strong&gt;all&lt;/strong&gt; subsets of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, whereas measure can only measure a &lt;span class=&#34;math inline&#34;&gt;\(\sigma -algebra\)&lt;/span&gt; of measure set. The Carathéodory measurability defines the condition to make a &lt;span class=&#34;math inline&#34;&gt;\(\sigma -algebra\)&lt;/span&gt;.&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ \mu^*(A) = \mu^*(A \cap E) + \mu^*(A \cap E^c) \]&lt;/span&gt;
+The Carathéodory extension theorem defines a condition to make an outer measure to a measure. The condition is that the outer measure applies to the Carathéodory measurable set (&lt;span class=&#34;math inline&#34;&gt;\(\sigma - algebra\)&lt;/span&gt;). (Torrence Tao, An introduction to measure theory)&lt;/p&gt;
+&lt;p&gt;In the Riesz representation therorem, &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}_F\)&lt;/span&gt; extends to &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt;. The outer measure is &lt;span class=&#34;math inline&#34;&gt;\(\mu(E) = sup\ \ \{\mu(K): K \subset E,\ \ K \ \ compact \}\)&lt;/span&gt; for every &lt;span class=&#34;math inline&#34;&gt;\(E \subset X\)&lt;/span&gt; analogus to Jordan outer measure. &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}_F\)&lt;/span&gt; is collection of subset &lt;span class=&#34;math inline&#34;&gt;\(E \subset X\)&lt;/span&gt; satisfying &lt;span class=&#34;math inline&#34;&gt;\(\mu (E) &amp;lt; \infty\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\mu (V) = sup \{\Lambda f:f\prec V \}\)&lt;/span&gt; analogus to Jordan inner measure. Thus &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}_F\)&lt;/span&gt; is analous to Jordan measurable set. &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt; is collection of subset &lt;span class=&#34;math inline&#34;&gt;\(E \subset X\)&lt;/span&gt; such that &lt;span class=&#34;math inline&#34;&gt;\(E \cap K \ \in \ \ \mathfrak{M}_F\)&lt;/span&gt; for every compact &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt;. This is the Carathéodory measurability. So the &lt;span class=&#34;math inline&#34;&gt;\(\mu(E)\)&lt;/span&gt; on the &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt; becomes measure. (Rudin’s Real and complex analysis)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Analysis</title>
+      <link>/post/math/analysis/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/analysis/</guid>
+      <description>
+
+
+&lt;p&gt;The reproducing kernel hilbert space (RKHS) was my motivation to study analysis. The hilbert space is a orthogonal normed vector space. I still do not know about the meaning of “reproducing kernal”. The RKHS appeared in the book titled &lt;em&gt;An Introduction to Statisitical Learning&lt;/em&gt; written by Hastie.&lt;/p&gt;
+&lt;p&gt;I began to google the meaning of the spaces such as the Hilbert, Banarch. I decided to read the &lt;em&gt;Understaing Analysis&lt;/em&gt; written by Abbott. The &lt;em&gt;Understaing Analysis&lt;/em&gt; was give me many intuitions of analysis and encouraged me to study further. The next book was Rudin’s &lt;em&gt;Functional Analysis&lt;/em&gt;. I realized I need to go upstream to complex Analysis, topology and measure.&lt;/p&gt;
+&lt;p&gt;During the journey of exploring the analysis, I skipped proving of theorems or solving exercises. But space between lines is coming. I’m realizing that I prove the spaces. &lt;span class=&#34;math display&#34;&gt;\[\Sigma^{k}_{j=1} {\lvert}a_j-a^{n}_j{\rvert}\le\epsilon \]&lt;/span&gt; This holds for all finite &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;, we even have &lt;span class=&#34;math inline&#34;&gt;\({\lVert} a-a_n {\rVert} _{1}\le\epsilon\)&lt;/span&gt;. This is on the way of the proof of &lt;span class=&#34;math inline&#34;&gt;\(l^{1}(\mathbb{N})\)&lt;/span&gt; of all complex-valued sequences &lt;span class=&#34;math inline&#34;&gt;\(a=(a_j)^{\infty}_{j=1}\)&lt;/span&gt; for which the norm &lt;span class=&#34;math inline&#34;&gt;\({\lVert} a {\rVert} _{1}\ := \Sigma^{\infty}_{j=1} {\lvert}a_j{\rvert}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;I could not just accept that the finite sum of each small differences &lt;span class=&#34;math inline&#34;&gt;\(\le \epsilon\)&lt;/span&gt; of &lt;span class=&#34;math inline&#34;&gt;\({\lvert}a_j - a^n_j{\rvert}\)&lt;/span&gt; holds to the infinite sum. The infinite sum is a infinte series. If the infinite series is less than or equel to zero, then it converses to the zero. If the finite sum is &lt;span class=&#34;math inline&#34;&gt;\(\le \epsilon\)&lt;/span&gt; holds every &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{N}\)&lt;/span&gt;, by definition the infinite sum is also &lt;span class=&#34;math inline&#34;&gt;\(\le \epsilon\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;It takes long time to grasp the subtle mathmatical systems. For example, a series is a number in a scalar field, a sequence is a ordered set. However the long time makes the math become familar and finally will firmly grasp the subtle concepts.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bum-Sik Lee | Jun&#39;s Blog</title>
+    <link>/authors/bum-sik-lee/</link>
+      <atom:link href="/authors/bum-sik-lee/index.xml" rel="self" type="application/rss+xml" />
+    <description>Bum-Sik Lee</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Bum-Sik Lee</title>
+      <link>/authors/bum-sik-lee/</link>
+    </image>
+    
+    <item>
+      <title>Displaced Double-Layered Lateral Meniscus That Mimicked the Bucket-Handle Tear: A Case Report</title>
+      <link>/publication/2016-01-01_kwak2016displaced/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/2016-01-01_kwak2016displaced/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

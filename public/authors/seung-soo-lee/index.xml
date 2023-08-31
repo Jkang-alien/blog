@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seung Soo Lee | Jun&#39;s Blog</title>
+    <link>/authors/seung-soo-lee/</link>
+      <atom:link href="/authors/seung-soo-lee/index.xml" rel="self" type="application/rss+xml" />
+    <description>Seung Soo Lee</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2009 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Seung Soo Lee</title>
+      <link>/authors/seung-soo-lee/</link>
+    </image>
+    
+    <item>
+      <title>Gastrointestinal Metastasis from Primary Lung Cancer: CT Findings and Clinicopathologic Features</title>
+      <link>/publication/2009-01-01_kim2009gastrointestinal/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/2009-01-01_kim2009gastrointestinal/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

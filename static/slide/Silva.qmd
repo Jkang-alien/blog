@@ -1,0 +1,51 @@
+---
+title: "The Silva Pattern-based Classification for HPV-associated Invasive Endocervical Adenocarcinoma"
+format: revealjs
+self-contained: true
+editor: visual
+---
+
+## Background
+
+-   Silva pattern-based classification for human papilloma virus--associated invasive adenocarcinoma
+    -   Reliable system to predict risk of lymph node metastasis and recurrences
+    -   Synoptic reports
+        -   College of American Pathologists (CAP)
+        -   International Collaboration on Cancer Reporting (ICCR)
+    -   National Comprehensive Cancer Network (NCCN) guidelines
+        -   "emergent concept"
+
+::: aside International Journal of Gynecological Pathology: March 2021 - Volume 40 - Issue - p S48-S65 :::
+
+## Definitions
+
+![](https://www.jkangpathology.com/img/silva/T2.jpeg)
+
+## Clinico-pathologic features
+
+![](https://www.jkangpathology.com/img/silva/T4.jpeg)
+
+## Pattern A
+
+![](https://www.jkangpathology.com/img/silva/F1.jpeg)
+
+## Pattern B
+
+![](https://www.jkangpathology.com/img/silva/F4.jpeg)
+
+## Pattern C
+
+![](https://www.jkangpathology.com/img/silva/F5.jpeg)
+
+## Algorithm
+
+![](https://www.jkangpathology.com/img/silva/F11.jpeg)
+
+## Treatment
+
+-   Pattern A
+    -   Conservatively with conization with negative margins and no lymph node dissection
+-   Pattern B with LVI
+    -   SLN mapping or limited LN sampling
+-   Pattern C
+    -   Standard surgical treatment including SLN sampling or LN dissection

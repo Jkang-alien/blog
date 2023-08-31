@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sang-Il Kim | Jun&#39;s Blog</title>
+    <link>/authors/sang-il-kim/</link>
+      <atom:link href="/authors/sang-il-kim/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sang-Il Kim</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Sang-Il Kim</title>
+      <link>/authors/sang-il-kim/</link>
+    </image>
+    
+    <item>
+      <title>Comparison of the Cobas 4800 HPV and HPV 9G DNA Chip Tests for Detection of High-Risk Human Papillomavirus in Cervical Specimens of Women with Consecutive Positive HPV Tests but Negative Pap Smears</title>
+      <link>/publication/2015-01-01_jun2015comparison/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/2015-01-01_jun2015comparison/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thermo fisher Scientific | Jun&#39;s Blog</title>
+    <link>/tags/thermo-fisher-scientific/</link>
+      <atom:link href="/tags/thermo-fisher-scientific/index.xml" rel="self" type="application/rss+xml" />
+    <description>Thermo fisher Scientific</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 03 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Thermo fisher Scientific</title>
+      <link>/tags/thermo-fisher-scientific/</link>
+    </image>
+    
+    <item>
+      <title>ion2cbioportal Rpackage</title>
+      <link>/post/ion2cbioportal-rpackage/</link>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/post/ion2cbioportal-rpackage/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/Jkang-alien/ion2cbioportal&#34; class=&#34;uri&#34;&gt;https://github.com/Jkang-alien/ion2cbioportal&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is Rpackage for making the cbioportal dataset from the ion torrent NGS result files. The formats of ion torrent result files are vcf and tsv. Those files convert to maf format and other data set for cbioportal. The package includes vignette. &lt;code&gt;vignette(&amp;quot;ion2cbioportal&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

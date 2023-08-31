@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ji Young Choi | Jun&#39;s Blog</title>
+    <link>/authors/ji-young-choi/</link>
+      <atom:link href="/authors/ji-young-choi/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ji Young Choi</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Ji Young Choi</title>
+      <link>/authors/ji-young-choi/</link>
+    </image>
+    
+    <item>
+      <title>Effect of Helicobacter Pylori Eradication on Metachronous Recurrence after Endoscopic Resection of Gastric Neoplasm</title>
+      <link>/publication/2014-01-01_bae2014effect/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/2014-01-01_bae2014effect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Response to Abdallah et Al.</title>
+      <link>/publication/2014-01-01_bae2014response/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/2014-01-01_bae2014response/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>When It Comes to Gastric Cancer, There Is More to It Than H-Pylori! Response</title>
+      <link>/publication/2014-01-01_bae2014comes/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/2014-01-01_bae2014comes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

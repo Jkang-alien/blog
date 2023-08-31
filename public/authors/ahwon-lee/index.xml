@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ahwon Lee | Jun&#39;s Blog</title>
+    <link>/authors/ahwon-lee/</link>
+      <atom:link href="/authors/ahwon-lee/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ahwon Lee</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 09 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Ahwon Lee</title>
+      <link>/authors/ahwon-lee/</link>
+    </image>
+    
+    <item>
+      <title>Prediction of PIK3CA Mutations from Cancer Gene Expression Data</title>
+      <link>/publication/2020-11-09_kangpredictionpik3camutations2020/</link>
+      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/2020-11-09_kangpredictionpik3camutations2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Next Generation Sequencing Can Be Helpful in Histologic Diagnosis: A Case Report of Metastatic Breast Cancer Mimicking Atypical Carcinoid Tumor of Lung</title>
+      <link>/publication/2020-01-01_songnextgenerationsequencing2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/2020-01-01_songnextgenerationsequencing2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Analysis of the Molecular Subtypes of Preoperative Core Needle Biopsy and Surgical Specimens in Invasive Breast Cancer</title>
+      <link>/publication/2019-01-01_jeonganalysismolecularsubtypes2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-01-01_jeonganalysismolecularsubtypes2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BRCA1/2 Somatic Mutation Detection in Formalin-Fixed Paraffin Embedded Tissue by next-Generation Sequencing in Korean Ovarian Cancer Patients</title>
+      <link>/publication/2019-01-01_leebrca1somaticmutation2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-01-01_leebrca1somaticmutation2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notch1 in Tumor Microvascular Endothelial Cells and Tumoral miR-34a as Prognostic Markers in Locally Advanced Triple-Negative Breast Cancer</title>
+      <link>/publication/2019-01-01_kimnotch1tumormicrovascular2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-01-01_kimnotch1tumormicrovascular2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Positive Expression of Insulin-like Growth Factor-1 Receptor Is Associated with a Positive Hormone Receptor Status and a Favorable Prognosis in Breast Cancer</title>
+      <link>/publication/2014-01-01_shin2014positive/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/2014-01-01_shin2014positive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HER2 Status by Standardized Immunohistochemistry and Silver-Enhanced in Situ Hybridization in Korean Breast Cancer</title>
+      <link>/publication/2012-01-01_bae2012her2/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/2012-01-01_bae2012her2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hormone Receptor Expression in Invasive Breast Cancer among Korean Women and Comparison of 3 Antiestrogen Receptor Antibodies: A Multi-Institutional Retrospective Study Using Tissue Microarrays</title>
+      <link>/publication/2012-01-01_bae2012hormone/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/2012-01-01_bae2012hormone/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

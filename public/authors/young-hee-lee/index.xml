@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Young-Hee Lee | Jun&#39;s Blog</title>
+    <link>/authors/young-hee-lee/</link>
+      <atom:link href="/authors/young-hee-lee/index.xml" rel="self" type="application/rss+xml" />
+    <description>Young-Hee Lee</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2009 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Young-Hee Lee</title>
+      <link>/authors/young-hee-lee/</link>
+    </image>
+    
+    <item>
+      <title>Comparison of Silver-Enhanced in Situ Hybridization and Fluorescence in Situ Hybridization for HER2 Gene Status in Breast Carcinomas</title>
+      <link>/publication/2009-01-01_kang2009comparison/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/publication/2009-01-01_kang2009comparison/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

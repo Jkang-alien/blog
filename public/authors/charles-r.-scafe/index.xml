@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Charles R. Scafe | Jun&#39;s Blog</title>
+    <link>/authors/charles-r.-scafe/</link>
+      <atom:link href="/authors/charles-r.-scafe/index.xml" rel="self" type="application/rss+xml" />
+    <description>Charles R. Scafe</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Charles R. Scafe</title>
+      <link>/authors/charles-r.-scafe/</link>
+    </image>
+    
+    <item>
+      <title>BRCA1/2 Somatic Mutation Detection in Formalin-Fixed Paraffin Embedded Tissue by next-Generation Sequencing in Korean Ovarian Cancer Patients</title>
+      <link>/publication/2019-01-01_leebrca1somaticmutation2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-01-01_leebrca1somaticmutation2019/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

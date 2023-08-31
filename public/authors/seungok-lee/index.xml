@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seungok Lee | Jun&#39;s Blog</title>
+    <link>/authors/seungok-lee/</link>
+      <atom:link href="/authors/seungok-lee/index.xml" rel="self" type="application/rss+xml" />
+    <description>Seungok Lee</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Seungok Lee</title>
+      <link>/authors/seungok-lee/</link>
+    </image>
+    
+    <item>
+      <title>Novel Mutation (c. 8725T$&gt;$ C) in Two Siblings With Late-Onset LAMA2-Related Muscular Dystrophy</title>
+      <link>/publication/2017-01-01_kim2017novel/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/2017-01-01_kim2017novel/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

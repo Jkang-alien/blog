@@ -1,0 +1,28 @@
+---
+title: Entropy
+author: JK
+date: '2020-03-15'
+slug: entropy
+categories:
+  - Math
+tags:
+  - Information theory
+  - Math
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-03-15T06:31:20+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>This is a note for Elements of information theory of Thomas M. Cover.</p>
+<p>The entropy (<span class="math inline">\(H\)</span>) is a measure of uncertainty of a variable which is the answer to what is the ultimate data compression. Is the conditional probability <span class="math inline">\(p(x|y)\)</span> considered as a probability of the “conditional variable” <span class="math inline">\((X|Y=y)\)</span>? Yes, it is the subset of <span class="math inline">\(X\)</span> given <span class="math inline">\(Y=y\)</span>. If you sum all of the subset probabilities, it becomes the cardinality of <span class="math inline">\(X\)</span>. Thus if you make that become 1, the conditional probability should be multiplied with <span class="math inline">\(p(x)\)</span>. The conditional probability is larger than joint probabilities <span class="math inline">\(p(x,y)\)</span>.</p>
+<p>Let’s think about the entropy of a joint random variable <span class="math inline">\((X,Y)\)</span>. If <span class="math inline">\(X\)</span> and <span class="math inline">\(Y\)</span> are correlated, the entries of the contingent table of <span class="math inline">\(p(x,y)\)</span> are concentrated at some points that mean lager or smaller probabilities than a product of <span class="math inline">\(p(x)\)</span> and <span class="math inline">\(p(y)\)</span>. The joint probability is a product of probability of <span class="math inline">\(X\)</span>, <span class="math inline">\(p(x)\)</span> and conditional probability <span class="math inline">\(p(X|Y)\)</span>. The conditional entropy is the expectation of a random conditional variable (conditional entropy). The conditional entropy does not mean the entropy of a subset of <span class="math inline">\(X|Y=y\)</span>. It is a measure of uncertainty of <span class="math inline">\(X\)</span> given <span class="math inline">\(Y\)</span>. If <span class="math inline">\(Y\)</span> has the <strong>information</strong> of the <span class="math inline">\(X\)</span>, the entropy of <span class="math inline">\(X|Y\)</span> is less than <span class="math inline">\(X\)</span>. The conditional entropy <span class="math inline">\(H(X|Y)\)</span> is subtract the entropy of Y <span class="math inline">\(H(Y)\)</span> from joint entropy <span class="math inline">\(H(X,Y)\)</span>. The joint probability <span class="math inline">\(p(x,y)\)</span> is the product of probability of <span class="math inline">\(Y\)</span> and conditional probability <span class="math inline">\(p(x|Y=y)\)</span>. This is chain rule of joint entropy <span class="math inline">\(H(X,Y) = H(Y) + H(X|Y)\)</span>.</p>
+<p>The chain rule is converting a joint variable to the sum of conditional random variables. The joint variable is the sum of conditional random variables. This is can be applied in the entropy, the information, and the relative entropy.</p>

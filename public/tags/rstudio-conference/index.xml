@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RStudio conference | Jun&#39;s Blog</title>
+    <link>/tags/rstudio-conference/</link>
+      <atom:link href="/tags/rstudio-conference/index.xml" rel="self" type="application/rss+xml" />
+    <description>RStudio conference</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 22 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>RStudio conference</title>
+      <link>/tags/rstudio-conference/</link>
+    </image>
+    
+    <item>
+      <title>Rstudio Conference Global 2021</title>
+      <link>/post/2021-01-22-rstudio-conference-global-2021/</link>
+      <pubDate>Fri, 22 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>/post/2021-01-22-rstudio-conference-global-2021/</guid>
+      <description>
+
+
+&lt;div id=&#34;max-kuhn&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Max Kuhn&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;New tuning methods
+&lt;ul&gt;
+&lt;li&gt;Racing method&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;section&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;&lt;/h4&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tidymodel</title>
+      <link>/post/tidymodel/</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/tidymodel/</guid>
+      <description>
+
+
+&lt;div id=&#34;machine-learning-and-tidymodel&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Machine Learning and Tidymodel&lt;/h3&gt;
+&lt;div id=&#34;model-setting-parsnip&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Model setting, {Parsnip}&lt;/h4&gt;
+&lt;p&gt;Rpackage Parsnip standardizes model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specifications and lately evaluates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;feature-engineering-recipes&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Feature engineering, {Recipes}&lt;/h4&gt;
+&lt;p&gt;Recipes make preprocessing easy with &lt;code&gt;step_()&lt;/code&gt; functions. Recipes after specification calculate.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;resampling-rsample&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Resampling, {rsample}&lt;/h4&gt;
+&lt;p&gt;To choose a model and hyperparameters, we must validate the different models.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;making-hyperparameter-set-dials&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Making hyperparameter set, {dials}&lt;/h4&gt;
+&lt;p&gt;The Rpackage {dials} set hyperparameter similarily with {Parsnip}. {Dials} standadize parameter of each modeling algorithm.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;set-modeling-process-workflowr&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Set modeling process, {Workflowr}&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fit-models-with-hyperparameter-tunes&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Fit models with hyperparameter, {tunes}&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>RStudio Conference 2020</title>
+      <link>/post/rstudio-conference-2020/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/rstudio-conference-2020/</guid>
+      <description>
+
+
+&lt;p&gt;Key Note&lt;/p&gt;
+&lt;p&gt;J.J. Allaire&lt;/p&gt;
+&lt;p&gt;RStudio becomes Public B Corp.&lt;/p&gt;
+&lt;p&gt;J.J. Allaire’s favorite book Fooled by Randomness&lt;/p&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;RStudio has restructured as a &amp;#39;benefit corporation,&amp;#39; legally allowing it to consider the needs of its users and the &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; community and not just its shareholders, JJ Allaire announced just now at &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; &lt;a href=&#34;https://t.co/uG6SjNeLei&#34;&gt;https://t.co/uG6SjNeLei&lt;/a&gt;&lt;/p&gt;&amp;mdash; Sharon Machlis (@sharon000) &lt;a href=&#34;https://twitter.com/sharon000/status/1222577749824401408?ref_src=twsrc%5Etfw&#34;&gt;January 29, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/Rstudio?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#Rstudio&lt;/a&gt; evolution &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; &lt;a href=&#34;https://t.co/euZFBTpvVY&#34;&gt;pic.twitter.com/euZFBTpvVY&lt;/a&gt;&lt;/p&gt;&amp;mdash; 1LittleCoder💻 (@1littlecoder) &lt;a href=&#34;https://twitter.com/1littlecoder/status/1222574214747607042?ref_src=twsrc%5Etfw&#34;&gt;January 29, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/h2&gt;
+&lt;p&gt;Google AI PAIR team&lt;br /&gt;
+Fernanda Viegas, Martin Wattenberg&lt;/p&gt;
+&lt;p&gt;Debug your data first, not your program!&lt;/p&gt;
+&lt;p&gt;Visualization, Hello World Image data set has faulty annotations.&lt;br /&gt;
+Validate your data set!!&lt;/p&gt;
+&lt;p&gt;High dimensionality, MNIST data set PCA clustering.&lt;/p&gt;
+&lt;p&gt;Fairness, Different views of points can be visualized. People can understand it.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Great to see misclassification applied to fairness in loans! &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstudio?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudio&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/google?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#google&lt;/a&gt; &lt;a href=&#34;https://t.co/0TOCCegOpt&#34;&gt;pic.twitter.com/0TOCCegOpt&lt;/a&gt;&lt;/p&gt;&amp;mdash; Kyle Monahan (@kylemonahan2) &lt;a href=&#34;https://twitter.com/kylemonahan2/status/1222585238473203712?ref_src=twsrc%5Etfw&#34;&gt;January 29, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;If you are doing data science, you are doing user experience design - with great power comes great responsibility &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; &lt;br&gt;&lt;br&gt;Loved this keynote! &lt;a href=&#34;https://twitter.com/wattenberg?ref_src=twsrc%5Etfw&#34;&gt;@wattenberg&lt;/a&gt; &lt;a href=&#34;https://twitter.com/viegasf?ref_src=twsrc%5Etfw&#34;&gt;@viegasf&lt;/a&gt; &lt;a href=&#34;https://t.co/goNzLkhSUe&#34;&gt;pic.twitter.com/goNzLkhSUe&lt;/a&gt;&lt;/p&gt;&amp;mdash; Alison Presmanes Hill (@apreshill) &lt;a href=&#34;https://twitter.com/apreshill/status/1222593520508141568?ref_src=twsrc%5Etfw&#34;&gt;January 29, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Next big &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; keynote quote that I love:&lt;br&gt;&lt;br&gt;Debug your data first, not your program!&lt;/p&gt;&amp;mdash; Hunter Glanz (@hglanz) &lt;a href=&#34;https://twitter.com/hglanz/status/1222581456829992960?ref_src=twsrc%5Etfw&#34;&gt;January 29, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://pair.withgoogle.com&#34; class=&#34;uri&#34;&gt;https://pair.withgoogle.com&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Andrew Mangan, Salesforce&lt;/p&gt;
+&lt;p&gt;Analytics using R&lt;/p&gt;
+&lt;p&gt;Mine Cetinkaya-Rundelm, RStudio&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;shiny-contest-open-codes&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Shiny contest, open codes&lt;/h2&gt;
+&lt;p&gt;Joe Cheng, RStudio&lt;/p&gt;
+&lt;p&gt;Styling Shiny with Sass and Bootstrap 4&lt;br /&gt;
+Bootstrap 4 is default Shiny frame. Bootstrap 4 supports Sass which is a meta-program for CSS. {bootstraplib} makes easy to use Sass in R environment.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Thanks to &lt;a href=&#34;https://twitter.com/jcheng?ref_src=twsrc%5Etfw&#34;&gt;@jcheng&lt;/a&gt; for the shoutout at &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt;! Be sure to check out &lt;a href=&#34;https://twitter.com/jcheng?ref_src=twsrc%5Etfw&#34;&gt;@jcheng&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/cpsievert?ref_src=twsrc%5Etfw&#34;&gt;@cpsievert&lt;/a&gt;’s package bootstraplib for easy custom fonts and styling in &lt;a href=&#34;https://twitter.com/hashtag/shiny?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#shiny&lt;/a&gt; &lt;a href=&#34;https://t.co/hcy5zCxuAQ&#34;&gt;https://t.co/hcy5zCxuAQ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tim Mastny (@timmastny) &lt;a href=&#34;https://twitter.com/timmastny/status/1222664917280387072?ref_src=twsrc%5Etfw&#34;&gt;January 29, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;A nice resource for learning shiny from &lt;a href=&#34;https://twitter.com/_ColinFay?ref_src=twsrc%5Etfw&#34;&gt;@_ColinFay&lt;/a&gt;:&lt;a href=&#34;https://t.co/RtKU6sowqj&#34;&gt;https://t.co/RtKU6sowqj&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt;&lt;/p&gt;&amp;mdash; John Blischak (@jdblischak) &lt;a href=&#34;https://twitter.com/jdblischak/status/1222652894354141184?ref_src=twsrc%5Etfw&#34;&gt;January 29, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;/div&gt;
+&lt;div class=&#34;section level2&#34;&gt;
+&lt;h2&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;What if we kissed 😳😳 in &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; Grand Ballroom B 🙈 &lt;a href=&#34;https://t.co/UXYxH6mjWQ&#34;&gt;pic.twitter.com/UXYxH6mjWQ&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dr. Jacqueline Nolis (@skyetetra) &lt;a href=&#34;https://twitter.com/skyetetra/status/1222603023605624832?ref_src=twsrc%5Etfw&#34;&gt;January 29, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;.&lt;a href=&#34;https://twitter.com/skyetetra?ref_src=twsrc%5Etfw&#34;&gt;@skyetetra&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/heatherklus?ref_src=twsrc%5Etfw&#34;&gt;@heatherklus&lt;/a&gt; have released the OSS loadtest package! Run and analyze load tests from entirely within R&lt;br&gt;&lt;br&gt;Learn more: &lt;a href=&#34;https://t.co/3Xq8J9jqfA&#34;&gt;https://t.co/3Xq8J9jqfA&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf&lt;/a&gt; &lt;a href=&#34;https://t.co/LwkwO4DDP1&#34;&gt;pic.twitter.com/LwkwO4DDP1&lt;/a&gt;&lt;/p&gt;&amp;mdash; David Robinson (@drob) &lt;a href=&#34;https://twitter.com/drob/status/1222611273021394944?ref_src=twsrc%5Etfw&#34;&gt;January 29, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Standing room only for &lt;a href=&#34;https://twitter.com/paleolimbot?ref_src=twsrc%5Etfw&#34;&gt;@paleolimbot&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; talk on programming with ggplot2! Did you know that you can put plot items into a list and add that?? &lt;a href=&#34;https://t.co/wGMEPSBIeP&#34;&gt;pic.twitter.com/wGMEPSBIeP&lt;/a&gt;&lt;/p&gt;&amp;mdash; Calum You (@_calumyou) &lt;a href=&#34;https://twitter.com/_calumyou/status/1222991783933575168?ref_src=twsrc%5Etfw&#34;&gt;January 30, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Just learned that adding NULL to a ggplot does nothing...which is super useful when writing functions that wrap ggplot. ggplot(...) + NULL is the same as ggplot(...). Thanks &lt;a href=&#34;https://twitter.com/paleolimbot?ref_src=twsrc%5Etfw&#34;&gt;@paleolimbot&lt;/a&gt;! &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt;&lt;/p&gt;&amp;mdash; Taylor Reiter (@ReiterTaylor) &lt;a href=&#34;https://twitter.com/ReiterTaylor/status/1222991203110551554?ref_src=twsrc%5Etfw&#34;&gt;January 30, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/h2&gt;
+&lt;p&gt;Carson Sievert, RStudio&lt;/p&gt;
+&lt;p&gt;Reproducible Shiny, Download tab, {shinymeta}&lt;/p&gt;
+&lt;p&gt;Aymen Waqar&lt;/p&gt;
+&lt;p&gt;Building a native iPad dashboard&lt;/p&gt;
+&lt;p&gt;Ana Alyeska Santos, Braulio Cuandon, Biosense Webster, Inc.&lt;/p&gt;
+&lt;p&gt;Reproducible Engineering Test Reports&lt;/p&gt;
+&lt;p&gt;Justin Juskewitch, Mayo Clinic&lt;br /&gt;
+Transfusion platelet selection and match for patient and documentation automation&lt;/p&gt;
+&lt;p&gt;Alicia Schep, Outlier AI&lt;/p&gt;
+&lt;p&gt;She moved R from Python. {vlBuildr} API develop Altair and Vega-Lite&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Tyson Barrett&lt;/p&gt;
+&lt;p&gt;List-columns in data.table&lt;/p&gt;
+&lt;p&gt;data.table can easily convert list-columns&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Learn how to use list-columns with data.table from these slides from &lt;a href=&#34;https://twitter.com/healthandstats?ref_src=twsrc%5Etfw&#34;&gt;@healthandstats&lt;/a&gt;:&lt;a href=&#34;https://t.co/amXG686twc&#34;&gt;https://t.co/amXG686twc&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; &lt;a href=&#34;https://t.co/CrPVDhtYgH&#34;&gt;https://t.co/CrPVDhtYgH&lt;/a&gt;&lt;/p&gt;&amp;mdash; John Blischak (@jdblischak) &lt;a href=&#34;https://twitter.com/jdblischak/status/1223004598572437504?ref_src=twsrc%5Etfw&#34;&gt;January 30, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Lightning Talk&lt;/p&gt;
+&lt;p&gt;Mexican election prediction&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Really interesting talk from &lt;a href=&#34;https://twitter.com/TeresaOM?ref_src=twsrc%5Etfw&#34;&gt;@TeresaOM&lt;/a&gt; on predicting Mexican election results from initial polling data. They&amp;#39;re in a &amp;quot;bunker&amp;quot; with no internet access, so no StackOverflow!&lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt;&lt;a href=&#34;https://t.co/8Im6k6zusu&#34;&gt;https://t.co/8Im6k6zusu&lt;/a&gt;&lt;/p&gt;&amp;mdash; John Blischak (@jdblischak) &lt;a href=&#34;https://twitter.com/jdblischak/status/1223021112117743618?ref_src=twsrc%5Etfw&#34;&gt;January 30, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Rebecca Barter Becoming an R Blogger&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Stupidly excited for &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; this week! &lt;br&gt;&lt;br&gt;📢 Check out my lightening talk on &amp;quot;becoming an R blogger&amp;quot; Thursday at 2:55. &lt;br&gt;&lt;br&gt;👋 If you&amp;#39;d like to say hi during the conference, feel free to reach out&lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/datascience?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#datascience&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rebecca Barter (@rlbarter) &lt;a href=&#34;https://twitter.com/rlbarter/status/1221852227184128000?ref_src=twsrc%5Etfw&#34;&gt;January 27, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Other sessions, not check-in&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;🎨📊 Enjoying learning about { ggtext } and { gridtext } &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; packages from &lt;a href=&#34;https://twitter.com/ClausWilke?ref_src=twsrc%5Etfw&#34;&gt;@ClausWilke&lt;/a&gt; @ &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt;&lt;a href=&#34;https://t.co/vyqgTkTnM8&#34;&gt;https://t.co/vyqgTkTnM8&lt;/a&gt;&lt;a href=&#34;https://t.co/jnnR0AvGF0&#34;&gt;https://t.co/jnnR0AvGF0&lt;/a&gt; &lt;a href=&#34;https://t.co/4ew8EKqXay&#34;&gt;pic.twitter.com/4ew8EKqXay&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rich Pauloo, PhD (@RichPauloo) &lt;a href=&#34;https://twitter.com/RichPauloo/status/1222998335239290880?ref_src=twsrc%5Etfw&#34;&gt;January 30, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Session: &amp;quot;Updates on Spark, MLFlow &amp;amp; the Broader ML Ecosystem&amp;quot; (including Delta Lake)&lt;br&gt;&lt;br&gt;Use Spark in R via Sparklyr ✨&lt;a href=&#34;https://twitter.com/hashtag/rstudioconf?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; &lt;a href=&#34;https://t.co/j1ITayLf8G&#34;&gt;pic.twitter.com/j1ITayLf8G&lt;/a&gt;&lt;/p&gt;&amp;mdash; Daniel ModeratelyOnline McNichol (@dnlmc) &lt;a href=&#34;https://twitter.com/dnlmc/status/1222651913352577024?ref_src=twsrc%5Etfw&#34;&gt;January 29, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Sage advice for putting R models in production from &lt;a href=&#34;https://twitter.com/heatherklus?ref_src=twsrc%5Etfw&#34;&gt;@heatherklus&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/skyetetra?ref_src=twsrc%5Etfw&#34;&gt;@skyetetra&lt;/a&gt;:&lt;br&gt;&lt;br&gt;- Avoid too many tests by only testing the most critical behavior&lt;br&gt;- Load test to find bottlenecks&lt;br&gt;- Give people a tool to explore and understand the model&lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt;&lt;/p&gt;&amp;mdash; John Blischak (@jdblischak) &lt;a href=&#34;https://twitter.com/jdblischak/status/1222612815694856193?ref_src=twsrc%5Etfw&#34;&gt;January 29, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Realtime Spell Check and global replacement in &lt;a href=&#34;https://twitter.com/rstudio?ref_src=twsrc%5Etfw&#34;&gt;@rstudio&lt;/a&gt; IDE 1.3!! &lt;br&gt;&lt;br&gt;🥳🙌&lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf&lt;/a&gt; &lt;a href=&#34;https://t.co/6cICDvWbdq&#34;&gt;pic.twitter.com/6cICDvWbdq&lt;/a&gt;&lt;/p&gt;&amp;mdash; annakrystalli (@annakrystalli) &lt;a href=&#34;https://twitter.com/annakrystalli/status/1222965028229271558?ref_src=twsrc%5Etfw&#34;&gt;January 30, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Enjoying &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; .  Here are the slides from the talk I gave yesterday: &lt;a href=&#34;https://t.co/R7vxqENMN3&#34;&gt;https://t.co/R7vxqENMN3&lt;/a&gt;&lt;/p&gt;&amp;mdash; Frank Harrell (@f2harrell) &lt;a href=&#34;https://twitter.com/f2harrell/status/1222931681570504704?ref_src=twsrc%5Etfw&#34;&gt;January 30, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;How to build native iPad app using R and plumber under the hood - &lt;a href=&#34;https://twitter.com/D_Rodziewicz?ref_src=twsrc%5Etfw&#34;&gt;@D_Rodziewicz&lt;/a&gt; &lt;a href=&#34;https://twitter.com/appsilon?ref_src=twsrc%5Etfw&#34;&gt;@appsilon&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rshiny?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rshiny&lt;/a&gt; &lt;a href=&#34;https://t.co/tShpA0gc7h&#34;&gt;pic.twitter.com/tShpA0gc7h&lt;/a&gt;&lt;/p&gt;&amp;mdash; Paweł Przytuła (@pawel_appsilon) &lt;a href=&#34;https://twitter.com/pawel_appsilon/status/1222679720455618560?ref_src=twsrc%5Etfw&#34;&gt;January 30, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Great message during the talk of &lt;a href=&#34;https://twitter.com/MT_statistics?ref_src=twsrc%5Etfw&#34;&gt;@MT_statistics&lt;/a&gt; at the &lt;a href=&#34;https://twitter.com/RLadiesGlobal?ref_src=twsrc%5Etfw&#34;&gt;@RLadiesGlobal&lt;/a&gt; breakfast &lt;a href=&#34;https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf2020&lt;/a&gt; &lt;a href=&#34;https://t.co/XWevhIFP4N&#34;&gt;pic.twitter.com/XWevhIFP4N&lt;/a&gt;&lt;/p&gt;&amp;mdash; Joselyn Chavez (@josschavezf1) &lt;a href=&#34;https://twitter.com/josschavezf1/status/1222559524839542784?ref_src=twsrc%5Etfw&#34;&gt;January 29, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Some presentation highlights: (1) &lt;a href=&#34;https://twitter.com/W_R_Chase?ref_src=twsrc%5Etfw&#34;&gt;@W_R_Chase&lt;/a&gt; on graph styling: &lt;a href=&#34;https://t.co/JVgUrhPxLm&#34;&gt;https://t.co/JVgUrhPxLm&lt;/a&gt; (2) &lt;a href=&#34;https://twitter.com/ClausWilke?ref_src=twsrc%5Etfw&#34;&gt;@ClausWilke&lt;/a&gt; on formatting ggplot2 text (so now you can implement some of &lt;a href=&#34;https://twitter.com/W_R_Chase?ref_src=twsrc%5Etfw&#34;&gt;@W_R_Chase&lt;/a&gt;&amp;#39;s suggestions): &lt;a href=&#34;https://t.co/rQX89X45dM&#34;&gt;https://t.co/rQX89X45dM&lt;/a&gt; (3) &lt;a href=&#34;https://twitter.com/JennyBryan?ref_src=twsrc%5Etfw&#34;&gt;@JennyBryan&lt;/a&gt; on debugging in R: &lt;a href=&#34;https://t.co/nTg2D6SCSN&#34;&gt;https://t.co/nTg2D6SCSN&lt;/a&gt; [2/n]&lt;/p&gt;&amp;mdash; Alex Albright (@AllbriteAllday) &lt;a href=&#34;https://twitter.com/AllbriteAllday/status/1223317400054988801?ref_src=twsrc%5Etfw&#34;&gt;January 31, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;&lt;span class=&#34;citation&#34;&gt;@fellgernon&lt;/span&gt; kindly tweeted me.&lt;/p&gt;
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;&lt;a href=&#34;https://twitter.com/hashtag/rstudioconf?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf&lt;/a&gt; workshops day 1 lunch:&lt;br&gt;&lt;br&gt;Jun Kang is a clinical assistant professor at a hospital in South Korea who uses R for many things from exploring data with &lt;a href=&#34;https://twitter.com/hashtag/shiny?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#shiny&lt;/a&gt; to building predictive models&lt;a href=&#34;https://twitter.com/JKang1978?ref_src=twsrc%5Etfw&#34;&gt;@JKang1978&lt;/a&gt; &lt;a href=&#34;https://t.co/13rARrqbWs&#34;&gt;https://t.co/13rARrqbWs&lt;/a&gt; &lt;a href=&#34;https://t.co/oG59N82o2U&#34;&gt;https://t.co/oG59N82o2U&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; 3/11 &lt;a href=&#34;https://t.co/JFVTuWbrrg&#34;&gt;pic.twitter.com/JFVTuWbrrg&lt;/a&gt;&lt;/p&gt;&amp;mdash; 🇲🇽 Leonardo Collado-Torres (@lcolladotor) &lt;a href=&#34;https://twitter.com/lcolladotor/status/1224034257712173057?ref_src=twsrc%5Etfw&#34;&gt;February 2, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;On my latest blog post I talk about how empowering it can be when you help others make connections☺️. That is, becoming a sponsor as defined by &lt;a href=&#34;https://twitter.com/robinson_es?ref_src=twsrc%5Etfw&#34;&gt;@robinson_es&lt;/a&gt;. It&amp;#39;s worth it!&lt;br&gt;&lt;br&gt;Thx &lt;a href=&#34;https://twitter.com/StefanieButland?ref_src=twsrc%5Etfw&#34;&gt;@StefanieButland&lt;/a&gt; for the motivation to write this post!&lt;a href=&#34;https://t.co/PY0KCC5yAi&#34;&gt;https://t.co/PY0KCC5yAi&lt;/a&gt;&lt;a href=&#34;https://twitter.com/hashtag/rstudioconf?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstudioconf&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#rstats&lt;/a&gt; &lt;a href=&#34;https://t.co/MUkHvmXdBD&#34;&gt;pic.twitter.com/MUkHvmXdBD&lt;/a&gt;&lt;/p&gt;&amp;mdash; 🇲🇽 Leonardo Collado-Torres (@lcolladotor) &lt;a href=&#34;https://twitter.com/lcolladotor/status/1224561372236828672?ref_src=twsrc%5Etfw&#34;&gt;February 4, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;And he left some inspiring post.
+&lt;a href=&#34;http://lcolladotor.github.io/2020/02/03/conference-feelings-from-newbie-to-sponsor/&#34; class=&#34;uri&#34;&gt;http://lcolladotor.github.io/2020/02/03/conference-feelings-from-newbie-to-sponsor/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Applied Machine Learning Workshop RStudio Conference 2020</title>
+      <link>/post/applied-machine-learning-workshop-rstudio-conference-2020/</link>
+      <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/applied-machine-learning-workshop-rstudio-conference-2020/</guid>
+      <description>
+
+
+&lt;p&gt;This is a note of applied machine learning workshop RStudion conference 2020&lt;/p&gt;
+&lt;p&gt;Why is it hard to predict (domain knowledge).&lt;/p&gt;
+&lt;p&gt;purrr::map allows inline code.&lt;/p&gt;
+&lt;p&gt;purrr::map and tidyr::nest covered because they are used in resample or tune.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-01-26-applied-machine-learning-workshop-rstudio-conference-2020_files/figure-html/explore-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Skew data might be looking outlier.&lt;/p&gt;
+&lt;p&gt;People look at data in many different ways like outliers, missingness, correlation, and suspicion of an important variable.&lt;/p&gt;
+&lt;p&gt;The ggplot is good to explore variables adding geoms changing plot.&lt;/p&gt;
+&lt;p&gt;Machine learning is creative because you can do many different ways such as which variable should be included.&lt;/p&gt;
+&lt;p&gt;Model workflow: imputation -&amp;gt; transformation -&amp;gt; filter -&amp;gt; model&lt;/p&gt;
+&lt;p&gt;Resampling avoids something like the garden of forking paths or p-hacking by honest feedback.&lt;/p&gt;
+&lt;p&gt;The tuning parameter can be estimated &lt;strong&gt;analytically&lt;/strong&gt; or iteratively.&lt;/p&gt;
+&lt;p&gt;Single validation set ??&lt;/p&gt;
+&lt;p&gt;Resampling process questions&lt;/p&gt;
+&lt;p&gt;Splitting data is confusing.&lt;/p&gt;
+&lt;p&gt;The test set split preserves &lt;strong&gt;distribution&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Interval and sampling are behind the scene of resampling.&lt;/p&gt;
+&lt;p&gt;fomular x ~ . -something to remove&lt;/p&gt;
+&lt;p&gt;Variable role: limited (can not be applied to hierarchical in Baysian??)&lt;/p&gt;
+&lt;p&gt;Formula and XY interface is not fit in machine learning. The recipes package is a solution.&lt;/p&gt;
+&lt;p&gt;The broom::glance (one-row summary of metrics, don’t trust this too much) tidy (coefficients) augment (by data points)&lt;/p&gt;
+&lt;p&gt;The parsnip (unified interface) is a solution to a different interface.&lt;/p&gt;
+&lt;p&gt;How to set specific settings using parsnip?&lt;/p&gt;
+&lt;p&gt;Many other packages supporting parsnip. Look at the tidymodels packages.&lt;/p&gt;
+&lt;p&gt;What is the difference between caret and parsnip?&lt;/p&gt;
+&lt;p&gt;Caret~base R, parsnip~tidyverse&lt;/p&gt;
+&lt;p&gt;The parsnip generalizes the interfaces and is easy to extend.&lt;/p&gt;
+&lt;p&gt;A dummy variable is confusing in the interaction of terms and how to interpret coefficiency.&lt;/p&gt;
+&lt;p&gt;The level with 0,0 allocation becomes a base variable in factor variable. A continuous variable can be categorized with recipe::step_discritize().&lt;/p&gt;
+&lt;p&gt;A zero variance predictor includes no record or single value variable.&lt;/p&gt;
+&lt;p&gt;Feature engineering problem
+* Dummy variable&lt;br /&gt;
+* Zero variance
+* Standardize&lt;/p&gt;
+&lt;p&gt;Customizing Step function&lt;/p&gt;
+&lt;p&gt;The first level is a reference. There are ways to change the reference level. (Ordering factor level issues)&lt;/p&gt;
+&lt;p&gt;People respond positively to the recipes.&lt;/p&gt;
+&lt;p&gt;recipe -&amp;gt; prep -&amp;gt; juice/bake; define -&amp;gt; calculate -&amp;gt; processing (training or test set)&lt;/p&gt;
+&lt;p&gt;The post-processed data set goes to fit() to establish a model&lt;/p&gt;
+&lt;p&gt;Versioning model caching?&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mod_rec &amp;lt;- recipe(
+  Sale_Price ~ Longitude + Latitude + Neighborhood, 
+  data = ames_train
+) %&amp;gt;%
+  step_log(Sale_Price, base = 10) %&amp;gt;%
+  
+  # Lump factor levels that occur in 
+  # &amp;lt;= 5% of data as &amp;quot;other&amp;quot;
+  step_other(Neighborhood, threshold = 0.05) %&amp;gt;%
+  
+  # Create dummy variables for _any_ factor variables
+  step_dummy(all_nominal()) %&amp;gt;%
+  step_nzv(
+    starts_with (&amp;quot;Neighborhood_&amp;quot;))
+
+preped_data &amp;lt;- prep(mod_rec) 
+
+preped_data %&amp;gt;%
+  juice() %&amp;gt;%
+  slice(1:5)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 11
+##   Longitude Latitude Sale_Price Neighborhood_Co… Neighborhood_Ol…
+##       &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;      &amp;lt;dbl&amp;gt;            &amp;lt;dbl&amp;gt;            &amp;lt;dbl&amp;gt;
+## 1     -93.6     42.1       5.24                0                0
+## 2     -93.6     42.1       5.39                0                0
+## 3     -93.6     42.1       5.28                0                0
+## 4     -93.6     42.1       5.29                0                0
+## 5     -93.6     42.1       5.33                0                0
+## # … with 6 more variables: Neighborhood_Edwards &amp;lt;dbl&amp;gt;,
+## #   Neighborhood_Somerset &amp;lt;dbl&amp;gt;, Neighborhood_Northridge_Heights &amp;lt;dbl&amp;gt;,
+## #   Neighborhood_Gilbert &amp;lt;dbl&amp;gt;, Neighborhood_Sawyer &amp;lt;dbl&amp;gt;,
+## #   Neighborhood_other &amp;lt;dbl&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;step_dummy -&amp;gt; step_other/step_nzv()&lt;/p&gt;
+&lt;p&gt;Step_dummy creates many dummy variables thus you should include the new dummy variables into the interaction terms or others or nzv. with starts_with() function.&lt;/p&gt;
+&lt;p&gt;Resolving skewness: &lt;strong&gt;Box-cox&lt;/strong&gt;, &lt;strong&gt;inverse&lt;/strong&gt;, of course, log or square root&lt;/p&gt;
+&lt;p&gt;parsnip model object includes original model results in &lt;code&gt;$fit&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The workflow replaces prep() -&amp;gt; juice() -&amp;gt; fit() with single call fit() and bake() -&amp;gt; predict() with predict ().&lt;/p&gt;
+&lt;p&gt;The workflow needs &lt;code&gt;add&lt;/code&gt;ing model specification (parsnip) and preprocessing (recipes).&lt;/p&gt;
+&lt;p&gt;Resampling is the best option to estimate the performance of a model.&lt;/p&gt;
+&lt;p&gt;Resampling splits analysis set and assessment set on &lt;strong&gt;training set&lt;/strong&gt;. The final result is performance metrics.&lt;/p&gt;
+&lt;p&gt;Selecting the resampling method relates to bias-variance trade-off. (Repeated CV)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Model_selection#Criteria&#34; class=&#34;uri&#34;&gt;https://en.wikipedia.org/wiki/Model_selection#Criteria&lt;/a&gt; information criteria??&lt;/p&gt;
+&lt;p&gt;Resampling does stratified sampling.&lt;/p&gt;
+&lt;p&gt;The tuning metric tends to be smooth. The irregular metric result means high variance.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://appliedpredictivemodeling.com/blog/2014/11/27/vpuig01pqbklmi72b8lcl3ij5hj2qm&#34; class=&#34;uri&#34;&gt;http://appliedpredictivemodeling.com/blog/2014/11/27/vpuig01pqbklmi72b8lcl3ij5hj2qm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Resampling spends memory. The vfold_cv() has a copy of the original data.&lt;/p&gt;
+&lt;p&gt;Processing first or resampling first??&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resample first&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If preprocessing is outside of resampling, You don’t know how the test set will be predicted.&lt;/p&gt;
+&lt;p&gt;Is feature engineering stable or unstable?&lt;/p&gt;
+&lt;p&gt;Can tune package select a good preprocessing process? Yes, it can.&lt;/p&gt;
+&lt;p&gt;The upsampling issues and rare important data points&lt;/p&gt;
+&lt;p&gt;The tuning hyperparameter (underfitting or overfitting).&lt;/p&gt;
+&lt;p&gt;Hyperparameter types grid (regular, irregular), iterative&lt;/p&gt;
+&lt;p&gt;Making function name: use underbar &lt;code&gt;_&lt;/code&gt; “Grid_regular”&lt;/p&gt;
+&lt;p&gt;The pros and cons of regular and non-regular grid&lt;/p&gt;
+&lt;p&gt;The non-regular grid efficient except some model can do trick.&lt;/p&gt;
+&lt;p&gt;The parsnip standardizes and it changes default parameter ranges.&lt;/p&gt;
+&lt;p&gt;The parameter tibble can not be subsetted. It will be issued in GitHub.&lt;/p&gt;
+&lt;p&gt;People take care of the default value of parameters.&lt;/p&gt;
+&lt;p&gt;Tidymodel delays evaluation. Set first and run later.&lt;/p&gt;
+&lt;p&gt;The Splines fitting is wagged at the edge of the range. When trying to predict value out of range, warnings occur. Resampling can cause an error at the edge point of the assessment set.&lt;/p&gt;
+&lt;p&gt;There is a note column in the result object.&lt;/p&gt;
+&lt;p&gt;The sensitivity of parameters can be evaluated with ggplot. The scale should be adjusted when an outlier is present.&lt;/p&gt;
+&lt;p&gt;Best fit can be choose&lt;/p&gt;
+&lt;p&gt;Documentation&lt;/p&gt;
+&lt;p&gt;Show best and select best (parameter)&lt;/p&gt;
+&lt;p&gt;Tune tunes selected parameters. If you don’t tune parameters, the parameters go default value.&lt;/p&gt;
+&lt;p&gt;The log ridership is wired because of a bimodal distribution. It will show skewed residual or something.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;!!stations&lt;/code&gt; indicates the environment of the station object, the station object is defined at recipe object, not the global environment.&lt;/p&gt;
+&lt;p&gt;Regularization wins wrapping feature selection methods in terms of efficacy.&lt;/p&gt;
+&lt;p&gt;If two predictors are highly correlated, the signs can change and the variance of coefficients inflates.&lt;/p&gt;
+&lt;p&gt;L1 penalty does feature selection, the L2 penalty resolves correlation. Does mixture feature selection? Yes, the L1 component and lambda determine how many variables are kicked out, except pure ridge regression (ie. pure L2 penalty).&lt;/p&gt;
+&lt;p&gt;Normalize or standardize on dummy variables?&lt;/p&gt;
+&lt;p&gt;Lambda is a more important parameter than alpha in glm.&lt;/p&gt;
+&lt;p&gt;Parallelism issue. GPU is good at linear algebra. Parallelism consumes memory because they copy data. Tuning is advantaged with parallelism because it uses for a loop. Unix is better than Windows in terms of parallelism.&lt;/p&gt;
+&lt;p&gt;Inner join makes prediction tibble subsetting best.&lt;/p&gt;
+&lt;p&gt;Repeated CV residual can be estimated with average predicting values.&lt;/p&gt;
+&lt;p&gt;GCV is used to pruning the point.&lt;/p&gt;
+&lt;p&gt;Is MARS greedy? Semi-greedy.&lt;/p&gt;
+&lt;p&gt;MARS is struggling with colinearity. Use step_pca.&lt;/p&gt;
+&lt;p&gt;Bayesian process, Gaussian process, Kernel function selection&lt;/p&gt;
+&lt;p&gt;MARS hyperparameter space is high dimensional, thus the Gaussian process is better than the grid method in terms of efficiency. Grid methods for the Chicago data MARS model need more than 4000 points of the grid, although the grid search can use a parallel process.&lt;/p&gt;
+&lt;p&gt;The Bayesian parameter searching process can be updated and pause.&lt;/p&gt;
+&lt;p&gt;Classification Hard prediction vs soft prediction (probability)&lt;/p&gt;
+&lt;p&gt;Accuracy can be estimated with hard prediction and ROC can be produced on soft prediction.&lt;/p&gt;
+&lt;p&gt;Feature hashing is difficult to understand.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;recipe can be tune.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;C5.0 is boost_tree.&lt;/p&gt;
+&lt;p&gt;Gitter discussion
+&lt;a href=&#34;https://gitter.im/conf2020-applied-ml/community/archives/2020/01/28&#34; class=&#34;uri&#34;&gt;https://gitter.im/conf2020-applied-ml/community/archives/2020/01/28&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

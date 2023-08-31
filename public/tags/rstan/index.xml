@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rstan | Jun&#39;s Blog</title>
+    <link>/tags/rstan/</link>
+      <atom:link href="/tags/rstan/index.xml" rel="self" type="application/rss+xml" />
+    <description>Rstan</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 20 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Rstan</title>
+      <link>/tags/rstan/</link>
+    </image>
+    
+    <item>
+      <title>Bayesian</title>
+      <link>/talk/bayes_and_ngs/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/bayes_and_ngs/</guid>
+      <description>
+
+
+&lt;p&gt;Abstract&lt;/p&gt;
+&lt;p&gt;Introduction of Bayesian approch in base calling and copy number variation (CNV). This is for the intradepartment lecture.&lt;/p&gt;
+&lt;p&gt;url_slides: ‘&lt;a href=&#34;http://rpubs.com/JKang/492555&#34; class=&#34;uri&#34;&gt;http://rpubs.com/JKang/492555&lt;/a&gt;’&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,160 @@
+---
+title: Applied Machine Learning Workshop RStudio Conference 2020
+author: JK
+date: '2020-01-26'
+slug: applied-machine-learning-workshop-rstudio-conference-2020
+categories:
+  - R
+  - Stastics
+  - Machine learning
+tags:
+  - Machine learning
+  - R
+  - RStudio conference
+  - RStudio
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-01-27T00:01:55-08:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+draft: false
+---
+
+
+
+<p>This is a note of applied machine learning workshop RStudion conference 2020</p>
+<p>Why is it hard to predict (domain knowledge).</p>
+<p>purrr::map allows inline code.</p>
+<p>purrr::map and tidyr::nest covered because they are used in resample or tune.</p>
+<p><img src="/post/2020-01-26-applied-machine-learning-workshop-rstudio-conference-2020_files/figure-html/explore-1.png" width="672" /></p>
+<p>Skew data might be looking outlier.</p>
+<p>People look at data in many different ways like outliers, missingness, correlation, and suspicion of an important variable.</p>
+<p>The ggplot is good to explore variables adding geoms changing plot.</p>
+<p>Machine learning is creative because you can do many different ways such as which variable should be included.</p>
+<p>Model workflow: imputation -&gt; transformation -&gt; filter -&gt; model</p>
+<p>Resampling avoids something like the garden of forking paths or p-hacking by honest feedback.</p>
+<p>The tuning parameter can be estimated <strong>analytically</strong> or iteratively.</p>
+<p>Single validation set ??</p>
+<p>Resampling process questions</p>
+<p>Splitting data is confusing.</p>
+<p>The test set split preserves <strong>distribution</strong>.</p>
+<p>Interval and sampling are behind the scene of resampling.</p>
+<p>fomular x ~ . -something to remove</p>
+<p>Variable role: limited (can not be applied to hierarchical in Baysian??)</p>
+<p>Formula and XY interface is not fit in machine learning. The recipes package is a solution.</p>
+<p>The broom::glance (one-row summary of metrics, don’t trust this too much) tidy (coefficients) augment (by data points)</p>
+<p>The parsnip (unified interface) is a solution to a different interface.</p>
+<p>How to set specific settings using parsnip?</p>
+<p>Many other packages supporting parsnip. Look at the tidymodels packages.</p>
+<p>What is the difference between caret and parsnip?</p>
+<p>Caret~base R, parsnip~tidyverse</p>
+<p>The parsnip generalizes the interfaces and is easy to extend.</p>
+<p>A dummy variable is confusing in the interaction of terms and how to interpret coefficiency.</p>
+<p>The level with 0,0 allocation becomes a base variable in factor variable. A continuous variable can be categorized with recipe::step_discritize().</p>
+<p>A zero variance predictor includes no record or single value variable.</p>
+<p>Feature engineering problem
+* Dummy variable<br />
+* Zero variance
+* Standardize</p>
+<p>Customizing Step function</p>
+<p>The first level is a reference. There are ways to change the reference level. (Ordering factor level issues)</p>
+<p>People respond positively to the recipes.</p>
+<p>recipe -&gt; prep -&gt; juice/bake; define -&gt; calculate -&gt; processing (training or test set)</p>
+<p>The post-processed data set goes to fit() to establish a model</p>
+<p>Versioning model caching?</p>
+<pre class="r"><code>mod_rec &lt;- recipe(
+  Sale_Price ~ Longitude + Latitude + Neighborhood, 
+  data = ames_train
+) %&gt;%
+  step_log(Sale_Price, base = 10) %&gt;%
+  
+  # Lump factor levels that occur in 
+  # &lt;= 5% of data as &quot;other&quot;
+  step_other(Neighborhood, threshold = 0.05) %&gt;%
+  
+  # Create dummy variables for _any_ factor variables
+  step_dummy(all_nominal()) %&gt;%
+  step_nzv(
+    starts_with (&quot;Neighborhood_&quot;))
+
+preped_data &lt;- prep(mod_rec) 
+
+preped_data %&gt;%
+  juice() %&gt;%
+  slice(1:5)</code></pre>
+<pre><code>## # A tibble: 5 x 11
+##   Longitude Latitude Sale_Price Neighborhood_Co… Neighborhood_Ol…
+##       &lt;dbl&gt;    &lt;dbl&gt;      &lt;dbl&gt;            &lt;dbl&gt;            &lt;dbl&gt;
+## 1     -93.6     42.1       5.24                0                0
+## 2     -93.6     42.1       5.39                0                0
+## 3     -93.6     42.1       5.28                0                0
+## 4     -93.6     42.1       5.29                0                0
+## 5     -93.6     42.1       5.33                0                0
+## # … with 6 more variables: Neighborhood_Edwards &lt;dbl&gt;,
+## #   Neighborhood_Somerset &lt;dbl&gt;, Neighborhood_Northridge_Heights &lt;dbl&gt;,
+## #   Neighborhood_Gilbert &lt;dbl&gt;, Neighborhood_Sawyer &lt;dbl&gt;,
+## #   Neighborhood_other &lt;dbl&gt;</code></pre>
+<p>step_dummy -&gt; step_other/step_nzv()</p>
+<p>Step_dummy creates many dummy variables thus you should include the new dummy variables into the interaction terms or others or nzv. with starts_with() function.</p>
+<p>Resolving skewness: <strong>Box-cox</strong>, <strong>inverse</strong>, of course, log or square root</p>
+<p>parsnip model object includes original model results in <code>$fit</code>.</p>
+<p>The workflow replaces prep() -&gt; juice() -&gt; fit() with single call fit() and bake() -&gt; predict() with predict ().</p>
+<p>The workflow needs <code>add</code>ing model specification (parsnip) and preprocessing (recipes).</p>
+<p>Resampling is the best option to estimate the performance of a model.</p>
+<p>Resampling splits analysis set and assessment set on <strong>training set</strong>. The final result is performance metrics.</p>
+<p>Selecting the resampling method relates to bias-variance trade-off. (Repeated CV)</p>
+<p><a href="https://en.wikipedia.org/wiki/Model_selection#Criteria" class="uri">https://en.wikipedia.org/wiki/Model_selection#Criteria</a> information criteria??</p>
+<p>Resampling does stratified sampling.</p>
+<p>The tuning metric tends to be smooth. The irregular metric result means high variance.</p>
+<p><a href="http://appliedpredictivemodeling.com/blog/2014/11/27/vpuig01pqbklmi72b8lcl3ij5hj2qm" class="uri">http://appliedpredictivemodeling.com/blog/2014/11/27/vpuig01pqbklmi72b8lcl3ij5hj2qm</a></p>
+<p>Resampling spends memory. The vfold_cv() has a copy of the original data.</p>
+<p>Processing first or resampling first??</p>
+<p><strong>Resample first</strong></p>
+<p>If preprocessing is outside of resampling, You don’t know how the test set will be predicted.</p>
+<p>Is feature engineering stable or unstable?</p>
+<p>Can tune package select a good preprocessing process? Yes, it can.</p>
+<p>The upsampling issues and rare important data points</p>
+<p>The tuning hyperparameter (underfitting or overfitting).</p>
+<p>Hyperparameter types grid (regular, irregular), iterative</p>
+<p>Making function name: use underbar <code>_</code> “Grid_regular”</p>
+<p>The pros and cons of regular and non-regular grid</p>
+<p>The non-regular grid efficient except some model can do trick.</p>
+<p>The parsnip standardizes and it changes default parameter ranges.</p>
+<p>The parameter tibble can not be subsetted. It will be issued in GitHub.</p>
+<p>People take care of the default value of parameters.</p>
+<p>Tidymodel delays evaluation. Set first and run later.</p>
+<p>The Splines fitting is wagged at the edge of the range. When trying to predict value out of range, warnings occur. Resampling can cause an error at the edge point of the assessment set.</p>
+<p>There is a note column in the result object.</p>
+<p>The sensitivity of parameters can be evaluated with ggplot. The scale should be adjusted when an outlier is present.</p>
+<p>Best fit can be choose</p>
+<p>Documentation</p>
+<p>Show best and select best (parameter)</p>
+<p>Tune tunes selected parameters. If you don’t tune parameters, the parameters go default value.</p>
+<p>The log ridership is wired because of a bimodal distribution. It will show skewed residual or something.</p>
+<p><code>!!stations</code> indicates the environment of the station object, the station object is defined at recipe object, not the global environment.</p>
+<p>Regularization wins wrapping feature selection methods in terms of efficacy.</p>
+<p>If two predictors are highly correlated, the signs can change and the variance of coefficients inflates.</p>
+<p>L1 penalty does feature selection, the L2 penalty resolves correlation. Does mixture feature selection? Yes, the L1 component and lambda determine how many variables are kicked out, except pure ridge regression (ie. pure L2 penalty).</p>
+<p>Normalize or standardize on dummy variables?</p>
+<p>Lambda is a more important parameter than alpha in glm.</p>
+<p>Parallelism issue. GPU is good at linear algebra. Parallelism consumes memory because they copy data. Tuning is advantaged with parallelism because it uses for a loop. Unix is better than Windows in terms of parallelism.</p>
+<p>Inner join makes prediction tibble subsetting best.</p>
+<p>Repeated CV residual can be estimated with average predicting values.</p>
+<p>GCV is used to pruning the point.</p>
+<p>Is MARS greedy? Semi-greedy.</p>
+<p>MARS is struggling with colinearity. Use step_pca.</p>
+<p>Bayesian process, Gaussian process, Kernel function selection</p>
+<p>MARS hyperparameter space is high dimensional, thus the Gaussian process is better than the grid method in terms of efficiency. Grid methods for the Chicago data MARS model need more than 4000 points of the grid, although the grid search can use a parallel process.</p>
+<p>The Bayesian parameter searching process can be updated and pause.</p>
+<p>Classification Hard prediction vs soft prediction (probability)</p>
+<p>Accuracy can be estimated with hard prediction and ROC can be produced on soft prediction.</p>
+<p>Feature hashing is difficult to understand.</p>
+<p><strong>recipe can be tune.</strong></p>
+<p>C5.0 is boost_tree.</p>
+<p>Gitter discussion
+<a href="https://gitter.im/conf2020-applied-ml/community/archives/2020/01/28" class="uri">https://gitter.im/conf2020-applied-ml/community/archives/2020/01/28</a></p>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Convex optimization | Jun&#39;s Blog</title>
+    <link>/categories/convex-optimization/</link>
+      <atom:link href="/categories/convex-optimization/index.xml" rel="self" type="application/rss+xml" />
+    <description>Convex optimization</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 13 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Convex optimization</title>
+      <link>/categories/convex-optimization/</link>
+    </image>
+    
+    <item>
+      <title>Lagrange dual problem and conjugate function</title>
+      <link>/post/lagrange-dual-problem-and-conjugate-function/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/lagrange-dual-problem-and-conjugate-function/</guid>
+      <description>
+
+
+&lt;p&gt;The optimization problem have two components that are objective function &lt;span class=&#34;math inline&#34;&gt;\(f_0 : \mathbb R ^n \rightarrow \mathbb R\)&lt;/span&gt; and the constraints. The objective function and constraints keep in check each other and make balance at saddle point i.e. optimal point. The dual (Lagrange) problem of the optimal problem also solve the optimization problem by making low boundary.&lt;/p&gt;
+&lt;p&gt;The dual problem can be explained as a conjugate function &lt;span class=&#34;math inline&#34;&gt;\(f^* = \sup (x^Ty-f(x))\)&lt;/span&gt;. The Lagrangian is &lt;span class=&#34;math inline&#34;&gt;\(L(x, \lambda, \nu) = f_0(x) + \lambda f_1, + \nu f_2\)&lt;/span&gt; where &lt;span class=&#34;math inline&#34;&gt;\(f_0\)&lt;/span&gt; is the objective function, &lt;span class=&#34;math inline&#34;&gt;\(f_1\)&lt;/span&gt; is inequality constraints and &lt;span class=&#34;math inline&#34;&gt;\(f_2\)&lt;/span&gt; is equality constraints. The Lagrangian function is &lt;span class=&#34;math inline&#34;&gt;\(g(\lambda,nu) = \inf_{x}L(x, \lambda, \nu) = \inf_{x}(f_0(x) + \lambda f_{1} + \nu f_{2})\)&lt;/span&gt;. The second and third term of the Lagrangian function is can be rewriten as an inner product form &lt;span class=&#34;math inline&#34;&gt;\(x^{T}h(\lambda) + x^{T}i(\nu)\)&lt;/span&gt; and constant term with &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\nu\)&lt;/span&gt;. Then the inner product term &lt;span class=&#34;math inline&#34;&gt;\(x^{T}h(\lambda) + x^{T}i(\nu)\)&lt;/span&gt; and objective term becomes a conjugate function.&lt;/p&gt;
+&lt;p&gt;The conjugate function &lt;span class=&#34;math inline&#34;&gt;\(f^*(x)\)&lt;/span&gt; is similar in terms of balance and saddle point.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Approximation</title>
+      <link>/post/approximation/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/approximation/</guid>
+      <description>
+
+
+&lt;p&gt;The purpose of approximation is finding optimal point &lt;span class=&#34;math inline&#34;&gt;\(x^*\)&lt;/span&gt; i.e. &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x^*) = 0\)&lt;/span&gt;. We need a step/search direction &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt; and step size &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;. Taylor approximation has polynomial arguments that is a step and parameters of derivatives at the start point. The first degree of Taylor approximation has one adding term from start point &lt;span class=&#34;math inline&#34;&gt;\((x_0, F(x_0))\)&lt;/span&gt;. The adding term &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x) \Delta x\)&lt;/span&gt; is consistent with a parameter (gradient &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x)\)&lt;/span&gt;) and a argument (step &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt;). The Taylor approximation does approximate &lt;span class=&#34;math inline&#34;&gt;\(F(x + \Delta x)\)&lt;/span&gt; for any search direction &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt;. We want to choose &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt; for the direction to the optimal point.&lt;/p&gt;
+&lt;p&gt;The adding term of Taylor approximation &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x) \Delta x\)&lt;/span&gt; have level curve (level line). The smallest Euclidean norm of the level curve is achieved at the tangent. The gradient descent set the step to the gradient &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x)\)&lt;/span&gt;. This makes the adding term biggest with Euclidean norm &lt;span class=&#34;math inline&#34;&gt;\(\Vert \nabla F(x) \Vert^2\)&lt;/span&gt; i.e. dual norm &lt;span class=&#34;math inline&#34;&gt;\(\Vert \nabla F(x) \Vert_*\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Newton’s method is second degree of Taylor approximation &lt;span class=&#34;math inline&#34;&gt;\(F(x_0+\Delta x) \approx F(x_0) + \nabla F(x) \Delta x + 1/2\Delta x^T H \Delta x\)&lt;/span&gt;. We want to find &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt; to minimize the second degree of Taylor approximation. In this case, the minimizing step is tangent of first adding term &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x) \Delta x\)&lt;/span&gt; and second adding term &lt;span class=&#34;math inline&#34;&gt;\(\Delta x^T H \Delta x\)&lt;/span&gt; i.e. Steepest descent in H norm &lt;span class=&#34;math inline&#34;&gt;\(\Vert \cdot \Vert _H\)&lt;/span&gt;. The newton’s method can be thought as approximation of gradient &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x)\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x_0 + \Delta x) \approx \nabla F(x_0) + H \Delta x = 0,\ \Delta x = -H^{-1} \nabla F(x_0)\)&lt;/span&gt;. This is also the derivative of second degree of Taylor approximation with respect to &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;But the Taylor approximation is local. In addition to a step, a step size is needed. A step size determines how far the step taken. Backtracking line search has two constant parameters 0 &amp;lt; &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; &amp;lt; 0.5, 0 &amp;lt; &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt; &amp;lt; 1. The approximation is below the convex function. &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; tilts the slope i.e. gradient upside and the tilted approximation meets the convex function. &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt; is the update rate of the step size until the the amount of the step is less than the point that tilted approximation meeets the convex function.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

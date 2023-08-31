@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Bayes and NGS</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jun Kang" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="custom.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Bayes and NGS
+### Jun Kang
+### 2021.04.26
+
+---
+
+
+
+
+
+
+# Contents
+- Genotyping
+- Copy number and tumor purity estimation
+
+---
+class: center
+
+# Coin toss
+
+Observed data (H, H, H, H, H, H, H, H, H, H)   
+
+Guess the probability of coming head:  
+0.5? or 1.0?
+
+---
+# Frequentist approch (What usually has been done)
+
+- Null hypothesis: probability of coming head is 0.5
+- Hypothesis testing: Probability of observed data under null hypothesis a.k.a. p-value = ( `\(\frac{1}{2}^{10}\)` )
+- Hypothesis rejection: probability of coming head is not 0.5
+
+---
+
+class: center
+
+# Coin toss prior probability
+.pull-left[
+![](https://pds.joins.com/news/component/joongboo/201811/09/1301423_2016212_1630.jpg)
+]
+  
+
+The gambling dealer!!  
+
+Guess the probability of coming head after seeing 10 continuous head:  
+0.5? or 1.0?
+
+---
+clss: center
+
+# Coin toss prior probability
+
+.pull-left[
+![](img/stanfordCoinTest.png)
+]
+
+Stanford reseach gives the probability 0.51!!  
+
+Guess the probability of coming head after seeing 10 continuous head:  
+0.5? 0.51? 0.511? 0.510001?
+
+---
+class: center
+
+# Bayes theorem 1
+
+`$$P(\theta|\textbf{D}) = P(\theta ) \frac{P(\textbf{D}|\theta)}{P(\textbf{D})}$$`
+
+---
+class: center
+
+# Bayes theorem 2
+
+`$$\text{Posterior} = (\text{Prior} * \text{Likelyhood} )/\text{Normalizing constant}$$`
+
+Posterior  
+Prior  
+Likelyhood  
+Normalizing constant
+
+---
+class: center
+
+# Likelyhood function
+
+`$$\mathcal{L}(\theta \mid x) = p_\theta (x) = P_\theta (X=x)$$`
+`$$\mathcal{L}(p_\text{H}=0.5 \mid \text{HH}) = 0.25$$`
+
+`$$\mathcal{L}(p_\text{H}=1.0 \mid \text{HH}) = 1.0$$`
+
+---
+class: center
+
+# Probability distribution function
+
+&lt;br&gt;
+&lt;br&gt;
+$$
+\sum_u \operatorname{P}(X=u) = 1
+$$
+
+$$
+P(\text{H} \mid p_\text{H}=0.5) = 0.5.
+$$
+
+$$
+P(\text{T} \mid p_\text{H}=0.5) = 0.5.
+$$
+
+---
+# Bayesian example in genotype (SOAPsnp)
+
+.center[
+![](https://genome.cshlp.org/content/19/6/1124/F1.medium.gif)
+]
+Genome Res. 2009. 19: 1124-1132
+
+---
+# Likelyhood of genotype calling
+
+- Allele type
+- Quality score
+- Coordinates on the read
+- t-th occurrence 
+
+A:0, T:3, G:0, C:0  
+phred score: 30, 30, 30  
+Likelyhood?
+
+---
+class: center
+
+# Likelyhood of genotype calling
+
+  
+$$
+\text{L(Genotype T/G)|Read(T,T,T))} = (0.5 \times (1-0.001)+0.5 \times0.001)^3 = 0.125
+$$ 
+
+$$
+\text{L(Genotype T/T)|Read(T,T,T))} = (1-0.001)^3 = 0.997
+$$
+
+$$
+\text{L(Genotype G/G)|Read(T,T,T))} = 0.001^3 = 10^{-9}
+$$
+
+$$
+\text{.}
+$$
+$$
+\text{.}
+$$
+$$
+\text{.}
+$$
+
+---
+class: center
+# Prior probability 
+
+![:scale 50%](https://genome.cshlp.org/content/19/6/1124/T1.large.jpg)
+
+Reference allele: G  
+Homozygous SNP rate: 0.0005  
+Heterozygous SNP rate: 0.001  
+Ratio of transitions versus transversions: 4  
+
+---
+class: center
+# Posterior probability
+
+$$
+\text{Posterior (Genotype T/G|Read(T,T,T))}
+$$
+
+`$$= Prior (1.67*10^{-4}) \times Likelyhood (0.5*(1-0.001) + 0.5*0.001)^3$$`
+$$
+=2.09*10^{-5}
+$$
+
+---
+class: center
+# Posterior probability
+
+$$
+\text{Posterior (Genotype T/T|Read(T,T,T))}
+$$
+
+`$$= Prior (8.33*10^{-5}) \times Likelyhood((1-0.001)^3)$$`
+
+$$
+=8.31*10^{-5}
+$$
+---
+class: center
+# Posterior probability
+
+$$
+\text{Posterior (Genotype G/G|Read(T,T,T))}
+$$
+
+`$$= Prior (0.9985) \times Likelyhood(10^{-9})$$`
+
+$$
+=10^{-9}
+$$
+
+---
+# Thermor Fisher 
+
+- Flow evaluator
+  - Base calling re-evaluation after read mapping
+- Allele specific copy number estimation
+  - LOH
+  - HRD
+
+---
+# Normalizing constant
+
+$$
+P(D)=\sum_i P(D|H_i)P(H_i) \
+$$
+
+- Markov chain Monte Carlo (MCMC)
+- WinBUGS
+- JAGS
+- STAN
+
+---
+class: center
+# MCMC
+
+![](https://miro.medium.com/max/500/1*6wlFqiGF35WPRWjlgwDneg.gif)
+
+---
+# Three steps of Bayesian data analysis  
+
+
+
+- Full probability model
+- Conditioning on obsereved data (posterior distribution)
+- Evaluating the fit of the model and the implications of the resulting posterior distribution
+
+Bayesian Data Analysis 3rd, Andrew Gelman et. al.
+
+---
+# Copy number and tumor purity estimation
+
+A computational approach to distinguish somatic vs. germline origin of genomic alterations from deep sequencing of cancer specimens without a matched normal &lt;https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005965&gt;.
+
+---
+class: center
+
+# Somatic-germline-zygosity method overview
+  
+![:scale 50%](https://journals.plos.org/ploscompbiol/article/figure/image?size=large&amp;id=10.1371/journal.pcbi.1005965.g001)
+
+---
+class: center
+# Allele frequency table
+  
+![](https://www.jkangpathology.com/slide/Allele/AF.png)
+
+---
+class: center
+
+# Full probability model
+
+
+
+.pull-left[
+$$
+`\begin{aligned}
+ r_i &amp; \sim N\left(log_2 \frac{pC_i+2(1-p)}{p \psi+2(1-p)}, \sigma_{ri} \right)
+\end{aligned}`
+$$
+
+$$
+`\begin{aligned}
+ f_i &amp; \sim N\left(\frac{pM_i+(1-p)}{pC_i+2(1-p)}, \sigma_{fi} \right)
+\end{aligned}`
+$$
+
+`$$\psi = \frac{\sum_{i}(l_iC_i) }{\sum_{i}(l_i)}$$`
+]
+
+.pull-right[
+`\(r_i\)`: Median-normalized log-ratio coverage of all exons within `\(S_i\)`  
+`\(f_i\)`: MAF of SNPs within segment `\(S_i\)`  
+`\(p\)`: Tumor purity &lt;br&gt;
+`\(S_i\)`: Genomic segment &lt;br&gt;
+`\(l_i\)`: Length of `\(S_i\)` &lt;br&gt;
+`\(C_i\)`: Copy number of `\(S_i\)` &lt;br&gt;
+`\(M_i\)`: Copy number of minor alleles in `\(S_i\)`, `\(0 \leq M_i \leq S_i\)` &lt;br&gt;
+`\(\psi\)`: Tumor ploidy of the sample
+]
+
+
+
+
+---
+# Toy data (read distribution)
+
+&lt;img src="https://i.imgur.com/w96qole.png" width="100%" /&gt;
+
+---
+# Toy data (MAF distribution)
+
+&lt;img src="https://i.imgur.com/an1hDe1.png" width="100%" /&gt;
+
+---
+#Stan code (continued)
+
+
+```r
+'data {
+  int N;
+  real r[N];
+  real f[N];
+  int&lt;lower=1&gt; Nsub;
+  int&lt;lower=1&gt; s[N];
+}'
+```
+
+---
+# Stan code (continued)
+
+
+```r
+'parameters {
+  real&lt;lower=0.1, upper=10&gt; cn[Nsub];
+  real m_logit[Nsub];
+  vector&lt;lower=0&gt;[Nsub] sigma_cn;
+  vector&lt;lower=0&gt;[Nsub] sigma_m;
+  real&lt;lower=0, upper=1.0&gt; P;
+}
+transformed parameters {
+  real m[Nsub];
+  real psi;
+  for (i in 1:Nsub){
+    m[i] = (0+(cn[i]/2-0)*inv_logit(m_logit[i])); //log jacobian determinant stan constraints transformation
+  }
+  psi = mean(cn);
+}'
+```
+
+---
+#Stan code (last)
+
+
+```r
+'model {
+  for(i in 1:N){
+  r[i] ~ normal(log2((P*cn[s[i]] + 2*(1-P))/(P*psi + 2*(1-P))),sigma_cn[s[i]]);
+  f[i] ~ normal((P*m[s[i]]+1-P)/(P*cn[s[i]]+2*(1-P)), sigma_m[s[i]]);
+  }
+}'
+```
+
+---
+# Fit
+
+
+```r
+set.seed(456278)
+fit &lt;- stan(model_code = code, data = mydata, iter = 2000, 
+            chains = 2, control = list(adapt_delta = 0.9,
+                                       max_treedepth = 5))
+```
+
+```
+## 
+## SAMPLING FOR MODEL 'bbf094d9726824acefd8182f735092aa' NOW (CHAIN 1).
+## Chain 1: 
+## Chain 1: Gradient evaluation took 0.001 seconds
+## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 10 seconds.
+## Chain 1: Adjust your expectations accordingly!
+## Chain 1: 
+## Chain 1: 
+## Chain 1: Iteration:    1 / 2000 [  0%]  (Warmup)
+## Chain 1: Iteration:  200 / 2000 [ 10%]  (Warmup)
+## Chain 1: Iteration:  400 / 2000 [ 20%]  (Warmup)
+## Chain 1: Iteration:  600 / 2000 [ 30%]  (Warmup)
+## Chain 1: Iteration:  800 / 2000 [ 40%]  (Warmup)
+## Chain 1: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+## Chain 1: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+## Chain 1: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+## Chain 1: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+## Chain 1: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+## Chain 1: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+## Chain 1: Iteration: 2000 / 2000 [100%]  (Sampling)
+## Chain 1: 
+## Chain 1:  Elapsed Time: 8.069 seconds (Warm-up)
+## Chain 1:                8.291 seconds (Sampling)
+## Chain 1:                16.36 seconds (Total)
+## Chain 1: 
+## 
+## SAMPLING FOR MODEL 'bbf094d9726824acefd8182f735092aa' NOW (CHAIN 2).
+## Chain 2: 
+## Chain 2: Gradient evaluation took 0.001 seconds
+## Chain 2: 1000 transitions using 10 leapfrog steps per transition would take 10 seconds.
+## Chain 2: Adjust your expectations accordingly!
+## Chain 2: 
+## Chain 2: 
+## Chain 2: Iteration:    1 / 2000 [  0%]  (Warmup)
+## Chain 2: Iteration:  200 / 2000 [ 10%]  (Warmup)
+## Chain 2: Iteration:  400 / 2000 [ 20%]  (Warmup)
+## Chain 2: Iteration:  600 / 2000 [ 30%]  (Warmup)
+## Chain 2: Iteration:  800 / 2000 [ 40%]  (Warmup)
+## Chain 2: Iteration: 1000 / 2000 [ 50%]  (Warmup)
+## Chain 2: Iteration: 1001 / 2000 [ 50%]  (Sampling)
+## Chain 2: Iteration: 1200 / 2000 [ 60%]  (Sampling)
+## Chain 2: Iteration: 1400 / 2000 [ 70%]  (Sampling)
+## Chain 2: Iteration: 1600 / 2000 [ 80%]  (Sampling)
+## Chain 2: Iteration: 1800 / 2000 [ 90%]  (Sampling)
+## Chain 2: Iteration: 2000 / 2000 [100%]  (Sampling)
+## Chain 2: 
+## Chain 2:  Elapsed Time: 8.513 seconds (Warm-up)
+## Chain 2:                8.273 seconds (Sampling)
+## Chain 2:                16.786 seconds (Total)
+## Chain 2:
+```
+
+---
+# Posterior of copy number
+
+
+```r
+plot(fit, pars = 'cn')
+```
+
+&lt;img src="https://i.imgur.com/FGB9PEp.png" width="100%" /&gt;
+
+---
+# Posterior of minor allele copy number
+
+
+```r
+plot(fit, pars = 'm')
+```
+
+&lt;img src="https://i.imgur.com/sviOnnF.png" width="100%" /&gt;
+
+---
+# Posterior of tumor purity
+
+
+```r
+post &lt;- extract(fit)
+
+hist(post$P,
+     main = paste("Tumor purity"),
+     ylab = '')
+```
+
+&lt;img src="https://i.imgur.com/SY8rKZU.png" width="100%" /&gt;
+
+---
+# Trace Plot
+
+
+```r
+traceplot(fit, pars = 'cn')
+```
+
+&lt;img src="https://i.imgur.com/UfPkLdc.png" width="100%" /&gt;
+
+---
+# Diagnostic Plot
+
+
+```r
+stan_diag(fit)
+```
+
+&lt;img src="https://i.imgur.com/X88NVyn.png" width="100%" /&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

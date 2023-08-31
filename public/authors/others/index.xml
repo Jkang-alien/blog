@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{others} | Jun&#39;s Blog</title>
+    <link>/authors/others/</link>
+      <atom:link href="/authors/others/index.xml" rel="self" type="application/rss+xml" />
+    <description>{others}</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>{others}</title>
+      <link>/authors/others/</link>
+    </image>
+    
+    <item>
+      <title>Prognostic Impact of Nomogram Based on Whole Tumour Size, Tumour Disappearance Ratio on CT and SUVmax on PET in Lung Adenocarcinoma</title>
+      <link>/publication/2016-01-01_song2016prognostic/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/2016-01-01_song2016prognostic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Effect of Helicobacter Pylori Eradication on Metachronous Recurrence after Endoscopic Resection of Gastric Neoplasm</title>
+      <link>/publication/2014-01-01_bae2014effect/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/2014-01-01_bae2014effect/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Positive Expression of Insulin-like Growth Factor-1 Receptor Is Associated with a Positive Hormone Receptor Status and a Favorable Prognosis in Breast Cancer</title>
+      <link>/publication/2014-01-01_shin2014positive/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/2014-01-01_shin2014positive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Response to Abdallah et Al.</title>
+      <link>/publication/2014-01-01_bae2014response/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/2014-01-01_bae2014response/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>When It Comes to Gastric Cancer, There Is More to It Than H-Pylori! Response</title>
+      <link>/publication/2014-01-01_bae2014comes/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/2014-01-01_bae2014comes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HER2 Status by Standardized Immunohistochemistry and Silver-Enhanced in Situ Hybridization in Korean Breast Cancer</title>
+      <link>/publication/2012-01-01_bae2012her2/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/2012-01-01_bae2012her2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>High Prevalence of Hepatitis B and Hepatitis C Virus Infections in Korean Patients with Hematopoietic Malignancies</title>
+      <link>/publication/2011-01-01_kang2011high/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/2011-01-01_kang2011high/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

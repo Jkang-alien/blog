@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sukjoong Oh | Jun&#39;s Blog</title>
+    <link>/authors/sukjoong-oh/</link>
+      <atom:link href="/authors/sukjoong-oh/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sukjoong Oh</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Sukjoong Oh</title>
+      <link>/authors/sukjoong-oh/</link>
+    </image>
+    
+    <item>
+      <title>Prognostic Value of Immunohistochemical Biomarkers at Different Cut-off Values in Patients with Diffuse Large B-Cell Lymphoma Treated with CHOP Chemotherapy</title>
+      <link>/publication/2011-01-01_oh2011prognostic/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/2011-01-01_oh2011prognostic/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

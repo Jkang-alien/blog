@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>In Ah Park | Jun&#39;s Blog</title>
+    <link>/authors/in-ah-park/</link>
+      <atom:link href="/authors/in-ah-park/index.xml" rel="self" type="application/rss+xml" />
+    <description>In Ah Park</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>In Ah Park</title>
+      <link>/authors/in-ah-park/</link>
+    </image>
+    
+    <item>
+      <title>Prognostic and Predictive Value of NanoString-Based Immune-Related Gene Signatures in a Neoadjuvant Setting of Triple-Negative Breast Cancer: Relationship to Tumor-Infiltrating Lymphocytes</title>
+      <link>/publication/2015-01-01_lee2015prognostic/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/2015-01-01_lee2015prognostic/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

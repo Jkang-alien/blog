@@ -1,0 +1,196 @@
+---
+title: Anotation Redundancy
+author: Jun Kang
+date: 2019-11-01
+output:
+  beamer_presentation: 
+    colortheme: dove
+    fig_crop: no
+    fonttheme: professionalfonts
+    highlight: espresso
+    keep_tex: yes
+    latex_engine: xelatex
+    theme: CambridgeUS
+  ioslides_presentation:
+    highlight: espresso
+  slidy_presentation:
+    highlight: espresso
+bibliography: ACMG.bib
+csl: the-american-journal-of-human-genetics.csl
+header-includes:
+- \usepackage{graphicx}
+- \usepackage{tikzpagenodes}
+- \usetikzlibrary{calc}
+- \usepackage{caption}
+- \usepackage{booktabs}
+- \usepackage{longtable}
+- \usepackage{array}
+- \usepackage{multirow}
+- \usepackage{multicol}
+- \usepackage{wrapfig}
+- \usepackage{float}
+- \usepackage{colortbl}
+- \usepackage{pdflscape}
+- \usepackage{tabu}
+- \usepackage{threeparttable}
+---
+
+# Annotation redundancy  
+
++ Exact variants (indication for targeted therapy)  
++ **Many annotations** for a **same variant**  
+
+# Case 1
+
+5.3cm, central mass in LUL, obstructing LUL bronchus Suspicious invasion of left upper pulmonary artery
+
+![](assets/img/chest_ct.png){height=400px} 
+
+--- 
+
+![](assets/img/bone_scan.png){height=400px}
+
+---
+
+#  Pathology 
+
++ Lymph node, level II, left, needle biopsy;
++ **Adenocarcinoma, solid type** **,** **metastatic**
++ PD-L1: 22C3(0%), SP142(0%)
+
+![](assets/img/biopsy.png){height=400px}
+
+---
+
+# TTF-1
+![](assets/img/immuno.png){height=400px}
+
+---
+
+#  Molecular 
+
++ **EGFR** **PNAClamp** : negative
++ **FISH** : ALK(-), ROS1(-), RET(-)
+
+---
+
+#  NGS (Ion Torrent)
+
++ ERBB2 exon20 insertion  
++ Afatinib: irreversible EGFR TKI
+
+![](assets/img/OCR.png)
+
+---
+
+# Ion Reporter, COSMIC, VEP (Variant Effect Predictor, Ensembl) [-@__what_]
+
+![](assets/img/erbb2_cmc.png)
+
+---
+
+# Redundant annotations for ERBB2 insertion mutation 
+
+![](assets/img/insertion.png){height=200px}
+
+---
+
+# Redundant annotations for ERBB2 insertion mutation 
+
+
+![](assets/img/insertion_2.png)
+
+---
+
+# Nature volume 554, pages 189–194 (08 February 2018) [-@hyman_2018_her_nature]  
+
+![](assets/img/nature25475-sf4.jpg)
+
+---
+
+# Nat Med. 2018 May;24(5):638-646 [-@robichaux_2018_mechanisms_natmed]  
+
+![](assets/img/TKI_resistance.png){height=200px}
+
+---
+
+# Case 2
+
++ F/80
++ Adenocarcinoma of lung
+
+---
+
+![](assets/img/EGFR.png)
+
+---
+
+# EGFR Exon 19 insertion
+
+![](assets/img/mycancergenome.png){height=700px}
+
+---
+
+#  Annotation Redundancy EGFR exon 19 insertion 
+
+
+```{r tbl13, echo = FALSE}
+tbl13 <- tibble::tribble(
+~` `, ~`CDS mutation`, ~`AA mutation`,
+"Ion Reporter (IR)","c.2234_2235ins","p.V738_K739insKIPVAI",
+"Cosmic","c.2232_2233ins","p.K745_E746insIPVAIK",
+"Pathology  Report","c.2217_2234dup","p.K745_E750dupIPVAIK",
+"Clinical Cancer Reserch","c.2217_2234dup","p.K745_E746insIPVAIK"
+)
+
+kableExtra::kable_styling(knitr::kable(tbl13), full_width = TRUE, font_size = 8)
+```
+
+---
+
+# Allignment  
+
+![](assets/img/sequence.png)  
+
+---
+
+# Clin Cancer Res; 18(6); 1790–7 [-@he_2012_egfr_clinicalcancerresearch]  
+
+![](assets/img/exon19.png)  
+
+---
+
+# Mutation Nomenclature [-@dunnen_2000_mutation_hummutat] 
+
+> No recommendations have been made to describe
+duplications. Although they can be seen as a specific
+type of insertion, and could be described as such,
+they often originate through other mutational mechanisms.
+We therefore prefer to provide a distinctive
+designation of this type of sequence change
+
+---
+# Variant Normalization  
+
+https://genome.sph.umich.edu/wiki/Variant_Normalization
+
+---
+# HGVS vs VEP
+
+* HGVS Recommendations for the Description of Sequence  
+* Variants: 2016 Update  
+
+The Ensembl Variant Effect Predictor
+---
+# HGVS Recommendations for the Description of Sequence Variants: 2016 Update    
+
+http://varnomen.hgvs.org/recommendations/
+---
+
+# Conclusions  
+
+* Redundant annotation  
+  + ERBB2 exon20, EGFR exon19 insertion/duplication  
+  
+# References {.allowframebreaks} 
+  

@@ -1,0 +1,31 @@
+---
+title: Strong convexity and implications
+author: JK
+date: '2020-02-08'
+slug: strong-convexity-and-implications
+categories:
+  - Math
+tags:
+  - Convex optimization
+  - Machine learning
+  - Math
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-02-08T09:10:58+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+This is a summary of the Boyd convex optimization book. The strong convexity assumption can be useful to explain the iterative minimization algorithms like gradient descent, steepest descent, and Newton's method.  
+
+The smallest and largest eigen value of Hessian $m \preceq \nabla^{2}f(x) \preceq M$ with norm of gradient $\| \nabla f(x)\|_2$ determine the boundary of optimal value $p^{*}$. The condition number of **cond**($C_\alpha$) $\leq {M \over m}$, where $C_\alpha$ is $\alpha$-sublevel. The condition number is ratio of largest eigen value to its smallest eigen value. 
+
+When the Hessian is replaced with a constant $m$ and $M$, the constants make the equality of Taylor's theorem to inequality that makes lower and upper boundaries of $p^*$. The difference between the approximation and $p^*$ is determined by $ \nabla f(x)$ and $m$ or $M$. If $\nabla f(x)$ is small and the gap is so. If Hessian ($m$ or $M$) is large, the gap is small.  
+
+Because the second degree of Tayler's expansion is quadratic, at near the optimal point, the $\alpha$-sublevel is ellipsoid. The condition number **cond**($C_{\alpha}$), geometrically, represents anisometry or eccentricity 
+

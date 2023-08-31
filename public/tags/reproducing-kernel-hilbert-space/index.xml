@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reproducing kernel hilbert space | Jun&#39;s Blog</title>
+    <link>/tags/reproducing-kernel-hilbert-space/</link>
+      <atom:link href="/tags/reproducing-kernel-hilbert-space/index.xml" rel="self" type="application/rss+xml" />
+    <description>Reproducing kernel hilbert space</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 20 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Reproducing kernel hilbert space</title>
+      <link>/tags/reproducing-kernel-hilbert-space/</link>
+    </image>
+    
+    <item>
+      <title>Reproducing Kernel Hilbert Space</title>
+      <link>/post/reproducing-kernel-hilbert-space/</link>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/post/reproducing-kernel-hilbert-space/</guid>
+      <description>
+
+
+&lt;p&gt;Finally arrive at reproducing kernel Hilbert space.
+&lt;a href=&#34;https://nzer0.github.io/reproducing-kernel-hilbert-space.html&#34; class=&#34;uri&#34;&gt;https://nzer0.github.io/reproducing-kernel-hilbert-space.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The above post introduces RKHS in Korean. It was helpful. I had struggled to understand some concepts in RKHS. What does mean Hilbert space in terms of feature expansion? (&lt;span class=&#34;math inline&#34;&gt;\(f:\mathcal{X} \to \mathbb{R}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(f \in \mathcal{H}_K\)&lt;/span&gt;) It was confusing the difference between &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; means the function in Hilbert space and &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; is &lt;strong&gt;evaluation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I thought that the function can be represented by the inner product of the basis of feature space &lt;span class=&#34;math inline&#34;&gt;\(K(\cdot,x)\)&lt;/span&gt; and coefficients &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt;, and the coefficients are vectors in feature space.&lt;/p&gt;
+&lt;p&gt;The reproducing property of Kernel is &lt;span class=&#34;math inline&#34;&gt;\(\langle f, K(\cdot,x)\rangle_{\mathcal{H}} = f(x)\)&lt;/span&gt;. Thus &lt;span class=&#34;math inline&#34;&gt;\(K(\cdot,x) \in \mathcal{H}_K\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(K(\cdot,x)\)&lt;/span&gt; is a &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; specified function in Hilbert space &lt;span class=&#34;math inline&#34;&gt;\(\mathcal{H}_K\)&lt;/span&gt; and an evaluator of the specific point x. This means the inner product of &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(K_{x}\)&lt;/span&gt; is the value of &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; at point &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;In a nutshell, kenel method is a &lt;strong&gt;different way of evaluating f in a specific point &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;&lt;/strong&gt;. &lt;strong&gt;Evaluating a function&lt;/strong&gt; &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; at a point &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; is inner product of &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(L_x\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(L_x \in \mathcal{H}_K\)&lt;/span&gt; is a &lt;strong&gt;evaluation functional&lt;/strong&gt; which is a kernal function and linear &lt;span class=&#34;math inline&#34;&gt;\(K(\cdot, x)\)&lt;/span&gt;. Reproducing property of &lt;span class=&#34;math inline&#34;&gt;\(\mathcal{H}_K\)&lt;/span&gt; can be achieved if all &lt;span class=&#34;math inline&#34;&gt;\(f \in \mathcal{H}\)&lt;/span&gt; has bounded evaluation functionals (&lt;span class=&#34;math inline&#34;&gt;\(L_x\)&lt;/span&gt;).&lt;/p&gt;
+&lt;p&gt;In least square methods, the parameters (&lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta}\)&lt;/span&gt;) are determined by inner product of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta} = (X^{T}X)^{-1}X^{T}y\)&lt;/span&gt;. In Kernel method, &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta}\)&lt;/span&gt; is determined &lt;span class=&#34;math inline&#34;&gt;\(\langle K(\cdot,x_i), K(\cdot,x_j), \rangle_{\mathcal{H}_K} = K(x_i, x_j)\)&lt;/span&gt;. Each &lt;span class=&#34;math inline&#34;&gt;\(K(\cdot, x)\)&lt;/span&gt; is a parameter and a argument (variable like &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;).&lt;/p&gt;
+&lt;p&gt;Some subclass of the loss function and penalty functions can be generated by a positive definite kernel. A Kernel accepts two arguments and a Kernel function does one argument and the other argument becomes parameter. Reproducing Kernel Hilbert space is a function space with Kernal function space with the evaluation functional as a Kernel. The feature expansion into the RKHS can use the Kernel matrix instead of the inner product of each variable &lt;span class=&#34;math inline&#34;&gt;\(X^TX\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The important concepts are Hilbert space, inner product, Kernel function, evaluation functional, feature expansion, Fourier transformation, Reisz representation theorem (dual space &lt;span class=&#34;math inline&#34;&gt;\(\mathcal{H}_{K}^*\)&lt;/span&gt; of Hibert space &lt;span class=&#34;math inline&#34;&gt;\(\mathcal{H}_K\)&lt;/span&gt;)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Analysis</title>
+      <link>/post/math/analysis/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/analysis/</guid>
+      <description>
+
+
+&lt;p&gt;The reproducing kernel hilbert space (RKHS) was my motivation to study analysis. The hilbert space is a orthogonal normed vector space. I still do not know about the meaning of “reproducing kernal”. The RKHS appeared in the book titled &lt;em&gt;An Introduction to Statisitical Learning&lt;/em&gt; written by Hastie.&lt;/p&gt;
+&lt;p&gt;I began to google the meaning of the spaces such as the Hilbert, Banarch. I decided to read the &lt;em&gt;Understaing Analysis&lt;/em&gt; written by Abbott. The &lt;em&gt;Understaing Analysis&lt;/em&gt; was give me many intuitions of analysis and encouraged me to study further. The next book was Rudin’s &lt;em&gt;Functional Analysis&lt;/em&gt;. I realized I need to go upstream to complex Analysis, topology and measure.&lt;/p&gt;
+&lt;p&gt;During the journey of exploring the analysis, I skipped proving of theorems or solving exercises. But space between lines is coming. I’m realizing that I prove the spaces. &lt;span class=&#34;math display&#34;&gt;\[\Sigma^{k}_{j=1} {\lvert}a_j-a^{n}_j{\rvert}\le\epsilon \]&lt;/span&gt; This holds for all finite &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;, we even have &lt;span class=&#34;math inline&#34;&gt;\({\lVert} a-a_n {\rVert} _{1}\le\epsilon\)&lt;/span&gt;. This is on the way of the proof of &lt;span class=&#34;math inline&#34;&gt;\(l^{1}(\mathbb{N})\)&lt;/span&gt; of all complex-valued sequences &lt;span class=&#34;math inline&#34;&gt;\(a=(a_j)^{\infty}_{j=1}\)&lt;/span&gt; for which the norm &lt;span class=&#34;math inline&#34;&gt;\({\lVert} a {\rVert} _{1}\ := \Sigma^{\infty}_{j=1} {\lvert}a_j{\rvert}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;I could not just accept that the finite sum of each small differences &lt;span class=&#34;math inline&#34;&gt;\(\le \epsilon\)&lt;/span&gt; of &lt;span class=&#34;math inline&#34;&gt;\({\lvert}a_j - a^n_j{\rvert}\)&lt;/span&gt; holds to the infinite sum. The infinite sum is a infinte series. If the infinite series is less than or equel to zero, then it converses to the zero. If the finite sum is &lt;span class=&#34;math inline&#34;&gt;\(\le \epsilon\)&lt;/span&gt; holds every &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{N}\)&lt;/span&gt;, by definition the infinite sum is also &lt;span class=&#34;math inline&#34;&gt;\(\le \epsilon\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;It takes long time to grasp the subtle mathmatical systems. For example, a series is a number in a scalar field, a sequence is a ordered set. However the long time makes the math become familar and finally will firmly grasp the subtle concepts.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,64 @@
+---
+title: Laplace transformation
+author: JK
+date: '2020-11-14'
+slug: laplace-transformation
+categories:
+  - Math
+  - Machine learning
+tags:
+  - Deep Learning
+  - Gilbert Strang
+  - Machine learning
+  - Math
+  - Linear algebra
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-11-14T09:23:47+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+The Fourier series represents a periodic function as a descrete vectors. The Fourier transformation turns a time domain non-periodic function into a frequency domain continuous function. The Fourier series and transformation change a single time base $t$ into infinite frequency basis $e^{inx}$ or $e^{iwx}$. The function on infinite basis domain can be represented by a vector or a function of basis domain $v_{n}$ or $f(w)$. This is a coefficients of Fourier series or Fourier transformation. 
+
+The basis of Fourier transformation is pure frequency $e^{iw}$. The domain of Laplace transfomation is frequency $w$ and damping component $\sigma$ which compose damping ocilation function, $e^{s} = e^{(iw+\sigma)}$. The function which represent Laplace transformation $F(s)$ is a function of complex domain $s$. The Fourier transformation is a special Laplace transformation of no damping term $s = 0 \cdot \sigma +iw$.  
+
+The **periodic** function can be represented by a series not a continuous function. A condition makes a function can be represented by pure frequency domain i.e. Fourier transformation, not a complex domain i.e. Laplace transformation. The condition is
+
+> from wikipedia https://en.wikipedia.org/wiki/Laplace_transform#Fourier_transform
+
+<math>\begin{align}
+  \widehat{f}(\omega) &= \mathcal{F}\{f(t)\} \\[4pt]
+                  &= \mathcal{L}\{f(t)\}|_{s = i\omega}  =  F(s)|_{s = i \omega} \\[4pt]
+                  &= \int_{-\infty}^\infty e^{-i \omega t} f(t)\,dt~.
+\end{align}</math>  
+
+Laplace transformation makes a differential equation to an algebra equation.  
+
+$$Laplace transformation$$
+
+$$
+\mathcal{L}[f(t)] = F(s) = \int_{t=0}^{\infty} f(t)e^{-st}dt
+$$
+
+$$Transfer function$$
+
+$$
+H(s) = Y(s)/X(s)
+$$
+$$
+Y(s) = H(s)X(s)  
+$$
+
+where $Y(s)$ and $X(s)$ are Laplace transformed $y(t)$, i.e. solution and $f(t)$ i.e. input.  
+
+The $Y(s)$ is a function of $s$ which represents coefficients of damped frquency basis $e^{\sigma + iw}$. We are not looking for the solution $s$ for the $Y(s)$. We are looking for the inverse Laplace transformation of $Y(s)$. The inverse Laplace transformation turns a function $Y(s)$ with infinite damped frquency basis $e^{\sigma + iw}$ to the solution of linear differential equation $y(t)$ that is a function with a single domain basis $t$.
+
+The Laplace transformation has poles that blow up at a point. The poles were determined by constants of differential equation and the input term. 
+
+

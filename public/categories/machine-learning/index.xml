@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine learning | Jun&#39;s Blog</title>
+    <link>/categories/machine-learning/</link>
+      <atom:link href="/categories/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Machine learning</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 14 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Machine learning</title>
+      <link>/categories/machine-learning/</link>
+    </image>
+    
+    <item>
+      <title>Laplace transformation</title>
+      <link>/post/laplace-transformation/</link>
+      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/post/laplace-transformation/</guid>
+      <description>
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;The Fourier series represents a periodic function as a descrete vectors. The Fourier transformation turns a time domain non-periodic function into a frequency domain continuous function. The Fourier series and transformation change a single time base &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; into infinite frequency basis &lt;span class=&#34;math inline&#34;&gt;\(e^{inx}\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(e^{iwx}\)&lt;/span&gt;. The function on infinite basis domain can be represented by a vector or a function of basis domain &lt;span class=&#34;math inline&#34;&gt;\(v_{n}\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(f(w)\)&lt;/span&gt;. This is a coefficients of Fourier series or Fourier transformation.&lt;/p&gt;
+&lt;p&gt;The basis of Fourier transformation is pure frequency &lt;span class=&#34;math inline&#34;&gt;\(e^{iw}\)&lt;/span&gt;. The domain of Laplace transfomation is frequency &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt; and damping component &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt; which compose damping ocilation function, &lt;span class=&#34;math inline&#34;&gt;\(e^{s} = e^{(iw+\sigma)}\)&lt;/span&gt;. The function which represent Laplace transformation &lt;span class=&#34;math inline&#34;&gt;\(F(s)\)&lt;/span&gt; is a function of complex domain &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt;. The Fourier transformation is a special Laplace transformation of no damping term &lt;span class=&#34;math inline&#34;&gt;\(s = 0 \cdot \sigma +iw\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;periodic&lt;/strong&gt; function can be represented by a series not a continuous function. A condition makes a function can be represented by pure frequency domain i.e. Fourier transformation, not a complex domain i.e. Laplace transformation. The condition is&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;from wikipedia &lt;a href=&#34;https://en.wikipedia.org/wiki/Laplace_transform#Fourier_transform&#34; class=&#34;uri&#34;&gt;https://en.wikipedia.org/wiki/Laplace_transform#Fourier_transform&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;math&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+  \widehat{f}(\omega) &amp;amp;= \mathcal{F}\{f(t)\} \\[4pt]
+                  &amp;amp;= \mathcal{L}\{f(t)\}|_{s = i\omega}  =  F(s)|_{s = i \omega} \\[4pt]
+                  &amp;amp;= \int_{-\infty}^\infty e^{-i \omega t} f(t)\,dt~.
+\end{align}\]&lt;/span&gt;&lt;/math&gt;&lt;/p&gt;
+&lt;p&gt;Laplace transformation makes a differential equation to an algebra equation.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Laplace transformation\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\mathcal{L}[f(t)] = F(s) = \int_{t=0}^{\infty} f(t)e^{-st}dt
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Transfer function\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+H(s) = Y(s)/X(s)
+\]&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[
+Y(s) = H(s)X(s)  
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(X(s)\)&lt;/span&gt; are Laplace transformed &lt;span class=&#34;math inline&#34;&gt;\(y(t)\)&lt;/span&gt;, i.e. solution and &lt;span class=&#34;math inline&#34;&gt;\(f(t)\)&lt;/span&gt; i.e. input.&lt;/p&gt;
+&lt;p&gt;The &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt; is a function of &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; which represents coefficients of damped frquency basis &lt;span class=&#34;math inline&#34;&gt;\(e^{\sigma + iw}\)&lt;/span&gt;. We are not looking for the solution &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; for the &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt;. We are looking for the inverse Laplace transformation of &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt;. The inverse Laplace transformation turns a function &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt; with infinite damped frquency basis &lt;span class=&#34;math inline&#34;&gt;\(e^{\sigma + iw}\)&lt;/span&gt; to the solution of linear differential equation &lt;span class=&#34;math inline&#34;&gt;\(y(t)\)&lt;/span&gt; that is a function with a single domain basis &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The Laplace transformation has poles that blow up at a point. The poles were determined by constants of differential equation and the input term.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Convolution and Fourier transformation</title>
+      <link>/post/convolution-and-fourier-transformation/</link>
+      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/post/convolution-and-fourier-transformation/</guid>
+      <description>
+
+
+&lt;p&gt;Convolution is a vector operation on two vectors.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ Convolution \\ c * d = d*c \\ (c*d)_n = \Sigma_{i+j} c_i d_j = \Sigma_i c_i d_{n-i}.\]&lt;/span&gt;
+This is multiplying polynomials. The parameters of multiplied polynomial become convolution of two polynomials. Fourier transformation expands x base to infinite exponential basis &lt;span class=&#34;math inline&#34;&gt;\(e^{iwk}\)&lt;/span&gt;. The &lt;strong&gt;multiplication on x (time) space&lt;/strong&gt; becomes &lt;strong&gt;convolutionn on k (frequency) space&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If time space is periodic, its Fourier transformation is discrete i.e. Fourier series. If time space is non-periodic, its Fourier transformation is continuous Fourier transformation.&lt;/p&gt;
+&lt;p&gt;The Fourier transformation is dual. The relations of &lt;strong&gt;multiplication and convolution&lt;/strong&gt; and &lt;strong&gt;periodic and discrete&lt;/strong&gt; are dual in time space and frequency space.&lt;/p&gt;
+&lt;p&gt;Fourier transformation is changing basis. The changing basis can be done by inner product (for vector space) or integration (function space) with new basis in which are we want move to space. This is why Fourier transformation coefficients calculated by integration with function multiplying basis &lt;span class=&#34;math inline&#34;&gt;\(e^{iwk}\)&lt;/span&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lagrange dual problem and conjugate function</title>
+      <link>/post/lagrange-dual-problem-and-conjugate-function/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/lagrange-dual-problem-and-conjugate-function/</guid>
+      <description>
+
+
+&lt;p&gt;The optimization problem have two components that are objective function &lt;span class=&#34;math inline&#34;&gt;\(f_0 : \mathbb R ^n \rightarrow \mathbb R\)&lt;/span&gt; and the constraints. The objective function and constraints keep in check each other and make balance at saddle point i.e. optimal point. The dual (Lagrange) problem of the optimal problem also solve the optimization problem by making low boundary.&lt;/p&gt;
+&lt;p&gt;The dual problem can be explained as a conjugate function &lt;span class=&#34;math inline&#34;&gt;\(f^* = \sup (x^Ty-f(x))\)&lt;/span&gt;. The Lagrangian is &lt;span class=&#34;math inline&#34;&gt;\(L(x, \lambda, \nu) = f_0(x) + \lambda f_1, + \nu f_2\)&lt;/span&gt; where &lt;span class=&#34;math inline&#34;&gt;\(f_0\)&lt;/span&gt; is the objective function, &lt;span class=&#34;math inline&#34;&gt;\(f_1\)&lt;/span&gt; is inequality constraints and &lt;span class=&#34;math inline&#34;&gt;\(f_2\)&lt;/span&gt; is equality constraints. The Lagrangian function is &lt;span class=&#34;math inline&#34;&gt;\(g(\lambda,nu) = \inf_{x}L(x, \lambda, \nu) = \inf_{x}(f_0(x) + \lambda f_{1} + \nu f_{2})\)&lt;/span&gt;. The second and third term of the Lagrangian function is can be rewriten as an inner product form &lt;span class=&#34;math inline&#34;&gt;\(x^{T}h(\lambda) + x^{T}i(\nu)\)&lt;/span&gt; and constant term with &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\nu\)&lt;/span&gt;. Then the inner product term &lt;span class=&#34;math inline&#34;&gt;\(x^{T}h(\lambda) + x^{T}i(\nu)\)&lt;/span&gt; and objective term becomes a conjugate function.&lt;/p&gt;
+&lt;p&gt;The conjugate function &lt;span class=&#34;math inline&#34;&gt;\(f^*(x)\)&lt;/span&gt; is similar in terms of balance and saddle point.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Approximation</title>
+      <link>/post/approximation/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/approximation/</guid>
+      <description>
+
+
+&lt;p&gt;The purpose of approximation is finding optimal point &lt;span class=&#34;math inline&#34;&gt;\(x^*\)&lt;/span&gt; i.e. &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x^*) = 0\)&lt;/span&gt;. We need a step/search direction &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt; and step size &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;. Taylor approximation has polynomial arguments that is a step and parameters of derivatives at the start point. The first degree of Taylor approximation has one adding term from start point &lt;span class=&#34;math inline&#34;&gt;\((x_0, F(x_0))\)&lt;/span&gt;. The adding term &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x) \Delta x\)&lt;/span&gt; is consistent with a parameter (gradient &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x)\)&lt;/span&gt;) and a argument (step &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt;). The Taylor approximation does approximate &lt;span class=&#34;math inline&#34;&gt;\(F(x + \Delta x)\)&lt;/span&gt; for any search direction &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt;. We want to choose &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt; for the direction to the optimal point.&lt;/p&gt;
+&lt;p&gt;The adding term of Taylor approximation &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x) \Delta x\)&lt;/span&gt; have level curve (level line). The smallest Euclidean norm of the level curve is achieved at the tangent. The gradient descent set the step to the gradient &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x)\)&lt;/span&gt;. This makes the adding term biggest with Euclidean norm &lt;span class=&#34;math inline&#34;&gt;\(\Vert \nabla F(x) \Vert^2\)&lt;/span&gt; i.e. dual norm &lt;span class=&#34;math inline&#34;&gt;\(\Vert \nabla F(x) \Vert_*\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Newton’s method is second degree of Taylor approximation &lt;span class=&#34;math inline&#34;&gt;\(F(x_0+\Delta x) \approx F(x_0) + \nabla F(x) \Delta x + 1/2\Delta x^T H \Delta x\)&lt;/span&gt;. We want to find &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt; to minimize the second degree of Taylor approximation. In this case, the minimizing step is tangent of first adding term &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x) \Delta x\)&lt;/span&gt; and second adding term &lt;span class=&#34;math inline&#34;&gt;\(\Delta x^T H \Delta x\)&lt;/span&gt; i.e. Steepest descent in H norm &lt;span class=&#34;math inline&#34;&gt;\(\Vert \cdot \Vert _H\)&lt;/span&gt;. The newton’s method can be thought as approximation of gradient &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x)\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x_0 + \Delta x) \approx \nabla F(x_0) + H \Delta x = 0,\ \Delta x = -H^{-1} \nabla F(x_0)\)&lt;/span&gt;. This is also the derivative of second degree of Taylor approximation with respect to &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;But the Taylor approximation is local. In addition to a step, a step size is needed. A step size determines how far the step taken. Backtracking line search has two constant parameters 0 &amp;lt; &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; &amp;lt; 0.5, 0 &amp;lt; &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt; &amp;lt; 1. The approximation is below the convex function. &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; tilts the slope i.e. gradient upside and the tilted approximation meets the convex function. &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt; is the update rate of the step size until the the amount of the step is less than the point that tilted approximation meeets the convex function.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Singular vector decomposition</title>
+      <link>/post/singular-vector-decomposition/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/post/singular-vector-decomposition/</guid>
+      <description>
+
+
+&lt;p&gt;Bases are the central idea of linear algebra. An invertable square matrix has eigenvectors. A symetric matrix has orthogonal eigenvectors with non-negative eigenvalues, i.e. positive semidefinite. A matrix has two types of singular vectors, left and right signular vectors, &lt;span class=&#34;math inline&#34;&gt;\(A=U\Sigma V^{T}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;When we think the matrix &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is data points of rows &lt;span class=&#34;math inline&#34;&gt;\(A=U\Sigma V^{T}\)&lt;/span&gt; like data table, The right singular vectors &lt;span class=&#34;math inline&#34;&gt;\(V\)&lt;/span&gt; build bases, the sigular values &lt;span class=&#34;math inline&#34;&gt;\(\Sigma\)&lt;/span&gt; are magnitude of the bases and the left singular values &lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt; becomes new data points on new bases. The new data points &lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt; are orthonormal.&lt;/p&gt;
+&lt;p&gt;When we think the matrix &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is a system of linear transformation &lt;span class=&#34;math inline&#34;&gt;\(Ax=b,\ U\Sigma V^{T}x=b\)&lt;/span&gt;, a vector &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; is repositioned on right singular vector coordinates &lt;span class=&#34;math inline&#34;&gt;\(V\)&lt;/span&gt; then the coordinates are multiplied by &lt;span class=&#34;math inline&#34;&gt;\(\Sigma\)&lt;/span&gt; and finally linear transformed by left singular vector &lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;A matrix is sum of rank one singular matrix. &lt;span class=&#34;math display&#34;&gt;\[A = \sigma_{1} u_{1}u_{1}^{T} + \cdots +  \sigma_{k} u_{k}u_{k}^{T}\]&lt;/span&gt; The Eckart-Young theorem finds closest low-rank matrix &lt;span class=&#34;math inline&#34;&gt;\(A_k\)&lt;/span&gt;.&lt;br /&gt;
+In symetric matrix, the bases (right singular vectors) and it’s value on the bases (left singular vectors) are same. Reproducing kernel hilbert space has same values on it’s base functions.&lt;/p&gt;
+&lt;p&gt;Rayleigh quotient $R(x) = {{x^{T}Sx} } $ has maximum &lt;span class=&#34;math inline&#34;&gt;\(\lambda_{1}\)&lt;/span&gt; at the eigen vector &lt;span class=&#34;math inline&#34;&gt;\(q_{1}\)&lt;/span&gt; and saddle points at &lt;span class=&#34;math inline&#34;&gt;\(x=q_{k},\ \frac{\partial R}{\partial x_{i}} = 0\)&lt;/span&gt;. The second eigenvector can be found by Lagrangian optimization problum maximizing &lt;span class=&#34;math inline&#34;&gt;\(\ R(x)\)&lt;/span&gt; s.t. &lt;span class=&#34;math inline&#34;&gt;\(q_{1} = 0\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Pseudoinversion &lt;span class=&#34;math inline&#34;&gt;\(A^{+}\)&lt;/span&gt; process does first inversing value with &lt;span class=&#34;math inline&#34;&gt;\(U^{T}\)&lt;/span&gt;, and scale with &lt;span class=&#34;math inline&#34;&gt;\(\Sigma ^{+}\)&lt;/span&gt; and followed by reversing axis &lt;span class=&#34;math inline&#34;&gt;\(V^{T}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;When &lt;span class=&#34;math inline&#34;&gt;\(Ax=b\)&lt;/span&gt; has many solutions, minimizing &lt;span class=&#34;math inline&#34;&gt;\(\lVert A \rVert\)&lt;/span&gt; s.t. &lt;span class=&#34;math inline&#34;&gt;\(Ax=b\)&lt;/span&gt; can be best solution. The &lt;span class=&#34;math inline&#34;&gt;\(L_{1}\)&lt;/span&gt; norm has sparse solution.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Low rank matrix and compressed sensing</title>
+      <link>/post/low-rank-matrix-and-compressed-sensing/</link>
+      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/post/low-rank-matrix-and-compressed-sensing/</guid>
+      <description>
+
+
+&lt;p&gt;This is a note for part III of Linear Algebra and learning from data, Gilbert Strang&lt;/p&gt;
+&lt;p&gt;The main themes are sparsity (Low rank), Information theory (compression), and of course linear transformation.&lt;/p&gt;
+&lt;p&gt;A full rank matrix is inefficient. Finding low lank matrix which is close with original matrix can save computation.&lt;/p&gt;
+&lt;p&gt;The rank one matrix &lt;span class=&#34;math inline&#34;&gt;\(uv^{T}\)&lt;/span&gt; is a unit of a matrix. The full rank matrix can be decomposed by sum of rank one matrices i.e. singular vector decomposition.&lt;/p&gt;
+&lt;p&gt;Sherman–Morrison formula suggests update rule for adding rank one matrix to the original matrix.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[(A + \mathbf{u} \mathbf{v}^{T})^{-1} = A^{-1} - \frac{A^{-1} \mathbf{u} \mathbf{v}^{T}A^{-1}}{1 + \mathbf{v}^{T} A^{-1} \mathbf{u}}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The matrix norm is associated with singular value, &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The point is the unit of matrix is the rank one matrix, specially outer product of singular vectors &lt;span class=&#34;math inline&#34;&gt;\(uv^{T}\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(uv^{T}\)&lt;/span&gt; is a coordinate of the matrix space and singular value &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt; is a point on the coordinate.&lt;/p&gt;
+&lt;p&gt;System, Inner product, &lt;span class=&#34;math inline&#34;&gt;\(A^{T}A\)&lt;/span&gt;, Steady state equilibrium, dual&lt;/p&gt;
+&lt;p&gt;A system has a law. The observations follow the law. The state set by the system’s law. The state has two variables.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ Ax=b \;(1)\\ Y= \beta X  \; (2)\\ \hat{x} = \frac {A^{T}b}{(A^{T}A) \; (3)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Equation (1) is observations, (2) is a system, (3) is fit the observations to the system. &lt;span class=&#34;math inline&#34;&gt;\(A^{T}A\)&lt;/span&gt; is a steady state equilibrium. &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(A^{T}\)&lt;/span&gt; are dual. &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt; are dual.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Steady state equilibrium</title>
+      <link>/post/steady-state-equilibrium/</link>
+      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/post/steady-state-equilibrium/</guid>
+      <description>
+
+
+&lt;p&gt;The meaning of &lt;span class=&#34;math inline&#34;&gt;\(A^{T}\)&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Steady state equilibrium&lt;/li&gt;
+&lt;li&gt;Graph Laplacian matrix &lt;span class=&#34;math inline&#34;&gt;\(A^{T}CA\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Differential equation and Laplacian matrix&lt;/li&gt;
+&lt;li&gt;Derivative is a graph without branch.&lt;/li&gt;
+&lt;li&gt;Row space and column space are dual.&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(A^{T}\)&lt;/span&gt; are dual.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ref) Linear algebra and learning from data, Part IV, Gilbert Strang&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Duality</title>
+      <link>/post/duality/</link>
+      <pubDate>Wed, 19 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>/post/duality/</guid>
+      <description>
+
+
+&lt;p&gt;This is summary of Boyd convex optimization. Steepest descent method is a convex optimization algorithm. The normalized steepest descent direction &lt;span class=&#34;math inline&#34;&gt;\(x_{nsd}\)&lt;/span&gt; is a vector of unit ball of a norm that extends in the direction &lt;span class=&#34;math inline&#34;&gt;\(-\nabla f(x)\)&lt;/span&gt;. The inner product of &lt;span class=&#34;math inline&#34;&gt;\(x_{nsd}\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(-\nabla f(x)\)&lt;/span&gt; is maximized. The first order Taylor approximation of &lt;span class=&#34;math inline&#34;&gt;\(f(x+v) = f(x) + \nabla f(x)^{T} v\)&lt;/span&gt; is most efficient when &lt;span class=&#34;math inline&#34;&gt;\(v = x_{nsd}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;span class=&#34;math inline&#34;&gt;\(x_{nsd}\)&lt;/span&gt; is unnormalized into &lt;span class=&#34;math inline&#34;&gt;\(x_{sd}\)&lt;/span&gt;. The normalization is ralated with unit ball of norm. When &lt;span class=&#34;math inline&#34;&gt;\(x_{nsd}\)&lt;/span&gt; is scaled with dual norm of &lt;span class=&#34;math inline&#34;&gt;\(-\nabla f(x)\)&lt;/span&gt;, the second term of Taylor approximation &lt;span class=&#34;math inline&#34;&gt;\(\nabla f(x)^{T} x_{sd}\)&lt;/span&gt; becomes convex (squre of &lt;strong&gt;dual norm&lt;/strong&gt; of gradient of &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt;). The unnormalized &lt;span class=&#34;math inline&#34;&gt;\(x_{sd}\)&lt;/span&gt; the amount of movement of approximation because the inner product of gradient of &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; and unnormalized steepest descent direction is squre of &lt;strong&gt;dual norm&lt;/strong&gt; of gradient.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;dual norm&lt;/strong&gt; of gradient &lt;span class=&#34;math inline&#34;&gt;\(\lVert \nabla f(x) \rVert\)&lt;/span&gt; is main subject of this post. The simplest dual is a complement of a set. The &lt;span class=&#34;math inline&#34;&gt;\((C^c)^c\)&lt;/span&gt; is &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt;. If &lt;span class=&#34;math inline&#34;&gt;\(C\)&lt;/span&gt; is small, &lt;span class=&#34;math inline&#34;&gt;\(C^C\)&lt;/span&gt; is large and vice versa. The dual cone is related to inner product and non-negativity. Let &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; be a cone, The set &lt;span class=&#34;math inline&#34;&gt;\(K^{*} = \{y|x^{T}y \geq 0\)&lt;/span&gt; for all &lt;span class=&#34;math inline&#34;&gt;\(x \in K\}\)&lt;/span&gt;. If &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; is large, &lt;span class=&#34;math inline&#34;&gt;\(K^{*}\)&lt;/span&gt; is small and vice versa.&lt;/p&gt;
+&lt;p&gt;The dual norm &lt;span class=&#34;math inline&#34;&gt;\(\left\lVert x \right\rVert _{*}\)&lt;/span&gt; is &lt;span class=&#34;math inline&#34;&gt;\(\sup \{\, x^{T}y \mid \lVert y \rVert \leq 1 \,\}\)&lt;/span&gt;. If &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; direction is long axis of ellypsoid norm, the norm of &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; is small. But the dual norm is large because &lt;span class=&#34;math inline&#34;&gt;\(\lVert y \rVert _{2}\)&lt;/span&gt; large and vice versa.&lt;/p&gt;
+&lt;p&gt;The main points are the first order Taylor approximation is most efficient with ellypsoid norm when the linear approximation is &lt;span class=&#34;math inline&#34;&gt;\(\sup\{\nabla f(x) ^{T} x_{sd}\}\)&lt;/span&gt; which is &lt;strong&gt;dual norm&lt;/strong&gt; of gradient of &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tidymodel</title>
+      <link>/post/tidymodel/</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/tidymodel/</guid>
+      <description>
+
+
+&lt;div id=&#34;machine-learning-and-tidymodel&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Machine Learning and Tidymodel&lt;/h3&gt;
+&lt;div id=&#34;model-setting-parsnip&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Model setting, {Parsnip}&lt;/h4&gt;
+&lt;p&gt;Rpackage Parsnip standardizes model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specifications and lately evaluates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;feature-engineering-recipes&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Feature engineering, {Recipes}&lt;/h4&gt;
+&lt;p&gt;Recipes make preprocessing easy with &lt;code&gt;step_()&lt;/code&gt; functions. Recipes after specification calculate.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;resampling-rsample&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Resampling, {rsample}&lt;/h4&gt;
+&lt;p&gt;To choose a model and hyperparameters, we must validate the different models.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;making-hyperparameter-set-dials&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Making hyperparameter set, {dials}&lt;/h4&gt;
+&lt;p&gt;The Rpackage {dials} set hyperparameter similarily with {Parsnip}. {Dials} standadize parameter of each modeling algorithm.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;set-modeling-process-workflowr&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Set modeling process, {Workflowr}&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fit-models-with-hyperparameter-tunes&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Fit models with hyperparameter, {tunes}&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Applied Machine Learning Workshop RStudio Conference 2020</title>
+      <link>/post/applied-machine-learning-workshop-rstudio-conference-2020/</link>
+      <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/applied-machine-learning-workshop-rstudio-conference-2020/</guid>
+      <description>
+
+
+&lt;p&gt;This is a note of applied machine learning workshop RStudion conference 2020&lt;/p&gt;
+&lt;p&gt;Why is it hard to predict (domain knowledge).&lt;/p&gt;
+&lt;p&gt;purrr::map allows inline code.&lt;/p&gt;
+&lt;p&gt;purrr::map and tidyr::nest covered because they are used in resample or tune.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-01-26-applied-machine-learning-workshop-rstudio-conference-2020_files/figure-html/explore-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Skew data might be looking outlier.&lt;/p&gt;
+&lt;p&gt;People look at data in many different ways like outliers, missingness, correlation, and suspicion of an important variable.&lt;/p&gt;
+&lt;p&gt;The ggplot is good to explore variables adding geoms changing plot.&lt;/p&gt;
+&lt;p&gt;Machine learning is creative because you can do many different ways such as which variable should be included.&lt;/p&gt;
+&lt;p&gt;Model workflow: imputation -&amp;gt; transformation -&amp;gt; filter -&amp;gt; model&lt;/p&gt;
+&lt;p&gt;Resampling avoids something like the garden of forking paths or p-hacking by honest feedback.&lt;/p&gt;
+&lt;p&gt;The tuning parameter can be estimated &lt;strong&gt;analytically&lt;/strong&gt; or iteratively.&lt;/p&gt;
+&lt;p&gt;Single validation set ??&lt;/p&gt;
+&lt;p&gt;Resampling process questions&lt;/p&gt;
+&lt;p&gt;Splitting data is confusing.&lt;/p&gt;
+&lt;p&gt;The test set split preserves &lt;strong&gt;distribution&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Interval and sampling are behind the scene of resampling.&lt;/p&gt;
+&lt;p&gt;fomular x ~ . -something to remove&lt;/p&gt;
+&lt;p&gt;Variable role: limited (can not be applied to hierarchical in Baysian??)&lt;/p&gt;
+&lt;p&gt;Formula and XY interface is not fit in machine learning. The recipes package is a solution.&lt;/p&gt;
+&lt;p&gt;The broom::glance (one-row summary of metrics, don’t trust this too much) tidy (coefficients) augment (by data points)&lt;/p&gt;
+&lt;p&gt;The parsnip (unified interface) is a solution to a different interface.&lt;/p&gt;
+&lt;p&gt;How to set specific settings using parsnip?&lt;/p&gt;
+&lt;p&gt;Many other packages supporting parsnip. Look at the tidymodels packages.&lt;/p&gt;
+&lt;p&gt;What is the difference between caret and parsnip?&lt;/p&gt;
+&lt;p&gt;Caret~base R, parsnip~tidyverse&lt;/p&gt;
+&lt;p&gt;The parsnip generalizes the interfaces and is easy to extend.&lt;/p&gt;
+&lt;p&gt;A dummy variable is confusing in the interaction of terms and how to interpret coefficiency.&lt;/p&gt;
+&lt;p&gt;The level with 0,0 allocation becomes a base variable in factor variable. A continuous variable can be categorized with recipe::step_discritize().&lt;/p&gt;
+&lt;p&gt;A zero variance predictor includes no record or single value variable.&lt;/p&gt;
+&lt;p&gt;Feature engineering problem
+* Dummy variable&lt;br /&gt;
+* Zero variance
+* Standardize&lt;/p&gt;
+&lt;p&gt;Customizing Step function&lt;/p&gt;
+&lt;p&gt;The first level is a reference. There are ways to change the reference level. (Ordering factor level issues)&lt;/p&gt;
+&lt;p&gt;People respond positively to the recipes.&lt;/p&gt;
+&lt;p&gt;recipe -&amp;gt; prep -&amp;gt; juice/bake; define -&amp;gt; calculate -&amp;gt; processing (training or test set)&lt;/p&gt;
+&lt;p&gt;The post-processed data set goes to fit() to establish a model&lt;/p&gt;
+&lt;p&gt;Versioning model caching?&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mod_rec &amp;lt;- recipe(
+  Sale_Price ~ Longitude + Latitude + Neighborhood, 
+  data = ames_train
+) %&amp;gt;%
+  step_log(Sale_Price, base = 10) %&amp;gt;%
+  
+  # Lump factor levels that occur in 
+  # &amp;lt;= 5% of data as &amp;quot;other&amp;quot;
+  step_other(Neighborhood, threshold = 0.05) %&amp;gt;%
+  
+  # Create dummy variables for _any_ factor variables
+  step_dummy(all_nominal()) %&amp;gt;%
+  step_nzv(
+    starts_with (&amp;quot;Neighborhood_&amp;quot;))
+
+preped_data &amp;lt;- prep(mod_rec) 
+
+preped_data %&amp;gt;%
+  juice() %&amp;gt;%
+  slice(1:5)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 11
+##   Longitude Latitude Sale_Price Neighborhood_Co… Neighborhood_Ol…
+##       &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;      &amp;lt;dbl&amp;gt;            &amp;lt;dbl&amp;gt;            &amp;lt;dbl&amp;gt;
+## 1     -93.6     42.1       5.24                0                0
+## 2     -93.6     42.1       5.39                0                0
+## 3     -93.6     42.1       5.28                0                0
+## 4     -93.6     42.1       5.29                0                0
+## 5     -93.6     42.1       5.33                0                0
+## # … with 6 more variables: Neighborhood_Edwards &amp;lt;dbl&amp;gt;,
+## #   Neighborhood_Somerset &amp;lt;dbl&amp;gt;, Neighborhood_Northridge_Heights &amp;lt;dbl&amp;gt;,
+## #   Neighborhood_Gilbert &amp;lt;dbl&amp;gt;, Neighborhood_Sawyer &amp;lt;dbl&amp;gt;,
+## #   Neighborhood_other &amp;lt;dbl&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;step_dummy -&amp;gt; step_other/step_nzv()&lt;/p&gt;
+&lt;p&gt;Step_dummy creates many dummy variables thus you should include the new dummy variables into the interaction terms or others or nzv. with starts_with() function.&lt;/p&gt;
+&lt;p&gt;Resolving skewness: &lt;strong&gt;Box-cox&lt;/strong&gt;, &lt;strong&gt;inverse&lt;/strong&gt;, of course, log or square root&lt;/p&gt;
+&lt;p&gt;parsnip model object includes original model results in &lt;code&gt;$fit&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The workflow replaces prep() -&amp;gt; juice() -&amp;gt; fit() with single call fit() and bake() -&amp;gt; predict() with predict ().&lt;/p&gt;
+&lt;p&gt;The workflow needs &lt;code&gt;add&lt;/code&gt;ing model specification (parsnip) and preprocessing (recipes).&lt;/p&gt;
+&lt;p&gt;Resampling is the best option to estimate the performance of a model.&lt;/p&gt;
+&lt;p&gt;Resampling splits analysis set and assessment set on &lt;strong&gt;training set&lt;/strong&gt;. The final result is performance metrics.&lt;/p&gt;
+&lt;p&gt;Selecting the resampling method relates to bias-variance trade-off. (Repeated CV)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Model_selection#Criteria&#34; class=&#34;uri&#34;&gt;https://en.wikipedia.org/wiki/Model_selection#Criteria&lt;/a&gt; information criteria??&lt;/p&gt;
+&lt;p&gt;Resampling does stratified sampling.&lt;/p&gt;
+&lt;p&gt;The tuning metric tends to be smooth. The irregular metric result means high variance.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://appliedpredictivemodeling.com/blog/2014/11/27/vpuig01pqbklmi72b8lcl3ij5hj2qm&#34; class=&#34;uri&#34;&gt;http://appliedpredictivemodeling.com/blog/2014/11/27/vpuig01pqbklmi72b8lcl3ij5hj2qm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Resampling spends memory. The vfold_cv() has a copy of the original data.&lt;/p&gt;
+&lt;p&gt;Processing first or resampling first??&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resample first&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If preprocessing is outside of resampling, You don’t know how the test set will be predicted.&lt;/p&gt;
+&lt;p&gt;Is feature engineering stable or unstable?&lt;/p&gt;
+&lt;p&gt;Can tune package select a good preprocessing process? Yes, it can.&lt;/p&gt;
+&lt;p&gt;The upsampling issues and rare important data points&lt;/p&gt;
+&lt;p&gt;The tuning hyperparameter (underfitting or overfitting).&lt;/p&gt;
+&lt;p&gt;Hyperparameter types grid (regular, irregular), iterative&lt;/p&gt;
+&lt;p&gt;Making function name: use underbar &lt;code&gt;_&lt;/code&gt; “Grid_regular”&lt;/p&gt;
+&lt;p&gt;The pros and cons of regular and non-regular grid&lt;/p&gt;
+&lt;p&gt;The non-regular grid efficient except some model can do trick.&lt;/p&gt;
+&lt;p&gt;The parsnip standardizes and it changes default parameter ranges.&lt;/p&gt;
+&lt;p&gt;The parameter tibble can not be subsetted. It will be issued in GitHub.&lt;/p&gt;
+&lt;p&gt;People take care of the default value of parameters.&lt;/p&gt;
+&lt;p&gt;Tidymodel delays evaluation. Set first and run later.&lt;/p&gt;
+&lt;p&gt;The Splines fitting is wagged at the edge of the range. When trying to predict value out of range, warnings occur. Resampling can cause an error at the edge point of the assessment set.&lt;/p&gt;
+&lt;p&gt;There is a note column in the result object.&lt;/p&gt;
+&lt;p&gt;The sensitivity of parameters can be evaluated with ggplot. The scale should be adjusted when an outlier is present.&lt;/p&gt;
+&lt;p&gt;Best fit can be choose&lt;/p&gt;
+&lt;p&gt;Documentation&lt;/p&gt;
+&lt;p&gt;Show best and select best (parameter)&lt;/p&gt;
+&lt;p&gt;Tune tunes selected parameters. If you don’t tune parameters, the parameters go default value.&lt;/p&gt;
+&lt;p&gt;The log ridership is wired because of a bimodal distribution. It will show skewed residual or something.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;!!stations&lt;/code&gt; indicates the environment of the station object, the station object is defined at recipe object, not the global environment.&lt;/p&gt;
+&lt;p&gt;Regularization wins wrapping feature selection methods in terms of efficacy.&lt;/p&gt;
+&lt;p&gt;If two predictors are highly correlated, the signs can change and the variance of coefficients inflates.&lt;/p&gt;
+&lt;p&gt;L1 penalty does feature selection, the L2 penalty resolves correlation. Does mixture feature selection? Yes, the L1 component and lambda determine how many variables are kicked out, except pure ridge regression (ie. pure L2 penalty).&lt;/p&gt;
+&lt;p&gt;Normalize or standardize on dummy variables?&lt;/p&gt;
+&lt;p&gt;Lambda is a more important parameter than alpha in glm.&lt;/p&gt;
+&lt;p&gt;Parallelism issue. GPU is good at linear algebra. Parallelism consumes memory because they copy data. Tuning is advantaged with parallelism because it uses for a loop. Unix is better than Windows in terms of parallelism.&lt;/p&gt;
+&lt;p&gt;Inner join makes prediction tibble subsetting best.&lt;/p&gt;
+&lt;p&gt;Repeated CV residual can be estimated with average predicting values.&lt;/p&gt;
+&lt;p&gt;GCV is used to pruning the point.&lt;/p&gt;
+&lt;p&gt;Is MARS greedy? Semi-greedy.&lt;/p&gt;
+&lt;p&gt;MARS is struggling with colinearity. Use step_pca.&lt;/p&gt;
+&lt;p&gt;Bayesian process, Gaussian process, Kernel function selection&lt;/p&gt;
+&lt;p&gt;MARS hyperparameter space is high dimensional, thus the Gaussian process is better than the grid method in terms of efficiency. Grid methods for the Chicago data MARS model need more than 4000 points of the grid, although the grid search can use a parallel process.&lt;/p&gt;
+&lt;p&gt;The Bayesian parameter searching process can be updated and pause.&lt;/p&gt;
+&lt;p&gt;Classification Hard prediction vs soft prediction (probability)&lt;/p&gt;
+&lt;p&gt;Accuracy can be estimated with hard prediction and ROC can be produced on soft prediction.&lt;/p&gt;
+&lt;p&gt;Feature hashing is difficult to understand.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;recipe can be tune.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;C5.0 is boost_tree.&lt;/p&gt;
+&lt;p&gt;Gitter discussion
+&lt;a href=&#34;https://gitter.im/conf2020-applied-ml/community/archives/2020/01/28&#34; class=&#34;uri&#34;&gt;https://gitter.im/conf2020-applied-ml/community/archives/2020/01/28&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Predictive Modeling</title>
+      <link>/talk/predictive-modeling/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/predictive-modeling/</guid>
+      <description>
+
+
+
+</description>
+    </item>
+    
+  </channel>
+</rss>

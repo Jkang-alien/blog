@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jong-Mu Sun | Jun&#39;s Blog</title>
+    <link>/authors/jong-mu-sun/</link>
+      <atom:link href="/authors/jong-mu-sun/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jong-Mu Sun</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Jong-Mu Sun</title>
+      <link>/authors/jong-mu-sun/</link>
+    </image>
+    
+    <item>
+      <title>Deciphering Clinicoradiologic Phenotype for Thymidylate Synthase Expression Status in Patients with Advanced Lung Adenocarcinoma Using a Radiomics Approach</title>
+      <link>/publication/2018-01-01_lee2018deciphering/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/2018-01-01_lee2018deciphering/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

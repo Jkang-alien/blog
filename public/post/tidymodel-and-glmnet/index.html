@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.4.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Jun Kang">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="When the penalized generalize linear model (Lasso or Ridge) is processed in the tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of the final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.
+Modeling library(glmnet) library(themis) set.seed(930093) cv_splits &lt;- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T) mod &lt;- logistic_reg(penalty = tune(), mixture = tune()) %&gt;% set_engine(&quot;glmnet&quot;) rec &lt;- recipe(PIK3CA_T ~ .">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/tidymodel-and-glmnet/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.e8b81181bd18f58d8990b40dc8a5e4b8.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-153860901-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/tidymodel-and-glmnet/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Jun&#39;s Blog">
+  <meta property="og:url" content="/post/tidymodel-and-glmnet/">
+  <meta property="og:title" content="Tidymodel and glmnet | Jun&#39;s Blog">
+  <meta property="og:description" content="When the penalized generalize linear model (Lasso or Ridge) is processed in the tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of the final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.
+Modeling library(glmnet) library(themis) set.seed(930093) cv_splits &lt;- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T) mod &lt;- logistic_reg(penalty = tune(), mixture = tune()) %&gt;% set_engine(&quot;glmnet&quot;) rec &lt;- recipe(PIK3CA_T ~ ."><meta property="og:image" content="/img/icon-192.png">
+  <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-03-18T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-03-18T18:42:03&#43;09:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Tidymodel and glmnet | Jun&#39;s Blog</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Jun&#39;s Blog</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks and Lectures</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">Tidymodel and glmnet</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2020-03-18 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2020-03-18 18:42:03 &#43;0900 &#43;0900" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    <time>Mar 18, 2020</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    3 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/tidymodel-and-glmnet/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/r/">R</a>, <a href="/categories/stastics/">Stastics</a>, <a href="/categories/tidymodel/">Tidymodel</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/tidymodel-and-glmnet/&amp;text=Tidymodel%20and%20glmnet" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/tidymodel-and-glmnet/&amp;t=Tidymodel%20and%20glmnet" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Tidymodel%20and%20glmnet&amp;body=/post/tidymodel-and-glmnet/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/tidymodel-and-glmnet/&amp;title=Tidymodel%20and%20glmnet" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Tidymodel%20and%20glmnet%20/post/tidymodel-and-glmnet/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/tidymodel-and-glmnet/&amp;title=Tidymodel%20and%20glmnet" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+
+<p>When the penalized generalize linear model (Lasso or Ridge) is processed in the tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of the final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.</p>
+<div id="modeling" class="section level5">
+<h5>Modeling</h5>
+<pre class="r"><code>library(glmnet)
+library(themis)
+
+set.seed(930093)
+cv_splits &lt;- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T)
+mod &lt;- logistic_reg(penalty = tune(),
+                    mixture = tune()) %&gt;%
+  set_engine(&quot;glmnet&quot;)
+
+rec &lt;- recipe(PIK3CA_T ~ ., data = trainset_ahDiff) %&gt;%
+  step_BoxCox(all_numeric()) %&gt;%
+  step_dummy(HISTOLOGICAL_DIAGNOSIS) %&gt;%
+  step_center(all_numeric()) %&gt;%
+  step_scale(all_numeric()) %&gt;%
+  step_smote(PIK3CA_T)</code></pre>
+<pre class="r"><code>wfl &lt;- workflow() %&gt;%
+  add_recipe(rec) %&gt;%
+  add_model(mod)
+
+glmn_set &lt;- parameters(penalty(range = c(-5,1), trans = log10_trans()),
+                       mixture())
+
+glmn_grid &lt;- 
+  grid_regular(glmn_set, levels = c(7, 5))
+ctrl &lt;- control_grid(save_pred = TRUE, verbose = TRUE)</code></pre>
+<ul>
+<li>Grid parameter search on 10-fold cross-validation with 5 repeats<br />
+</li>
+<li>Dummy variable to control for histologic subtype</li>
+</ul>
+</div>
+<div id="select-best-parameter" class="section level5">
+<h5>Select best parameter</h5>
+<pre class="r"><code>glmn_tune &lt;- 
+  tune_grid(wfl,
+            resamples = cv_splits,
+            grid = glmn_grid,
+            metrics = metric_set(roc_auc),
+            control = ctrl)
+
+
+best_glmn &lt;- select_best(glmn_tune, metric = &quot;roc_auc&quot;)</code></pre>
+</div>
+<div id="finalizing" class="section level5">
+<h5>Finalizing</h5>
+<pre class="r"><code>wfl_final &lt;- 
+  wfl %&gt;%
+  finalize_workflow(best_glmn) %&gt;%
+  fit(data = trainset_ahDiff)</code></pre>
+<p><code>finalize_workflow()</code> finalizes the model with selected optimal hyperparameters. However, the glmnet fits any lambda, not the indicated lambda. This was discussed at <a href="https://github.com/tidymodels/parsnip/issues/195" class="uri">https://github.com/tidymodels/parsnip/issues/195</a>. The glmnet is more efficient to fit all lambda than a single lambda. Thus tidymodel ignores the indicated lambda. This made the first confusion. <strong>The finalization can be finalized by predict in tidymodel environment.</strong> Finalize with <code>predict</code>. Note the last argument <code>penalty = 1</code> of <code>stats::predict(wfl_final, type = "prob", new_data = trainset_ahDiff, penalty = 1)</code>.</p>
+<pre class="r"><code>train_predict &lt;- stats::predict(wfl_final, type = &quot;prob&quot;, new_data = trainset_ahDiff, penalty = 1)
+train_probs &lt;- 
+  predict(wfl_final, type = &quot;prob&quot;, new_data = trainset_ahDiff) %&gt;%
+  bind_cols(obs = trainset_ahDiff$PIK3CA_T) %&gt;%
+  bind_cols(predict(wfl_final, new_data = trainset_ahDiff))</code></pre>
+</div>
+<div id="performance" class="section level5">
+<h5>Performance</h5>
+<pre class="r"><code>conf_mat(train_probs, obs, .pred_class)</code></pre>
+<pre><code>##           Truth
+## Prediction Wild Mutant
+##     Wild    213     45
+##     Mutant  123    158</code></pre>
+<pre class="r"><code>autoplot(roc_curve(train_probs, obs, .pred_Mutant, event_level = &quot;second&quot;))</code></pre>
+<p><img src="/post/2020-03-18-tidymodel-and-glmnet_files/figure-html/performance-1.png" width="672" /></p>
+<pre class="r"><code>roc_auc(train_probs, obs, .pred_Mutant, event_level = &quot;second&quot;)</code></pre>
+<pre><code>## # A tibble: 1 x 3
+##   .metric .estimator .estimate
+##   &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;
+## 1 roc_auc binary         0.770</code></pre>
+<p>Because glmnet fits the whole path, there are whole coefficients in the glmnet fit object <code>wfl_final</code>. This was the second confusion. How to get the final model coefficients is below.</p>
+</div>
+<div id="coefficients" class="section level5">
+<h5>Coefficients</h5>
+<pre class="r"><code>tidy(extract_model(wfl_final)) %&gt;%
+  filter(lambda &gt; 0.98 &amp; lambda &lt; 1.01)</code></pre>
+<pre><code>## # A tibble: 17 x 5
+##    term                                           step estimate lambda dev.ratio
+##    &lt;chr&gt;                                         &lt;dbl&gt;    &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;
+##  1 (Intercept)                                      55  -0.0630   1.00     0.123
+##  2 C4A                                              55   0.0587   1.00     0.123
+##  3 C5orf13                                          55   0.0587   1.00     0.123
+##  4 CDSN                                             55   0.0706   1.00     0.123
+##  5 CFB                                              55   0.0719   1.00     0.123
+##  6 CYP21A2                                          55   0.0516   1.00     0.123
+##  7 DGKE                                             55  -0.0709   1.00     0.123
+##  8 FGD5                                             55   0.0670   1.00     0.123
+##  9 GALNT10                                          55   0.0575   1.00     0.123
+## 10 GOLM1                                            55   0.0689   1.00     0.123
+## 11 GPX8                                             55   0.0657   1.00     0.123
+## 12 KLK11                                            55   0.0145   1.00     0.123
+## 13 NTN4                                             55   0.0578   1.00     0.123
+## 14 SMYD3                                            55   0.0637   1.00     0.123
+## 15 USP36                                            55  -0.0698   1.00     0.123
+## 16 WBP2                                             55  -0.0652   1.00     0.123
+## 17 HISTOLOGICAL_DIAGNOSIS_Infiltrating.Lobular.~    55  -0.0244   1.00     0.123</code></pre>
+</div>
+
+    </div>
+
+    
+
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/r/">R</a>
+  
+  <a class="badge badge-light" href="/tags/rstudio/">RStudio</a>
+  
+  <a class="badge badge-light" href="/tags/machine-learning/">Machine learning</a>
+  
+  <a class="badge badge-light" href="/tags/demo/">Demo</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu5b1350064ce29e3ab022863bed937806_150391_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Jun Kang</a></h5>
+      <h6 class="card-subtitle">Clinical Assistant Professor of Hospital Pathology</h6>
+      <p class="card-text" itemprop="description">My research interests include pathology, oncology and statistics.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.facebook.com/jun.kang.33" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/JKang1978" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.co.kr/citations?user=xJKaa7kAAAAJ&amp;hl=ko" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/Jkang-alien" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/post/tidymodel/">Tidymodel</a></li>
+          
+          <li><a href="/post/applied-machine-learning-workshop-rstudio-conference-2020/">Applied Machine Learning Workshop RStudio Conference 2020</a></li>
+          
+          <li><a href="/post/rstudio-conference-2020/">RStudio Conference 2020</a></li>
+          
+          <li><a href="/talk/predictive-modeling/">Predictive Modeling</a></li>
+          
+          <li><a href="/post/strong-convexity-and-implications/">Strong convexity and implications</a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+<section id="comments">
+  
+    
+
+  
+</section>
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.b22d2266dab94c8508ae1f0cf6b7056c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

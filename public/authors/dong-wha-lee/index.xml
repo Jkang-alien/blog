@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dong Wha Lee | Jun&#39;s Blog</title>
+    <link>/authors/dong-wha-lee/</link>
+      <atom:link href="/authors/dong-wha-lee/index.xml" rel="self" type="application/rss+xml" />
+    <description>Dong Wha Lee</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Dong Wha Lee</title>
+      <link>/authors/dong-wha-lee/</link>
+    </image>
+    
+    <item>
+      <title>Positive Expression of Insulin-like Growth Factor-1 Receptor Is Associated with a Positive Hormone Receptor Status and a Favorable Prognosis in Breast Cancer</title>
+      <link>/publication/2014-01-01_shin2014positive/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/2014-01-01_shin2014positive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HER2 Status by Standardized Immunohistochemistry and Silver-Enhanced in Situ Hybridization in Korean Breast Cancer</title>
+      <link>/publication/2012-01-01_bae2012her2/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/2012-01-01_bae2012her2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hormone Receptor Expression in Invasive Breast Cancer among Korean Women and Comparison of 3 Antiestrogen Receptor Antibodies: A Multi-Institutional Retrospective Study Using Tissue Microarrays</title>
+      <link>/publication/2012-01-01_bae2012hormone/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/publication/2012-01-01_bae2012hormone/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

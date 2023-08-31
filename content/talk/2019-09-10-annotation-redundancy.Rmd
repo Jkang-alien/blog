@@ -1,0 +1,28 @@
+---
+title: Annotation Redundancy
+author: JK
+date: '2019-09-10'
+slug: annotation-redundancy
+categories:
+  - Cancer
+  - Genomics
+tags:
+  - Cancer
+  - Genomics
+  - NGS
+  - Pathology
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-09-10T11:47:03+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+url_slides: "slide/Annotation_redundancy/Annotation_redundancy.pdf"
+---
+
+The 71st Annual Fall Meeting of Korean Society of Pathologists
+Case presentation at molecular pathology lecture

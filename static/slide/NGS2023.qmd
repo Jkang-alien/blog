@@ -1,0 +1,87 @@
+---
+title: "NGS 2023"
+format: 
+  revealjs:
+    preview-links: auto
+    self-contained: true
+execute: 
+  echo: false
+  warning: false
+editor: visual
+---
+
+## How to distinguish?
+
+-   Germline vs Somatic
+-   True variant or False
+
+## How reliable?
+
+-   Copy number change
+-   Arm-level CN
+-   BRCA1/2 exon deletion
+-   Tumor cellurarity
+-   HRD score
+-   Fusion imbalance
+
+## How good are the annotations?
+
+-   Variant pathogenesity
+-   Variant nomenclature
+-   Tier
+
+## Error
+
+-   PCR (primer) error
+-   Base calling error
+-   Allignment error
+-   Inaccurate estimate
+-   Filter out error
+
+## Manual inspection
+
+-   Allele frequency
+-   Coverage
+-   Strand bias
+-   Allignment
+-   Visualization
+-   Knowledgebase
+
+## Algorithm
+
+-   Maximum likelyhood estimation
+-   Basian
+-   Burrows--Wheeler transform
+-   Filters (No call)
+-   Allele-specific copy number analysis
+-   Knowledgebase
+
+## OCA CNV
+
+## Gene Level CNV
+
+-   Copy number estimates are made using a proprietary VCIB (Variability Control Informatics Baseline) algorithm
+    -   Coverage based estimation
+    -   Normalized constant coverage for each gene
+
+## Adjustment with tumor cellularity
+
+$$f \times x + (1 - f) \times 2 = C $$
+
+$$x = (C - (1 - f) \times 2) / f$$
+
+-   f: tumor cellularity
+-   C: observed CN
+
+## Adjustment example (raw CN 3)
+
+```{r}
+curve( (3 - (1-x) * 2) / x, xlim = c(0.1, 1.0),
+       xlab="Tumor cellularity", ylab="Adjusted Copy number")
+```
+
+## Allele frequency table
+
+![](https://www.jkangpathology.com/slide/Allele/AF.png)
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sung Hun Kim | Jun&#39;s Blog</title>
+    <link>/authors/sung-hun-kim/</link>
+      <atom:link href="/authors/sung-hun-kim/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sung Hun Kim</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Sung Hun Kim</title>
+      <link>/authors/sung-hun-kim/</link>
+    </image>
+    
+    <item>
+      <title>Analysis of the Molecular Subtypes of Preoperative Core Needle Biopsy and Surgical Specimens in Invasive Breast Cancer</title>
+      <link>/publication/2019-01-01_jeonganalysismolecularsubtypes2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-01-01_jeonganalysismolecularsubtypes2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Notch1 in Tumor Microvascular Endothelial Cells and Tumoral miR-34a as Prognostic Markers in Locally Advanced Triple-Negative Breast Cancer</title>
+      <link>/publication/2019-01-01_kimnotch1tumormicrovascular2019/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/publication/2019-01-01_kimnotch1tumormicrovascular2019/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

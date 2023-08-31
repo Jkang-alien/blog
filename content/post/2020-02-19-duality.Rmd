@@ -1,0 +1,32 @@
+---
+title: Duality
+author: JK
+date: '2020-02-19'
+slug: duality
+categories:
+  - Math
+  - Machine learning
+tags:
+  - Convex optimization
+  - Math
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-02-19T17:19:14+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+This is summary of Boyd convex optimization. Steepest descent method is a convex optimization algorithm. The normalized steepest descent direction $x_{nsd}$ is a vector of unit ball of a norm that extends in the direction $-\nabla f(x)$. The inner product of $x_{nsd}$ and $-\nabla f(x)$ is maximized. The first order Taylor approximation of $f(x+v) = f(x) + \nabla f(x)^{T} v$ is most efficient when $v = x_{nsd}$. 
+
+The $x_{nsd}$ is unnormalized into $x_{sd}$. The normalization is ralated with unit ball of norm. When $x_{nsd}$ is scaled with dual norm of $-\nabla f(x)$, the second term of Taylor approximation $\nabla f(x)^{T} x_{sd}$ becomes convex (squre of **dual norm** of gradient of $f(x)$). The unnormalized $x_{sd}$  the amount of movement of approximation because the inner product of gradient of $f(x)$ and unnormalized steepest descent direction is squre of **dual norm** of gradient.  
+
+The **dual norm** of gradient $\lVert \nabla f(x) \rVert$ is main subject of this post. The simplest dual is a complement of a set. The $(C^c)^c$ is $C$. If $C$ is small, $C^C$ is large and vice versa. The dual cone is related to inner product and non-negativity. Let $K$ be a cone, The set $K^{*} = \{y|x^{T}y \geq 0$ for all $x \in K\}$. If $K$ is large, $K^{*}$ is small and vice versa.  
+
+The dual norm $\left\lVert x \right\rVert _{*}$ is $\sup \{\, x^{T}y \mid \lVert y \rVert \leq 1 \,\}$. If $x$ direction is long axis of ellypsoid norm, the norm of $x$ is small.  But the dual norm is large because $\lVert y \rVert _{2}$ large and vice versa.  
+
+The main points are the first order Taylor approximation is most efficient with ellypsoid norm when the linear approximation is $\sup\{\nabla f(x) ^{T} x_{sd}\}$ which is **dual norm** of gradient of $f(x)$.  

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hye Jeong Choi | Jun&#39;s Blog</title>
+    <link>/authors/hye-jeong-choi/</link>
+      <atom:link href="/authors/hye-jeong-choi/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hye Jeong Choi</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 01 Jan 2007 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Hye Jeong Choi</title>
+      <link>/authors/hye-jeong-choi/</link>
+    </image>
+    
+    <item>
+      <title>A Case Report of Fetal Telangiectatic Focal Nodular Hyperplasia</title>
+      <link>/publication/2007-01-01_kang2007case/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/2007-01-01_kang2007case/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Localized Polyarteritis Nodosa of the Breast with Mammary Duct Ectasia-a Case Report</title>
+      <link>/publication/2007-01-01_hong2007localized/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/2007-01-01_hong2007localized/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nasal Chondromesenchymal Hamartoma: A Case Report.</title>
+      <link>/publication/2007-01-01_kang2007nasal/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/publication/2007-01-01_kang2007nasal/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,37 @@
+---
+title: Positive Borel measures
+author: JK
+date: '2019-10-16'
+slug: positive-borel-measures
+categories:
+  - Math
+tags:
+  - Analysis
+  - Functional analysis
+  - Math
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-10-16T16:39:48+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+This is a note of real and complex analysis chapter 2. 
+
+Chapter 2 is about measures. The measure already defined in chapter 1. In chapter 2, every linear **functionals**, not combination, of a continuous function space on compact set ($C$) ($\Lambda f$) represents the integration of the function ($\int f du$) (Riesz representation theorem). Let X be a locally compact Hausdorf space, and let $\Lambda$ be a positive linear functional on $C_c(X)$. Then there exist a $\sigma-algebra$ in $X$ which contains all Borel sets in $X$, and there exists a unique positive measure $mu$ on $\mathfrak{M}$ which represents $\Lambda$ in the sense that (a) $\Lambda f = \int f d \mu$ for every $f \in C_c(X)$ and following additional properties:  
+(b) $\mu(K) < \infty$ for every compact set $K \subset X$.  
+(c) For every $E \in \mathfrak{M}$, we have  $$ \mu(E) = inf\{\mu(V): E in V, V open\} $$.  
+(d) The relation $$\mu(E)=sup\{\mu(K): K \in E, K compact\}$$  
+holds for every open set $E$, and for every $E \in M$ with $\mu(E) < \infty$.  
+(e) If $E \in \mathfrak{M}, A subset E$, and $\mu(E) = 0$, then $A \in \mathfrak{M}$.  
+
+The Riesz theorem is about linear functional $\Lambda$ is equivalently replaced with choosing measure $\mu(E)=sup\{\Lambda f: f \prec V\}$. Note $sup \{\int^1_0 f(x)dx = \Lambda f: f \prec V, V (0,1) \} = 1$. The notion of $\prec$ include $0 \le f \le 1$.  
+
+
+
+I confused $C_c(X)$ 

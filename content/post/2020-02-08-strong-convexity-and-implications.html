@@ -1,0 +1,29 @@
+---
+title: Strong convexity and implications
+author: JK
+date: '2020-02-08'
+slug: strong-convexity-and-implications
+categories:
+  - Math
+tags:
+  - Convex optimization
+  - Machine learning
+  - Math
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-02-08T09:10:58+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>This is a summary of the Boyd convex optimization book. The strong convexity assumption can be useful to explain the iterative minimization algorithms like gradient descent, steepest descent, and Newton’s method.</p>
+<p>The smallest and largest eigen value of Hessian <span class="math inline">\(m \preceq \nabla^{2}f(x) \preceq M\)</span> with norm of gradient <span class="math inline">\(\| \nabla f(x)\|_2\)</span> determine the boundary of optimal value <span class="math inline">\(p^{*}\)</span>. The condition number of <strong>cond</strong>(<span class="math inline">\(C_\alpha\)</span>) <span class="math inline">\(\leq {M \over m}\)</span>, where <span class="math inline">\(C_\alpha\)</span> is <span class="math inline">\(\alpha\)</span>-sublevel. The condition number is ratio of largest eigen value to its smallest eigen value.</p>
+<p>When the Hessian is replaced with a constant <span class="math inline">\(m\)</span> and <span class="math inline">\(M\)</span>, the constants make the equality of Taylor’s theorem to inequality that makes lower and upper boundaries of <span class="math inline">\(p^*\)</span>. The difference between the approximation and <span class="math inline">\(p^*\)</span> is determined by $ f(x)$ and <span class="math inline">\(m\)</span> or <span class="math inline">\(M\)</span>. If <span class="math inline">\(\nabla f(x)\)</span> is small and the gap is so. If Hessian (<span class="math inline">\(m\)</span> or <span class="math inline">\(M\)</span>) is large, the gap is small.</p>
+<p>Because the second degree of Tayler’s expansion is quadratic, at near the optimal point, the <span class="math inline">\(\alpha\)</span>-sublevel is ellipsoid. The condition number <strong>cond</strong>(<span class="math inline">\(C_{\alpha}\)</span>), geometrically, represents anisometry or eccentricity</p>

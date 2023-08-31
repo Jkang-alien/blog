@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bong Chul Shin | Jun&#39;s Blog</title>
+    <link>/authors/bong-chul-shin/</link>
+      <atom:link href="/authors/bong-chul-shin/index.xml" rel="self" type="application/rss+xml" />
+    <description>Bong Chul Shin</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2013 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Bong Chul Shin</title>
+      <link>/authors/bong-chul-shin/</link>
+    </image>
+    
+    <item>
+      <title>A Case of Henoch-Sch\&#34;onlein Purpura Presenting with Cholestatic Hepatitis</title>
+      <link>/publication/2013-01-01_shin2013case/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/publication/2013-01-01_shin2013case/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

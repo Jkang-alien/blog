@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pathology | Jun&#39;s Blog</title>
+    <link>/tags/pathology/</link>
+      <atom:link href="/tags/pathology/index.xml" rel="self" type="application/rss+xml" />
+    <description>Pathology</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 27 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Pathology</title>
+      <link>/tags/pathology/</link>
+    </image>
+    
+    <item>
+      <title>Allele frequency and somatic variant</title>
+      <link>/talk/allele-frequency-and-somatic-variant/</link>
+      <pubDate>Fri, 27 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/allele-frequency-and-somatic-variant/</guid>
+      <description>
+
+
+
+</description>
+    </item>
+    
+    <item>
+      <title>Annotation Redundancy</title>
+      <link>/talk/annotation-redundancy/</link>
+      <pubDate>Tue, 10 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/annotation-redundancy/</guid>
+      <description>
+
+
+&lt;p&gt;The 71st Annual Fall Meeting of Korean Society of Pathologists
+Case presentation at molecular pathology lecture&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NGS interpretation database and search</title>
+      <link>/post/r/ngs-interpretation-database-and-search/</link>
+      <pubDate>Sun, 11 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/r/ngs-interpretation-database-and-search/</guid>
+      <description>
+
+
+&lt;p&gt;An NGS pathology report contains an interpretation section to describe the clinical interpretation of the found genomic variants of the patient’s cancer sample. The interpretation is different from each variant and each cancer type or the other clinical factors. The pathologists describe the interpretation and archive those in certain methods including tables like excel.&lt;/p&gt;
+&lt;p&gt;I make a shinyapp to archive the interpretations to a database and search them.&lt;br /&gt;
+&lt;a href=&#34;https://jkang.shinyapps.io/Interpretation/&#34; class=&#34;uri&#34;&gt;https://jkang.shinyapps.io/Interpretation/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

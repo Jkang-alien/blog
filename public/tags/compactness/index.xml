@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Compactness | Jun&#39;s Blog</title>
+    <link>/tags/compactness/</link>
+      <atom:link href="/tags/compactness/index.xml" rel="self" type="application/rss+xml" />
+    <description>Compactness</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 07 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Compactness</title>
+      <link>/tags/compactness/</link>
+    </image>
+    
+    <item>
+      <title>Compactness</title>
+      <link>/post/math/compactness/</link>
+      <pubDate>Sat, 07 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/compactness/</guid>
+      <description>
+
+
+&lt;p&gt;The compact is a property of space. In a nutshell, if space is compact, we can treat the space be a &lt;strong&gt;finite&lt;/strong&gt; because space has a &lt;strong&gt;finite subcover&lt;/strong&gt;. A continuous function on a compact space is uniformly continuous.&lt;/p&gt;
+&lt;p&gt;Heine-Borel theorem describes the condition of compactness of &lt;strong&gt;finite&lt;/strong&gt; dimensional space. &lt;strong&gt;Closed and bounded&lt;/strong&gt; But the Heine-Borel theorem does not hold in an &lt;strong&gt;infinite-dimensional&lt;/strong&gt; space. We need another condition.&lt;/p&gt;
+&lt;p&gt;Previously, the compact space can be finite by taking subcover. The infinite-dimensional space can be finite by projection to finite dimension. If we could make as small as possible (i.e. &lt;span class=&#34;math inline&#34;&gt;\(\epsilon &amp;gt; 0\)&lt;/span&gt; ) the norm of &lt;span class=&#34;math inline&#34;&gt;\((X\backslash(1-P)\)&lt;/span&gt;, the compactness is achieved.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Carathéodory&#39;s extension theorem</title>
+      <link>/post/math/caratheodory-s-extension-theorem/</link>
+      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/caratheodory-s-extension-theorem/</guid>
+      <description>
+
+
+&lt;p&gt;The studying sometimes starts with learning of boring preceding concepts. The highlight comes later. In history, the highlight concepts or the important problem were centered and the supporting concepts or lemmas followed. One of the central ideas of analysis is &lt;strong&gt;extension&lt;/strong&gt;. The set of a rational number (&lt;span class=&#34;math inline&#34;&gt;\(\mathbb{Q}\)&lt;/span&gt;) extends to the real line &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{R}\)&lt;/span&gt;. The Jordan measurable sets extend to the Lebesgue measurable sets ( &lt;span class=&#34;math inline&#34;&gt;\(\sigma -algebra\)&lt;/span&gt; ).&lt;/p&gt;
+&lt;p&gt;The outer measure can measure &lt;strong&gt;all&lt;/strong&gt; subsets of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt;, whereas measure can only measure a &lt;span class=&#34;math inline&#34;&gt;\(\sigma -algebra\)&lt;/span&gt; of measure set. The Carathéodory measurability defines the condition to make a &lt;span class=&#34;math inline&#34;&gt;\(\sigma -algebra\)&lt;/span&gt;.&lt;br /&gt;
+&lt;span class=&#34;math display&#34;&gt;\[ \mu^*(A) = \mu^*(A \cap E) + \mu^*(A \cap E^c) \]&lt;/span&gt;
+The Carathéodory extension theorem defines a condition to make an outer measure to a measure. The condition is that the outer measure applies to the Carathéodory measurable set (&lt;span class=&#34;math inline&#34;&gt;\(\sigma - algebra\)&lt;/span&gt;). (Torrence Tao, An introduction to measure theory)&lt;/p&gt;
+&lt;p&gt;In the Riesz representation therorem, &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}_F\)&lt;/span&gt; extends to &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt;. The outer measure is &lt;span class=&#34;math inline&#34;&gt;\(\mu(E) = sup\ \ \{\mu(K): K \subset E,\ \ K \ \ compact \}\)&lt;/span&gt; for every &lt;span class=&#34;math inline&#34;&gt;\(E \subset X\)&lt;/span&gt; analogus to Jordan outer measure. &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}_F\)&lt;/span&gt; is collection of subset &lt;span class=&#34;math inline&#34;&gt;\(E \subset X\)&lt;/span&gt; satisfying &lt;span class=&#34;math inline&#34;&gt;\(\mu (E) &amp;lt; \infty\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\mu (V) = sup \{\Lambda f:f\prec V \}\)&lt;/span&gt; analogus to Jordan inner measure. Thus &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}_F\)&lt;/span&gt; is analous to Jordan measurable set. &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt; is collection of subset &lt;span class=&#34;math inline&#34;&gt;\(E \subset X\)&lt;/span&gt; such that &lt;span class=&#34;math inline&#34;&gt;\(E \cap K \ \in \ \ \mathfrak{M}_F\)&lt;/span&gt; for every compact &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt;. This is the Carathéodory measurability. So the &lt;span class=&#34;math inline&#34;&gt;\(\mu(E)\)&lt;/span&gt; on the &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt; becomes measure. (Rudin’s Real and complex analysis)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

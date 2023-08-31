@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>reprex | Jun&#39;s Blog</title>
+    <link>/tags/reprex/</link>
+      <atom:link href="/tags/reprex/index.xml" rel="self" type="application/rss+xml" />
+    <description>reprex</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 26 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>reprex</title>
+      <link>/tags/reprex/</link>
+    </image>
+    
+    <item>
+      <title>My first github issue</title>
+      <link>/post/my-first-github-issue/</link>
+      <pubDate>Thu, 26 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/my-first-github-issue/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/tidymodels/recipes/issues/482&#34; class=&#34;uri&#34;&gt;https://github.com/tidymodels/recipes/issues/482&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

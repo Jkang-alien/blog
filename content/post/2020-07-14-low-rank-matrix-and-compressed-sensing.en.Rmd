@@ -1,0 +1,53 @@
+---
+title: Low rank matrix and compressed sensing
+author: JK
+date: '2020-07-14'
+slug: low-rank-matrix-and-compressed-sensing
+categories:
+  - Math
+  - Machine learning
+tags:
+  - Gilbert Strang
+  - Linear algebra
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-07-14T16:43:48+09:00'
+featured: no
+draft: false
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+This is a note for part III of Linear Algebra and learning from data, Gilbert Strang
+
+The main themes are sparsity (Low rank), Information theory (compression), and of course linear transformation.  
+
+A full rank matrix is inefficient. Finding low lank matrix which is close with original matrix can save computation.  
+
+The rank one matrix $uv^{T}$ is a unit of a matrix. The full rank matrix can be decomposed by sum of rank one matrices i.e. singular vector decomposition.   
+
+Sherman–Morrison formula suggests update rule for adding rank one matrix to the original matrix.
+
+$$(A + \mathbf{u} \mathbf{v}^{T})^{-1} = A^{-1} - \frac{A^{-1} \mathbf{u} \mathbf{v}^{T}A^{-1}}{1 + \mathbf{v}^{T} A^{-1} \mathbf{u}}$$
+
+
+The matrix norm is associated with singular value, $\sigma$.   
+
+The point is the unit of matrix is the rank one matrix, specially outer product of singular vectors $uv^{T}$. $uv^{T}$ is a coordinate of the matrix space and singular value $\sigma$ is a point on the coordinate.  
+
+
+System, Inner product, $A^{T}A$, Steady state equilibrium, dual
+
+A system has a law. The observations follow the law. The state set by the system's law. The state has two variables. 
+
+$$ Ax=b \;(1)\\ Y= \beta X  \; (2)\\ \hat{x} = \frac {A^{T}b}{(A^{T}A) \; (3)$$
+
+
+Equation (1) is observations, (2) is a system, (3) is fit the observations to the system. $A^{T}A$ is a steady state equilibrium. $A$ and $A^{T}$ are dual. $x$ and $b$ are dual. 
+
+
+

@@ -1,0 +1,20 @@
+---
+title: slide example
+author: JK
+date: '2019-08-12'
+slug: slide-example
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-08-12T16:54:22+09:00'
+featured: no
+draft: true
+url_slides: "/slide/example/example.pdf"
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---

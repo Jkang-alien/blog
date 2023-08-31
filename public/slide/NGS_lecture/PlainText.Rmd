@@ -1,0 +1,100 @@
+---
+title: "NGS CMC"
+author: "Jun Kang"
+date: '2021 4 2 '
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Exercise until 4/7 (I will ask.)
+
+- Find meaning of varaints
+  - ERBB2 p.Ile655Val
+  - BARD1 R378S
+  - AURKA F31I
+  - KMT2C Y816*
+  
+### Primary purpose
+
+- Find drugable genomic alteration
+- Let's list up
+
+
+### My workflow
+
+
+### Check whether the variants found is relevant for the cancer type
+  - EGFR for lung cancer
+  - KRAS, APC for colon cancer
+  - If in doubt, look at histological diagnosis and the unusual variants
+
+
+### Look at the variants called
+  - Unusual variants (possible false positive)
+  - Germline polymorphism
+    - Allele frequency
+    - ClinVar https://www.ncbi.nlm.nih.gov/clinvar/
+    - https://gnomad.broadinstitute.org/
+  - Allignment error
+    - Frameshift variant
+    - IGV
+  - Splicing site variants
+    - VUS
+    - ClinVar
+  - Low read count fusion
+    - Less than 1000 readcount
+    - Primer-dimer
+    - Other methods IHC, FISH
+
+
+### Check IGV
+
+
+### Check Whitelist
+
+- Check QC
+  - Pass is not enough
+    - Total mapped RNA read 
+    - \> 500,000 is not enough
+    - MAPD for CNV
+- Check filter out variants by sorting
+
+
+### Check BRCA1/2 for breast, ovary, pancreas and prostate
+
+- Filter out variants by sorting
+- myBRCAvariant_filter
+- https://www.ncbi.nlm.nih.gov/clinvar/
+- Evaluate the variants https://www.sciencedirect.com/science/article/pii/S0002929716300349?via%3Dihub
+
+
+### Check annotations
+
+- Examples
+  - EGFR Exon20 deletion
+  - http://varnomen.hgvs.org/
+
+ 
+### Interpretation
+- http://10.10.56.106:3729/
+- https://www.cbioportal.org/
+- https://civicdb.org/home
+- https://www.mycancergenome.org/
+
+### Note edit
+
+ 
+### What to do
+
+- Memo on printed NGS management system
+- Fill in interpretation
+- TAT is important
+
+
+### Server address
+- IR https://10.10.55.96/ir/login.html
+- OR http://10.10.55.96:8088/#/
+- NGS management system http://160.1.17.79/#/login

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sun Young Joo | Jun&#39;s Blog</title>
+    <link>/authors/sun-young-joo/</link>
+      <atom:link href="/authors/sun-young-joo/index.xml" rel="self" type="application/rss+xml" />
+    <description>Sun Young Joo</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Sun Young Joo</title>
+      <link>/authors/sun-young-joo/</link>
+    </image>
+    
+    <item>
+      <title>Novel Mutation (c. 8725T$&gt;$ C) in Two Siblings With Late-Onset LAMA2-Related Muscular Dystrophy</title>
+      <link>/publication/2017-01-01_kim2017novel/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/2017-01-01_kim2017novel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dermatophyte Abscesses Caused by Trichophyton Rubrum in a Patient without Pre-Existing Superficial Dermatophytosis: A Case Report</title>
+      <link>/publication/2016-01-01_kim2016dermatophyte/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/2016-01-01_kim2016dermatophyte/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

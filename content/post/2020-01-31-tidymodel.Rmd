@@ -1,0 +1,49 @@
+---
+title: Tidymodel
+author: JK
+date: '2020-01-31'
+slug: tidymodel
+categories:
+  - Machine learning
+  - R
+  - Stastics
+  - Tidymodel
+tags:
+  - Machine learning
+  - R
+  - RStudio
+  - RStudio conference
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-01-31T21:31:20-08:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+### Machine Learning and Tidymodel  
+
+#### Model setting, {Parsnip}  
+Rpackage Parsnip standardizes model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specifications and lately evaluates.  
+
+#### Feature engineering, {Recipes}  
+
+Recipes make preprocessing easy with ```step_()``` functions. Recipes after specification calculate.  
+
+
+#### Resampling, {rsample}  
+
+To choose a model and hyperparameters, we must validate the different models.  
+
+#### Making hyperparameter set, {dials}
+
+The Rpackage {dials} set hyperparameter similarily with {Parsnip}. {Dials} standadize parameter of each modeling algorithm. 
+
+#### Set modeling process, {Workflowr}  
+
+#### Fit models with hyperparameter, {tunes}
+

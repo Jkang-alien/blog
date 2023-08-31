@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Limit | Jun&#39;s Blog</title>
+    <link>/tags/limit/</link>
+      <atom:link href="/tags/limit/index.xml" rel="self" type="application/rss+xml" />
+    <description>Limit</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 29 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Limit</title>
+      <link>/tags/limit/</link>
+    </image>
+    
+    <item>
+      <title>Convergence</title>
+      <link>/post/2020-12-29-extended-non-negative-real-line-and-limit/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>/post/2020-12-29-extended-non-negative-real-line-and-limit/</guid>
+      <description>
+
+
+&lt;p&gt;It is the main subject of analysis that finding conditions making sequential mathematical objects like a set, sequence, series to be convergent. Induction changes &lt;span class=&#34;math inline&#34;&gt;\(S = \mathbb{N}\)&lt;/span&gt; to &lt;span class=&#34;math inline&#34;&gt;\(s_{1} \in S\)&lt;/span&gt; and
+if $ s_{n} S$ then &lt;span class=&#34;math inline&#34;&gt;\(s_{n+1} \in S\)&lt;/span&gt;. The natural number has a property of endless addable with one. But, induction can prove only natural number &lt;span class=&#34;math inline&#34;&gt;\(\mathbb {N}\)&lt;/span&gt; not infinity &lt;span class=&#34;math inline&#34;&gt;\(\infty\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ 
+Induction \\
+s_{1} \in S \\
+if\ s_{n} \in S \ then \ s_{n+1} \in S \\
+Then\ S = \mathbb{N} \\
+\]&lt;/span&gt;
+The limit is the way &lt;span class=&#34;math inline&#34;&gt;\(\mathbb {N}\)&lt;/span&gt; goes to &lt;span class=&#34;math inline&#34;&gt;\(\infty\)&lt;/span&gt;. But the limit operation should be justified by an axiom or a proof. &lt;span class=&#34;math inline&#34;&gt;\(\bigcup^{\infty}_{n=1} U\)&lt;/span&gt; is open, where &lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt; is open in topology. In the extended non-negative real line, an infinite series &lt;span class=&#34;math inline&#34;&gt;\(\Sigma_{n=1}^{\infty} x_{n} \in [0, \infty]\)&lt;/span&gt; is always convergent as a limit of the partial sum &lt;span class=&#34;math inline&#34;&gt;\(\Sigma_{n=1}^{N} x_{n}\)&lt;/span&gt;. In the sequence version, a sequence (&lt;span class=&#34;math inline&#34;&gt;\(a_{n}\)&lt;/span&gt;) is converges to real number if there exist &lt;span class=&#34;math inline&#34;&gt;\(N \in \mathbb {N}\)&lt;/span&gt; such that for every &lt;span class=&#34;math inline&#34;&gt;\(n \ge N\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(\lvert a_{n} - a \rvert &amp;lt; \epsilon\)&lt;/span&gt; for every &lt;span class=&#34;math inline&#34;&gt;\(\epsilon &amp;gt; 0\)&lt;/span&gt;. This is the point where natural number &lt;span class=&#34;math inline&#34;&gt;\(\mathbb N\)&lt;/span&gt; applies it’s property of endless addable with one. The &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; can be replaced by neiborhood in topological space.&lt;/p&gt;
+&lt;p&gt;The series of &lt;span class=&#34;math inline&#34;&gt;\(a_{n}\)&lt;/span&gt; can be a series or just a set of a complex number &lt;span class=&#34;math inline&#34;&gt;\(c \in \mathbb {C}\)&lt;/span&gt;, function, set, integration, differentiation, or other mathematical objects. But computing the limit is different by how the sequence or the set is processed. If the sequence is processed by union of sets, the limit is defined by computing element-wise limit &lt;span class=&#34;math inline&#34;&gt;\(\bigcap^\infty_{n=1} A_n = \{x|x \in A_n \ for \ all \ n \in \mathbb{N} \}\)&lt;/span&gt;. Induction can not apply to the limit &lt;span class=&#34;math inline&#34;&gt;\(\bigcap_{n=1}^N A_n = \{x|x \in A_n \ for \ all \ n \in N\}\)&lt;/span&gt;. The integration is defined by supremum of a set of simple function integral &lt;span class=&#34;math inline&#34;&gt;\(Simp\ \int_{R^d} f(x) dx := c_1 m(E_1) + ... + c_k (E_k)\)&lt;/span&gt;. The Jordan measure is an infimum of the finite sum of element measure. The Lebesgue measure is an infimum of the infinite sum of element measure.&lt;/p&gt;
+&lt;p&gt;Is the Lebesgue outer measure (&lt;span class=&#34;math inline&#34;&gt;\(E^{*}\ = \ \inf \Sigma_{n=1}^{\infty} m(E_n)\)&lt;/span&gt; where &lt;span class=&#34;math inline&#34;&gt;\(m(E)\)&lt;/span&gt; is elementary measure and &lt;span class=&#34;math inline&#34;&gt;\(A \subset \bigcup E_n\)&lt;/span&gt;), a &lt;strong&gt;limit&lt;/strong&gt; of Jordan measure (&lt;span class=&#34;math inline&#34;&gt;\(\lim\sup \Sigma_{n=1}^{N} m(E_n)\)&lt;/span&gt;)?&lt;/p&gt;
+&lt;p&gt;Measure can be considered as a optimizaion problem.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+minimize \ \Sigma_{n=1}^{\infty} m(E_n) \\
+suject \ to \ A \subset \bigcup E_n \\ 
+where \ m(E) \ is \ elementary \ measure, \ E \ is \ a \ elementary \ set 
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The objective function &lt;span class=&#34;math inline&#34;&gt;\(\Sigma_{n=1}^{\infty} m(E_n)\)&lt;/span&gt; has infinite &lt;strong&gt;domain&lt;/strong&gt; &lt;span class=&#34;math inline&#34;&gt;\(f: E^{\infty} \to R\)&lt;/span&gt; in Lebesgue outer measure and finite &lt;strong&gt;domain&lt;/strong&gt; &lt;span class=&#34;math inline&#34;&gt;\(f:E^{N} \to R\)&lt;/span&gt; in Jordan outer measure. The Lebesgue outer measure and Jordan outer measure has different domain space, then the objective function of the Lebesgue outer measure is not a limit of Jordan outer measure.&lt;/p&gt;
+&lt;p&gt;Optimization problem has solution (&lt;span class=&#34;math inline&#34;&gt;\(\{E:E_n \ , n \in \mathbb{N} \ or \ \infty \}\)&lt;/span&gt;) at the saddle point where meets the objective function and the constraint. &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; that we measure is a parameter of the constraints. Measure is find solution (&lt;span class=&#34;math inline&#34;&gt;\(\{E:E_n \ , n \in \mathbb{N} \ or \ \infty \}\)&lt;/span&gt;) with constraints with &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; what we measure. Then the solution can be computed by approximation or limit process.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lagrange dual problem and conjugate function</title>
+      <link>/post/lagrange-dual-problem-and-conjugate-function/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/lagrange-dual-problem-and-conjugate-function/</guid>
+      <description>
+
+
+&lt;p&gt;The optimization problem have two components that are objective function &lt;span class=&#34;math inline&#34;&gt;\(f_0 : \mathbb R ^n \rightarrow \mathbb R\)&lt;/span&gt; and the constraints. The objective function and constraints keep in check each other and make balance at saddle point i.e. optimal point. The dual (Lagrange) problem of the optimal problem also solve the optimization problem by making low boundary.&lt;/p&gt;
+&lt;p&gt;The dual problem can be explained as a conjugate function &lt;span class=&#34;math inline&#34;&gt;\(f^* = \sup (x^Ty-f(x))\)&lt;/span&gt;. The Lagrangian is &lt;span class=&#34;math inline&#34;&gt;\(L(x, \lambda, \nu) = f_0(x) + \lambda f_1, + \nu f_2\)&lt;/span&gt; where &lt;span class=&#34;math inline&#34;&gt;\(f_0\)&lt;/span&gt; is the objective function, &lt;span class=&#34;math inline&#34;&gt;\(f_1\)&lt;/span&gt; is inequality constraints and &lt;span class=&#34;math inline&#34;&gt;\(f_2\)&lt;/span&gt; is equality constraints. The Lagrangian function is &lt;span class=&#34;math inline&#34;&gt;\(g(\lambda,nu) = \inf_{x}L(x, \lambda, \nu) = \inf_{x}(f_0(x) + \lambda f_{1} + \nu f_{2})\)&lt;/span&gt;. The second and third term of the Lagrangian function is can be rewriten as an inner product form &lt;span class=&#34;math inline&#34;&gt;\(x^{T}h(\lambda) + x^{T}i(\nu)\)&lt;/span&gt; and constant term with &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\nu\)&lt;/span&gt;. Then the inner product term &lt;span class=&#34;math inline&#34;&gt;\(x^{T}h(\lambda) + x^{T}i(\nu)\)&lt;/span&gt; and objective term becomes a conjugate function.&lt;/p&gt;
+&lt;p&gt;The conjugate function &lt;span class=&#34;math inline&#34;&gt;\(f^*(x)\)&lt;/span&gt; is similar in terms of balance and saddle point.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Limit of inequality of sequence and epsilon</title>
+      <link>/post/limit-of-inequality-and-epsilon/</link>
+      <pubDate>Sat, 09 Nov 2019 00:00:00 +0000</pubDate>
+      <guid>/post/limit-of-inequality-and-epsilon/</guid>
+      <description>
+
+
+&lt;p&gt;Here I summarize some tools for proof of the Riesz representation theorem. They are the limit of inequality of sequence and &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt;. The Rudin’s proof of the Riesz representation theorem construct measure &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; and measurable set &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt;, then prove the &lt;span class=&#34;math inline&#34;&gt;\(\mu\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\mathfrak{M}\)&lt;/span&gt; have properties. Countable additivity (not subadditivity) is an important property. The strategy of proving equality (additivity) is bidirectional inequality.&lt;/p&gt;
+&lt;p&gt;Limit of inequality of sequence gives us a tool that finite inequality makes infinite inequality. &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; changes left and right parts of inequality (bidirectional inequality).&lt;/p&gt;
+&lt;p&gt;If &lt;span class=&#34;math inline&#34;&gt;\(\Sigma^n_1\mu(K) \le \Sigma^n_1\mu(V_i)\)&lt;/span&gt; then &lt;span class=&#34;math inline&#34;&gt;\(\Sigma^{\infty}_1 \mu(K) \le \Sigma^{\infty}_1 \mu(V)\)&lt;/span&gt;, K is compact and V is open. We can change both sides of inequality with &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(\Sigma^{\infty}_1 \mu(V) \le \Sigma^{\infty}_1 \mu(K) + \epsilon\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Urison’s lemma is used for &lt;span class=&#34;math inline&#34;&gt;\(\mu(E) = \inf\mu(V) = \sup\mu(K)\)&lt;/span&gt; if $ E  $ and $ K E V$.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Limit</title>
+      <link>/post/math/limit/</link>
+      <pubDate>Tue, 20 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/limit/</guid>
+      <description>
+
+
+&lt;p&gt;A sequence can be defined as a function on the domain of natural number like &lt;span class=&#34;math inline&#34;&gt;\(1, 1/2, 1/3 ... 1/n\)&lt;/span&gt;. This sequence approach to the 0, but never touch the 0. However, people can not take their desire to link the sequence and the 0. Because &lt;span class=&#34;math inline&#34;&gt;\(\infty\)&lt;/span&gt; is not a member of the natural number even real number, another concept is necessary to link the sequence and the 0. It is the limit. &lt;span class=&#34;math display&#34;&gt;\[ \lim{n\to\infty} \]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The above sequence approach to the 0. But does all sequences approach to some points? What if the sequence is &lt;span class=&#34;math inline&#34;&gt;\(1/n\)&lt;/span&gt; if &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; is not multiple of 100, 0.001 if n is multiple of 100.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/math/2019-08-22-limit_files/figure-html/unnamed-chunk-1-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Its approach to zero except at every multiple of 10. The &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; is used for the definition of limit to exclude this example.&lt;/p&gt;
+&lt;p&gt;The sequence &lt;span class=&#34;math inline&#34;&gt;\(S\)&lt;/span&gt; is converges the limit &lt;span class=&#34;math inline&#34;&gt;\(a\)&lt;/span&gt; if for every positive &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt;, natural number &lt;span class=&#34;math inline&#34;&gt;\(N\)&lt;/span&gt; is present such that &lt;span class=&#34;math inline&#34;&gt;\(\vert a-Sn \vert &amp;lt;\epsilon\)&lt;/span&gt; is true in every &lt;span class=&#34;math inline&#34;&gt;\(n&amp;gt;N\)&lt;/span&gt;. Otherwise, the limit is not defined and the sequence is divergent.&lt;/p&gt;
+&lt;p&gt;In topological space, the &lt;span class=&#34;math inline&#34;&gt;\(\epsilon\)&lt;/span&gt; becomes the neighborhood.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Analysis</title>
+      <link>/post/math/analysis/</link>
+      <pubDate>Fri, 02 Aug 2019 00:00:00 +0000</pubDate>
+      <guid>/post/math/analysis/</guid>
+      <description>
+
+
+&lt;p&gt;The reproducing kernel hilbert space (RKHS) was my motivation to study analysis. The hilbert space is a orthogonal normed vector space. I still do not know about the meaning of “reproducing kernal”. The RKHS appeared in the book titled &lt;em&gt;An Introduction to Statisitical Learning&lt;/em&gt; written by Hastie.&lt;/p&gt;
+&lt;p&gt;I began to google the meaning of the spaces such as the Hilbert, Banarch. I decided to read the &lt;em&gt;Understaing Analysis&lt;/em&gt; written by Abbott. The &lt;em&gt;Understaing Analysis&lt;/em&gt; was give me many intuitions of analysis and encouraged me to study further. The next book was Rudin’s &lt;em&gt;Functional Analysis&lt;/em&gt;. I realized I need to go upstream to complex Analysis, topology and measure.&lt;/p&gt;
+&lt;p&gt;During the journey of exploring the analysis, I skipped proving of theorems or solving exercises. But space between lines is coming. I’m realizing that I prove the spaces. &lt;span class=&#34;math display&#34;&gt;\[\Sigma^{k}_{j=1} {\lvert}a_j-a^{n}_j{\rvert}\le\epsilon \]&lt;/span&gt; This holds for all finite &lt;span class=&#34;math inline&#34;&gt;\(k\)&lt;/span&gt;, we even have &lt;span class=&#34;math inline&#34;&gt;\({\lVert} a-a_n {\rVert} _{1}\le\epsilon\)&lt;/span&gt;. This is on the way of the proof of &lt;span class=&#34;math inline&#34;&gt;\(l^{1}(\mathbb{N})\)&lt;/span&gt; of all complex-valued sequences &lt;span class=&#34;math inline&#34;&gt;\(a=(a_j)^{\infty}_{j=1}\)&lt;/span&gt; for which the norm &lt;span class=&#34;math inline&#34;&gt;\({\lVert} a {\rVert} _{1}\ := \Sigma^{\infty}_{j=1} {\lvert}a_j{\rvert}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;I could not just accept that the finite sum of each small differences &lt;span class=&#34;math inline&#34;&gt;\(\le \epsilon\)&lt;/span&gt; of &lt;span class=&#34;math inline&#34;&gt;\({\lvert}a_j - a^n_j{\rvert}\)&lt;/span&gt; holds to the infinite sum. The infinite sum is a infinte series. If the infinite series is less than or equel to zero, then it converses to the zero. If the finite sum is &lt;span class=&#34;math inline&#34;&gt;\(\le \epsilon\)&lt;/span&gt; holds every &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{N}\)&lt;/span&gt;, by definition the infinite sum is also &lt;span class=&#34;math inline&#34;&gt;\(\le \epsilon\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;It takes long time to grasp the subtle mathmatical systems. For example, a series is a number in a scalar field, a sequence is a ordered set. However the long time makes the math become familar and finally will firmly grasp the subtle concepts.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

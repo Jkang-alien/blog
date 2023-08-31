@@ -1,0 +1,27 @@
+---
+title: Convex set
+author: JK
+date: '2019-12-27'
+slug: convex-set
+categories:
+  - Math
+tags:
+  - Convex optimization
+  - Math
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-12-27T15:46:00+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+There is a homology between a line segment and a convex set. It is helpful to understand the convex set. A line, a line segment, and one sideline has homology to an affine set, a convex set, and a cone.
+A line is $\{y|y=\theta_1 x_1 + \theta_2 x_2, \theta_1 + \theta_2 = 1\}$ if $\theta_1, \theta_2 \in \mathbb{R}$, a line segment is if $\theta_1, \theta_2 > 0$ and an one side line if any $\theta_1, \theta_2 < 0$. 
+
+A set $C$ is affine set if $ y \in C$ and $\{y|y=\theta_1 x_1 + \theta_2 x_2, \theta_1 + \theta_2 = 1, x_1, x_2 \in C, \theta_1, \theta_2 \in \mathbb{R} \}$. a convex set is if $\theta_1, \theta_2 > 0$ and a cone if any $\theta_1, \theta_2 < 0$. 
+
+An affine set is a convex set. But all convex set is not an affine set. It looks the convex set has a stronger condition than affine set i.e. positivity of $\theta$. But in fact, the convex set has a stronger condition on what it should contain. Because an affine set contains more than a convex set, an affine set satisfies the condition to be a convex set.

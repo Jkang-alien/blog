@@ -1,0 +1,24 @@
+---
+title: Allele frequency and somatic variant
+author: JK
+date: '2019-09-27'
+slug: allele-frequency-and-somatic-variant
+categories:
+  - Genomics
+tags:
+  - Cancer
+  - Genomics
+  - NGS
+  - Pathology
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-09-27T11:32:07+09:00'
+featured: no
+url_slides: "slide/Allele/Allele.html"
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---

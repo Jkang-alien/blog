@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Young Wha Koh | Jun&#39;s Blog</title>
+    <link>/authors/young-wha-koh/</link>
+      <atom:link href="/authors/young-wha-koh/index.xml" rel="self" type="application/rss+xml" />
+    <description>Young Wha Koh</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2011 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Young Wha Koh</title>
+      <link>/authors/young-wha-koh/</link>
+    </image>
+    
+    <item>
+      <title>Dual-Color Silver-Enhanced in Situ Hybridization for Assessing HER2 Gene Amplification in Breast Cancer</title>
+      <link>/publication/2011-01-01_koh2011dual/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/publication/2011-01-01_koh2011dual/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1457 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors | Jun&#39;s Blog</title>
+    <link>/authors/</link>
+      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 09 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Authors</title>
+      <link>/authors/</link>
+    </image>
+    
+    <item>
+      <title>Ahwon Lee</title>
+      <link>/authors/ahwon-lee/</link>
+      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/ahwon-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jun Kang</title>
+      <link>/authors/jun-kang/</link>
+      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/jun-kang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Youn Soo Lee</title>
+      <link>/authors/youn-soo-lee/</link>
+      <pubDate>Mon, 09 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/youn-soo-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ho Yun Lee</title>
+      <link>/authors/ho-yun-lee/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/ho-yun-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hyun Jung Yoon</title>
+      <link>/authors/hyun-jung-yoon/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/hyun-jung-yoon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hyunjin Park</title>
+      <link>/authors/hyunjin-park/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/hyunjin-park/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Insuk Sohn</title>
+      <link>/authors/insuk-sohn/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/insuk-sohn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seung-Hak Lee</title>
+      <link>/authors/seung-hak-lee/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/seung-hak-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hong Kwan Kim</title>
+      <link>/authors/hong-kwan-kim/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/hong-kwan-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>In Hye Song</title>
+      <link>/authors/in-hye-song/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/in-hye-song/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Insuk Shon</title>
+      <link>/authors/insuk-shon/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/insuk-shon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jae Ill Zo</title>
+      <link>/authors/jae-ill-zo/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/jae-ill-zo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jhingook Kim</title>
+      <link>/authors/jhingook-kim/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/jhingook-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jieun Lee</title>
+      <link>/authors/jieun-lee/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/jieun-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kyo Yeong Lee</title>
+      <link>/authors/kyo-yeong-lee/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/kyo-yeong-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Min A. Lee</title>
+      <link>/authors/min-a.-lee/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/min-a.-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Na Young Hwang</title>
+      <link>/authors/na-young-hwang/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/na-young-hwang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sook-Hee Hong</title>
+      <link>/authors/sook-hee-hong/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/sook-hee-hong/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sung Hak Lee</title>
+      <link>/authors/sung-hak-lee/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/sung-hak-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wooil Kim</title>
+      <link>/authors/wooil-kim/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/wooil-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yong Soo Choi</title>
+      <link>/authors/yong-soo-choi/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/yong-soo-choi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Young Mog Shim</title>
+      <link>/authors/young-mog-shim/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/authors/young-mog-shim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Charles R. Scafe</title>
+      <link>/authors/charles-r.-scafe/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/charles-r.-scafe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dongmin Kim</title>
+      <link>/authors/dongmin-kim/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/dongmin-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eunhee {Han M.D}</title>
+      <link>/authors/eunhee-han-m.d/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/eunhee-han-m.d/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Goutam J Nistala</title>
+      <link>/authors/goutam-j-nistala/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/goutam-j-nistala/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hyoungnam Lee</title>
+      <link>/authors/hyoungnam-lee/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/hyoungnam-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jaeeun Yoo</title>
+      <link>/authors/jaeeun-yoo/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/jaeeun-yoo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jongpill Choi</title>
+      <link>/authors/jongpill-choi/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/jongpill-choi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Keun Ho Lee</title>
+      <link>/authors/keun-ho-lee/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/keun-ho-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Myungshin Kim</title>
+      <link>/authors/myungshin-kim/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/myungshin-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sooeun Oh</title>
+      <link>/authors/sooeun-oh/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/sooeun-oh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sung Hun Kim</title>
+      <link>/authors/sung-hun-kim/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/sung-hun-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tae-Kyung Yoo</title>
+      <link>/authors/tae-kyung-yoo/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/tae-kyung-yoo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ye Sul Jeong</title>
+      <link>/authors/ye-sul-jeong/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/ye-sul-jeong/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yonggoo Kim</title>
+      <link>/authors/yonggoo-kim/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/yonggoo-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Youn Jin Choi</title>
+      <link>/authors/youn-jin-choi/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>/authors/youn-jin-choi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jong-Mu Sun</title>
+      <link>/authors/jong-mu-sun/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/jong-mu-sun/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Myung-Ju Ahn</title>
+      <link>/authors/myung-ju-ahn/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/myung-ju-ahn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>So Won Lee</title>
+      <link>/authors/so-won-lee/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/authors/so-won-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dae-Hyun Jang</title>
+      <link>/authors/dae-hyun-jang/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/dae-hyun-jang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eun-Hae Cho</title>
+      <link>/authors/eun-hae-cho/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/eun-hae-cho/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ja-Hyun Jang</title>
+      <link>/authors/ja-hyun-jang/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/ja-hyun-jang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jung Hwan Lee</title>
+      <link>/authors/jung-hwan-lee/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/jung-hwan-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Min-Wook Kim</title>
+      <link>/authors/min-wook-kim/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/min-wook-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seungok Lee</title>
+      <link>/authors/seungok-lee/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/seungok-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sun Young Joo</title>
+      <link>/authors/sun-young-joo/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/sun-young-joo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Young-Chul Choi</title>
+      <link>/authors/young-chul-choi/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>/authors/young-chul-choi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bum-Sik Lee</title>
+      <link>/authors/bum-sik-lee/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/bum-sik-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eun Young Kim</title>
+      <link>/authors/eun-young-kim/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/eun-young-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geewon Lee</title>
+      <link>/authors/geewon-lee/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/geewon-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ik Hyun Jo</title>
+      <link>/authors/ik-hyun-jo/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/ik-hyun-jo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joon Young Choi</title>
+      <link>/authors/joon-young-choi/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/joon-young-choi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joong Hyun Ahn</title>
+      <link>/authors/joong-hyun-ahn/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/joong-hyun-ahn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joungho Han</title>
+      <link>/authors/joungho-han/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/joungho-han/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jung-Hyun Choi</title>
+      <link>/authors/jung-hyun-choi/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/jung-hyun-choi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ki Jun Kim</title>
+      <link>/authors/ki-jun-kim/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/ki-jun-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kyung Soo Lee</title>
+      <link>/authors/kyung-soo-lee/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/kyung-soo-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Min Jee Kwak</title>
+      <link>/authors/min-jee-kwak/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/min-jee-kwak/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>O Jung Kwon</title>
+      <link>/authors/o-jung-kwon/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/o-jung-kwon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Si-Hyun Kim</title>
+      <link>/authors/si-hyun-kim/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/si-hyun-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>So Hee Song</title>
+      <link>/authors/so-hee-song/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/so-hee-song/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sun Ki Kim</title>
+      <link>/authors/sun-ki-kim/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/sun-ki-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>{others}</title>
+      <link>/authors/others/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/authors/others/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eun Su Park</title>
+      <link>/authors/eun-su-park/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/eun-su-park/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gyungyub Gong</title>
+      <link>/authors/gyungyub-gong/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/gyungyub-gong/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hee Jin Lee</title>
+      <link>/authors/hee-jin-lee/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/hee-jin-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>In Ah Park</title>
+      <link>/authors/in-ah-park/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/in-ah-park/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jae Jun Lee</title>
+      <link>/authors/jae-jun-lee/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/jae-jun-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jeong-Ju Lee</title>
+      <link>/authors/jeong-ju-lee/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/jeong-ju-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jin-Hee Ahn</title>
+      <link>/authors/jin-hee-ahn/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/jin-hee-ahn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jiyoung Kim</title>
+      <link>/authors/jiyoung-kim/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/jiyoung-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jong Han Yu</title>
+      <link>/authors/jong-han-yu/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/jong-han-yu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lee-So Maeng</title>
+      <link>/authors/lee-so-maeng/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/lee-so-maeng/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sang-Il Kim</title>
+      <link>/authors/sang-il-kim/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/sang-il-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sun-Young Jun</title>
+      <link>/authors/sun-young-jun/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/sun-young-jun/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yoonjin Bae</title>
+      <link>/authors/yoonjin-bae/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/yoonjin-bae/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dong Wha Lee</title>
+      <link>/authors/dong-wha-lee/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/dong-wha-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eun Yoon Cho</title>
+      <link>/authors/eun-yoon-cho/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/eun-yoon-cho/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Guhyun Kang</title>
+      <link>/authors/guhyun-kang/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/guhyun-kang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hajeong Lee</title>
+      <link>/authors/hajeong-lee/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/hajeong-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hwoon-Yong Jung</title>
+      <link>/authors/hwoon-yong-jung/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/hwoon-yong-jung/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hye Bin Yim</title>
+      <link>/authors/hye-bin-yim/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/hye-bin-yim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hyoung Jo</title>
+      <link>/authors/hyoung-jo/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/hyoung-jo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jeong Hee Lee</title>
+      <link>/authors/jeong-hee-lee/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/jeong-hee-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ji Shin Lee</title>
+      <link>/authors/ji-shin-lee/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/ji-shin-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ji Yong Ahn</title>
+      <link>/authors/ji-yong-ahn/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/ji-yong-ahn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ji Young Choi</title>
+      <link>/authors/ji-young-choi/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/ji-young-choi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ji-Hoon Jung</title>
+      <link>/authors/ji-hoon-jung/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/ji-hoon-jung/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joon Seon Song</title>
+      <link>/authors/joon-seon-song/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/joon-seon-song/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ju Han Kim</title>
+      <link>/authors/ju-han-kim/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/ju-han-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>June Kang</title>
+      <link>/authors/june-kang/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/june-kang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kui Dong Kang</title>
+      <link>/authors/kui-dong-kang/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/kui-dong-kang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kwang-Sun Suh</title>
+      <link>/authors/kwang-sun-suh/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/kwang-sun-suh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kwi-Sook Choi</title>
+      <link>/authors/kwi-sook-choi/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/kwi-sook-choi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mi-Young Kim</title>
+      <link>/authors/mi-young-kim/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/mi-young-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sang Hoon Jung</title>
+      <link>/authors/sang-hoon-jung/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/sang-hoon-jung/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seunghee Baek</title>
+      <link>/authors/seunghee-baek/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/seunghee-baek/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Su-Jin Shin</title>
+      <link>/authors/su-jin-shin/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/su-jin-shin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Suh Eun Bae</title>
+      <link>/authors/suh-eun-bae/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/suh-eun-bae/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Young Kyung Bae</title>
+      <link>/authors/young-kyung-bae/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/young-kyung-bae/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Young Soo Park</title>
+      <link>/authors/young-soo-park/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/authors/young-soo-park/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bong Chul Shin</title>
+      <link>/authors/bong-chul-shin/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/authors/bong-chul-shin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ju Won Lee</title>
+      <link>/authors/ju-won-lee/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/authors/ju-won-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kyubok Jin</title>
+      <link>/authors/kyubok-jin/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/authors/kyubok-jin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mi-Seon Kang</title>
+      <link>/authors/mi-seon-kang/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/authors/mi-seon-kang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nae-Yun Heo</title>
+      <link>/authors/nae-yun-heo/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/authors/nae-yun-heo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seunghyun Park</title>
+      <link>/authors/seunghyun-park/</link>
+      <pubDate>Tue, 01 Jan 2013 00:00:00 +0000</pubDate>
+      <guid>/authors/seunghyun-park/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Breast Pathology Study Group {of Korean Society of Pathologists}</title>
+      <link>/authors/breast-pathology-study-group-of-korean-society-of-pathologists/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/authors/breast-pathology-study-group-of-korean-society-of-pathologists/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gi Cheol Park</title>
+      <link>/authors/gi-cheol-park/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/authors/gi-cheol-park/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jeong-Hyeon Jo</title>
+      <link>/authors/jeong-hyeon-jo/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/authors/jeong-hyeon-jo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jong-Lyel Roh</title>
+      <link>/authors/jong-lyel-roh/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/authors/jong-lyel-roh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kyung-Ja Cho</title>
+      <link>/authors/kyung-ja-cho/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/authors/kyung-ja-cho/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sang Yoon Kim</title>
+      <link>/authors/sang-yoon-kim/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/authors/sang-yoon-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seung-Ho Choi</title>
+      <link>/authors/seung-ho-choi/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/authors/seung-ho-choi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Soon-Yuhl Nam</title>
+      <link>/authors/soon-yuhl-nam/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/authors/soon-yuhl-nam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Woo Hee Jung</title>
+      <link>/authors/woo-hee-jung/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      <guid>/authors/woo-hee-jung/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bong Hee Park</title>
+      <link>/authors/bong-hee-park/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/bong-hee-park/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Chan Jeong Park</title>
+      <link>/authors/chan-jeong-park/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/chan-jeong-park/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cheol Won Suh</title>
+      <link>/authors/cheol-won-suh/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/cheol-won-suh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cheolwon Suh</title>
+      <link>/authors/cheolwon-suh/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/cheolwon-suh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dae Ho Lee</title>
+      <link>/authors/dae-ho-lee/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/dae-ho-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dong Hoe Koo</title>
+      <link>/authors/dong-hoe-koo/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/dong-hoe-koo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heung Bum Oh</title>
+      <link>/authors/heung-bum-oh/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/heung-bum-oh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hyun Sook Chi</title>
+      <link>/authors/hyun-sook-chi/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/hyun-sook-chi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jeong Hyun Cho</title>
+      <link>/authors/jeong-hyun-cho/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/jeong-hyun-cho/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jong Won Lee</title>
+      <link>/authors/jong-won-lee/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/jong-won-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joo Young Kim</title>
+      <link>/authors/joo-young-kim/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/joo-young-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joon Kang</title>
+      <link>/authors/joon-kang/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/joon-kang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jooryung Huh</title>
+      <link>/authors/jooryung-huh/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/jooryung-huh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kyoo Hyung Lee</title>
+      <link>/authors/kyoo-hyung-lee/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/kyoo-hyung-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Se Jin Jang</title>
+      <link>/authors/se-jin-jang/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/se-jin-jang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shin Kim</title>
+      <link>/authors/shin-kim/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/shin-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sukjoong Oh</title>
+      <link>/authors/sukjoong-oh/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/sukjoong-oh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sung Soo Jang</title>
+      <link>/authors/sung-soo-jang/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/sung-soo-jang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yong Hak Sohn</title>
+      <link>/authors/yong-hak-sohn/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/yong-hak-sohn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Young Wha Koh</title>
+      <link>/authors/young-wha-koh/</link>
+      <pubDate>Sat, 01 Jan 2011 00:00:00 +0000</pubDate>
+      <guid>/authors/young-wha-koh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dong-ho Shin</title>
+      <link>/authors/dong-ho-shin/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/authors/dong-ho-shin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dong-Il Kim</title>
+      <link>/authors/dong-il-kim/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/authors/dong-il-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jong-hyun Lee</title>
+      <link>/authors/jong-hyun-lee/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/authors/jong-hyun-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sunhee Bang</title>
+      <link>/authors/sunhee-bang/</link>
+      <pubDate>Fri, 01 Jan 2010 00:00:00 +0000</pubDate>
+      <guid>/authors/sunhee-bang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ah Young Kim</title>
+      <link>/authors/ah-young-kim/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/authors/ah-young-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eunsil Yu</title>
+      <link>/authors/eunsil-yu/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/authors/eunsil-yu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gui Young Kwon</title>
+      <link>/authors/gui-young-kwon/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/authors/gui-young-kwon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heejin Lee</title>
+      <link>/authors/heejin-lee/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/authors/heejin-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hyun Kwon Ha</title>
+      <link>/authors/hyun-kwon-ha/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/authors/hyun-kwon-ha/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Joo Young Jang</title>
+      <link>/authors/joo-young-jang/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/authors/joo-young-jang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kyoung Won Kim</title>
+      <link>/authors/kyoung-won-kim/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/authors/kyoung-won-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kyung Mo Kim</title>
+      <link>/authors/kyung-mo-kim/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/authors/kyung-mo-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seong Ho Park</title>
+      <link>/authors/seong-ho-park/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/authors/seong-ho-park/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seung Soo Lee</title>
+      <link>/authors/seung-soo-lee/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/authors/seung-soo-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>So Yeon Kim</title>
+      <link>/authors/so-yeon-kim/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/authors/so-yeon-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sung Won Park</title>
+      <link>/authors/sung-won-park/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/authors/sung-won-park/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Young-Hee Lee</title>
+      <link>/authors/young-hee-lee/</link>
+      <pubDate>Thu, 01 Jan 2009 00:00:00 +0000</pubDate>
+      <guid>/authors/young-hee-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heon-Ju Kwon</title>
+      <link>/authors/heon-ju-kwon/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/authors/heon-ju-kwon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jae Ho Byun</title>
+      <link>/authors/jae-ho-byun/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/authors/jae-ho-byun/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Moon-Gyu Lee</title>
+      <link>/authors/moon-gyu-lee/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 +0000</pubDate>
+      <guid>/authors/moon-gyu-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ae Kyung Jeong</title>
+      <link>/authors/ae-kyung-jeong/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/authors/ae-kyung-jeong/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bu-kyu Lee</title>
+      <link>/authors/bu-kyu-lee/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/authors/bu-kyu-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eul-Ju Seo</title>
+      <link>/authors/eul-ju-seo/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/authors/eul-ju-seo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Geung Hwan Ahn</title>
+      <link>/authors/geung-hwan-ahn/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/authors/geung-hwan-ahn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gyung Yub Gong</title>
+      <link>/authors/gyung-yub-gong/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/authors/gyung-yub-gong/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hee Jeong Cha</title>
+      <link>/authors/hee-jeong-cha/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/authors/hee-jeong-cha/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hye Jeong Choi</title>
+      <link>/authors/hye-jeong-choi/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/authors/hye-jeong-choi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ilseon Hwang</title>
+      <link>/authors/ilseon-hwang/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/authors/ilseon-hwang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jae Hee Suh</title>
+      <link>/authors/jae-hee-suh/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/authors/jae-hee-suh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jene Choi</title>
+      <link>/authors/jene-choi/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/authors/jene-choi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jeong Won Kim</title>
+      <link>/authors/jeong-won-kim/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/authors/jeong-won-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shin Kwang Khang</title>
+      <link>/authors/shin-kwang-khang/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/authors/shin-kwang-khang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Young Min Kim</title>
+      <link>/authors/young-min-kim/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/authors/young-min-kim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Young Ok Hong</title>
+      <link>/authors/young-ok-hong/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      <guid>/authors/young-ok-hong/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hae-Woong Lee</title>
+      <link>/authors/hae-woong-lee/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/authors/hae-woong-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inchul Lee</title>
+      <link>/authors/inchul-lee/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/authors/inchul-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jai-Kyoung Koh</title>
+      <link>/authors/jai-kyoung-koh/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/authors/jai-kyoung-koh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jee-Ho Choi</title>
+      <link>/authors/jee-ho-choi/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/authors/jee-ho-choi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kee-Chan Moon</title>
+      <link>/authors/kee-chan-moon/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/authors/kee-chan-moon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mi-Woo Lee</title>
+      <link>/authors/mi-woo-lee/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/authors/mi-woo-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sang-wook Lee</title>
+      <link>/authors/sang-wook-lee/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/authors/sang-wook-lee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seung-Seog Han</title>
+      <link>/authors/seung-seog-han/</link>
+      <pubDate>Sun, 01 Jan 2006 00:00:00 +0000</pubDate>
+      <guid>/authors/seung-seog-han/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;Jun Kang is a clinical assistant professor of hospital pathology at the Catholic university of Korea. His research interests include pathology, oncology and statistics.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

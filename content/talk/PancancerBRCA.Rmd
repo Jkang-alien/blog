@@ -1,0 +1,39 @@
+---
+title: 'Pancancer BRCA'
+author: JK
+date: '2021-10-21'
+slug: []
+categories:
+  - Cancer
+  - cbioportal
+  - Genomics
+  - Pathology
+  - TCGA
+tags:
+  - Cancer
+  - cbioportal
+  - Genomics
+  - NGS
+  - Pathology
+  - TCGA
+event: ~
+event_url: ~
+location: ~
+summary: ~
+abstract: ~
+date_end: '2021-10-21T08:48:55+09:00'
+all_day: no
+publishDate: '2021-10-21T08:48:55+09:00'
+authors: []
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+url_slides: 'slide/BRCApancancer/BRCApancancer.html'
+url_code: ~
+url_pdf: ~
+url_video: ~
+projects: []
+---
+.

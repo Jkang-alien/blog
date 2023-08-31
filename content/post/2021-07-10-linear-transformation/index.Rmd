@@ -1,0 +1,27 @@
+---
+title: Linear transformation
+author: JK
+date: '2021-07-10'
+slug: []
+categories:
+  - Math
+tags:
+  - Analysis
+  - Math
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-07-10T05:40:11+09:00'
+featured: no
+draft: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+A *norm* of linear transformation $\Lambda : X \rightarrow Y$ is defined by $\| \Lambda \| = \sup \{ \| \Lambda(x) \|:x \in X, \|x\| \le 1 \}$. We can give a *norm* to a space or a set. A *norm* determines the size of a vector in the function space. The way of measure the size of a vector gives important properties of the space like boundness, completeness or orthogonality. We can also select a set ($L^{1}(\mu)$) to have a certain properties like boundness and completeness in a specific *norm* like $\| * \|_2$ and so on select $C(X)$ for
+$L^{\infty}$.  
+
+The linear transformation $\Lambda$ can compose a normed space $\{\Lambda\}$. The space of linear transformation can have properties like boundness, completeness. The Banach-Steinhaus theorem states the limit of linear transformation between Banach spaces which a set of bounded linear transformation, $\{\Lambda_{\alpha}\}$, $\alpha \in A$ with Banach space in both domain and codomain has either bounded norm or unbounded supremum $\| \Lambda_{\alpha} \|$ for all some dense $G_\delta$ in domain. The limit of linear transformation space can be applied in convergence of differentiation and integration of simple function and Fourier transformation because those are series of linear transformation. 

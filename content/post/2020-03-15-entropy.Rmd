@@ -1,0 +1,30 @@
+---
+title: Entropy
+author: JK
+date: '2020-03-15'
+slug: entropy
+categories:
+  - Math
+tags:
+  - Information theory
+  - Math
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-03-15T06:31:20+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+This is a note for Elements of information theory of Thomas M. Cover.  
+
+The entropy ($H$) is a measure of uncertainty of a variable which is the answer to what is the ultimate data compression. Is the conditional probability $p(x|y)$ considered as a probability of the "conditional variable" $(X|Y=y)$? Yes, it is the subset of $X$ given $Y=y$. If you sum all of the subset probabilities, it becomes the cardinality of $X$. Thus if you make that become 1, the conditional probability should be multiplied with $p(x)$. The conditional probability is larger than joint probabilities $p(x,y)$.  
+
+Let's think about the entropy of a joint random variable $(X,Y)$. If $X$ and $Y$ are correlated, the entries of the contingent table of $p(x,y)$ are concentrated at some points that mean lager or smaller probabilities than a product of $p(x)$ and $p(y)$. The joint probability is a product of probability of $X$, $p(x)$ and conditional probability $p(X|Y)$. The conditional entropy is the expectation of a random conditional variable (conditional entropy). The conditional entropy does not mean the entropy of a subset of $X|Y=y$. It is a measure of uncertainty of $X$ given $Y$. If $Y$ has the **information** of the $X$, the entropy of $X|Y$ is less than $X$. The conditional entropy $H(X|Y)$ is subtract the entropy of Y $H(Y)$ from joint entropy $H(X,Y)$. The joint probability $p(x,y)$ is the product of probability of $Y$ and conditional probability $p(x|Y=y)$. This is chain rule of joint entropy $H(X,Y) = H(Y) + H(X|Y)$.  
+
+The chain rule is converting a joint variable to the sum of conditional random variables. The joint variable is the sum of conditional random variables. This is can be applied in the entropy, the information, and the relative entropy.   
+

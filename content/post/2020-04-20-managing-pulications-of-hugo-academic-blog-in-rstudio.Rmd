@@ -1,0 +1,25 @@
+---
+title: Managing pulications of HUGO academic blog in Rstudio
+author: JK
+date: '2020-04-20'
+slug: managing-pulications-of-hugo-academic-blog-in-rstudio
+categories:
+  - R
+tags:
+  - RStudio
+  - R
+  - Blogdown
+  - HUGO academic blog
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-04-20T16:00:42+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+This HUGO academic theme blog is managed by blogdown. (https://bookdown.org/yihui/blogdown/other-themes.html) The HUGO theme needs to transform `bib` file to each `reference.md` files. This can be done by `bib2academic` rpackage. (https://github.com/petzi53/bib2academic) For the featured publication, add `featured: true` in the `reference.md` file. 

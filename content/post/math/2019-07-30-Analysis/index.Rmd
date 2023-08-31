@@ -1,0 +1,22 @@
+---
+title: Analysis
+author: JK
+date: '2019-08-02'
+slug: Analysis
+categories:
+  - Math
+tags:
+  - Analysis
+  - Limit
+  - Reproducing kernel hilbert space
+---
+
+The reproducing kernel hilbert space (RKHS) was my motivation to study analysis. The hilbert space is a orthogonal normed vector space. I still do not know about the meaning of "reproducing kernal". The RKHS appeared in the book titled _An Introduction to Statisitical Learning_ written by Hastie.  
+
+I began to google the meaning of the spaces such as the Hilbert, Banarch. I decided to read the _Understaing Analysis_ written by Abbott. The _Understaing Analysis_ was give me many intuitions of analysis and encouraged me to study further. The next book was Rudin's _Functional Analysis_. I realized I need to go upstream to complex Analysis, topology and measure.
+
+During the journey of exploring the analysis, I skipped proving of theorems or solving exercises. But space between lines is coming. I'm realizing that I prove the spaces. $$\Sigma^{k}_{j=1} {\lvert}a_j-a^{n}_j{\rvert}\le\epsilon $$ This holds for all finite $k$, we even have ${\lVert} a-a_n {\rVert} _{1}\le\epsilon$. This is on the way of the proof of $l^{1}(\mathbb{N})$ of all complex-valued sequences $a=(a_j)^{\infty}_{j=1}$ for which the norm ${\lVert} a {\rVert} _{1}\ := \Sigma^{\infty}_{j=1} {\lvert}a_j{\rvert}$.
+
+I could not just accept that the finite sum of each small differences $\le \epsilon$ of ${\lvert}a_j - a^n_j{\rvert}$ holds to the infinite sum. The infinite sum is a infinte series. If the infinite series is less than or equel to zero, then it converses to the zero. If the finite sum is $\le \epsilon$ holds every $\mathbb{N}$, by definition the infinite sum is also $\le \epsilon$. 
+
+It takes long time to grasp the subtle mathmatical systems. For example, a series is a number in a scalar field, a sequence is a ordered set. However the long time makes the math become familar and finally will firmly grasp the subtle concepts.

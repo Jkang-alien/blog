@@ -1,0 +1,128 @@
+---
+title: Tidymodel and glmnet
+author: JK
+date: '2020-03-18'
+slug: tidymodel-and-glmnet
+categories:
+  - R
+  - Stastics
+  - Tidymodel
+tags:
+  - R
+  - RStudio
+  - Machine learning
+  - Demo
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-03-18T18:42:03+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>When the penalized generalize linear model (Lasso or Ridge) is processed in the tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of the final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.</p>
+<div id="modeling" class="section level5">
+<h5>Modeling</h5>
+<pre class="r"><code>library(glmnet)
+library(themis)
+
+set.seed(930093)
+cv_splits &lt;- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T)
+mod &lt;- logistic_reg(penalty = tune(),
+                    mixture = tune()) %&gt;%
+  set_engine(&quot;glmnet&quot;)
+
+rec &lt;- recipe(PIK3CA_T ~ ., data = trainset_ahDiff) %&gt;%
+  step_BoxCox(all_numeric()) %&gt;%
+  step_dummy(HISTOLOGICAL_DIAGNOSIS) %&gt;%
+  step_center(all_numeric()) %&gt;%
+  step_scale(all_numeric()) %&gt;%
+  step_smote(PIK3CA_T)</code></pre>
+<pre class="r"><code>wfl &lt;- workflow() %&gt;%
+  add_recipe(rec) %&gt;%
+  add_model(mod)
+
+glmn_set &lt;- parameters(penalty(range = c(-5,1), trans = log10_trans()),
+                       mixture())
+
+glmn_grid &lt;- 
+  grid_regular(glmn_set, levels = c(7, 5))
+ctrl &lt;- control_grid(save_pred = TRUE, verbose = TRUE)</code></pre>
+<ul>
+<li>Grid parameter search on 10-fold cross-validation with 5 repeats<br />
+</li>
+<li>Dummy variable to control for histologic subtype</li>
+</ul>
+</div>
+<div id="select-best-parameter" class="section level5">
+<h5>Select best parameter</h5>
+<pre class="r"><code>glmn_tune &lt;- 
+  tune_grid(wfl,
+            resamples = cv_splits,
+            grid = glmn_grid,
+            metrics = metric_set(roc_auc),
+            control = ctrl)
+
+
+best_glmn &lt;- select_best(glmn_tune, metric = &quot;roc_auc&quot;)</code></pre>
+</div>
+<div id="finalizing" class="section level5">
+<h5>Finalizing</h5>
+<pre class="r"><code>wfl_final &lt;- 
+  wfl %&gt;%
+  finalize_workflow(best_glmn) %&gt;%
+  fit(data = trainset_ahDiff)</code></pre>
+<p><code>finalize_workflow()</code> finalizes the model with selected optimal hyperparameters. However, the glmnet fits any lambda, not the indicated lambda. This was discussed at <a href="https://github.com/tidymodels/parsnip/issues/195" class="uri">https://github.com/tidymodels/parsnip/issues/195</a>. The glmnet is more efficient to fit all lambda than a single lambda. Thus tidymodel ignores the indicated lambda. This made the first confusion. <strong>The finalization can be finalized by predict in tidymodel environment.</strong> Finalize with <code>predict</code>. Note the last argument <code>penalty = 1</code> of <code>stats::predict(wfl_final, type = "prob", new_data = trainset_ahDiff, penalty = 1)</code>.</p>
+<pre class="r"><code>train_predict &lt;- stats::predict(wfl_final, type = &quot;prob&quot;, new_data = trainset_ahDiff, penalty = 1)
+train_probs &lt;- 
+  predict(wfl_final, type = &quot;prob&quot;, new_data = trainset_ahDiff) %&gt;%
+  bind_cols(obs = trainset_ahDiff$PIK3CA_T) %&gt;%
+  bind_cols(predict(wfl_final, new_data = trainset_ahDiff))</code></pre>
+</div>
+<div id="performance" class="section level5">
+<h5>Performance</h5>
+<pre class="r"><code>conf_mat(train_probs, obs, .pred_class)</code></pre>
+<pre><code>##           Truth
+## Prediction Wild Mutant
+##     Wild    213     45
+##     Mutant  123    158</code></pre>
+<pre class="r"><code>autoplot(roc_curve(train_probs, obs, .pred_Mutant, event_level = &quot;second&quot;))</code></pre>
+<p><img src="/post/2020-03-18-tidymodel-and-glmnet_files/figure-html/performance-1.png" width="672" /></p>
+<pre class="r"><code>roc_auc(train_probs, obs, .pred_Mutant, event_level = &quot;second&quot;)</code></pre>
+<pre><code>## # A tibble: 1 x 3
+##   .metric .estimator .estimate
+##   &lt;chr&gt;   &lt;chr&gt;          &lt;dbl&gt;
+## 1 roc_auc binary         0.770</code></pre>
+<p>Because glmnet fits the whole path, there are whole coefficients in the glmnet fit object <code>wfl_final</code>. This was the second confusion. How to get the final model coefficients is below.</p>
+</div>
+<div id="coefficients" class="section level5">
+<h5>Coefficients</h5>
+<pre class="r"><code>tidy(extract_model(wfl_final)) %&gt;%
+  filter(lambda &gt; 0.98 &amp; lambda &lt; 1.01)</code></pre>
+<pre><code>## # A tibble: 17 x 5
+##    term                                           step estimate lambda dev.ratio
+##    &lt;chr&gt;                                         &lt;dbl&gt;    &lt;dbl&gt;  &lt;dbl&gt;     &lt;dbl&gt;
+##  1 (Intercept)                                      55  -0.0630   1.00     0.123
+##  2 C4A                                              55   0.0587   1.00     0.123
+##  3 C5orf13                                          55   0.0587   1.00     0.123
+##  4 CDSN                                             55   0.0706   1.00     0.123
+##  5 CFB                                              55   0.0719   1.00     0.123
+##  6 CYP21A2                                          55   0.0516   1.00     0.123
+##  7 DGKE                                             55  -0.0709   1.00     0.123
+##  8 FGD5                                             55   0.0670   1.00     0.123
+##  9 GALNT10                                          55   0.0575   1.00     0.123
+## 10 GOLM1                                            55   0.0689   1.00     0.123
+## 11 GPX8                                             55   0.0657   1.00     0.123
+## 12 KLK11                                            55   0.0145   1.00     0.123
+## 13 NTN4                                             55   0.0578   1.00     0.123
+## 14 SMYD3                                            55   0.0637   1.00     0.123
+## 15 USP36                                            55  -0.0698   1.00     0.123
+## 16 WBP2                                             55  -0.0652   1.00     0.123
+## 17 HISTOLOGICAL_DIAGNOSIS_Infiltrating.Lobular.~    55  -0.0244   1.00     0.123</code></pre>
+</div>

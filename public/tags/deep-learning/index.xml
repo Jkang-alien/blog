@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Deep Learning | Jun&#39;s Blog</title>
+    <link>/tags/deep-learning/</link>
+      <atom:link href="/tags/deep-learning/index.xml" rel="self" type="application/rss+xml" />
+    <description>Deep Learning</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 14 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Deep Learning</title>
+      <link>/tags/deep-learning/</link>
+    </image>
+    
+    <item>
+      <title>Laplace transformation</title>
+      <link>/post/laplace-transformation/</link>
+      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/post/laplace-transformation/</guid>
+      <description>
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;The Fourier series represents a periodic function as a descrete vectors. The Fourier transformation turns a time domain non-periodic function into a frequency domain continuous function. The Fourier series and transformation change a single time base &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; into infinite frequency basis &lt;span class=&#34;math inline&#34;&gt;\(e^{inx}\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(e^{iwx}\)&lt;/span&gt;. The function on infinite basis domain can be represented by a vector or a function of basis domain &lt;span class=&#34;math inline&#34;&gt;\(v_{n}\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(f(w)\)&lt;/span&gt;. This is a coefficients of Fourier series or Fourier transformation.&lt;/p&gt;
+&lt;p&gt;The basis of Fourier transformation is pure frequency &lt;span class=&#34;math inline&#34;&gt;\(e^{iw}\)&lt;/span&gt;. The domain of Laplace transfomation is frequency &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt; and damping component &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt; which compose damping ocilation function, &lt;span class=&#34;math inline&#34;&gt;\(e^{s} = e^{(iw+\sigma)}\)&lt;/span&gt;. The function which represent Laplace transformation &lt;span class=&#34;math inline&#34;&gt;\(F(s)\)&lt;/span&gt; is a function of complex domain &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt;. The Fourier transformation is a special Laplace transformation of no damping term &lt;span class=&#34;math inline&#34;&gt;\(s = 0 \cdot \sigma +iw\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;periodic&lt;/strong&gt; function can be represented by a series not a continuous function. A condition makes a function can be represented by pure frequency domain i.e. Fourier transformation, not a complex domain i.e. Laplace transformation. The condition is&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;from wikipedia &lt;a href=&#34;https://en.wikipedia.org/wiki/Laplace_transform#Fourier_transform&#34; class=&#34;uri&#34;&gt;https://en.wikipedia.org/wiki/Laplace_transform#Fourier_transform&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;math&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+  \widehat{f}(\omega) &amp;amp;= \mathcal{F}\{f(t)\} \\[4pt]
+                  &amp;amp;= \mathcal{L}\{f(t)\}|_{s = i\omega}  =  F(s)|_{s = i \omega} \\[4pt]
+                  &amp;amp;= \int_{-\infty}^\infty e^{-i \omega t} f(t)\,dt~.
+\end{align}\]&lt;/span&gt;&lt;/math&gt;&lt;/p&gt;
+&lt;p&gt;Laplace transformation makes a differential equation to an algebra equation.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Laplace transformation\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\mathcal{L}[f(t)] = F(s) = \int_{t=0}^{\infty} f(t)e^{-st}dt
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Transfer function\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+H(s) = Y(s)/X(s)
+\]&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[
+Y(s) = H(s)X(s)  
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(X(s)\)&lt;/span&gt; are Laplace transformed &lt;span class=&#34;math inline&#34;&gt;\(y(t)\)&lt;/span&gt;, i.e. solution and &lt;span class=&#34;math inline&#34;&gt;\(f(t)\)&lt;/span&gt; i.e. input.&lt;/p&gt;
+&lt;p&gt;The &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt; is a function of &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; which represents coefficients of damped frquency basis &lt;span class=&#34;math inline&#34;&gt;\(e^{\sigma + iw}\)&lt;/span&gt;. We are not looking for the solution &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; for the &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt;. We are looking for the inverse Laplace transformation of &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt;. The inverse Laplace transformation turns a function &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt; with infinite damped frquency basis &lt;span class=&#34;math inline&#34;&gt;\(e^{\sigma + iw}\)&lt;/span&gt; to the solution of linear differential equation &lt;span class=&#34;math inline&#34;&gt;\(y(t)\)&lt;/span&gt; that is a function with a single domain basis &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The Laplace transformation has poles that blow up at a point. The poles were determined by constants of differential equation and the input term.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lagrange dual problem and conjugate function</title>
+      <link>/post/lagrange-dual-problem-and-conjugate-function/</link>
+      <pubDate>Sun, 13 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/lagrange-dual-problem-and-conjugate-function/</guid>
+      <description>
+
+
+&lt;p&gt;The optimization problem have two components that are objective function &lt;span class=&#34;math inline&#34;&gt;\(f_0 : \mathbb R ^n \rightarrow \mathbb R\)&lt;/span&gt; and the constraints. The objective function and constraints keep in check each other and make balance at saddle point i.e. optimal point. The dual (Lagrange) problem of the optimal problem also solve the optimization problem by making low boundary.&lt;/p&gt;
+&lt;p&gt;The dual problem can be explained as a conjugate function &lt;span class=&#34;math inline&#34;&gt;\(f^* = \sup (x^Ty-f(x))\)&lt;/span&gt;. The Lagrangian is &lt;span class=&#34;math inline&#34;&gt;\(L(x, \lambda, \nu) = f_0(x) + \lambda f_1, + \nu f_2\)&lt;/span&gt; where &lt;span class=&#34;math inline&#34;&gt;\(f_0\)&lt;/span&gt; is the objective function, &lt;span class=&#34;math inline&#34;&gt;\(f_1\)&lt;/span&gt; is inequality constraints and &lt;span class=&#34;math inline&#34;&gt;\(f_2\)&lt;/span&gt; is equality constraints. The Lagrangian function is &lt;span class=&#34;math inline&#34;&gt;\(g(\lambda,nu) = \inf_{x}L(x, \lambda, \nu) = \inf_{x}(f_0(x) + \lambda f_{1} + \nu f_{2})\)&lt;/span&gt;. The second and third term of the Lagrangian function is can be rewriten as an inner product form &lt;span class=&#34;math inline&#34;&gt;\(x^{T}h(\lambda) + x^{T}i(\nu)\)&lt;/span&gt; and constant term with &lt;span class=&#34;math inline&#34;&gt;\(\lambda\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(\nu\)&lt;/span&gt;. Then the inner product term &lt;span class=&#34;math inline&#34;&gt;\(x^{T}h(\lambda) + x^{T}i(\nu)\)&lt;/span&gt; and objective term becomes a conjugate function.&lt;/p&gt;
+&lt;p&gt;The conjugate function &lt;span class=&#34;math inline&#34;&gt;\(f^*(x)\)&lt;/span&gt; is similar in terms of balance and saddle point.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Approximation</title>
+      <link>/post/approximation/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      <guid>/post/approximation/</guid>
+      <description>
+
+
+&lt;p&gt;The purpose of approximation is finding optimal point &lt;span class=&#34;math inline&#34;&gt;\(x^*\)&lt;/span&gt; i.e. &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x^*) = 0\)&lt;/span&gt;. We need a step/search direction &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt; and step size &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;. Taylor approximation has polynomial arguments that is a step and parameters of derivatives at the start point. The first degree of Taylor approximation has one adding term from start point &lt;span class=&#34;math inline&#34;&gt;\((x_0, F(x_0))\)&lt;/span&gt;. The adding term &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x) \Delta x\)&lt;/span&gt; is consistent with a parameter (gradient &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x)\)&lt;/span&gt;) and a argument (step &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt;). The Taylor approximation does approximate &lt;span class=&#34;math inline&#34;&gt;\(F(x + \Delta x)\)&lt;/span&gt; for any search direction &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt;. We want to choose &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt; for the direction to the optimal point.&lt;/p&gt;
+&lt;p&gt;The adding term of Taylor approximation &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x) \Delta x\)&lt;/span&gt; have level curve (level line). The smallest Euclidean norm of the level curve is achieved at the tangent. The gradient descent set the step to the gradient &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x)\)&lt;/span&gt;. This makes the adding term biggest with Euclidean norm &lt;span class=&#34;math inline&#34;&gt;\(\Vert \nabla F(x) \Vert^2\)&lt;/span&gt; i.e. dual norm &lt;span class=&#34;math inline&#34;&gt;\(\Vert \nabla F(x) \Vert_*\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Newton’s method is second degree of Taylor approximation &lt;span class=&#34;math inline&#34;&gt;\(F(x_0+\Delta x) \approx F(x_0) + \nabla F(x) \Delta x + 1/2\Delta x^T H \Delta x\)&lt;/span&gt;. We want to find &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt; to minimize the second degree of Taylor approximation. In this case, the minimizing step is tangent of first adding term &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x) \Delta x\)&lt;/span&gt; and second adding term &lt;span class=&#34;math inline&#34;&gt;\(\Delta x^T H \Delta x\)&lt;/span&gt; i.e. Steepest descent in H norm &lt;span class=&#34;math inline&#34;&gt;\(\Vert \cdot \Vert _H\)&lt;/span&gt;. The newton’s method can be thought as approximation of gradient &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x)\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(\nabla F(x_0 + \Delta x) \approx \nabla F(x_0) + H \Delta x = 0,\ \Delta x = -H^{-1} \nabla F(x_0)\)&lt;/span&gt;. This is also the derivative of second degree of Taylor approximation with respect to &lt;span class=&#34;math inline&#34;&gt;\(\Delta x\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;But the Taylor approximation is local. In addition to a step, a step size is needed. A step size determines how far the step taken. Backtracking line search has two constant parameters 0 &amp;lt; &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; &amp;lt; 0.5, 0 &amp;lt; &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt; &amp;lt; 1. The approximation is below the convex function. &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; tilts the slope i.e. gradient upside and the tilted approximation meets the convex function. &lt;span class=&#34;math inline&#34;&gt;\(\beta\)&lt;/span&gt; is the update rate of the step size until the the amount of the step is less than the point that tilted approximation meeets the convex function.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Singular vector decomposition</title>
+      <link>/post/singular-vector-decomposition/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/post/singular-vector-decomposition/</guid>
+      <description>
+
+
+&lt;p&gt;Bases are the central idea of linear algebra. An invertable square matrix has eigenvectors. A symetric matrix has orthogonal eigenvectors with non-negative eigenvalues, i.e. positive semidefinite. A matrix has two types of singular vectors, left and right signular vectors, &lt;span class=&#34;math inline&#34;&gt;\(A=U\Sigma V^{T}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;When we think the matrix &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is data points of rows &lt;span class=&#34;math inline&#34;&gt;\(A=U\Sigma V^{T}\)&lt;/span&gt; like data table, The right singular vectors &lt;span class=&#34;math inline&#34;&gt;\(V\)&lt;/span&gt; build bases, the sigular values &lt;span class=&#34;math inline&#34;&gt;\(\Sigma\)&lt;/span&gt; are magnitude of the bases and the left singular values &lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt; becomes new data points on new bases. The new data points &lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt; are orthonormal.&lt;/p&gt;
+&lt;p&gt;When we think the matrix &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is a system of linear transformation &lt;span class=&#34;math inline&#34;&gt;\(Ax=b,\ U\Sigma V^{T}x=b\)&lt;/span&gt;, a vector &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; is repositioned on right singular vector coordinates &lt;span class=&#34;math inline&#34;&gt;\(V\)&lt;/span&gt; then the coordinates are multiplied by &lt;span class=&#34;math inline&#34;&gt;\(\Sigma\)&lt;/span&gt; and finally linear transformed by left singular vector &lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;A matrix is sum of rank one singular matrix. &lt;span class=&#34;math display&#34;&gt;\[A = \sigma_{1} u_{1}u_{1}^{T} + \cdots +  \sigma_{k} u_{k}u_{k}^{T}\]&lt;/span&gt; The Eckart-Young theorem finds closest low-rank matrix &lt;span class=&#34;math inline&#34;&gt;\(A_k\)&lt;/span&gt;.&lt;br /&gt;
+In symetric matrix, the bases (right singular vectors) and it’s value on the bases (left singular vectors) are same. Reproducing kernel hilbert space has same values on it’s base functions.&lt;/p&gt;
+&lt;p&gt;Rayleigh quotient $R(x) = {{x^{T}Sx} } $ has maximum &lt;span class=&#34;math inline&#34;&gt;\(\lambda_{1}\)&lt;/span&gt; at the eigen vector &lt;span class=&#34;math inline&#34;&gt;\(q_{1}\)&lt;/span&gt; and saddle points at &lt;span class=&#34;math inline&#34;&gt;\(x=q_{k},\ \frac{\partial R}{\partial x_{i}} = 0\)&lt;/span&gt;. The second eigenvector can be found by Lagrangian optimization problum maximizing &lt;span class=&#34;math inline&#34;&gt;\(\ R(x)\)&lt;/span&gt; s.t. &lt;span class=&#34;math inline&#34;&gt;\(q_{1} = 0\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Pseudoinversion &lt;span class=&#34;math inline&#34;&gt;\(A^{+}\)&lt;/span&gt; process does first inversing value with &lt;span class=&#34;math inline&#34;&gt;\(U^{T}\)&lt;/span&gt;, and scale with &lt;span class=&#34;math inline&#34;&gt;\(\Sigma ^{+}\)&lt;/span&gt; and followed by reversing axis &lt;span class=&#34;math inline&#34;&gt;\(V^{T}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;When &lt;span class=&#34;math inline&#34;&gt;\(Ax=b\)&lt;/span&gt; has many solutions, minimizing &lt;span class=&#34;math inline&#34;&gt;\(\lVert A \rVert\)&lt;/span&gt; s.t. &lt;span class=&#34;math inline&#34;&gt;\(Ax=b\)&lt;/span&gt; can be best solution. The &lt;span class=&#34;math inline&#34;&gt;\(L_{1}\)&lt;/span&gt; norm has sparse solution.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Steady state equilibrium</title>
+      <link>/post/steady-state-equilibrium/</link>
+      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      <guid>/post/steady-state-equilibrium/</guid>
+      <description>
+
+
+&lt;p&gt;The meaning of &lt;span class=&#34;math inline&#34;&gt;\(A^{T}\)&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Steady state equilibrium&lt;/li&gt;
+&lt;li&gt;Graph Laplacian matrix &lt;span class=&#34;math inline&#34;&gt;\(A^{T}CA\)&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;Differential equation and Laplacian matrix&lt;/li&gt;
+&lt;li&gt;Derivative is a graph without branch.&lt;/li&gt;
+&lt;li&gt;Row space and column space are dual.&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(A^{T}\)&lt;/span&gt; are dual.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;ref) Linear algebra and learning from data, Part IV, Gilbert Strang&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Internal Project</title>
+      <link>/project/internal-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/internal-project/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
+
+&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
+
+&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
+
+&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
+
+&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

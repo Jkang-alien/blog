@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jiyoung Kim | Jun&#39;s Blog</title>
+    <link>/authors/jiyoung-kim/</link>
+      <atom:link href="/authors/jiyoung-kim/index.xml" rel="self" type="application/rss+xml" />
+    <description>Jiyoung Kim</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Thu, 01 Jan 2015 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Jiyoung Kim</title>
+      <link>/authors/jiyoung-kim/</link>
+    </image>
+    
+    <item>
+      <title>Comparison of the Cobas 4800 HPV and HPV 9G DNA Chip Tests for Detection of High-Risk Human Papillomavirus in Cervical Specimens of Women with Consecutive Positive HPV Tests but Negative Pap Smears</title>
+      <link>/publication/2015-01-01_jun2015comparison/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/2015-01-01_jun2015comparison/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dysregulation of X Chromosome Inactivation in High Grade Ovarian Serous Adenocarcinoma</title>
+      <link>/publication/2015-01-01_kang2015dysregulation/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/2015-01-01_kang2015dysregulation/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

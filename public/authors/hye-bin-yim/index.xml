@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hye Bin Yim | Jun&#39;s Blog</title>
+    <link>/authors/hye-bin-yim/</link>
+      <atom:link href="/authors/hye-bin-yim/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hye Bin Yim</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2014 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Hye Bin Yim</title>
+      <link>/authors/hye-bin-yim/</link>
+    </image>
+    
+    <item>
+      <title>Sulodexide Inhibits Retinal Neovascularization in a Mouse Model of Oxygen-Induced Retinopathy</title>
+      <link>/publication/2014-01-01_jo2014sulodexide/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/2014-01-01_jo2014sulodexide/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

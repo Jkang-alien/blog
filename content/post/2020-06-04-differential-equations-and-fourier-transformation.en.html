@@ -1,0 +1,46 @@
+---
+title: Differential equations and Fourier transformation
+author: JK
+date: '2020-06-04'
+slug: differential-equations-and-fourier-transformation
+categories:
+  - Math
+tags:
+  - Analysis
+  - Functional analysis
+  - Machine learning
+  - Math
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-06-04T07:00:40+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>Differential equations describe the change of state. The change relates to the state. The solutions of the differential equations are the status equations. The initial conditions set the time <span class="math inline">\(t\)</span> and status <span class="math inline">\(y\)</span>. The boundary conditions are the value of boundary <span class="math inline">\(y_0\)</span> and <span class="math inline">\(y_1\)</span>.</p>
+<blockquote>
+<p><span class="math inline">\(dy \over dt\)</span> <span class="math inline">\(= ay + q(t)\)</span> starting from <span class="math inline">\(y(0)\)</span> at <span class="math inline">\(t = 0\)</span>. inital conditions <span class="math inline">\(t = 0\)</span> and <span class="math inline">\(y=1\)</span></p>
+</blockquote>
+<p><span class="math inline">\(q(t)\)</span> is a input and <span class="math inline">\(y(t)\)</span> is a response. If <span class="math inline">\(q(t)\)</span> is delta function, the response is said <strong>Impulse response</strong> <span class="math display">\[y&#39; -ay = \delta (t) \\ y(t)=e^{at}\]</span>.</p>
+<p>The solutions are combination of particular solution and null solution <span class="math inline">\(y = y_t + y_n\)</span>. The solution includes <span class="math inline">\(e^{at}\)</span>. The differential equations can not be solved like polynomial equations, because the arguments of the differential equation relate to each other by calculus in the background of the equation. They can not be treated as just different arguments. The <strong>Fourier transformation</strong> puts the <span class="math inline">\(y\)</span> and its derivative <span class="math inline">\(y&#39;\)</span> in the same functional space (Hilbert space). This transformation makes the differential equation problem to simple arithmetic problem.</p>
+<blockquote>
+<p>Fourier transformation <span class="math inline">\(F(x) = \Sigma ^{\infty}_{n=-\infty} c_{n}e^{inx}\)</span></p>
+</blockquote>
+<p>The basis of the Fourier transformation is <span class="math inline">\(e^{inx}\)</span>. If the coefficients of the basis <span class="math inline">\(c_{n}\)</span> decay fater, <span class="math inline">\(F(x)\)</span> becomes smooth. If the coefficients are constant, <span class="math inline">\(F(x)\)</span> is delta function <span class="math inline">\(\delta(x)\)</span>.</p>
+<p>The derivative <span class="math inline">\(dy \over dt\)</span> is an linear transformation operator, i.e. inner product, because the <span class="math inline">\(y\)</span> and <span class="math inline">\(y&#39;\)</span> are in functional space with same basis. The defivative can be represented as a matix <span class="math inline">\(A\)</span>. The derivative matrix is antisymetric i.e. <span class="math inline">\(A^T = -A\)</span> and the minus second derivative matrix <span class="math inline">\(-d^{2}/dx^{2}\)</span> is symetic positive definite. <span class="math inline">\(AAf = -A^{T}Af\)</span>. The meaning of transverse of a matrix is <span class="math inline">\((Ax)^{T}y = x^{T}(A^{T}y)\)</span>. <strong>Dual and inner product</strong></p>
+<div class="figure">
+<img src="/img/secondDifferenceMat.png" alt="" />
+<p class="caption">Second difference matrix K</p>
+</div>
+<p>The second difference matrix solves discrete differential equations. The N eigenvectors of K are <span class="math inline">\(y_{n} = (sin\ n\pi \Delta x, sin\ 2n\pi \Delta x,\ ..., sin\ Nn\pi \Delta x)\)</span>. The N eigen values of K are the positive numbers <span class="math inline">\(\lambda_{n} = 2-2cos {n \pi \over N+1}\)</span>.</p>
+<p>How does exponent <span class="math inline">\(i\)</span> mean in <span class="math inline">\(e^i\)</span>? The exponent makes multiplication to addition. What does an imaginary exponent mean? The imaginary exponent tilts the value to a complex plane. If the base is natural base <span class="math inline">\(e\)</span>, the value of <span class="math inline">\(e^i\)</span> is in the unit circle of a complex plane. The cycle is <span class="math inline">\(2 \pi\)</span>.</p>
+<p>The Fourier transformation for solving the difference equation provoked the subject of functional analysis 200 years ago.</p>
+<p>Reference<br />
+Differential Equations and Linear Algebra, Gilbert Strang</p>

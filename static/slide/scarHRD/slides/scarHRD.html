@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>HRD test</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jun Kang" />
+    <meta name="date" content="2021-11-08" />
+    <script src="scarHRD_files/htmlwidgets/htmlwidgets.js"></script>
+    <script src="scarHRD_files/jquery/jquery.min.js"></script>
+    <link href="scarHRD_files/datatables-css/datatables-crosstalk.css" rel="stylesheet" />
+    <script src="scarHRD_files/datatables-binding/datatables.js"></script>
+    <link href="scarHRD_files/dt-core/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="scarHRD_files/dt-core/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <script src="scarHRD_files/dt-core/js/jquery.dataTables.min.js"></script>
+    <link href="scarHRD_files/crosstalk/css/crosstalk.css" rel="stylesheet" />
+    <script src="scarHRD_files/crosstalk/js/crosstalk.min.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# HRD test
+## scarHRD and sequenza
+### Jun Kang
+### 2021-11-08
+
+---
+
+
+
+
+
+
+
+# Myriad myChoice CDx
+
+- Homologous recombination deficiency (HRD) status
+- Presence mutations in BRCA1 and BRCA2 genes
+- Sensitivity to platinum-based chemotherapy
+- Ovarian cancer
+- Treatment with Zejula (niraparib)
+
+---
+# Homologous recombination deficiency (HRD)
+ - Double-strand break 
+ - Genomic scars
+    - Large-scale loss of heterogeneity [1]
+    - Telomere allelic imbalance [2]
+    - Large-scale state transition [3]
+
+---
+# Loss of Heterozygosity (HRD-LOH)
+
+![](https://raw.githubusercontent.com/sztup/scarHRD/master/inst/extdata/hrd-loh.svg)
+-  Number of 15 Mb exceeding LOH regions which do not cover the whole chromosome.
+
+---
+
+# Large Scale Transitions (LST)
+
+![](https://raw.githubusercontent.com/sztup/scarHRD/master/inst/extdata/lst.svg)
+
+- Chromosomal break between adjacent regions of at least 10 Mb, with a distance between them not larger than 3Mb
+---
+
+# Telomeric Allelic Imbalances
+
+![](https://raw.githubusercontent.com/sztup/scarHRD/master/inst/extdata/ntai.svg)
+- Number AIs that extend to the telomeric end of a chromosome.
+
+---
+# HRD test as a companion diagnostics [4]
+![:scale 60%](../img/nejmHRD.png)
+
+---
+# Key concepts
+
+- Allele-specific copy number
+  - Allele frequency of **heterozygous single nucleotide polymorphism (heterozygous SNP)**
+  
+---
+# HRD test programs
+
+- Sequenza [5]
+- scarHRD [6]
+
+---
+class: left
+class: my-one-page-font
+
+## Allele-specific copy number analysis of tumors [7]
+
+.pull-left[![:scale 90%](../img/BAF.png)]
+.pull-right[
+- B allele frequency (BAF): relative quantity of the one allele compared to the other
+- log R ratio (LRR): Total probe intensity of a given SNP relative to a canonical set of normal controls
+- Loss of heterozygosity
+- Allelic imbalances  
+
+![:scale 80%](../img/CN.png)
+]
+
+---
+### Allele frequency[8]
+
+`\(BAF\)` `\(=\)` `\({pV+1-p} \over {pC+2(1-p)}\)`  
+
+* Given copy number (C)
+* Variant allele count (V)
+* Sample purity (p)
+
+---
+### Three steps of Bayesian data analysis  
+- Full probability model
+- Conditioning on observed data (posterior distribution)
+- Evaluating the fit of the model and the implications of the resulting posterior distribution
+
+Bayesian Data Analysis 3rd, Andrew Gelman et. al.
+
+---
+class: my-one-page-font
+### Full probability model
+
+$$
+`\begin{aligned}
+ r_i &amp; \sim &amp; N\left(log_2 \frac{pC_i+2(1-p)}{p \psi+2(1-p)}, \sigma_{ri} \right)
+\end{aligned}`
+$$
+
+$$
+`\begin{aligned}
+ f_i &amp; \sim &amp; N\left(\frac{pM_i+(1-p)}{pC_i+2(1-p)}, \sigma_{fi} \right)
+\end{aligned}`
+$$
+
+`$$\psi = \frac{\sum_{i}(l_iC_i) }{\sum_{i}(l_i)}$$`
+
+- `\(r_i\)` (log R ratio): Median-normalized log-ratio coverage of all exons within `\(S_i\)`
+- `\(f_i\)` (B allele frequency): MAF of SNPs within segment `\(S_i\)`
+- `\(p\)`: Tumor purity
+- `\(S_i\)`: Genomic segment
+- `\(l_i\)`: Length of $S_i
+- `\(C_i\)`: Copy number of `\(S_i\)`
+- `\(M_i\)`: Copy number of minor alleles in `\(S_i\)`, `\(0 \leq M_i \leq S_i\)`
+- `\(\psi\)`: Tumor ploidy of the sample
+
+---
+### Sequenza results
+
+<div id="htmlwidget-eb760829eda7a14a89e4" style="width:1000px;height:300px;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-eb760829eda7a14a89e4">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59","60","61","62","63","64","65","66","67","68","69","70","71","72","73","74","75","76","77","78","79","80","81","82","83","84","85","86","87","88","89","90","91","92","93","94","95","96","97","98","99","100","101","102","103","104","105","106","107","108","109","110","111","112","113","114","115","116","117","118","119","120","121","122","123","124","125","126","127","128","129","130","131","132","133","134","135","136","137","138","139","140","141","142","143","144","145","146","147","148","149","150","151","152","153","154","155","156","157","158","159","160","161","162","163","164","165","166","167","168","169","170","171","172","173","174","175","176","177","178","179","180","181","182","183","184","185","186","187","188","189","190","191","192","193","194","195","196","197"],["1","1","1","1","1","1","1","1","1","1","1","2","2","2","2","2","2","2","2","3","3","3","3","3","3","3","3","3","3","3","3","3","3","3","3","3","3","3","4","4","4","4","4","4","4","4","4","4","4","5","5","5","5","5","6","6","6","6","6","6","6","6","6","6","6","6","6","6","6","6","6","7","7","7","7","7","7","7","7","7","8","8","8","8","8","8","8","9","9","9","9","9","9","9","10","10","10","10","10","10","10","10","10","10","10","11","11","11","11","11","11","11","11","11","11","11","11","11","11","12","12","12","12","12","12","13","13","13","13","13","13","14","14","14","14","14","14","15","15","15","15","15","16","16","16","16","16","16","16","16","16","16","16","16","16","17","17","17","17","17","17","17","17","17","17","17","17","17","18","18","18","18","18","18","18","18","19","19","19","19","19","19","19","19","20","20","20","20","20","20","21","21","22","22","X","X","X"],[881992,54700724,60381518,68151686,92445264,118165645,142713230,176845545,214571281,214779083,220152763,265195,6636476,95942232,165178873,187697978,200245050,224743437,230231903,367801,10035641,10115057,16217198,35725343,43591210,75476782,88935486,93593176,106849521,111286202,126154714,133614528,135797231,141890143,163720201,183558438,195245832,195410573,64983,719421,1102038,3605406,3895032,7210855,15614213,26875364,52752885,83050831,190874268,58321,49695123,54848231,110284560,110408762,304971,397383,26368947,30076069,31237481,31239757,31324030,31334517,32497899,32557735,36274244,45165560,57310333,62407141,84234205,136582128,136685482,387586,813658,29394467,38505113,57887882,61969148,66010306,122333006,145813902,418739,23493020,35979241,47491134,75925095,107710087,121534851,116851,12821855,15623238,65595176,69238193,123888248,140055941,93915,26244079,28293583,37819524,42383552,42775249,46999037,47594870,113913240,131506517,135440206,194711,2424216,18267449,18291577,26353668,44092963,48166304,55059850,56468721,56508441,64004711,67400064,82546847,118765323,91972,14587487,25593817,26231934,38472705,77253573,19291443,90823529,113201885,113720477,114579349,114784140,19188703,20443931,20916741,63175009,94038634,105246468,20172740,24922277,50399014,56720764,69553809,81721,23079354,31131649,31495876,46386364,46392263,49433006,53481035,72992230,74485725,76268915,85105640,89212249,131520,18302021,18404404,21201610,25853688,33433897,41381897,41570485,45234454,45893934,78950539,79915921,80012070,12728,480975,14183512,18517223,20586336,31537591,32833866,34844873,288151,13993513,27732138,37203331,50244937,50411454,54710389,54747185,256590,25733342,29449369,39797381,59989504,62202260,9590418,14723002,16123548,18898493,200901,28807410,62944438],[54694219,60223464,67890614,92262955,118165373,121485317,175336350,214564482,214656723,218475567,249211393,3685109,92318650,163695211,187692951,198950264,223591467,228883775,242793345,9970214,10089840,15921113,33908017,42906118,75466171,75790996,90283997,106708498,111261011,126154253,133583713,134278314,141644347,161048011,183007279,195012670,195410523,197846920,678881,1090165,3526876,3629554,7069902,13615218,26492026,49531361,82369593,190653506,190905658,44809231,54637665,109181731,110286746,180645407,397325,25141710,29911347,31237430,31239699,31323562,31325146,32487350,32557730,35967915,44280870,57245075,58779473,83892770,136472545,136599913,170878952,810262,29160727,38431547,57696638,57888238,65557673,121943491,145281651,158715363,23340622,32617795,43157230,75032900,106552968,121531187,146171783,8713333,15591432,45363942,69206944,123860787,140040197,141071570,25755803,28276302,37819485,39012577,42775180,46194541,47133900,112764646,130258477,135439043,135455785,2325486,18218838,18290997,25100280,43852531,47863145,51579531,56468685,56507981,63682916,67395715,79700757,118516769,134650018,13529583,25562342,25957066,33139104,76537792,133720911,90644226,113088602,113699492,114550842,114782964,115064545,20443513,20876283,62234257,94008840,105243259,106445270,24922257,50279691,56686332,69011941,102463492,22926957,31122611,31488996,34404312,46391607,48753036,53333630,72828335,74447599,75670215,84922891,89211772,90163280,18301902,18397741,20688878,22253315,32962080,41300852,41561673,45150659,45892589,78820232,79915729,80011450,81081972,334923,14146164,14632861,19996075,30267187,32720256,34324249,77894882,13220803,24310478,37005335,50208644,50404967,54692570,54746121,59074679,25666872,26094860,37958290,59744000,62199131,62904549,11181718,48083554,18846125,51220991,27999207,56292289,155215975],[0.5,0.3,0,0.5,0.3,0.5,0.5,0.1,0.5,0.1,0.5,0.1,0.5,0.5,0.3,0.5,0.1,0.5,0.1,0.1,0.3,0.1,0.1,0.5,0.1,0.4,0.3,0.5,0.4,0.3,0.3,0.1,0.3,0.1,0.3,0.1,0.5,0.1,0,0.1,0,0.5,0,0.3,0.3,0.5,0.5,0.1,0.5,0.5,0.5,0.1,0.4,0.1,0.5,0.1,0.3,0,0.1,0.1,0.2,0,0.4,0,0.3,0.5,0.5,0.5,0.1,0.4,0.1,0.1,0.1,0.1,0.1,0.5,0.1,0.5,0.3,0.5,0.5,0.1,0.5,0.5,0.1,0.5,0.3,0.3,0.1,0.5,0.3,0.3,0.1,0.1,0.5,0.3,0.5,0.2,0.3,0.1,0.5,0.1,0.5,0.1,0.3,0.1,0.1,0.5,0.1,0.1,0.1,0.5,0.5,0.3,0.5,0.1,0.5,0.1,0.1,0.3,0.5,0,0.5,0.5,0.1,0.1,0,0.1,0,0.1,0,0.5,0.3,0.5,0.1,0,0.1,0.3,0.5,0.3,0.1,0.5,0.1,0.5,0.5,0.5,0.2,0.5,0.1,0,0.5,0.1,0.1,0.5,0.3,0.1,0.3,0.1,0.5,0.1,0.1,0.2,0,0.1,0.1,0,0.1,0,0.5,0.1,0.5,0.1,0.1,0.3,0.5,0.1,0.1,0.5,0.3,0.1,0.5,0.1,0.4,0.1,0.5,0.3,0.5,0.3,0.3,0,0.5,0.5,0.5,0.1,0.1,0.5,0.5],[1636,73,94,264,315,62,996,419,9,49,461,24,994,691,246,106,188,15,224,101,9,117,112,149,385,9,14,97,39,300,185,9,75,173,139,184,9,104,36,34,91,16,102,159,75,173,305,624,10,402,50,310,20,683,9,175,9,119,33,66,10,176,38,161,273,168,15,150,344,9,352,24,279,134,222,9,43,665,358,261,441,95,88,159,180,101,311,154,28,376,71,740,460,42,418,92,129,49,56,33,26,758,356,101,14,115,410,14,78,80,66,131,70,16,219,96,238,311,311,540,141,9,116,662,630,490,175,9,64,11,18,58,36,489,408,224,18,128,367,86,165,768,520,192,14,80,10,22,23,330,9,46,117,98,92,621,13,43,160,115,330,10,133,10,630,43,9,63,9,205,12,9,77,21,37,262,594,482,273,638,9,255,9,297,451,47,284,403,140,60,72,571,79,790,172,212,506],[0.1,0.1,0,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0,0.1,0.1,0.1,0.1,0.1,0.2,0,0.2,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0.1,0.1,0,0.1,0,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0,0.1,0,0.1,0,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0,0.2,0.1,0.1,0.1,0.1,0.1,0,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.2,0,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0,0.2,0.1,0.1,0.1,0.2,0.2,0.1,0.1,0.1,0,0.1,0.1,0.1,0.1,0.2,0,0.2,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1],[1.1,1.5,1.2,2.1,1.6,1.2,1.1,0.6,0.7,0.6,1.1,0.6,1.1,1.1,1.6,1.1,0.6,1.1,0.6,1.1,1.2,1.2,0.6,1.1,0.6,1.4,1.1,1.1,1.6,2.1,1.6,1.2,1.7,1.1,1.5,1.1,1.3,1.1,1.5,1.3,1.6,1.5,1.5,2.1,1.6,1.1,1.1,0.6,0.6,1.1,1.1,0.6,0.9,0.6,0.8,0.6,0.9,1.2,0.8,1.1,0.6,1.2,1.2,1.2,1.7,1.1,1.3,1.1,0.6,1,0.6,1,0.6,1.1,0.6,0.8,0.6,1.1,1.6,2,1.1,0.6,1.1,1.1,0.6,1.1,1.7,1.9,0.6,1.1,1.1,1.6,0.6,0.9,1.1,1.6,1.1,1,1.5,0.6,0.6,0.6,1.1,0.6,0.7,1.1,0.6,0.8,0.6,1.2,0.6,1.1,1.1,1.2,1.1,0.6,1.2,0.6,1.1,1.6,1.1,0.7,1.1,1.1,0.6,0.6,1.6,1.7,1.5,1.6,1.6,1.1,1.7,1.1,0.6,1.1,1.1,1,1.1,1.7,0.6,1.1,0.6,1.1,1,1.1,1.9,1.6,0.6,1.3,1.1,1.2,0.6,1.1,1.6,0.6,1.1,0.6,0.6,0.6,1.1,1.6,1.1,1,1.1,1.6,1.7,1.5,0.7,0.6,0.7,0.7,0.6,1.8,1.3,0.6,0.6,1.1,1.5,1.1,1,1.1,1.1,1,1.1,1.1,1.1,1.6,2.1,1.5,1,1.1,1.2,0.6,0.6,1.1,1.1],[2172,101,114,338,434,85,1293,575,11,56,605,29,1316,939,329,137,275,32,297,125,11,152,141,203,538,12,14,120,50,408,247,11,100,213,185,228,20,134,49,51,126,18,136,219,117,214,366,833,19,530,63,403,22,937,12,237,34,138,46,67,20,204,53,208,360,209,27,191,455,12,444,26,366,172,299,13,66,903,466,429,520,130,133,218,225,123,473,190,36,479,124,958,621,71,521,104,159,58,127,48,28,1020,435,132,16,158,508,14,108,119,91,153,83,17,285,171,333,408,383,667,163,10,146,820,843,627,259,24,90,18,27,86,41,619,528,297,37,180,506,114,237,994,732,277,20,119,30,81,33,444,13,53,138,133,123,809,15,74,178,173,437,13,161,16,890,76,18,92,14,251,29,12,100,22,52,343,879,650,356,881,20,327,14,381,569,58,382,564,226,82,115,758,123,1071,255,315,749],[0.6,1.5,0.5,1.6,1,0.5,0.6,0.2,0.1,0.1,0.5,0.2,0.7,0.7,1,0.9,0.2,0.5,0.2,0.3,0.6,1,0.2,1.3,0.4,0.7,0.2,0.4,1.5,1.5,0.7,0.4,1.2,0.4,0.5,0.5,0.6,0.4,0.4,0.7,1.6,1.2,0.6,1.5,1.2,0.5,0.4,0.5,0.2,0.6,0.3,0.2,0.1,0.2,0.3,0.2,0.5,0.4,0.2,0.2,0.3,0.5,0.2,0.8,1.1,0.4,0.3,0.4,0.2,0.3,0.2,0.3,0.2,0.8,0.2,0.1,0.2,0.5,1.2,2,0.7,0.2,0.5,0.6,0.4,0.4,1.5,1.6,0.3,0.6,0.6,1,0.2,0.5,0.4,0.7,0.3,0.3,0.7,0.2,0.1,0.2,0.4,0.2,0.1,0.4,0.2,0.1,0.2,0.6,0.2,0.2,0.3,0.3,0.3,0.2,0.6,0.2,0.3,0.9,0.4,0.3,0.3,0.4,0.3,0.2,1.1,1.4,1.1,1.4,0.4,0.3,0.4,0.5,0.2,0.7,0.3,0.3,0.8,1.4,0.2,0.5,0.3,0.4,0.2,0.4,1.4,1.1,0.2,0.7,0.3,0.4,0.2,0.6,0.9,0.2,0.2,0.2,0.1,0.2,0.5,0.7,0.6,0.5,0.7,0.7,0.7,0.7,0.2,0.2,0.2,0.2,0.2,0.3,0.8,0.2,0.2,0.5,0.9,0.6,0.2,0.3,0.3,0.5,0.6,0.3,0.5,1.1,1.5,0.6,0.6,0.7,0.9,0.2,0.3,0.6,0.8],[2,3,2,4,3,2,2,1,2,1,2,1,2,2,3,2,1,2,1,2,3,2,1,2,1,5,2,2,3,4,3,2,3,2,3,2,2,2,3,2,3,2,3,4,3,2,2,1,2,2,2,1,7,1,2,1,3,2,1,2,6,2,3,2,3,2,2,2,1,3,1,2,1,2,1,2,1,2,3,4,2,1,2,2,1,2,3,4,1,2,3,3,1,2,2,3,2,2,3,1,2,1,2,1,3,2,1,2,1,2,1,2,2,4,2,1,2,1,2,3,2,1,2,2,1,1,3,2,3,2,3,2,3,2,1,2,2,2,2,3,1,2,1,2,2,2,12,4,1,2,2,2,1,2,3,1,4,1,1,1,2,6,2,2,2,3,3,3,2,1,2,1,1,3,2,1,1,2,3,2,2,2,3,2,2,3,2,3,4,3,2,2,2,1,1,2,2],[1,2,2,2,2,1,1,1,1,1,1,1,1,1,2,1,1,1,1,2,2,2,1,1,1,3,2,1,2,3,2,2,2,2,2,2,1,2,3,2,3,1,3,3,2,1,1,1,1,1,1,1,4,1,1,1,2,2,1,2,5,2,2,2,2,1,1,1,1,2,1,2,1,2,1,1,1,1,2,2,1,1,1,1,1,1,2,3,1,1,2,2,1,2,1,2,1,2,2,1,1,1,1,1,2,2,1,1,1,2,1,1,1,3,1,1,1,1,2,2,1,1,1,1,1,1,3,2,3,2,3,1,2,1,1,2,2,1,1,2,1,1,1,1,1,1,9,2,1,2,1,2,1,1,2,1,3,1,1,1,2,5,2,2,2,3,3,3,1,1,1,1,1,2,1,1,1,1,2,2,1,2,2,2,1,2,1,2,3,3,1,1,1,1,1,1,1],[1,1,0,2,1,1,1,0,1,0,1,0,1,1,1,1,0,1,0,0,1,0,0,1,0,2,0,1,1,1,1,0,1,0,1,0,1,0,0,0,0,1,0,1,1,1,1,0,1,1,1,0,3,0,1,0,1,0,0,0,1,0,1,0,1,1,1,1,0,1,0,0,0,0,0,1,0,1,1,2,1,0,1,1,0,1,1,1,0,1,1,1,0,0,1,1,1,0,1,0,1,0,1,0,1,0,0,1,0,0,0,1,1,1,1,0,1,0,0,1,1,0,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,1,1,1,0,1,0,1,1,1,3,2,0,0,1,0,0,1,1,0,1,0,0,0,0,1,0,0,0,0,0,0,1,0,1,0,0,1,1,0,0,1,1,0,1,0,1,0,1,1,1,1,1,0,1,1,1,0,0,1,1],[-6.8,-6.7,-6.8,-6.8,-6.7,-6.8,-6.8,-7.2,-7.4,-6.8,-6.8,-6.7,-6.7,-6.8,-6.7,-6.7,-7,-6.7,-6.8,-6.7,-6.8,-6.7,-6.8,-6.7,-6.9,-6.9,-8.7,-6.7,-6.8,-6.7,-6.7,-6.8,-6.8,-6.7,-6.8,-6.8,-6.7,-6.7,-6.7,-6.7,-6.7,-6.7,-6.8,-6.7,-6.8,-6.7,-6.8,-6.9,-7,-6.8,-6.7,-6.7,-7,-7.8,-6.8,-6.7,-8.7,-6.8,-6.8,-6.7,-6.8,-6.8,-7.1,-6.7,-6.8,-6.7,-6.9,-6.7,-7.4,-6.8,-7,-6.8,-6.8,-6.7,-6.9,-6.7,-6.8,-6.8,-6.7,-6.7,-6.7,-7.2,-6.7,-6.7,-7,-6.8,-6.7,-6.8,-6.8,-6.8,-7.5,-6.7,-6.9,-6.9,-6.7,-6.7,-6.7,-7.6,-6.7,-6.8,-8,-7.9,-6.7,-6.8,-7,-6.7,-7,-6.9,-6.8,-6.8,-6.9,-6.8,-6.7,-6.9,-6.8,-6.8,-6.8,-7.6,-6.7,-6.7,-6.7,-6.9,-6.8,-6.8,-7.2,-6.8,-6.7,-6.8,-6.7,-6.8,-6.7,-6.8,-6.8,-6.8,-7.3,-6.7,-6.8,-8,-6.7,-6.7,-6.8,-6.7,-7,-6.8,-6.8,-6.7,-6.7,-6.8,-7.1,-7.4,-6.7,-6.8,-6.8,-6.7,-6.8,-6.8,-7.1,-6.8,-11.4,-6.8,-6.7,-6.8,-6.7,-6.8,-6.8,-6.7,-6.8,-6.7,-7.5,-6.8,-8.5,-7.4,-6.8,-6.8,-6.8,-7.4,-7,-6.7,-6.7,-6.7,-6.8,-6.7,-6.8,-6.8,-6.8,-7.3,-6.7,-6.7,-6.7,-6.7,-6.8,-6.8,-6.7,-6.8,-7.1,-6.7,-6.8]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>chromosome<\/th>\n      <th>start.pos<\/th>\n      <th>end.pos<\/th>\n      <th>Bf<\/th>\n      <th>N.BAF<\/th>\n      <th>sd.BAF<\/th>\n      <th>depth.ratio<\/th>\n      <th>N.ratio<\/th>\n      <th>sd.ratio<\/th>\n      <th>CNt<\/th>\n      <th>A<\/th>\n      <th>B<\/th>\n      <th>LPP<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"autoWidth":false,"pageLength":5,"scrollX":true,"columnDefs":[{"className":"dt-right","targets":[2,3,4,5,6,7,8,9,10,11,12,13]},{"orderable":false,"targets":0}],"order":[],"orderClasses":false,"lengthMenu":[5,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+
+---
+class: center
+### Sequenza results
+&lt;img src="scarHRD_files/figure-html/unnamed-chunk-2-1.png" width="500" height="500" /&gt;
+
+---
+class: center
+### Sequenza results
+&lt;img src="scarHRD_files/figure-html/unnamed-chunk-3-1.png" width="1000" height="500" /&gt;
+
+---
+class: center
+### Sequenza results
+&lt;img src="scarHRD_files/figure-html/unnamed-chunk-4-1.png" width="500" height="500" /&gt;
+
+.footer[LPP: log-posterior probability]
+
+---
+### scarHRD
+
+```r
+library(scarHRD)
+scar_score(here::here("static/slide/scarHRD/example/example1.txt"), reference = "grch38", chr.in.names = FALSE, seqz = FALSE)
+```
+
+```
+## Determining HRD-LOH, LST, TAI
+```
+
+```
+##      HRD Telomeric AI LST HRD-sum
+## [1,]  27           27  33      87
+```
+
+---
+class: my-one-page-font
+# References
+
+[1] V. Abkevich, K. M. Timms, B. T. Hennessy, et al. "Patterns of
+Genomic Loss of Heterozygosity Predict Homologous Recombination Repair
+Defects in Epithelial Ovarian Cancer". En. In: _British Journal of
+Cancer_ 107.10 (11. 2012), pp. 1776-1782. ISSN: 1532-1827.
+
+[2] N. J. Birkbak, Z. C. Wang, J. Kim, et al. "Telomeric Allelic
+Imbalance Indicates Defective DNA Repair and Sensitivity to
+DNA-Damaging Agents". En. In: _Cancer Discov_ 2.4 (4. 2012), pp.
+366-375. ISSN: 2159-8274, 2159-8290.
+
+[3] T. Popova, E. Manie, G. Rieunier, et al. "Ploidy and Large-Scale
+Genomic Instability Consistently Identify Basal-like Breast Carcinomas
+with BRCA1/2 Inactivation". En. In: _Cancer Res_ 72.21 (11. 2012), pp.
+5454-5462. ISSN: 0008-5472, 1538-7445.
+
+[4] I. Ray-Coquard, P. Pautier, S. Pignata, et al. "Olaparib plus
+Bevacizumab as First-Line Maintenance in Ovarian Cancer". In: _New
+England Journal of Medicine_ 381.25 (12. 19, 2019), pp. 2416-2428.
+ISSN: 0028-4793. pmid: 31851799.
+
+[5] F. Favero, T. Joshi, A. M. Marquard, et al. "Sequenza:
+Allele-Specific Copy Number and Mutation Profiles from Tumor Sequencing
+Data". In: _Annals of Oncology_ 26.1 (1. 01, 2015), pp. 64-70. ISSN:
+0923-7534, 1569-8041. pmid: 25319062.
+
+[6] Z. Sztupinszki, M. Diossy, M. Krzystanek, et al. "Migrating the SNP
+Array-Based Homologous Recombination Deficiency Measures to next
+Generation Sequencing Data of Breast Cancer". In: _npj Breast Cancer_
+4.1 (1 7. 02, 2018), pp. 1-4. ISSN: 2374-4677.
+
+[7] E. F. Attiyeh, S. J. Diskin, M. A. Attiyeh, et al. "Genomic Copy
+Number Determination in Cancer Cells from Single Nucleotide
+Polymorphism Microarrays Based on Quantitative Genotyping Corrected for
+Aneuploidy". In: _Genome Res._ 19.2 (2. 01, 2009), pp. 276-283. ISSN:
+1088-9051, 1549-5469. pmid: 19141597.
+
+[8] J. X. Sun, Y. He, E. Sanford, et al. "A Computational Approach to
+Distinguish Somatic vs. Germline Origin of Genomic Alterations from
+Deep Sequencing of Cancer Specimens without a Matched Normal". In:
+_PLOS Computational Biology_ 14.2 (2018), p. e1005965. ISSN: 1553-7358.
+
+&lt;style type="text/css"&gt;
+.remark-slide-content {
+    font-size: 32px;
+    padding: 1em 4em 1em 4em;
+}
+.small-font {
+  font-size: 28px;
+}
+.xsmall-font {
+  font-size: 22px;
+}
+.my-one-page-font {
+  font-size: 16px;
+}
+ {
+    max-width: 100%;
+}
+&lt;/style&gt;
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macro.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current%",
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+---
+title: Lagrange dual problem and conjugate function
+author: JK
+date: '2020-09-13'
+slug: lagrange-dual-problem-and-conjugate-function
+categories:
+  - Convex optimization
+  - Math
+  - Machine learning
+tags:
+  - Convex optimization
+  - Deep Learning
+  - Machine learning
+  - Math
+  - Limit
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-09-13T06:37:29+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+The optimization problem have two components that are objective function $f_0 : \mathbb R ^n \rightarrow \mathbb R$ and the constraints. The objective function and constraints keep in check each other and make balance at saddle point i.e. optimal point. The dual (Lagrange) problem of the optimal problem also solve the optimization problem by making low boundary.  
+
+The dual problem can be explained as a conjugate function $f^* = \sup (x^Ty-f(x))$. The Lagrangian is $L(x, \lambda, \nu) = f_0(x) + \lambda f_1, + \nu f_2$ where $f_0$ is the objective function, $f_1$ is inequality constraints and $f_2$ is equality constraints. The Lagrangian function is $g(\lambda,nu) =  \inf_{x}L(x, \lambda, \nu) = \inf_{x}(f_0(x) + \lambda f_{1} + \nu f_{2})$. The second and third term of the Lagrangian function is can be rewriten as an inner product form $x^{T}h(\lambda) + x^{T}i(\nu)$ and constant term with $\lambda$ and $\nu$. Then the inner product term $x^{T}h(\lambda) + x^{T}i(\nu)$ and objective term becomes a conjugate function.  
+
+The conjugate function $f^*(x)$ is similar in terms of balance and saddle point. 

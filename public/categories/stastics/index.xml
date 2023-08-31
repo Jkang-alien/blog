@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stastics | Jun&#39;s Blog</title>
+    <link>/categories/stastics/</link>
+      <atom:link href="/categories/stastics/index.xml" rel="self" type="application/rss+xml" />
+    <description>Stastics</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 18 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Stastics</title>
+      <link>/categories/stastics/</link>
+    </image>
+    
+    <item>
+      <title>Tidymodel and glmnet</title>
+      <link>/post/tidymodel-and-glmnet/</link>
+      <pubDate>Wed, 18 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/tidymodel-and-glmnet/</guid>
+      <description>
+
+
+&lt;p&gt;When the penalized generalize linear model (Lasso or Ridge) is processed in the tidymodel environment, finalizing the hyperparameter (lambda) and getting coefficients of the final model are confusing. Here is an example. This example predicts PIK3CA mutation status by gene expression data. TCGA breast cancer dataset is used.&lt;/p&gt;
+&lt;div id=&#34;modeling&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;Modeling&lt;/h5&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;library(glmnet)
+library(themis)
+
+set.seed(930093)
+cv_splits &amp;lt;- rsample::vfold_cv(trainset_ahDiff, strata = PIK3CA_T)
+mod &amp;lt;- logistic_reg(penalty = tune(),
+                    mixture = tune()) %&amp;gt;%
+  set_engine(&amp;quot;glmnet&amp;quot;)
+
+rec &amp;lt;- recipe(PIK3CA_T ~ ., data = trainset_ahDiff) %&amp;gt;%
+  step_BoxCox(all_numeric()) %&amp;gt;%
+  step_dummy(HISTOLOGICAL_DIAGNOSIS) %&amp;gt;%
+  step_center(all_numeric()) %&amp;gt;%
+  step_scale(all_numeric()) %&amp;gt;%
+  step_smote(PIK3CA_T)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;wfl &amp;lt;- workflow() %&amp;gt;%
+  add_recipe(rec) %&amp;gt;%
+  add_model(mod)
+
+glmn_set &amp;lt;- parameters(penalty(range = c(-5,1), trans = log10_trans()),
+                       mixture())
+
+glmn_grid &amp;lt;- 
+  grid_regular(glmn_set, levels = c(7, 5))
+ctrl &amp;lt;- control_grid(save_pred = TRUE, verbose = TRUE)&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Grid parameter search on 10-fold cross-validation with 5 repeats&lt;br /&gt;
+&lt;/li&gt;
+&lt;li&gt;Dummy variable to control for histologic subtype&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div id=&#34;select-best-parameter&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;Select best parameter&lt;/h5&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;glmn_tune &amp;lt;- 
+  tune_grid(wfl,
+            resamples = cv_splits,
+            grid = glmn_grid,
+            metrics = metric_set(roc_auc),
+            control = ctrl)
+
+
+best_glmn &amp;lt;- select_best(glmn_tune, metric = &amp;quot;roc_auc&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;finalizing&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;Finalizing&lt;/h5&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;wfl_final &amp;lt;- 
+  wfl %&amp;gt;%
+  finalize_workflow(best_glmn) %&amp;gt;%
+  fit(data = trainset_ahDiff)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;code&gt;finalize_workflow()&lt;/code&gt; finalizes the model with selected optimal hyperparameters. However, the glmnet fits any lambda, not the indicated lambda. This was discussed at &lt;a href=&#34;https://github.com/tidymodels/parsnip/issues/195&#34; class=&#34;uri&#34;&gt;https://github.com/tidymodels/parsnip/issues/195&lt;/a&gt;. The glmnet is more efficient to fit all lambda than a single lambda. Thus tidymodel ignores the indicated lambda. This made the first confusion. &lt;strong&gt;The finalization can be finalized by predict in tidymodel environment.&lt;/strong&gt; Finalize with &lt;code&gt;predict&lt;/code&gt;. Note the last argument &lt;code&gt;penalty = 1&lt;/code&gt; of &lt;code&gt;stats::predict(wfl_final, type = &#34;prob&#34;, new_data = trainset_ahDiff, penalty = 1)&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;train_predict &amp;lt;- stats::predict(wfl_final, type = &amp;quot;prob&amp;quot;, new_data = trainset_ahDiff, penalty = 1)
+train_probs &amp;lt;- 
+  predict(wfl_final, type = &amp;quot;prob&amp;quot;, new_data = trainset_ahDiff) %&amp;gt;%
+  bind_cols(obs = trainset_ahDiff$PIK3CA_T) %&amp;gt;%
+  bind_cols(predict(wfl_final, new_data = trainset_ahDiff))&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;div id=&#34;performance&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;Performance&lt;/h5&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;conf_mat(train_probs, obs, .pred_class)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##           Truth
+## Prediction Wild Mutant
+##     Wild    213     45
+##     Mutant  123    158&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;autoplot(roc_curve(train_probs, obs, .pred_Mutant, event_level = &amp;quot;second&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-03-18-tidymodel-and-glmnet_files/figure-html/performance-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;roc_auc(train_probs, obs, .pred_Mutant, event_level = &amp;quot;second&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 1 x 3
+##   .metric .estimator .estimate
+##   &amp;lt;chr&amp;gt;   &amp;lt;chr&amp;gt;          &amp;lt;dbl&amp;gt;
+## 1 roc_auc binary         0.770&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Because glmnet fits the whole path, there are whole coefficients in the glmnet fit object &lt;code&gt;wfl_final&lt;/code&gt;. This was the second confusion. How to get the final model coefficients is below.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;coefficients&#34; class=&#34;section level5&#34;&gt;
+&lt;h5&gt;Coefficients&lt;/h5&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;tidy(extract_model(wfl_final)) %&amp;gt;%
+  filter(lambda &amp;gt; 0.98 &amp;amp; lambda &amp;lt; 1.01)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 17 x 5
+##    term                                           step estimate lambda dev.ratio
+##    &amp;lt;chr&amp;gt;                                         &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;  &amp;lt;dbl&amp;gt;     &amp;lt;dbl&amp;gt;
+##  1 (Intercept)                                      55  -0.0630   1.00     0.123
+##  2 C4A                                              55   0.0587   1.00     0.123
+##  3 C5orf13                                          55   0.0587   1.00     0.123
+##  4 CDSN                                             55   0.0706   1.00     0.123
+##  5 CFB                                              55   0.0719   1.00     0.123
+##  6 CYP21A2                                          55   0.0516   1.00     0.123
+##  7 DGKE                                             55  -0.0709   1.00     0.123
+##  8 FGD5                                             55   0.0670   1.00     0.123
+##  9 GALNT10                                          55   0.0575   1.00     0.123
+## 10 GOLM1                                            55   0.0689   1.00     0.123
+## 11 GPX8                                             55   0.0657   1.00     0.123
+## 12 KLK11                                            55   0.0145   1.00     0.123
+## 13 NTN4                                             55   0.0578   1.00     0.123
+## 14 SMYD3                                            55   0.0637   1.00     0.123
+## 15 USP36                                            55  -0.0698   1.00     0.123
+## 16 WBP2                                             55  -0.0652   1.00     0.123
+## 17 HISTOLOGICAL_DIAGNOSIS_Infiltrating.Lobular.~    55  -0.0244   1.00     0.123&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tidymodel</title>
+      <link>/post/tidymodel/</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/tidymodel/</guid>
+      <description>
+
+
+&lt;div id=&#34;machine-learning-and-tidymodel&#34; class=&#34;section level3&#34;&gt;
+&lt;h3&gt;Machine Learning and Tidymodel&lt;/h3&gt;
+&lt;div id=&#34;model-setting-parsnip&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Model setting, {Parsnip}&lt;/h4&gt;
+&lt;p&gt;Rpackage Parsnip standardizes model specification. Tidymodel follows the concept of lazy evaluation of the tidyverse. Parsnip sets unified specifications and lately evaluates.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;feature-engineering-recipes&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Feature engineering, {Recipes}&lt;/h4&gt;
+&lt;p&gt;Recipes make preprocessing easy with &lt;code&gt;step_()&lt;/code&gt; functions. Recipes after specification calculate.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;resampling-rsample&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Resampling, {rsample}&lt;/h4&gt;
+&lt;p&gt;To choose a model and hyperparameters, we must validate the different models.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;making-hyperparameter-set-dials&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Making hyperparameter set, {dials}&lt;/h4&gt;
+&lt;p&gt;The Rpackage {dials} set hyperparameter similarily with {Parsnip}. {Dials} standadize parameter of each modeling algorithm.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;set-modeling-process-workflowr&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Set modeling process, {Workflowr}&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div id=&#34;fit-models-with-hyperparameter-tunes&#34; class=&#34;section level4&#34;&gt;
+&lt;h4&gt;Fit models with hyperparameter, {tunes}&lt;/h4&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Applied Machine Learning Workshop RStudio Conference 2020</title>
+      <link>/post/applied-machine-learning-workshop-rstudio-conference-2020/</link>
+      <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/post/applied-machine-learning-workshop-rstudio-conference-2020/</guid>
+      <description>
+
+
+&lt;p&gt;This is a note of applied machine learning workshop RStudion conference 2020&lt;/p&gt;
+&lt;p&gt;Why is it hard to predict (domain knowledge).&lt;/p&gt;
+&lt;p&gt;purrr::map allows inline code.&lt;/p&gt;
+&lt;p&gt;purrr::map and tidyr::nest covered because they are used in resample or tune.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/2020-01-26-applied-machine-learning-workshop-rstudio-conference-2020_files/figure-html/explore-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;Skew data might be looking outlier.&lt;/p&gt;
+&lt;p&gt;People look at data in many different ways like outliers, missingness, correlation, and suspicion of an important variable.&lt;/p&gt;
+&lt;p&gt;The ggplot is good to explore variables adding geoms changing plot.&lt;/p&gt;
+&lt;p&gt;Machine learning is creative because you can do many different ways such as which variable should be included.&lt;/p&gt;
+&lt;p&gt;Model workflow: imputation -&amp;gt; transformation -&amp;gt; filter -&amp;gt; model&lt;/p&gt;
+&lt;p&gt;Resampling avoids something like the garden of forking paths or p-hacking by honest feedback.&lt;/p&gt;
+&lt;p&gt;The tuning parameter can be estimated &lt;strong&gt;analytically&lt;/strong&gt; or iteratively.&lt;/p&gt;
+&lt;p&gt;Single validation set ??&lt;/p&gt;
+&lt;p&gt;Resampling process questions&lt;/p&gt;
+&lt;p&gt;Splitting data is confusing.&lt;/p&gt;
+&lt;p&gt;The test set split preserves &lt;strong&gt;distribution&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Interval and sampling are behind the scene of resampling.&lt;/p&gt;
+&lt;p&gt;fomular x ~ . -something to remove&lt;/p&gt;
+&lt;p&gt;Variable role: limited (can not be applied to hierarchical in Baysian??)&lt;/p&gt;
+&lt;p&gt;Formula and XY interface is not fit in machine learning. The recipes package is a solution.&lt;/p&gt;
+&lt;p&gt;The broom::glance (one-row summary of metrics, don’t trust this too much) tidy (coefficients) augment (by data points)&lt;/p&gt;
+&lt;p&gt;The parsnip (unified interface) is a solution to a different interface.&lt;/p&gt;
+&lt;p&gt;How to set specific settings using parsnip?&lt;/p&gt;
+&lt;p&gt;Many other packages supporting parsnip. Look at the tidymodels packages.&lt;/p&gt;
+&lt;p&gt;What is the difference between caret and parsnip?&lt;/p&gt;
+&lt;p&gt;Caret~base R, parsnip~tidyverse&lt;/p&gt;
+&lt;p&gt;The parsnip generalizes the interfaces and is easy to extend.&lt;/p&gt;
+&lt;p&gt;A dummy variable is confusing in the interaction of terms and how to interpret coefficiency.&lt;/p&gt;
+&lt;p&gt;The level with 0,0 allocation becomes a base variable in factor variable. A continuous variable can be categorized with recipe::step_discritize().&lt;/p&gt;
+&lt;p&gt;A zero variance predictor includes no record or single value variable.&lt;/p&gt;
+&lt;p&gt;Feature engineering problem
+* Dummy variable&lt;br /&gt;
+* Zero variance
+* Standardize&lt;/p&gt;
+&lt;p&gt;Customizing Step function&lt;/p&gt;
+&lt;p&gt;The first level is a reference. There are ways to change the reference level. (Ordering factor level issues)&lt;/p&gt;
+&lt;p&gt;People respond positively to the recipes.&lt;/p&gt;
+&lt;p&gt;recipe -&amp;gt; prep -&amp;gt; juice/bake; define -&amp;gt; calculate -&amp;gt; processing (training or test set)&lt;/p&gt;
+&lt;p&gt;The post-processed data set goes to fit() to establish a model&lt;/p&gt;
+&lt;p&gt;Versioning model caching?&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mod_rec &amp;lt;- recipe(
+  Sale_Price ~ Longitude + Latitude + Neighborhood, 
+  data = ames_train
+) %&amp;gt;%
+  step_log(Sale_Price, base = 10) %&amp;gt;%
+  
+  # Lump factor levels that occur in 
+  # &amp;lt;= 5% of data as &amp;quot;other&amp;quot;
+  step_other(Neighborhood, threshold = 0.05) %&amp;gt;%
+  
+  # Create dummy variables for _any_ factor variables
+  step_dummy(all_nominal()) %&amp;gt;%
+  step_nzv(
+    starts_with (&amp;quot;Neighborhood_&amp;quot;))
+
+preped_data &amp;lt;- prep(mod_rec) 
+
+preped_data %&amp;gt;%
+  juice() %&amp;gt;%
+  slice(1:5)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;## # A tibble: 5 x 11
+##   Longitude Latitude Sale_Price Neighborhood_Co… Neighborhood_Ol…
+##       &amp;lt;dbl&amp;gt;    &amp;lt;dbl&amp;gt;      &amp;lt;dbl&amp;gt;            &amp;lt;dbl&amp;gt;            &amp;lt;dbl&amp;gt;
+## 1     -93.6     42.1       5.24                0                0
+## 2     -93.6     42.1       5.39                0                0
+## 3     -93.6     42.1       5.28                0                0
+## 4     -93.6     42.1       5.29                0                0
+## 5     -93.6     42.1       5.33                0                0
+## # … with 6 more variables: Neighborhood_Edwards &amp;lt;dbl&amp;gt;,
+## #   Neighborhood_Somerset &amp;lt;dbl&amp;gt;, Neighborhood_Northridge_Heights &amp;lt;dbl&amp;gt;,
+## #   Neighborhood_Gilbert &amp;lt;dbl&amp;gt;, Neighborhood_Sawyer &amp;lt;dbl&amp;gt;,
+## #   Neighborhood_other &amp;lt;dbl&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;step_dummy -&amp;gt; step_other/step_nzv()&lt;/p&gt;
+&lt;p&gt;Step_dummy creates many dummy variables thus you should include the new dummy variables into the interaction terms or others or nzv. with starts_with() function.&lt;/p&gt;
+&lt;p&gt;Resolving skewness: &lt;strong&gt;Box-cox&lt;/strong&gt;, &lt;strong&gt;inverse&lt;/strong&gt;, of course, log or square root&lt;/p&gt;
+&lt;p&gt;parsnip model object includes original model results in &lt;code&gt;$fit&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The workflow replaces prep() -&amp;gt; juice() -&amp;gt; fit() with single call fit() and bake() -&amp;gt; predict() with predict ().&lt;/p&gt;
+&lt;p&gt;The workflow needs &lt;code&gt;add&lt;/code&gt;ing model specification (parsnip) and preprocessing (recipes).&lt;/p&gt;
+&lt;p&gt;Resampling is the best option to estimate the performance of a model.&lt;/p&gt;
+&lt;p&gt;Resampling splits analysis set and assessment set on &lt;strong&gt;training set&lt;/strong&gt;. The final result is performance metrics.&lt;/p&gt;
+&lt;p&gt;Selecting the resampling method relates to bias-variance trade-off. (Repeated CV)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Model_selection#Criteria&#34; class=&#34;uri&#34;&gt;https://en.wikipedia.org/wiki/Model_selection#Criteria&lt;/a&gt; information criteria??&lt;/p&gt;
+&lt;p&gt;Resampling does stratified sampling.&lt;/p&gt;
+&lt;p&gt;The tuning metric tends to be smooth. The irregular metric result means high variance.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://appliedpredictivemodeling.com/blog/2014/11/27/vpuig01pqbklmi72b8lcl3ij5hj2qm&#34; class=&#34;uri&#34;&gt;http://appliedpredictivemodeling.com/blog/2014/11/27/vpuig01pqbklmi72b8lcl3ij5hj2qm&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Resampling spends memory. The vfold_cv() has a copy of the original data.&lt;/p&gt;
+&lt;p&gt;Processing first or resampling first??&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Resample first&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;If preprocessing is outside of resampling, You don’t know how the test set will be predicted.&lt;/p&gt;
+&lt;p&gt;Is feature engineering stable or unstable?&lt;/p&gt;
+&lt;p&gt;Can tune package select a good preprocessing process? Yes, it can.&lt;/p&gt;
+&lt;p&gt;The upsampling issues and rare important data points&lt;/p&gt;
+&lt;p&gt;The tuning hyperparameter (underfitting or overfitting).&lt;/p&gt;
+&lt;p&gt;Hyperparameter types grid (regular, irregular), iterative&lt;/p&gt;
+&lt;p&gt;Making function name: use underbar &lt;code&gt;_&lt;/code&gt; “Grid_regular”&lt;/p&gt;
+&lt;p&gt;The pros and cons of regular and non-regular grid&lt;/p&gt;
+&lt;p&gt;The non-regular grid efficient except some model can do trick.&lt;/p&gt;
+&lt;p&gt;The parsnip standardizes and it changes default parameter ranges.&lt;/p&gt;
+&lt;p&gt;The parameter tibble can not be subsetted. It will be issued in GitHub.&lt;/p&gt;
+&lt;p&gt;People take care of the default value of parameters.&lt;/p&gt;
+&lt;p&gt;Tidymodel delays evaluation. Set first and run later.&lt;/p&gt;
+&lt;p&gt;The Splines fitting is wagged at the edge of the range. When trying to predict value out of range, warnings occur. Resampling can cause an error at the edge point of the assessment set.&lt;/p&gt;
+&lt;p&gt;There is a note column in the result object.&lt;/p&gt;
+&lt;p&gt;The sensitivity of parameters can be evaluated with ggplot. The scale should be adjusted when an outlier is present.&lt;/p&gt;
+&lt;p&gt;Best fit can be choose&lt;/p&gt;
+&lt;p&gt;Documentation&lt;/p&gt;
+&lt;p&gt;Show best and select best (parameter)&lt;/p&gt;
+&lt;p&gt;Tune tunes selected parameters. If you don’t tune parameters, the parameters go default value.&lt;/p&gt;
+&lt;p&gt;The log ridership is wired because of a bimodal distribution. It will show skewed residual or something.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;!!stations&lt;/code&gt; indicates the environment of the station object, the station object is defined at recipe object, not the global environment.&lt;/p&gt;
+&lt;p&gt;Regularization wins wrapping feature selection methods in terms of efficacy.&lt;/p&gt;
+&lt;p&gt;If two predictors are highly correlated, the signs can change and the variance of coefficients inflates.&lt;/p&gt;
+&lt;p&gt;L1 penalty does feature selection, the L2 penalty resolves correlation. Does mixture feature selection? Yes, the L1 component and lambda determine how many variables are kicked out, except pure ridge regression (ie. pure L2 penalty).&lt;/p&gt;
+&lt;p&gt;Normalize or standardize on dummy variables?&lt;/p&gt;
+&lt;p&gt;Lambda is a more important parameter than alpha in glm.&lt;/p&gt;
+&lt;p&gt;Parallelism issue. GPU is good at linear algebra. Parallelism consumes memory because they copy data. Tuning is advantaged with parallelism because it uses for a loop. Unix is better than Windows in terms of parallelism.&lt;/p&gt;
+&lt;p&gt;Inner join makes prediction tibble subsetting best.&lt;/p&gt;
+&lt;p&gt;Repeated CV residual can be estimated with average predicting values.&lt;/p&gt;
+&lt;p&gt;GCV is used to pruning the point.&lt;/p&gt;
+&lt;p&gt;Is MARS greedy? Semi-greedy.&lt;/p&gt;
+&lt;p&gt;MARS is struggling with colinearity. Use step_pca.&lt;/p&gt;
+&lt;p&gt;Bayesian process, Gaussian process, Kernel function selection&lt;/p&gt;
+&lt;p&gt;MARS hyperparameter space is high dimensional, thus the Gaussian process is better than the grid method in terms of efficiency. Grid methods for the Chicago data MARS model need more than 4000 points of the grid, although the grid search can use a parallel process.&lt;/p&gt;
+&lt;p&gt;The Bayesian parameter searching process can be updated and pause.&lt;/p&gt;
+&lt;p&gt;Classification Hard prediction vs soft prediction (probability)&lt;/p&gt;
+&lt;p&gt;Accuracy can be estimated with hard prediction and ROC can be produced on soft prediction.&lt;/p&gt;
+&lt;p&gt;Feature hashing is difficult to understand.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;recipe can be tune.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;C5.0 is boost_tree.&lt;/p&gt;
+&lt;p&gt;Gitter discussion
+&lt;a href=&#34;https://gitter.im/conf2020-applied-ml/community/archives/2020/01/28&#34; class=&#34;uri&#34;&gt;https://gitter.im/conf2020-applied-ml/community/archives/2020/01/28&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Reproducing Kernel Hilbert Space</title>
+      <link>/post/reproducing-kernel-hilbert-space/</link>
+      <pubDate>Fri, 20 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/post/reproducing-kernel-hilbert-space/</guid>
+      <description>
+
+
+&lt;p&gt;Finally arrive at reproducing kernel Hilbert space.
+&lt;a href=&#34;https://nzer0.github.io/reproducing-kernel-hilbert-space.html&#34; class=&#34;uri&#34;&gt;https://nzer0.github.io/reproducing-kernel-hilbert-space.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;The above post introduces RKHS in Korean. It was helpful. I had struggled to understand some concepts in RKHS. What does mean Hilbert space in terms of feature expansion? (&lt;span class=&#34;math inline&#34;&gt;\(f:\mathcal{X} \to \mathbb{R}\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(f \in \mathcal{H}_K\)&lt;/span&gt;) It was confusing the difference between &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; means the function in Hilbert space and &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt; is &lt;strong&gt;evaluation&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;I thought that the function can be represented by the inner product of the basis of feature space &lt;span class=&#34;math inline&#34;&gt;\(K(\cdot,x)\)&lt;/span&gt; and coefficients &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt;, and the coefficients are vectors in feature space.&lt;/p&gt;
+&lt;p&gt;The reproducing property of Kernel is &lt;span class=&#34;math inline&#34;&gt;\(\langle f, K(\cdot,x)\rangle_{\mathcal{H}} = f(x)\)&lt;/span&gt;. Thus &lt;span class=&#34;math inline&#34;&gt;\(K(\cdot,x) \in \mathcal{H}_K\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(K(\cdot,x)\)&lt;/span&gt; is a &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; specified function in Hilbert space &lt;span class=&#34;math inline&#34;&gt;\(\mathcal{H}_K\)&lt;/span&gt; and an evaluator of the specific point x. This means the inner product of &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(K_{x}\)&lt;/span&gt; is the value of &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; at point &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;, &lt;span class=&#34;math inline&#34;&gt;\(f(x)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;In a nutshell, kenel method is a &lt;strong&gt;different way of evaluating f in a specific point &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;&lt;/strong&gt;. &lt;strong&gt;Evaluating a function&lt;/strong&gt; &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; at a point &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; is inner product of &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(L_x\)&lt;/span&gt;, where &lt;span class=&#34;math inline&#34;&gt;\(L_x \in \mathcal{H}_K\)&lt;/span&gt; is a &lt;strong&gt;evaluation functional&lt;/strong&gt; which is a kernal function and linear &lt;span class=&#34;math inline&#34;&gt;\(K(\cdot, x)\)&lt;/span&gt;. Reproducing property of &lt;span class=&#34;math inline&#34;&gt;\(\mathcal{H}_K\)&lt;/span&gt; can be achieved if all &lt;span class=&#34;math inline&#34;&gt;\(f \in \mathcal{H}\)&lt;/span&gt; has bounded evaluation functionals (&lt;span class=&#34;math inline&#34;&gt;\(L_x\)&lt;/span&gt;).&lt;/p&gt;
+&lt;p&gt;In least square methods, the parameters (&lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta}\)&lt;/span&gt;) are determined by inner product of &lt;span class=&#34;math inline&#34;&gt;\(X\)&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta} = (X^{T}X)^{-1}X^{T}y\)&lt;/span&gt;. In Kernel method, &lt;span class=&#34;math inline&#34;&gt;\(\hat{\beta}\)&lt;/span&gt; is determined &lt;span class=&#34;math inline&#34;&gt;\(\langle K(\cdot,x_i), K(\cdot,x_j), \rangle_{\mathcal{H}_K} = K(x_i, x_j)\)&lt;/span&gt;. Each &lt;span class=&#34;math inline&#34;&gt;\(K(\cdot, x)\)&lt;/span&gt; is a parameter and a argument (variable like &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt;).&lt;/p&gt;
+&lt;p&gt;Some subclass of the loss function and penalty functions can be generated by a positive definite kernel. A Kernel accepts two arguments and a Kernel function does one argument and the other argument becomes parameter. Reproducing Kernel Hilbert space is a function space with Kernal function space with the evaluation functional as a Kernel. The feature expansion into the RKHS can use the Kernel matrix instead of the inner product of each variable &lt;span class=&#34;math inline&#34;&gt;\(X^TX\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The important concepts are Hilbert space, inner product, Kernel function, evaluation functional, feature expansion, Fourier transformation, Reisz representation theorem (dual space &lt;span class=&#34;math inline&#34;&gt;\(\mathcal{H}_{K}^*\)&lt;/span&gt; of Hibert space &lt;span class=&#34;math inline&#34;&gt;\(\mathcal{H}_K\)&lt;/span&gt;)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bayesian</title>
+      <link>/talk/bayes_and_ngs/</link>
+      <pubDate>Sat, 20 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/bayes_and_ngs/</guid>
+      <description>
+
+
+&lt;p&gt;Abstract&lt;/p&gt;
+&lt;p&gt;Introduction of Bayesian approch in base calling and copy number variation (CNV). This is for the intradepartment lecture.&lt;/p&gt;
+&lt;p&gt;url_slides: ‘&lt;a href=&#34;http://rpubs.com/JKang/492555&#34; class=&#34;uri&#34;&gt;http://rpubs.com/JKang/492555&lt;/a&gt;’&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

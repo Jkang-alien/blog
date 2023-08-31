@@ -1,0 +1,33 @@
+---
+title: "Approximation"
+author: "JK"
+date: '2020-09-04'
+slug: approximation
+categories:
+- Math
+- Machine learning
+- Convex optimization
+tags:
+- Convex optimization
+- Deep Learning
+- Machine learning
+- Math
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-09-04T19:40:57+09:00'
+featured: no
+draft: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>The purpose of approximation is finding optimal point <span class="math inline">\(x^*\)</span> i.e. <span class="math inline">\(\nabla F(x^*) = 0\)</span>. We need a step/search direction <span class="math inline">\(\Delta x\)</span> and step size <span class="math inline">\(t\)</span>. Taylor approximation has polynomial arguments that is a step and parameters of derivatives at the start point. The first degree of Taylor approximation has one adding term from start point <span class="math inline">\((x_0, F(x_0))\)</span>. The adding term <span class="math inline">\(\nabla F(x) \Delta x\)</span> is consistent with a parameter (gradient <span class="math inline">\(\nabla F(x)\)</span>) and a argument (step <span class="math inline">\(\Delta x\)</span>). The Taylor approximation does approximate <span class="math inline">\(F(x + \Delta x)\)</span> for any search direction <span class="math inline">\(\Delta x\)</span>. We want to choose <span class="math inline">\(\Delta x\)</span> for the direction to the optimal point.</p>
+<p>The adding term of Taylor approximation <span class="math inline">\(\nabla F(x) \Delta x\)</span> have level curve (level line). The smallest Euclidean norm of the level curve is achieved at the tangent. The gradient descent set the step to the gradient <span class="math inline">\(\nabla F(x)\)</span>. This makes the adding term biggest with Euclidean norm <span class="math inline">\(\Vert \nabla F(x) \Vert^2\)</span> i.e. dual norm <span class="math inline">\(\Vert \nabla F(x) \Vert_*\)</span>.</p>
+<p>Newton’s method is second degree of Taylor approximation <span class="math inline">\(F(x_0+\Delta x) \approx F(x_0) + \nabla F(x) \Delta x + 1/2\Delta x^T H \Delta x\)</span>. We want to find <span class="math inline">\(\Delta x\)</span> to minimize the second degree of Taylor approximation. In this case, the minimizing step is tangent of first adding term <span class="math inline">\(\nabla F(x) \Delta x\)</span> and second adding term <span class="math inline">\(\Delta x^T H \Delta x\)</span> i.e. Steepest descent in H norm <span class="math inline">\(\Vert \cdot \Vert _H\)</span>. The newton’s method can be thought as approximation of gradient <span class="math inline">\(\nabla F(x)\)</span>. <span class="math inline">\(\nabla F(x_0 + \Delta x) \approx \nabla F(x_0) + H \Delta x = 0,\ \Delta x = -H^{-1} \nabla F(x_0)\)</span>. This is also the derivative of second degree of Taylor approximation with respect to <span class="math inline">\(\Delta x\)</span>.</p>
+<p>But the Taylor approximation is local. In addition to a step, a step size is needed. A step size determines how far the step taken. Backtracking line search has two constant parameters 0 &lt; <span class="math inline">\(\alpha\)</span> &lt; 0.5, 0 &lt; <span class="math inline">\(\beta\)</span> &lt; 1. The approximation is below the convex function. <span class="math inline">\(\alpha\)</span> tilts the slope i.e. gradient upside and the tilted approximation meets the convex function. <span class="math inline">\(\beta\)</span> is the update rate of the step size until the the amount of the step is less than the point that tilted approximation meeets the convex function.</p>

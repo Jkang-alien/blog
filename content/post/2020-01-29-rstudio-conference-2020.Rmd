@@ -1,0 +1,241 @@
+---
+title: RStudio Conference 2020
+author: JK
+date: '2020-01-29'
+slug: rstudio-conference-2020
+categories:
+  - R
+tags:
+  - R
+  - RStudio
+  - RStudio conference
+  - Shiny
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-01-29T17:51:24-08:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: 
+draft: false
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+    echo = FALSE,
+    error = FALSE,
+    message = FALSE,
+    cache = TRUE
+)
+```
+
+Key Note
+
+J.J. Allaire
+
+RStudio becomes Public B Corp.
+
+J.J. Allaire's favorite book Fooled by Randomness
+
+
+```{r echo=FALSE}
+blogdown::shortcodes('tweet', c('1222577749824401408',
+                                #'1222574431521738752',
+                                '1222574214747607042'))
+```
+---
+Google AI PAIR team  
+Fernanda Viegas, Martin Wattenberg  
+
+Debug your data first, not your program!  
+
+Visualization, Hello World Image data set has faulty annotations.  
+Validate your data set!! 
+
+High dimensionality, MNIST data set PCA clustering.
+
+Fairness, Different views of points can be visualized. People can understand it.
+
+```{r}
+blogdown::shortcodes('tweet', c('1222585238473203712',
+                                '1222593520508141568',
+                                '1222581456829992960'))
+```
+
+
+https://pair.withgoogle.com
+
+---
+Development  
+Plumber API  
+
+After modeling with R, through an application programming interface (API) the model can be used by other applications. 
+
+Applications using R and Plumber
+
+T-mobile Heather Nolis, Jacqueline Nolis
+'We're strictly a java shop'
+{loadtest} Rpackage for performance test
+---
+Andrew Mangan, Salesforce  
+
+Analytics using R
+
+---
+James Blair, RStudio  
+
+Practical Plumber Patterns  
+Packaging plumber  
+A package as a deploying method  
+
+
+
+Alex Gold  RStudio  
+Develop a public bicycle prediction app  
+Shiny, Plumber, and Pin  
+The Package Pins helps real-time data IO management.  
+
+Jenny  
+
+Debugging 4 steps  
+
+https://github.com/jennybc/debugging#readme  
+
+```{r}
+blogdown::shortcode('tweet', '1222935148691247105')
+
+```
+----
+Shiny  
+
+Colin Fay, ThinkR  
+
+{Golem}, a framework for production-grade Shiny apps  
+
+---
+
+Mine Cetinkaya-Rundelm, RStudio  
+
+Shiny contest, open codes  
+---
+
+Joe Cheng, RStudio  
+
+Styling Shiny with Sass and Bootstrap 4  
+Bootstrap 4 is default Shiny frame. Bootstrap 4 supports Sass which is a meta-program for CSS. {bootstraplib} makes easy to use Sass in R environment.  
+
+
+```{r}
+blogdown::shortcodes('tweet',
+                     c('1222664917280387072',
+                       '1222652894354141184'))
+```
+
+```{r}
+blogdown::shortcode('tweet', '1222603023605624832')
+blogdown::shortcode('tweet', '1222611273021394944')
+blogdown::shortcode('tweet', '1222991783933575168')
+blogdown::shortcode('tweet', '1222991203110551554')
+```
+---
+
+Carson Sievert, RStudio  
+
+Reproducible Shiny, Download tab, {shinymeta}  
+
+---
+Ellis Hughes, Fred Hutch Cancer Research Center, HIV vaccine  
+
+---
+Aymen Waqar  
+
+Building a native iPad dashboard
+
+---
+Nathaniel Phillips, Roche  
+{FlatironKichen}, a package for a framework for clinical patient data analysis. A data.frame with one row for one patient. It has its unique data.frame and analysis workflow. If once the data.frame is established following analysis becomes easy.  
+
+---
+
+Ana Alyeska Santos, Braulio Cuandon, Biosense Webster, Inc.
+
+Reproducible Engineering Test Reports
+
+---
+Ron Keizer, InsightRX  
+Medical device with R, InsightRX/PKPDsim  
+
+---
+Justin Juskewitch, Mayo Clinic  
+Transfusion platelet selection and match for patient and documentation automation  
+
+---
+Platelet need and bed occupation prediction and its applications
+
+---
+Alicia Schep, Outlier AI
+
+She moved R from Python. {vlBuildr} API develop Altair and Vega-Lite  
+
+---
+
+Tyson Barrett  
+
+List-columns in data.table
+
+data.table can easily convert list-columns
+
+```{r}
+blogdown::shortcode('tweet', '1223004598572437504')
+```
+
+---
+Lionel Hennry, RStudio  
+Advances in tidyeval  
+
+History of data masking a.k.a. lazy evaluation
+Problem  
+* Can not through argument in function, solution {{}}  
+* Ambiguity of environment, solution .data and .env
+* !! is low level syntax  
+
+---
+
+Lightning Talk
+
+Mexican election prediction
+
+```{r}
+blogdown::shortcode('tweet', '1223021112117743618')
+```
+
+Rebecca Barter Becoming an R Blogger  
+
+```{r}
+blogdown::shortcode('tweet', '1221852227184128000')
+```
+
+Other sessions, not check-in  
+
+```{r}
+blogdown::shortcodes('tweet', c('1222998335239290880',
+                                '1222651913352577024',
+                                '1222612815694856193',
+                                '1222965028229271558',
+                                '1222931681570504704',
+                                '1222679720455618560',
+                                '1222559524839542784',
+                                '1223317400054988801'))
+```
+
+@fellgernon kindly tweeted me.
+
+```{r}
+blogdown::shortcodes('tweet', user ="fellgernon", id = c('1224034257712173057', '1224561372236828672'))
+
+```
+
+And he left some inspiring post.
+http://lcolladotor.github.io/2020/02/03/conference-feelings-from-newbie-to-sponsor/

@@ -1,0 +1,56 @@
+---
+title: Laplace transformation
+author: JK
+date: '2020-11-14'
+slug: laplace-transformation
+categories:
+  - Math
+  - Machine learning
+tags:
+  - Deep Learning
+  - Gilbert Strang
+  - Machine learning
+  - Math
+  - Linear algebra
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-11-14T09:23:47+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
+
+
+<p>The Fourier series represents a periodic function as a descrete vectors. The Fourier transformation turns a time domain non-periodic function into a frequency domain continuous function. The Fourier series and transformation change a single time base <span class="math inline">\(t\)</span> into infinite frequency basis <span class="math inline">\(e^{inx}\)</span> or <span class="math inline">\(e^{iwx}\)</span>. The function on infinite basis domain can be represented by a vector or a function of basis domain <span class="math inline">\(v_{n}\)</span> or <span class="math inline">\(f(w)\)</span>. This is a coefficients of Fourier series or Fourier transformation.</p>
+<p>The basis of Fourier transformation is pure frequency <span class="math inline">\(e^{iw}\)</span>. The domain of Laplace transfomation is frequency <span class="math inline">\(w\)</span> and damping component <span class="math inline">\(\sigma\)</span> which compose damping ocilation function, <span class="math inline">\(e^{s} = e^{(iw+\sigma)}\)</span>. The function which represent Laplace transformation <span class="math inline">\(F(s)\)</span> is a function of complex domain <span class="math inline">\(s\)</span>. The Fourier transformation is a special Laplace transformation of no damping term <span class="math inline">\(s = 0 \cdot \sigma +iw\)</span>.</p>
+<p>The <strong>periodic</strong> function can be represented by a series not a continuous function. A condition makes a function can be represented by pure frequency domain i.e. Fourier transformation, not a complex domain i.e. Laplace transformation. The condition is</p>
+<blockquote>
+<p>from wikipedia <a href="https://en.wikipedia.org/wiki/Laplace_transform#Fourier_transform" class="uri">https://en.wikipedia.org/wiki/Laplace_transform#Fourier_transform</a></p>
+</blockquote>
+<p><math><span class="math display">\[\begin{align}
+  \widehat{f}(\omega) &amp;= \mathcal{F}\{f(t)\} \\[4pt]
+                  &amp;= \mathcal{L}\{f(t)\}|_{s = i\omega}  =  F(s)|_{s = i \omega} \\[4pt]
+                  &amp;= \int_{-\infty}^\infty e^{-i \omega t} f(t)\,dt~.
+\end{align}\]</span></math></p>
+<p>Laplace transformation makes a differential equation to an algebra equation.</p>
+<p><span class="math display">\[Laplace transformation\]</span></p>
+<p><span class="math display">\[
+\mathcal{L}[f(t)] = F(s) = \int_{t=0}^{\infty} f(t)e^{-st}dt
+\]</span></p>
+<p><span class="math display">\[Transfer function\]</span></p>
+<p><span class="math display">\[
+H(s) = Y(s)/X(s)
+\]</span>
+<span class="math display">\[
+Y(s) = H(s)X(s)  
+\]</span></p>
+<p>where <span class="math inline">\(Y(s)\)</span> and <span class="math inline">\(X(s)\)</span> are Laplace transformed <span class="math inline">\(y(t)\)</span>, i.e. solution and <span class="math inline">\(f(t)\)</span> i.e. input.</p>
+<p>The <span class="math inline">\(Y(s)\)</span> is a function of <span class="math inline">\(s\)</span> which represents coefficients of damped frquency basis <span class="math inline">\(e^{\sigma + iw}\)</span>. We are not looking for the solution <span class="math inline">\(s\)</span> for the <span class="math inline">\(Y(s)\)</span>. We are looking for the inverse Laplace transformation of <span class="math inline">\(Y(s)\)</span>. The inverse Laplace transformation turns a function <span class="math inline">\(Y(s)\)</span> with infinite damped frquency basis <span class="math inline">\(e^{\sigma + iw}\)</span> to the solution of linear differential equation <span class="math inline">\(y(t)\)</span> that is a function with a single domain basis <span class="math inline">\(t\)</span>.</p>
+<p>The Laplace transformation has poles that blow up at a point. The poles were determined by constants of differential equation and the input term.</p>

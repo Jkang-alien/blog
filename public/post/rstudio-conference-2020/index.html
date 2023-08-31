@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.4.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Jun Kang">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Key Note
+J.J. Allaire
+RStudio becomes Public B Corp.
+J.J. Allaire’s favorite book Fooled by Randomness
+RStudio has restructured as a &#39;benefit corporation,&#39; legally allowing it to consider the needs of its users and the #rstats community and not just its shareholders, JJ Allaire announced just now at #rstudioconf #rstudioconf2020 https://t.co/uG6SjNeLei
+&mdash; Sharon Machlis (@sharon000) January 29, 2020  #Rstudio evolution #rstudioconf2020 pic.twitter.com/euZFBTpvVY
+&mdash; 1LittleCoder💻 (@1littlecoder) January 29, 2020   Google AI PAIR team">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/rstudio-conference-2020/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.css" integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ==" crossorigin="anonymous">
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono&display=swap">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.e8b81181bd18f58d8990b40dc8a5e4b8.css">
+
+  
+
+  
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-153860901-1', 'auto');
+      
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="https://www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+  
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon-32.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/rstudio-conference-2020/">
+
+  
+  
+  
+  
+    
+    
+  
+  
+  <meta property="twitter:card" content="summary">
+  
+  <meta property="og:site_name" content="Jun&#39;s Blog">
+  <meta property="og:url" content="/post/rstudio-conference-2020/">
+  <meta property="og:title" content="RStudio Conference 2020 | Jun&#39;s Blog">
+  <meta property="og:description" content="Key Note
+J.J. Allaire
+RStudio becomes Public B Corp.
+J.J. Allaire’s favorite book Fooled by Randomness
+RStudio has restructured as a &#39;benefit corporation,&#39; legally allowing it to consider the needs of its users and the #rstats community and not just its shareholders, JJ Allaire announced just now at #rstudioconf #rstudioconf2020 https://t.co/uG6SjNeLei
+&mdash; Sharon Machlis (@sharon000) January 29, 2020  #Rstudio evolution #rstudioconf2020 pic.twitter.com/euZFBTpvVY
+&mdash; 1LittleCoder💻 (@1littlecoder) January 29, 2020   Google AI PAIR team"><meta property="og:image" content="/img/icon-192.png">
+  <meta property="twitter:image" content="/img/icon-192.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-01-29T00:00:00&#43;00:00">
+    
+    <meta property="article:modified_time" content="2020-01-29T17:51:24-08:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>RStudio Conference 2020 | Jun&#39;s Blog</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0 compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">Jun&#39;s Blog</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#talks"><span>Talks and Lectures</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1 itemprop="name">RStudio Conference 2020</h1>
+
+  
+
+  
+    
+
+
+
+<meta content="2020-01-29 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2020-01-29 17:51:24 -0800 PST" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    <time>Jan 29, 2020</time>
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    5 min read
+  </span>
+  
+
+  
+  
+  
+  <span class="middot-divider"></span>
+  <a href="/post/rstudio-conference-2020/#disqus_thread"></a>
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/r/">R</a></span>
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/post/rstudio-conference-2020/&amp;text=RStudio%20Conference%202020" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=/post/rstudio-conference-2020/&amp;t=RStudio%20Conference%202020" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=RStudio%20Conference%202020&amp;body=/post/rstudio-conference-2020/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/post/rstudio-conference-2020/&amp;title=RStudio%20Conference%202020" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=RStudio%20Conference%202020%20/post/rstudio-conference-2020/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=/post/rstudio-conference-2020/&amp;title=RStudio%20Conference%202020" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+
+<p>Key Note</p>
+<p>J.J. Allaire</p>
+<p>RStudio becomes Public B Corp.</p>
+<p>J.J. Allaire’s favorite book Fooled by Randomness</p>
+<div class="section level2">
+<h2><blockquote class="twitter-tweet"><p lang="en" dir="ltr">RStudio has restructured as a &#39;benefit corporation,&#39; legally allowing it to consider the needs of its users and the <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> community and not just its shareholders, JJ Allaire announced just now at <a href="https://twitter.com/hashtag/rstudioconf?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf</a> <a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a> <a href="https://t.co/uG6SjNeLei">https://t.co/uG6SjNeLei</a></p>&mdash; Sharon Machlis (@sharon000) <a href="https://twitter.com/sharon000/status/1222577749824401408?ref_src=twsrc%5Etfw">January 29, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/Rstudio?src=hash&amp;ref_src=twsrc%5Etfw">#Rstudio</a> evolution <a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a> <a href="https://t.co/euZFBTpvVY">pic.twitter.com/euZFBTpvVY</a></p>&mdash; 1LittleCoder💻 (@1littlecoder) <a href="https://twitter.com/1littlecoder/status/1222574214747607042?ref_src=twsrc%5Etfw">January 29, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</h2>
+<p>Google AI PAIR team<br />
+Fernanda Viegas, Martin Wattenberg</p>
+<p>Debug your data first, not your program!</p>
+<p>Visualization, Hello World Image data set has faulty annotations.<br />
+Validate your data set!!</p>
+<p>High dimensionality, MNIST data set PCA clustering.</p>
+<p>Fairness, Different views of points can be visualized. People can understand it.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Great to see misclassification applied to fairness in loans! <a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a> <a href="https://twitter.com/hashtag/rstudio?src=hash&amp;ref_src=twsrc%5Etfw">#rstudio</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/google?src=hash&amp;ref_src=twsrc%5Etfw">#google</a> <a href="https://t.co/0TOCCegOpt">pic.twitter.com/0TOCCegOpt</a></p>&mdash; Kyle Monahan (@kylemonahan2) <a href="https://twitter.com/kylemonahan2/status/1222585238473203712?ref_src=twsrc%5Etfw">January 29, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">If you are doing data science, you are doing user experience design - with great power comes great responsibility <a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a> <br><br>Loved this keynote! <a href="https://twitter.com/wattenberg?ref_src=twsrc%5Etfw">@wattenberg</a> <a href="https://twitter.com/viegasf?ref_src=twsrc%5Etfw">@viegasf</a> <a href="https://t.co/goNzLkhSUe">pic.twitter.com/goNzLkhSUe</a></p>&mdash; Alison Presmanes Hill (@apreshill) <a href="https://twitter.com/apreshill/status/1222593520508141568?ref_src=twsrc%5Etfw">January 29, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Next big <a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a> keynote quote that I love:<br><br>Debug your data first, not your program!</p>&mdash; Hunter Glanz (@hglanz) <a href="https://twitter.com/hglanz/status/1222581456829992960?ref_src=twsrc%5Etfw">January 29, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p><a href="https://pair.withgoogle.com" class="uri">https://pair.withgoogle.com</a></p>
+<p>Andrew Mangan, Salesforce</p>
+<p>Analytics using R</p>
+<p>Mine Cetinkaya-Rundelm, RStudio</p>
+</div>
+<div id="shiny-contest-open-codes" class="section level2">
+<h2>Shiny contest, open codes</h2>
+<p>Joe Cheng, RStudio</p>
+<p>Styling Shiny with Sass and Bootstrap 4<br />
+Bootstrap 4 is default Shiny frame. Bootstrap 4 supports Sass which is a meta-program for CSS. {bootstraplib} makes easy to use Sass in R environment.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Thanks to <a href="https://twitter.com/jcheng?ref_src=twsrc%5Etfw">@jcheng</a> for the shoutout at <a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a>! Be sure to check out <a href="https://twitter.com/jcheng?ref_src=twsrc%5Etfw">@jcheng</a> and <a href="https://twitter.com/cpsievert?ref_src=twsrc%5Etfw">@cpsievert</a>’s package bootstraplib for easy custom fonts and styling in <a href="https://twitter.com/hashtag/shiny?src=hash&amp;ref_src=twsrc%5Etfw">#shiny</a> <a href="https://t.co/hcy5zCxuAQ">https://t.co/hcy5zCxuAQ</a></p>&mdash; Tim Mastny (@timmastny) <a href="https://twitter.com/timmastny/status/1222664917280387072?ref_src=twsrc%5Etfw">January 29, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A nice resource for learning shiny from <a href="https://twitter.com/_ColinFay?ref_src=twsrc%5Etfw">@_ColinFay</a>:<a href="https://t.co/RtKU6sowqj">https://t.co/RtKU6sowqj</a><a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a></p>&mdash; John Blischak (@jdblischak) <a href="https://twitter.com/jdblischak/status/1222652894354141184?ref_src=twsrc%5Etfw">January 29, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</div>
+<div class="section level2">
+<h2><blockquote class="twitter-tweet"><p lang="en" dir="ltr">What if we kissed 😳😳 in <a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a> Grand Ballroom B 🙈 <a href="https://t.co/UXYxH6mjWQ">pic.twitter.com/UXYxH6mjWQ</a></p>&mdash; Dr. Jacqueline Nolis (@skyetetra) <a href="https://twitter.com/skyetetra/status/1222603023605624832?ref_src=twsrc%5Etfw">January 29, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">.<a href="https://twitter.com/skyetetra?ref_src=twsrc%5Etfw">@skyetetra</a> and <a href="https://twitter.com/heatherklus?ref_src=twsrc%5Etfw">@heatherklus</a> have released the OSS loadtest package! Run and analyze load tests from entirely within R<br><br>Learn more: <a href="https://t.co/3Xq8J9jqfA">https://t.co/3Xq8J9jqfA</a> <a href="https://twitter.com/hashtag/rstudioconf?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf</a> <a href="https://t.co/LwkwO4DDP1">pic.twitter.com/LwkwO4DDP1</a></p>&mdash; David Robinson (@drob) <a href="https://twitter.com/drob/status/1222611273021394944?ref_src=twsrc%5Etfw">January 29, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Standing room only for <a href="https://twitter.com/paleolimbot?ref_src=twsrc%5Etfw">@paleolimbot</a> <a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a> talk on programming with ggplot2! Did you know that you can put plot items into a list and add that?? <a href="https://t.co/wGMEPSBIeP">pic.twitter.com/wGMEPSBIeP</a></p>&mdash; Calum You (@_calumyou) <a href="https://twitter.com/_calumyou/status/1222991783933575168?ref_src=twsrc%5Etfw">January 30, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Just learned that adding NULL to a ggplot does nothing...which is super useful when writing functions that wrap ggplot. ggplot(...) + NULL is the same as ggplot(...). Thanks <a href="https://twitter.com/paleolimbot?ref_src=twsrc%5Etfw">@paleolimbot</a>! <a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a></p>&mdash; Taylor Reiter (@ReiterTaylor) <a href="https://twitter.com/ReiterTaylor/status/1222991203110551554?ref_src=twsrc%5Etfw">January 30, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</h2>
+<p>Carson Sievert, RStudio</p>
+<p>Reproducible Shiny, Download tab, {shinymeta}</p>
+<p>Aymen Waqar</p>
+<p>Building a native iPad dashboard</p>
+<p>Ana Alyeska Santos, Braulio Cuandon, Biosense Webster, Inc.</p>
+<p>Reproducible Engineering Test Reports</p>
+<p>Justin Juskewitch, Mayo Clinic<br />
+Transfusion platelet selection and match for patient and documentation automation</p>
+<p>Alicia Schep, Outlier AI</p>
+<p>She moved R from Python. {vlBuildr} API develop Altair and Vega-Lite</p>
+<hr />
+<p>Tyson Barrett</p>
+<p>List-columns in data.table</p>
+<p>data.table can easily convert list-columns</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Learn how to use list-columns with data.table from these slides from <a href="https://twitter.com/healthandstats?ref_src=twsrc%5Etfw">@healthandstats</a>:<a href="https://t.co/amXG686twc">https://t.co/amXG686twc</a><a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a> <a href="https://t.co/CrPVDhtYgH">https://t.co/CrPVDhtYgH</a></p>&mdash; John Blischak (@jdblischak) <a href="https://twitter.com/jdblischak/status/1223004598572437504?ref_src=twsrc%5Etfw">January 30, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Lightning Talk</p>
+<p>Mexican election prediction</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Really interesting talk from <a href="https://twitter.com/TeresaOM?ref_src=twsrc%5Etfw">@TeresaOM</a> on predicting Mexican election results from initial polling data. They&#39;re in a &quot;bunker&quot; with no internet access, so no StackOverflow!<a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a><a href="https://t.co/8Im6k6zusu">https://t.co/8Im6k6zusu</a></p>&mdash; John Blischak (@jdblischak) <a href="https://twitter.com/jdblischak/status/1223021112117743618?ref_src=twsrc%5Etfw">January 30, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Rebecca Barter Becoming an R Blogger</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Stupidly excited for <a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a> this week! <br><br>📢 Check out my lightening talk on &quot;becoming an R blogger&quot; Thursday at 2:55. <br><br>👋 If you&#39;d like to say hi during the conference, feel free to reach out<a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/datascience?src=hash&amp;ref_src=twsrc%5Etfw">#datascience</a></p>&mdash; Rebecca Barter (@rlbarter) <a href="https://twitter.com/rlbarter/status/1221852227184128000?ref_src=twsrc%5Etfw">January 27, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>Other sessions, not check-in</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🎨📊 Enjoying learning about { ggtext } and { gridtext } <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> packages from <a href="https://twitter.com/ClausWilke?ref_src=twsrc%5Etfw">@ClausWilke</a> @ <a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a><a href="https://t.co/vyqgTkTnM8">https://t.co/vyqgTkTnM8</a><a href="https://t.co/jnnR0AvGF0">https://t.co/jnnR0AvGF0</a> <a href="https://t.co/4ew8EKqXay">pic.twitter.com/4ew8EKqXay</a></p>&mdash; Rich Pauloo, PhD (@RichPauloo) <a href="https://twitter.com/RichPauloo/status/1222998335239290880?ref_src=twsrc%5Etfw">January 30, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Session: &quot;Updates on Spark, MLFlow &amp; the Broader ML Ecosystem&quot; (including Delta Lake)<br><br>Use Spark in R via Sparklyr ✨<a href="https://twitter.com/hashtag/rstudioconf?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf</a> <a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a> <a href="https://t.co/j1ITayLf8G">pic.twitter.com/j1ITayLf8G</a></p>&mdash; Daniel BarelyOnline McNichol (@dnlmc) <a href="https://twitter.com/dnlmc/status/1222651913352577024?ref_src=twsrc%5Etfw">January 29, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sage advice for putting R models in production from <a href="https://twitter.com/heatherklus?ref_src=twsrc%5Etfw">@heatherklus</a> and <a href="https://twitter.com/skyetetra?ref_src=twsrc%5Etfw">@skyetetra</a>:<br><br>- Avoid too many tests by only testing the most critical behavior<br>- Load test to find bottlenecks<br>- Give people a tool to explore and understand the model<a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a></p>&mdash; John Blischak (@jdblischak) <a href="https://twitter.com/jdblischak/status/1222612815694856193?ref_src=twsrc%5Etfw">January 29, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Realtime Spell Check and global replacement in <a href="https://twitter.com/rstudio?ref_src=twsrc%5Etfw">@rstudio</a> IDE 1.3!! <br><br>🥳🙌<a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a> <a href="https://twitter.com/hashtag/rstudioconf?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf</a> <a href="https://t.co/6cICDvWbdq">pic.twitter.com/6cICDvWbdq</a></p>&mdash; annakrystalli (@annakrystalli) <a href="https://twitter.com/annakrystalli/status/1222965028229271558?ref_src=twsrc%5Etfw">January 30, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Enjoying <a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a> .  Here are the slides from the talk I gave yesterday: <a href="https://t.co/R7vxqENMN3">https://t.co/R7vxqENMN3</a></p>&mdash; Frank Harrell (@f2harrell) <a href="https://twitter.com/f2harrell/status/1222931681570504704?ref_src=twsrc%5Etfw">January 30, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">How to build native iPad app using R and plumber under the hood - <a href="https://twitter.com/D_Rodziewicz?ref_src=twsrc%5Etfw">@D_Rodziewicz</a> <a href="https://twitter.com/appsilon?ref_src=twsrc%5Etfw">@appsilon</a> <a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a> <a href="https://twitter.com/hashtag/rshiny?src=hash&amp;ref_src=twsrc%5Etfw">#rshiny</a> <a href="https://t.co/tShpA0gc7h">pic.twitter.com/tShpA0gc7h</a></p>&mdash; Paweł Przytuła (@pawel_appsilon) <a href="https://twitter.com/pawel_appsilon/status/1222679720455618560?ref_src=twsrc%5Etfw">January 30, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Great message during the talk of <a href="https://twitter.com/MT_statistics?ref_src=twsrc%5Etfw">@MT_statistics</a> at the <a href="https://twitter.com/RLadiesGlobal?ref_src=twsrc%5Etfw">@RLadiesGlobal</a> breakfast <a href="https://twitter.com/hashtag/rstudioconf2020?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf2020</a> <a href="https://t.co/XWevhIFP4N">pic.twitter.com/XWevhIFP4N</a></p>&mdash; Joselyn Chávez (@josschavezf1) <a href="https://twitter.com/josschavezf1/status/1222559524839542784?ref_src=twsrc%5Etfw">January 29, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Some presentation highlights: (1) <a href="https://twitter.com/W_R_Chase?ref_src=twsrc%5Etfw">@W_R_Chase</a> on graph styling: <a href="https://t.co/JVgUrhPxLm">https://t.co/JVgUrhPxLm</a> (2) <a href="https://twitter.com/ClausWilke?ref_src=twsrc%5Etfw">@ClausWilke</a> on formatting ggplot2 text (so now you can implement some of <a href="https://twitter.com/W_R_Chase?ref_src=twsrc%5Etfw">@W_R_Chase</a>&#39;s suggestions): <a href="https://t.co/rQX89X45dM">https://t.co/rQX89X45dM</a> (3) <a href="https://twitter.com/JennyBryan?ref_src=twsrc%5Etfw">@JennyBryan</a> on debugging in R: <a href="https://t.co/nTg2D6SCSN">https://t.co/nTg2D6SCSN</a> [2/n]</p>&mdash; Alex Albright (@AllbriteAllday) <a href="https://twitter.com/AllbriteAllday/status/1223317400054988801?ref_src=twsrc%5Etfw">January 31, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p><span class="citation">@fellgernon</span> kindly tweeted me.</p>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/rstudioconf?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf</a> workshops day 1 lunch:<br><br>Jun Kang is a clinical assistant professor at a hospital in South Korea who uses R for many things from exploring data with <a href="https://twitter.com/hashtag/shiny?src=hash&amp;ref_src=twsrc%5Etfw">#shiny</a> to building predictive models<a href="https://twitter.com/JKang1978?ref_src=twsrc%5Etfw">@JKang1978</a> <a href="https://t.co/13rARrqbWs">https://t.co/13rARrqbWs</a> <a href="https://t.co/oG59N82o2U">https://t.co/oG59N82o2U</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> 3/11 <a href="https://t.co/JFVTuWbrrg">pic.twitter.com/JFVTuWbrrg</a></p>&mdash; 🇲🇽 Leonardo Collado-Torres (@lcolladotor) <a href="https://twitter.com/lcolladotor/status/1224034257712173057?ref_src=twsrc%5Etfw">February 2, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">On my latest blog post I talk about how empowering it can be when you help others make connections☺️. That is, becoming a sponsor as defined by <a href="https://twitter.com/robinson_es?ref_src=twsrc%5Etfw">@robinson_es</a>. It&#39;s worth it!<br><br>Thx <a href="https://twitter.com/StefanieButland?ref_src=twsrc%5Etfw">@StefanieButland</a> for the motivation to write this post!<a href="https://t.co/PY0KCC5yAi">https://t.co/PY0KCC5yAi</a><a href="https://twitter.com/hashtag/rstudioconf?src=hash&amp;ref_src=twsrc%5Etfw">#rstudioconf</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://t.co/MUkHvmXdBD">pic.twitter.com/MUkHvmXdBD</a></p>&mdash; 🇲🇽 Leonardo Collado-Torres (@lcolladotor) <a href="https://twitter.com/lcolladotor/status/1224561372236828672?ref_src=twsrc%5Etfw">February 4, 2020</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>And he left some inspiring post.
+<a href="http://lcolladotor.github.io/2020/02/03/conference-feelings-from-newbie-to-sponsor/" class="uri">http://lcolladotor.github.io/2020/02/03/conference-feelings-from-newbie-to-sponsor/</a></p>
+</div>
+
+    </div>
+
+    
+
+
+    
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/r/">R</a>
+  
+  <a class="badge badge-light" href="/tags/rstudio/">RStudio</a>
+  
+  <a class="badge badge-light" href="/tags/rstudio-conference/">RStudio conference</a>
+  
+  <a class="badge badge-light" href="/tags/shiny/">Shiny</a>
+  
+</div>
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu5b1350064ce29e3ab022863bed937806_150391_250x250_fill_q90_lanczos_center.jpg" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">Jun Kang</a></h5>
+      <h6 class="card-subtitle">Clinical Assistant Professor of Hospital Pathology</h6>
+      <p class="card-text" itemprop="description">My research interests include pathology, oncology and statistics.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://www.facebook.com/jun.kang.33" target="_blank" rel="noopener">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/JKang1978" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.co.kr/citations?user=xJKaa7kAAAAJ&amp;hl=ko" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/Jkang-alien" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+      <div class="article-widget">
+        <div class="hr-light"></div>
+        <h3>Related</h3>
+        <ul>
+          
+          <li><a href="/post/applied-machine-learning-workshop-rstudio-conference-2020/">Applied Machine Learning Workshop RStudio Conference 2020</a></li>
+          
+          <li><a href="/post/r/ngs-interpretation-database-and-search/">NGS interpretation database and search</a></li>
+          
+          <li><a href="/post/ion2cbioportal-rpackage/">ion2cbioportal Rpackage</a></li>
+          
+          <li><a href="/talk/predictive-modeling/">Predictive Modeling</a></li>
+          
+          <li><a href="/talk/big_data/big-data-tcga/">Big Data TCGA </a></li>
+          
+        </ul>
+      </div>
+      
+    
+
+    
+
+    
+<section id="comments">
+  
+    
+
+  
+</section>
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/languages/r.min.js"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.2.0/leaflet.js" integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log==" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.b22d2266dab94c8508ae1f0cf6b7056c.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

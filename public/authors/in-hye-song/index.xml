@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>In Hye Song | Jun&#39;s Blog</title>
+    <link>/authors/in-hye-song/</link>
+      <atom:link href="/authors/in-hye-song/index.xml" rel="self" type="application/rss+xml" />
+    <description>In Hye Song</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>In Hye Song</title>
+      <link>/authors/in-hye-song/</link>
+    </image>
+    
+    <item>
+      <title>Next Generation Sequencing Can Be Helpful in Histologic Diagnosis: A Case Report of Metastatic Breast Cancer Mimicking Atypical Carcinoid Tumor of Lung</title>
+      <link>/publication/2020-01-01_songnextgenerationsequencing2020/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/2020-01-01_songnextgenerationsequencing2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prognostic and Predictive Value of NanoString-Based Immune-Related Gene Signatures in a Neoadjuvant Setting of Triple-Negative Breast Cancer: Relationship to Tumor-Infiltrating Lymphocytes</title>
+      <link>/publication/2015-01-01_lee2015prognostic/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      <guid>/publication/2015-01-01_lee2015prognostic/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

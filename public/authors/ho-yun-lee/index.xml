@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ho Yun Lee | Jun&#39;s Blog</title>
+    <link>/authors/ho-yun-lee/</link>
+      <atom:link href="/authors/ho-yun-lee/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ho Yun Lee</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Ho Yun Lee</title>
+      <link>/authors/ho-yun-lee/</link>
+    </image>
+    
+    <item>
+      <title>Deciphering the Tumor Microenvironment through Radiomics in Non-Small Cell Lung Cancer: Correlation with Immune Profiles</title>
+      <link>/publication/2020-04-06_yoondecipheringtumormicroenvironment2020/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/2020-04-06_yoondecipheringtumormicroenvironment2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spread through Air Spaces (STAS) in Invasive Mucinous Adenocarcinoma of the Lung: Incidence, Prognostic Impact, and Prediction Based on Clinicoradiologic Factors</title>
+      <link>/publication/2020-01-01_leespreadairspaces/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>/publication/2020-01-01_leespreadairspaces/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deciphering Clinicoradiologic Phenotype for Thymidylate Synthase Expression Status in Patients with Advanced Lung Adenocarcinoma Using a Radiomics Approach</title>
+      <link>/publication/2018-01-01_lee2018deciphering/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/2018-01-01_lee2018deciphering/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prognostic Impact of Nomogram Based on Whole Tumour Size, Tumour Disappearance Ratio on CT and SUVmax on PET in Lung Adenocarcinoma</title>
+      <link>/publication/2016-01-01_song2016prognostic/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      <guid>/publication/2016-01-01_song2016prognostic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Prognostic Significance of Biallelic Loss of PTEN in Clear Cell Renal Cell Carcinoma</title>
+      <link>/publication/2014-01-01_lee2014prognostic/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      <guid>/publication/2014-01-01_lee2014prognostic/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

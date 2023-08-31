@@ -1,0 +1,26 @@
+---
+title: Functional analysis
+author: JK
+date: '2019-08-30'
+slug: functional-analysis
+categories:
+  - Math
+tags:
+  - Analysis
+  - Functional analysis
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2019-08-30T18:39:27+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Differential equation solution is infinite function series. The infinite function series can be a sort of linear combination of countable function vector, in terms of linear algebra. This raises the problem of the analysis of function. The problem includes a distance of two functions, ie norm, completeness (Banach space). Because the series adds the last term without changing the existing terms, orthogonality is required to make a linear combination of countable functional vector becomes infinite function series (Hilbert space).  
+
+To make a space of continous function on a compact interval $C(I)$ be complete (Banach space), take the maximum norm. To make a space of $C(I)$ orthogonal, take the norm associated with inner product $\| f \| := \sqrt{ \langle f,f \rangle}$. The inner product is a map of symmetric sesquilinear form (Hermitian form). In $C(I)$, the inner product is $$ \langle f,g \rangle := \int_{a}^{b} f^{*} (x)g(x)dx $$
+But the $C(I)$ with the norm associated with an inner product is not complete. The complete can be achieved by extension to the Lebesgue integrable function. The right norm and the right functional set have special properties like complete and orthogonality.

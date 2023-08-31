@@ -1,0 +1,29 @@
+---
+title: z-Transformation
+author: JK
+date: '2021-12-05'
+slug: []
+categories:
+  - Math
+  - Digital signal processing
+tags:
+  - Analysis
+  - Complex analysis
+  - Digital signal processing
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-12-05T06:43:46+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>The infinite impulse response is a property of a filter of digital signal processing. The filter response of the impulse signal does not end infinitely. The filter can be represented in either the time domain or frequency domain. Time-domain filter modifies time-domain input signal to time-domain output signal. The frequency domain lets us understand or to design the effect of the filter.</p>
+<p>The discrete Fourier transformation <span class="math inline">\(\Sigma^{N-1}_{n=0} x(n)e^{-i2\pi nm/N}\)</span> transforms time domain to frequency domain in the finite impulse response. This transformation changes real base to finite (<span class="math inline">\(n\)</span>) periodic orthogonal basis <span class="math inline">\(e^{i2\pi nm/N}\)</span>. The transformation is that the function <span class="math inline">\(X(m)\)</span> extracts the coefficients of the basis.</p>
+<p>A complex number has two representations which are the Cartesian plane and polar plane. <strong>The Laplace transformation (<span class="math inline">\(F(s)=\int^{\infty}_{0} f(t)e^{-st}dt\)</span>) results in Cartesian plane (s-plane) function <span class="math inline">\(F(s)\)</span>. The z-transformation results in polar plane (z-plane) function.</strong> The z-transformation is the inverse power series expansion of the complex function. The original sequence is coefficients of the power series. Then the original sequence transforms into a complex function. Cauchy’s integration fomula can reverse z-transformation (<a href="https://spinlab.wpi.edu/courses/ece503_2014/2-5inverse_z_transform.pdf" class="uri">https://spinlab.wpi.edu/courses/ece503_2014/2-5inverse_z_transform.pdf</a>). Cauchy’s integral remains only <span class="math inline">\(x(n)\)</span> and eliminates other entries when <span class="math inline">\(X(z)\)</span> multiplied by <span class="math inline">\(z^{-n}\)</span>. The Laplace transformation solves the differential equations (<span class="math inline">\(f&#39; = sF\)</span>) and the z-transformations solves the difference equations (<span class="math inline">\(x(n-1) = z^{-1}X(z)\)</span>). The inverse Laplace transformation integrates on a line path of zero to <span class="math inline">\(\infty\)</span> on the imaginary axis which is a superposition on all frequencies. The basis of z-transformation are polynomials (<span class="math inline">\(z^n\)</span>) and those of Laplace transformation are exponentials (<span class="math inline">\(e^{st}\)</span>). The z-transformation integrates on line path <span class="math inline">\(-\pi\)</span> to <span class="math inline">\(\pi\)</span>. The superposition on frequency was done by the power series (<span class="math inline">\(z^{n}, n \in \mathbb{N}\)</span>). The different inverse transformations of the Laplace and z-transformation result in different inverse functions and different convergence conditions of the system. The conditions of convergence of Laplace transformation is the real part of poles are negative and that of z-transformation is absolute values of poles are less than 1 (<span class="math inline">\(\lvert p \rvert &lt; 1,\ p \in \mathbb C\)</span> where p is pole).</p>

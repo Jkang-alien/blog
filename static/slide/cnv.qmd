@@ -1,0 +1,63 @@
+---
+title: "CNV"
+format: 
+  revealjs:
+    preview-links: auto
+    self-contained: true
+execute: 
+  echo: false
+  warning: false
+editor: visual
+---
+
+## OCA CNV
+
+## Gene Level CNV
+
+-   Copy number estimates are made using a proprietary VCIB (Variability Control Informatics Baseline) algorithm
+    -   Coverage based estimation
+    -   Normalized constant coverage for each gene
+    
+## Gene Level CNV
+
+![](img/cnv.png)
+
+## Adjustment with tumor cellularity
+
+$$f \times x + (1 - f) \times 2 = C $$
+
+$$x = (C - (1 - f) \times 2) / f$$
+
+-   f: tumor cellularity
+-   C: observed CN
+
+## Adjustment example (raw CN 3)
+
+```{r}
+curve( (3 - (1-x) * 2) / x, xlim = c(0.1, 1.0),
+       xlab="Tumor cellularity", ylab="Adjusted Copy number")
+```
+
+## Adjustment example (raw CN 6)
+
+```{r}
+curve( (6 - (1-x) * 2) / x, xlim = c(0.1, 1.0),
+       xlab="Tumor cellularity", ylab="Adjusted Copy number")
+```
+
+## Adjustment example (raw CN 2)
+
+```{r}
+curve( (2 - (1-x) * 2) / x, xlim = c(0.1, 1.0),
+       xlab="Tumor cellularity", ylab="Adjusted Copy number")
+```
+## Adjustment example (raw CN 1.5)
+
+```{r}
+curve( (1.5 - (1-x) * 2) / x, xlim = c(0.1, 1.0),
+       xlab="Tumor cellularity", ylab="Adjusted Copy number")
+```
+
+## Allele frequency table
+
+![](https://www.jkangpathology.com/slide/Allele/AF.png)

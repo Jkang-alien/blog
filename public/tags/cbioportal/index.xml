@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cbioportal | Jun&#39;s Blog</title>
+    <link>/tags/cbioportal/</link>
+      <atom:link href="/tags/cbioportal/index.xml" rel="self" type="application/rss+xml" />
+    <description>cbioportal</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 03 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>cbioportal</title>
+      <link>/tags/cbioportal/</link>
+    </image>
+    
+    <item>
+      <title>ion2cbioportal Rpackage</title>
+      <link>/post/ion2cbioportal-rpackage/</link>
+      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>/post/ion2cbioportal-rpackage/</guid>
+      <description>
+
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/Jkang-alien/ion2cbioportal&#34; class=&#34;uri&#34;&gt;https://github.com/Jkang-alien/ion2cbioportal&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is Rpackage for making the cbioportal dataset from the ion torrent NGS result files. The formats of ion torrent result files are vcf and tsv. Those files convert to maf format and other data set for cbioportal. The package includes vignette. &lt;code&gt;vignette(&amp;quot;ion2cbioportal&amp;quot;)&lt;/code&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Big Data TCGA </title>
+      <link>/talk/big_data/big-data-tcga/</link>
+      <pubDate>Fri, 24 May 2019 00:00:00 +0000</pubDate>
+      <guid>/talk/big_data/big-data-tcga/</guid>
+      <description>&lt;p&gt;Abstact&lt;/p&gt;
+
+&lt;p&gt;TCGA is a large consortium of comprehensive cancer genomic research that opens publically the data. There are several way to access to the TCGA data. This talk introduce among the simple ways.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

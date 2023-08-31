@@ -1,0 +1,33 @@
+---
+title: Convolution and Fourier transformation
+author: JK
+date: '2020-10-22'
+slug: convolution-and-fourier-transformation
+categories:
+  - Math
+  - Machine learning
+tags:
+  - Gilbert Strang
+  - Machine learning
+  - Math
+  - Linear algebra
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-10-22T13:34:22+09:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>Convolution is a vector operation on two vectors.</p>
+<p><span class="math display">\[ Convolution \\ c * d = d*c \\ (c*d)_n = \Sigma_{i+j} c_i d_j = \Sigma_i c_i d_{n-i}.\]</span>
+This is multiplying polynomials. The parameters of multiplied polynomial become convolution of two polynomials. Fourier transformation expands x base to infinite exponential basis <span class="math inline">\(e^{iwk}\)</span>. The <strong>multiplication on x (time) space</strong> becomes <strong>convolutionn on k (frequency) space</strong>.</p>
+<p>If time space is periodic, its Fourier transformation is discrete i.e. Fourier series. If time space is non-periodic, its Fourier transformation is continuous Fourier transformation.</p>
+<p>The Fourier transformation is dual. The relations of <strong>multiplication and convolution</strong> and <strong>periodic and discrete</strong> are dual in time space and frequency space.</p>
+<p>Fourier transformation is changing basis. The changing basis can be done by inner product (for vector space) or integration (function space) with new basis in which are we want move to space. This is why Fourier transformation coefficients calculated by integration with function multiplying basis <span class="math inline">\(e^{iwk}\)</span>.</p>

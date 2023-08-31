@@ -1,0 +1,40 @@
+---
+title: Singular vector decomposition
+author: JK
+date: '2020-07-30'
+slug: singular-vector-decomposition
+categories:
+  - Math
+  - Machine learning
+tags:
+  - Deep Learning
+  - Linear algebra
+  - Gilbert Strang
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-07-30T09:25:53+09:00'
+featured: no
+draft: false
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Bases are the central idea of linear algebra. An invertable square matrix has eigenvectors. A symetric matrix has orthogonal eigenvectors with non-negative eigenvalues, i.e. positive semidefinite. A matrix has two types of singular vectors, left and right signular vectors, $A=U\Sigma V^{T}$.  
+
+When we think the matrix $A$ is data points of rows $A=U\Sigma V^{T}$ like data table, The right singular vectors $V$ build bases, the sigular values $\Sigma$ are magnitude of the bases and the left singular values $U$ becomes new data points on new bases. The new data points $U$ are orthonormal.  
+
+When we think the matrix $A$ is a system of linear transformation $Ax=b,\ U\Sigma V^{T}x=b$, a vector $x$ is repositioned on right singular vector coordinates $V$ then the coordinates are multiplied by $\Sigma$ and finally linear transformed by left singular vector $U$.  
+
+A matrix is sum of rank one singular matrix. $$A = \sigma_{1} u_{1}u_{1}^{T} + \cdots +  \sigma_{k} u_{k}u_{k}^{T}$$ The Eckart-Young theorem finds closest low-rank matrix $A_k$.     
+In symetric matrix, the bases (right singular vectors) and it's value on the bases (left singular vectors) are same. Reproducing kernel hilbert space has same values on it's base functions.  
+
+Rayleigh quotient $R(x) = {{x^{T}Sx} \over {x^{T}x}} $ has maximum $\lambda_{1}$ at the eigen vector $q_{1}$ and saddle points at $x=q_{k},\ \frac{\partial R}{\partial x_{i}} = 0$. The second eigenvector can be found by Lagrangian optimization problum maximizing $\ R(x)$ s.t. $q_{1} = 0$.   
+
+Pseudoinversion $A^{+}$ process does first inversing value with $U^{T}$, and scale with $\Sigma ^{+}$ and followed by reversing axis $V^{T}$.  
+
+When $Ax=b$ has many solutions, minimizing $\lVert A \rVert$ s.t. $Ax=b$ can be best solution. The $L_{1}$ norm has sparse solution.  
+

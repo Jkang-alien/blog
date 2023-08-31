@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linear algebra | Jun&#39;s Blog</title>
+    <link>/tags/linear-algebra/</link>
+      <atom:link href="/tags/linear-algebra/index.xml" rel="self" type="application/rss+xml" />
+    <description>Linear algebra</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 14 Nov 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Linear algebra</title>
+      <link>/tags/linear-algebra/</link>
+    </image>
+    
+    <item>
+      <title>Laplace transformation</title>
+      <link>/post/laplace-transformation/</link>
+      <pubDate>Sat, 14 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>/post/laplace-transformation/</guid>
+      <description>
+&lt;link href=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.css&#34; rel=&#34;stylesheet&#34; /&gt;
+&lt;script src=&#34;/rmarkdown-libs/anchor-sections/anchor-sections.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;The Fourier series represents a periodic function as a descrete vectors. The Fourier transformation turns a time domain non-periodic function into a frequency domain continuous function. The Fourier series and transformation change a single time base &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt; into infinite frequency basis &lt;span class=&#34;math inline&#34;&gt;\(e^{inx}\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(e^{iwx}\)&lt;/span&gt;. The function on infinite basis domain can be represented by a vector or a function of basis domain &lt;span class=&#34;math inline&#34;&gt;\(v_{n}\)&lt;/span&gt; or &lt;span class=&#34;math inline&#34;&gt;\(f(w)\)&lt;/span&gt;. This is a coefficients of Fourier series or Fourier transformation.&lt;/p&gt;
+&lt;p&gt;The basis of Fourier transformation is pure frequency &lt;span class=&#34;math inline&#34;&gt;\(e^{iw}\)&lt;/span&gt;. The domain of Laplace transfomation is frequency &lt;span class=&#34;math inline&#34;&gt;\(w\)&lt;/span&gt; and damping component &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt; which compose damping ocilation function, &lt;span class=&#34;math inline&#34;&gt;\(e^{s} = e^{(iw+\sigma)}\)&lt;/span&gt;. The function which represent Laplace transformation &lt;span class=&#34;math inline&#34;&gt;\(F(s)\)&lt;/span&gt; is a function of complex domain &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt;. The Fourier transformation is a special Laplace transformation of no damping term &lt;span class=&#34;math inline&#34;&gt;\(s = 0 \cdot \sigma +iw\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;periodic&lt;/strong&gt; function can be represented by a series not a continuous function. A condition makes a function can be represented by pure frequency domain i.e. Fourier transformation, not a complex domain i.e. Laplace transformation. The condition is&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;from wikipedia &lt;a href=&#34;https://en.wikipedia.org/wiki/Laplace_transform#Fourier_transform&#34; class=&#34;uri&#34;&gt;https://en.wikipedia.org/wiki/Laplace_transform#Fourier_transform&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;math&gt;&lt;span class=&#34;math display&#34;&gt;\[\begin{align}
+  \widehat{f}(\omega) &amp;amp;= \mathcal{F}\{f(t)\} \\[4pt]
+                  &amp;amp;= \mathcal{L}\{f(t)\}|_{s = i\omega}  =  F(s)|_{s = i \omega} \\[4pt]
+                  &amp;amp;= \int_{-\infty}^\infty e^{-i \omega t} f(t)\,dt~.
+\end{align}\]&lt;/span&gt;&lt;/math&gt;&lt;/p&gt;
+&lt;p&gt;Laplace transformation makes a differential equation to an algebra equation.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Laplace transformation\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+\mathcal{L}[f(t)] = F(s) = \int_{t=0}^{\infty} f(t)e^{-st}dt
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[Transfer function\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[
+H(s) = Y(s)/X(s)
+\]&lt;/span&gt;
+&lt;span class=&#34;math display&#34;&gt;\[
+Y(s) = H(s)X(s)  
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;where &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(X(s)\)&lt;/span&gt; are Laplace transformed &lt;span class=&#34;math inline&#34;&gt;\(y(t)\)&lt;/span&gt;, i.e. solution and &lt;span class=&#34;math inline&#34;&gt;\(f(t)\)&lt;/span&gt; i.e. input.&lt;/p&gt;
+&lt;p&gt;The &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt; is a function of &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; which represents coefficients of damped frquency basis &lt;span class=&#34;math inline&#34;&gt;\(e^{\sigma + iw}\)&lt;/span&gt;. We are not looking for the solution &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; for the &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt;. We are looking for the inverse Laplace transformation of &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt;. The inverse Laplace transformation turns a function &lt;span class=&#34;math inline&#34;&gt;\(Y(s)\)&lt;/span&gt; with infinite damped frquency basis &lt;span class=&#34;math inline&#34;&gt;\(e^{\sigma + iw}\)&lt;/span&gt; to the solution of linear differential equation &lt;span class=&#34;math inline&#34;&gt;\(y(t)\)&lt;/span&gt; that is a function with a single domain basis &lt;span class=&#34;math inline&#34;&gt;\(t\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The Laplace transformation has poles that blow up at a point. The poles were determined by constants of differential equation and the input term.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Convolution and Fourier transformation</title>
+      <link>/post/convolution-and-fourier-transformation/</link>
+      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
+      <guid>/post/convolution-and-fourier-transformation/</guid>
+      <description>
+
+
+&lt;p&gt;Convolution is a vector operation on two vectors.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ Convolution \\ c * d = d*c \\ (c*d)_n = \Sigma_{i+j} c_i d_j = \Sigma_i c_i d_{n-i}.\]&lt;/span&gt;
+This is multiplying polynomials. The parameters of multiplied polynomial become convolution of two polynomials. Fourier transformation expands x base to infinite exponential basis &lt;span class=&#34;math inline&#34;&gt;\(e^{iwk}\)&lt;/span&gt;. The &lt;strong&gt;multiplication on x (time) space&lt;/strong&gt; becomes &lt;strong&gt;convolutionn on k (frequency) space&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;If time space is periodic, its Fourier transformation is discrete i.e. Fourier series. If time space is non-periodic, its Fourier transformation is continuous Fourier transformation.&lt;/p&gt;
+&lt;p&gt;The Fourier transformation is dual. The relations of &lt;strong&gt;multiplication and convolution&lt;/strong&gt; and &lt;strong&gt;periodic and discrete&lt;/strong&gt; are dual in time space and frequency space.&lt;/p&gt;
+&lt;p&gt;Fourier transformation is changing basis. The changing basis can be done by inner product (for vector space) or integration (function space) with new basis in which are we want move to space. This is why Fourier transformation coefficients calculated by integration with function multiplying basis &lt;span class=&#34;math inline&#34;&gt;\(e^{iwk}\)&lt;/span&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Singular vector decomposition</title>
+      <link>/post/singular-vector-decomposition/</link>
+      <pubDate>Thu, 30 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/post/singular-vector-decomposition/</guid>
+      <description>
+
+
+&lt;p&gt;Bases are the central idea of linear algebra. An invertable square matrix has eigenvectors. A symetric matrix has orthogonal eigenvectors with non-negative eigenvalues, i.e. positive semidefinite. A matrix has two types of singular vectors, left and right signular vectors, &lt;span class=&#34;math inline&#34;&gt;\(A=U\Sigma V^{T}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;When we think the matrix &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is data points of rows &lt;span class=&#34;math inline&#34;&gt;\(A=U\Sigma V^{T}\)&lt;/span&gt; like data table, The right singular vectors &lt;span class=&#34;math inline&#34;&gt;\(V\)&lt;/span&gt; build bases, the sigular values &lt;span class=&#34;math inline&#34;&gt;\(\Sigma\)&lt;/span&gt; are magnitude of the bases and the left singular values &lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt; becomes new data points on new bases. The new data points &lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt; are orthonormal.&lt;/p&gt;
+&lt;p&gt;When we think the matrix &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; is a system of linear transformation &lt;span class=&#34;math inline&#34;&gt;\(Ax=b,\ U\Sigma V^{T}x=b\)&lt;/span&gt;, a vector &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; is repositioned on right singular vector coordinates &lt;span class=&#34;math inline&#34;&gt;\(V\)&lt;/span&gt; then the coordinates are multiplied by &lt;span class=&#34;math inline&#34;&gt;\(\Sigma\)&lt;/span&gt; and finally linear transformed by left singular vector &lt;span class=&#34;math inline&#34;&gt;\(U\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;A matrix is sum of rank one singular matrix. &lt;span class=&#34;math display&#34;&gt;\[A = \sigma_{1} u_{1}u_{1}^{T} + \cdots +  \sigma_{k} u_{k}u_{k}^{T}\]&lt;/span&gt; The Eckart-Young theorem finds closest low-rank matrix &lt;span class=&#34;math inline&#34;&gt;\(A_k\)&lt;/span&gt;.&lt;br /&gt;
+In symetric matrix, the bases (right singular vectors) and it’s value on the bases (left singular vectors) are same. Reproducing kernel hilbert space has same values on it’s base functions.&lt;/p&gt;
+&lt;p&gt;Rayleigh quotient $R(x) = {{x^{T}Sx} } $ has maximum &lt;span class=&#34;math inline&#34;&gt;\(\lambda_{1}\)&lt;/span&gt; at the eigen vector &lt;span class=&#34;math inline&#34;&gt;\(q_{1}\)&lt;/span&gt; and saddle points at &lt;span class=&#34;math inline&#34;&gt;\(x=q_{k},\ \frac{\partial R}{\partial x_{i}} = 0\)&lt;/span&gt;. The second eigenvector can be found by Lagrangian optimization problum maximizing &lt;span class=&#34;math inline&#34;&gt;\(\ R(x)\)&lt;/span&gt; s.t. &lt;span class=&#34;math inline&#34;&gt;\(q_{1} = 0\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Pseudoinversion &lt;span class=&#34;math inline&#34;&gt;\(A^{+}\)&lt;/span&gt; process does first inversing value with &lt;span class=&#34;math inline&#34;&gt;\(U^{T}\)&lt;/span&gt;, and scale with &lt;span class=&#34;math inline&#34;&gt;\(\Sigma ^{+}\)&lt;/span&gt; and followed by reversing axis &lt;span class=&#34;math inline&#34;&gt;\(V^{T}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;When &lt;span class=&#34;math inline&#34;&gt;\(Ax=b\)&lt;/span&gt; has many solutions, minimizing &lt;span class=&#34;math inline&#34;&gt;\(\lVert A \rVert\)&lt;/span&gt; s.t. &lt;span class=&#34;math inline&#34;&gt;\(Ax=b\)&lt;/span&gt; can be best solution. The &lt;span class=&#34;math inline&#34;&gt;\(L_{1}\)&lt;/span&gt; norm has sparse solution.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Low rank matrix and compressed sensing</title>
+      <link>/post/low-rank-matrix-and-compressed-sensing/</link>
+      <pubDate>Tue, 14 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>/post/low-rank-matrix-and-compressed-sensing/</guid>
+      <description>
+
+
+&lt;p&gt;This is a note for part III of Linear Algebra and learning from data, Gilbert Strang&lt;/p&gt;
+&lt;p&gt;The main themes are sparsity (Low rank), Information theory (compression), and of course linear transformation.&lt;/p&gt;
+&lt;p&gt;A full rank matrix is inefficient. Finding low lank matrix which is close with original matrix can save computation.&lt;/p&gt;
+&lt;p&gt;The rank one matrix &lt;span class=&#34;math inline&#34;&gt;\(uv^{T}\)&lt;/span&gt; is a unit of a matrix. The full rank matrix can be decomposed by sum of rank one matrices i.e. singular vector decomposition.&lt;/p&gt;
+&lt;p&gt;Sherman–Morrison formula suggests update rule for adding rank one matrix to the original matrix.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[(A + \mathbf{u} \mathbf{v}^{T})^{-1} = A^{-1} - \frac{A^{-1} \mathbf{u} \mathbf{v}^{T}A^{-1}}{1 + \mathbf{v}^{T} A^{-1} \mathbf{u}}\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;The matrix norm is associated with singular value, &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The point is the unit of matrix is the rank one matrix, specially outer product of singular vectors &lt;span class=&#34;math inline&#34;&gt;\(uv^{T}\)&lt;/span&gt;. &lt;span class=&#34;math inline&#34;&gt;\(uv^{T}\)&lt;/span&gt; is a coordinate of the matrix space and singular value &lt;span class=&#34;math inline&#34;&gt;\(\sigma\)&lt;/span&gt; is a point on the coordinate.&lt;/p&gt;
+&lt;p&gt;System, Inner product, &lt;span class=&#34;math inline&#34;&gt;\(A^{T}A\)&lt;/span&gt;, Steady state equilibrium, dual&lt;/p&gt;
+&lt;p&gt;A system has a law. The observations follow the law. The state set by the system’s law. The state has two variables.&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math display&#34;&gt;\[ Ax=b \;(1)\\ Y= \beta X  \; (2)\\ \hat{x} = \frac {A^{T}b}{(A^{T}A) \; (3)\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Equation (1) is observations, (2) is a system, (3) is fit the observations to the system. &lt;span class=&#34;math inline&#34;&gt;\(A^{T}A\)&lt;/span&gt; is a steady state equilibrium. &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(A^{T}\)&lt;/span&gt; are dual. &lt;span class=&#34;math inline&#34;&gt;\(x\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(b\)&lt;/span&gt; are dual.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

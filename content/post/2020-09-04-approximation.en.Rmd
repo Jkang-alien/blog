@@ -1,0 +1,35 @@
+---
+title: "Approximation"
+author: "JK"
+date: '2020-09-04'
+slug: approximation
+categories:
+- Math
+- Machine learning
+- Convex optimization
+tags:
+- Convex optimization
+- Deep Learning
+- Machine learning
+- Math
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2020-09-04T19:40:57+09:00'
+featured: no
+draft: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+The purpose of approximation is finding optimal point $x^*$ i.e. $\nabla F(x^*) = 0$. We need a step/search direction $\Delta x$ and step size $t$. Taylor approximation has polynomial arguments that is a step and parameters of derivatives at the start point. The first degree of Taylor approximation has one adding term from start point $(x_0, F(x_0))$. The adding term $\nabla F(x) \Delta x$ is consistent with a parameter (gradient $\nabla F(x)$) and a argument (step $\Delta x$). The Taylor approximation does approximate $F(x + \Delta x)$ for any search direction $\Delta x$. We want to choose $\Delta x$ for the direction to the optimal point. 
+
+The adding term of Taylor approximation $\nabla F(x) \Delta x$ have level curve (level line). The smallest Euclidean norm of the level curve is achieved at the tangent. The gradient descent set the step to the gradient $\nabla F(x)$. This makes the adding term biggest with Euclidean norm $\Vert \nabla F(x) \Vert^2$ i.e. dual norm $\Vert \nabla F(x) \Vert_*$.  
+
+Newton's method is second degree of Taylor approximation $F(x_0+\Delta x) \approx F(x_0) + \nabla F(x) \Delta x + 1/2\Delta x^T H \Delta x$. We want to find $\Delta x$ to minimize the second degree of Taylor approximation. In this case, the minimizing step is tangent of first adding term $\nabla F(x) \Delta x$ and second adding term $\Delta x^T H \Delta x$ i.e. Steepest descent in H norm $\Vert \cdot \Vert _H$. The newton's method can be thought as approximation of gradient $\nabla F(x)$. $\nabla F(x_0 + \Delta x) \approx  \nabla F(x_0) + H \Delta x = 0,\ \Delta x = -H^{-1} \nabla F(x_0)$. This is also the derivative of second degree of Taylor approximation with respect to $\Delta x$.    
+
+But the Taylor approximation is local. In addition to a step, a step size is needed. A step size determines how far the step taken. Backtracking line search has two constant parameters 0 < $\alpha$ < 0.5, 0 < $\beta$ < 1. The approximation is below the convex function. $\alpha$ tilts the slope i.e. gradient upside and the tilted approximation meets the convex function. $\beta$ is the update rate of the step size until the the amount of the step is less than the point that tilted approximation meeets the convex function.  
+

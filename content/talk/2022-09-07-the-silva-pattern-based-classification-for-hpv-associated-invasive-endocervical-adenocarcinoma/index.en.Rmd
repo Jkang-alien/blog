@@ -1,0 +1,33 @@
+---
+title: The Silva Pattern-based Classification for HPV-associated Invasive Endocervical
+  Adenocarcinoma
+author: Package Build
+date: '2022-09-07'
+slug: []
+categories:
+  - Pathology
+  - Cancer
+tags:
+  - Cancer
+  - Pathology
+event: ~
+event_url: ~
+location: ~
+summary: ~
+abstract: ~
+date_end: '2022-09-07T13:43:35+09:00'
+all_day: no
+publishDate: '2022-09-07T13:43:35+09:00'
+authors: []
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+url_slides: 'https://www.jkangpathology.com/slide/Silva.html'
+url_code: ~
+url_pdf: ~
+url_video: ~
+slides: ''
+projects: []
+---
