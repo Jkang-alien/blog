@@ -1,5 +1,5 @@
 ---
-title: San Antonio Breast Cancer Symphosium
+title: San Antonio Breast Cancer Symphosium 2026
 author: Package Build
 date: '2025-12-10'
 slug: []
@@ -22,6 +22,8 @@ image:
 projects: []
 ---
 
+## First day
+
 ### Lobular carcinoma
 - Christos Sotitiou, Institue Jules Bordet
 - ILC tumor microenvironment & PI3K inhibition (taselisib)
@@ -41,3 +43,21 @@ projects: []
 - Consider ILC-suitable endpoints (cellularity, ctDNA dynamics, long-term outcomes).
 - Ensure central pathology review; incorporate surgical endpoints.
 - Build multi-center/international recruitment networks.
+
+## Second day
+
+- HER2Climb-05
+  - Tucatinib + HP for maintainance for her2+ metastatic breast cancer
+  - Tucatinib may be another option especially brain metastasis
+  
+- TILs
+  - Whether TILs predict pCR for the patients with HER2 positive breast cancer.
+  - Large clinical trial dataset
+  - cut-off 10%?
+
+
+- lidERA
+  - The first SERD for early ER+ breast cancer as monotherapy superior than AI
+  - Control not CDK4i
+
+- Phyllodes tumor  
