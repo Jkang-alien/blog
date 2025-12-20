@@ -61,3 +61,26 @@ projects: []
   - Control not CDK4i
 
 - Phyllodes tumor  
+
+  - Radiation therapy and chemotherapy can be effective in a subset of patients.
+  
+## Third day
+
+- You-na Sung
+  - Some CDH1 mutations detected only RNA sequencing not DNA panel sequencing.
+  
+- General session 2
+  - SLND,TLD did not showed non-inferiority with axillary dissection.
+  - Radiation therapy in sentinel lymph node status.
+  - Radiation therapy in neoadjuvant setting to promote immune activation. in ER positive breast cancer.
+  - ctDNA predicts prognosis, pCR in ER positive breast cancer.
+  
+## Fourth day
+
+- Plenary lecture
+  - Normal breast ductal lobular structure shows chromosome copy number change.
+  - Normal glands are under evolutional pressure during menstural cycle making budding and apoptosis.
+  - There is a specific epithelial cell type does not identified which ha chromosome copy number change. 
+  
+  
+  
